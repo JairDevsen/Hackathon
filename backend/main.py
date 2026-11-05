@@ -42,6 +42,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.mount(
+    "/frontend",
+    StaticFiles(directory=Path(__file__).resolve().parent.parent / "frontend"),
+    name="frontend",
+)
+
 FRONTEND_HTML_PATH = Path(__file__).resolve().parent.parent / "frontend" / "index.html"
 SAMPLE_FILES: dict = {}
 

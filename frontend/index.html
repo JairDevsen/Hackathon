@@ -1,1330 +1,186 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document AI Factory • Bernhoeft Edition — Hack Garanhuns Tech 2026</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #090d16;
-      color: #f1f5f9;
-    }
-    .mono {
-      font-family: 'JetBrains Mono', monospace;
-    }
-    mark.ocr-highlight {
-      background-color: #facc15;
-      color: #0f172a;
-      padding: 1px 4px;
-      border-radius: 3px;
-      font-weight: 700;
-    }
-    ::-webkit-scrollbar {
-      width: 8px;
-      height: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #0f172a;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #334155;
-      border-radius: 4px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #475569;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citadel AI</title>
+  <link rel="icon" type="image/png" href="/frontend/assets/citadel-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="/frontend/styles.css" rel="stylesheet">
 </head>
-<body class="min-h-screen flex flex-col selection:bg-sky-500 selection:text-slate-950">
-
-  <!-- TOP NAVBAR -->
-  <header class="sticky top-0 z-40 border-b border-slate-800/90 bg-slate-950/90 backdrop-blur-md">
-    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-4">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-400 via-sky-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-sky-500/20">
-          <i data-lucide="scan-text" class="w-6 h-6 text-slate-950 stroke-[2.5]"></i>
-        </div>
+<body>
+  <header class="app-header sticky-top">
+    <div class="container-fluid app-shell d-flex align-items-center justify-content-between gap-3">
+      <div class="brand d-flex align-items-center gap-3">
+        <img class="brand-logo" src="/frontend/assets/citadel-logo.png" alt="Citadel IA">
         <div>
-          <div class="flex items-center gap-2">
-            <h1 class="text-lg font-extrabold tracking-tight text-white">
-              Document AI Factory • <span class="text-sky-400">Bernhoeft Edition</span>
-            </h1>
-            <span class="px-2 py-0.5 text-[11px] font-bold uppercase tracking-wider rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
-              GRT • SST • Trabalhista & Cálculos Judiciais
-            </span>
-          </div>
-          <p class="text-xs text-slate-400">
-            Recorte Físico de Lotes PDF • <strong class="text-amber-300">AR Correios & Manuscritos</strong> • Compliance de Catraca GRT • Funil 950k • LGPD
-          </p>
+          <div class="brand-subtitle">Bernhoeft Edition · Hack Garanhuns Tech</div>
         </div>
       </div>
-
-      <!-- CONTROLES GLOBAIS: EXPORTAR ZIP, MODO LGPD, CHAVE GEMINI E EQUIPE -->
-      <div class="flex items-center flex-wrap gap-2.5">
-        <!-- Botão Exportar Pacote ZIP de todos os PDFs recortados -->
-        <button
-          onclick="exportCurrentJobZip()"
-          class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-extrabold shadow-lg shadow-emerald-500/20 transition"
-          title="Baixar arquivo .ZIP com cada documento recortado em PDF individual + Manifesto JSON"
-        >
-          <i data-lucide="folder-down" class="w-4 h-4"></i>
-          <span id="btn-zip-label">Baixar PDFs Separados (.ZIP)</span>
+      <div class="header-actions d-flex align-items-center gap-2">
+        <button id="btn-lgpd-toggle" type="button" class="btn header-btn" onclick="toggleLgpdMode()">
+          <span id="lgpd-dot" class="status-dot"></span>
+          <span id="lgpd-label">LGPD desativada</span>
         </button>
-
-        <!-- Toggle Modo Anonimizado LGPD -->
-        <button
-          id="btn-lgpd-toggle"
-          onclick="toggleLgpdMode()"
-          class="flex items-center gap-2.5 px-3.5 py-2 rounded-xl border text-xs font-bold transition-all duration-200 bg-slate-900 border-slate-700 text-slate-300 hover:border-sky-500/50"
-        >
-          <span id="lgpd-dot" class="w-2.5 h-2.5 rounded-full bg-slate-500"></span>
-          <i data-lucide="shield-alert" class="w-4 h-4 text-sky-400"></i>
-          <span id="lgpd-label">Anonimização LGPD: DESATIVADA</span>
+        <button type="button" class="btn header-btn icon-only" onclick="openApiKeyModal()" title="Configurar Gemini">
+          <i class="bi bi-stars"></i><span id="api-key-badge">Gemini</span>
         </button>
-
-        <!-- Botão Configurar API Key Gemini -->
-        <button
-          onclick="openApiKeyModal()"
-          class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-xs font-semibold text-slate-300 transition"
-        >
-          <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i>
-          <span id="api-key-badge">Funil Gemini 3.8</span>
-        </button>
-
-        <!-- Botão Squads Info -->
-        <button
-          onclick="openTeamModal()"
-          class="flex items-center gap-2 px-3 py-2 rounded-xl bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-500/30 text-xs font-semibold text-indigo-300 transition"
-        >
-          <i data-lucide="users" class="w-4 h-4"></i>
-          <span>Equipe (Lucas + 6 Devs)</span>
+        <button type="button" class="btn header-btn icon-only" onclick="openTeamModal()" title="Equipe">
+          <i class="bi bi-people"></i>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- MAIN CONTAINER -->
-  <main class="flex-1 max-w-[1600px] w-full mx-auto px-4 sm:px-6 py-5 space-y-5">
-
-    <!-- SEÇÃO 1: BARRA DE INGESTÃO DE LOTE & CENÁRIOS DE DEMONSTRAÇÃO AO VIVO -->
-    <section class="grid grid-cols-1 lg:grid-cols-12 gap-4">
-      <!-- Uploader Drag & Drop (Jair & Luis Miguel) -->
-      <div class="lg:col-span-5 bg-slate-900/90 border border-slate-800 rounded-2xl p-4 flex flex-col justify-between">
-        <div class="flex items-center justify-between mb-2">
-          <div class="flex items-center gap-2">
-            <i data-lucide="upload-cloud" class="w-4 h-4 text-sky-400"></i>
-            <h2 class="text-xs font-bold uppercase tracking-wider text-slate-300">Ingestão de Dossiê de Terceiros (Lote Pesado)</h2>
-          </div>
-          <span class="text-[11px] text-slate-400">PDF, TIFF Multipágina, ZIP ou PNG/JPG</span>
-        </div>
-
-        <label
-          for="file-upload-input"
-          class="cursor-pointer group border-2 border-dashed border-slate-700 hover:border-sky-500 rounded-xl p-4 transition flex items-center justify-between bg-slate-950/60 hover:bg-slate-950"
-        >
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/30 flex items-center justify-center group-hover:scale-105 transition">
-              <i data-lucide="file-up" class="w-5 h-5 text-sky-400"></i>
-            </div>
+  <main class="container-fluid app-shell app-main">
+    <section class="hero-row row g-3 mb-3">
+      <div class="col-lg-5">
+        <article class="panel ingest-panel h-100">
+          <div class="panel-heading">
             <div>
-              <p class="text-sm font-semibold text-white group-hover:text-sky-300 transition">
-                Arraste um dossiê PDF ou clique para enviar
-              </p>
-              <p class="text-xs text-slate-400">
-                Recorte físico de PDFs individuais, leitura de AR/manuscritos e checklist GRT
-              </p>
+              <p class="eyebrow">Ingestão</p>
+              <h1>Novo lote documental</h1>
             </div>
+            <span class="format-label">PDF · TIFF · ZIP · Imagem</span>
           </div>
-          <input id="file-upload-input" type="file" class="hidden" accept=".pdf,.zip,.tif,.tiff,.png,.jpg,.jpeg,.webp" onchange="handleFileUpload(event)" />
-          <span class="px-3 py-1.5 rounded-lg bg-sky-500 text-slate-950 font-bold text-xs whitespace-nowrap">
-            Selecionar Lote
-          </span>
-        </label>
-
-        <div class="mt-2.5 flex items-center justify-between text-xs text-slate-400">
-          <label class="flex items-center gap-2 cursor-pointer select-none">
-            <input id="chk-simulate-fail" type="checkbox" class="rounded bg-slate-800 border-slate-700 text-amber-500 focus:ring-0" />
-            <span>Simular falha na Página 3 durante upload (Testar retomada)</span>
-          </label>
-          <div class="flex items-center gap-2">
-            <a href="/api/samples/lote_completo" class="text-sky-400 hover:underline flex items-center gap-1" download>
-              <i data-lucide="download" class="w-3.5 h-3.5"></i> Baixar Dossiê Bruto PDF
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cenários Oficiais da Banca (1 Clique) + KPIs Rápidos -->
-      <div class="lg:col-span-7 bg-slate-900/90 border border-slate-800 rounded-2xl p-4 flex flex-col justify-between">
-        <div class="flex items-center justify-between mb-2">
-          <div class="flex items-center gap-2">
-            <i data-lucide="zap" class="w-4 h-4 text-amber-400"></i>
-            <h2 class="text-xs font-bold uppercase tracking-wider text-slate-300">
-              Simulador de Cenários Bernhoeft para a Banca (1 Clique)
-            </h2>
-          </div>
-          <span id="active-job-badge" class="text-xs mono text-emerald-400 font-semibold">Carregando lote...</span>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-          <button
-            onclick="triggerPreset('lote_completo')"
-            class="text-left p-3 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 transition group"
-          >
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-xs font-bold text-emerald-300">1. Dossiê GRT Bernhoeft (6 Págs)</span>
-              <i data-lucide="play-circle" class="w-4 h-4 text-emerald-400 group-hover:translate-x-0.5 transition"></i>
-            </div>
-            <p class="text-[11px] text-slate-300 leading-snug">
-              CNH Terceiro (2p) + <strong>AR Auditoria GRT</strong> + Ficha EPI Manuscrita + Contrato (2p)
-            </p>
-          </button>
-
-          <button
-            onclick="triggerPreset('simular_falha')"
-            class="text-left p-3 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 transition group"
-          >
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-xs font-bold text-amber-300">2. Simular Queda (Pág 4/6)</span>
-              <i data-lucide="flame" class="w-4 h-4 text-amber-400 group-hover:scale-110 transition"></i>
-            </div>
-            <p class="text-[11px] text-slate-300 leading-snug">
-              Interrompe na Pág 4 mantendo Págs 1–3 salvas para demonstrar <strong>Retomada após Falha</strong>
-            </p>
-          </button>
-
-          <button
-            onclick="triggerPreset('lote_hitl')"
-            class="text-left p-3 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 border border-rose-500/30 transition group"
-          >
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-xs font-bold text-rose-300">3. Lote ASO + AR Rasurado</span>
-              <i data-lucide="user-check" class="w-4 h-4 text-rose-400 group-hover:scale-110 transition"></i>
-            </div>
-            <p class="text-[11px] text-slate-300 leading-snug">
-              AR de Bloqueio GRT borrado (58%) + <strong>ASO Saúde Ocupacional (NR-07)</strong>
-            </p>
-          </button>
-        </div>
-
-        <!-- KPIs do Lote Atual -->
-        <div class="mt-3 pt-2.5 border-t border-slate-800 grid grid-cols-5 gap-2 text-center">
-          <div class="bg-slate-950/70 rounded-lg py-1.5 px-2">
-            <span class="text-[10px] uppercase text-slate-400 block">Páginas Lote</span>
-            <span id="kpi-pages" class="text-sm font-extrabold text-white">0 / 0</span>
-          </div>
-          <div class="bg-slate-950/70 rounded-lg py-1.5 px-2">
-            <span class="text-[10px] uppercase text-slate-400 block">PDFs Recortados</span>
-            <span id="kpi-docs" class="text-sm font-extrabold text-sky-400">0</span>
-          </div>
-          <div class="bg-slate-950/70 rounded-lg py-1.5 px-2">
-            <span class="text-[10px] uppercase text-slate-400 block">AR & Manuscritos</span>
-            <span id="kpi-handwritten" class="text-sm font-extrabold text-amber-400">0</span>
-          </div>
-          <div class="bg-slate-950/70 rounded-lg py-1.5 px-2">
-            <span class="text-[10px] uppercase text-slate-400 block">Tokens Poupados</span>
-            <span id="kpi-tokens-saved" class="text-sm font-extrabold text-emerald-400">0 tok</span>
-          </div>
-          <div class="bg-slate-950/70 rounded-lg py-1.5 px-2">
-            <span class="text-[10px] uppercase text-slate-400 block">Fila Analista GRT</span>
-            <span id="kpi-review" class="text-sm font-extrabold text-rose-400">0 pendentes</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SEÇÃO 2: ESTEIRA DE CHECKPOINT POR PÁGINA & RETOMADA APÓS FALHA (LENNARTH - DIFERENCIAL) -->
-    <section class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4">
-      <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
-        <div class="flex items-center gap-2">
-          <i data-lucide="cpu" class="w-4 h-4 text-emerald-400"></i>
-          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-300">
-            Esteira Transacional de Checkpoints por Página (SQLite • Retomada Após Falha Sem Reprocessar)
-          </h3>
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="text-xs text-slate-400">Histórico de Lotes:</span>
-          <select
-            id="job-history-select"
-            onchange="selectJobById(this.value)"
-            class="bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1 text-xs text-slate-200 focus:outline-none focus:border-sky-500"
-          ></select>
-        </div>
-      </div>
-
-      <!-- Banner de Alerta de Falha com Botão de Retomada -->
-      <div
-        id="failure-banner"
-        class="hidden mb-3 p-3.5 rounded-xl bg-amber-500/15 border border-amber-500/50 flex flex-wrap items-center justify-between gap-4"
-      >
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-300">
-            <i data-lucide="alert-triangle" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h4 class="text-sm font-bold text-amber-200">
-              Interrupção Detectada no Lote! Estado Transacional Preservado
-            </h4>
-            <p id="failure-reason-text" class="text-xs text-amber-100/90"></p>
-          </div>
-        </div>
-        <button
-          onclick="resumeCurrentJob()"
-          class="px-4 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-xs flex items-center gap-2 shadow-lg shadow-amber-500/20 transition"
-        >
-          <i data-lucide="rotate-cw" class="w-4 h-4"></i>
-          <span>Retomar Processamento Exatamente de Onde Parou</span>
-        </button>
-      </div>
-
-      <div id="checkpoint-pages-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2.5"></div>
-    </section>
-
-    <!-- SEÇÃO 3: NAVEGAÇÃO DE 3 ABAS (VISOR DE DOCUMENTOS vs FILA HITL vs ESCALA 950K FINOPS) -->
-    <section class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-3">
-      <div class="flex items-center flex-wrap gap-2">
-        <button
-          id="tab-btn-explorer"
-          onclick="switchTab('explorer')"
-          class="px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition bg-sky-500 text-slate-950 shadow-md shadow-sky-500/20"
-        >
-          <i data-lucide="layers" class="w-4 h-4"></i>
-          <span>1. Documentos Separados & Compliance GRT</span>
-          <span id="badge-tab-docs" class="px-1.5 py-0.5 rounded-md bg-slate-950/20 text-[11px]">0</span>
-        </button>
-
-        <button
-          id="tab-btn-hitl"
-          onclick="switchTab('hitl')"
-          class="px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800"
-        >
-          <i data-lucide="user-check" class="w-4 h-4 text-rose-400"></i>
-          <span>2. Fila do Analista GRT (HITL)</span>
-          <span id="badge-tab-hitl" class="px-1.5 py-0.5 rounded-md bg-rose-500/20 text-rose-300 text-[11px]">0</span>
-        </button>
-
-        <button
-          id="tab-btn-finops"
-          onclick="switchTab('finops')"
-          class="px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition bg-slate-900 text-emerald-300 hover:bg-slate-800 border border-emerald-500/30"
-        >
-          <i data-lucide="trending-down" class="w-4 h-4 text-emerald-400"></i>
-          <span>3. Escala 950k Colaboradores & FinOps (99,7% Economia)</span>
-        </button>
-      </div>
-
-      <!-- Barra de Pesquisa OCR em Tempo Real -->
-      <div class="relative flex-1 max-w-md">
-        <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
-        <input
-          id="ocr-search-input"
-          type="text"
-          oninput="handleOcrSearch(this.value)"
-          placeholder="Pesquisar no OCR (ex: BR984512390BR, Roberto, CNH, 4.850, NR-06)..."
-          class="w-full pl-10 pr-8 py-2 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-sky-500"
-        />
-        <button
-          onclick="clearOcrSearch()"
-          id="btn-clear-search"
-          class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white"
-        >
-          <i data-lucide="x" class="w-4 h-4"></i>
-        </button>
-      </div>
-    </section>
-
-    <!-- ABA 1: EXPLORADOR DE DOCUMENTOS, DOWNLOAD PDF INDIVIDUAL & COMPLIANCE GRT (JAIR) -->
-    <section id="view-explorer" class="grid grid-cols-1 lg:grid-cols-12 gap-5">
-      <div class="lg:col-span-4 space-y-3">
-        <div class="flex items-center justify-between">
-          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400">
-            Arquivos PDF Separados do Lote
-          </h3>
-          <button
-            onclick="exportCurrentJobZip()"
-            class="text-[11px] font-bold text-emerald-400 hover:underline flex items-center gap-1"
-          >
-            📦 Baixar Todos (.ZIP)
-          </button>
-        </div>
-        <div id="documents-list-container" class="space-y-2.5"></div>
-      </div>
-
-      <div class="lg:col-span-8 bg-slate-900/90 border border-slate-800 rounded-2xl p-4 sm:p-5">
-        <div id="document-inspector-content"></div>
-      </div>
-    </section>
-
-    <!-- ABA 2: FILA DE REVISÃO HUMANA - HITL (DAVI & LENNARTH) -->
-    <section id="view-hitl" class="hidden space-y-4">
-      <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 flex flex-wrap items-center justify-between gap-4">
-        <div>
-          <h3 class="text-sm font-bold text-white flex items-center gap-2">
-            <i data-lucide="shield-check" class="w-5 h-5 text-rose-400"></i>
-            Estação de Triagem Humana do Analista GRT Bernhoeft (Human-in-the-Loop)
-          </h3>
-          <p class="text-xs text-slate-400 mt-0.5">
-            Apenas documentos com rasura manuscrita ou score &lt; 78% geram bloqueio preventivo de catraca até validação em 1 clique.
-          </p>
-        </div>
-        <div class="flex items-center gap-2 text-xs">
-          <span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">
-            🟢 &ge; 85%: Catraca Liberada Automaticamente
-          </span>
-          <span class="px-2.5 py-1 rounded-lg bg-rose-500/10 text-rose-300 border border-rose-500/20">
-            🔴 &lt; 78%: Retido na Fila do Analista GRT
-          </span>
-        </div>
-      </div>
-
-      <div id="hitl-queue-container" class="grid grid-cols-1 gap-4"></div>
-    </section>
-
-    <!-- ABA 3: SIMULADOR DE ESCALA 950 MIL FUNCIONÁRIOS & FINOPS BERNHOEFT -->
-    <section id="view-finops" class="hidden space-y-5">
-      <div class="bg-gradient-to-r from-slate-900 via-emerald-950/40 to-slate-900 border border-emerald-500/30 rounded-2xl p-5">
-        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
-          <div>
-            <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[11px] font-bold uppercase">
-              Arquitetura FinOps • Escala Corporativa Bernhoeft
+          <label for="file-upload-input" class="upload-zone">
+            <span class="upload-icon"><img src="/frontend/assets/citadel-icon.png" alt=""></span>
+            <span class="upload-copy">
+              <strong>Selecione ou arraste um arquivo</strong>
+              <small>OCR, classificação e agrupamento automáticos</small>
             </span>
-            <h3 class="text-lg font-extrabold text-white mt-1">
-              Como processamos 950.000 Colaboradores Terceirizados sem estourar tokens
-            </h3>
-            <p class="text-xs text-slate-300">
-              Funil Híbrido em 5 Camadas: 90% dos documentos são resolvidos a <strong>Custo Zero de API (0 Tokens)</strong> antes de acionar a LLM Multimodal.
-            </p>
+            <input id="file-upload-input" type="file" accept=".pdf,.zip,.tif,.tiff,.png,.jpg,.jpeg,.webp" onchange="handleFileUpload(event)">
+            <span class="btn btn-primary">Selecionar</span>
+          </label>
+          <div class="upload-options">
+            <label class="form-check">
+              <input id="chk-simulate-fail" class="form-check-input" type="checkbox">
+              <span>Simular falha na página 3</span>
+            </label>
+            <a href="/api/samples/lote_completo" download><i class="bi bi-download"></i> Baixar lote</a>
           </div>
-
-          <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-3 min-w-[280px]">
-            <div class="flex justify-between text-xs mb-1">
-              <span class="text-slate-400 font-semibold">Volume de Colaboradores:</span>
-              <span id="sim-workers-label" class="font-extrabold text-emerald-400 mono">950.000 terceiros</span>
-            </div>
-            <input
-              id="sim-workers-slider"
-              type="range"
-              min="50000"
-              max="1500000"
-              step="50000"
-              value="950000"
-              oninput="updateFinopsSimulator(this.value)"
-              class="w-full accent-emerald-400 cursor-pointer"
-            />
-            <div class="flex justify-between text-[10px] text-slate-500 mt-1">
-              <span>50 mil</span>
-              <span>500 mil</span>
-              <span>950 mil (Bernhoeft)</span>
-              <span>1,5 milhão</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Funil de 5 Camadas Visual -->
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-3 mt-4">
-          <div class="p-3.5 rounded-xl bg-slate-950/90 border border-sky-500/30">
-            <span class="text-[10px] font-bold uppercase text-sky-400 block">Camada 0 • 35% do Volume</span>
-            <h4 class="text-xs font-extrabold text-white mt-0.5">Deduplicação Hash SHA-256</h4>
-            <p class="text-[11px] text-slate-400 mt-1">
-              CNH (5 anos), ASO (1 ano) e CNDs (180 dias) reenviados todo mês são barrados no cache.
-            </p>
-            <div class="mt-2 pt-2 border-t border-slate-800 flex justify-between text-xs font-bold">
-              <span id="sim-c0-pages" class="text-slate-300">1,66M págs</span>
-              <span class="text-emerald-400">0 Tokens (R$ 0)</span>
-            </div>
-          </div>
-
-          <div class="p-3.5 rounded-xl bg-slate-950/90 border border-emerald-500/30">
-            <span class="text-[10px] font-bold uppercase text-emerald-400 block">Camada 1 • 40% do Volume</span>
-            <h4 class="text-xs font-extrabold text-white mt-0.5">Extração Nativa PyMuPDF</h4>
-            <p class="text-[11px] text-slate-400 mt-1">
-              PDFs digitais de sistemas (FGTS Digital, eSocial, FOPAG, Contratos) lidos direto na CPU em 2ms.
-            </p>
-            <div class="mt-2 pt-2 border-t border-slate-800 flex justify-between text-xs font-bold">
-              <span id="sim-c1-pages" class="text-slate-300">1,90M págs</span>
-              <span class="text-emerald-400">0 Tokens (R$ 0)</span>
-            </div>
-          </div>
-
-          <div class="p-3.5 rounded-xl bg-slate-950/90 border border-indigo-500/30">
-            <span class="text-[10px] font-bold uppercase text-indigo-400 block">Camada 2 • 15% do Volume</span>
-            <h4 class="text-xs font-extrabold text-white mt-0.5">OCR Local em Container</h4>
-            <p class="text-[11px] text-slate-400 mt-1">
-              Scans impressos limpos processados localmente com ONNX. Se confiança &ge; 88%, aprova sem nuvem.
-            </p>
-            <div class="mt-2 pt-2 border-t border-slate-800 flex justify-between text-xs font-bold">
-              <span id="sim-c2-pages" class="text-slate-300">712k págs</span>
-              <span class="text-emerald-400">0 Tokens (R$ 0)</span>
-            </div>
-          </div>
-
-          <div class="p-3.5 rounded-xl bg-slate-950/90 border border-amber-500/40">
-            <span class="text-[10px] font-bold uppercase text-amber-300 block">Camada 3 • Só 10% Crítico</span>
-            <h4 class="text-xs font-extrabold text-white mt-0.5">Gemini 3.8 Multimodal Flex</h4>
-            <p class="text-[11px] text-slate-400 mt-1">
-              Exclusivo para <strong>AR Correios manuscrito, Fichas de EPI à mão</strong> e cartões de ponto rasurados (258 tok/pág).
-            </p>
-            <div class="mt-2 pt-2 border-t border-slate-800 flex justify-between text-xs font-bold">
-              <span id="sim-c3-pages" class="text-amber-300">475k págs</span>
-              <span id="sim-c3-cost" class="text-amber-300">~R$ 490/mês</span>
-            </div>
-          </div>
-
-          <div class="p-3.5 rounded-xl bg-slate-950/90 border border-rose-500/40">
-            <span class="text-[10px] font-bold uppercase text-rose-300 block">Camada 4 • 1,5% Exceção</span>
-            <h4 class="text-xs font-extrabold text-white mt-0.5">Fila Analista GRT (HITL)</h4>
-            <p class="text-[11px] text-slate-400 mt-1">
-              Apenas inconsistências reais ou rasuras graves chegam ao especialista humano da Bernhoeft.
-            </p>
-            <div class="mt-2 pt-2 border-t border-slate-800 flex justify-between text-xs font-bold">
-              <span id="sim-c4-pages" class="text-rose-300">71k págs</span>
-              <span class="text-rose-300">-95% Esforço</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Comparativo de Custo Mensal -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
-          <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center justify-between">
+        </article>
+      </div>
+      <div class="col-lg-7">
+        <article class="panel h-100">
+          <div class="panel-heading">
             <div>
-              <span class="text-xs text-slate-400 block">OCR Tradicional Nuvem (100% AWS Textract Forms)</span>
-              <span id="sim-cost-aws" class="text-xl font-extrabold text-rose-400 mono">R$ 410.400 / mês</span>
+              <p class="eyebrow">Demonstração</p>
+              <h2>Cenários</h2>
             </div>
-            <span class="px-2 py-1 rounded bg-rose-500/15 text-rose-300 text-xs font-bold">Inviável</span>
+            <span id="active-job-badge" class="job-status">Carregando lote...</span>
           </div>
-
-          <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center justify-between">
-            <div>
-              <span class="text-xs text-slate-400 block">LLM Direta Sem Funil (100% das páginas em Alta Res)</span>
-              <span id="sim-cost-llm-raw" class="text-xl font-extrabold text-amber-400 mono">R$ 164.160 / mês</span>
-            </div>
-            <span class="px-2 py-1 rounded bg-amber-500/15 text-amber-300 text-xs font-bold">Desperdício</span>
-          </div>
-
-          <div class="p-4 rounded-xl bg-emerald-500/15 border-2 border-emerald-400 flex items-center justify-between">
-            <div>
-              <span class="text-xs text-emerald-200 font-bold block">Nossa Arquitetura (Funil Híbrido 5 Camadas)</span>
-              <span id="sim-cost-ours" class="text-2xl font-extrabold text-emerald-300 mono">R$ 1.290 / mês</span>
-            </div>
-            <span class="px-2.5 py-1 rounded-lg bg-emerald-400 text-slate-950 text-xs font-extrabold">99,7% Economia</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- MODAL: CONFIGURAR GEMINI API KEY -->
-  <div id="modal-apikey" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-md w-full p-5 space-y-4 shadow-2xl">
-      <div class="flex items-center justify-between">
-        <h3 class="text-base font-bold text-white flex items-center gap-2">
-          <i data-lucide="key" class="w-5 h-5 text-amber-400"></i>
-          Chave Gemini Multimodal (Opcional)
-        </h3>
-        <button onclick="closeApiKeyModal()" class="text-slate-400 hover:text-white">
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
-      </div>
-      <p class="text-xs text-slate-300 leading-relaxed">
-        O sistema opera nativamente com o Funil Híbrido Bernhoeft (100% gratuito). Se desejar conectar sua chave do <strong>Google AI Studio (Gemini 3.8 Flash)</strong> para a Camada 3, insira abaixo:
-      </p>
-      <input
-        id="input-gemini-key"
-        type="password"
-        placeholder="AIzaSy..."
-        class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-xs text-white mono focus:outline-none focus:border-sky-500"
-      />
-      <div class="flex justify-end gap-2">
-        <button onclick="closeApiKeyModal()" class="px-4 py-2 rounded-xl bg-slate-800 text-xs font-semibold text-slate-300">
-          Cancelar
-        </button>
-        <button onclick="saveApiKey()" class="px-4 py-2 rounded-xl bg-sky-500 text-slate-950 text-xs font-bold">
-          Salvar Chave
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL: ORGANIZAÇÃO DOS SQUADS -->
-  <div id="modal-team" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-6 space-y-4 shadow-2xl">
-      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
-        <div>
-          <h3 class="text-base font-extrabold text-white">Organização Oficial da Equipe — Document AI Factory</h3>
-          <p class="text-xs text-slate-400">Divisão de responsabilidades no ClickUp e na Arquitetura Bernhoeft</p>
-        </div>
-        <button onclick="closeTeamModal()" class="text-slate-400 hover:text-white">
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-        <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
-          <span class="text-sky-400 font-bold uppercase block mb-1">👑 Liderança & Pitch</span>
-          <p class="text-slate-200"><strong>Lucas (Líder):</strong> Coordenação dos Squads, Estratégia FinOps 950k, Pitch e Demo ao Vivo.</p>
-        </div>
-        <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
-          <span class="text-blue-400 font-bold uppercase block mb-1">🎨 Squad 1: Frontend & UX</span>
-          <p class="text-slate-200"><strong>Jair (Dev 1):</strong> Uploader, Visor Lado a Lado e Exportação PDF/ZIP.<br/><strong>Davi (Dev 2):</strong> Fila do Analista GRT (HITL) & Toggle LGPD.</p>
-        </div>
-        <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
-          <span class="text-emerald-400 font-bold uppercase block mb-1">⚙️ Squad 2: Backend & IA Core</span>
-          <p class="text-slate-200">
-            <strong>Luis Miguel (Dev 3):</strong> FastAPI, Fatiador & Recorte PDF/ZIP.<br/>
-            <strong>Jamerson (Dev 4):</strong> Motor Gemini Multimodal, AR, Manuscritos & Funil 950k.<br/>
-            <strong>Lennarth (Dev 5):</strong> Retomada após Falha (SQLite) & HITL API.
-          </p>
-        </div>
-        <div class="p-3 rounded-xl bg-slate-950 border border-slate-800">
-          <span class="text-purple-400 font-bold uppercase block mb-1">🛡️ Squad 3: Segurança LGPD & QA</span>
-          <p class="text-slate-200"><strong>Thaynara (Dev 6):</strong> Anonimização de Dados Sensíveis (Tarjas na Imagem e Máscaras PII) + Dossiês de Teste GRT.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    let allJobs = [];
-    let currentJob = null;
-    let selectedDocId = null;
-    let selectedPageNum = 1;
-    let lgpdAnonymizedMode = false;
-    let activeTab = 'explorer';
-    let ocrSearchQuery = '';
-    let userGeminiKey = localStorage.getItem('GEMINI_API_KEY') || '';
-
-    const DOC_TYPE_LABELS = {
-      AVISO_RECEBIMENTO_CORREIOS: { label: 'AR Correios (Notificação GRT / Compliance)', color: 'bg-amber-500/20 text-amber-300 border-amber-500/40' },
-      DOCUMENTO_MANUSCRITO: { label: 'Termo Manuscrito (EPI / Apontamento Horas)', color: 'bg-purple-500/20 text-purple-300 border-purple-500/40' },
-      ASO_SAUDE_OCUPACIONAL: { label: 'ASO - Saúde Ocupacional (SST / NR-07)', color: 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40' },
-      FICHA_EPI_MANUSCRITA: { label: 'Ficha de Entrega de EPI (NR-06)', color: 'bg-fuchsia-500/20 text-fuchsia-300 border-fuchsia-500/40' },
-      CARTAO_PONTO_TRABALHISTA: { label: 'Cartão de Ponto / Cálculo Judicial', color: 'bg-orange-500/20 text-orange-300 border-orange-500/40' },
-      CERTIDAO_NEGATIVA_CND: { label: 'Certidão Negativa (CNDT / FGTS / INSS)', color: 'bg-teal-500/20 text-teal-300 border-teal-500/40' },
-      CNH: { label: 'CNH Colaborador Terceiro (Mobilização GRT)', color: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' },
-      RG: { label: 'RG - Identificação de Terceiro', color: 'bg-teal-500/20 text-teal-300 border-teal-500/40' },
-      CONTRATO: { label: 'Contrato de Prestação de Serviços Terceirizados', color: 'bg-sky-500/20 text-sky-300 border-sky-500/40' },
-      COMPROVANTE_RESIDENCIA: { label: 'Comprovante de Residência', color: 'bg-indigo-500/20 text-indigo-300 border-indigo-500/40' },
-      NOTA_FISCAL: { label: 'Nota Fiscal / BPO Fiscal', color: 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40' },
-      HOLERITE: { label: 'Folha Analítica (FOPAG / Holerite)', color: 'bg-lime-500/20 text-lime-300 border-lime-500/40' },
-      OUTROS: { label: 'Outros Documentos de Terceiros', color: 'bg-slate-700 text-slate-300 border-slate-600' },
-    };
-
-    async function initApp() {
-      updateApiKeyBadge();
-      updateFinopsSimulator(950000);
-      await fetchJobs();
-      lucide.createIcons();
-    }
-
-    async function fetchJobs(preferJobId = null) {
-      const res = await fetch('/api/jobs');
-      allJobs = await res.json();
-      renderJobHistorySelect();
-      if (allJobs.length > 0) {
-        const target = preferJobId ? allJobs.find(j => j.job_id === preferJobId) : allJobs[0];
-        setCurrentJob(target || allJobs[0]);
-      }
-    }
-
-    function setCurrentJob(job) {
-      currentJob = job;
-      const docs = job.documents || [];
-      if (docs.length > 0) {
-        const keep = docs.find(d => d.id === selectedDocId);
-        const activeDoc = keep || docs[0];
-        selectedDocId = activeDoc.id;
-        selectedPageNum = activeDoc.pagina_inicial || 1;
-      } else {
-        selectedDocId = null;
-        selectedPageNum = 1;
-      }
-      renderAll();
-    }
-
-    function renderJobHistorySelect() {
-      const sel = document.getElementById('job-history-select');
-      sel.innerHTML = allJobs.map(j => {
-        const st = j.status === 'INTERRUPTED_FAILURE' ? '⚠️ FALHA PARCIAL' : (j.status === 'NEEDS_HUMAN_REVIEW' ? '🔎 REVISÃO GRT' : '✅ CONCLUÍDO');
-        return `<option value="${j.job_id}" ${currentJob && currentJob.job_id === j.job_id ? 'selected' : ''}>
-          ${j.job_id} • ${j.filename} (${st})
-        </option>`;
-      }).join('');
-    }
-
-    async function selectJobById(jobId) {
-      const res = await fetch(`/api/jobs/${jobId}`);
-      if (res.ok) {
-        const job = await res.json();
-        setCurrentJob(job);
-      }
-    }
-
-    async function triggerPreset(preset) {
-      document.getElementById('active-job-badge').textContent = 'Processando lote no Funil Híbrido Bernhoeft...';
-      const q = userGeminiKey ? `?api_key=${encodeURIComponent(userGeminiKey)}` : '';
-      const res = await fetch(`/api/jobs/demo/${preset}${q}`, { method: 'POST' });
-      const newJob = await res.json();
-      await fetchJobs(newJob.job_id);
-    }
-
-    async function handleFileUpload(ev) {
-      const file = ev.target.files[0];
-      if (!file) return;
-      const simFail = document.getElementById('chk-simulate-fail').checked;
-      const formData = new FormData();
-      formData.append('file', file);
-      if (simFail) formData.append('simulate_failure_at_page', '3');
-      if (userGeminiKey) formData.append('api_key', userGeminiKey);
-
-      document.getElementById('active-job-badge').textContent = `Fatiando e classificando ${file.name}...`;
-      const res = await fetch('/api/jobs/upload', { method: 'POST', body: formData });
-      if (res.ok) {
-        const newJob = await res.json();
-        ev.target.value = '';
-        await fetchJobs(newJob.job_id);
-      }
-    }
-
-    async function resumeCurrentJob() {
-      if (!currentJob) return;
-      document.getElementById('active-job-badge').textContent = 'Retomando páginas pendentes a partir do checkpoint SQLite...';
-      const q = userGeminiKey ? `?api_key=${encodeURIComponent(userGeminiKey)}` : '';
-      const res = await fetch(`/api/jobs/${currentJob.job_id}/resume${q}`, { method: 'POST' });
-      if (res.ok) {
-        const updated = await res.json();
-        await fetchJobs(updated.job_id);
-      }
-    }
-
-    function exportCurrentJobZip() {
-      if (!currentJob) return;
-      window.location.href = `/api/jobs/${currentJob.job_id}/export-zip?anonymized=${lgpdAnonymizedMode}`;
-    }
-
-    function downloadSingleDocPdf(docId) {
-      window.location.href = `/api/documents/${docId}/pdf?anonymized=${lgpdAnonymizedMode}`;
-    }
-
-    function toggleLgpdMode() {
-      lgpdAnonymizedMode = !lgpdAnonymizedMode;
-      const btn = document.getElementById('btn-lgpd-toggle');
-      const dot = document.getElementById('lgpd-dot');
-      const lbl = document.getElementById('lgpd-label');
-      const zipLbl = document.getElementById('btn-zip-label');
-      if (lgpdAnonymizedMode) {
-        btn.className = 'flex items-center gap-2.5 px-3.5 py-2 rounded-xl border text-xs font-bold transition-all duration-200 bg-rose-500/20 border-rose-500 text-rose-200 shadow-lg shadow-rose-500/20';
-        dot.className = 'w-2.5 h-2.5 rounded-full bg-rose-400 animate-ping';
-        lbl.textContent = 'Anonimização LGPD: ATIVA (PII Tarjado)';
-        zipLbl.textContent = 'Baixar PDFs Tarjados LGPD (.ZIP)';
-      } else {
-        btn.className = 'flex items-center gap-2.5 px-3.5 py-2 rounded-xl border text-xs font-bold transition-all duration-200 bg-slate-900 border-slate-700 text-slate-300 hover:border-sky-500/50';
-        dot.className = 'w-2.5 h-2.5 rounded-full bg-slate-500';
-        lbl.textContent = 'Anonimização LGPD: DESATIVADA';
-        zipLbl.textContent = 'Baixar PDFs Separados (.ZIP)';
-      }
-      renderAll();
-    }
-
-    function switchTab(tab) {
-      activeTab = tab;
-      const expBtn = document.getElementById('tab-btn-explorer');
-      const hitlBtn = document.getElementById('tab-btn-hitl');
-      const finBtn = document.getElementById('tab-btn-finops');
-      const expView = document.getElementById('view-explorer');
-      const hitlView = document.getElementById('view-hitl');
-      const finView = document.getElementById('view-finops');
-
-      expView.classList.add('hidden');
-      hitlView.classList.add('hidden');
-      finView.classList.add('hidden');
-
-      expBtn.className = 'px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800';
-      hitlBtn.className = 'px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800';
-      finBtn.className = 'px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition bg-slate-900 text-emerald-300 hover:bg-slate-800 border border-emerald-500/30';
-
-      if (tab === 'explorer') {
-        expBtn.className = 'px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition bg-sky-500 text-slate-950 shadow-md shadow-sky-500/20';
-        expView.classList.remove('hidden');
-      } else if (tab === 'hitl') {
-        hitlBtn.className = 'px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition bg-rose-500 text-white shadow-md shadow-rose-500/20';
-        hitlView.classList.remove('hidden');
-      } else {
-        finBtn.className = 'px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition bg-emerald-400 text-slate-950 shadow-md shadow-emerald-500/20';
-        finView.classList.remove('hidden');
-      }
-      renderAll();
-    }
-
-    function updateFinopsSimulator(workersVal) {
-      const workers = parseInt(workersVal, 10);
-      const totalPages = workers * 5; // 5 páginas/mês por colaborador terceirizado
-      const fmtNum = (n) => n.toLocaleString('pt-BR');
-      const fmtCurrency = (v) => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
-
-      document.getElementById('sim-workers-label').textContent = `${fmtNum(workers)} terceiros (${fmtNum(totalPages)} págs/mês)`;
-      document.getElementById('sim-c0-pages').textContent = `${fmtNum(Math.round(totalPages * 0.35))} págs`;
-      document.getElementById('sim-c1-pages').textContent = `${fmtNum(Math.round(totalPages * 0.40))} págs`;
-      document.getElementById('sim-c2-pages').textContent = `${fmtNum(Math.round(totalPages * 0.15))} págs`;
-
-      const geminiPages = Math.round(totalPages * 0.10);
-      const hitlPages = Math.round(totalPages * 0.015);
-      const geminiCostBrl = Math.round((geminiPages * 258 / 1000000) * 0.45 * 5.75);
-      const infraFixedBrl = 800;
-
-      document.getElementById('sim-c3-pages').textContent = `${fmtNum(geminiPages)} págs`;
-      document.getElementById('sim-c3-cost').textContent = `~${fmtCurrency(geminiCostBrl)} API`;
-      document.getElementById('sim-c4-pages').textContent = `${fmtNum(hitlPages)} págs`;
-
-      const awsCostBrl = Math.round((totalPages / 1000) * 15 * 5.76);
-      const rawLlmCostBrl = Math.round((totalPages / 1000) * 6 * 5.76);
-      const ourTotalCostBrl = geminiCostBrl + infraFixedBrl;
-
-      document.getElementById('sim-cost-aws').textContent = `${fmtCurrency(awsCostBrl)} / mês`;
-      document.getElementById('sim-cost-llm-raw').textContent = `${fmtCurrency(rawLlmCostBrl)} / mês`;
-      document.getElementById('sim-cost-ours').textContent = `${fmtCurrency(ourTotalCostBrl)} / mês`;
-    }
-
-    function handleOcrSearch(val) {
-      ocrSearchQuery = val.trim();
-      const clearBtn = document.getElementById('btn-clear-search');
-      if (ocrSearchQuery) clearBtn.classList.remove('hidden');
-      else clearBtn.classList.add('hidden');
-      renderAll();
-    }
-
-    function clearOcrSearch() {
-      document.getElementById('ocr-search-input').value = '';
-      handleOcrSearch('');
-    }
-
-    function highlightOcrText(text, query) {
-      const escaped = (text || '')
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;');
-      if (!query) return escaped;
-      const safeQ = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const regex = new RegExp(`(${safeQ})`, 'gi');
-      return escaped.replace(regex, '<mark class="ocr-highlight">$1</mark>');
-    }
-
-    function renderAll() {
-      if (!currentJob) return;
-      const docs = currentJob.documents || [];
-      const pages = currentJob.pages || [];
-      const pendingHitl = docs.filter(d => d.needs_review).length;
-      const handwrittenCount = docs.filter(d => d.possui_manuscrito || d.tipo === 'AVISO_RECEBIMENTO_CORREIOS' || d.tipo === 'DOCUMENTO_MANUSCRITO').length;
-      const tokensSaved = docs.reduce((acc, d) => acc + ((d.finops_telemetria && d.finops_telemetria.tokens_economizados) || 1200), 0);
-
-      document.getElementById('active-job-badge').textContent = `Lote Ativo: ${currentJob.job_id} (${currentJob.status})`;
-      document.getElementById('kpi-pages').textContent = `${currentJob.completed_pages} / ${currentJob.total_pages}`;
-      document.getElementById('kpi-docs').textContent = `${docs.length} PDFs`;
-      document.getElementById('kpi-handwritten').textContent = handwrittenCount;
-      document.getElementById('kpi-tokens-saved').textContent = `${tokensSaved.toLocaleString('pt-BR')} tok`;
-      document.getElementById('kpi-review').textContent = `${pendingHitl} pendente(s)`;
-      document.getElementById('badge-tab-docs').textContent = docs.length;
-      document.getElementById('badge-tab-hitl').textContent = pendingHitl;
-
-      renderCheckpointGrid(pages);
-      renderDocumentsList(docs);
-      renderDocumentInspector(docs);
-      renderHitlQueue(docs);
-      lucide.createIcons();
-    }
-
-    function renderCheckpointGrid(pages) {
-      const banner = document.getElementById('failure-banner');
-      if (currentJob.status === 'INTERRUPTED_FAILURE') {
-        banner.classList.remove('hidden');
-        document.getElementById('failure-reason-text').textContent = currentJob.failure_reason || 'Falha durante o processamento de página.';
-      } else {
-        banner.classList.add('hidden');
-      }
-
-      const container = document.getElementById('checkpoint-pages-grid');
-      container.innerHTML = pages.map(p => {
-        let style = 'bg-slate-950 border-slate-800 text-slate-400';
-        let badge = '⏳ PENDENTE';
-        if (p.status === 'COMPLETED') {
-          style = 'bg-emerald-500/10 border-emerald-500/30 text-emerald-300';
-          badge = `✅ SALVO (${p.processed_at || 'OK'})`;
-        } else if (p.status === 'FAILED') {
-          style = 'bg-rose-500/20 border-rose-500 text-rose-200 animate-pulse';
-          badge = '❌ FALHA AQUI';
-        }
-        return `
-          <div class="p-2.5 rounded-xl border ${style} flex items-center justify-between text-xs">
-            <span class="font-bold">Página ${p.page_number}</span>
-            <span class="text-[10px] mono font-semibold">${badge}</span>
-          </div>
-        `;
-      }).join('');
-    }
-
-    function getFilteredDocs(docs) {
-      if (!ocrSearchQuery) return docs;
-      const q = ocrSearchQuery.toLowerCase();
-      return docs.filter(d => {
-        const textToSearch = lgpdAnonymizedMode ? (d.texto_ocr_anonimizado || d.texto_ocr) : d.texto_ocr;
-        return (
-          textToSearch.toLowerCase().includes(q) ||
-          d.tipo.toLowerCase().includes(q) ||
-          (d.titulo_resumo || '').toLowerCase().includes(q)
-        );
-      });
-    }
-
-    function renderDocumentsList(docs) {
-      const container = document.getElementById('documents-list-container');
-      if (currentJob.status === 'INTERRUPTED_FAILURE' && docs.length === 0) {
-        container.innerHTML = `
-          <div class="p-5 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-center space-y-3">
-            <p class="text-xs text-amber-200 font-semibold">
-              O lote foi interrompido na Página ${currentJob.failed_page} antes da consolidação final.
-            </p>
-            <button onclick="resumeCurrentJob()" class="px-4 py-2 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs">
-              ⚡ Retomar da Página ${currentJob.failed_page} Agora
+          <div class="scenario-grid">
+            <button class="scenario scenario-primary" type="button" onclick="triggerPreset('lote_completo')">
+              <span class="scenario-index">01</span><strong>Dossiê completo</strong>
+              <small>CNH, AR, EPI e contrato</small>
+            </button>
+            <button class="scenario scenario-warning" type="button" onclick="triggerPreset('simular_falha')">
+              <span class="scenario-index">02</span><strong>Simular queda</strong>
+              <small>Interrupção na página 4</small>
+            </button>
+            <button class="scenario scenario-review" type="button" onclick="triggerPreset('lote_hitl')">
+              <span class="scenario-index">03</span><strong>Fila humana</strong>
+              <small>ASO + AR rasurado</small>
             </button>
           </div>
-        `;
-        return;
-      }
-
-      const filtered = getFilteredDocs(docs);
-      if (filtered.length === 0) {
-        container.innerHTML = `<div class="p-4 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-400 text-center">Nenhum documento encontrado para "${ocrSearchQuery}".</div>`;
-        return;
-      }
-
-      container.innerHTML = filtered.map(doc => {
-        const isSelected = doc.id === selectedDocId;
-        const meta = DOC_TYPE_LABELS[doc.tipo] || DOC_TYPE_LABELS.OUTROS;
-        const pct = Math.round(doc.confianca * 100);
-        const confBadge = doc.needs_review
-          ? `<span class="px-2 py-0.5 rounded-md bg-rose-500/20 text-rose-300 border border-rose-500/40 text-[10px] font-bold">🔴 ${pct}% • Bloqueio GRT</span>`
-          : `<span class="px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[10px] font-bold">🟢 ${pct}% • Catraca OK</span>`;
-
-        const pageRangeLabel = doc.paginas.length > 1
-          ? `Págs ${doc.pagina_inicial}–${doc.pagina_final} (${doc.paginas.length} agrupadas)`
-          : `Página ${doc.pagina_inicial}`;
-
-        return `
-          <div
-            onclick="selectDocument('${doc.id}')"
-            class="cursor-pointer p-3.5 rounded-2xl border transition-all ${
-              isSelected
-                ? 'bg-sky-500/15 border-sky-400 shadow-lg shadow-sky-500/10'
-                : 'bg-slate-900/90 border-slate-800 hover:border-slate-700'
-            }"
-          >
-            <div class="flex items-center justify-between gap-2 mb-1.5">
-              <span class="px-2.5 py-0.5 rounded-lg border text-[11px] font-bold ${meta.color}">
-                ${meta.label}
-              </span>
-              ${confBadge}
-            </div>
-
-            <h4 class="text-xs font-bold text-white mb-1">${doc.titulo_resumo}</h4>
-            <p class="text-[11px] text-emerald-400/90 font-medium mb-1">🏢 ${doc.empresa_nome || 'AGROTECH LTDA'} • 👷 ${lgpdAnonymizedMode ? '[TITULAR PROTEGIDO LGPD]' : (doc.funcionario_nome || 'Colaborador')}</p>
-
-            <div class="flex flex-wrap items-center justify-between gap-2 text-[10.5px] text-slate-400 mt-2 pt-2 border-t border-slate-800/80">
-              <span class="font-semibold text-sky-300 truncate max-w-[230px]" title="${doc.pasta_destino_rh}/${doc.nome_arquivo_separado}">📂 ${doc.nome_arquivo_separado || pageRangeLabel}</span>
-              ${doc.possui_manuscrito ? '<span class="text-amber-300 font-semibold">✍️ Escrita à Mão</span>' : ''}
-            </div>
+          <div class="kpi-grid">
+            <div><small>Páginas</small><strong id="kpi-pages">0 / 0</strong></div>
+            <div><small>Documentos</small><strong id="kpi-docs">0</strong></div>
+            <div><small>Manuscritos</small><strong id="kpi-handwritten">0</strong></div>
+            <div><small>HITL</small><strong id="kpi-review">0 pendentes</strong></div>
           </div>
-        `;
-      }).join('');
-    }
+        </article>
+      </div>
+    </section>
 
-    function selectDocument(docId) {
-      selectedDocId = docId;
-      const doc = (currentJob.documents || []).find(d => d.id === docId);
-      if (doc) selectedPageNum = doc.pagina_inicial;
-      renderAll();
-    }
-
-    function selectPageInDoc(pnum) {
-      selectedPageNum = pnum;
-      renderAll();
-    }
-
-    function renderDocumentInspector(docs) {
-      const container = document.getElementById('document-inspector-content');
-      const doc = docs.find(d => d.id === selectedDocId) || docs[0];
-      if (!doc) {
-        container.innerHTML = `<div class="p-8 text-center text-slate-400 text-xs">Selecione ou processe um lote documental para visualizar.</div>`;
-        return;
-      }
-
-      const meta = DOC_TYPE_LABELS[doc.tipo] || DOC_TYPE_LABELS.OUTROS;
-      const pct = Math.round(doc.confianca * 100);
-      const imgUrl = `/api/pages/${currentJob.job_id}/${selectedPageNum}?anonymized=${lgpdAnonymizedMode}&t=${Date.now()}`;
-      const displayOcr = lgpdAnonymizedMode ? (doc.texto_ocr_anonimizado || doc.texto_ocr) : doc.texto_ocr;
-
-      // Bloco Especial se for AR dos Correios
-      let arBlockHtml = '';
-      if (doc.tipo === 'AVISO_RECEBIMENTO_CORREIOS' && doc.campos_ar) {
-        const ar = doc.campos_ar;
-        const maskIfLgpd = (val) => lgpdAnonymizedMode ? '[PROTEGIDO PELA LGPD]' : (val || '—');
-        arBlockHtml = `
-          <div class="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/30 space-y-2">
-            <div class="flex items-center justify-between">
-              <span class="text-xs font-extrabold uppercase tracking-wider text-amber-300 flex items-center gap-1.5">
-                📬 Extração Especializada: Aviso de Recebimento (AR Correios)
-              </span>
-              <span class="mono text-xs font-bold px-2 py-0.5 rounded bg-amber-400 text-slate-950">
-                ${ar.codigo_rastreio || 'BR984512390BR'}
-              </span>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-              <div class="bg-slate-950/70 p-2 rounded-lg">
-                <span class="text-[10px] text-slate-400 block">Destinatário Auditado:</span>
-                <span class="font-semibold text-white">${maskIfLgpd(ar.destinatario)}</span>
-              </div>
-              <div class="bg-slate-950/70 p-2 rounded-lg">
-                <span class="text-[10px] text-slate-400 block">Data de Entrega (Escrita à Mão):</span>
-                <span class="font-semibold text-amber-300">${ar.data_entrega_manuscrita || '05/11/2026'}</span>
-              </div>
-              <div class="bg-slate-950/70 p-2 rounded-lg">
-                <span class="text-[10px] text-slate-400 block">Recebedor Manuscrito (À Caneta):</span>
-                <span class="font-semibold text-sky-300">${maskIfLgpd(ar.nome_recebedor_manuscrito)}</span>
-              </div>
-              <div class="bg-slate-950/70 p-2 rounded-lg">
-                <span class="text-[10px] text-slate-400 block">Doc. Identidade Manuscrito:</span>
-                <span class="font-semibold text-white">${maskIfLgpd(ar.documento_recebedor_manuscrito)}</span>
-              </div>
-            </div>
-          </div>
-        `;
-      }
-
-      // Checklist de Compliance GRT Bernhoeft
-      const checklist = doc.compliance_checklist || [];
-      const checklistHtml = checklist.length > 0 ? `
-        <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 space-y-2">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">
-              🏢 Motor de Compliance GRT Bernhoeft (Parecer de Catraca)
-            </span>
-            <span class="px-2 py-0.5 rounded text-[10px] font-extrabold ${
-              doc.needs_review ? 'bg-rose-500/20 text-rose-300' : 'bg-emerald-500/20 text-emerald-300'
-            }">
-              ${doc.status_mobilizacao || 'APTO PARA MOBILIZAÇÃO'}
-            </span>
-          </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-[11px]">
-            ${checklist.map(c => `
-              <div class="p-2 rounded-lg border ${
-                c.aprovado ? 'bg-emerald-500/5 border-emerald-500/20 text-slate-200' : 'bg-rose-500/10 border-rose-500/30 text-rose-200'
-              }">
-                <div class="font-bold flex items-center gap-1">
-                  <span>${c.aprovado ? '✅' : '⚠️'}</span>
-                  <span>${c.regra}</span>
-                </div>
-                <p class="text-[10px] text-slate-400 mt-0.5">${c.detalhe}</p>
-              </div>
-            `).join('')}
-          </div>
+    <section class="panel checkpoint-panel mb-3">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">Processamento</p>
+          <h2>Esteira e checkpoints</h2>
         </div>
-      ` : '';
-
-      // Telemetria FinOps do Documento
-      const fin = doc.finops_telemetria || {
-        camada_roteamento: 'Camada 1: Extração Nativa PyMuPDF (0 Tokens)',
-        sha256_hash: 'a8f9c2d1e4b7',
-        tokens_consumidos: 0,
-        tokens_economizados: 1500,
-      };
-
-      container.innerHTML = `
-        <div class="space-y-4">
-          <!-- Cabeçalho do Documento Selecionado + Botão Download PDF Recortado -->
-          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-3">
-            <div>
-              <div class="flex items-center flex-wrap gap-2 mb-1">
-                <span class="px-2.5 py-0.5 rounded-lg border text-xs font-bold ${meta.color}">${meta.label}</span>
-                <span class="text-xs mono text-slate-400">Início: Pág ${doc.pagina_inicial} ➔ Fim: Pág ${doc.pagina_final}</span>
-                <span class="px-2 py-0.5 rounded bg-slate-800 text-[11px] mono text-sky-300">${doc.nome_arquivo_separado || ''}</span>
-              </div>
-              <h3 class="text-base font-extrabold text-white">${doc.titulo_resumo}</h3>
-            </div>
-
-            <div class="flex items-center flex-wrap gap-2">
-              <button
-                onclick="downloadSingleDocPdf('${doc.id}')"
-                class="px-3 py-1.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-xs flex items-center gap-1.5 shadow-md shadow-sky-500/10 transition"
-              >
-                <i data-lucide="file-down" class="w-4 h-4"></i>
-                <span>Baixar PDF Recortado (${lgpdAnonymizedMode ? 'LGPD' : 'Original'})</span>
-              </button>
-
-              ${
-                doc.needs_review
-                  ? `<button onclick="switchTab('hitl')" class="px-3 py-1.5 rounded-xl bg-rose-500 hover:bg-rose-400 text-white font-bold text-xs flex items-center gap-1.5">
-                      <span>Resolver na Fila GRT (${pct}%)</span>
-                    </button>`
-                  : `<span class="px-3 py-1.5 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 font-bold text-xs">
-                      ✓ Catraca Liberada (${pct}%)
-                    </span>`
-              }
-            </div>
-          </div>
-
-          <!-- Barra de Indexação Automática para o RH (Empresa -> Colaborador -> Pasta/Arquivo) -->
-          <div class="p-3 rounded-xl bg-sky-500/10 border border-sky-500/30 space-y-1.5 text-xs">
-            <div class="flex flex-wrap items-center justify-between gap-2">
-              <span class="font-extrabold text-sky-300 uppercase tracking-wider text-[11px]">
-                📂 Indexação Automática de Dossiê para o RH (Padrão Portal Bernhoeft)
-              </span>
-              <span class="text-[11px] text-emerald-300 font-semibold">
-                🏢 ${doc.empresa_nome || 'AGROTECH GARANHUNS LTDA'} (${doc.empresa_cnpj || '14.589.201/0001-88'})
-              </span>
-            </div>
-            <div class="flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-200">
-              <span>
-                👷 <strong>Titular Vinculado:</strong> ${lgpdAnonymizedMode ? '[PROTEGIDO PELA LGPD]' : (doc.funcionario_nome || 'CARLOS EDUARDO SILVA')}
-                (CPF: <span class="mono">${lgpdAnonymizedMode ? '***.712.903-**' : (doc.funcionario_cpf || '458.712.903-44')}</span>)
-              </span>
-            </div>
-            <div class="p-2 rounded-lg bg-slate-950/90 border border-slate-800 mono text-[11px] text-amber-300 overflow-x-auto">
-              📁 ${doc.pasta_destino_rh || 'EMPRESA_AGROTECH'}/${lgpdAnonymizedMode ? 'LGPD_' : ''}${doc.nome_arquivo_separado || 'documento.pdf'}
-            </div>
-          </div>
-
-          <!-- Barra de Telemetria FinOps deste Documento -->
-          <div class="p-2.5 rounded-xl bg-slate-950 border border-slate-800 flex flex-wrap items-center justify-between gap-2 text-xs">
-            <div class="flex items-center gap-2">
-              <span class="px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300 font-bold text-[11px]">
-                ⚡ ${fin.camada_roteamento}
-              </span>
-              <span class="mono text-[11px] text-slate-400">SHA-256: ${fin.sha256_hash}</span>
-            </div>
-            <div class="flex items-center gap-3 mono text-[11px]">
-              <span class="text-slate-300">Gastos: <strong>${fin.tokens_consumidos} tok</strong></span>
-              <span class="text-emerald-400">Economizados: <strong>+${fin.tokens_economizados} tok</strong></span>
-            </div>
-          </div>
-
-          <!-- Visor Lado a Lado: Imagem Original/Anonimizada vs OCR Pesquisável & Compliance -->
-          <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
-            <!-- Esquerda: Imagem da Página com seletor de páginas agrupadas -->
-            <div class="md:col-span-6 flex flex-col space-y-2">
-              <div class="flex items-center justify-between">
-                <span class="text-xs font-bold text-slate-300">
-                  Visualização da Página (${lgpdAnonymizedMode ? '🔒 Com Tarjas LGPD' : '📄 Original'})
-                </span>
-                <div class="flex items-center gap-1">
-                  ${doc.paginas.map(pnum => `
-                    <button
-                      onclick="selectPageInDoc(${pnum})"
-                      class="px-2.5 py-1 rounded-lg text-xs font-bold transition ${
-                        selectedPageNum === pnum
-                          ? 'bg-sky-500 text-slate-950'
-                          : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
-                      }"
-                    >
-                      Pág ${pnum}
-                    </button>
-                  `).join('')}
-                </div>
-              </div>
-
-              <div class="rounded-xl overflow-hidden border border-slate-700 bg-slate-950 flex items-center justify-center min-h-[420px]">
-                <img
-                  src="${imgUrl}"
-                  alt="Página ${selectedPageNum}"
-                  class="max-h-[520px] w-auto object-contain"
-                />
-              </div>
-            </div>
-
-            <!-- Direita: Checklist Compliance GRT + Campos AR + OCR Pesquisável + Auditoria LGPD -->
-            <div class="md:col-span-6 flex flex-col space-y-3">
-              ${checklistHtml}
-              ${arBlockHtml}
-
-              <div class="flex-1 flex flex-col bg-slate-950 border border-slate-800 rounded-xl p-3.5">
-                <div class="flex items-center justify-between mb-2">
-                  <span class="text-xs font-bold uppercase tracking-wider text-sky-400">
-                    📝 OCR Pesquisável (Impresso + Manuscrito)
-                  </span>
-                  <span class="text-[11px] text-slate-400">
-                    ${lgpdAnonymizedMode ? '🛡️ PII Mascarado' : 'Texto Integral'}
-                  </span>
-                </div>
-                <pre class="mono text-xs text-slate-200 whitespace-pre-wrap leading-relaxed overflow-y-auto max-h-[210px] p-2 rounded bg-slate-900/70">${highlightOcrText(displayOcr, ocrSearchQuery)}</pre>
-              </div>
-
-              <!-- Lista de Dados Sensíveis Protegidos pela LGPD -->
-              <div class="bg-slate-950 border border-slate-800 rounded-xl p-3">
-                <div class="flex items-center justify-between mb-1.5">
-                  <span class="text-xs font-bold text-purple-300">
-                    🛡️ Mapeamento de Dados Sensíveis (LGPD • ${doc.dados_sensiveis_lgpd ? doc.dados_sensiveis_lgpd.length : 0} itens detectados)
-                  </span>
-                </div>
-                <div class="flex flex-wrap gap-1.5">
-                  ${
-                    (doc.dados_sensiveis_lgpd || []).length > 0
-                      ? doc.dados_sensiveis_lgpd.map(item => `
-                          <span class="px-2 py-1 rounded-md bg-purple-500/15 border border-purple-500/30 text-[11px] text-purple-200 mono">
-                            <strong>${item.tipo}:</strong> ${item.valor_mascarado}
-                          </span>
-                        `).join('')
-                      : '<span class="text-xs text-slate-500">Nenhum dado sensível crítico adicional.</span>'
-                  }
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="history-control">
+          <label for="job-history-select">Histórico</label>
+          <select id="job-history-select" class="form-select" onchange="selectJobById(this.value)"></select>
         </div>
-      `;
-    }
+      </div>
+      <div id="failure-banner" class="failure-banner d-none">
+        <div><strong>Interrupção detectada</strong><span id="failure-reason-text"></span></div>
+        <button type="button" class="btn btn-warning" onclick="resumeCurrentJob()">Retomar processamento</button>
+      </div>
+      <div id="checkpoint-pages-grid" class="checkpoint-grid"></div>
+    </section>
 
-    function renderHitlQueue(docs) {
-      const container = document.getElementById('hitl-queue-container');
-      if (!docs || docs.length === 0) {
-        container.innerHTML = `<div class="p-6 rounded-xl bg-slate-900 border border-slate-800 text-center text-xs text-slate-400">Nenhum documento no lote atual.</div>`;
-        return;
-      }
+    <section class="workspace-toolbar mb-3">
+      <div class="nav-tabs-custom" role="tablist">
+        <button id="tab-btn-explorer" type="button" class="active" onclick="switchTab('explorer')">
+          <i class="bi bi-layers"></i> Documentos <span id="badge-tab-docs">0</span>
+        </button>
+        <button id="tab-btn-hitl" type="button" onclick="switchTab('hitl')">
+          <i class="bi bi-person-check"></i> Revisão humana <span id="badge-tab-hitl">0</span>
+        </button>
+      </div>
+      <div class="search-box">
+        <i class="bi bi-search"></i>
+        <input id="ocr-search-input" type="search" placeholder="Pesquisar no OCR" oninput="handleOcrSearch(this.value)">
+        <button id="btn-clear-search" type="button" class="d-none" onclick="clearOcrSearch()" aria-label="Limpar pesquisa">
+          <i class="bi bi-x"></i>
+        </button>
+      </div>
+    </section>
 
-      container.innerHTML = docs.map(doc => {
-        const pct = Math.round(doc.confianca * 100);
-        const isPending = doc.needs_review;
-        const borderClass = isPending ? 'border-rose-500/60 bg-rose-500/5' : 'border-slate-800 bg-slate-900/80';
+    <section id="view-explorer" class="workspace-grid">
+      <aside class="panel documents-panel">
+        <div class="panel-heading compact">
+          <div><p class="eyebrow">Identificados</p><h2>Documentos</h2></div>
+        </div>
+        <div id="documents-list-container"></div>
+      </aside>
+      <article class="panel inspector-panel">
+        <div id="document-inspector-content"></div>
+      </article>
+    </section>
 
-        return `
-          <div class="rounded-2xl border ${borderClass} p-4 sm:p-5 grid grid-cols-1 lg:grid-cols-12 gap-4">
-            <div class="lg:col-span-4 flex flex-col justify-between space-y-3">
-              <div>
-                <div class="flex items-center justify-between gap-2 mb-2">
-                  <span class="px-2.5 py-1 rounded-lg text-xs font-bold ${
-                    isPending ? 'bg-rose-500 text-white' : 'bg-emerald-500/20 text-emerald-300'
-                  }">
-                    ${isPending ? `⚠️ BLOQUEIO PREVENTIVO GRT (${pct}%)` : `✅ LIBERADO PARA CATRACA (${pct}%)`}
-                  </span>
-                  <span class="text-xs mono text-slate-400">Pág(s): ${doc.paginas.join(', ')}</span>
-                </div>
-                <h4 class="text-sm font-bold text-white">${doc.titulo_resumo}</h4>
-                ${
-                  doc.review_reason
-                    ? `<p class="mt-2 p-2.5 rounded-lg bg-rose-500/15 border border-rose-500/30 text-xs text-rose-200">
-                        <strong>Motivo da Retenção GRT:</strong> ${doc.review_reason}
-                      </p>`
-                    : ''
-                }
-              </div>
+    <section id="view-hitl" class="d-none">
+      <div class="panel hitl-summary mb-3">
+        <div>
+          <p class="eyebrow">Human-in-the-loop</p>
+          <h2>Estação de revisão</h2>
+        </div>
+        <p>Documentos abaixo de 78% de confiança ou com caligrafia rasurada ficam retidos para validação.</p>
+      </div>
+      <div id="hitl-queue-container"></div>
+    </section>
+  </main>
 
-              <div class="rounded-xl overflow-hidden border border-slate-700 bg-slate-950 flex justify-center">
-                <img
-                  src="/api/pages/${currentJob.job_id}/${doc.pagina_inicial}?anonymized=${lgpdAnonymizedMode}"
-                  class="max-h-56 object-contain"
-                  alt="Preview Revisão"
-                />
-              </div>
-            </div>
+  <div id="modal-apikey" class="app-modal d-none" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-heading"><h2><i class="bi bi-key"></i> Chave Gemini</h2><button type="button" onclick="closeApiKeyModal()"><i class="bi bi-x-lg"></i></button></div>
+      <p>Conecte opcionalmente uma chave do Google AI Studio.</p>
+      <input id="input-gemini-key" class="form-control" type="password" placeholder="AIzaSy...">
+      <div class="modal-actions"><button class="btn btn-secondary" type="button" onclick="closeApiKeyModal()">Cancelar</button><button class="btn btn-primary" type="button" onclick="saveApiKey()">Salvar</button></div>
+    </div>
+  </div>
 
-            <div class="lg:col-span-8 flex flex-col justify-between space-y-3">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div>
-                  <label class="text-xs font-bold text-slate-300 block mb-1">Classificação Documental Bernhoeft:</label>
-                  <select
-                    id="rev-type-${doc.id}"
-                    class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-xs text-white"
-                  >
-                    ${Object.keys(DOC_TYPE_LABELS).map(k => `
-                      <option value="${k}" ${doc.tipo === k ? 'selected' : ''}>${DOC_TYPE_LABELS[k].label}</option>
-                    `).join('')}
-                  </select>
-                </div>
-                <div>
-                  <label class="text-xs font-bold text-slate-300 block mb-1">Analista GRT Responsável:</label>
-                  <input
-                    id="rev-user-${doc.id}"
-                    type="text"
-                    value="${doc.revisado_por || 'Analista GRT Bernhoeft (Davi / Lucas)'}"
-                    class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-xs text-white"
-                  />
-                </div>
-              </div>
+  <div id="modal-team" class="app-modal d-none" role="dialog" aria-modal="true">
+    <div class="modal-card modal-wide">
+      <div class="modal-heading"><h2>Equipe Citadel AI Factory</h2><button type="button" onclick="closeTeamModal()"><i class="bi bi-x-lg"></i></button></div>
+      <div class="team-grid">
+        <div><span>Liderança</span><p><strong>Lucas</strong> — estratégia, narrativa e pitch.</p></div>
+        <div><span>Frontend & UX</span><p><strong>Jair</strong> e <strong>Davi</strong> — uploader, visor e revisão.</p></div>
+        <div><span>Backend & IA</span><p><strong>Luis Miguel</strong>, <strong>Jamerson</strong> e <strong>Lennarth</strong> — API, motor IA e retomada.</p></div>
+        <div><span>LGPD & QA</span><p><strong>Thaynara</strong> — anonimização e lotes oficiais.</p></div>
+      </div>
+    </div>
+  </div>
 
-              <div>
-                <label class="text-xs font-bold text-slate-300 block mb-1">
-                  Transcrição OCR / Manuscrito (Editável pelo Analista antes de liberar a mobilização):
-                </label>
-                <textarea
-                  id="rev-ocr-${doc.id}"
-                  rows="5"
-                  class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-xs text-slate-100 mono focus:outline-none focus:border-sky-500"
-                >${doc.texto_ocr}</textarea>
-              </div>
-
-              <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
-                <span class="text-xs text-slate-400">
-                  Parecer: <strong class="text-white">${doc.status_mobilizacao || doc.review_status}</strong>
-                </span>
-                <button
-                  onclick="submitHumanReview('${doc.id}')"
-                  class="px-5 py-2.5 rounded-xl bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-extrabold text-xs flex items-center gap-2 shadow-lg shadow-emerald-500/20 transition"
-                >
-                  <span>✅ Aprovar Documento e Liberar Catraca (HITL)</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        `;
-      }).join('');
-    }
-
-    async function submitHumanReview(docId) {
-      const tipo = document.getElementById(`rev-type-${docId}`).value;
-      const texto_ocr = document.getElementById(`rev-ocr-${docId}`).value;
-      const revisado_por = document.getElementById(`rev-user-${docId}`).value;
-
-      const res = await fetch(`/api/documents/${docId}/review`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          tipo,
-          texto_ocr,
-          revisado_por,
-          notas_revisao: 'Aprovado e liberado para mobilização na Fila GRT Bernhoeft',
-        }),
-      });
-      if (res.ok) {
-        const updatedJob = await res.json();
-        await fetchJobs(updatedJob.job_id);
-      }
-    }
-
-    function openApiKeyModal() {
-      document.getElementById('input-gemini-key').value = userGeminiKey;
-      document.getElementById('modal-apikey').classList.remove('hidden');
-    }
-    function closeApiKeyModal() {
-      document.getElementById('modal-apikey').classList.add('hidden');
-    }
-    function saveApiKey() {
-      userGeminiKey = document.getElementById('input-gemini-key').value.trim();
-      localStorage.setItem('GEMINI_API_KEY', userGeminiKey);
-      updateApiKeyBadge();
-      closeApiKeyModal();
-    }
-    function updateApiKeyBadge() {
-      const el = document.getElementById('api-key-badge');
-      el.textContent = userGeminiKey ? 'Gemini 3.8 (Key Ativa)' : 'Funil Gemini 3.8';
-    }
-    function openTeamModal() {
-      document.getElementById('modal-team').classList.remove('hidden');
-    }
-    function closeTeamModal() {
-      document.getElementById('modal-team').classList.add('hidden');
-    }
-
-    window.addEventListener('DOMContentLoaded', initApp);
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="/frontend/app.js"></script>
 </body>
 </html>
