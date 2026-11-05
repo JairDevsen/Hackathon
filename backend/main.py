@@ -1,15 +1,18 @@
 """
-API Principal FastAPI — Document AI Factory
+API Principal FastAPI — Document AI Factory (Bernhoeft Edition)
 Responsáveis na Equipe: Luis Miguel (API/Ingestão) & Lennarth (Resiliência/HITL)
 """
 import os
+import io
+import json
 import uuid
+import zipfile
 import fitz
 from pathlib import Path
 from typing import Optional
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse, StreamingResponse
 
 from .database import (
     init_db,
@@ -19,16 +22,16 @@ from .database import (
     update_single_document,
     save_job_documents,
 )
-from .ingestion import slice_batch_to_pages
-from .gemini_engine import process_or_resume_job
+from .ingestion import slice_batch_to_pages, STORAGE_ROOT
+from .gemini_engine import process_or_resume_job, _build_compliance_checklist
 from .sample_generator import ensure_sample_batches
 from .anonymizer import anonymize_ocr_text
 from .schemas import RevisaoHumanaInput
 
 app = FastAPI(
-    title="Document AI Factory API — Hack Garanhuns Tech 2026",
-    description="Pipeline Multimodal para Ingestão de Lotes, Quebra e Agrupamento de Páginas, Reconhecimento de AR/Manuscritos, Fila HITL, Retomada após Falha e Anonimização LGPD.",
-    version="1.0.0",
+    title="Document AI Factory API • Bernhoeft Edition — Hack Garanhuns Tech 2026",
+    description="Pipeline Multimodal para Ingestão de Lotes GRT/SST, Recorte Físico de Documentos em PDF/ZIP, Reconhecimento de AR/Manuscritos, Funil FinOps 950k, Fila HITL, Retomada após Falha e Anonimização LGPD.",
+    version="2.0.0",
 )
 
 app.add_middleware(
@@ -65,7 +68,7 @@ def _run_preset_batch(preset: str, simulate_failure_at_page: Optional[int] = Non
 
     pages_info = slice_batch_to_pages(job_id, file_bytes, filename)
     embedded_map = {p["page_number"]: p.get("embedded_text", "") for p in pages_info}
-    engine_mode = "GEMINI_3.8_FLASH_MULTIMODAL" if (api_key or os.environ.get("GEMINI_API_KEY")) else "GEMINI_MULTIMODAL_ENGINE"
+    engine_mode = "GEMINI_3.8_FLASH_MULTIMODAL" if (api_key or os.environ.get("GEMINI_API_KEY")) else "FUNIL_HIBRIDO_BERNHOEFT_950K"
 
     create_job(job_id, filename, len(pages_info), engine_mode, pages_info)
     job = process_or_resume_job(
@@ -100,7 +103,7 @@ def _serialize_job(job: dict) -> dict:
         "completed_pages": job["completed_pages"],
         "failed_page": job.get("failed_page"),
         "failure_reason": job.get("failure_reason"),
-        "engine_mode": job.get("engine_mode", "GEMINI_3.8_FLASH"),
+        "engine_mode": job.get("engine_mode", "FUNIL_HIBRIDO_BERNHOEFT_950K"),
         "created_at": job["created_at"],
         "pages": pages_out,
         "documents": job.get("documents", []),
@@ -142,7 +145,7 @@ async def api_upload_batch(
     filename = file.filename or "lote_digitalizado.pdf"
     pages_info = slice_batch_to_pages(job_id, file_bytes, filename)
     embedded_map = {p["page_number"]: p.get("embedded_text", "") for p in pages_info}
-    engine_mode = "GEMINI_3.8_FLASH_LIVE" if (api_key or os.environ.get("GEMINI_API_KEY")) else "GEMINI_MULTIMODAL_ENGINE"
+    engine_mode = "GEMINI_3.8_FLASH_LIVE" if (api_key or os.environ.get("GEMINI_API_KEY")) else "FUNIL_HIBRIDO_BERNHOEFT_950K"
 
     create_job(job_id, filename, len(pages_info), engine_mode, pages_info)
     job = process_or_resume_job(
@@ -169,15 +172,10 @@ def api_trigger_demo_preset(
 
 @app.post("/api/jobs/{job_id}/resume")
 def api_resume_failed_job(job_id: str, api_key: Optional[str] = Query(default=None)):
-    """
-    Diferencial de Retomada após Falha (Lennarth):
-    Continua exatamente da página que parou (ex: Página 4 de 6), sem reprocessar as páginas 1 a 3!
-    """
     job = get_job_full(job_id)
     if not job:
         raise HTTPException(status_code=404, detail="Job não encontrado")
 
-    # Recupera textos embutidos se for PDF de amostra para manter fidelidade total
     embedded_map = {}
     sample_path = SAMPLE_FILES.get("lote_completo")
     if sample_path and sample_path.exists() and job["total_pages"] == 6:
@@ -197,10 +195,6 @@ def api_resume_failed_job(job_id: str, api_key: Optional[str] = Query(default=No
 
 @app.patch("/api/documents/{doc_id}/review")
 def api_human_review_document(doc_id: str, payload: RevisaoHumanaInput):
-    """
-    Fila de Revisão Humana - HITL (Davi & Lennarth):
-    Aprova ou corrige a classificação, o OCR de manuscritos e os campos do AR dos Correios.
-    """
     all_jobs = list_all_jobs()
     target_job = None
     target_doc = None
@@ -224,14 +218,15 @@ def api_human_review_document(doc_id: str, payload: RevisaoHumanaInput):
     target_doc["needs_review"] = False
     target_doc["confianca"] = 1.0
     target_doc["review_status"] = "HUMAN_APPROVED"
+    target_doc["status_mobilizacao"] = "LIBERADO PARA CATRACA / MOBILIZAÇÃO (APROVADO ANALISTA GRT)"
     target_doc["revisado_por"] = payload.revisado_por
     target_doc["notas_revisao"] = payload.notas_revisao
     if payload.campos_ar is not None:
         target_doc["campos_ar"] = payload.campos_ar
+    target_doc["compliance_checklist"] = _build_compliance_checklist(target_doc)
 
     update_single_document(doc_id, target_doc)
 
-    # Atualiza status geral do job se todos os documentos foram revisados
     refreshed = get_job_full(target_job["job_id"])
     still_needs_review = any(d.get("needs_review") for d in refreshed.get("documents", []))
     save_job_documents(
@@ -240,6 +235,87 @@ def api_human_review_document(doc_id: str, payload: RevisaoHumanaInput):
         final_status="NEEDS_HUMAN_REVIEW" if still_needs_review else "COMPLETED",
     )
     return _serialize_job(get_job_full(target_job["job_id"]))
+
+
+@app.get("/api/documents/{doc_id}/pdf")
+def api_download_split_document_pdf(doc_id: str, anonymized: bool = Query(default=False)):
+    """
+    Baixa o arquivo PDF recortado fisicamente contendo apenas as páginas agrupadas deste documento
+    (em versão Original ou com Tarjas LGPD).
+    """
+    all_jobs = list_all_jobs()
+    for j in all_jobs:
+        for d in j.get("documents", []):
+            if d["id"] == doc_id:
+                job_id = j["job_id"]
+                fname = d.get("nome_arquivo_separado") or f"{doc_id}.pdf"
+                prefix = "LGPD_" if anonymized else ""
+                pdf_path = STORAGE_ROOT / "split_pdfs" / job_id / f"{prefix}{fname}"
+                if pdf_path.exists():
+                    return FileResponse(
+                        str(pdf_path),
+                        media_type="application/pdf",
+                        filename=f"{prefix}{fname}",
+                    )
+    raise HTTPException(status_code=404, detail="PDF separado do documento não encontrado")
+
+
+@app.get("/api/jobs/{job_id}/export-zip")
+def api_export_job_zip(job_id: str, anonymized: bool = Query(default=False)):
+    """
+    Exporta um pacote ZIP contendo todos os documentos separados e renomeados em PDF
+    + Manifesto JSON de Auditoria e Compliance GRT Bernhoeft.
+    """
+    job = get_job_full(job_id)
+    if not job:
+        raise HTTPException(status_code=404, detail="Lote não encontrado")
+
+    split_dir = STORAGE_ROOT / "split_pdfs" / job_id
+    prefix = "LGPD_" if anonymized else ""
+    mem_zip = io.BytesIO()
+
+    with zipfile.ZipFile(mem_zip, mode="w", compression=zipfile.ZIP_DEFLATED) as zf:
+        for doc in job.get("documents", []):
+            fname = doc.get("nome_arquivo_separado") or f"{doc['id']}.pdf"
+            target_pdf = split_dir / f"{prefix}{fname}"
+            if target_pdf.exists():
+                zf.write(str(target_pdf), arcname=f"{prefix}{fname}")
+
+        manifest = {
+            "empresa": "Bernhoeft - Gestão de Riscos com Terceiros & BPO",
+            "job_id": job_id,
+            "lote_origem": job["filename"],
+            "modo_lgpd_anonimizado": anonymized,
+            "total_paginas_lote": job["total_pages"],
+            "total_documentos_separados": len(job.get("documents", [])),
+            "documentos": [
+                {
+                    "id": d["id"],
+                    "arquivo_pdf_gerado": f"{prefix}{d.get('nome_arquivo_separado', '')}",
+                    "tipo": d["tipo"],
+                    "vertical_bernhoeft": d.get("vertical_bernhoeft"),
+                    "status_mobilizacao": d.get("status_mobilizacao"),
+                    "paginas_agrupadas": d["paginas"],
+                    "confianca": d["confianca"],
+                    "finops_telemetria": d.get("finops_telemetria"),
+                    "compliance_checklist": d.get("compliance_checklist"),
+                    "texto_ocr": d["texto_ocr_anonimizado"] if anonymized else d["texto_ocr"],
+                }
+                for d in job.get("documents", [])
+            ],
+        }
+        zf.writestr(
+            "00_MANIFESTO_AUDITORIA_BERNHOEFT.json",
+            json.dumps(manifest, indent=2, ensure_ascii=False),
+        )
+
+    mem_zip.seek(0)
+    zip_filename = f"Dossie_Separado_{job_id}_{'LGPD' if anonymized else 'Original'}.zip"
+    return StreamingResponse(
+        mem_zip,
+        media_type="application/zip",
+        headers={"Content-Disposition": f'attachment; filename="{zip_filename}"'},
+    )
 
 
 @app.get("/api/pages/{job_id}/{page_number}")

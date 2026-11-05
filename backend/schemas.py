@@ -52,6 +52,20 @@ class ItemSensivelLGPD(BaseModel):
     pagina: int = Field(description="Página onde o dado sensível aparece")
 
 
+class RegraComplianceGRT(BaseModel):
+    regra: str = Field(description="Nome da regra de negócio Bernhoeft GRT (ex: Validade Normativa, Assinatura Manuscrita)")
+    aprovado: bool = Field(description="True se cumpriu o requisito de mobilização")
+    detalhe: str = Field(description="Explicação técnica da validação")
+
+
+class TelemetriaFinOps(BaseModel):
+    camada_roteamento: str = Field(description="Camada do funil que resolveu o documento (Camada 0 Hash, Camada 1 PyMuPDF, Camada 2 OCR Local, Camada 3 Gemini Flex)")
+    sha256_hash: str = Field(description="Hash criptográfico para deduplicação de documentos repetidos")
+    tokens_consumidos: int = Field(description="Tokens reais gastos na inferência")
+    tokens_economizados: int = Field(description="Tokens poupados pelo roteamento inteligente")
+    custo_estimado_brl: float = Field(description="Custo em R$ deste documento")
+
+
 class DocumentoExtraidoSchema(BaseModel):
     """Schema estruturado retornado pelo motor Gemini Multimodal para a esteira Bernhoeft."""
     id: str = Field(description="Identificador único do documento no lote (ex: doc-01)")
@@ -61,8 +75,12 @@ class DocumentoExtraidoSchema(BaseModel):
         description="Vertical de negócio Bernhoeft: GRT / Mobilização, BPO Trabalhista & Fiscal, ou Cálculos Judiciais",
     )
     status_mobilizacao: str = Field(
-        default="APTO PARA MOBILIZAÇÃO",
-        description="Status de conformidade Bernhoeft (APTO, BLOQUEIO PREVENTIVO, PENDENTE ANALISTA GRT)",
+        default="LIBERADO PARA CATRACA / MOBILIZAÇÃO",
+        description="Status de conformidade Bernhoeft (LIBERADO PARA CATRACA, BLOQUEIO PREVENTIVO GRT)",
+    )
+    nome_arquivo_separado: str = Field(
+        default="",
+        description="Nome padronizado do PDF recortado deste documento (ex: 01_CNH_Pags_1_a_2.pdf)",
     )
     titulo_resumo: str = Field(description="Título amigável identificando o documento")
     pagina_inicial: int = Field(description="Página de início deste documento no lote (1-based)")
@@ -77,6 +95,8 @@ class DocumentoExtraidoSchema(BaseModel):
     texto_ocr_anonimizado: str = Field(default="", description="Texto OCR com dados PII/SST mascarados pela LGPD")
     campos_ar: Optional[CamposAR] = Field(default=None, description="Preenchido se tipo == AVISO_RECEBIMENTO_CORREIOS")
     dados_sensiveis_lgpd: List[ItemSensivelLGPD] = Field(default_factory=list, description="Itens anonimizados pela camada LGPD")
+    compliance_checklist: List[RegraComplianceGRT] = Field(default_factory=list, description="Checklist de Mobilização e Compliance GRT Bernhoeft")
+    finops_telemetria: Optional[TelemetriaFinOps] = Field(default=None, description="Métricas de economia de tokens do Funil de 5 Camadas")
     revisado_por: Optional[str] = Field(default=None)
     notas_revisao: Optional[str] = Field(default=None)
 
@@ -85,5 +105,5 @@ class RevisaoHumanaInput(BaseModel):
     tipo: TipoDocumento
     texto_ocr: str
     revisado_por: str = "Analista GRT Bernhoeft (Davi)"
-    notas_revisao: Optional[str] = "Conformidade validada manualmente para mobilização de terceiro"
+    notas_revisao: Optional[str] = "Conformidade validada manualmente — Colaborador liberado para mobilização"
     campos_ar: Optional[Dict[str, Any]] = None
