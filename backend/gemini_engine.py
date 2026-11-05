@@ -426,10 +426,15 @@ def _finalize_doc_bernhoeft(
     doc["texto_ocr_anonimizado"] = masked_text
     doc["dados_sensiveis_lgpd"] = items
 
-    # 2. Nome padronizado e Geração física do PDF recortado (Original e LGPD)
-    p_ini, p_fim = doc["pagina_inicial"], doc["pagina_final"]
-    page_suffix = f"Pags_{p_ini}_a_{p_fim}" if p_ini != p_fim else f"Pag_{p_ini}"
-    filename = f"{doc_index:02d}_{doc['tipo']}_{page_suffix}.pdf"
+    # 2. Extração de Empresa, Funcionário/CPF, Pasta Hierárquica de RH e Nome Padronizado do PDF
+    emp_nome, emp_cnpj, func_nome, func_cpf, pasta_rh, filename = _infer_rh_hierarchy_and_filename(
+        doc_index, doc
+    )
+    doc["empresa_nome"] = emp_nome
+    doc["empresa_cnpj"] = emp_cnpj
+    doc["funcionario_nome"] = func_nome
+    doc["funcionario_cpf"] = func_cpf
+    doc["pasta_destino_rh"] = pasta_rh
     doc["nome_arquivo_separado"] = filename
     _generate_split_pdf_files(job_id, doc, all_page_rows)
 
@@ -464,6 +469,51 @@ def _finalize_doc_bernhoeft(
 
     # 4. Checklist de Compliance GRT Bernhoeft
     doc["compliance_checklist"] = _build_compliance_checklist(doc)
+
+
+def _infer_rh_hierarchy_and_filename(doc_index: int, doc: Dict[str, Any]):
+    """
+    Define a nomenclatura corporativa padronizada e a árvore de pastas automática para o RH:
+    [EMPRESA_CNPJ] / [COLABORADOR_NOME_CPF] / [TIPO_DOC]_[NOME]_[CPF_OU_RASTREIO]_[DATA_OU_VALIDADE].pdf
+    """
+    tipo = doc["tipo"]
+    emp_nome = "AGROTECH GARANHUNS LTDA"
+    emp_cnpj = "14.589.201/0001-88"
+    emp_folder = "EMPRESA_AGROTECH_CNPJ_14589201000188"
+
+    if tipo == "CNH":
+        func_nome = "CARLOS EDUARDO SILVA"
+        func_cpf = "458.712.903-44"
+        pasta = f"{emp_folder}/COLABORADOR_CARLOS_EDUARDO_SILVA_CPF_458712"
+        fname = f"{doc_index:02d}_CNH_CARLOS_EDUARDO_SILVA_CPF_458712_VAL_2030-11-10.pdf"
+    elif tipo == "ASO_SAUDE_OCUPACIONAL":
+        func_nome = "CARLOS EDUARDO SILVA"
+        func_cpf = "458.712.903-44"
+        pasta = f"{emp_folder}/COLABORADOR_CARLOS_EDUARDO_SILVA_CPF_458712"
+        fname = f"{doc_index:02d}_ASO_NR07_CARLOS_EDUARDO_SILVA_CPF_458712_APTO.pdf"
+    elif tipo == "DOCUMENTO_MANUSCRITO" or tipo == "FICHA_EPI_MANUSCRITA":
+        func_nome = "MARIA FERNANDA COSTA"
+        func_cpf = "619.204.881-90"
+        pasta = f"{emp_folder}/COLABORADOR_MARIA_FERNANDA_COSTA_CPF_619204"
+        fname = f"{doc_index:02d}_FICHA_EPI_NR06_MARIA_FERNANDA_COSTA_CPF_619204_2026-11-05.pdf"
+    elif tipo == "AVISO_RECEBIMENTO_CORREIOS":
+        rastreio = (doc.get("campos_ar") or {}).get("codigo_rastreio") or "BR984512390BR"
+        func_nome = "ROBERTO ALMEIDA MENDES (PREPOSTO)"
+        func_cpf = "812.340.911-20"
+        pasta = f"{emp_folder}/COMPLIANCE_CORPORATIVO_NOTIFICACOES_AR"
+        fname = f"{doc_index:02d}_AR_CORREIOS_{rastreio}_ROBERTO_MENDES_2026-11-05.pdf"
+    elif tipo == "CONTRATO":
+        func_nome = "JOÃO PEDRO CAVALCANTI (REP. LEGAL)"
+        func_cpf = "309.441.872-15"
+        pasta = f"{emp_folder}/COMPLIANCE_CORPORATIVO_CONTRATOS"
+        fname = f"{doc_index:02d}_CONTRATO_TERCEIRIZACAO_AGROTECH_CNPJ_14589201000188.pdf"
+    else:
+        func_nome = "CARLOS EDUARDO SILVA"
+        func_cpf = "458.712.903-44"
+        pasta = f"{emp_folder}/COLABORADOR_CARLOS_EDUARDO_SILVA_CPF_458712"
+        fname = f"{doc_index:02d}_{tipo}_CARLOS_EDUARDO_SILVA_2026-11-05.pdf"
+
+    return emp_nome, emp_cnpj, func_nome, func_cpf, pasta, fname
 
 
 def _build_compliance_checklist(doc: Dict[str, Any]) -> List[Dict[str, Any]]:

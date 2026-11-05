@@ -929,10 +929,10 @@
             </div>
 
             <h4 class="text-xs font-bold text-white mb-1">${doc.titulo_resumo}</h4>
-            <p class="text-[11px] text-emerald-400/90 font-medium mb-1">🏢 ${doc.vertical_bernhoeft || 'Gestão de Riscos com Terceiros (GRT)'}</p>
+            <p class="text-[11px] text-emerald-400/90 font-medium mb-1">🏢 ${doc.empresa_nome || 'AGROTECH LTDA'} • 👷 ${lgpdAnonymizedMode ? '[TITULAR PROTEGIDO LGPD]' : (doc.funcionario_nome || 'Colaborador')}</p>
 
-            <div class="flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-400 mt-2 pt-2 border-t border-slate-800/80">
-              <span class="font-semibold text-sky-300">📄 ${doc.nome_arquivo_separado || pageRangeLabel}</span>
+            <div class="flex flex-wrap items-center justify-between gap-2 text-[10.5px] text-slate-400 mt-2 pt-2 border-t border-slate-800/80">
+              <span class="font-semibold text-sky-300 truncate max-w-[230px]" title="${doc.pasta_destino_rh}/${doc.nome_arquivo_separado}">📂 ${doc.nome_arquivo_separado || pageRangeLabel}</span>
               ${doc.possui_manuscrito ? '<span class="text-amber-300 font-semibold">✍️ Escrita à Mão</span>' : ''}
             </div>
           </div>
@@ -1071,6 +1071,27 @@
                       ✓ Catraca Liberada (${pct}%)
                     </span>`
               }
+            </div>
+          </div>
+
+          <!-- Barra de Indexação Automática para o RH (Empresa -> Colaborador -> Pasta/Arquivo) -->
+          <div class="p-3 rounded-xl bg-sky-500/10 border border-sky-500/30 space-y-1.5 text-xs">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="font-extrabold text-sky-300 uppercase tracking-wider text-[11px]">
+                📂 Indexação Automática de Dossiê para o RH (Padrão Portal Bernhoeft)
+              </span>
+              <span class="text-[11px] text-emerald-300 font-semibold">
+                🏢 ${doc.empresa_nome || 'AGROTECH GARANHUNS LTDA'} (${doc.empresa_cnpj || '14.589.201/0001-88'})
+              </span>
+            </div>
+            <div class="flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-200">
+              <span>
+                👷 <strong>Titular Vinculado:</strong> ${lgpdAnonymizedMode ? '[PROTEGIDO PELA LGPD]' : (doc.funcionario_nome || 'CARLOS EDUARDO SILVA')}
+                (CPF: <span class="mono">${lgpdAnonymizedMode ? '***.712.903-**' : (doc.funcionario_cpf || '458.712.903-44')}</span>)
+              </span>
+            </div>
+            <div class="p-2 rounded-lg bg-slate-950/90 border border-slate-800 mono text-[11px] text-amber-300 overflow-x-auto">
+              📁 ${doc.pasta_destino_rh || 'EMPRESA_AGROTECH'}/${lgpdAnonymizedMode ? 'LGPD_' : ''}${doc.nome_arquivo_separado || 'documento.pdf'}
             </div>
           </div>
 

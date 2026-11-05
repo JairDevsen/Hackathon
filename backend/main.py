@@ -277,9 +277,10 @@ def api_export_job_zip(job_id: str, anonymized: bool = Query(default=False)):
     with zipfile.ZipFile(mem_zip, mode="w", compression=zipfile.ZIP_DEFLATED) as zf:
         for doc in job.get("documents", []):
             fname = doc.get("nome_arquivo_separado") or f"{doc['id']}.pdf"
+            pasta_rh = doc.get("pasta_destino_rh") or "DOSSIE_GERAL"
             target_pdf = split_dir / f"{prefix}{fname}"
             if target_pdf.exists():
-                zf.write(str(target_pdf), arcname=f"{prefix}{fname}")
+                zf.write(str(target_pdf), arcname=f"{pasta_rh}/{prefix}{fname}")
 
         manifest = {
             "empresa": "Bernhoeft - Gestão de Riscos com Terceiros & BPO",
@@ -291,7 +292,11 @@ def api_export_job_zip(job_id: str, anonymized: bool = Query(default=False)):
             "documentos": [
                 {
                     "id": d["id"],
-                    "arquivo_pdf_gerado": f"{prefix}{d.get('nome_arquivo_separado', '')}",
+                    "caminho_completo_no_zip": f"{d.get('pasta_destino_rh', 'DOSSIE')}/{prefix}{d.get('nome_arquivo_separado', '')}",
+                    "empresa_nome": d.get("empresa_nome"),
+                    "empresa_cnpj": d.get("empresa_cnpj"),
+                    "funcionario_nome": d.get("funcionario_nome"),
+                    "funcionario_cpf": "***." + d.get("funcionario_cpf", "")[4:11] + "-**" if anonymized else d.get("funcionario_cpf"),
                     "tipo": d["tipo"],
                     "vertical_bernhoeft": d.get("vertical_bernhoeft"),
                     "status_mobilizacao": d.get("status_mobilizacao"),

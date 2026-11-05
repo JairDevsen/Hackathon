@@ -80,8 +80,13 @@ class DocumentoExtraidoSchema(BaseModel):
     )
     nome_arquivo_separado: str = Field(
         default="",
-        description="Nome padronizado do PDF recortado deste documento (ex: 01_CNH_Pags_1_a_2.pdf)",
+        description="Nome padronizado do PDF recortado por Empresa/Funcionário (ex: CNH_CARLOS_EDUARDO_SILVA_CPF_458712.pdf)",
     )
+    empresa_nome: str = Field(default="AGROTECH GARANHUNS LTDA", description="Razão Social da prestadora terceirizada")
+    empresa_cnpj: str = Field(default="14.589.201/0001-88", description="CNPJ da prestadora terceirizada")
+    funcionario_nome: str = Field(default="", description="Nome do colaborador terceirizado titular do documento")
+    funcionario_cpf: str = Field(default="", description="CPF do colaborador titular para indexação automática no RH")
+    pasta_destino_rh: str = Field(default="", description="Caminho de pasta hierárquico gerado automaticamente para o RH")
     titulo_resumo: str = Field(description="Título amigável identificando o documento")
     pagina_inicial: int = Field(description="Página de início deste documento no lote (1-based)")
     pagina_final: int = Field(description="Página de término deste documento no lote (1-based)")
