@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Plano Tático de Liderança — Document AI Factory</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm 16mm 18mm 16mm;
+    }
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.5;
+      font-size: 13px;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+    }
+    .header-banner {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 60%, #312e81 100%);
+      color: #ffffff;
+      padding: 22px 24px;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header-title h1 {
+      margin: 0 0 6px 0;
+      font-size: 23px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #38bdf8;
+    }
+    .header-title p {
+      margin: 0;
+      font-size: 13.5px;
+      color: #cbd5e1;
+    }
+    .badge-time {
+      background: #ef4444;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+      box-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
+    }
+    h2 {
+      color: #0f172a;
+      font-size: 16px;
+      font-weight: 700;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 5px;
+      margin-top: 18px;
+      margin-bottom: 10px;
+    }
+    .grid-squads {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .card-squad {
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 13px;
+      background: #f8fafc;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .card-squad.sq1 { border-top: 4px solid #3b82f6; }
+    .card-squad.sq2 { border-top: 4px solid #10b981; }
+    .card-squad.sq3 { border-top: 4px solid #8b5cf6; }
+    
+    .card-squad h3 {
+      margin: 0 0 8px 0;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .card-squad ul {
+      margin: 0;
+      padding-left: 15px;
+      font-size: 11.5px;
+      color: #334155;
+    }
+    .card-squad li {
+      margin-bottom: 6px;
+    }
+    .role-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #e2e8f0;
+      color: #1e293b;
+      margin-bottom: 2px;
+    }
+    .callout {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 11px 15px;
+      border-radius: 0 8px 8px 0;
+      margin: 12px 0;
+      font-size: 12px;
+      color: #1e40af;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 11.5px;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 6px 9px;
+      text-align: left;
+    }
+    th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 700;
+    }
+    tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+    code, pre {
+      font-family: Consolas, 'Courier New', monospace;
+      font-size: 10.5px;
+    }
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 10px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 8px 0;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+    .pitch-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .pitch-step {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid #10b981;
+      padding: 8px 11px;
+      border-radius: 0 6px 6px 0;
+      font-size: 11.5px;
+    }
+    .pitch-step strong {
+      color: #0f172a;
+    }
+    .tag-diff {
+      background: #fef3c7;
+      color: #92400e;
+      border: 1px solid #fde68a;
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-size: 9.5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-banner">
+    <div class="header-title">
+      <h1>Plano Tático de Liderança — Document AI Factory</h1>
+      <p>Hack Garanhuns Tech 2026 | Líder: <strong>Lucas</strong> | 6 Desenvolvedores</p>
+    </div>
+    <div class="badge-time">
+      ⏳ 14h Restantes
+    </div>
+  </div>
+
+  <div class="callout">
+    <strong>👑 Papel do Líder (Lucas):</strong> Foco absoluto na narrativa do Pitch, criação dos slides da banca, blindagem de escopo, alinhamento dos contratos entre squads e gravação da demo de backup.
+  </div>
+
+  <h2>👥 1. Estrutura dos Squads com Nomes Oficiais</h2>
+  
+  <div class="grid-squads">
+    <div class="card-squad sq1">
+      <span class="role-badge">Frontend & UX</span>
+      <h3>Squad 1 (Jair & Davi)</h3>
+      <ul>
+        <li><strong>Jair (Dev 1 - Ingestão & Visor):</strong>
+          Upload com Drag & Drop e barra de progresso. Visualizador de lote e páginas agrupadas lado a lado (Imagem vs OCR pesquisável).
+        </li>
+        <li><strong>Davi (Dev 2 - Fila de Revisão HITL):</strong>
+          Tabela da fila de triagem humana com badges de confiança (Verde &gt;85%, Amarelo 60-85%, Vermelho &lt;60%) e modal de validação/correção rápida.
+        </li>
+      </ul>
+    </div>
+
+    <div class="card-squad sq2">
+      <span class="role-badge">Backend & IA Core</span>
+      <h3>Squad 2 (Luis Miguel, Jamerson & Lennarth)</h3>
+      <ul>
+        <li><strong>Luis Miguel (Dev 3 - FastAPI & Fatiador):</strong>
+          Rotas <code>/upload</code>, <code>/jobs</code>, <code>/documents</code>. Módulo de conversão e fatiamento de imagens e PDFs em páginas.
+        </li>
+        <li><strong>Jamerson (Dev 4 - Gemini Multimodal):</strong>
+          Prompt estruturado Pydantic para detecção de quebras de documento, classificação por tipo e OCR estruturado.
+        </li>
+        <li><strong>Lennarth (Dev 5 - Resiliência) <span class="tag-diff">DIFERENCIAL</span>:</strong>
+          Controle transacional de status em SQLite. Endpoint <code>/retry</code> para retomar das páginas pendentes sem reprocessar o lote todo.
+        </li>
+      </ul>
+    </div>
+
+    <div class="card-squad sq3">
+      <span class="role-badge">Segurança, Dados & QA</span>
+      <h3>Squad 3 (Thaynara)</h3>
+      <ul>
+        <li><strong>Thaynara (Dev 6 - LGPD & QA) <span class="tag-diff">DIFERENCIAL</span>:</strong>
+          Módulo de anonimização (tarjas em dados sensíveis: CPF, RG, nomes).
+          Criação dos 2 Lotes de Teste Oficiais da Demo (Lote 1: perfeito; Lote 2: ruidoso para forçar fila humana) + Testes E2E.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>📜 2. Contrato de API (Mock Imediato para Jair e Davi)</h2>
+  <pre>{
+  "job_id": "job-hack-001",
+  "status": "COMPLETED",
+  "total_pages": 4,
+  "documents": [
+    {
+      "id": "doc-01",
+      "type": "CNH",
+      "confidence": 0.96,
+      "needs_review": false,
+      "pages": [1, 2],
+      "ocr_text": "REPÚBLICA FEDERATIVA DO BRASIL... CPF: ***.456.789-**",
+      "anonymized": true
+    },
+    {
+      "id": "doc-02",
+      "type": "COMPROVANTE_RESIDENCIA",
+      "confidence": 0.54,
+      "needs_review": true,
+      "pages": [3],
+      "ocr_text": "COMPANHIA ENERGETICA... ENDERECO...",
+      "review_reason": "Baixa nitidez na leitura do CEP"
+    }
+  ]
+}</pre>
+
+  <div class="page-break"></div>
+
+  <h2>⏱️ 3. Cronograma de Execução (14 Horas)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 18%;">Janela</th>
+        <th style="width: 32%;">Foco dos Squads</th>
+        <th style="width: 50%;">Entrega Obrigatória</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>H00 - H01</strong></td>
+        <td>Alinhamento & Kickoff</td>
+        <td>Git inicializado, mock rodando com Jair e Davi, tarefas iniciadas no ClickUp.</td>
+      </tr>
+      <tr>
+        <td><strong>H01 - H05</strong></td>
+        <td>Construção do Core MVP</td>
+        <td>Jair e Davi entregam telas estáticas; Luis Miguel e Jamerson processam lote com Gemini.</td>
+      </tr>
+      <tr>
+        <td><strong>H05 - H08</strong></td>
+        <td>Primeira Integração</td>
+        <td>Front consome API real: Upload de lote -> Separação -> Exibição dos documentos.</td>
+      </tr>
+      <tr>
+        <td><strong>H08 - H11</strong></td>
+        <td>Implementação dos Diferenciais</td>
+        <td>Lennarth conecta retomada após falha; Thaynara entrega módulo LGPD e lotes de teste.</td>
+      </tr>
+      <tr>
+        <td><strong>H11 - H12</strong></td>
+        <td>Feature Freeze & QA Extremo</td>
+        <td>Zero código novo. Thaynara e Lucas testam os lotes oficiais da apresentação 10 vezes.</td>
+      </tr>
+      <tr>
+        <td><strong>H12 - H13</strong></td>
+        <td>Ensaio do Pitch & Gravação</td>
+        <td>Lucas ensaia pitch de 3 min e grava vídeo de 1 min da tela (backup contra falha de Wi-Fi).</td>
+      </tr>
+      <tr>
+        <td><strong>H13 - H14</strong></td>
+        <td>Submissão & Descanso</td>
+        <td>Deploy/repositório submetido, equipe alinhada e pronta para encantar a banca.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>🏆 4. Roteiro do Pitch Campeão (Apresentação do Lucas - 3 Minutos)</h2>
+  <div class="pitch-steps">
+    <div class="pitch-step">
+      <strong>1. O Problema (30s):</strong>
+      Grandes empresas recebem lotes caóticos de digitalizações contendo CNH, contratos e comprovantes misturados num único arquivo pesado. A triagem manual gera lentidão e risco de vazamento de dados.
+    </div>
+    <div class="pitch-step">
+      <strong>2. A Solução — Document AI Factory (45s):</strong>
+      Nossa esteira inteligente com IA Multimodal detecta automaticamente o início e fim de cada documento, agrupa páginas relacionadas, extrai texto com OCR pesquisável e classifica o tipo documental com score de precisão.
+    </div>
+    <div class="pitch-step">
+      <strong>3. Demonstração ao Vivo (60s):</strong>
+      Upload do lote de testes preparado por Thaynara: mostre os documentos separados na tela do Jair. Acesse a <em>Fila de Revisão Humana</em> desenvolvida por Davi e mostre a validação em 1 clique.
+    </div>
+    <div class="pitch-step">
+      <strong>4. Diferenciais Competitivos (30s):</strong>
+      Acione o <em>Modo Anonimização (LGPD)</em> ocultando dados sensíveis. Mostre a <em>Retomada após Falha</em> criada por Lennarth: se a conexão cair, o lote continua exatamente da página onde parou, sem custo duplicado.
+    </div>
+    <div class="pitch-step">
+      <strong>5. Conclusão & Próximos Passos (15s):</strong>
+      Escalabilidade, conformidade com a LGPD e redução de até 90% no tempo de processamento documental.
+    </div>
+  </div>
+
+</body>
+</html>

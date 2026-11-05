@@ -1,0 +1,20 @@
+Task Name,Description,Status,Priority,Due Date,Assignee,List Name,Tags,Estimated Time
+Setup do Projeto Next.js e Tailwind,"Criar o repositório frontend, configurar TailwindCSS, Lucide-react e estrutura de pastas.",to do,high,Hoje,Jair,Squad 1 - Frontend,Setup;Front,1h
+Componente de Upload Drag & Drop,"Área de upload com arrastar e soltar suportando PDFs e imagens de alta resolução, com barra de progresso.",to do,high,Hoje,Jair,Squad 1 - Frontend,Core;Front,2h
+Visualizador de Lote e Documentos Separados,"Visualizador lado a lado com imagem original, páginas agrupadas (ex: Pág 1 e 2) e texto OCR pesquisável com highlight.",to do,high,Hoje,Jair,Squad 1 - Frontend,Core;Front,3h
+Tabela e Fila de Revisão Humana (HITL),"Lista com badges de confiança (Verde >85%, Amarelo 60-85%, Vermelho <60%) e filtro por 'Necessita Revisão'.",to do,high,Hoje,Davi,Squad 1 - Frontend,Core;HITL;Front,2.5h
+Modal de Validação e Edição de Documentos,"Modal que permite ao operador humano corrigir o tipo de documento ou texto do OCR e clicar em 'Aprovar'.",to do,high,Hoje,Davi,Squad 1 - Frontend,HITL;Front,2h
+Toggle e Visualização de Anonimização LGPD,"Botão no visualizador para alternar visualização com tarjas pretas/mascaramento de dados sensíveis.",to do,normal,Hoje,Davi,Squad 1 - Frontend,Diferencial;Front,1.5h
+Setup do FastAPI e CORS,"Estruturar backend FastAPI, configurações de CORS, pastas de upload e rotas iniciais.",to do,high,Hoje,Luis Miguel,Squad 2 - Backend & IA,Setup;Back,1h
+Módulo de Ingestão e Fatiamento de Páginas,"Receber PDF/TIFF/imagens grandes e converter em páginas individuais PNG/JPEG com indexação.",to do,high,Hoje,Luis Miguel,Squad 2 - Backend & IA,Core;Back,2h
+Endpoints de Upload e Consulta de Status,"POST /api/upload e GET /api/jobs/{id} retornando o schema mock até a IA ser conectada.",to do,high,Hoje,Luis Miguel,Squad 2 - Backend & IA,Core;API,1.5h
+Integração com Gemini Multimodal (Prompt & Schema),"Configurar SDK do Gemini, criar schemas Pydantic de saída estrita para quebra de lote e classificação.",to do,urgent,Hoje,Jamerson,Squad 2 - Backend & IA,Core;IA,3h
+Pipeline de Agrupamento e OCR Estruturado,"Lógica que envia as páginas em lote para o Gemini e extrai boundaries de documentos e texto completo.",to do,urgent,Hoje,Jamerson,Squad 2 - Backend & IA,Core;IA,3h
+Módulo de Resiliência e Retomada após Falha,"Tabela SQLite gravando status por página (PENDING, PROCESSING, DONE). Endpoint /api/jobs/{id}/retry que continua de onde parou.",to do,high,Hoje,Lennarth,Squad 2 - Backend & IA,Diferencial;Back,3h
+Endpoint de Revisão Humana (HITL),"POST /api/review/{id} que atualiza status do documento para APPROVED e salva edições manuais.",to do,normal,Hoje,Lennarth,Squad 2 - Backend & IA,Core;Back,1.5h
+Módulo de Anonimização de Dados (LGPD/PII),"Detectar CPF, RG, telefones e nomes sensíveis via Regex/NER do Gemini e gerar versão de texto mascarada e coordenadas para tarjas.",to do,high,Hoje,Thaynara,Squad 3 - Segurança e QA,Diferencial;LGPD,3h
+Criar Lotes de Teste Oficiais da Demo,"Montar PDF 1 (casos perfeitos misturados) e PDF 2 (baixa nitidez para forçar a fila de revisão humana ao vivo no pitch).",to do,high,Hoje,Thaynara,Squad 3 - Segurança e QA,QA;Dados,2h
+Bateria de Testes Fim a Fim (E2E) & Homologação,"Testar o fluxo contínuo de upload -> processamento -> fila humana -> anonimização e reportar bugs para os squads.",to do,high,Hoje,Thaynara,Squad 3 - Segurança e QA,QA,2h
+Construção dos Slides do Pitch,"Criar apresentação de 5 slides focada no problema, solução, diferenciais e impacto de negócio.",to do,urgent,Hoje,Lucas,Liderança & Pitch,Pitch,3h
+Roteirização e Ensaio da Demo ao Vivo,"Roteirizar os 3 minutos da banca com falas exatas e ensaiar a navegação do sistema.",to do,urgent,Hoje,Lucas,Liderança & Pitch,Demo;Pitch,2h
+Gravação do Vídeo de Backup da Apresentação,"Gravar vídeo de 1 minuto mostrando a ferramenta funcionando caso a internet falhe no pitch.",to do,urgent,Hoje,Lucas,Liderança & Pitch,Segurança;Pitch,1h
