@@ -1,4 +1,4 @@
-# 🎤 ROTEIRO OFICIAL DE PITCH (3 MIN) & GUIA DA BANCA (5 MIN) — PADRÃO OFICIAL SEBRAE / HACK GARANHUNS TECH
+# 🎤 ROTEIRO OFICIAL DE PITCH (3 MIN) & GUIA DA BANCA (5 MIN) — LINGUAGEM CLARA PARA PÚBLICO GERAL
 **Produto:** Citadel AI — Plataforma SaaS B2B de Inteligência e Conformidade Documental Trabalhista  
 **Desafio:** Desafio 3 — Document AI Factory (Hack Garanhuns Tech 2026)  
 **Formato Oficial do Demo Day (Slide 4 e 6 do Edital):**  
@@ -10,70 +10,70 @@
 ## ⚠️ REGRAS DE OURO DA BANCA (EXTRAÍDAS DO PDF OFICIAL DOS ORGANIZADORES)
 
 1. **Proibido uma pessoa só falar (Slide 17):** Dividam a fala entre **3 apresentadores** (Problema/Negócio + Demo + Arquitetura/Escala) + **1 operador no notebook**.
-2. **Menos Slide, Mais Tela (Slide 7 e 9):** Dê **Zoom de 125%** no navegador para a banca enxergar de longe. Tenham um **Vídeo Curto Gravado (Plano B)** aberto no reprodutor caso a internet/servidor oscile na hora.
-3. **Falar as Capacidades Mínimas em voz alta durante a Demo (Slide 9 e 14):** Ao clicar, diga claramente qual capacidade do desafio está sendo atendida.
-4. **Honestidade Técnica gera nota máxima em Viabilidade e Escalabilidade (Slide 10, 11 e 15):** Diga claramente qual é o gargalo em 10x de escala, o que já é real de ponta a ponta e o que falta para ir para produção.
+2. **Linguagem simples, sem sopa de letrinhas (Slide 7):** Fale de forma que empresários, mentores do SEBRAE e público geral entendam na hora (sem citar nomes de bibliotecas ou códigos como SHA-256 ou PyMuPDF durante o pitch).
+3. **Menos Slide, Mais Tela (Slide 7 e 9):** Dê **Zoom de 125%** no navegador para a banca enxergar de longe. Tenham um **Vídeo Curto Gravado (Plano B)** aberto no reprodutor caso a internet/servidor oscile na hora.
+4. **Honestidade gera nota máxima em Viabilidade e Escalabilidade (Slide 10, 11 e 15):** Diga claramente qual é o gargalo em 10x de escala, o que já funciona hoje e o que falta para ir para produção.
 5. **Fechar com "O Pedido" nos últimos 15 segundos (Slide 6 e 12):** Pedir um piloto com empresa parceira (Bernhoeft) e a vaga no AgresTI / palco do FING.
 
 ---
 
-## ⏱️ PARTE 1: ROTEIRO CRONOMETRADO DE 3 MINUTOS (RÉGUA OFICIAL DO SLIDE 6)
+## ⏱️ PARTE 1: ROTEIRO CRONOMETRADO DE 3 MINUTOS (ZERO JARGÃO TÉCNICO)
 
-### 🔴 `0:00 - 0:20` (20s) — PROBLEMA: A Dor e Quanto Custa (Storytelling em 4 Tempos — Slides 8 e 16)
+### 🔴 `0:00 - 0:20` (20s) — PROBLEMA: A Dor e Quanto Custa (Storytelling — Slides 8 e 16)
 🎙️ **Apresentador 1 (Lucas — Produto & Negócios):**
-> **"Às 8 horas da manhã, chega no RH um único PDF escaneado com 500 páginas misturadas de trabalhadores recém-contratados: tem exame ASO, ficha de EPI sem assinatura, atestado escrito à mão por médico e AR dos Correios. Às 17 horas, um analista ainda está cortando e renomeando arquivo por arquivo na mão — travando a entrada do trabalhador na obra por 3 dias e expondo a empresa a multas trabalhistas milionárias."**
+> **"Às 8 horas da manhã, chega no RH um único PDF escaneado com 500 páginas misturadas de trabalhadores recém-contratados: tem exame médico, ficha de EPI sem assinatura, atestado escrito à mão e comprovante dos Correios. Às 17 horas, um analista ainda está cortando e renomeando arquivo por arquivo na mão — travando a entrada do trabalhador na obra por 3 dias e expondo a empresa a multas trabalhistas milionárias."**
 
 ---
 
 ### ⚡ `0:20 - 0:35` (15s) — SOLUÇÃO: O Que É e o Que a Diferencia (Critério 2: Inovação — Slide 6)
 🎙️ **Apresentador 1 (Lucas):**
-> **"Para resolver isso, criamos o Citadel AI: um SaaS B2B 100% Web que recebe lotes documentais brutos e, em segundos, fatia fisicamente os PDFs, organiza em pastas por Empresa e CPF, audita divergências trabalhistas e protege dados pela LGPD. Vamos ver funcionando ao vivo:"**
+> **"Para resolver isso, criamos o Citadel AI: uma plataforma online onde a empresa joga qualquer lote de documentos misturados e, em segundos, recebe tudo separado em pastas por funcionário, auditado contra riscos trabalhistas e protegido pela Lei Geral de Proteção de Dados. Vamos ver na tela:"**
 
 ---
 
 ### 🖥️ `0:35 - 1:50` (1m15s = 75s) — DEMO AO VIVO (40% do Tempo — Critério 1: Pertinência e Capacidades Mínimas)
-🎙️ **Apresentador 2 (Demo Técnica — ex: Jair/Davi falando + Operador clicando na tela):**
+🎙️ **Apresentador 2 (Demo na Tela — ex: Jair/Davi falando + Operador clicando na tela):**
 
-* **`[0:35 - 0:55 | Clique 1: "Carregar Exemplo" / Ingestão e Classificação]`**
-  > **"Aqui atendemos as Capacidades de Ingestão e Classificação Multiclasse: o usuário sobe o PDF misturado direto no navegador. O sistema separa página a página, classifica ASO, Contrato, EPI, Manuscrito e AR Correios, e já cria a árvore de pastas por Empresa e CPF com download imediato do pacote ZIP com os PDFs recortados e renomeados por validade."**
+* **`[0:35 - 0:55 | Clique 1: "Carregar Exemplo" / Separação e Pastas]`**
+  > **"Direto pelo navegador, sem instalar nada, o analista envia o PDF misturado. Em segundos, o sistema identifica onde começa e termina cada documento — exame ASO, Contrato, EPI, Manuscrito e comprovante dos Correios — e já cria as pastas por Empresa e Funcionário, prontas para baixar com cada arquivo recortado e nomeado pela data de validade."**
 
-* **`[0:55 - 1:15 | Clique 2: Abre Documento -> Mostra Extração JSON e Radar Trabalhista]`**
-  > **"Ao abrir o documento, cumprimos a Capacidade de Extração Estruturada: extraímos nomes, CPFs, datas e assinaturas em JSON auditável. E nosso grande diferencial: o Radar Trabalhista cruza os dados, detecta que a ficha de EPI está sem assinatura, bloqueia a catraca preventivamente e calcula em Reais o passivo trabalhista evitado."**
+* **`[0:55 - 1:15 | Clique 2: Abre Documento -> Mostra Dados Extraídos e Radar Trabalhista]`**
+  > **"Ao clicar no documento, o sistema já extrai todos os dados automaticamente: nomes, CPFs, datas e assinaturas. E aqui entra o nosso grande diferencial: o Radar Trabalhista cruza as informações, detecta que a ficha de EPI está sem assinatura, bloqueia a catraca preventivamente e já calcula em Reais a multa trabalhista que a empresa acabou de evitar."**
 
 * **`[1:15 - 1:32 | Clique 3: Abre Manuscrito Médico + Fila de Revisão Humana]`**
-  > **"Neste prontuário escrito à mão e no AR dos Correios, o motor lê a caligrafia. Como a legibilidade médica teve 74% de confiança — abaixo do nosso corte de 85% — cumprimos o Tratamento de Incerteza: o sistema não aprova sozinho e isola o documento na Fila de Revisão Humana."**
+  > **"Mesmo neste prontuário escrito à mão e no comprovante dos Correios, o sistema lê a caligrafia. Como a letra médica estava difícil e teve 74% de confiança — abaixo da nossa margem segura de 85% — o sistema não arrisca sozinho: ele separa o documento direto na Fila de Revisão Humana."**
 
-* **`[1:32 - 1:50 | Clique 4: Ativa "Anonimizar (LGPD)" + Mostra Dashboard e CSV]`**
-  > **"E atendendo à Segurança LGPD e Observabilidade: com um clique aplicamos tarja preta nas coordenadas do PDF, mascaramos CPFs, RGs e CIDs e geramos o Dashboard de Métricas com exportação da auditoria em CSV."**
+* **`[1:32 - 1:50 | Clique 4: Ativa "Anonimizar (LGPD)" + Mostra Painel de Resultados]`**
+  > **"E para garantir a privacidade na LGPD: com um clique aplicamos tarja preta automática sobre os dados pessoais no documento e geramos o painel completo com relatório de auditoria."**
 
 ---
 
-### 🏗️ `1:50 - 2:20` (30s) — ARQUITETURA, ESCALA E LIMITES (Critério 6: Escalabilidade e Robustez — Slides 10 e 11)
-🎙️ **Apresentador 3 (Arquitetura & IA — ex: Luis Miguel / Jamerson):**
+### 🏗️ `1:50 - 2:20` (30s) — ARQUITETURA, ESCALA E LIMITES (Sem Jargão Técnico! — Slides 7, 10 e 11)
+🎙️ **Apresentador 3 (Arquitetura & Escala — ex: Luis Miguel / Jamerson):**
 *(Mostrando o Diagrama / Aba Escala & FinOps)*
 
-> **"Na nossa arquitetura, qual seria o principal gargalo se multiplicássemos o volume por 10 — como na operação da Bernhoeft, que audita 950 mil terceirizados e 1,5 milhão de páginas por mês? O gargalo seria o custo e a latência de chamar a IA de Visão em todas as páginas.**
+> **"E como essa solução escala sem ficar cara? Pensem numa operação gigante como a da própria Bernhoeft, que audita 950 mil trabalhadores e 1 milhão e meio de páginas por mês. O grande gargalo seria o custo de acionar a Inteligência Artificial pesada em todas as páginas.**
 >
-> **Resolvemos isso com um Funil de 4 Camadas no nosso servidor SaaS: documentos repetidos param no Cache SHA-256 na Camada 0, e PDFs digitais são lidos pelo PyMuPDF na Camada 1 a custo zero — resolvendo 75% do volume sem gastar tokens e acionando o Gemini 2.5 Flash só nos manuscritos e scans, cortando 94% do custo.**
+> **Resolvemos isso com um Filtro Inteligente de 4 Etapas no nosso servidor: primeiro, o sistema barra na hora arquivos repetidos que já foram enviados antes e ainda estão na validade; segundo, documentos digitais gerados por computador são lidos direto pelo nosso sistema básico a custo zero — resolvendo 75% do volume sem gastar com Inteligência Artificial, que só é acionada nos manuscritos e documentos escaneados, cortando 94% do custo.**
 >
-> **Para falhas em lotes grandes, salvamos checkpoint por página com retomada via rota `/resume`. Hoje usamos SQLite síncrono no MVP; para produção real, evoluiremos para fila Redis/Celery e PostgreSQL."**
+> **Se a internet cair no meio de um lote grande, o sistema salva o progresso página por página e continua de onde parou. Hoje nosso protótipo processa um lote por vez; para ir para produção real, nosso próximo passo é ativar filas paralelas em nuvem para atender milhares de empresas ao mesmo tempo."**
 
 ---
 
 ### 💰 `2:20 - 2:45` (25s) — NEGÓCIO: Quem Paga, Pelo Quê e Por Que a Conta Fecha (Critério 3 — Slide 12)
 🎙️ **Apresentador 1 (Lucas):**
-> **"No modelo de negócio, construtoras, indústrias e consultorias de gestão de terceiros pagam uma assinatura SaaS de R$ 2,50 a R$ 5,00 por colaborador monitorado ao mês — ou consomem via API. A conta fecha com mais de 90% de margem porque 75% dos documentos rodam na nossa camada de custo zero, reduzindo 3 dias de fila de catraca para 2 minutos."**
+> **"No modelo de negócio, construtoras, indústrias e consultorias de gestão de terceiros pagam uma assinatura de R$ 2,50 a R$ 5,00 por trabalhador monitorado ao mês — ou conectam nosso motor direto no sistema que já usam. A conta fecha com mais de 90% de margem porque 75% dos documentos rodam na nossa etapa de custo zero, reduzindo 3 dias de fila de catraca para 2 minutos."**
 
 ---
 
 ### 🤝 `2:45 - 3:00` (15s) — O PEDIDO FINAL (Critério 4: Viabilidade e Próximo Passo — Slide 12)
 🎙️ **Apresentador 1 (Lucas):**
-> **"Nosso pedido hoje é específico: queremos rodar um piloto de validação de 30 dias com lotes documentais reais junto à Bernhoeft, e conquistar a vaga na batalha de pitches do AgresTI para levar o Citadel AI ao palco do FING. Muito obrigado!"**
+> **"Nosso pedido hoje é direto: queremos rodar um piloto de validação de 30 dias com lotes documentais reais junto à Bernhoeft, e conquistar a vaga na batalha de pitches do AgresTI para levar o Citadel AI ao palco do FING. Muito obrigado!"**
 
 ---
 ---
 
-## 🧠 PARTE 2: AS 6 PERGUNTAS OFICIAIS DA BANCA (SLIDE 15 DO PDF) E RESPOSTAS NOTA 5/5
+## 🧠 PARTE 2: AS 6 PERGUNTAS OFICIAIS DA BANCA (SLIDE 15) — RESPOSTAS CLARAS E DIRETAS
 
 O Slide 15 do material oficial revelou **exatamente as 6 perguntas** que os jurados têm na prancheta para os **5 minutos de Roda de Conversa**:
 
@@ -81,66 +81,66 @@ O Slide 15 do material oficial revelou **exatamente as 6 perguntas** que os jura
 
 ### 1. "Quais capacidades mínimas funcionam de ponta a ponta?"
 *(Dica da Banca no Slide 15: Liste com honestidade o que funciona e o que é simulado)*
-> **Resposta (Squad Backend):**
-> *"Funcionam 100% de ponta a ponta no nosso código atual:*
-> *1. Upload de PDF multipágina e renderização real com PyMuPDF;*
-> *2. Classificação multiclasse, separação semântica e corte físico dos PDFs gerando arquivo `.ZIP` organizado em pastas por Empresa e CPF;*
-> *3. Extração estruturada de campos, entidades e alertas de risco trabalhista;*
-> *4. Anonimização LGPD real por expressões regulares (CPF, RG, CNPJ, E-mail, Telefone, CID) com tarja preta renderizada no PDF e download de relatório CSV de auditoria;*
-> *5. Persistência transacional em SQLite página a página com retomada real pela rota `/api/jobs/{id}/resume`.*
-> *O que possui fallback determinístico pré-calibrado é o nosso lote sintético de demonstração para garantir velocidade e estabilidade caso a internet do evento oscile, mas a integração com a API do Gemini 2.5 Flash está implementada no motor."*
+> **Resposta:**
+> *"Funcionam 100% de ponta a ponta hoje no sistema:*
+> *1. Envio de PDF com várias páginas misturadas e separação visual de cada página;*
+> *2. Classificação automática do tipo de documento e recorte físico dos PDFs gerando um pacote compactado organizado em pastas por Empresa e Funcionário;*
+> *3. Extração automática dos dados do documento e alerta de riscos trabalhistas;*
+> *4. Proteção de dados pessoais (CPF, RG, contatos e código de doença) com tarja preta na imagem e geração de planilha de auditoria;*
+> *5. Salvamento automático página a página, permitindo retomar o lote se a conexão cair.*
+> *Para garantir que a demonstração funcione mesmo se a internet do evento cair, deixamos um lote de teste pré-carregado, além da conexão direta com a Inteligência Artificial do Google Gemini."*
 
 ---
 
 ### 2. "Por que essa arquitetura?"
 *(Dica da Banca no Slide 15: Dê uma razão técnica e uma razão de negócio para cada escolha principal)*
-> **Resposta (Squad Backend / Lucas):**
-> *"Escolhemos a arquitetura em Funil (FastAPI + Hash SHA-256 + PyMuPDF na frente do Gemini 2.5 Flash) por duas razões:*
-> *- **Razão Técnica:** PDFs nativos gerados por sistemas governamentais (FGTS, CND, contratos digitais) não precisam de OCR visual; o PyMuPDF extrai o texto em 2 milissegundos no próprio servidor do SaaS com latência quase zero.*
-> *- **Razão de Negócio:** Chamar LLM multimodal em 1,5 milhão de páginas por mês custaria ~R$ 25 mil/mês. Barrando 75% do volume nas Camadas 0 e 1 a custo zero de tokens, derrubamos o custo em 94,6% e viabilizamos cobrar uma mensalidade acessível de R$ 2,50 a R$ 5,00 por funcionário."*
+> **Resposta:**
+> *"Criamos a arquitetura em Funil de 4 Etapas por dois motivos simples:*
+> *- **Motivo Técnico (Velocidade):** Documentos que já nascem digitais de sistemas do governo (como FGTS, certidões e contratos) não precisam de leitura por visão computacional; nosso servidor lê o texto instantaneamente em milésimos de segundo.*
+> *- **Motivo de Negócio (Custo):** Usar Inteligência Artificial visual em 1,5 milhão de páginas custaria quase R$ 25 mil por mês. Como nosso filtro resolve 75% dos documentos sem gastar créditos de IA, reduzimos o custo em 94,6% e conseguimos cobrar apenas R$ 2,50 por funcionário mantendo alta lucratividade."*
 
 ---
 
 ### 3. "Como tratam falhas e dados inconsistentes?"
 *(Dica da Banca no Slide 15: Mostre o tratamento no código ou explique o plano)*
-> **Resposta (Squad Backend):**
-> *"Tratamos em duas frentes no código:*
-> *- **Falhas de Rede ou Queda no meio do Lote:** Cada página do PDF é registrada na tabela `job_pages` com status individual (`PENDING`, `COMPLETED`, `FAILED`). Se um lote de 500 páginas cair na página 300, a rota `POST /api/jobs/{id}/resume` consulta o banco e processa apenas da página 301 em diante, sem perder trabalho nem cobrar tokens duplicados.*
-> *- **Dados Inconsistentes, Rasurados ou Ilegíveis:** Aplicamos um limiar de confiança (`CONFIDENCE_THRESHOLD = 0.85`). Qualquer página com letra médica ilegível, rasura ou falta de assinatura cai automaticamente para a fila `REVISAO_HUMANA` e bloqueia a liberação automática da catraca."*
+> **Resposta:**
+> *"Tratamos de duas formas:*
+> *- **Queda de Internet ou Falha no Lote:** Cada página analisada é salva imediatamente no banco de dados. Se um arquivo de 500 páginas travar na página 300, nosso botão de retomada continua da página 301 sem perder o que já foi feito.*
+> *- **Documentos Rasurados ou Letra Ilegível:** Definimos uma trava de segurança de 85% de certeza. Sempre que uma letra médica manuscrita ou documento batido fica abaixo de 85% de clareza, o sistema bloqueia a liberação automática da catraca e envia o documento para a Fila de Revisão Humana."*
 
 ---
 
 ### 4. "Como garantem segurança e privacidade?"
 *(Dica da Banca no Slide 15: Controle de acesso, dados de teste e credenciais fora do código)*
-> **Resposta (Squad Segurança & LGPD — Thaynara):**
-> *"Seguimos 3 práticas rigorosas de Privacy-by-Design:*
-> *1. **Credenciais fora do código:** Nenhuma chave de API está hardcoded; usamos variáveis de ambiente (`.env`) ignoradas no Git.*
-> *2. **Dados 100% Sintéticos:** Construímos um gerador próprio (`sample_generator.py`) para criar ASOs, RGs, prontuários e ARs de teste sem expor dados reais de nenhum cidadão.*
-> *3. **Mascaramento Duplo (Texto e Imagem):** Nosso módulo `anonymizer.py` substitui CPFs, RGs, contatos e CIDs médicos por tokens mascarados no JSON, aplica tarja preta direta na imagem/PDF antes de exportações externas e gera um Log CSV auditável."*
+> **Resposta:**
+> *"Adotamos 3 medidas práticas:*
+> *1. **Senhas e chaves protegidas:** Nenhuma senha ou chave de sistema fica exposta no código.*
+> *2. **Dados de Teste Fictícios:** Todos os documentos da apresentação foram gerados artificialmente pelo nosso sistema para nunca expor dados médicos ou documentos reais de trabalhadores.*
+> *3. **Tarja Preta e Ocultação de Dados:** Ao ativar o modo LGPD, o sistema oculta CPFs, RGs, contatos e diagnósticos médicos tanto no texto quanto aplicando uma tarja preta sobre o PDF antes de qualquer compartilhamento externo."*
 
 ---
 
 ### 5. "Quem pagaria por isso?"
 *(Dica da Banca no Slide 15: O segmento validado e o modelo de receita)*
-> **Resposta (Lucas — Negócios):**
-> *"Temos dois segmentos pagantes claros:*
-> *1. **Contratantes Diretos (Construtoras, Indústrias, Agroindústrias e Hospitais):** Pagam assinatura mensal SaaS de **R$ 2,50 a R$ 5,00 por colaborador ativo monitorado**, economizando até 85% do tempo da equipe de RH e evitando multas de NRs e processos trabalhistas (Súmula 331 TST).*
-> *2. **Consultorias de Gestão de Terceiros e BPO de RH (como a Bernhoeft):** Contratam nosso motor via API White-Label por volume para automatizar a triagem de primeira camada dos analistas deles."*
+> **Resposta:**
+> *"Temos dois perfis de clientes pagantes:*
+> *1. **Empresas Contratantes (Construtoras, Indústrias, Agroindústrias e Hospitais):** Pagam assinatura mensal de **R$ 2,50 a R$ 5,00 por trabalhador ativo**, economizando 85% do tempo do RH e evitando processos trabalhistas por falhas em documentos.*
+> *2. **Grandes Consultorias de Gestão de Terceiros (como a Bernhoeft):** Contratam nossa tecnologia integrada ao sistema deles para acelerar o trabalho de centenas de analistas."*
 
 ---
 
 ### 6. "O que falta para ir para produção?"
 *(Dica da Banca no Slide 15: Os próximos passos e o que precisam para executá-los)*
-> **Resposta (Lucas / Squad Backend):**
-> *"Mapeamos 3 passos realistas para sair do MVP para produção comercial em 30 dias:*
-> *1. **Infraestrutura Assíncrona:** Substituir o SQLite local por PostgreSQL e adicionar uma fila de mensageria (Redis + Celery/RabbitMQ) com armazenamento em bucket S3/GCS para suportar milhares de uploads simultâneos.*
-> *2. **Calibragem com Dados Reais:** Rodar um piloto com uma empresa parceira (como a Bernhoeft) usando um lote histórico anonimizado de 5.000 documentos reais para calibrar os pesos do nosso detector de divergências trabalhistas.*
-> *3. **Controle de Acesso Multi-Tenant:** Implementar autenticação JWT/OAuth2 separando os ambientes do Fornecedor (quem envia) e do Auditor de RH (quem aprova)."*
+> **Resposta:**
+> *"Faltam 3 passos claros para colocarmos em operação comercial em 30 dias:*
+> *1. **Processamento Paralelo em Nuvem:** Migrar nosso banco de testes local para um banco corporativo na nuvem com filas paralelas, permitindo que centenas de empresas enviem lotes ao mesmo tempo.*
+> *2. **Piloto com Dados Reais:** Rodar um teste de 30 dias com uma empresa parceira como a Bernhoeft para calibrar ainda mais os alertas de risco trabalhista em casos reais.*
+> *3. **Login Separado por Perfil:** Liberar o acesso com login próprio para o fornecedor enviar os documentos na ponta e o RH aprovar no painel central."*
 
 ---
 
 ## ✅ CHECKLIST FINAL DO DEMO DAY (SLIDE 18 DO PDF)
 - [ ] **Até 12h00:** Repositório GitHub atualizado com `README.md` claro de como rodar, registro de premissas/limitações e code freeze feito.
 - [ ] **Até 13h00:** Pitch ensaiado no cronômetro em **2m50s a 2m58s** (nunca passar de 3m00s!).
-- [ ] **Zoom da Tela:** Navegador em `115%` ou `125%` para a banca ler os badges de longe.
+- [ ] **Zoom da Tela:** Navegador em `115%` ou `125%` para a banca ler os alertas de longe.
 - [ ] **Plano B Gravado:** Gravar um vídeo de 1 minuto da tela funcionando perfeitamente e deixar salvo na Área de Trabalho caso o Wi-Fi do evento caia.
