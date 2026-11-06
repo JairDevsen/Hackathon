@@ -1,4 +1,4 @@
-# 🚀 Document AI Factory — Hack Garanhuns Tech 2026 (Desafio 3)
+# Citadel AI — Hackathon Garanhuns Tech 2026 (Desafio 3)
 
 Sistema ponta a ponta para ingestão de lotes documentais de grande porte, detecção automática de início/fim, agrupamento de páginas, classificação multimodal (incluindo **AR dos Correios** e **Documentos Escritos à Mão**), OCR pesquisável, **Fila de Revisão Humana (HITL)**, **Retomada após Falha** e **Anonimização de Dados Sensíveis (LGPD)**.
 
