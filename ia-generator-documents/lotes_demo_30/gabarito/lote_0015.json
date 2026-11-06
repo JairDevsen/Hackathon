@@ -1,0 +1,1434 @@
+{
+  "arquivo": "lote_0015.pdf",
+  "perfil": "recebimento_ar",
+  "empresa_cnpj": "34710592000157",
+  "competencia": "2026-06",
+  "degradacao": "media",
+  "total_paginas": 24,
+  "total_documentos": 21,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 4,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 6,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 8,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 9,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 10,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 12,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 15,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "post_it:urgente!"
+      ]
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "post_it:urgente!"
+      ]
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        1,
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "32701489687",
+      "empregado": "BIANCA BORGES DA CRUZ",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 740 988 561 AR",
+        "conteudo": "Notificação nº 288/2026",
+        "data_postagem": "2026-07-30",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PETROLINA",
+        "destinatario_nome": "Bianca Borges Da Cruz",
+        "destinatario_endereco": "Rua Gomes Teixeira, 1512",
+        "destinatario_bairro": "São Benedito",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56329299",
+        "remetente_nome": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Leão Camargo, 540 – Vera Cruz, Petrolina/PE",
+        "remetente_cep": "56328242",
+        "tentativas": [
+          {
+            "data": "2026-08-03",
+            "hora": "16:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-08-03",
+        "data_devolucao": null,
+        "recebedor_nome": "ANA CAROLINA JESUS",
+        "recebedor_documento": "5253577",
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_sem_assinatura",
+          "descricao": "AR entregue sem assinatura do recebedor",
+          "campo": "assinatura_recebedor_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Petrolina"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "80261794396",
+      "empregado": "LUIZA GONÇALVES ABREU",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "empregado_nome": "LUIZA GONÇALVES ABREU",
+        "empregado_cpf": "80261794396",
+        "empregador_razao_social": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "34710592000157",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-07-12",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        5,
+        7
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "80261794396",
+      "empregado": "LUIZA GONÇALVES ABREU",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 526 599 864 AR",
+        "conteudo": "Notificação nº 296/2026",
+        "data_postagem": "2026-07-13",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PETROLINA",
+        "destinatario_nome": "Luiza Gonçalves Abreu",
+        "destinatario_endereco": "Rua da Luz Pinto, 991",
+        "destinatario_bairro": "Conjunto Paulo Vi",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56301580",
+        "remetente_nome": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Leão Camargo, 540 – Vera Cruz, Petrolina/PE",
+        "remetente_cep": "56328242",
+        "tentativas": [
+          {
+            "data": "2026-07-15",
+            "hora": "15:45"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-15",
+        "data_devolucao": null,
+        "recebedor_nome": "LUIZA GONÇALVES ABREU",
+        "recebedor_documento": "8188559",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "13/07/2026"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Rua da Luz Pinto, 991"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "56301-580"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "VIEIRA PORTARIA SERVIÇOS LTDA"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "15/07/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        5,
+        7
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "82653079429",
+      "empregado": "MARIA LUÍSA NASCIMENTO PACHECO",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 383 245 204 AR",
+        "conteudo": "Notificação nº 100/2026",
+        "data_postagem": "2026-07-13",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PETROLINA",
+        "destinatario_nome": "Maria Luísa Nascimento Pacheco",
+        "destinatario_endereco": "Rua Ribeiro Novaes, 628",
+        "destinatario_bairro": "Granja Werneck",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56326663",
+        "remetente_nome": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Leão Camargo, 540 – Vera Cruz, Petrolina/PE",
+        "remetente_cep": "56328242",
+        "tentativas": [
+          {
+            "data": "2026-07-14",
+            "hora": "10:10"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-14",
+        "data_devolucao": null,
+        "recebedor_nome": "MARIA LUÍSA NASCIMENTO PACHECO",
+        "recebedor_documento": "7105605",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Rua Ribeiro Novaes, 628"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "MARIA LUÍSA NASCIMENTO PACHECO"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        6,
+        8
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "64508721362",
+      "empregado": "ARTHUR GABRIEL DAS NEVES RIOS",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 572 901 261 AR",
+        "conteudo": "Notificação nº 179/2026",
+        "data_postagem": "2026-08-04",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PETROLINA",
+        "destinatario_nome": "Arthur Gabriel Das Neves Rios",
+        "destinatario_endereco": "Avenida Sampaio da Cruz, 182",
+        "destinatario_bairro": "Paquetá",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56315782",
+        "remetente_nome": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Leão Camargo, 540 – Vera Cruz, Petrolina/PE",
+        "remetente_cep": "56328242",
+        "tentativas": [
+          {
+            "data": "2026-08-06",
+            "hora": "08:30"
+          },
+          {
+            "data": "2026-08-10",
+            "hora": "10:50"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-08-10",
+        "data_devolucao": null,
+        "recebedor_nome": "SARA CASA GRANDE",
+        "recebedor_documento": "4081982",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Notificação nº 179/2026"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "10/08/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        6,
+        8
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "35724806983",
+      "empregado": "OLIVIA MOURA FOGAÇA",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 225 161 900 AR",
+        "conteudo": "Notificação nº 211/2026",
+        "data_postagem": "2026-07-17",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PETROLINA",
+        "destinatario_nome": "Olivia Moura Fogaça",
+        "destinatario_endereco": "Rua Lopes Silva, 1121",
+        "destinatario_bairro": "Cidade Jardim Taquaril",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56305055",
+        "remetente_nome": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Leão Camargo, 540 – Vera Cruz, Petrolina/PE",
+        "remetente_cep": "56328242",
+        "tentativas": [
+          {
+            "data": "2026-07-20",
+            "hora": "13:40"
+          },
+          {
+            "data": "2026-07-22",
+            "hora": "09:20"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-22",
+        "data_devolucao": null,
+        "recebedor_nome": "JÚLIA RAMOS",
+        "recebedor_documento": "5530627",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "PETROLINA"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "VIEIRA PORTARIA SERVIÇOS LTDA"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "JÚLIA RAMOS"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "45283760162",
+      "empregado": "NICOLAS DA MOTA NOGUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "empregado_nome": "NICOLAS DA MOTA NOGUEIRA",
+        "empregado_cpf": "45283760162",
+        "empregador_razao_social": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "34710592000157",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-07-11",
+        "prazo_dias": 3
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "45283760162",
+      "empregado": "NICOLAS DA MOTA NOGUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 448 724 317 AR",
+        "conteudo": "Notificação nº 97/2026",
+        "data_postagem": "2026-07-12",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PETROLINA",
+        "destinatario_nome": "Nicolas Da Mota Nogueira",
+        "destinatario_endereco": "Rua Pereira Lopes, 1546",
+        "destinatario_bairro": "São Lucas",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56306022",
+        "remetente_nome": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Leão Camargo, 540 – Vera Cruz, Petrolina/PE",
+        "remetente_cep": "56328242",
+        "tentativas": [
+          {
+            "data": "2026-07-13",
+            "hora": "11:00"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-13",
+        "data_devolucao": null,
+        "recebedor_nome": "NICOLAS DA MOTA NOGUEIRA",
+        "recebedor_documento": "9090469",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "12/07/2026"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Rua Pereira Lopes, 1546"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "PE"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "NICOLAS DA MOTA NOGUEIRA"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19072456858",
+      "empregado": "LEVI APARECIDA TEIXEIRA",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 433 953 814 AR",
+        "conteudo": "Notificação nº 32/2026",
+        "data_postagem": "2026-07-30",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PETROLINA",
+        "destinatario_nome": "Levi Aparecida Teixeira",
+        "destinatario_endereco": "Rua Santos Rezende, 520",
+        "destinatario_bairro": "Lajedo",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56301316",
+        "remetente_nome": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Leão Camargo, 540 – Vera Cruz, Petrolina/PE",
+        "remetente_cep": "56328242",
+        "tentativas": [
+          {
+            "data": "2026-08-03",
+            "hora": "11:00"
+          },
+          {
+            "data": "2026-08-06",
+            "hora": "15:50"
+          },
+          {
+            "data": "2026-08-10",
+            "hora": "10:50"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "RECUSADO",
+        "data_entrega": null,
+        "data_devolucao": "2026-08-17",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "30/07/2026"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Lajedo"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "80261794396",
+      "empregado": "LUIZA GONÇALVES ABREU",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 491 670 427 AR",
+        "conteudo": "Notificação nº 351/2026",
+        "data_postagem": "2026-07-28",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PETROLINA",
+        "destinatario_nome": "Luiza Gonçalves Abreu",
+        "destinatario_endereco": "Rua da Luz Pinto, 991",
+        "destinatario_bairro": "Conjunto Paulo Vi",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56301580",
+        "remetente_nome": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Leão Camargo, 540 – Vera Cruz, Petrolina/PE",
+        "remetente_cep": "56328242",
+        "tentativas": [
+          {
+            "data": "2026-07-30",
+            "hora": "14:40"
+          },
+          {
+            "data": "2026-08-03",
+            "hora": "13:30"
+          },
+          {
+            "data": "2026-08-04",
+            "hora": "08:20"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "AUSENTE",
+        "data_entrega": null,
+        "data_devolucao": "2026-08-11",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "45283760162",
+      "empregado": "NICOLAS DA MOTA NOGUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "empregado_nome": "NICOLAS DA MOTA NOGUEIRA",
+        "empregado_cpf": "45283760162",
+        "empregador_razao_social": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "34710592000157",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-07-09",
+        "prazo_dias": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "45283760162",
+      "empregado": "NICOLAS DA MOTA NOGUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 663 627 231 AR",
+        "conteudo": "Notificação nº 229/2026",
+        "data_postagem": "2026-07-10",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PETROLINA",
+        "destinatario_nome": "Nicolas Da Mota Nogueira",
+        "destinatario_endereco": "Rua Pereira Lopes, 1546",
+        "destinatario_bairro": "São Lucas",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56306022",
+        "remetente_nome": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Leão Camargo, 540 – Vera Cruz, Petrolina/PE",
+        "remetente_cep": "56328242",
+        "tentativas": [
+          {
+            "data": "2026-07-13",
+            "hora": "15:20"
+          },
+          {
+            "data": "2026-07-15",
+            "hora": "08:00"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-15",
+        "data_devolucao": null,
+        "recebedor_nome": "NICOLAS DA MOTA NOGUEIRA",
+        "recebedor_documento": "4746753",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "RUA PEREIRA LOPES, 1546"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "SÃO LUCAS"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "NICOLAS DA MOTA NOGUEIRA"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "15/07/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19072456858",
+      "empregado": "LEVI APARECIDA TEIXEIRA",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "empregado_nome": "LEVI APARECIDA TEIXEIRA",
+        "empregado_cpf": "19072456858",
+        "empregador_razao_social": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "34710592000157",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-07-23",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        16,
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19072456858",
+      "empregado": "LEVI APARECIDA TEIXEIRA",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 815 195 583 AR",
+        "conteudo": "Notificação nº 188/2026",
+        "data_postagem": "2026-07-24",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PETROLINA",
+        "destinatario_nome": "Levi Aparecida Teixeira",
+        "destinatario_endereco": "Rua Santos Rezende, 520",
+        "destinatario_bairro": "Lajedo",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56301316",
+        "remetente_nome": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Leão Camargo, 540 – Vera Cruz, Petrolina/PE",
+        "remetente_cep": "56328242",
+        "tentativas": [
+          {
+            "data": "2026-07-27",
+            "hora": "10:10"
+          },
+          {
+            "data": "2026-07-28",
+            "hora": "16:10"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-28",
+        "data_devolucao": null,
+        "recebedor_nome": "LEVI APARECIDA TEIXEIRA",
+        "recebedor_documento": "8959461",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_sem_carimbo",
+          "descricao": "AR sem carimbo da unidade de entrega",
+          "campo": "carimbo_unidade_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "56301-316"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        16,
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "35724806983",
+      "empregado": "OLIVIA MOURA FOGAÇA",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 195 983 645 AR",
+        "conteudo": "Notificação nº 381/2026",
+        "data_postagem": "2026-07-24",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PETROLINA",
+        "destinatario_nome": "Olivia Moura Fogaça",
+        "destinatario_endereco": "Rua Lopes Silva, 1121",
+        "destinatario_bairro": "Cidade Jardim Taquaril",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56305055",
+        "remetente_nome": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Leão Camargo, 540 – Vera Cruz, Petrolina/PE",
+        "remetente_cep": "56328242",
+        "tentativas": [
+          {
+            "data": "2026-07-27",
+            "hora": "16:15"
+          },
+          {
+            "data": "2026-07-30",
+            "hora": "13:00"
+          },
+          {
+            "data": "2026-08-03",
+            "hora": "09:30"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "MUDOU_SE",
+        "data_entrega": null,
+        "data_devolucao": "2026-08-07",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "24/07/2026"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "56328-242"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        18,
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "32701489687",
+      "empregado": "BIANCA BORGES DA CRUZ",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 366 511 872 AR",
+        "conteudo": "Notificação nº 336/2026",
+        "data_postagem": "2026-07-22",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PETROLINA",
+        "destinatario_nome": "Bianca Borges Da Cruz",
+        "destinatario_endereco": "Rua Gomes Teixeira, 1512",
+        "destinatario_bairro": "São Benedito",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56329299",
+        "remetente_nome": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Leão Camargo, 540 – Vera Cruz, Petrolina/PE",
+        "remetente_cep": "56328242",
+        "tentativas": [
+          {
+            "data": "2026-07-27",
+            "hora": "13:20"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-27",
+        "data_devolucao": null,
+        "recebedor_nome": "BIANCA BORGES DA CRUZ",
+        "recebedor_documento": "5726196",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "BIANCA BORGES DA CRUZ"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "01738925668",
+      "empregado": "MARCOS VINICIUS SOUSA CORREIA",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "empregado_nome": "MARCOS VINICIUS SOUSA CORREIA",
+        "empregado_cpf": "01738925668",
+        "empregador_razao_social": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "34710592000157",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "ABANDONO_EMPREGO",
+        "data_documento": "2026-08-01",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        21,
+        23
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "01738925668",
+      "empregado": "MARCOS VINICIUS SOUSA CORREIA",
+      "competencia": null,
+      "empresa_cnpj": "34710592000157",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 504 976 899 AR",
+        "conteudo": "Notificação nº 188/2026",
+        "data_postagem": "2026-08-02",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PETROLINA",
+        "destinatario_nome": "Marcos Vinicius Sousa Correia",
+        "destinatario_endereco": "Travessa Aragão Pimenta, 690",
+        "destinatario_bairro": "Barão Homem De Melo 1ª Seção",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56301227",
+        "remetente_nome": "VIEIRA PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Leão Camargo, 540 – Vera Cruz, Petrolina/PE",
+        "remetente_cep": "56328242",
+        "tentativas": [
+          {
+            "data": "2026-08-04",
+            "hora": "14:45"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-08-04",
+        "data_devolucao": null,
+        "recebedor_nome": "MARCOS VINICIUS SOUSA CORREIA",
+        "recebedor_documento": "8629027",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Barão Homem De Melo 1ª Seção"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "56301-227"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "MARCOS VINICIUS SOUSA CORREIA"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "OUTRO",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 20,
+      "tipo": "OUTRO",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 21,
+      "tipo": "OUTRO",
+      "paginas": [
+        24
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      18,
+      18
+    ],
+    "degradacao": "media",
+    "taxa_nc": 0.34,
+    "perfil": "recebimento_ar",
+    "embaralhar": 0.14,
+    "paginas_em_branco": 0.06,
+    "fora_de_ordem": 0.1,
+    "intercalar": 0.19,
+    "taxa_defeito": 0.19,
+    "taxa_branco": 0.02,
+    "extras": 0.32,
+    "p_celular": 0.1,
+    "p_cabeca_para_baixo": 0.08,
+    "seed": 42015
+  }
+}

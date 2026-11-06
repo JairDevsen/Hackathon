@@ -1,0 +1,1041 @@
+{
+  "arquivo": "lote_0026.pdf",
+  "perfil": "desligamento",
+  "empresa_cnpj": "56720934000152",
+  "competencia": "2025-12",
+  "degradacao": "leve",
+  "total_paginas": 23,
+  "total_documentos": 18,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "OUTRO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2025-12",
+      "empresa_cnpj": "56720934000152",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "41723895628",
+      "empregado": "ANA JÚLIA SALES TEIXEIRA",
+      "competencia": null,
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "data_documento": "2025-11-25",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Ana Júlia Sales Teixeira",
+        "empregado_cpf": "41723895628",
+        "empregador_razao_social": "Porto Portaria Soluções Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Ana Júlia Sales Teixeira"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "TRCT",
+      "paginas": [
+        3,
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "41723895628",
+      "empregado": "ANA JÚLIA SALES TEIXEIRA",
+      "competencia": "2025-12",
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "empregado_nome": "ANA JÚLIA SALES TEIXEIRA",
+        "empregado_cpf": "41723895628",
+        "empregador_razao_social": "PORTO PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "56720934000152",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "16550117071",
+        "data_admissao": "2019-07-24",
+        "data_aviso_previo": null,
+        "data_afastamento": "2025-12-25",
+        "causa_afastamento": "Término do contrato de experiência",
+        "codigo_afastamento": "RA2",
+        "remuneracao_fins_rescisorios": 1920.0,
+        "total_bruto": 4800.0,
+        "total_deducoes": 271.26,
+        "valor_liquido": 4528.74,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "417.238.956-28"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "1.920,00"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "ASO",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "41723895628",
+      "empregado": "ANA JÚLIA SALES TEIXEIRA",
+      "competencia": null,
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "empregado_nome": "Ana Júlia Sales Teixeira",
+        "empregado_cpf": "41723895628",
+        "empregador_razao_social": "PORTO PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "56720934000152",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Porteiro",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2025-12-25",
+        "riscos_ocupacionais": [
+          "Físico (ruído)",
+          "Biológico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Nathan Lima",
+        "medico_crm": "CRM-AL 15057"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "09458136784",
+      "empregado": "THEODORO SANTOS PORTO",
+      "competencia": null,
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "empregado_nome": "THEODORO SANTOS PORTO",
+        "empregado_cpf": "09458136784",
+        "empregador_razao_social": "PORTO PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "56720934000152",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "ABANDONO_EMPREGO",
+        "data_documento": "2025-12-11",
+        "prazo_dias": 3
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "09458136784",
+      "empregado": "THEODORO SANTOS PORTO",
+      "competencia": null,
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 626 774 752 AR",
+        "conteudo": "Notificação nº 351/2025",
+        "data_postagem": "2025-12-12",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA GARANHUNS",
+        "destinatario_nome": "Theodoro Santos Porto",
+        "destinatario_endereco": "Travessa Silva Gomes, 181",
+        "destinatario_bairro": "Distrito Industrial Do Jatoba",
+        "destinatario_municipio": "Garanhuns",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55297344",
+        "remetente_nome": "PORTO PORTARIA SOLUÇÕES LTDA",
+        "remetente_endereco": "Travessa Mendonça Novais, 1002 – Vila Real 2ª Seção, Garanhuns/PE",
+        "remetente_cep": "55294031",
+        "tentativas": [
+          {
+            "data": "2025-12-15",
+            "hora": "15:40"
+          },
+          {
+            "data": "2025-12-18",
+            "hora": "16:45"
+          },
+          {
+            "data": "2025-12-22",
+            "hora": "08:50"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "NAO_PROCURADO",
+        "data_entrega": null,
+        "data_devolucao": "2025-12-25",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "TRCT",
+      "paginas": [
+        8,
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "09458136784",
+      "empregado": "THEODORO SANTOS PORTO",
+      "competencia": "2025-12",
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "empregado_nome": "THEODORO SANTOS PORTO",
+        "empregado_cpf": "09458136784",
+        "empregador_razao_social": "PORTO PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "56720934000152",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "10040396360",
+        "data_admissao": "2025-04-06",
+        "data_aviso_previo": "2025-11-23",
+        "data_afastamento": "2025-12-23",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 1870.0,
+        "total_bruto": 5173.67,
+        "total_deducoes": 253.06,
+        "valor_liquido": 4920.61,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "ASO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "09458136784",
+      "empregado": "THEODORO SANTOS PORTO",
+      "competencia": null,
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "empregado_nome": "Theodoro Santos Porto",
+        "empregado_cpf": "09458136784",
+        "empregador_razao_social": "PORTO PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "56720934000152",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Recepcionista",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2025-12-23",
+        "riscos_ocupacionais": [
+          "Acidentes",
+          "Físico (ruído)"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Luiz Otávio Nunes",
+        "medico_crm": "CRM-AL 22992"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "RECIBO_AVULSO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "09458136784",
+      "empregado": "THEODORO SANTOS PORTO",
+      "competencia": null,
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_pagamento": "VALE",
+        "valor": 50.0,
+        "valor_por_extenso": "cinquenta reais",
+        "recebedor_nome": "Theodoro Santos Porto",
+        "recebedor_cpf": "09458136784",
+        "pagador_nome": "Porto Portaria Soluções Ltda",
+        "referente_a": "vale (desconto em folha)",
+        "data_documento": "2025-11-26",
+        "assinatura_recebedor_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Porto Portaria Soluções Ltda"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "CPF 094.581.367-84"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "52698143746",
+      "empregado": "AURORA PORTO CORREIA",
+      "competencia": null,
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "empregado_nome": "AURORA PORTO CORREIA",
+        "empregado_cpf": "52698143746",
+        "empregador_razao_social": "PORTO PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "56720934000152",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2025-12-03",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        13,
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "52698143746",
+      "empregado": "AURORA PORTO CORREIA",
+      "competencia": null,
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 450 654 160 AR",
+        "conteudo": "Notificação nº 42/2025",
+        "data_postagem": "2025-12-04",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA GARANHUNS",
+        "destinatario_nome": "Aurora Porto Correia",
+        "destinatario_endereco": "Rua Fonseca Araújo, 1493",
+        "destinatario_bairro": "Vitoria",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56337699",
+        "remetente_nome": "PORTO PORTARIA SOLUÇÕES LTDA",
+        "remetente_endereco": "Travessa Mendonça Novais, 1002 – Vila Real 2ª Seção, Garanhuns/PE",
+        "remetente_cep": "55294031",
+        "tentativas": [
+          {
+            "data": "2025-12-08",
+            "hora": "16:45"
+          },
+          {
+            "data": "2025-12-10",
+            "hora": "14:20"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2025-12-10",
+        "data_devolucao": null,
+        "recebedor_nome": "AURORA PORTO CORREIA",
+        "recebedor_documento": "7942649",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Aurora Porto Correia"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "10/12/2025"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "TRCT",
+      "paginas": [
+        15,
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "52698143746",
+      "empregado": "AURORA PORTO CORREIA",
+      "competencia": "2025-12",
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "empregado_nome": "AURORA PORTO CORREIA",
+        "empregado_cpf": "52698143746",
+        "empregador_razao_social": "PORTO PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "56720934000152",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "12712137975",
+        "data_admissao": "2020-06-16",
+        "data_aviso_previo": null,
+        "data_afastamento": "2025-12-25",
+        "causa_afastamento": "Término do contrato de experiência",
+        "codigo_afastamento": "RA2",
+        "remuneracao_fins_rescisorios": 1940.0,
+        "total_bruto": 5065.56,
+        "total_deducoes": 274.56,
+        "valor_liquido": 4791.0,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "RA2"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "274,56"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "ASO",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "52698143746",
+      "empregado": "AURORA PORTO CORREIA",
+      "competencia": null,
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "empregado_nome": "Aurora Porto Correia",
+        "empregado_cpf": "52698143746",
+        "empregador_razao_social": "PORTO PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "56720934000152",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Porteiro",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2025-12-25",
+        "riscos_ocupacionais": [
+          "Químico",
+          "Físico (ruído)"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Benjamin Campos",
+        "medico_crm": "CRM-AL 38504"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Dr(a). Benjamin Campos"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "RECIBO_AVULSO",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "52698143746",
+      "empregado": "AURORA PORTO CORREIA",
+      "competencia": null,
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_pagamento": "VALE",
+        "valor": 80.0,
+        "valor_por_extenso": "oitenta reais",
+        "recebedor_nome": "Aurora Porto Correia",
+        "recebedor_cpf": "52698143746",
+        "pagador_nome": "Porto Portaria Soluções Ltda",
+        "referente_a": "vale (desconto em folha)",
+        "data_documento": "2025-10-26",
+        "assinatura_recebedor_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Petrolina, 26/10/2025"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "84512730923",
+      "empregado": "DANIELA VARGAS MORAES",
+      "competencia": null,
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "data_documento": "2025-11-26",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Daniela Vargas Moraes",
+        "empregado_cpf": "84512730923",
+        "empregador_razao_social": "Porto Portaria Soluções Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": null
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "TRCT",
+      "paginas": [
+        21,
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "84512730923",
+      "empregado": "DANIELA VARGAS MORAES",
+      "competencia": "2025-12",
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "empregado_nome": "DANIELA VARGAS MORAES",
+        "empregado_cpf": "84512730923",
+        "empregador_razao_social": "PORTO PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "56720934000152",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "18752470160",
+        "data_admissao": "2025-07-23",
+        "data_aviso_previo": null,
+        "data_afastamento": "2025-12-26",
+        "causa_afastamento": "Término do contrato de experiência",
+        "codigo_afastamento": "RA2",
+        "remuneracao_fins_rescisorios": 2090.0,
+        "total_bruto": 5294.66,
+        "total_deducoes": 305.58,
+        "valor_liquido": 4989.08,
+        "assinatura_empregado_presente": false,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "56.720.934/0001-52"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "RECEPCIONISTA"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "RA2"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "1.045,00"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "INSS sobre 13º salário"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "ASO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "84512730923",
+      "empregado": "DANIELA VARGAS MORAES",
+      "competencia": null,
+      "empresa_cnpj": "56720934000152",
+      "dados": {
+        "empregado_nome": "Daniela Vargas Moraes",
+        "empregado_cpf": "84512730923",
+        "empregador_razao_social": "PORTO PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "56720934000152",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Recepcionista",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2025-12-26",
+        "riscos_ocupacionais": [
+          "Acidentes",
+          "Químico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Henrique Moura",
+        "medico_crm": "CRM-BA 23039"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "OUTRO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      8,
+      8
+    ],
+    "degradacao": "leve",
+    "taxa_nc": 0.29,
+    "perfil": "desligamento",
+    "embaralhar": 0.25,
+    "paginas_em_branco": 0.08,
+    "fora_de_ordem": 0.07,
+    "intercalar": 0.06,
+    "taxa_defeito": 0.13,
+    "taxa_branco": 0.05,
+    "extras": 0.21,
+    "p_celular": 0.29,
+    "p_cabeca_para_baixo": 0.03,
+    "seed": 42026
+  }
+}

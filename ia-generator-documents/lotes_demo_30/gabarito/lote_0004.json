@@ -1,0 +1,1026 @@
+{
+  "arquivo": "lote_0004.pdf",
+  "perfil": "desligamento",
+  "empresa_cnpj": "25938061000125",
+  "competencia": "2026-01",
+  "degradacao": "forte",
+  "total_paginas": 22,
+  "total_documentos": 17,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 180,
+      "extras": [
+        "post_it:ver c/ RH"
+      ]
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 180,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "21806973413",
+      "empregado": "MARIA JÚLIA MENDES LOPES",
+      "competencia": null,
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "empregado_nome": "MARIA JÚLIA MENDES LOPES",
+        "empregado_cpf": "21806973413",
+        "empregador_razao_social": "ALBUQUERQUE LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25938061000125",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2025-12-30",
+        "prazo_dias": 3
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "21806973413",
+      "empregado": "MARIA JÚLIA MENDES LOPES",
+      "competencia": null,
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 121 418 336 AR",
+        "conteudo": "Notificação nº 236/2026",
+        "data_postagem": "2025-12-31",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PESQUEIRA",
+        "destinatario_nome": "Maria Júlia Mendes Lopes",
+        "destinatario_endereco": "Rua Vieira Cunha, 1493",
+        "destinatario_bairro": "Vila Nova Cachoeirinha 1ª Seção",
+        "destinatario_municipio": "Pesqueira",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55205652",
+        "remetente_nome": "ALBUQUERQUE LIMPEZA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Alves Mendonça, 1985 – Vila Betânia, Pesqueira/PE",
+        "remetente_cep": "55210191",
+        "tentativas": [
+          {
+            "data": "2026-01-02",
+            "hora": "11:50"
+          },
+          {
+            "data": "2026-01-05",
+            "hora": "15:30"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-01-05",
+        "data_devolucao": null,
+        "recebedor_nome": "ANTHONY GABRIEL DA ROSA",
+        "recebedor_documento": "9995352",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Maria Júlia Mendes Lopes"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "PE"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "ANTHONY GABRIEL DA ROSA"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "TRCT",
+      "paginas": [
+        3,
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "21806973413",
+      "empregado": "MARIA JÚLIA MENDES LOPES",
+      "competencia": "2026-01",
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "empregado_nome": "MARIA JÚLIA MENDES LOPES",
+        "empregado_cpf": "21806973413",
+        "empregador_razao_social": "ALBUQUERQUE LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25938061000125",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "12579941381",
+        "data_admissao": "2022-03-15",
+        "data_aviso_previo": "2025-12-19",
+        "data_afastamento": "2026-01-18",
+        "causa_afastamento": "Despedida sem justa causa, pelo empregador",
+        "codigo_afastamento": "SJ2",
+        "remuneracao_fins_rescisorios": 1800.0,
+        "total_bruto": 5230.0,
+        "total_deducoes": 92.25,
+        "valor_liquido": 5137.75,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "62391857012",
+      "empregado": "ANNA LIZ CASA GRANDE SAMPAIO",
+      "competencia": null,
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "data_documento": "2025-12-11",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Anna Liz Casa Grande Sampaio",
+        "empregado_cpf": "62391857012",
+        "empregador_razao_social": "Albuquerque Limpeza Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Departamento Pessoal"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "TRCT",
+      "paginas": [
+        6,
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "62391857012",
+      "empregado": "ANNA LIZ CASA GRANDE SAMPAIO",
+      "competencia": "2026-01",
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "empregado_nome": "ANNA LIZ CASA GRANDE SAMPAIO",
+        "empregado_cpf": "62391857012",
+        "empregador_razao_social": "ALBUQUERQUE LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25938061000125",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "19747299138",
+        "data_admissao": "2022-07-27",
+        "data_aviso_previo": "2025-12-11",
+        "data_afastamento": "2026-01-10",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 1830.0,
+        "total_bruto": 1982.5,
+        "total_deducoes": 57.19,
+        "valor_liquido": 1925.31,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "25.938.061/0001-25"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "AUXILIAR DE LIMPEZA"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "305,00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "1.982,50"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "ASO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "62391857012",
+      "empregado": "ANNA LIZ CASA GRANDE SAMPAIO",
+      "competencia": null,
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "empregado_nome": "Anna Liz Casa Grande Sampaio",
+        "empregado_cpf": "62391857012",
+        "empregador_razao_social": "ALBUQUERQUE LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25938061000125",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Auxiliar De Limpeza",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-01-10",
+        "riscos_ocupacionais": [
+          "Acidentes",
+          "Físico (ruído)"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Maria Flor Barbosa",
+        "medico_crm": "CRM-PE 14177"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "CRM-PE 14177"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "62391857012",
+      "empregado": "ANNA LIZ CASA GRANDE SAMPAIO",
+      "competencia": null,
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "data_documento": "2025-12-18",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Anna Liz Casa Grande Sampaio",
+        "empregado_cpf": "62391857012",
+        "empregador_razao_social": "Albuquerque Limpeza Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "À ALBUQUERQUE LIMPEZA SERVIÇOS LTDA"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "OCUPANTE DO CARGO DE AUXILIAR DE LIMPEZA, VENHO POR MEIO DESTA SOLICITAR"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "ANNA LIZ CASA GRANDE SAMPAIO"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "TRCT",
+      "paginas": [
+        10,
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "62391857012",
+      "empregado": "ANNA LIZ CASA GRANDE SAMPAIO",
+      "competencia": "2026-01",
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "empregado_nome": "ANNA LIZ CASA GRANDE SAMPAIO",
+        "empregado_cpf": "62391857012",
+        "empregador_razao_social": "ALBUQUERQUE LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25938061000125",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "19747299138",
+        "data_admissao": "2022-07-27",
+        "data_aviso_previo": "2025-12-18",
+        "data_afastamento": "2026-01-17",
+        "causa_afastamento": "Despedida sem justa causa, pelo empregador",
+        "codigo_afastamento": "SJ2",
+        "remuneracao_fins_rescisorios": 1830.0,
+        "total_bruto": 4442.83,
+        "total_deducoes": 89.21,
+        "valor_liquido": 4353.62,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "ASO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "62391857012",
+      "empregado": "ANNA LIZ CASA GRANDE SAMPAIO",
+      "competencia": null,
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "empregado_nome": "Anna Liz Casa Grande Sampaio",
+        "empregado_cpf": "62391857012",
+        "empregador_razao_social": "ALBUQUERQUE LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25938061000125",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Auxiliar De Limpeza",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-01-17",
+        "riscos_ocupacionais": [
+          "Químico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Ana Cecília da Rosa",
+        "medico_crm": "CRM-PE 24504"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Dr(a). Ana Cecília da Rosa"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "RECIBO_AVULSO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "62391857012",
+      "empregado": "ANNA LIZ CASA GRANDE SAMPAIO",
+      "competencia": null,
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_pagamento": "DIARIA",
+        "valor": 500.0,
+        "valor_por_extenso": "quinhentos reais",
+        "recebedor_nome": "Anna Liz Casa Grande Sampaio",
+        "recebedor_cpf": null,
+        "pagador_nome": "Albuquerque Limpeza Serviços Ltda",
+        "referente_a": "5 diária(s) de serviço",
+        "data_documento": "2026-03-15",
+        "assinatura_recebedor_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "quinhentos reais"
+        },
+        {
+          "defeito": "campo_em_branco",
+          "campo": "recebedor_cpf"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Anna Liz Casa Grande Sampaio"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74538910279",
+      "empregado": "MARIA HELENA CUNHA VARGAS",
+      "competencia": null,
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "empregado_nome": "MARIA HELENA CUNHA VARGAS",
+        "empregado_cpf": "74538910279",
+        "empregador_razao_social": "ALBUQUERQUE LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25938061000125",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2025-12-28",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74538910279",
+      "empregado": "MARIA HELENA CUNHA VARGAS",
+      "competencia": null,
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 138 571 930 AR",
+        "conteudo": "Notificação nº 273/2026",
+        "data_postagem": "2025-12-29",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PESQUEIRA",
+        "destinatario_nome": "Maria Helena Cunha Vargas",
+        "destinatario_endereco": "Travessa Carvalho Cavalcante, 1936",
+        "destinatario_bairro": "João Alfredo",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56314690",
+        "remetente_nome": "ALBUQUERQUE LIMPEZA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Alves Mendonça, 1985 – Vila Betânia, Pesqueira/PE",
+        "remetente_cep": "55210191",
+        "tentativas": [
+          {
+            "data": "2025-12-30",
+            "hora": "14:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2025-12-30",
+        "data_devolucao": null,
+        "recebedor_nome": "MARIA HELENA CUNHA VARGAS",
+        "recebedor_documento": "1902111",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Petrolina"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "PE"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "1902111"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "TRCT",
+      "paginas": [
+        16,
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74538910279",
+      "empregado": "MARIA HELENA CUNHA VARGAS",
+      "competencia": "2026-01",
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "empregado_nome": "MARIA HELENA CUNHA VARGAS",
+        "empregado_cpf": "74538910279",
+        "empregador_razao_social": "ALBUQUERQUE LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25938061000125",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "11882271194",
+        "data_admissao": "2025-01-24",
+        "data_aviso_previo": "2025-12-20",
+        "data_afastamento": "2026-01-19",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 1690.0,
+        "total_bruto": 1398.93,
+        "total_deducoes": 90.83,
+        "valor_liquido": 1471.85,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "liquido_divergente",
+          "descricao": "valor líquido não fecha com a soma",
+          "campo": "valor_liquido"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "ASO",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74538910279",
+      "empregado": "MARIA HELENA CUNHA VARGAS",
+      "competencia": null,
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "empregado_nome": "Maria Helena Cunha Vargas",
+        "empregado_cpf": "74538910279",
+        "empregador_razao_social": "ALBUQUERQUE LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25938061000125",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Auxiliar De Limpeza",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-01-19",
+        "riscos_ocupacionais": [
+          "Ausência de risco específico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Théo Vasconcelos",
+        "medico_crm": "CRM-PE 17207"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "745.389.102-79"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "RECIBO_AVULSO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74538910279",
+      "empregado": "MARIA HELENA CUNHA VARGAS",
+      "competencia": null,
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_pagamento": "VALE",
+        "valor": 200.0,
+        "valor_por_extenso": "duzentos reais",
+        "recebedor_nome": "Maria Helena Cunha Vargas",
+        "recebedor_cpf": "74538910279",
+        "pagador_nome": "Albuquerque Limpeza Serviços Ltda",
+        "referente_a": "vale (desconto em folha)",
+        "data_documento": "2026-02-03",
+        "assinatura_recebedor_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "vale (desconto em folha)"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "63852971446",
+      "empregado": "RAVY RIBEIRO CORREIA",
+      "competencia": null,
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "data_documento": "2025-12-27",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Ravy Ribeiro Correia",
+        "empregado_cpf": "63852971446",
+        "empregador_razao_social": "Albuquerque Limpeza Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "TRCT",
+      "paginas": [
+        22,
+        21
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": true,
+      "intercalado": false,
+      "cpf": "63852971446",
+      "empregado": "RAVY RIBEIRO CORREIA",
+      "competencia": "2026-01",
+      "empresa_cnpj": "25938061000125",
+      "dados": {
+        "empregado_nome": "RAVY RIBEIRO CORREIA",
+        "empregado_cpf": "63852971446",
+        "empregador_razao_social": "ALBUQUERQUE LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25938061000125",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "15997762118",
+        "data_admissao": "2023-12-04",
+        "data_aviso_previo": null,
+        "data_afastamento": "2026-01-26",
+        "causa_afastamento": "Término do contrato de experiência",
+        "codigo_afastamento": "RA2",
+        "remuneracao_fins_rescisorios": 2420.0,
+        "total_bruto": 2836.77,
+        "total_deducoes": 181.12,
+        "valor_liquido": 2655.65,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "15997762118"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "RAVY RIBEIRO CORREIA"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "TÉRMINO DO CONTRATO DE EXPERIÊNCIA"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "26/01/2026"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "INSS SOBRE 13º SALÁRIO"
+        }
+      ],
+      "observacao": null
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      11,
+      11
+    ],
+    "degradacao": "misto",
+    "taxa_nc": 0.1,
+    "perfil": "desligamento",
+    "embaralhar": 0.32,
+    "paginas_em_branco": 0.02,
+    "fora_de_ordem": 0.12,
+    "intercalar": 0.1,
+    "taxa_defeito": 0.17,
+    "taxa_branco": 0.04,
+    "extras": 0.15,
+    "p_celular": 0.12,
+    "p_cabeca_para_baixo": 0.08,
+    "seed": 42004
+  }
+}

@@ -31,10 +31,35 @@ export const TIPOS_LOTE = [['MISTO', 'Misto'], ['ADMISSAO', 'Admissão'], ['MENS
 export const MOTIVOS: Record<string, string> = {
   BAIXA_CONFIANCA: 'Baixa confiança', PAGINA_ILEGIVEL: 'Página ilegível', MULTIPLOS_DOCUMENTOS: 'Mais de um documento', TIPO_OUTRO: 'Tipo não identificado',
   SEM_VINCULO: 'Sem vínculo', VINCULO_POR_NOME: 'Vínculo só por nome', ALERTA_ERRO: 'Alerta de erro', POSSIVEL_DUPLICATA: 'Possível duplicata', DIVISAO_MANUAL: 'Divisão manual',
-  DADOS_DIVERGENTES: 'Dados divergentes', IMAGEM_BORRADA: 'Imagem borrada', REENVIO_SOLICITADO: 'Reenvio solicitado',
+  DADOS_DIVERGENTES: 'Dados divergentes', IMAGEM_BORRADA: 'Imagem borrada', REENVIO_SOLICITADO: 'Reenvio solicitado', EMPREGADOR_DIVERGENTE: 'Empregador divergente',
 }
 
 export const CATEGORIAS_RISCO: Record<string, string> = {
   JORNADA: 'Jornada', REMUNERACAO: 'Remuneração', FERIAS: 'Férias', RESCISAO: 'Rescisão', REGISTRO: 'Registro do vínculo', SEGURANCA: 'Saúde e segurança',
   DOCUMENTAL: 'Qualidade documental', PROVA: 'Prova documental', TERCEIRIZACAO: 'Terceirização',
+}
+
+/** CNPJ com máscara (00.000.000/0000-00); aceita só dígitos ou já formatado. */
+export const cnpjMask = (v: string) => {
+  const d = (v ?? '').replace(/\D/g, '').slice(0, 14)
+  return d.replace(/^(\d{2})(\d)/, '$1.$2').replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3').replace(/\.(\d{3})(\d)/, '.$1/$2').replace(/(\d{4})(\d)/, '$1-$2')
+}
+
+/** Valida os dois dígitos verificadores do CNPJ. */
+export function cnpjValido(s: string) {
+  const d = (s ?? '').replace(/\D/g, '')
+  if (d.length !== 14 || /^(\d)\1{13}$/.test(d)) return false
+  const dv = (n: number) => {
+    const pesos = n === 12 ? [5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2] : [6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2]
+    const r = pesos.reduce((acc, p, i) => acc + p * Number(d[i]), 0) % 11
+    return r < 2 ? 0 : 11 - r
+  }
+  return dv(12) === Number(d[12]) && dv(13) === Number(d[13])
+}
+
+/** Exposição da contratante a processo trabalhista causado pelo fornecedor (calculada no servidor). */
+export const EXPOSICAO: Record<string, { label: string; cls: string; explica: string }> = {
+  ALTA: { label: 'Exposição alta', cls: 'bg-danger-bg text-danger', explica: 'Há indicador de risco alto (autuação, processo, auditoria) ou documento exigido vencido.' },
+  MEDIA: { label: 'Exposição média', cls: 'bg-warning-bg text-warning', explica: 'Há indicador de risco ou documento exigido pendente.' },
+  BAIXA: { label: 'Exposição baixa', cls: 'bg-success-bg text-success', explica: 'Exigências em dia e nenhum indicador aberto.' },
 }

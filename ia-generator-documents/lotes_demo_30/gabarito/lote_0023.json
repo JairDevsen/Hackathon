@@ -1,0 +1,1726 @@
+{
+  "arquivo": "lote_0023.pdf",
+  "perfil": "recebimento_ar",
+  "empresa_cnpj": "35079124000199",
+  "competencia": "2026-03",
+  "degradacao": "media",
+  "total_paginas": 31,
+  "total_documentos": 26,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 5,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 25,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 7,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 8,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 10,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 26,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 13,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "post_it:falta assinar"
+      ]
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 15,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 16,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 26,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "post_it:falta assinar"
+      ]
+    },
+    {
+      "pagina": 27,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "post_it:falta assinar"
+      ]
+    },
+    {
+      "pagina": 28,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 21,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 29,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 30,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 31,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        1,
+        3
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "73854261071",
+      "empregado": "LAVÍNIA MOREIRA PINTO",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 501 349 460 AR",
+        "conteudo": "Notificação nº 183/2026",
+        "data_postagem": "2026-04-03",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Lavínia Moreira Pinto",
+        "destinatario_endereco": "Travessa Cassiano da Cunha, 547",
+        "destinatario_bairro": "Jatobá",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "50134209",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-04-06",
+            "hora": "16:50"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-04-06",
+        "data_devolucao": null,
+        "recebedor_nome": "MIRELLA MOREIRA",
+        "recebedor_documento": "3770286",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Lavínia Moreira Pinto"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "50524-522"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79106328431",
+      "empregado": "LUARA APARECIDA SANTOS",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "empregado_nome": "LUARA APARECIDA SANTOS",
+        "empregado_cpf": "79106328431",
+        "empregador_razao_social": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "35079124000199",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-04-05",
+        "prazo_dias": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "OUTRO",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-03",
+      "empresa_cnpj": "35079124000199",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        6,
+        8
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74283019631",
+      "empregado": "ERICK PORTO DA PAZ",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 719 614 590 AR",
+        "conteudo": "Notificação nº 127/2026",
+        "data_postagem": "2026-03-11",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Erick Porto Da Paz",
+        "destinatario_endereco": "Rua Fernandes Rios, 1190",
+        "destinatario_bairro": "Nova Vista",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52817764",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-03-16",
+            "hora": "13:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-03-16",
+        "data_devolucao": null,
+        "recebedor_nome": "NATHAN FERNANDES",
+        "recebedor_documento": "5696105",
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_sem_assinatura",
+          "descricao": "AR entregue sem assinatura do recebedor",
+          "campo": "assinatura_recebedor_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        6,
+        8
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "54386091289",
+      "empregado": "MARIA FERNANDA TEIXEIRA ALMEIDA",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 613 196 728 AR",
+        "conteudo": "Notificação nº 128/2026",
+        "data_postagem": "2026-03-28",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Maria Fernanda Teixeira Almeida",
+        "destinatario_endereco": "Rua Vieira Cunha, 101",
+        "destinatario_bairro": "Caiçara - Adelaide",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52399129",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-03-30",
+            "hora": "08:10"
+          },
+          {
+            "data": "2026-04-02",
+            "hora": "12:10"
+          },
+          {
+            "data": "2026-04-03",
+            "hora": "14:00"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "RECUSADO",
+        "data_entrega": null,
+        "data_devolucao": "2026-04-10",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "28/03/2026"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Maria Fernanda Teixeira Almeida"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "52399-129"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "50524-522"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        7,
+        10
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79106328431",
+      "empregado": "LUARA APARECIDA SANTOS",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 216 638 650 AR",
+        "conteudo": "Notificação nº 199/2026",
+        "data_postagem": "2026-04-07",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Luara Aparecida Santos",
+        "destinatario_endereco": "Travessa da Conceição da Conceição, 1268",
+        "destinatario_bairro": "Dom Silverio",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "50758960",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-04-10",
+            "hora": "12:45"
+          },
+          {
+            "data": "2026-04-13",
+            "hora": "13:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-04-13",
+        "data_devolucao": null,
+        "recebedor_nome": "LUARA APARECIDA SANTOS",
+        "recebedor_documento": "9020121",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Dom Silverio"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "86103452970",
+      "empregado": "REBECA GOMES FERREIRA",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 574 890 216 AR",
+        "conteudo": "Notificação nº 391/2026",
+        "data_postagem": "2026-03-30",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Rebeca Gomes Ferreira",
+        "destinatario_endereco": "Travessa Cassiano Azevedo, 921",
+        "destinatario_bairro": "Marmiteiros",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56308566",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-03-31",
+            "hora": "13:10"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-03-31",
+        "data_devolucao": null,
+        "recebedor_nome": "BELLA RIBEIRO",
+        "recebedor_documento": "2264408",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "MARMITEIROS"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "PE"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79106328431",
+      "empregado": "LUARA APARECIDA SANTOS",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 762 730 835 AR",
+        "conteudo": "Notificação nº 368/2026",
+        "data_postagem": "2026-04-06",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Luara Aparecida Santos",
+        "destinatario_endereco": "Travessa da Conceição da Conceição, 1268",
+        "destinatario_bairro": "Dom Silverio",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "50758960",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-04-07",
+            "hora": "16:10"
+          },
+          {
+            "data": "2026-04-09",
+            "hora": "14:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-04-09",
+        "data_devolucao": null,
+        "recebedor_nome": "ANA SOPHIA CAVALCANTE",
+        "recebedor_documento": "1637467",
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_sem_assinatura",
+          "descricao": "AR entregue sem assinatura do recebedor",
+          "campo": "assinatura_recebedor_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Dom Silverio"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "1637467"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "09/04/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        13,
+        15
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "25801763490",
+      "empregado": "PIETRA NASCIMENTO CORREIA",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 582 694 169 AR",
+        "conteudo": "Notificação nº 17/2026",
+        "data_postagem": "2026-04-05",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Pietra Nascimento Correia",
+        "destinatario_endereco": "Avenida Vargas Carvalho, 1683",
+        "destinatario_bairro": "Nova Esperança",
+        "destinatario_municipio": "Garanhuns",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55296247",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-04-06",
+            "hora": "16:15"
+          },
+          {
+            "data": "2026-04-08",
+            "hora": "15:30"
+          },
+          {
+            "data": "2026-04-09",
+            "hora": "08:30"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "NAO_PROCURADO",
+        "data_entrega": null,
+        "data_devolucao": "2026-04-13",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        13,
+        15
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "26031594889",
+      "empregado": "ANA VITÓRIA RAMOS OLIVEIRA",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 590 483 627 AR",
+        "conteudo": "Notificação nº 160/2026",
+        "data_postagem": "2026-04-06",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Ana Vitória Ramos Oliveira",
+        "destinatario_endereco": "Rua Almeida Fogaça, 703",
+        "destinatario_bairro": "Bonfim",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52749947",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-04-09",
+            "hora": "15:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-04-09",
+        "data_devolucao": null,
+        "recebedor_nome": "ANA VITÓRIA RAMOS OLIVEIRA",
+        "recebedor_documento": "9393313",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "06/04/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        14,
+        16
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "73854261071",
+      "empregado": "LAVÍNIA MOREIRA PINTO",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 877 278 971 AR",
+        "conteudo": "Notificação nº 188/2026",
+        "data_postagem": "2026-04-02",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Lavínia Moreira Pinto",
+        "destinatario_endereco": "Travessa Cassiano da Cunha, 547",
+        "destinatario_bairro": "Jatobá",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "50134209",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-04-06",
+            "hora": "13:50"
+          },
+          {
+            "data": "2026-04-07",
+            "hora": "15:50"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-04-07",
+        "data_devolucao": null,
+        "recebedor_nome": "LAVÍNIA MOREIRA PINTO",
+        "recebedor_documento": "4743459",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "50134-209"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        18,
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "54386091289",
+      "empregado": "MARIA FERNANDA TEIXEIRA ALMEIDA",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 525 804 524 AR",
+        "conteudo": "Notificação nº 212/2026",
+        "data_postagem": "2026-03-16",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Maria Fernanda Teixeira Almeida",
+        "destinatario_endereco": "Rua Vieira Cunha, 101",
+        "destinatario_bairro": "Caiçara - Adelaide",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52399129",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-03-17",
+            "hora": "11:50"
+          },
+          {
+            "data": "2026-03-20",
+            "hora": "12:00"
+          },
+          {
+            "data": "2026-03-23",
+            "hora": "10:00"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "AUSENTE",
+        "data_entrega": null,
+        "data_devolucao": "2026-03-24",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "CAIÇARA - ADELAIDE"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "24/03/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        18,
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "93178524088",
+      "empregado": "GAEL HENRIQUE FONSECA LEÃO",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 530 618 156 AR",
+        "conteudo": "Notificação nº 197/2026",
+        "data_postagem": "2026-03-11",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Gael Henrique Fonseca Leão",
+        "destinatario_endereco": "Rua Peixoto da Rocha, 840",
+        "destinatario_bairro": "Ipe",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52073937",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-03-12",
+            "hora": "09:00"
+          },
+          {
+            "data": "2026-03-16",
+            "hora": "08:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-03-16",
+        "data_devolucao": null,
+        "recebedor_nome": "MARIA JULIA MARTINS",
+        "recebedor_documento": "8864673",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_sem_carimbo",
+          "descricao": "AR sem carimbo da unidade de entrega",
+          "campo": "carimbo_unidade_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "11/03/2026"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "52073-937"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "8864673"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        20,
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "57318260995",
+      "empregado": "GAEL CAVALCANTE FREITAS",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 828 334 351 AR",
+        "conteudo": "Notificação nº 347/2026",
+        "data_postagem": "2026-03-23",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Gael Cavalcante Freitas",
+        "destinatario_endereco": "Travessa Silva Araújo, 715",
+        "destinatario_bairro": "Prado",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52104409",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-03-25",
+            "hora": "09:50"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-03-25",
+        "data_devolucao": null,
+        "recebedor_nome": "DAVI SÁ",
+        "recebedor_documento": "9283198",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "NOTIFICAÇÃO Nº 347/2026"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "PE"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "RUA VIANA SIQUEIRA, 964 – NOVA VISTA, RECIFE/PE"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "25/03/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79846235119",
+      "empregado": "DOM ALMEIDA COSTELA",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 225 817 901 AR",
+        "conteudo": "Notificação nº 339/2026",
+        "data_postagem": "2026-03-19",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Dom Almeida Costela",
+        "destinatario_endereco": "Rua Gomes Freitas, 353",
+        "destinatario_bairro": "Ouro Preto",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "50701865",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-03-20",
+            "hora": "11:10"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-03-20",
+        "data_devolucao": null,
+        "recebedor_nome": "ISABELLA CAVALCANTI",
+        "recebedor_documento": "4130535",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "19/03/2026"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Recife"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02567481958",
+      "empregado": "PEDRO MIGUEL CARVALHO CAVALCANTI",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 366 311 773 AR",
+        "conteudo": "Notificação nº 193/2026",
+        "data_postagem": "2026-03-14",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Pedro Miguel Carvalho Cavalcanti",
+        "destinatario_endereco": "Rua da Cruz Aragão, 399",
+        "destinatario_bairro": "Acaiaca",
+        "destinatario_municipio": "Serra Talhada",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56904336",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-03-17",
+            "hora": "14:15"
+          },
+          {
+            "data": "2026-03-20",
+            "hora": "16:30"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-03-20",
+        "data_devolucao": null,
+        "recebedor_nome": "PEDRO MIGUEL CARVALHO CAVALCANTI",
+        "recebedor_documento": "2047630",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Serra Talhada"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "20/03/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        24
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74283019631",
+      "empregado": "ERICK PORTO DA PAZ",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "empregado_nome": "ERICK PORTO DA PAZ",
+        "empregado_cpf": "74283019631",
+        "empregador_razao_social": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "35079124000199",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-03-10",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        27
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79106328431",
+      "empregado": "LUARA APARECIDA SANTOS",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "empregado_nome": "LUARA APARECIDA SANTOS",
+        "empregado_cpf": "79106328431",
+        "empregador_razao_social": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "35079124000199",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-04-06",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        25
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "54386091289",
+      "empregado": "MARIA FERNANDA TEIXEIRA ALMEIDA",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "empregado_nome": "MARIA FERNANDA TEIXEIRA ALMEIDA",
+        "empregado_cpf": "54386091289",
+        "empregador_razao_social": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "35079124000199",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-03-15",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        26,
+        28
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "86103452970",
+      "empregado": "REBECA GOMES FERREIRA",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 673 468 378 AR",
+        "conteudo": "Notificação nº 38/2026",
+        "data_postagem": "2026-03-28",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Rebeca Gomes Ferreira",
+        "destinatario_endereco": "Travessa Cassiano Azevedo, 921",
+        "destinatario_bairro": "Marmiteiros",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56308566",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-03-30",
+            "hora": "10:50"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-03-30",
+        "data_devolucao": null,
+        "recebedor_nome": "REBECA GOMES FERREIRA",
+        "recebedor_documento": "2115327",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Rebeca Gomes Ferreira"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "56308-566"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        26,
+        28
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": true,
+      "cpf": "57318260995",
+      "empregado": "GAEL CAVALCANTE FREITAS",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 962 751 303 AR",
+        "conteudo": "Notificação nº 48/2026",
+        "data_postagem": "2026-04-08",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Gael Cavalcante Freitas",
+        "destinatario_endereco": "Travessa Silva Araújo, 715",
+        "destinatario_bairro": "Prado",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52104409",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-04-13",
+            "hora": "09:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-04-13",
+        "data_devolucao": null,
+        "recebedor_nome": "GAEL CAVALCANTE FREITAS",
+        "recebedor_documento": "2273601",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Recife"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "2273601"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        29,
+        30
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "26031594889",
+      "empregado": "ANA VITÓRIA RAMOS OLIVEIRA",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 503 293 908 AR",
+        "conteudo": "Notificação nº 162/2026",
+        "data_postagem": "2026-03-28",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Ana Vitória Ramos Oliveira",
+        "destinatario_endereco": "Rua Almeida Fogaça, 703",
+        "destinatario_bairro": "Bonfim",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52749947",
+        "remetente_nome": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Viana Siqueira, 964 – Nova Vista, Recife/PE",
+        "remetente_cep": "50524522",
+        "tentativas": [
+          {
+            "data": "2026-03-30",
+            "hora": "10:20"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-03-30",
+        "data_devolucao": null,
+        "recebedor_nome": "ANA VITÓRIA RAMOS OLIVEIRA",
+        "recebedor_documento": "2784183",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 23,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        31
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "57318260995",
+      "empregado": "GAEL CAVALCANTE FREITAS",
+      "competencia": null,
+      "empresa_cnpj": "35079124000199",
+      "dados": {
+        "empregado_nome": "GAEL CAVALCANTE FREITAS",
+        "empregado_cpf": "57318260995",
+        "empregador_razao_social": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "35079124000199",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-03-22",
+        "prazo_dias": 3
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 24,
+      "tipo": "OUTRO",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 25,
+      "tipo": "OUTRO",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 26,
+      "tipo": "OUTRO",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      22,
+      22
+    ],
+    "degradacao": "media",
+    "taxa_nc": 0.31,
+    "perfil": "recebimento_ar",
+    "embaralhar": 0.36,
+    "paginas_em_branco": 0.05,
+    "fora_de_ordem": 0.3,
+    "intercalar": 0.14,
+    "taxa_defeito": 0.15,
+    "taxa_branco": 0.02,
+    "extras": 0.21,
+    "p_celular": 0.04,
+    "p_cabeca_para_baixo": 0.06,
+    "seed": 42023
+  }
+}

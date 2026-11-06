@@ -1,0 +1,2990 @@
+{
+  "arquivo": "lote_0012.pdf",
+  "perfil": "mensal",
+  "empresa_cnpj": "47538092000121",
+  "competencia": "2026-09",
+  "degradacao": "leve",
+  "total_paginas": 27,
+  "total_documentos": 23,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:falta assinar"
+      ]
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe",
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "post_it:urgente!"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 180,
+      "extras": [
+        "grampo",
+        "clipe",
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:lançar"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "post_it:2ª via"
+      ]
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 180,
+      "extras": [
+        "grampo",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:falta assinar",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:pago"
+      ]
+    },
+    {
+      "pagina": 26,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 27,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "CRF_FGTS",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": "FICT-22825341/2026",
+        "data_emissao": "2026-10-30",
+        "data_validade": "2026-11-29",
+        "situacao": "REGULAR",
+        "codigo_controle": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "CNDT",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": "FICT-83187243/2026",
+        "data_emissao": "2026-10-27",
+        "data_validade": "2027-04-25",
+        "situacao": "NEGATIVA",
+        "codigo_controle": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "CND_FEDERAL",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": null,
+        "data_emissao": "2026-10-31",
+        "data_validade": "2027-04-29",
+        "situacao": "NEGATIVA",
+        "codigo_controle": "FICT-7492.8976.2070"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "GUIA_FGTS",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "anotacao_manuscrita": "conferido",
+        "identificador_guia": "FICT1728012201523406",
+        "competencia": "2026-09",
+        "data_vencimento": "2026-10-20",
+        "valor_total": 2384.16,
+        "data_pagamento": "2026-10-18",
+        "autenticacao_bancaria_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        5,
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "64892570338",
+      "empregado": "EDUARDA BARROS ABREU",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregado_nome": "EDUARDA BARROS ABREU",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "006424",
+        "periodo_inicio": "2026-09-01",
+        "periodo_fim": "2026-09-30",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-09-01",
+            "marcacoes": [
+              "07:02",
+              "11:01",
+              "12:02",
+              "15:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-02",
+            "marcacoes": [
+              "07:03",
+              "11:04",
+              "12:08",
+              "16:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-03",
+            "marcacoes": [
+              "06:50",
+              "11:06",
+              "12:06",
+              "15:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-04",
+            "marcacoes": [
+              "06:57",
+              "11:00",
+              "12:00",
+              "15:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-05",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-06",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-07",
+            "marcacoes": [
+              "06:49",
+              "10:59",
+              "12:01",
+              "16:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-08",
+            "marcacoes": [
+              "07:05",
+              "10:59",
+              "12:08",
+              "16:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-09",
+            "marcacoes": [
+              "06:59",
+              "11:03",
+              "12:04",
+              "16:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-10",
+            "marcacoes": [
+              "07:02",
+              "11:04",
+              "12:04",
+              "16:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-11",
+            "marcacoes": [],
+            "ocorrencia": "ATESTADO"
+          },
+          {
+            "data": "2026-09-12",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-13",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-14",
+            "marcacoes": [
+              "07:02",
+              "10:57",
+              "12:08",
+              "16:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-15",
+            "marcacoes": [
+              "07:00",
+              "10:58",
+              "12:02",
+              "16:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-16",
+            "marcacoes": [
+              "07:01",
+              "11:06",
+              "12:08",
+              "17:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-17",
+            "marcacoes": [
+              "06:58",
+              "11:00",
+              "12:06",
+              "16:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-18",
+            "marcacoes": [
+              "06:56",
+              "11:04",
+              "12:04",
+              "16:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-19",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-20",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-21",
+            "marcacoes": [
+              "07:06",
+              "11:02",
+              "12:06",
+              "16:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-22",
+            "marcacoes": [
+              "07:06",
+              "11:03",
+              "12:03",
+              "17:14"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-23",
+            "marcacoes": [
+              "06:58",
+              "10:59",
+              "12:03",
+              "15:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-24",
+            "marcacoes": [
+              "07:01",
+              "11:01",
+              "12:04",
+              "16:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-25",
+            "marcacoes": [
+              "06:50",
+              "11:03",
+              "12:03",
+              "16:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-26",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-27",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-28",
+            "marcacoes": [
+              "07:06",
+              "11:04",
+              "12:04",
+              "16:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-29",
+            "marcacoes": [
+              "06:53",
+              "10:58",
+              "12:05",
+              "16:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-30",
+            "marcacoes": [],
+            "ocorrencia": "FALTA"
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "07:00 às 16:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "15:57"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "11:03"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "07:00"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "12:02"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "12:06"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "HOLERITE",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "64892570338",
+      "empregado": "EDUARDA BARROS ABREU",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregado_nome": "EDUARDA BARROS ABREU",
+        "empregado_cpf": "64892570338",
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "006424",
+        "cargo": "COPEIRA",
+        "competencia": "2026-09",
+        "salario_base": 1660.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 1660.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "03:19",
+            "provento": 37.54,
+            "desconto": null
+          },
+          {
+            "codigo": "210",
+            "descricao": "FALTAS",
+            "referencia": "1,00",
+            "provento": null,
+            "desconto": 55.33
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,61",
+            "provento": null,
+            "desconto": 125.03
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 99.6
+          }
+        ],
+        "total_proventos": 1697.54,
+        "total_descontos": 279.96,
+        "valor_liquido": 1454.01,
+        "base_calculo_inss": 1642.21,
+        "base_calculo_fgts": 1642.21,
+        "valor_fgts_mes": 131.38,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "liquido_divergente",
+          "descricao": "valor líquido não fecha com a soma",
+          "campo": "valor_liquido"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07635189484",
+      "empregado": "ANA JULIA VIEIRA ANDRADE",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregado_nome": "ANA JULIA VIEIRA ANDRADE",
+        "empregado_cpf": "07635189484",
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "007030",
+        "periodo_inicio": "2026-09-01",
+        "periodo_fim": "2026-09-30",
+        "forma_registro": "ELETRONICO",
+        "registros": [
+          {
+            "data": "2026-09-01",
+            "marcacoes": [
+              "06:04",
+              "09:58",
+              "11:06",
+              "15:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-02",
+            "marcacoes": [
+              "05:58",
+              "10:03",
+              "11:03",
+              "14:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-03",
+            "marcacoes": [
+              "05:56",
+              "10:01",
+              "11:04",
+              "14:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-04",
+            "marcacoes": [
+              "05:57",
+              "10:00",
+              "11:00",
+              "15:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-05",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-06",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-07",
+            "marcacoes": [
+              "05:54",
+              "10:05",
+              "11:05",
+              "15:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-08",
+            "marcacoes": [
+              "06:06",
+              "10:00",
+              "11:08",
+              "15:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-09",
+            "marcacoes": [
+              "06:02",
+              "10:01",
+              "11:01",
+              "15:54"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-10",
+            "marcacoes": [
+              "05:58",
+              "10:01",
+              "11:06",
+              "15:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-11",
+            "marcacoes": [
+              "05:49",
+              "09:57",
+              "11:02",
+              "15:24"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-12",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-13",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-14",
+            "marcacoes": [
+              "05:51",
+              "09:59",
+              "11:08",
+              "15:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-15",
+            "marcacoes": [
+              "05:55",
+              "09:59",
+              "10:59",
+              "15:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-16",
+            "marcacoes": [],
+            "ocorrencia": "FALTA"
+          },
+          {
+            "data": "2026-09-17",
+            "marcacoes": [
+              "05:50",
+              "10:06",
+              "11:08",
+              "15:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-18",
+            "marcacoes": [],
+            "ocorrencia": "ATESTADO"
+          },
+          {
+            "data": "2026-09-19",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-20",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-21",
+            "marcacoes": [
+              "05:52",
+              "10:01",
+              "11:01",
+              "15:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-22",
+            "marcacoes": [
+              "06:06",
+              "09:57",
+              "11:04",
+              "16:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-23",
+            "marcacoes": [
+              "06:01",
+              "10:04",
+              "11:05",
+              "15:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-24",
+            "marcacoes": [
+              "05:57",
+              "10:01",
+              "11:02",
+              "15:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-25",
+            "marcacoes": [
+              "05:56",
+              "09:58",
+              "11:02",
+              "15:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-26",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-27",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-28",
+            "marcacoes": [],
+            "ocorrencia": "FALTA"
+          },
+          {
+            "data": "2026-09-29",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:05",
+              "15:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-30",
+            "marcacoes": [
+              "06:06",
+              "09:59",
+              "10:59",
+              "14:58"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "HOLERITE",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07635189484",
+      "empregado": "ANA JULIA VIEIRA ANDRADE",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregado_nome": "ANA JULIA VIEIRA ANDRADE",
+        "empregado_cpf": "07635189484",
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "007030",
+        "cargo": "COZINHEIRA",
+        "competencia": "2026-09",
+        "salario_base": 2090.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2090.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "03:37",
+            "provento": 51.54,
+            "desconto": null
+          },
+          {
+            "codigo": "210",
+            "descricao": "FALTAS",
+            "referencia": "2,00",
+            "provento": null,
+            "desconto": 139.33
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,86",
+            "provento": null,
+            "desconto": 157.43
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 125.4
+          }
+        ],
+        "total_proventos": 2141.54,
+        "total_descontos": 422.16,
+        "valor_liquido": 1719.38,
+        "base_calculo_inss": 2002.21,
+        "base_calculo_fgts": 2002.21,
+        "valor_fgts_mes": 160.18,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07635189484",
+      "empregado": "ANA JULIA VIEIRA ANDRADE",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2026-10-06",
+        "valor": 1719.38,
+        "pagador_nome": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "pagador_documento": "47538092000121",
+        "favorecido_nome": "ANA JULIA VIEIRA ANDRADE",
+        "favorecido_documento": "07635189484",
+        "finalidade": "Pagamento de salário 09/2026",
+        "autenticacao": "FICT-E933637806867763994503"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "RECIBO_BENEFICIO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07635189484",
+      "empregado": "ANA JULIA VIEIRA ANDRADE",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "data_documento": "2026-08-29",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Ana Julia Vieira Andrade",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "beneficio": "VALE_TRANSPORTE",
+        "competencia": "2026-09",
+        "quantidade": 44,
+        "valor_total": 189.2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07635189484",
+      "empregado": "ANA JULIA VIEIRA ANDRADE",
+      "competencia": null,
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Ana Julia Vieira Andrade",
+        "data_atendimento": "2026-10-08",
+        "dias_afastamento": 3,
+        "cid_informado": true,
+        "medico_nome": "Dr(a). Ana Vitória Jesus",
+        "medico_crm": "CRM-PE 15856",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Recife, 08/10/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        13,
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "43510268717",
+      "empregado": "ENZO AZEVEDO MARTINS",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregado_nome": "ENZO AZEVEDO MARTINS",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "000887",
+        "periodo_inicio": "2026-09-01",
+        "periodo_fim": "2026-09-30",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-09-01",
+            "marcacoes": [
+              "05:57",
+              "10:01",
+              "11:07",
+              "15:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-02",
+            "marcacoes": [
+              "05:53",
+              "10:06",
+              "11:06",
+              "15:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-03",
+            "marcacoes": [
+              "05:57",
+              "10:02",
+              "11:06",
+              "15:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-04",
+            "marcacoes": [
+              "06:02",
+              "10:05",
+              "11:05",
+              "14:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-05",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-06",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-07",
+            "marcacoes": [
+              "05:57",
+              "10:06",
+              "11:06",
+              "14:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-08",
+            "marcacoes": [
+              "05:58",
+              "10:04",
+              "11:04",
+              "15:50"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-09",
+            "marcacoes": [
+              "05:54",
+              "10:00",
+              "11:08",
+              "15:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-10",
+            "marcacoes": [
+              "05:58",
+              "09:59",
+              "11:01",
+              "15:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-11",
+            "marcacoes": [
+              "05:49",
+              "09:59",
+              "11:07",
+              "15:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-12",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-13",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-14",
+            "marcacoes": [
+              "05:58",
+              "10:02",
+              "11:04",
+              "15:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-15",
+            "marcacoes": [
+              "05:55",
+              "10:03",
+              "11:04",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-16",
+            "marcacoes": [
+              "06:04",
+              "10:01",
+              "11:08",
+              "15:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-17",
+            "marcacoes": [
+              "05:48",
+              "09:58",
+              "11:03",
+              "15:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-18",
+            "marcacoes": [
+              "06:02",
+              "09:57",
+              "11:02",
+              "15:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-19",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-20",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-21",
+            "marcacoes": [
+              "05:52",
+              "10:00",
+              "11:05",
+              "15:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-22",
+            "marcacoes": [
+              "06:05",
+              "09:59",
+              "11:05",
+              "15:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-23",
+            "marcacoes": [
+              "05:51",
+              "10:00",
+              "11:06",
+              "15:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-24",
+            "marcacoes": [
+              "06:06",
+              "10:03",
+              "11:05",
+              "15:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-25",
+            "marcacoes": [
+              "06:05",
+              "10:02",
+              "11:02",
+              "15:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-26",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-27",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-28",
+            "marcacoes": [
+              "05:57",
+              "09:58",
+              "11:01",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-29",
+            "marcacoes": [
+              "05:51",
+              "10:05",
+              "11:05",
+              "15:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-30",
+            "marcacoes": [
+              "05:58",
+              "10:06",
+              "11:08",
+              "15:50"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "05:57"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "11:07"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "10:03"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "11:02"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "15:02"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "11:05"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "15:00"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "HOLERITE",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "43510268717",
+      "empregado": "ENZO AZEVEDO MARTINS",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregado_nome": "ENZO AZEVEDO MARTINS",
+        "empregado_cpf": "43510268717",
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "000887",
+        "cargo": "COZINHEIRA",
+        "competencia": "2026-09",
+        "salario_base": 2140.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2140.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "03:15",
+            "provento": 47.42,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,96",
+            "provento": null,
+            "desconto": 174.1
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 128.4
+          }
+        ],
+        "total_proventos": 2187.42,
+        "total_descontos": 302.5,
+        "valor_liquido": 1884.92,
+        "base_calculo_inss": 2187.42,
+        "base_calculo_fgts": 2187.42,
+        "valor_fgts_mes": 174.99,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "06  10  2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "RECIBO_BENEFICIO",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "43510268717",
+      "empregado": "ENZO AZEVEDO MARTINS",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "data_documento": "2026-08-31",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Enzo Azevedo Martins",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "beneficio": "VALE_REFEICAO",
+        "competencia": "2026-09",
+        "quantidade": 22,
+        "valor_total": 396.0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        18,
+        17
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": true,
+      "intercalado": false,
+      "cpf": "36795482065",
+      "empregado": "ANTONY PIMENTA MENDONÇA",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregado_nome": "ANTONY PIMENTA MENDONÇA",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "001695",
+        "periodo_inicio": "2026-09-01",
+        "periodo_fim": "2026-09-30",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-09-01",
+            "marcacoes": [
+              "07:48",
+              "12:02",
+              "13:02",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-02",
+            "marcacoes": [
+              "08:01",
+              "12:05",
+              "13:05",
+              "17:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-03",
+            "marcacoes": [
+              "07:48",
+              "12:00",
+              "13:07",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-04",
+            "marcacoes": [
+              "07:56",
+              "12:04",
+              "13:04",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-05",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-06",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-07",
+            "marcacoes": [
+              "08:06",
+              "12:05",
+              "13:05",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-08",
+            "marcacoes": [
+              "07:49",
+              "12:05",
+              "13:05",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-09",
+            "marcacoes": [
+              "07:59",
+              "12:00",
+              "13:01",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-10",
+            "marcacoes": [
+              "08:06",
+              "12:01",
+              "13:03",
+              "17:20"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-11",
+            "marcacoes": [
+              "07:52",
+              "12:03",
+              "13:03",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-12",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-13",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-14",
+            "marcacoes": [
+              "08:00",
+              "11:58",
+              "13:07",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-15",
+            "marcacoes": [
+              "07:56",
+              "11:57",
+              "13:06",
+              "17:23"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-16",
+            "marcacoes": [
+              "07:58",
+              "12:05",
+              "13:05",
+              "16:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-17",
+            "marcacoes": [
+              "08:03",
+              "12:02",
+              "13:03",
+              "17:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-18",
+            "marcacoes": [
+              "07:53",
+              "12:05",
+              "13:05",
+              "17:40"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-19",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-20",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-21",
+            "marcacoes": [
+              "08:02",
+              "12:03",
+              "13:03",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-22",
+            "marcacoes": [
+              "07:48",
+              "12:05",
+              "13:05",
+              "16:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-23",
+            "marcacoes": [
+              "07:55",
+              "11:58",
+              "13:01",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-24",
+            "marcacoes": [
+              "08:06",
+              "12:00",
+              "13:04",
+              "16:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-25",
+            "marcacoes": [
+              "07:59",
+              "12:01",
+              "13:05",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-26",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-27",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-28",
+            "marcacoes": [
+              "07:56",
+              "11:57",
+              "13:05",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-29",
+            "marcacoes": [
+              "07:49",
+              "12:05",
+              "13:05",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-30",
+            "marcacoes": [
+              "07:48",
+              "12:01",
+              "13:01",
+              "17:06"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "17:00"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "17:00"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "16:59"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "12:05"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "16:57"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "HOLERITE",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "36795482065",
+      "empregado": "ANTONY PIMENTA MENDONÇA",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregado_nome": "ANTONY PIMENTA MENDONÇA",
+        "empregado_cpf": "36795482065",
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "001695",
+        "cargo": "COZINHEIRA",
+        "competencia": "2026-09",
+        "salario_base": 2050.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2050.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "02:57",
+            "provento": 41.23,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,91",
+            "provento": null,
+            "desconto": 165.44
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 123.0
+          }
+        ],
+        "total_proventos": 2091.23,
+        "total_descontos": 288.44,
+        "valor_liquido": 1802.79,
+        "base_calculo_inss": 2091.23,
+        "base_calculo_fgts": 2091.23,
+        "valor_fgts_mes": 167.3,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "RECIBO_BENEFICIO",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "36795482065",
+      "empregado": "ANTONY PIMENTA MENDONÇA",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "data_documento": "2026-08-30",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Antony Pimenta Mendonça",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "beneficio": "VALE_REFEICAO",
+        "competencia": "2026-09",
+        "quantidade": 21,
+        "valor_total": 378.0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "39720561416",
+      "empregado": "BIANCA FERNANDES SANTOS",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregado_nome": "BIANCA FERNANDES SANTOS",
+        "empregado_cpf": "39720561416",
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "005413",
+        "periodo_inicio": "2026-09-01",
+        "periodo_fim": "2026-09-30",
+        "forma_registro": "ELETRONICO",
+        "registros": [
+          {
+            "data": "2026-09-01",
+            "marcacoes": [
+              "08:05",
+              "11:59",
+              "13:01",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-02",
+            "marcacoes": [
+              "08:02",
+              "12:02",
+              "13:07",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-03",
+            "marcacoes": [
+              "07:56",
+              "12:01",
+              "13:01",
+              "17:49"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-04",
+            "marcacoes": [
+              "07:56",
+              "11:57",
+              "13:07",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-05",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-06",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-07",
+            "marcacoes": [
+              "07:59",
+              "12:05",
+              "13:05",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-08",
+            "marcacoes": [
+              "08:02",
+              "12:01",
+              "13:01",
+              "18:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-09",
+            "marcacoes": [
+              "07:48",
+              "12:06",
+              "13:06",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-10",
+            "marcacoes": [
+              "07:49",
+              "11:59",
+              "13:08",
+              "17:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-11",
+            "marcacoes": [
+              "08:03",
+              "12:02",
+              "13:05",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-12",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-13",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-14",
+            "marcacoes": [
+              "08:04",
+              "11:58",
+              "13:03",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-15",
+            "marcacoes": [
+              "07:59",
+              "12:00",
+              "13:00",
+              "17:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-16",
+            "marcacoes": [
+              "07:48",
+              "12:06",
+              "13:07",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-17",
+            "marcacoes": [
+              "07:55",
+              "12:00",
+              "13:07",
+              "17:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-18",
+            "marcacoes": [
+              "08:04",
+              "12:05",
+              "13:05",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-19",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-20",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-21",
+            "marcacoes": [
+              "07:57",
+              "12:06",
+              "13:06",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-22",
+            "marcacoes": [
+              "07:56",
+              "12:01",
+              "13:01",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-23",
+            "marcacoes": [
+              "07:53",
+              "12:03",
+              "13:08",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-24",
+            "marcacoes": [
+              "07:55",
+              "12:02",
+              "13:05",
+              "17:30"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-25",
+            "marcacoes": [
+              "07:54",
+              "12:02",
+              "13:07",
+              "16:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-26",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-27",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-28",
+            "marcacoes": [
+              "07:49",
+              "12:00",
+              "13:01",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-29",
+            "marcacoes": [
+              "07:52",
+              "12:02",
+              "13:02",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-30",
+            "marcacoes": [
+              "08:02",
+              "11:57",
+              "12:58",
+              "17:38"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "HOLERITE",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "39720561416",
+      "empregado": "BIANCA FERNANDES SANTOS",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregado_nome": "BIANCA FERNANDES SANTOS",
+        "empregado_cpf": "39720561416",
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "005413",
+        "cargo": "COPEIRA",
+        "competencia": "2026-09",
+        "salario_base": 1690.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 1690.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "04:36",
+            "provento": 53.0,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,69",
+            "provento": null,
+            "desconto": 134.1
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 101.4
+          }
+        ],
+        "total_proventos": 1743.0,
+        "total_descontos": 235.5,
+        "valor_liquido": 1507.5,
+        "base_calculo_inss": 1743.0,
+        "base_calculo_fgts": 1743.0,
+        "valor_fgts_mes": 139.44,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "RECIBO_BENEFICIO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "39720561416",
+      "empregado": "BIANCA FERNANDES SANTOS",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "data_documento": "2026-08-30",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Bianca Fernandes Santos",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "beneficio": "VALE_REFEICAO",
+        "competencia": "2026-09",
+        "quantidade": 20,
+        "valor_total": 500.0
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        24,
+        25
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "15809623786",
+      "empregado": "EMILLY DAS NEVES ALMEIDA",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregado_nome": "EMILLY DAS NEVES ALMEIDA",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "003142",
+        "periodo_inicio": "2026-09-01",
+        "periodo_fim": "2026-09-30",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-09-01",
+            "marcacoes": [
+              "05:57",
+              "09:57",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-02",
+            "marcacoes": [
+              "05:48",
+              "09:57",
+              "11:03",
+              "16:16"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-03",
+            "marcacoes": [
+              "05:56",
+              "10:05",
+              "11:05",
+              "14:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-04",
+            "marcacoes": [
+              "05:48",
+              "09:59",
+              "11:06",
+              "15:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-05",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-06",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-07",
+            "marcacoes": [
+              "05:56",
+              "10:03",
+              "11:03",
+              "15:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-08",
+            "marcacoes": [
+              "06:05",
+              "10:03",
+              "11:03",
+              "15:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-09",
+            "marcacoes": [
+              "06:02",
+              "10:02",
+              "11:06",
+              "14:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-10",
+            "marcacoes": [
+              "05:49",
+              "10:00",
+              "11:00",
+              "15:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-11",
+            "marcacoes": [
+              "05:56",
+              "10:01",
+              "11:02",
+              "14:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-12",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-13",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-14",
+            "marcacoes": [
+              "06:04",
+              "09:58",
+              "11:02",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-15",
+            "marcacoes": [
+              "06:03",
+              "10:05",
+              "11:08",
+              "15:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-16",
+            "marcacoes": [
+              "05:50",
+              "09:58",
+              "11:07",
+              "14:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-17",
+            "marcacoes": [
+              "05:59",
+              "10:04",
+              "11:04",
+              "15:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-18",
+            "marcacoes": [
+              "05:49",
+              "09:57",
+              "11:08",
+              "15:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-19",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-20",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-21",
+            "marcacoes": [
+              "05:54",
+              "09:59",
+              "11:02",
+              "15:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-22",
+            "marcacoes": [
+              "05:59",
+              "10:01",
+              "11:01",
+              "16:13"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-23",
+            "marcacoes": [
+              "05:57",
+              "10:06",
+              "11:07",
+              "14:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-24",
+            "marcacoes": [
+              "05:56",
+              "10:01",
+              "11:04",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-25",
+            "marcacoes": [
+              "05:58",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-26",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-27",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-28",
+            "marcacoes": [
+              "05:59",
+              "10:02",
+              "11:02",
+              "15:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-29",
+            "marcacoes": [
+              "05:50",
+              "09:59",
+              "11:04",
+              "15:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-30",
+            "marcacoes": [
+              "05:59",
+              "10:04",
+              "11:06",
+              "15:00"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "09:57"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "11:08"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "05:59"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "HOLERITE",
+      "paginas": [
+        26
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "15809623786",
+      "empregado": "EMILLY DAS NEVES ALMEIDA",
+      "competencia": "2026-09",
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "empregado_nome": "EMILLY DAS NEVES ALMEIDA",
+        "empregado_cpf": "15809623786",
+        "empregador_razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "47538092000121",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "003142",
+        "cargo": "COPEIRA",
+        "competencia": "2026-09",
+        "salario_base": 1800.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 1800.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "04:03",
+            "provento": 49.7,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,77",
+            "provento": null,
+            "desconto": 143.7
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 108.0
+          }
+        ],
+        "total_proventos": 1849.7,
+        "total_descontos": 251.7,
+        "valor_liquido": 1598.0,
+        "base_calculo_inss": 1849.7,
+        "base_calculo_fgts": 1849.7,
+        "valor_fgts_mes": 147.98,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 23,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        27
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "15809623786",
+      "empregado": "EMILLY DAS NEVES ALMEIDA",
+      "competencia": null,
+      "empresa_cnpj": "47538092000121",
+      "dados": {
+        "data_documento": "2026-10-30",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Emilly Das Neves Almeida",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "FALTA",
+        "data_ocorrencia": "2026-10-29",
+        "motivo": "chuva forte e alagamento na rua",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      25,
+      25
+    ],
+    "degradacao": "leve",
+    "taxa_nc": 0.25,
+    "perfil": "mensal",
+    "embaralhar": 0.42,
+    "paginas_em_branco": 0.03,
+    "fora_de_ordem": 0.28,
+    "intercalar": 0.2,
+    "taxa_defeito": 0.04,
+    "taxa_branco": 0.02,
+    "extras": 0.35,
+    "p_celular": 0.16,
+    "p_cabeca_para_baixo": 0.04,
+    "seed": 42012
+  }
+}

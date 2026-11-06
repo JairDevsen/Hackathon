@@ -8,7 +8,7 @@ import { useAuth } from '@/lib/auth'
 import { useGet } from '@/lib/query'
 import { CATEGORIAS_RISCO } from '@/lib/format'
 
-type Risco = { id: string; codigo: string; titulo: string; descricao: string; base_legal: string; severidade: 'ALTO' | 'MEDIO' | 'BAIXO'; categoria: string; funcionario?: string; employee_id?: string; document_id?: string; referencia?: string; justificativa?: string }
+type Risco = { id: string; codigo: string; titulo: string; descricao: string; base_legal: string; severidade: 'ALTO' | 'MEDIO' | 'BAIXO'; categoria: string; funcionario?: string; employee_id?: string; document_id?: string; referencia?: string; justificativa?: string; supplier_id?: string; fornecedor?: string }
 
 export function RiscosPage() {
   const qc = useQueryClient()
@@ -40,7 +40,7 @@ export function RiscosPage() {
       <ul className="space-y-3">{r.data.items.map((x) => <li key={x.id}>
         <Card><div className="flex flex-wrap items-start justify-between gap-3"><div className="flex-1"><p className="flex items-center gap-2 font-semibold text-brand-darker"><AlertTriangle className={x.severidade === 'ALTO' ? 'h-4 w-4 text-danger' : 'h-4 w-4 text-warning'} />{x.titulo}<span className="rounded bg-muted px-2 py-0.5 text-xs">{x.severidade}</span></p>
           <p className="mt-1 text-sm">{x.descricao}</p><p className="mt-1 text-xs text-muted-foreground">{CATEGORIAS_RISCO[x.categoria] ?? x.categoria} · {x.base_legal}{x.referencia ? ` · ${x.referencia}` : ''}</p>
-          <div className="mt-2 flex gap-3 text-sm">{x.employee_id && <Link to={`/app/funcionarios/${x.employee_id}`} className="font-medium text-brand underline">{x.funcionario ?? 'Funcionário'}</Link>}{x.document_id && <Link to={`/app/documentos/${x.document_id}`} className="font-medium text-brand underline">Ver documento</Link>}</div>
+          <div className="mt-2 flex gap-3 text-sm">{x.supplier_id && <Link to={`/app/fornecedores/${x.supplier_id}`} className="font-medium text-brand underline">{x.fornecedor ?? 'Fornecedor'}</Link>}{x.employee_id && <Link to={`/app/funcionarios/${x.employee_id}`} className="font-medium text-brand underline">{x.funcionario ?? 'Funcionário'}</Link>}{x.document_id && <Link to={`/app/documentos/${x.document_id}`} className="font-medium text-brand underline">Ver documento</Link>}</div>
           {x.justificativa && <p className="mt-2 text-xs text-muted-foreground">Justificativa: {x.justificativa}</p>}</div>
           {status === 'ABERTO' && user?.role === 'ADMIN_EMPRESA' && <Button size="sm" onClick={() => { setSelected(x); setErr('') }}>Ignorar com justificativa</Button>}</div></Card>
       </li>)}</ul>}

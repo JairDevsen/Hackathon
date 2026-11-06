@@ -36,6 +36,14 @@ var riskCatalog = map[string]riskDef{
 	"CPF_DIVERGENTE":             {"ALTO", "PROVA", "CPF da nova cópia diverge do funcionário indicado", "Identificação do titular a confirmar antes de vincular"},
 	"TRANSCRICAO_MANUAL":         {"MEDIO", "PROVA", "Dados transcritos de original ilegível", "Conferir documento legível para comprovação"},
 	"DOCUMENTO_VENCIDO":          {"MEDIO", "DOCUMENTAL", "Documento vencido", "Validade do documento"},
+	"EMPREGADOR_DIVERGENTE":      {"MEDIO", "TERCEIRIZACAO", "Documento de empresa diferente do empregador cadastrado", "CLT arts. 2º e 3º (identificação do empregador); conferir se houve troca de empregador"},
+	"FORN_CERTIDAO_AUSENTE":      {"MEDIO", "TERCEIRIZACAO", "Terceirizada sem certidão de regularidade no dossiê", "TST Súmula 331, IV (responsabilidade subsidiária do tomador); Lei 6.019/74 art. 5º-A §5º (fiscalização das obrigações)"},
+	"FORN_CONTRATO_AUSENTE":      {"MEDIO", "TERCEIRIZACAO", "Fornecedor sem contrato de prestação de serviço no dossiê", "Lei 6.019/74 art. 5º-B (requisitos do contrato de prestação de serviços)"},
+	"FORN_CONTRATO_VENCIDO":      {"MEDIO", "TERCEIRIZACAO", "Contrato vencido com funcionários ainda alocados", "Lei 6.019/74 art. 5º-A e 5º-B (a prestação exige contrato vigente)"},
+	"FORN_GUIA_FGTS_AUSENTE":     {"MEDIO", "TERCEIRIZACAO", "Guia de FGTS da terceirizada ausente na competência", "Lei 8.036/90 art. 15; TST Súmula 331, IV (a contratante responde subsidiariamente pelas obrigações não pagas)"},
+	"FORN_AUTUACAO":              {"ALTO", "TERCEIRIZACAO", "Autuação ou fiscalização envolvendo a terceirizada", "Lei 6.019/74 art. 5º-A §5º; TST Súmula 331, IV e VI"},
+	"FORN_PROCESSO_JUDICIAL":     {"ALTO", "TERCEIRIZACAO", "Processo trabalhista envolvendo a terceirizada", "TST Súmula 331, IV e VI (a responsabilidade subsidiária abrange todas as verbas da condenação)"},
+	"FORN_AUDITORIA_RISCO_ALTO":  {"ALTO", "TERCEIRIZACAO", "Auditoria aponta risco alto no fornecedor", "Lei 6.019/74 art. 5º-A §5º (dever de fiscalizar da contratante)"},
 	"CERTIDAO_VENCIDA":           {"MEDIO", "TERCEIRIZACAO", "Certidão da empresa vencida", "TST Súmula 331 (responsabilidade subsidiária do tomador)"},
 	"ASO_VENCIDO":                {"MEDIO", "SEGURANCA", "ASO vencido", "NR-7 (PCMSO)"},
 	"NR_VENCIDO":                 {"MEDIO", "SEGURANCA", "Treinamento de NR vencido", "NR-1 e NRs específicas"},
@@ -47,13 +55,21 @@ type rdoc struct {
 	NCs, Alertas                        []map[string]any
 	Campos                              map[string]any
 	Motivos                             []string
+	Sup                                 string // fornecedor do documento (vazio = a própria empresa)
 }
 type remp struct {
 	ID       string
 	Adm, Des *time.Time
 	Status   string
+	Sup      string // empregador (fornecedor); vazio = a própria empresa
 }
-type riskRow struct{ Emp, Doc, Codigo, Ref, Desc string }
+
+// rsup: fornecedor ou terceirizada da contratante.
+type rsup struct {
+	ID, Razao, Tipo, Status string
+	Fim                     *time.Time
+}
+type riskRow struct{ Emp, Doc, Codigo, Ref, Desc, Sup string }
 
 func hhmm(s string) float64 {
 	var h, m int
@@ -84,7 +100,7 @@ func deriveRisks(emps []remp, docs []rdoc, vencidos map[string][][2]string, now 
 	var out []riskRow
 	add := func(emp, doc, code, ref, desc string) {
 		if _, ok := riskCatalog[code]; ok {
-			out = append(out, riskRow{emp, doc, code, ref, desc})
+			out = append(out, riskRow{Emp: emp, Doc: doc, Codigo: code, Ref: ref, Desc: desc})
 		}
 	}
 	byEmp := map[string][]rdoc{}
@@ -97,7 +113,7 @@ func deriveRisks(emps []remp, docs []rdoc, vencidos map[string][][2]string, now 
 		}
 		for _, a := range d.Alertas {
 			switch c := str(a, "codigo"); c {
-			case "DADOS_DIVERGENTES", "DOCUMENTO_VENCIDO", "IMAGEM_BORRADA", "CPF_INVALIDO", "CPF_DIVERGENTE":
+			case "DADOS_DIVERGENTES", "DOCUMENTO_VENCIDO", "IMAGEM_BORRADA", "CPF_INVALIDO", "CPF_DIVERGENTE", "EMPREGADOR_DIVERGENTE":
 				add(d.Emp, d.ID, c, d.Comp, str(a, "mensagem"))
 			}
 		}
@@ -189,7 +205,7 @@ func deriveRisks(emps []remp, docs []rdoc, vencidos map[string][][2]string, now 
 // RecomputeRisks regenera os indicadores do funcionário (ou da empresa toda) preservando os que o admin marcou como ignorados.
 func RecomputeRisks(ctx context.Context, tx pgx.Tx, tenantID, employeeID string) error {
 	var emps []remp
-	q := `SELECT id::text, admissao, desligamento, status FROM employees WHERE tenant_id=$1`
+	q := `SELECT id::text, admissao, desligamento, status, coalesce(supplier_id::text,'') FROM employees WHERE tenant_id=$1`
 	args := []any{tenantID}
 	if employeeID != "" {
 		q += ` AND id=$2`
@@ -201,14 +217,14 @@ func RecomputeRisks(ctx context.Context, tx pgx.Tx, tenantID, employeeID string)
 	}
 	for rows.Next() {
 		var e remp
-		if err := rows.Scan(&e.ID, &e.Adm, &e.Des, &e.Status); err != nil {
+		if err := rows.Scan(&e.ID, &e.Adm, &e.Des, &e.Status, &e.Sup); err != nil {
 			rows.Close()
 			return err
 		}
 		emps = append(emps, e)
 	}
 	rows.Close()
-	dq := `SELECT id::text, coalesce(employee_id::text,''), document_type, coalesce(competencia,''), data_documento, status, origem, nao_conformidades, alertas, campos, motivos_revisao
+	dq := `SELECT id::text, coalesce(employee_id::text,''), document_type, coalesce(competencia,''), data_documento, status, origem, nao_conformidades, alertas, campos, motivos_revisao, coalesce(supplier_id::text,'')
 	  FROM documents WHERE tenant_id=$1 AND status IN ('AUTO_APROVADO','REVISADO','AGUARDANDO_REVISAO')`
 	dargs := []any{tenantID}
 	if employeeID != "" {
@@ -223,7 +239,7 @@ func RecomputeRisks(ctx context.Context, tx pgx.Tx, tenantID, employeeID string)
 	for drows.Next() {
 		var d rdoc
 		var nc, al, cp, mot []byte
-		if err := drows.Scan(&d.ID, &d.Emp, &d.Tipo, &d.Comp, &d.Data, &d.Status, &d.Origem, &nc, &al, &cp, &mot); err != nil {
+		if err := drows.Scan(&d.ID, &d.Emp, &d.Tipo, &d.Comp, &d.Data, &d.Status, &d.Origem, &nc, &al, &cp, &mot, &d.Sup); err != nil {
 			drows.Close()
 			return err
 		}
@@ -253,25 +269,59 @@ func RecomputeRisks(ctx context.Context, tx pgx.Tx, tenantID, employeeID string)
 	}
 	vrows.Close()
 
-	risks := deriveRisks(emps, docs, venc, time.Now())
-	var emp, doc, cod, sev, cat, tit, desc, base, ref, keep []string
+	now := time.Now()
+	risks := deriveRisks(emps, docs, venc, now)
+	// o fornecedor do risco: o do documento; sem documento, o empregador do funcionário
+	docSup, empSup := map[string]string{}, map[string]string{}
+	for _, d := range docs {
+		docSup[d.ID] = d.Sup
+	}
+	for _, e := range emps {
+		empSup[e.ID] = e.Sup
+	}
+	for k := range risks {
+		if risks[k].Doc != "" {
+			risks[k].Sup = docSup[risks[k].Doc]
+		}
+		if risks[k].Sup == "" && risks[k].Doc == "" && risks[k].Emp != "" {
+			risks[k].Sup = empSup[risks[k].Emp]
+		}
+	}
+	if employeeID == "" { // riscos do fornecedor precisam do quadro completo: só no recálculo da empresa toda
+		srows, err := tx.Query(ctx, `SELECT id::text, razao_social, tipo, status, contrato_fim FROM suppliers WHERE tenant_id=$1`, tenantID)
+		if err != nil {
+			return err
+		}
+		var sups []rsup
+		for srows.Next() {
+			var x rsup
+			if err := srows.Scan(&x.ID, &x.Razao, &x.Tipo, &x.Status, &x.Fim); err != nil {
+				srows.Close()
+				return err
+			}
+			sups = append(sups, x)
+		}
+		srows.Close()
+		risks = append(risks, deriveSupplierRisks(sups, emps, docs, now)...)
+	}
+	var emp, sup, doc, cod, sev, cat, tit, desc, base, ref, keep []string
 	seen := map[string]bool{}
 	for _, r := range risks {
 		def := riskCatalog[r.Codigo]
-		k := r.Emp + "|" + r.Doc + "|" + r.Codigo + "|" + r.Ref
+		k := r.Emp + "|" + r.Sup + "|" + r.Doc + "|" + r.Codigo + "|" + r.Ref
 		if seen[k] {
 			continue
 		}
 		seen[k] = true
-		emp, doc, cod, sev, cat, tit, desc, base, ref = append(emp, r.Emp), append(doc, r.Doc), append(cod, r.Codigo), append(sev, def.Sev), append(cat, def.Cat), append(tit, def.Titulo), append(desc, r.Desc), append(base, def.Base), append(ref, r.Ref)
+		emp, sup, doc, cod, sev, cat, tit, desc, base, ref = append(emp, r.Emp), append(sup, r.Sup), append(doc, r.Doc), append(cod, r.Codigo), append(sev, def.Sev), append(cat, def.Cat), append(tit, def.Titulo), append(desc, r.Desc), append(base, def.Base), append(ref, r.Ref)
 		keep = append(keep, k)
 	}
 	if len(cod) > 0 {
-		if _, err := tx.Exec(ctx, `INSERT INTO risk_indicators (tenant_id, employee_id, document_id, codigo, severidade, categoria, titulo, descricao, base_legal, referencia)
-		  SELECT $1, nullif(e,'')::uuid, nullif(d,'')::uuid, c, s, ca, t, de, b, r FROM unnest($2::text[],$3::text[],$4::text[],$5::text[],$6::text[],$7::text[],$8::text[],$9::text[],$10::text[]) AS x(e,d,c,s,ca,t,de,b,r)
-		  ON CONFLICT (tenant_id, coalesce(employee_id,'00000000-0000-0000-0000-000000000000'::uuid), coalesce(document_id,'00000000-0000-0000-0000-000000000000'::uuid), codigo, referencia)
+		if _, err := tx.Exec(ctx, `INSERT INTO risk_indicators (tenant_id, employee_id, supplier_id, document_id, codigo, severidade, categoria, titulo, descricao, base_legal, referencia)
+		  SELECT $1, nullif(e,'')::uuid, nullif(sp,'')::uuid, nullif(d,'')::uuid, c, s, ca, t, de, b, r FROM unnest($2::text[],$3::text[],$4::text[],$5::text[],$6::text[],$7::text[],$8::text[],$9::text[],$10::text[],$11::text[]) AS x(e,sp,d,c,s,ca,t,de,b,r)
+		  ON CONFLICT (tenant_id, coalesce(employee_id,'00000000-0000-0000-0000-000000000000'::uuid), coalesce(supplier_id,'00000000-0000-0000-0000-000000000000'::uuid), coalesce(document_id,'00000000-0000-0000-0000-000000000000'::uuid), codigo, referencia)
 		  DO UPDATE SET descricao=EXCLUDED.descricao, severidade=EXCLUDED.severidade, titulo=EXCLUDED.titulo, base_legal=EXCLUDED.base_legal, atualizado_em=now()`,
-			tenantID, emp, doc, cod, sev, cat, tit, desc, base, ref); err != nil {
+			tenantID, emp, sup, doc, cod, sev, cat, tit, desc, base, ref); err != nil {
 			return fmt.Errorf("upsert riscos: %w", err)
 		}
 	}
@@ -283,6 +333,78 @@ func RecomputeRisks(ctx context.Context, tx pgx.Tx, tenantID, employeeID string)
 		dargs2 = append(dargs2, employeeID)
 	}
 	_, err = tx.Exec(ctx, `DELETE FROM risk_indicators WHERE tenant_id=$1 AND status='ABERTO'`+sc+`
-	  AND (coalesce(employee_id::text,'')||'|'||coalesce(document_id::text,'')||'|'||codigo||'|'||referencia) <> ALL($2::text[])`, dargs2...)
+	  AND (coalesce(employee_id::text,'')||'|'||coalesce(supplier_id::text,'')||'|'||coalesce(document_id::text,'')||'|'||codigo||'|'||referencia) <> ALL($2::text[])`, dargs2...)
 	return err
+}
+
+// deriveSupplierRisks: sinais, extraídos dos documentos do fornecedor, de risco para a CONTRATANTE (responsabilidade
+// subsidiária pelas obrigações trabalhistas da terceirizada). Puro: sem banco. Dado digitado (origem MANUAL) acrescenta
+// indicadores, mas não comprova presença de certidão, contrato ou guia.
+func deriveSupplierRisks(sups []rsup, emps []remp, docs []rdoc, now time.Time) []riskRow {
+	var out []riskRow
+	atual := now.Format("2006-01")
+	for _, s := range sups {
+		if s.Status != "ATIVO" {
+			continue
+		}
+		add := func(doc, code, ref, desc string) {
+			if _, ok := riskCatalog[code]; ok {
+				out = append(out, riskRow{Doc: doc, Codigo: code, Ref: ref, Desc: desc, Sup: s.ID})
+			}
+		}
+		ativos := 0
+		for _, e := range emps {
+			if e.Sup == s.ID && e.Status == "ATIVO" {
+				ativos++
+			}
+		}
+		var proof []rdoc // documentos da empresa que comprovam (com imagem e já validados)
+		comps, guias := map[string]bool{}, map[string]bool{}
+		for _, d := range docs {
+			if d.Sup != s.ID {
+				continue
+			}
+			ok := d.Origem != "MANUAL" && d.Status != "AGUARDANDO_REVISAO"
+			if d.Emp == "" {
+				if ok {
+					proof = append(proof, d)
+				}
+				if ok && d.Tipo == "GUIA_FGTS" && d.Comp != "" {
+					guias[d.Comp] = true
+				}
+				switch d.Tipo {
+				case "AUTO_INFRACAO":
+					add(d.ID, "FORN_AUTUACAO", "", fmt.Sprintf("%s: documento de fiscalização/autuação registrado em nome do fornecedor. Avaliar impacto para a contratante.", s.Razao))
+				case "PROCESSO_JUDICIAL":
+					add(d.ID, "FORN_PROCESSO_JUDICIAL", "", fmt.Sprintf("%s: citação ou processo trabalhista registrado. Verificar se a contratante figura como responsável subsidiária.", s.Razao))
+				case "RELATORIO_AUDITORIA":
+					if strings.EqualFold(str(d.Campos, "nivel_risco"), "ALTO") {
+						add(d.ID, "FORN_AUDITORIA_RISCO_ALTO", "", fmt.Sprintf("%s: relatório de auditoria classificou o risco como ALTO.", s.Razao))
+					}
+				}
+			} else if ok && (d.Tipo == "HOLERITE" || d.Tipo == "CARTAO_PONTO") && d.Comp != "" && d.Comp < atual {
+				comps[d.Comp] = true
+			}
+		}
+		tem := func(tipo string) bool { return temTipo(proof, tipo) }
+		if !tem("CONTRATO_PRESTACAO_SERVICO") {
+			add("", "FORN_CONTRATO_AUSENTE", "", fmt.Sprintf("%s: nenhum contrato de prestação de serviço validado no dossiê.", s.Razao))
+		} else if s.Fim != nil && s.Fim.Before(now) && ativos > 0 {
+			add("", "FORN_CONTRATO_VENCIDO", s.Fim.Format("2006-01-02"), fmt.Sprintf("%s: contrato encerrado em %s e ainda há %d funcionário(s) ativo(s) alocado(s).", s.Razao, s.Fim.Format("02/01/2006"), ativos))
+		}
+		if s.Tipo != "TERCEIRIZADA" && ativos == 0 {
+			continue // fornecedor sem trabalhadores alocados: sem certidões trabalhistas nem guias mensais
+		}
+		for _, t := range []string{"CRF_FGTS", "CNDT", "CND_FEDERAL"} {
+			if !tem(t) {
+				add("", "FORN_CERTIDAO_AUSENTE", t, fmt.Sprintf("%s: sem %s validado no dossiê.", s.Razao, strings.ReplaceAll(t, "_", " ")))
+			}
+		}
+		for comp := range comps {
+			if !guias[comp] {
+				add("", "FORN_GUIA_FGTS_AUSENTE", comp, fmt.Sprintf("%s: há holerite ou cartão de ponto de %s, mas nenhuma guia de FGTS dessa competência.", s.Razao, comp))
+			}
+		}
+	}
+	return out
 }

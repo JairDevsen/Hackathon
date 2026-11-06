@@ -222,7 +222,11 @@ func loadReqs(ctx context.Context, tx pgx.Tx, tenantID string) ([]req, error) {
 }
 
 func loadDocs(ctx context.Context, tx pgx.Tx, tenantID, employeeID string, company bool) (map[string]map[string][]*doc, error) {
-	q := `SELECT coalesce(employee_id::text,''), document_type, id::text, coalesce(competencia,''), data_documento, validade_ate, criado_em
+	key := "coalesce(employee_id::text,'')"
+	if company {
+		key = "coalesce(supplier_id::text,'')" // empresa: chave = fornecedor ("" = a própria empresa)
+	}
+	q := `SELECT ` + key + `, document_type, id::text, coalesce(competencia,''), data_documento, validade_ate, criado_em
 	  FROM documents WHERE tenant_id=$1 AND status IN ('AUTO_APROVADO','REVISADO') AND origem='IA'
 	    AND NOT (motivos_revisao ?| array['PAGINA_ILEGIVEL','IMAGEM_BORRADA','TIPO_OUTRO'])`
 	args := []any{tenantID}
@@ -255,7 +259,7 @@ func loadDocs(ctx context.Context, tx pgx.Tx, tenantID, employeeID string, compa
 	return out, rows.Err()
 }
 
-func upsert(ctx context.Context, tx pgx.Tx, tenantID string, employeeID *string, items []item) error {
+func upsert(ctx context.Context, tx pgx.Tx, tenantID string, employeeID, supplierID *string, items []item) error {
 	var reqIDs, refs, sts []string
 	var vences []*time.Time
 	var docs []*string
@@ -265,18 +269,18 @@ func upsert(ctx context.Context, tx pgx.Tx, tenantID string, employeeID *string,
 		keep = append(keep, it.ReqID+"|"+it.Ref)
 	}
 	if len(items) > 0 {
-		_, err := tx.Exec(ctx, `INSERT INTO compliance_items (tenant_id, employee_id, requirement_id, referencia, status, vence_em, document_id)
-		  SELECT $1, $2::uuid, r::uuid, f, s, v, d::uuid FROM unnest($3::text[], $4::text[], $5::text[], $6::date[], $7::text[]) AS x(r,f,s,v,d)
-		  ON CONFLICT (tenant_id, coalesce(employee_id,'00000000-0000-0000-0000-000000000000'::uuid), requirement_id, referencia)
+		_, err := tx.Exec(ctx, `INSERT INTO compliance_items (tenant_id, employee_id, supplier_id, requirement_id, referencia, status, vence_em, document_id)
+		  SELECT $1, $2::uuid, $8::uuid, r::uuid, f, s, v, d::uuid FROM unnest($3::text[], $4::text[], $5::text[], $6::date[], $7::text[]) AS x(r,f,s,v,d)
+		  ON CONFLICT (tenant_id, coalesce(employee_id,'00000000-0000-0000-0000-000000000000'::uuid), coalesce(supplier_id,'00000000-0000-0000-0000-000000000000'::uuid), requirement_id, referencia)
 		  DO UPDATE SET status=EXCLUDED.status, vence_em=EXCLUDED.vence_em, document_id=EXCLUDED.document_id, atualizado_em=now()
-		  WHERE compliance_items.status <> 'DISPENSADO'`, tenantID, employeeID, reqIDs, refs, sts, vences, docs)
+		  WHERE compliance_items.status <> 'DISPENSADO'`, tenantID, employeeID, reqIDs, refs, sts, vences, docs, supplierID)
 		if err != nil {
 			return fmt.Errorf("upsert compliance: %w", err)
 		}
 	}
 	// remove itens que deixaram de ser esperados (cargo mudou, regra removida), preservando dispensas
-	_, err := tx.Exec(ctx, `DELETE FROM compliance_items WHERE tenant_id=$1 AND employee_id IS NOT DISTINCT FROM $2::uuid
-	  AND status <> 'DISPENSADO' AND (requirement_id::text || '|' || referencia) <> ALL($3::text[])`, tenantID, employeeID, keep)
+	_, err := tx.Exec(ctx, `DELETE FROM compliance_items WHERE tenant_id=$1 AND employee_id IS NOT DISTINCT FROM $2::uuid AND supplier_id IS NOT DISTINCT FROM $4::uuid
+	  AND status <> 'DISPENSADO' AND (requirement_id::text || '|' || referencia) <> ALL($3::text[])`, tenantID, employeeID, keep, supplierID)
 	return err
 }
 
@@ -329,7 +333,7 @@ func Recompute(ctx context.Context, tx pgx.Tx, tenantID, employeeID string) erro
 	for _, e := range emps {
 		eid := e.ID
 		items := build(pick(employeeReqs, e.Cargo, e.Dept, &eid), docs[eid], e.Adm, e.De, now)
-		if err := upsert(ctx, tx, tenantID, &eid, items); err != nil {
+		if err := upsert(ctx, tx, tenantID, &eid, nil, items); err != nil {
 			return err
 		}
 	}
@@ -347,7 +351,10 @@ func Recompute(ctx context.Context, tx pgx.Tx, tenantID, employeeID string) erro
 		}
 		from := now.AddDate(0, -6, 0)
 		items := build(cr, cdocs[""], &from, nil, now)
-		if err := upsert(ctx, tx, tenantID, nil, items); err != nil {
+		if err := upsert(ctx, tx, tenantID, nil, nil, items); err != nil {
+			return err
+		}
+		if err := recomputeSuppliers(ctx, tx, tenantID, cr, cdocs, now); err != nil {
 			return err
 		}
 	}
@@ -397,4 +404,49 @@ func Effective(ctx context.Context, tx pgx.Tx, tenantID, employeeID string) ([]E
 		out = append(out, Efetivo{r.DocType, r.Obrigatorio, r.Origin(), r.Momento, r.Validade, r.EmployeeID != nil})
 	}
 	return out, nil
+}
+
+// recomputeSuppliers avalia, para cada fornecedor/terceirizada ativo, as exigências da empresa (CRF, CNDT, CND, guias,
+// contrato...) com os documentos dele. FORNECEDOR sem trabalhadores alocados não é cobrado pelas exigências mensais; com
+// trabalhadores alocados, é cobrado como terceirizada.
+// O ciclo mensal começa no início do contrato (ou na 1ª competência com documento): nunca inventa meses de pendência.
+func recomputeSuppliers(ctx context.Context, tx pgx.Tx, tenantID string, reqs []req, docs map[string]map[string][]*doc, now time.Time) error {
+	rows, err := tx.Query(ctx, `SELECT s.id::text, s.tipo, s.status, s.contrato_inicio, s.contrato_fim,
+	  (SELECT count(*) FROM employees e WHERE e.supplier_id=s.id AND e.status<>'DESLIGADO') FROM suppliers s WHERE s.tenant_id=$1`, tenantID)
+	if err != nil {
+		return err
+	}
+	type sup struct {
+		ID, Tipo, Status string
+		Ini, Fim         *time.Time
+		Ativos           int
+	}
+	var all []sup
+	for rows.Next() {
+		var s sup
+		if err := rows.Scan(&s.ID, &s.Tipo, &s.Status, &s.Ini, &s.Fim, &s.Ativos); err != nil {
+			rows.Close()
+			return err
+		}
+		all = append(all, s)
+	}
+	rows.Close()
+	for _, s := range all {
+		sid := s.ID
+		var items []item
+		if s.Status == "ATIVO" {
+			var rs []req
+			for _, r := range reqs {
+				if s.Tipo == "FORNECEDOR" && s.Ativos == 0 && r.Momento == "MENSAL" { // fornecedor sem trabalhadores alocados não tem folha mensal
+					continue
+				}
+				rs = append(rs, r)
+			}
+			items = build(rs, docs[sid], s.Ini, s.Fim, now)
+		}
+		if err := upsert(ctx, tx, tenantID, nil, &sid, items); err != nil {
+			return err
+		}
+	}
+	return nil
 }

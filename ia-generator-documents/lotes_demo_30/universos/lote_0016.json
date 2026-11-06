@@ -1,0 +1,297 @@
+{
+  "seed": 42016,
+  "data_referencia": "2026-03-20",
+  "empresas": [
+    {
+      "razao_social": "LOPES PORTARIA SERVIÇOS LTDA",
+      "cnpj": "40261985000123",
+      "endereco": "Rua Aragão da Cunha, 1512 – Buraco Quente",
+      "cidade": "Caruaru/PE",
+      "segmento": "Portaria e Recepção",
+      "end": {
+        "logradouro": "Rua Aragão da Cunha",
+        "numero": "1512",
+        "bairro": "Buraco Quente",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55038040"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "MARIA SOPHIA CALDEIRA CALDEIRA",
+      "cpf": "04819236598",
+      "pis": "15711094428",
+      "matricula": "000792",
+      "cargo": "PORTEIRO",
+      "cbo": "6715-59",
+      "salario": 1790.0,
+      "admissao": "2019-08-07",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "40261985000123",
+      "desligado_em": "2026-02-28",
+      "end": {
+        "logradouro": "Rua Novais Rocha",
+        "numero": "1065",
+        "bairro": "Dom Cabral",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55035596"
+      },
+      "nascimento": "1999-08-12"
+    },
+    {
+      "nome": "RAQUEL DA MOTA PACHECO",
+      "cpf": "01596478357",
+      "pis": "11181622810",
+      "matricula": "005882",
+      "cargo": "PORTEIRO",
+      "cbo": "8044-47",
+      "salario": 1810.0,
+      "admissao": "2020-04-13",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "40261985000123",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Carvalho Moura",
+        "numero": "147",
+        "bairro": "Bonsucesso",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55011756"
+      },
+      "nascimento": "1976-02-28"
+    },
+    {
+      "nome": "CLARICE MONTEIRO DA ROCHA",
+      "cpf": "52193048797",
+      "pis": "11575623514",
+      "matricula": "003347",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "5921-90",
+      "salario": 2010.0,
+      "admissao": "2024-05-26",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "40261985000123",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Carvalho Gomes",
+        "numero": "1278",
+        "bairro": "Braúnas",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55049155"
+      },
+      "nascimento": "1999-02-05"
+    },
+    {
+      "nome": "EVELYN MARTINS DIAS",
+      "cpf": "62359807447",
+      "pis": "16407627207",
+      "matricula": "009533",
+      "cargo": "PORTEIRO",
+      "cbo": "6447-89",
+      "salario": 1830.0,
+      "admissao": "2023-08-25",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "40261985000123",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Viana Pires",
+        "numero": "1551",
+        "bairro": "Vila Ouro Minas",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55047662"
+      },
+      "nascimento": "1993-06-21"
+    },
+    {
+      "nome": "LUNA FERNANDES OLIVEIRA",
+      "cpf": "96281057368",
+      "pis": "12338093013",
+      "matricula": "000591",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "5015-85",
+      "salario": 2010.0,
+      "admissao": "2023-09-11",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "40261985000123",
+      "desligado_em": "2026-02-24",
+      "end": {
+        "logradouro": "Avenida Viana da Mota",
+        "numero": "393",
+        "bairro": "Alto Caiçaras",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55079071"
+      },
+      "nascimento": "1990-09-25"
+    },
+    {
+      "nome": "MAITÊ LOPES CARDOSO",
+      "cpf": "72048639500",
+      "pis": "19004286236",
+      "matricula": "000661",
+      "cargo": "PORTEIRO",
+      "cbo": "5732-56",
+      "salario": 1900.0,
+      "admissao": "2022-12-31",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "40261985000123",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida da Costa Ferreira",
+        "numero": "421",
+        "bairro": "Túnel De Ibirité",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55013919"
+      },
+      "nascimento": "1976-07-20"
+    },
+    {
+      "nome": "ESTHER RAMOS DA MATA",
+      "cpf": "53816902740",
+      "pis": "18454310830",
+      "matricula": "002366",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "6307-85",
+      "salario": 1900.0,
+      "admissao": "2024-08-30",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "40261985000123",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Aragão Borges",
+        "numero": "1507",
+        "bairro": "Venda Nova",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55077356"
+      },
+      "nascimento": "1994-01-04"
+    },
+    {
+      "nome": "BENTO CAMPOS PASTOR",
+      "cpf": "86352104762",
+      "pis": "14983430519",
+      "matricula": "000656",
+      "cargo": "PORTEIRO",
+      "cbo": "6466-72",
+      "salario": 1730.0,
+      "admissao": "2022-03-11",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "40261985000123",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Silva Rocha",
+        "numero": "1952",
+        "bairro": "Vitoria Da Conquista",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55060414"
+      },
+      "nascimento": "1995-11-18"
+    },
+    {
+      "nome": "VINÍCIUS SIQUEIRA MOURA",
+      "cpf": "90825137659",
+      "pis": "12464950965",
+      "matricula": "006684",
+      "cargo": "PORTEIRO",
+      "cbo": "4022-43",
+      "salario": 1990.0,
+      "admissao": "2021-09-12",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "40261985000123",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Andrade Sousa",
+        "numero": "1606",
+        "bairro": "Engenho Nogueira",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55217979"
+      },
+      "nascimento": "1983-03-25"
+    },
+    {
+      "nome": "EMANUELLY RODRIGUES MARQUES",
+      "cpf": "71829034669",
+      "pis": "13865268683",
+      "matricula": "005363",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "4466-23",
+      "salario": 1850.0,
+      "admissao": "2022-12-05",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "40261985000123",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Nogueira da Rocha",
+        "numero": "230",
+        "bairro": "Maravilha",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55056498"
+      },
+      "nascimento": "1983-06-30"
+    }
+  ],
+  "competencias": [
+    "2026-01",
+    "2026-02"
+  ]
+}

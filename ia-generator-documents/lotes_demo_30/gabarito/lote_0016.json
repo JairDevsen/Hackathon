@@ -1,0 +1,1205 @@
+{
+  "arquivo": "lote_0016.pdf",
+  "perfil": "ocorrencias",
+  "empresa_cnpj": "40261985000123",
+  "competencia": "2026-01",
+  "degradacao": "forte",
+  "total_paginas": 23,
+  "total_documentos": 23,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "OUTRO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-01",
+      "empresa_cnpj": "40261985000123",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "96281057368",
+      "empregado": "LUNA FERNANDES OLIVEIRA",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "empregado_nome": "Luna Fernandes Oliveira",
+        "empregado_cpf": null,
+        "empregador_razao_social": "LOPES PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "40261985000123",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2025-11-23",
+        "motivo": "não utilização do EPI obrigatório",
+        "dias_suspensao": null,
+        "ciencia": "RECUSA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "04819236598",
+      "empregado": "MARIA SOPHIA CALDEIRA CALDEIRA",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Maria Sophia Caldeira Caldeira",
+        "data_atendimento": "2026-02-24",
+        "dias_afastamento": 2,
+        "cid_informado": true,
+        "medico_nome": "Dr(a). Diogo Freitas",
+        "medico_crm": null,
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "atestado_sem_crm",
+          "descricao": "atestado sem CRM do médico",
+          "campo": "medico_crm"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "52193048797",
+      "empregado": "CLARICE MONTEIRO DA ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "data_documento": "2026-02-21",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Clarice Monteiro Da Rocha",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "FALTA",
+        "data_ocorrencia": "2026-02-19",
+        "motivo": "consulta médica do filho",
+        "visto_chefia_presente": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "71829034669",
+      "empregado": "EMANUELLY RODRIGUES MARQUES",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "empregado_nome": "Emanuelly Rodrigues Marques",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Lopes Portaria Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "MANUSCRITA",
+        "data_documento": "2025-12-07",
+        "motivo": "abandono do posto de trabalho durante o expediente",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "04819236598",
+      "empregado": "MARIA SOPHIA CALDEIRA CALDEIRA",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "empregado_nome": "Maria Sophia Caldeira Caldeira",
+        "empregado_cpf": null,
+        "empregador_razao_social": "LOPES PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "40261985000123",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-01-11",
+        "motivo": "abandono do posto de trabalho durante o expediente",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "90825137659",
+      "empregado": "VINÍCIUS SIQUEIRA MOURA",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Vinícius Siqueira Moura",
+        "data_atendimento": "2026-02-22",
+        "dias_afastamento": 1,
+        "cid_informado": true,
+        "medico_nome": "Dr(a). Ana Cecília Ferreira",
+        "medico_crm": "CRM-PE 36198",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "01596478357",
+      "empregado": "RAQUEL DA MOTA PACHECO",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "data_documento": "2026-03-14",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Raquel Da Mota Pacheco",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-03-13",
+        "motivo": "doença na família",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "empregador_razao_social": "LOPES PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "40261985000123",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-23 – Prevenção e Combate a Incêndio",
+        "data": "2025-11-13",
+        "carga_horaria_horas": 4.0,
+        "instrutor": "Maria Andrade",
+        "participantes": [
+          {
+            "nome": "Esther Ramos Da Mata",
+            "cpf": "53816902740",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Evelyn Martins Dias",
+            "cpf": "62359807447",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Raquel Da Mota Pacheco",
+            "cpf": "01596478357",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Bento Campos Pastor",
+            "cpf": "86352104762",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Maitê Lopes Cardoso",
+            "cpf": "72048639500",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Maria Sophia Caldeira Caldeira",
+            "cpf": "04819236598",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Emanuelly Rodrigues Marques",
+            "cpf": "71829034669",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Luna Fernandes Oliveira",
+            "cpf": "96281057368",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Vinícius Siqueira Moura",
+            "cpf": "90825137659",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Clarice Monteiro Da Rocha",
+            "cpf": "52193048797",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Evelyn Martins Dias"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "623.598.074-47"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Maria Sophia Caldeira Caldeira"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "521.930.487-97"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "62359807447",
+      "empregado": "EVELYN MARTINS DIAS",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "empregado_nome": "Evelyn Martins Dias",
+        "empregado_cpf": null,
+        "empregador_razao_social": "LOPES PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "40261985000123",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-01-26",
+        "motivo": "ausência injustificada ao serviço",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "90825137659",
+      "empregado": "VINÍCIUS SIQUEIRA MOURA",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Vinícius Siqueira Moura",
+        "data_atendimento": "2026-02-09",
+        "dias_afastamento": 3,
+        "cid_informado": true,
+        "medico_nome": "Dr(a). Maysa Cassiano",
+        "medico_crm": "CRM-PE 23650",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "90825137659",
+      "empregado": "VINÍCIUS SIQUEIRA MOURA",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "data_documento": "2026-03-17",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Vinícius Siqueira Moura",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-03-17",
+        "motivo": "ônibus quebrou no caminho",
+        "visto_chefia_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "52193048797",
+      "empregado": "CLARICE MONTEIRO DA ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "empregado_nome": "Clarice Monteiro Da Rocha",
+        "empregado_cpf": null,
+        "empregador_razao_social": "LOPES PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "40261985000123",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-01-24",
+        "motivo": "ausência injustificada ao serviço",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53816902740",
+      "empregado": "ESTHER RAMOS DA MATA",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Esther Ramos Da Mata",
+        "empregado_cpf": null,
+        "empregador_razao_social": "LOPES PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "40261985000123",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "ACIDENTE",
+        "data_ocorrencia": "2026-03-15",
+        "hora": "15:30",
+        "local": "Recepção",
+        "descricao": "Escorregou no piso molhado próximo à copa e bateu o joelho no chão.",
+        "houve_afastamento": true,
+        "testemunha_nome": "José Miguel Moreira"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "15/03/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "96281057368",
+      "empregado": "LUNA FERNANDES OLIVEIRA",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "empregado_nome": "Luna Fernandes Oliveira",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Lopes Portaria Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "MANUSCRITA",
+        "data_documento": "2026-01-29",
+        "motivo": "não utilização do EPI obrigatório",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "empregador_razao_social": "LOPES PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "40261985000123",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-17 – Ergonomia",
+        "data": "2025-09-19",
+        "carga_horaria_horas": 2.0,
+        "instrutor": "Pedro Miguel Peixoto",
+        "participantes": [
+          {
+            "nome": "Luna Fernandes Oliveira",
+            "cpf": "96281057368",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Esther Ramos Da Mata",
+            "cpf": "53816902740",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Bento Campos Pastor",
+            "cpf": "86352104762",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Vinícius Siqueira Moura",
+            "cpf": "90825137659",
+            "assinatura_presente": false
+          },
+          {
+            "nome": "Maitê Lopes Cardoso",
+            "cpf": "72048639500",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Maria Sophia Caldeira Caldeira",
+            "cpf": "04819236598",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Clarice Monteiro Da Rocha",
+            "cpf": "52193048797",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Raquel Da Mota Pacheco",
+            "cpf": "01596478357",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Emanuelly Rodrigues Marques",
+            "cpf": "71829034669",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Evelyn Martins Dias",
+            "cpf": "62359807447",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [
+        {
+          "regra": "presenca_sem_assinatura",
+          "descricao": "participante sem assinatura na lista",
+          "campo": "participantes"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "538.169.027-40"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "521.930.487-97"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "90825137659",
+      "empregado": "VINÍCIUS SIQUEIRA MOURA",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "data_documento": "2026-02-02",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Vinícius Siqueira Moura",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-01-31",
+        "motivo": "ônibus quebrou no caminho",
+        "visto_chefia_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "71829034669",
+      "empregado": "EMANUELLY RODRIGUES MARQUES",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "data_documento": "2026-03-16",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Emanuelly Rodrigues Marques",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-03-15",
+        "motivo": "problema com o transporte público",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "005363"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "62359807447",
+      "empregado": "EVELYN MARTINS DIAS",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "empregado_nome": "Evelyn Martins Dias",
+        "empregado_cpf": null,
+        "empregador_razao_social": "LOPES PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "40261985000123",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "SUSPENSAO",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-03-15",
+        "motivo": "atrasos reiterados sem justificativa",
+        "dias_suspensao": 2,
+        "ciencia": "RECUSA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "62359807447",
+      "empregado": "EVELYN MARTINS DIAS",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "data_documento": "2023-08-27",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "EVELYN MARTINS DIAS",
+        "empregado_cpf": "62359807447",
+        "empregador_razao_social": "LOPES PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "40261985000123",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "PORTEIRO",
+        "riscos": [
+          "Queda de mesmo nível",
+          "Produtos químicos de limpeza",
+          "Ruído",
+          "Choque elétrico"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "04819236598",
+      "empregado": "MARIA SOPHIA CALDEIRA CALDEIRA",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "data_documento": "2026-03-15",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Maria Sophia Caldeira Caldeira",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-03-13",
+        "motivo": "falecimento de parente",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "01596478357",
+      "empregado": "RAQUEL DA MOTA PACHECO",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "data_documento": "2020-04-16",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "RAQUEL DA MOTA PACHECO",
+        "empregado_cpf": "01596478357",
+        "empregador_razao_social": "LOPES PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "40261985000123",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "PORTEIRO",
+        "riscos": [
+          "Cortes e perfurações",
+          "Ruído"
+        ]
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 23,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "86352104762",
+      "empregado": "BENTO CAMPOS PASTOR",
+      "competencia": null,
+      "empresa_cnpj": "40261985000123",
+      "dados": {
+        "empregado_nome": "Bento Campos Pastor",
+        "empregado_cpf": null,
+        "empregador_razao_social": "LOPES PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "40261985000123",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-01-11",
+        "motivo": "não utilização do EPI obrigatório",
+        "dias_suspensao": null,
+        "ciencia": "SEM_CIENCIA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_ciencia",
+          "descricao": "medida disciplinar sem ciência",
+          "campo": "ciencia"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      20,
+      20
+    ],
+    "degradacao": "forte",
+    "taxa_nc": 0.23,
+    "perfil": "ocorrencias",
+    "embaralhar": 0.38,
+    "paginas_em_branco": 0.02,
+    "fora_de_ordem": 0.28,
+    "intercalar": 0.17,
+    "taxa_defeito": 0.07,
+    "taxa_branco": 0.05,
+    "extras": 0.2,
+    "p_celular": 0.08,
+    "p_cabeca_para_baixo": 0.01,
+    "seed": 42016
+  }
+}

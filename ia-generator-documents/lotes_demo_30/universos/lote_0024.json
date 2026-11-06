@@ -1,0 +1,351 @@
+{
+  "seed": 42024,
+  "data_referencia": "2026-11-15",
+  "empresas": [
+    {
+      "razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+      "cnpj": "24813956000170",
+      "endereco": "Rua Martins Gomes, 629 – Aarão Reis",
+      "cidade": "Recife/PE",
+      "segmento": "Portaria e Recepção",
+      "end": {
+        "logradouro": "Rua Martins Gomes",
+        "numero": "629",
+        "bairro": "Aarão Reis",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52592624"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "MANUELA ARAGÃO DA MOTA",
+      "cpf": "87492106530",
+      "pis": "19667048783",
+      "matricula": "005191",
+      "cargo": "PORTEIRO",
+      "cbo": "8571-56",
+      "salario": 1900.0,
+      "admissao": "2021-02-27",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "24813956000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Montenegro Abreu",
+        "numero": "1900",
+        "bairro": "Itapoa",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52056003"
+      },
+      "nascimento": "1990-10-09"
+    },
+    {
+      "nome": "ISAAC VIEIRA FREITAS",
+      "cpf": "20745689329",
+      "pis": "10788901548",
+      "matricula": "007156",
+      "cargo": "PORTEIRO",
+      "cbo": "6251-45",
+      "salario": 1770.0,
+      "admissao": "2022-06-29",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "24813956000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Freitas Sá",
+        "numero": "1808",
+        "bairro": "Vila Da Ária",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52792731"
+      },
+      "nascimento": "1993-12-29"
+    },
+    {
+      "nome": "ANA CAROLINA VIANA LOPES",
+      "cpf": "49382756000",
+      "pis": "15834213107",
+      "matricula": "004330",
+      "cargo": "PORTEIRO",
+      "cbo": "7394-47",
+      "salario": 1730.0,
+      "admissao": "2024-10-26",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "24813956000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Barbosa Castro",
+        "numero": "411",
+        "bairro": "Olhos D'água",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "51600103"
+      },
+      "nascimento": "1995-12-06"
+    },
+    {
+      "nome": "CAROLINA SOUSA NOVAES",
+      "cpf": "34260159860",
+      "pis": "14013596004",
+      "matricula": "000990",
+      "cargo": "PORTEIRO",
+      "cbo": "6219-41",
+      "salario": 1940.0,
+      "admissao": "2022-08-29",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "24813956000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Leão da Rocha",
+        "numero": "1211",
+        "bairro": "Cachoeirinha",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "50834105"
+      },
+      "nascimento": "1989-09-18"
+    },
+    {
+      "nome": "ANNA LIZ CORREIA CIRINO",
+      "cpf": "63870149213",
+      "pis": "11241054147",
+      "matricula": "002661",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "8809-74",
+      "salario": 1890.0,
+      "admissao": "2025-06-10",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "24813956000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Luz Andrade",
+        "numero": "290",
+        "bairro": "Anchieta",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52067693"
+      },
+      "nascimento": "1986-10-28"
+    },
+    {
+      "nome": "GUSTAVO DA COSTA DIAS",
+      "cpf": "96078214322",
+      "pis": "12433109681",
+      "matricula": "003986",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "4216-59",
+      "salario": 1990.0,
+      "admissao": "2024-03-10",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "24813956000170",
+      "desligado_em": "2026-10-26",
+      "end": {
+        "logradouro": "Rua Borges Macedo",
+        "numero": "993",
+        "bairro": "Vila Copacabana",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52663595"
+      },
+      "nascimento": "1995-05-03"
+    },
+    {
+      "nome": "PIETRA PASTOR COSTELA",
+      "cpf": "15407693801",
+      "pis": "18285951567",
+      "matricula": "000109",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "5325-23",
+      "salario": 1880.0,
+      "admissao": "2024-11-08",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "24813956000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Porto Albuquerque",
+        "numero": "440",
+        "bairro": "Lindéia",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55207693"
+      },
+      "nascimento": "1994-04-02"
+    },
+    {
+      "nome": "ALICE AZEVEDO ROCHA",
+      "cpf": "42698715391",
+      "pis": "12259920499",
+      "matricula": "009574",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "6954-25",
+      "salario": 1810.0,
+      "admissao": "2023-01-29",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "24813956000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Fernandes Sousa",
+        "numero": "566",
+        "bairro": "Esperança",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56328246"
+      },
+      "nascimento": "1983-01-29"
+    },
+    {
+      "nome": "JOÃO PEDRO DA ROSA DA COSTA",
+      "cpf": "31054987610",
+      "pis": "17592308329",
+      "matricula": "003779",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "9499-47",
+      "salario": 1820.0,
+      "admissao": "2021-01-19",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "24813956000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Rocha Cunha",
+        "numero": "1700",
+        "bairro": "Vila São Geraldo",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "50562251"
+      },
+      "nascimento": "1989-09-15"
+    },
+    {
+      "nome": "BRENO ALVES PORTO",
+      "cpf": "27358149637",
+      "pis": "13237612714",
+      "matricula": "008331",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "6413-81",
+      "salario": 1760.0,
+      "admissao": "2026-05-22",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "24813956000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Pereira Fernandes",
+        "numero": "1034",
+        "bairro": "Vila Real 2ª Seção",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54184438"
+      },
+      "nascimento": "1999-06-18"
+    },
+    {
+      "nome": "HENRIQUE ROCHA FREITAS",
+      "cpf": "60283951451",
+      "pis": "10797374687",
+      "matricula": "006375",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "6451-84",
+      "salario": 2100.0,
+      "admissao": "2024-11-05",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "24813956000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa da Costa Rocha",
+        "numero": "1256",
+        "bairro": "Jaraguá",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "50891697"
+      },
+      "nascimento": "2000-04-13"
+    },
+    {
+      "nome": "MARIA ALICE DIAS BORGES",
+      "cpf": "29564710316",
+      "pis": "16535146627",
+      "matricula": "000734",
+      "cargo": "PORTEIRO",
+      "cbo": "7169-32",
+      "salario": 1990.0,
+      "admissao": "2025-04-01",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "24813956000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Pereira Vieira",
+        "numero": "1310",
+        "bairro": "Tiradentes",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "51816536"
+      },
+      "nascimento": "1974-04-17"
+    }
+  ],
+  "competencias": [
+    "2026-09",
+    "2026-10"
+  ]
+}

@@ -100,3 +100,76 @@ func TestDadoDigitadoAcrescentaMasNaoComprovaAusencia(t *testing.T) {
 		}
 	}
 }
+
+func TestRiscosDeFornecedorParaAContratante(t *testing.T) {
+	now := time.Date(2026, 11, 6, 0, 0, 0, 0, time.UTC)
+	fim := time.Date(2026, 8, 1, 0, 0, 0, 0, time.UTC)
+	sups := []rsup{
+		{ID: "T", Razao: "BRILHO LIMPEZA", Tipo: "TERCEIRIZADA", Status: "ATIVO", Fim: &fim},
+		{ID: "F", Razao: "PAPELARIA CENTRAL", Tipo: "FORNECEDOR", Status: "ATIVO"},
+		{ID: "X", Razao: "ANTIGA LTDA", Tipo: "TERCEIRIZADA", Status: "INATIVO"},
+	}
+	emps := []remp{{ID: "e1", Status: "ATIVO", Sup: "T"}, {ID: "e2", Status: "DESLIGADO", Sup: "T"}}
+	docs := []rdoc{
+		{ID: "h", Emp: "e1", Sup: "T", Tipo: "HOLERITE", Comp: "2026-09", Status: "AUTO_APROVADO", Origem: "IA"},
+		{ID: "ct", Sup: "T", Tipo: "CONTRATO_PRESTACAO_SERVICO", Status: "AUTO_APROVADO", Origem: "MANUAL"}, // digitado: não comprova
+		{ID: "ai", Sup: "T", Tipo: "AUTO_INFRACAO", Status: "AGUARDANDO_REVISAO", Origem: "IA"},
+		{ID: "pj", Sup: "T", Tipo: "PROCESSO_JUDICIAL", Status: "AUTO_APROVADO", Origem: "IA"},
+		{ID: "ra", Sup: "T", Tipo: "RELATORIO_AUDITORIA", Status: "AUTO_APROVADO", Origem: "IA", Campos: map[string]any{"nivel_risco": "alto"}},
+		{ID: "ra2", Sup: "F", Tipo: "RELATORIO_AUDITORIA", Status: "AUTO_APROVADO", Origem: "IA", Campos: map[string]any{"nivel_risco": "BAIXO"}},
+	}
+	got := map[string]int{}
+	for _, r := range deriveSupplierRisks(sups, emps, docs, now) {
+		got[r.Sup+":"+r.Codigo]++
+	}
+	for _, want := range []string{"T:FORN_CONTRATO_AUSENTE", "T:FORN_CERTIDAO_AUSENTE", "T:FORN_GUIA_FGTS_AUSENTE", "T:FORN_AUTUACAO", "T:FORN_PROCESSO_JUDICIAL", "T:FORN_AUDITORIA_RISCO_ALTO", "F:FORN_CONTRATO_AUSENTE"} {
+		if got[want] == 0 {
+			t.Errorf("faltou o indicador %s; obtidos: %v", want, got)
+		}
+	}
+	if got["T:FORN_CERTIDAO_AUSENTE"] != 3 {
+		t.Errorf("devia cobrar CRF, CNDT e CND (3), veio %d", got["T:FORN_CERTIDAO_AUSENTE"])
+	}
+	if got["F:FORN_CERTIDAO_AUSENTE"] != 0 || got["F:FORN_GUIA_FGTS_AUSENTE"] != 0 {
+		t.Error("fornecedor sem empregados alocados não deve ser cobrado por certidões trabalhistas nem guias mensais")
+	}
+	if got["F:FORN_AUDITORIA_RISCO_ALTO"] != 0 {
+		t.Error("auditoria de risco baixo não gera indicador")
+	}
+	for k := range got {
+		if len(k) > 1 && k[:2] == "X:" {
+			t.Errorf("fornecedor inativo não gera indicadores: %s", k)
+		}
+	}
+
+	// com a documentação completa e com imagem, os indicadores de ausência somem; contrato vencido com ativos aparece
+	docs = append(docs[:1:1],
+		rdoc{ID: "ct2", Sup: "T", Tipo: "CONTRATO_PRESTACAO_SERVICO", Status: "AUTO_APROVADO", Origem: "IA"},
+		rdoc{ID: "c1", Sup: "T", Tipo: "CRF_FGTS", Status: "AUTO_APROVADO", Origem: "IA"}, rdoc{ID: "c2", Sup: "T", Tipo: "CNDT", Status: "AUTO_APROVADO", Origem: "IA"},
+		rdoc{ID: "c3", Sup: "T", Tipo: "CND_FEDERAL", Status: "AUTO_APROVADO", Origem: "IA"},
+		rdoc{ID: "g", Sup: "T", Tipo: "GUIA_FGTS", Comp: "2026-09", Status: "AUTO_APROVADO", Origem: "IA"})
+	got = map[string]int{}
+	for _, r := range deriveSupplierRisks(sups[:1], emps, docs, now) {
+		got[r.Codigo]++
+	}
+	if len(got) != 1 || got["FORN_CONTRATO_VENCIDO"] != 1 {
+		t.Errorf("com tudo em dia só o contrato vencido deve aparecer: %v", got)
+	}
+}
+
+func TestFornecedorComTrabalhadoresAlocadosEhCobradoComoTerceirizada(t *testing.T) {
+	now := time.Date(2026, 11, 6, 0, 0, 0, 0, time.UTC)
+	sups := []rsup{{ID: "F1", Razao: "SEM TRABALHADORES", Tipo: "FORNECEDOR", Status: "ATIVO"}, {ID: "F2", Razao: "COM TRABALHADORES", Tipo: "FORNECEDOR", Status: "ATIVO"}}
+	emps := []remp{{ID: "e1", Status: "ATIVO", Sup: "F2"}}
+	docs := []rdoc{{ID: "h", Emp: "e1", Sup: "F2", Tipo: "HOLERITE", Comp: "2026-09", Status: "AUTO_APROVADO", Origem: "IA"}}
+	got := map[string]int{}
+	for _, r := range deriveSupplierRisks(sups, emps, docs, now) {
+		got[r.Sup+":"+r.Codigo]++
+	}
+	if got["F1:FORN_CERTIDAO_AUSENTE"] != 0 || got["F1:FORN_GUIA_FGTS_AUSENTE"] != 0 {
+		t.Errorf("fornecedor sem trabalhadores não deve ser cobrado por certidões e guias: %v", got)
+	}
+	if got["F2:FORN_CERTIDAO_AUSENTE"] != 3 || got["F2:FORN_GUIA_FGTS_AUSENTE"] != 1 {
+		t.Errorf("fornecedor com trabalhador alocado deve ser cobrado (3 certidões e a guia de 2026-09): %v", got)
+	}
+}

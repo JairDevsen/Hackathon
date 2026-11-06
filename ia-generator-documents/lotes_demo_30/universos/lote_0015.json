@@ -1,0 +1,270 @@
+{
+  "seed": 42015,
+  "data_referencia": "2026-08-17",
+  "empresas": [
+    {
+      "razao_social": "VIEIRA PORTARIA SERVIÇOS LTDA",
+      "cnpj": "34710592000157",
+      "endereco": "Rua Leão Camargo, 540 – Vera Cruz",
+      "cidade": "Petrolina/PE",
+      "segmento": "Portaria e Recepção",
+      "end": {
+        "logradouro": "Rua Leão Camargo",
+        "numero": "540",
+        "bairro": "Vera Cruz",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56328242"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "NICOLAS DA MOTA NOGUEIRA",
+      "cpf": "45283760162",
+      "pis": "14845927590",
+      "matricula": "007134",
+      "cargo": "PORTEIRO",
+      "cbo": "4439-68",
+      "salario": 1880.0,
+      "admissao": "2021-03-28",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "34710592000157",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Pereira Lopes",
+        "numero": "1546",
+        "bairro": "São Lucas",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56306022"
+      },
+      "nascimento": "1997-10-04"
+    },
+    {
+      "nome": "LEVI APARECIDA TEIXEIRA",
+      "cpf": "19072456858",
+      "pis": "11457898262",
+      "matricula": "007483",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "4733-64",
+      "salario": 1960.0,
+      "admissao": "2020-04-08",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "34710592000157",
+      "desligado_em": "2026-07-10",
+      "end": {
+        "logradouro": "Rua Santos Rezende",
+        "numero": "520",
+        "bairro": "Lajedo",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56301316"
+      },
+      "nascimento": "1972-04-08"
+    },
+    {
+      "nome": "MARIA LUÍSA NASCIMENTO PACHECO",
+      "cpf": "82653079429",
+      "pis": "11994496376",
+      "matricula": "003197",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "5558-11",
+      "salario": 1790.0,
+      "admissao": "2023-04-29",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "34710592000157",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Ribeiro Novaes",
+        "numero": "628",
+        "bairro": "Granja Werneck",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56326663"
+      },
+      "nascimento": "1988-02-09"
+    },
+    {
+      "nome": "ARTHUR GABRIEL DAS NEVES RIOS",
+      "cpf": "64508721362",
+      "pis": "18539574980",
+      "matricula": "000757",
+      "cargo": "PORTEIRO",
+      "cbo": "9618-11",
+      "salario": 2000.0,
+      "admissao": "2025-10-21",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "34710592000157",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Sampaio da Cruz",
+        "numero": "182",
+        "bairro": "Paquetá",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56315782"
+      },
+      "nascimento": "1996-10-26"
+    },
+    {
+      "nome": "MARCOS VINICIUS SOUSA CORREIA",
+      "cpf": "01738925668",
+      "pis": "12841683534",
+      "matricula": "002257",
+      "cargo": "PORTEIRO",
+      "cbo": "7800-10",
+      "salario": 1940.0,
+      "admissao": "2021-03-22",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "34710592000157",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Aragão Pimenta",
+        "numero": "690",
+        "bairro": "Barão Homem De Melo 1ª Seção",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56301227"
+      },
+      "nascimento": "1967-01-05"
+    },
+    {
+      "nome": "OLIVIA MOURA FOGAÇA",
+      "cpf": "35724806983",
+      "pis": "18023480141",
+      "matricula": "002916",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "7920-68",
+      "salario": 1810.0,
+      "admissao": "2021-12-28",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "34710592000157",
+      "desligado_em": "2026-07-19",
+      "end": {
+        "logradouro": "Rua Lopes Silva",
+        "numero": "1121",
+        "bairro": "Cidade Jardim Taquaril",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56305055"
+      },
+      "nascimento": "1994-03-12"
+    },
+    {
+      "nome": "BIANCA BORGES DA CRUZ",
+      "cpf": "32701489687",
+      "pis": "19390362612",
+      "matricula": "005105",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "4374-58",
+      "salario": 1870.0,
+      "admissao": "2023-06-20",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "34710592000157",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Gomes Teixeira",
+        "numero": "1512",
+        "bairro": "São Benedito",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56329299"
+      },
+      "nascimento": "1969-05-11"
+    },
+    {
+      "nome": "OLIVER PORTO FREITAS",
+      "cpf": "32704819505",
+      "pis": "16473904205",
+      "matricula": "004223",
+      "cargo": "PORTEIRO",
+      "cbo": "6379-89",
+      "salario": 1920.0,
+      "admissao": "2020-07-02",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "34710592000157",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Pires Almeida",
+        "numero": "729",
+        "bairro": "Estrela Do Oriente",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55299144"
+      },
+      "nascimento": "1973-06-09"
+    },
+    {
+      "nome": "LUIZA GONÇALVES ABREU",
+      "cpf": "80261794396",
+      "pis": "13484270909",
+      "matricula": "002706",
+      "cargo": "PORTEIRO",
+      "cbo": "5280-97",
+      "salario": 1780.0,
+      "admissao": "2023-06-17",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "34710592000157",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Luz Pinto",
+        "numero": "991",
+        "bairro": "Conjunto Paulo Vi",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56301580"
+      },
+      "nascimento": "1986-05-06"
+    }
+  ],
+  "competencias": [
+    "2026-06",
+    "2026-07"
+  ]
+}

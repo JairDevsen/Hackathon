@@ -1,0 +1,405 @@
+{
+  "seed": 42004,
+  "data_referencia": "2026-03-20",
+  "empresas": [
+    {
+      "razao_social": "ALBUQUERQUE LIMPEZA SERVIÇOS LTDA",
+      "cnpj": "25938061000125",
+      "endereco": "Rua Alves Mendonça, 1985 – Vila Betânia",
+      "cidade": "Pesqueira/PE",
+      "segmento": "Limpeza e Conservação",
+      "end": {
+        "logradouro": "Rua Alves Mendonça",
+        "numero": "1985",
+        "bairro": "Vila Betânia",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55210191"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "MIGUEL FERNANDES FERNANDES",
+      "cpf": "57203148653",
+      "pis": "14355572176",
+      "matricula": "002324",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "8273-82",
+      "salario": 2410.0,
+      "admissao": "2025-08-24",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "25938061000125",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Leão Silveira",
+        "numero": "1164",
+        "bairro": "Vila Nova Dos Milionarios",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55216145"
+      },
+      "nascimento": "1994-07-08"
+    },
+    {
+      "nome": "MARIA JULIA FONSECA NUNES",
+      "cpf": "82409561306",
+      "pis": "10710526234",
+      "matricula": "002649",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "6256-81",
+      "salario": 1680.0,
+      "admissao": "2022-10-07",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "25938061000125",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Souza Viana",
+        "numero": "481",
+        "bairro": "Apolonia",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55206411"
+      },
+      "nascimento": "1994-10-21"
+    },
+    {
+      "nome": "ANNA LIZ CASA GRANDE SAMPAIO",
+      "cpf": "62391857012",
+      "pis": "19747299138",
+      "matricula": "000897",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "7942-83",
+      "salario": 1830.0,
+      "admissao": "2022-07-27",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "25938061000125",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Pacheco Aparecida",
+        "numero": "1398",
+        "bairro": "Marieta 2ª Seção",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55200168"
+      },
+      "nascimento": "1981-11-23"
+    },
+    {
+      "nome": "RAVY RIBEIRO CORREIA",
+      "cpf": "63852971446",
+      "pis": "15997762118",
+      "matricula": "000273",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "4173-49",
+      "salario": 2420.0,
+      "admissao": "2023-12-04",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "25938061000125",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Casa Grande Pimenta",
+        "numero": "1573",
+        "bairro": "Vila Bandeirantes",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55214291"
+      },
+      "nascimento": "1975-09-29"
+    },
+    {
+      "nome": "HENRY GABRIEL CUNHA ARAGÃO",
+      "cpf": "76942015849",
+      "pis": "16882012246",
+      "matricula": "008200",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "9984-16",
+      "salario": 2640.0,
+      "admissao": "2019-12-16",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "25938061000125",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Fogaça Rezende",
+        "numero": "1701",
+        "bairro": "Lindéia",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55218759"
+      },
+      "nascimento": "1984-06-26"
+    },
+    {
+      "nome": "MARIA JÚLIA MENDES LOPES",
+      "cpf": "21806973413",
+      "pis": "12579941381",
+      "matricula": "007408",
+      "cargo": "SERVENTE",
+      "cbo": "5300-93",
+      "salario": 1800.0,
+      "admissao": "2022-03-15",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "25938061000125",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Vieira Cunha",
+        "numero": "1493",
+        "bairro": "Vila Nova Cachoeirinha 1ª Seção",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55205652"
+      },
+      "nascimento": "2000-01-22"
+    },
+    {
+      "nome": "MARIA HELENA CUNHA VARGAS",
+      "cpf": "74538910279",
+      "pis": "11882271194",
+      "matricula": "001693",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "9630-75",
+      "salario": 1690.0,
+      "admissao": "2025-01-24",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "25938061000125",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Carvalho Cavalcante",
+        "numero": "1936",
+        "bairro": "João Alfredo",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56314690"
+      },
+      "nascimento": "1992-02-16"
+    },
+    {
+      "nome": "MAYA SIQUEIRA ARAGÃO",
+      "cpf": "49381675228",
+      "pis": "13745195506",
+      "matricula": "006039",
+      "cargo": "SERVENTE",
+      "cbo": "6622-25",
+      "salario": 1630.0,
+      "admissao": "2020-08-02",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "25938061000125",
+      "desligado_em": "2026-02-18",
+      "end": {
+        "logradouro": "Avenida Porto Fogaça",
+        "numero": "1441",
+        "bairro": "Confisco",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55202421"
+      },
+      "nascimento": "2000-08-07"
+    },
+    {
+      "nome": "AYLLA SALES MARTINS",
+      "cpf": "94175830693",
+      "pis": "11986087942",
+      "matricula": "002790",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "4507-10",
+      "salario": 2440.0,
+      "admissao": "2019-09-20",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "25938061000125",
+      "desligado_em": "2026-02-28",
+      "end": {
+        "logradouro": "Rua Rezende da Cruz",
+        "numero": "1191",
+        "bairro": "Santa Maria",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55206629"
+      },
+      "nascimento": "1993-03-30"
+    },
+    {
+      "nome": "JOÃO LUCAS SIQUEIRA CAVALCANTI",
+      "cpf": "13980475620",
+      "pis": "16906274849",
+      "matricula": "002196",
+      "cargo": "SERVENTE",
+      "cbo": "7105-45",
+      "salario": 1620.0,
+      "admissao": "2024-08-01",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "25938061000125",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Brito Brito",
+        "numero": "645",
+        "bairro": "Suzana",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55218720"
+      },
+      "nascimento": "1998-03-28"
+    },
+    {
+      "nome": "GAEL RODRIGUES MORAES",
+      "cpf": "23854719655",
+      "pis": "13731225440",
+      "matricula": "009497",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "8110-87",
+      "salario": 1690.0,
+      "admissao": "2022-11-17",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "25938061000125",
+      "desligado_em": "2026-02-11",
+      "end": {
+        "logradouro": "Avenida Monteiro Pires",
+        "numero": "907",
+        "bairro": "Ribeiro De Abreu",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55207670"
+      },
+      "nascimento": "2003-01-04"
+    },
+    {
+      "nome": "RAEL DA COSTA SOUZA",
+      "cpf": "74508296149",
+      "pis": "17197927216",
+      "matricula": "000251",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "7843-82",
+      "salario": 2450.0,
+      "admissao": "2022-05-26",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "25938061000125",
+      "desligado_em": "2026-02-16",
+      "end": {
+        "logradouro": "Travessa Dias Campos",
+        "numero": "960",
+        "bairro": "Conjunto Paulo Vi",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54413645"
+      },
+      "nascimento": "1972-07-17"
+    },
+    {
+      "nome": "BELLA VIANA PORTO",
+      "cpf": "95130482760",
+      "pis": "16054442989",
+      "matricula": "006245",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "5434-27",
+      "salario": 2300.0,
+      "admissao": "2024-07-23",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "25938061000125",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Aparecida Moura",
+        "numero": "1190",
+        "bairro": "Ouro Minas",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55155301"
+      },
+      "nascimento": "1988-11-16"
+    },
+    {
+      "nome": "AGATHA CAVALCANTE ARAÚJO",
+      "cpf": "04876512949",
+      "pis": "10185905266",
+      "matricula": "009729",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "8035-96",
+      "salario": 1670.0,
+      "admissao": "2019-07-04",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "25938061000125",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Mata Campos",
+        "numero": "575",
+        "bairro": "Barro Preto",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55150008"
+      },
+      "nascimento": "1971-11-10"
+    }
+  ],
+  "competencias": [
+    "2026-01",
+    "2026-02"
+  ]
+}

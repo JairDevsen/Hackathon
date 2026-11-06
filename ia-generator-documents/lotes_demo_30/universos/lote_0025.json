@@ -1,0 +1,324 @@
+{
+  "seed": 42025,
+  "data_referencia": "2026-06-18",
+  "empresas": [
+    {
+      "razao_social": "REZENDE COPA SOLUÇÕES LTDA",
+      "cnpj": "34986502000155",
+      "endereco": "Rua Nogueira Moraes, 1379 – Oeste",
+      "cidade": "Arcoverde/PE",
+      "segmento": "Copa e Cozinha",
+      "end": {
+        "logradouro": "Rua Nogueira Moraes",
+        "numero": "1379",
+        "bairro": "Oeste",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56508928"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "ISABELLY REZENDE COSTA",
+      "cpf": "87194250314",
+      "pis": "18791395432",
+      "matricula": "008362",
+      "cargo": "COPEIRA",
+      "cbo": "5979-88",
+      "salario": 1760.0,
+      "admissao": "2021-09-23",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "34986502000155",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Pimenta Novais",
+        "numero": "846",
+        "bairro": "Túnel De Ibirité",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56516202"
+      },
+      "nascimento": "1980-04-25"
+    },
+    {
+      "nome": "BIANCA RIBEIRO ARAÚJO",
+      "cpf": "16349287509",
+      "pis": "18948217076",
+      "matricula": "005974",
+      "cargo": "COPEIRA",
+      "cbo": "6872-10",
+      "salario": 1760.0,
+      "admissao": "2022-11-19",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "34986502000155",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Rezende Moreira",
+        "numero": "151",
+        "bairro": "Cônego Pinheiro 2ª Seção",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56502427"
+      },
+      "nascimento": "1978-06-10"
+    },
+    {
+      "nome": "DAVI LUIZ MACHADO VARGAS",
+      "cpf": "07529483188",
+      "pis": "15711069130",
+      "matricula": "008377",
+      "cargo": "COPEIRA",
+      "cbo": "9574-34",
+      "salario": 1670.0,
+      "admissao": "2025-10-10",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "34986502000155",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Barbosa Teixeira",
+        "numero": "443",
+        "bairro": "Braúnas",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56504744"
+      },
+      "nascimento": "1992-08-19"
+    },
+    {
+      "nome": "LARA PASTOR CORREIA",
+      "cpf": "07539842105",
+      "pis": "13083066910",
+      "matricula": "004385",
+      "cargo": "COZINHEIRA",
+      "cbo": "6720-27",
+      "salario": 2030.0,
+      "admissao": "2025-12-23",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "34986502000155",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Santos Pereira",
+        "numero": "1496",
+        "bairro": "Nova Granada",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56513184"
+      },
+      "nascimento": "1983-03-14"
+    },
+    {
+      "nome": "EDUARDO DA CONCEIÇÃO MONTENEGRO",
+      "cpf": "31897250630",
+      "pis": "16591397443",
+      "matricula": "008792",
+      "cargo": "COZINHEIRA",
+      "cbo": "9711-73",
+      "salario": 2000.0,
+      "admissao": "2023-04-18",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "34986502000155",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Mata Peixoto",
+        "numero": "1291",
+        "bairro": "Alto Caiçaras",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55202421"
+      },
+      "nascimento": "2003-05-08"
+    },
+    {
+      "nome": "ISABEL CUNHA APARECIDA",
+      "cpf": "83096472122",
+      "pis": "11191707070",
+      "matricula": "006954",
+      "cargo": "COPEIRA",
+      "cbo": "6643-72",
+      "salario": 1720.0,
+      "admissao": "2021-03-12",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "34986502000155",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Farias Carvalho",
+        "numero": "737",
+        "bairro": "Biquinhas",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56503283"
+      },
+      "nascimento": "1975-10-29"
+    },
+    {
+      "nome": "BRYAN BRITO PIRES",
+      "cpf": "10694258776",
+      "pis": "10939574397",
+      "matricula": "002742",
+      "cargo": "COZINHEIRA",
+      "cbo": "6974-75",
+      "salario": 2330.0,
+      "admissao": "2021-06-08",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "34986502000155",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Duarte Pereira",
+        "numero": "70",
+        "bairro": "Capitão Eduardo",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56513487"
+      },
+      "nascimento": "1984-10-20"
+    },
+    {
+      "nome": "RAEL SANTOS PACHECO",
+      "cpf": "74895302610",
+      "pis": "11754962259",
+      "matricula": "007696",
+      "cargo": "COPEIRA",
+      "cbo": "6261-34",
+      "salario": 1720.0,
+      "admissao": "2020-08-02",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "34986502000155",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Mendonça Almeida",
+        "numero": "849",
+        "bairro": "Vila Boa Vista",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56516323"
+      },
+      "nascimento": "1986-03-22"
+    },
+    {
+      "nome": "EDUARDO JESUS APARECIDA",
+      "cpf": "27605841353",
+      "pis": "15270929523",
+      "matricula": "008529",
+      "cargo": "COPEIRA",
+      "cbo": "6888-25",
+      "salario": 1710.0,
+      "admissao": "2022-08-24",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "34986502000155",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Siqueira Pires",
+        "numero": "662",
+        "bairro": "Pousada Santo Antonio",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55202443"
+      },
+      "nascimento": "1987-06-05"
+    },
+    {
+      "nome": "CALEBE MENDES SALES",
+      "cpf": "65729130406",
+      "pis": "14150562284",
+      "matricula": "009961",
+      "cargo": "COPEIRA",
+      "cbo": "8549-66",
+      "salario": 1720.0,
+      "admissao": "2024-01-30",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "34986502000155",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Fonseca Caldeira",
+        "numero": "1167",
+        "bairro": "Itapoa",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55088625"
+      },
+      "nascimento": "2002-11-06"
+    },
+    {
+      "nome": "YAN VASCONCELOS PINTO",
+      "cpf": "63054129870",
+      "pis": "12289176577",
+      "matricula": "007617",
+      "cargo": "COPEIRA",
+      "cbo": "6054-19",
+      "salario": 1720.0,
+      "admissao": "2024-12-28",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "34986502000155",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Vieira Cunha",
+        "numero": "1769",
+        "bairro": "Varzea Da Palma",
+        "municipio": "Serra Talhada",
+        "uf": "PE",
+        "cep": "56903946"
+      },
+      "nascimento": "2006-11-27"
+    }
+  ],
+  "competencias": [
+    "2026-04",
+    "2026-05"
+  ]
+}

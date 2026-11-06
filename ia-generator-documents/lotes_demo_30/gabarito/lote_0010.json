@@ -1,0 +1,1008 @@
+{
+  "arquivo": "lote_0010.pdf",
+  "perfil": "ocorrencias",
+  "empresa_cnpj": "64359170000140",
+  "competencia": "2026-07",
+  "degradacao": "leve",
+  "total_paginas": 21,
+  "total_documentos": 21,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "71586902377",
+      "empregado": "AYLLA FERNANDES SALES",
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Aylla Fernandes Sales",
+        "data_atendimento": "2026-08-02",
+        "dias_afastamento": 1,
+        "cid_informado": false,
+        "medico_nome": "Dr(a). Theo da Costa",
+        "medico_crm": "CRM-PE 15338",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "afastamento de suas atividades a partir de 02/08/2026."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02351497643",
+      "empregado": "CLARA DA LUZ PINTO",
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Clara Da Luz Pinto",
+        "data_atendimento": "2026-08-20",
+        "dias_afastamento": 3,
+        "cid_informado": false,
+        "medico_nome": "Dr(a). Brayan Jesus",
+        "medico_crm": "CRM-PE 18553",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "43062795883",
+      "empregado": "HENRY GABRIEL CAVALCANTE PINTO",
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "empregado_nome": "Henry Gabriel Cavalcante Pinto",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Da Luz Manutenção Terceirização Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "MANUSCRITA",
+        "data_documento": "2026-07-25",
+        "motivo": "descumprimento de ordem do supervisor",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Ciente em 25/07/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "71586902377",
+      "empregado": "AYLLA FERNANDES SALES",
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "data_documento": "2026-07-22",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Aylla Fernandes Sales",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "FALTA",
+        "data_ocorrencia": "2026-07-21",
+        "motivo": "comparecimento a audiência",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "24671508958",
+      "empregado": "MARIA SOPHIA RODRIGUES COSTA",
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Maria Sophia Rodrigues Costa",
+        "empregado_cpf": null,
+        "empregador_razao_social": "DA LUZ MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "64359170000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "ACIDENTE",
+        "data_ocorrencia": "2026-09-01",
+        "hora": "13:20",
+        "local": "Recepção",
+        "descricao": "Cortou o dedo ao manusear caixa com grampo solto no almoxarifado.",
+        "houve_afastamento": false,
+        "testemunha_nome": "Ayla Siqueira"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Recepção"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "30126749850",
+      "empregado": "GABRIEL APARECIDA MONTENEGRO",
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "empregado_nome": "Gabriel Aparecida Montenegro",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Da Luz Manutenção Terceirização Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "SUSPENSAO",
+        "forma": "MANUSCRITA",
+        "data_documento": "2026-08-20",
+        "motivo": "abandono do posto de trabalho durante o expediente",
+        "dias_suspensao": 1,
+        "ciencia": "RECUSA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Pesqueira, 20/08/2026"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "O(a) empregado(a) recusou-se a assinar."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02351497643",
+      "empregado": "CLARA DA LUZ PINTO",
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "empregado_nome": "Clara Da Luz Pinto",
+        "empregado_cpf": null,
+        "empregador_razao_social": "DA LUZ MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "64359170000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-09-13",
+        "motivo": "ausência injustificada ao serviço",
+        "dias_suspensao": null,
+        "ciencia": "RECUSA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 1
+      },
+      "nao_conformidades": [
+        {
+          "regra": "recusa_sem_testemunhas",
+          "descricao": "recusa de ciência com menos de 2 testemunhas",
+          "campo": "quantidade_testemunhas"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "OUTRO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-07",
+      "empresa_cnpj": "64359170000140",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "16032957470",
+      "empregado": "LIAM AZEVEDO SOUSA",
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "empregado_nome": "Liam Azevedo Sousa",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Da Luz Manutenção Terceirização Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "MANUSCRITA",
+        "data_documento": "2026-08-18",
+        "motivo": "abandono do posto de trabalho durante o expediente",
+        "dias_suspensao": null,
+        "ciencia": "RECUSA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "30126749850",
+      "empregado": "GABRIEL APARECIDA MONTENEGRO",
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Gabriel Aparecida Montenegro",
+        "empregado_cpf": null,
+        "empregador_razao_social": "DA LUZ MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "64359170000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "ACIDENTE",
+        "data_ocorrencia": "2026-06-26",
+        "hora": "11:00",
+        "local": "Estacionamento",
+        "descricao": "Escorregou no piso molhado próximo à copa e bateu o joelho no chão.",
+        "houve_afastamento": true,
+        "testemunha_nome": "Cecilia Moreira"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Gabriel Aparecida Montenegro"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "42167083580",
+      "empregado": "SABRINA FERREIRA MOREIRA",
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Sabrina Ferreira Moreira",
+        "empregado_cpf": null,
+        "empregador_razao_social": "DA LUZ MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "64359170000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "QUASE_ACIDENTE",
+        "data_ocorrencia": "2026-09-08",
+        "hora": "12:00",
+        "local": "Recepção",
+        "descricao": "Escada portátil escorregou durante a troca de lâmpada, sem queda do trabalhador.",
+        "houve_afastamento": false,
+        "testemunha_nome": "Otto Jesus"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Escada portátil escorregou durante a troca de lâmpada, sem queda do"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "62930581786",
+      "empregado": "LARISSA ARAÚJO DA ROSA",
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Larissa Araújo Da Rosa",
+        "empregado_cpf": null,
+        "empregador_razao_social": "DA LUZ MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "64359170000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "ACIDENTE",
+        "data_ocorrencia": "2026-07-15",
+        "hora": "13:50",
+        "local": "Estacionamento",
+        "descricao": "Torceu o tornozelo ao descer a escada de acesso ao estacionamento.",
+        "houve_afastamento": true,
+        "testemunha_nome": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "campo_em_branco",
+          "campo": "testemunha_nome"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Estacionamento"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "50943187648",
+      "empregado": "MURILO SANTOS RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Murilo Santos Rodrigues",
+        "data_atendimento": "2026-09-05",
+        "dias_afastamento": 1,
+        "cid_informado": true,
+        "medico_nome": "Dr(a). Renan Moraes",
+        "medico_crm": "CRM-PE 22908",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "empregador_razao_social": "DA LUZ MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "64359170000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-35 – Trabalho em Altura",
+        "data": "2026-08-15",
+        "carga_horaria_horas": 8.0,
+        "instrutor": "Maria Sophia da Costa",
+        "participantes": [
+          {
+            "nome": "João Felipe Moraes Peixoto",
+            "cpf": "36507289400",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Murilo Santos Rodrigues",
+            "cpf": "50943187648",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Sabrina Ferreira Moreira",
+            "cpf": "42167083580",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Aylla Fernandes Sales",
+            "cpf": "71586902377",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Larissa Araújo Da Rosa",
+            "cpf": "62930581786",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Clara Da Luz Pinto",
+            "cpf": "02351497643",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Liam Azevedo Sousa",
+            "cpf": "16032957470",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Henry Gabriel Cavalcante Pinto",
+            "cpf": "43062795883",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Gabriel Aparecida Montenegro",
+            "cpf": "30126749850",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "HENRY GABRIEL CAVALCANTE PINTO"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02351497643",
+      "empregado": "CLARA DA LUZ PINTO",
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "data_documento": "2026-08-25",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Clara Da Luz Pinto",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "FALTA",
+        "data_ocorrencia": "2026-08-25",
+        "motivo": "problema com o transporte público",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "71586902377",
+      "empregado": "AYLLA FERNANDES SALES",
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Aylla Fernandes Sales",
+        "empregado_cpf": null,
+        "empregador_razao_social": "DA LUZ MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "64359170000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "ACIDENTE",
+        "data_ocorrencia": "2026-08-10",
+        "hora": "11:40",
+        "local": "Estacionamento",
+        "descricao": "Escorregou no piso molhado próximo à copa e bateu o joelho no chão.",
+        "houve_afastamento": true,
+        "testemunha_nome": "João Felipe Garcia"
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "43062795883",
+      "empregado": "HENRY GABRIEL CAVALCANTE PINTO",
+      "competencia": null,
+      "empresa_cnpj": "64359170000140",
+      "dados": {
+        "empregado_nome": "Henry Gabriel Cavalcante Pinto",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Da Luz Manutenção Terceirização Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "SUSPENSAO",
+        "forma": "MANUSCRITA",
+        "data_documento": "2026-09-10",
+        "motivo": "abandono do posto de trabalho durante o expediente",
+        "dias_suspensao": 1,
+        "ciencia": "RECUSA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "OUTRO",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 19,
+      "tipo": "OUTRO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 20,
+      "tipo": "OUTRO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 21,
+      "tipo": "OUTRO",
+      "paginas": [
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 2,
+  "parametros": {
+    "paginas": [
+      13,
+      13
+    ],
+    "degradacao": "misto",
+    "taxa_nc": 0.18,
+    "perfil": "ocorrencias",
+    "embaralhar": 0.58,
+    "paginas_em_branco": 0.1,
+    "fora_de_ordem": 0.18,
+    "intercalar": 0.18,
+    "taxa_defeito": 0.11,
+    "taxa_branco": 0.03,
+    "extras": 0.17,
+    "p_celular": 0.21,
+    "p_cabeca_para_baixo": 0.03,
+    "seed": 42010
+  }
+}

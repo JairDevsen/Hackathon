@@ -1,0 +1,432 @@
+{
+  "seed": 42003,
+  "data_referencia": "2026-08-17",
+  "empresas": [
+    {
+      "razao_social": "RODRIGUES LIMPEZA SERVIÇOS LTDA",
+      "cnpj": "49376502000100",
+      "endereco": "Avenida Araújo Costa, 610 – Vila Batik",
+      "cidade": "Belo Jardim/PE",
+      "segmento": "Limpeza e Conservação",
+      "end": {
+        "logradouro": "Avenida Araújo Costa",
+        "numero": "610",
+        "bairro": "Vila Batik",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55153467"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "ENZO GABRIEL MOURA DA ROCHA",
+      "cpf": "70629318530",
+      "pis": "11847064463",
+      "matricula": "004151",
+      "cargo": "SERVENTE",
+      "cbo": "5285-14",
+      "salario": 1680.0,
+      "admissao": "2026-04-15",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "49376502000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Leão Rodrigues",
+        "numero": "1123",
+        "bairro": "Penha",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55152947"
+      },
+      "nascimento": "2004-05-09"
+    },
+    {
+      "nome": "HELENA BARROS CAVALCANTI",
+      "cpf": "82167094558",
+      "pis": "19526428156",
+      "matricula": "007863",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "9450-60",
+      "salario": 1720.0,
+      "admissao": "2026-03-16",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "49376502000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Rodrigues da Cunha",
+        "numero": "1689",
+        "bairro": "Conjunto Novo Dom Bosco",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55153912"
+      },
+      "nascimento": "1996-03-13"
+    },
+    {
+      "nome": "ÁGATHA RIBEIRO VASCONCELOS",
+      "cpf": "15783206903",
+      "pis": "14621997730",
+      "matricula": "009848",
+      "cargo": "SERVENTE",
+      "cbo": "6220-54",
+      "salario": 1780.0,
+      "admissao": "2023-06-19",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "49376502000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Gonçalves da Luz",
+        "numero": "36",
+        "bairro": "Novo Santa Cecilia",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55153051"
+      },
+      "nascimento": "2002-10-21"
+    },
+    {
+      "nome": "VALENTIM PORTO GONÇALVES",
+      "cpf": "21738495655",
+      "pis": "12709774587",
+      "matricula": "000860",
+      "cargo": "SERVENTE",
+      "cbo": "7824-77",
+      "salario": 1770.0,
+      "admissao": "2020-11-28",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "49376502000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Campos Costela",
+        "numero": "649",
+        "bairro": "Dom Cabral",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55155752"
+      },
+      "nascimento": "1971-07-23"
+    },
+    {
+      "nome": "ARTHUR GABRIEL RAMOS DA CONCEIÇÃO",
+      "cpf": "09765314884",
+      "pis": "17997951111",
+      "matricula": "007259",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "7536-88",
+      "salario": 1830.0,
+      "admissao": "2020-04-22",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "49376502000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Ramos Rocha",
+        "numero": "1395",
+        "bairro": "Vale Do Jatoba",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55159725"
+      },
+      "nascimento": "2002-04-17"
+    },
+    {
+      "nome": "LUNA MACEDO SAMPAIO",
+      "cpf": "45039178204",
+      "pis": "14200521608",
+      "matricula": "005421",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "6208-93",
+      "salario": 1790.0,
+      "admissao": "2020-11-09",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "49376502000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Sousa Sampaio",
+        "numero": "1818",
+        "bairro": "Aguas Claras",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53433260"
+      },
+      "nascimento": "1984-11-02"
+    },
+    {
+      "nome": "VITÓRIA CAVALCANTI SILVEIRA",
+      "cpf": "79506831475",
+      "pis": "11583677695",
+      "matricula": "001350",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "9784-94",
+      "salario": 2650.0,
+      "admissao": "2022-09-14",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "49376502000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Montenegro Pires",
+        "numero": "1168",
+        "bairro": "São Lucas",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56308634"
+      },
+      "nascimento": "1975-10-29"
+    },
+    {
+      "nome": "ANA LIZ RODRIGUES PEIXOTO",
+      "cpf": "02748193687",
+      "pis": "19499957750",
+      "matricula": "000660",
+      "cargo": "SERVENTE",
+      "cbo": "4325-68",
+      "salario": 1780.0,
+      "admissao": "2026-02-22",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "49376502000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Cavalcante Sampaio",
+        "numero": "1795",
+        "bairro": "Buraco Quente",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55152209"
+      },
+      "nascimento": "2002-04-28"
+    },
+    {
+      "nome": "ISADORA ARAÚJO SALES",
+      "cpf": "54271968382",
+      "pis": "15828469847",
+      "matricula": "003663",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "7517-88",
+      "salario": 1740.0,
+      "admissao": "2021-10-28",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "49376502000100",
+      "desligado_em": "2026-07-24",
+      "end": {
+        "logradouro": "Rua Porto Duarte",
+        "numero": "940",
+        "bairro": "Planalto",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55153768"
+      },
+      "nascimento": "1985-06-19"
+    },
+    {
+      "nome": "HENRY GABRIEL BARBOSA DUARTE",
+      "cpf": "83657941010",
+      "pis": "18333941660",
+      "matricula": "008683",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "8641-24",
+      "salario": 1840.0,
+      "admissao": "2022-08-08",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "49376502000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Santos Ribeiro",
+        "numero": "1421",
+        "bairro": "Vila Mantiqueira",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55152045"
+      },
+      "nascimento": "1975-02-14"
+    },
+    {
+      "nome": "LUNA DA PAZ PIMENTA",
+      "cpf": "62407583108",
+      "pis": "18325913555",
+      "matricula": "003661",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "6788-54",
+      "salario": 1810.0,
+      "admissao": "2020-05-28",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "49376502000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Macedo Ribeiro",
+        "numero": "193",
+        "bairro": "Coração Eucarístico",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54347443"
+      },
+      "nascimento": "1990-10-23"
+    },
+    {
+      "nome": "MARIA EDUARDA SÁ FERNANDES",
+      "cpf": "09713654820",
+      "pis": "14663536405",
+      "matricula": "008859",
+      "cargo": "SERVENTE",
+      "cbo": "8924-66",
+      "salario": 1620.0,
+      "admissao": "2024-05-24",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "49376502000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Costela Cardoso",
+        "numero": "800",
+        "bairro": "Conjunto Serra Verde",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55152495"
+      },
+      "nascimento": "2001-03-28"
+    },
+    {
+      "nome": "JOANA RIBEIRO PIRES",
+      "cpf": "85247390105",
+      "pis": "11341105223",
+      "matricula": "002588",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "8934-30",
+      "salario": 1710.0,
+      "admissao": "2024-05-19",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "49376502000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Pimenta Fonseca",
+        "numero": "1388",
+        "bairro": "Vila União",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55155646"
+      },
+      "nascimento": "1999-09-20"
+    },
+    {
+      "nome": "MARIA LUIZA DA MOTA SANTOS",
+      "cpf": "17368029413",
+      "pis": "11412110151",
+      "matricula": "004113",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "9876-48",
+      "salario": 1790.0,
+      "admissao": "2023-02-18",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "49376502000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Cunha Correia",
+        "numero": "13",
+        "bairro": "Vale Do Jatoba",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55157204"
+      },
+      "nascimento": "1968-04-10"
+    },
+    {
+      "nome": "ANA CECÍLIA VIEIRA BARROS",
+      "cpf": "69158432728",
+      "pis": "16463277046",
+      "matricula": "003481",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "4394-69",
+      "salario": 2610.0,
+      "admissao": "2021-05-25",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "49376502000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Sales Cirino",
+        "numero": "1752",
+        "bairro": "Atila De Paiva",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55159900"
+      },
+      "nascimento": "1970-01-30"
+    }
+  ],
+  "competencias": [
+    "2026-06",
+    "2026-07"
+  ]
+}

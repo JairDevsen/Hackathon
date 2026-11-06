@@ -1,0 +1,1030 @@
+{
+  "arquivo": "lote_0022.pdf",
+  "perfil": "recebimento_ar",
+  "empresa_cnpj": "74251896000118",
+  "competencia": "2026-07",
+  "degradacao": "forte",
+  "total_paginas": 16,
+  "total_documentos": 16,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 2,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 3,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 180,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 4,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 5,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 6,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 8,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 10,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 11,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 14,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "58071432644",
+      "empregado": "BRYAN CAMPOS CASSIANO",
+      "competencia": null,
+      "empresa_cnpj": "74251896000118",
+      "dados": {
+        "empregado_nome": "BRYAN CAMPOS CASSIANO",
+        "empregado_cpf": "58071432644",
+        "empregador_razao_social": "MONTEIRO PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "74251896000118",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-08-31",
+        "prazo_dias": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "18736459291",
+      "empregado": "EMANUEL FERNANDES OLIVEIRA",
+      "competencia": null,
+      "empresa_cnpj": "74251896000118",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 883 593 480 AR",
+        "conteudo": "Notificação nº 18/2026",
+        "data_postagem": "2026-08-20",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PAULISTA",
+        "destinatario_nome": "Emanuel Fernandes Oliveira",
+        "destinatario_endereco": "Rua Mendes Barbosa, 191",
+        "destinatario_bairro": "Conjunto Novo Dom Bosco",
+        "destinatario_municipio": "Paulista",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "53458414",
+        "remetente_nome": "MONTEIRO PORTARIA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moraes Correia, 1595 – Cardoso, Paulista/PE",
+        "remetente_cep": "53462649",
+        "tentativas": [
+          {
+            "data": "2026-08-24",
+            "hora": "08:10"
+          },
+          {
+            "data": "2026-08-25",
+            "hora": "12:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-08-25",
+        "data_devolucao": null,
+        "recebedor_nome": "EMANUEL FERNANDES OLIVEIRA",
+        "recebedor_documento": "5742820",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "01297534670",
+      "empregado": "ANTONY VIANA RAMOS",
+      "competencia": null,
+      "empresa_cnpj": "74251896000118",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 985 738 193 AR",
+        "conteudo": "Notificação nº 188/2026",
+        "data_postagem": "2026-08-20",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PAULISTA",
+        "destinatario_nome": "Antony Viana Ramos",
+        "destinatario_endereco": "Rua Alves Mendes, 307",
+        "destinatario_bairro": "Coração De Jesus",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56300333",
+        "remetente_nome": "MONTEIRO PORTARIA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moraes Correia, 1595 – Cardoso, Paulista/PE",
+        "remetente_cep": "53462649",
+        "tentativas": [
+          {
+            "data": "2026-08-24",
+            "hora": "08:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-08-24",
+        "data_devolucao": null,
+        "recebedor_nome": "JOÃO GABRIEL LIMA",
+        "recebedor_documento": "3367057",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_sem_carimbo",
+          "descricao": "AR sem carimbo da unidade de entrega",
+          "campo": "carimbo_unidade_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "20/08/2026"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "PE"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "72485016380",
+      "empregado": "LUAN ALMEIDA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "74251896000118",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 487 922 929 AR",
+        "conteudo": "Notificação nº 331/2026",
+        "data_postagem": "2026-08-14",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PAULISTA",
+        "destinatario_nome": "Luan Almeida Costa",
+        "destinatario_endereco": "Rua Siqueira Rezende, 1873",
+        "destinatario_bairro": "Vila Tirol",
+        "destinatario_municipio": "Paulista",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "53485996",
+        "remetente_nome": "MONTEIRO PORTARIA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moraes Correia, 1595 – Cardoso, Paulista/PE",
+        "remetente_cep": "53462649",
+        "tentativas": [
+          {
+            "data": "2026-08-17",
+            "hora": "14:20"
+          },
+          {
+            "data": "2026-08-19",
+            "hora": "16:45"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-08-19",
+        "data_devolucao": null,
+        "recebedor_nome": "GUILHERME SAMPAIO",
+        "recebedor_documento": "9022886",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "53485-996"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "60534971261",
+      "empregado": "VITOR GABRIEL CAMARGO SIQUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "74251896000118",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 932 106 927 AR",
+        "conteudo": "Notificação nº 298/2026",
+        "data_postagem": "2026-08-17",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PAULISTA",
+        "destinatario_nome": "Vitor Gabriel Camargo Siqueira",
+        "destinatario_endereco": "Rua Leão Montenegro, 718",
+        "destinatario_bairro": "Independência",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55016626",
+        "remetente_nome": "MONTEIRO PORTARIA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moraes Correia, 1595 – Cardoso, Paulista/PE",
+        "remetente_cep": "53462649",
+        "tentativas": [
+          {
+            "data": "2026-08-20",
+            "hora": "09:20"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-08-20",
+        "data_devolucao": null,
+        "recebedor_nome": "VITOR GABRIEL CAMARGO SIQUEIRA",
+        "recebedor_documento": "4717737",
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_sem_assinatura",
+          "descricao": "AR entregue sem assinatura do recebedor",
+          "campo": "assinatura_recebedor_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Caruaru"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79086453210",
+      "empregado": "ELOAH LEÃO LIMA",
+      "competencia": null,
+      "empresa_cnpj": "74251896000118",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 525 398 845 AR",
+        "conteudo": "Notificação nº 92/2026",
+        "data_postagem": "2026-09-06",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PAULISTA",
+        "destinatario_nome": "Eloah Leão Lima",
+        "destinatario_endereco": "Avenida Duarte Rodrigues, 1155",
+        "destinatario_bairro": "Comiteco",
+        "destinatario_municipio": "Paulista",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "53443836",
+        "remetente_nome": "MONTEIRO PORTARIA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moraes Correia, 1595 – Cardoso, Paulista/PE",
+        "remetente_cep": "53462649",
+        "tentativas": [
+          {
+            "data": "2026-09-09",
+            "hora": "15:00"
+          },
+          {
+            "data": "2026-09-10",
+            "hora": "15:10"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-09-10",
+        "data_devolucao": null,
+        "recebedor_nome": "ELOAH LEÃO LIMA",
+        "recebedor_documento": "6742511",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        7,
+        9
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "58071432644",
+      "empregado": "BRYAN CAMPOS CASSIANO",
+      "competencia": null,
+      "empresa_cnpj": "74251896000118",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 197 220 750 AR",
+        "conteudo": "Notificação nº 235/2026",
+        "data_postagem": "2026-09-06",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PAULISTA",
+        "destinatario_nome": "Bryan Campos Cassiano",
+        "destinatario_endereco": "Avenida da Rosa Borges, 188",
+        "destinatario_bairro": "Novo Aarão Reis",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "51735008",
+        "remetente_nome": "MONTEIRO PORTARIA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moraes Correia, 1595 – Cardoso, Paulista/PE",
+        "remetente_cep": "53462649",
+        "tentativas": [
+          {
+            "data": "2026-09-07",
+            "hora": "16:10"
+          },
+          {
+            "data": "2026-09-09",
+            "hora": "15:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-09-09",
+        "data_devolucao": null,
+        "recebedor_nome": "BRYAN CAMPOS CASSIANO",
+        "recebedor_documento": "1632001",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        7,
+        9
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "58071432644",
+      "empregado": "BRYAN CAMPOS CASSIANO",
+      "competencia": null,
+      "empresa_cnpj": "74251896000118",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 872 411 823 AR",
+        "conteudo": "Notificação nº 299/2026",
+        "data_postagem": "2026-09-01",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PAULISTA",
+        "destinatario_nome": "Bryan Campos Cassiano",
+        "destinatario_endereco": "Avenida da Rosa Borges, 188",
+        "destinatario_bairro": "Novo Aarão Reis",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "51735008",
+        "remetente_nome": "MONTEIRO PORTARIA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moraes Correia, 1595 – Cardoso, Paulista/PE",
+        "remetente_cep": "53462649",
+        "tentativas": [
+          {
+            "data": "2026-09-02",
+            "hora": "11:10"
+          },
+          {
+            "data": "2026-09-03",
+            "hora": "13:45"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-09-03",
+        "data_devolucao": null,
+        "recebedor_nome": "BRYAN CAMPOS CASSIANO",
+        "recebedor_documento": "3193183",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "BRYAN CAMPOS CASSIANO"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79086453210",
+      "empregado": "ELOAH LEÃO LIMA",
+      "competencia": null,
+      "empresa_cnpj": "74251896000118",
+      "dados": {
+        "empregado_nome": "ELOAH LEÃO LIMA",
+        "empregado_cpf": "79086453210",
+        "empregador_razao_social": "MONTEIRO PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "74251896000118",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-09-05",
+        "prazo_dias": 3
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "83150692768",
+      "empregado": "NICOLE MARQUES CORREIA",
+      "competencia": null,
+      "empresa_cnpj": "74251896000118",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 459 474 236 AR",
+        "conteudo": "Notificação nº 199/2026",
+        "data_postagem": "2026-08-24",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PAULISTA",
+        "destinatario_nome": "Nicole Marques Correia",
+        "destinatario_endereco": "Travessa Gonçalves da Paz, 1485",
+        "destinatario_bairro": "Goiania",
+        "destinatario_municipio": "Paulista",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "53403337",
+        "remetente_nome": "MONTEIRO PORTARIA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moraes Correia, 1595 – Cardoso, Paulista/PE",
+        "remetente_cep": "53462649",
+        "tentativas": [
+          {
+            "data": "2026-08-27",
+            "hora": "12:10"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-08-27",
+        "data_devolucao": null,
+        "recebedor_nome": "MATTEO DAS NEVES",
+        "recebedor_documento": "7846278",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "MONTEIRO PORTARIA SOLUÇÕES LTDA"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "34087251608",
+      "empregado": "THALES DA MOTA FONSECA",
+      "competencia": null,
+      "empresa_cnpj": "74251896000118",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 134 358 511 AR",
+        "conteudo": "Notificação nº 52/2026",
+        "data_postagem": "2026-08-30",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PAULISTA",
+        "destinatario_nome": "Thales Da Mota Fonseca",
+        "destinatario_endereco": "Avenida Ferreira Dias, 707",
+        "destinatario_bairro": "Paraíso",
+        "destinatario_municipio": "Paulista",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "53445772",
+        "remetente_nome": "MONTEIRO PORTARIA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moraes Correia, 1595 – Cardoso, Paulista/PE",
+        "remetente_cep": "53462649",
+        "tentativas": [
+          {
+            "data": "2026-09-01",
+            "hora": "11:20"
+          },
+          {
+            "data": "2026-09-03",
+            "hora": "15:50"
+          },
+          {
+            "data": "2026-09-07",
+            "hora": "08:00"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "MUDOU_SE",
+        "data_entrega": null,
+        "data_devolucao": "2026-09-14",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "72485016380",
+      "empregado": "LUAN ALMEIDA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "74251896000118",
+      "dados": {
+        "empregado_nome": "LUAN ALMEIDA COSTA",
+        "empregado_cpf": "72485016380",
+        "empregador_razao_social": "MONTEIRO PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "74251896000118",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "ABANDONO_EMPREGO",
+        "data_documento": "2026-08-13",
+        "prazo_dias": 3
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        14,
+        16
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "60534971261",
+      "empregado": "VITOR GABRIEL CAMARGO SIQUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "74251896000118",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 336 509 170 AR",
+        "conteudo": "Notificação nº 331/2026",
+        "data_postagem": "2026-08-17",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PAULISTA",
+        "destinatario_nome": "Vitor Gabriel Camargo Siqueira",
+        "destinatario_endereco": "Rua Leão Montenegro, 718",
+        "destinatario_bairro": "Independência",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55016626",
+        "remetente_nome": "MONTEIRO PORTARIA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moraes Correia, 1595 – Cardoso, Paulista/PE",
+        "remetente_cep": "53462649",
+        "tentativas": [
+          {
+            "data": "2026-08-18",
+            "hora": "15:15"
+          },
+          {
+            "data": "2026-08-21",
+            "hora": "14:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-08-21",
+        "data_devolucao": null,
+        "recebedor_nome": "FRANCISCO PORTO",
+        "recebedor_documento": "7311079",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        14,
+        16
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "01384927603",
+      "empregado": "MAYA GOMES PACHECO",
+      "competencia": null,
+      "empresa_cnpj": "74251896000118",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 575 408 914 AR",
+        "conteudo": "Notificação nº 265/2026",
+        "data_postagem": "2026-08-22",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PAULISTA",
+        "destinatario_nome": "Maya Gomes Pacheco",
+        "destinatario_endereco": "Rua Novais Montenegro, 256",
+        "destinatario_bairro": "Bom Jesus",
+        "destinatario_municipio": "Paulista",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "53437971",
+        "remetente_nome": "MONTEIRO PORTARIA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moraes Correia, 1595 – Cardoso, Paulista/PE",
+        "remetente_cep": "53462649",
+        "tentativas": [
+          {
+            "data": "2026-08-24",
+            "hora": "11:00"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-08-24",
+        "data_devolucao": null,
+        "recebedor_nome": "MARINA DA LUZ",
+        "recebedor_documento": "8497775",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_sem_carimbo",
+          "descricao": "AR sem carimbo da unidade de entrega",
+          "campo": "carimbo_unidade_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "OUTRO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 16,
+      "tipo": "OUTRO",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      15,
+      15
+    ],
+    "degradacao": "forte",
+    "taxa_nc": 0.25,
+    "perfil": "recebimento_ar",
+    "embaralhar": 0.49,
+    "paginas_em_branco": 0.07,
+    "fora_de_ordem": 0.28,
+    "intercalar": 0.06,
+    "taxa_defeito": 0.06,
+    "taxa_branco": 0.05,
+    "extras": 0.32,
+    "p_celular": 0.07,
+    "p_cabeca_para_baixo": 0.07,
+    "seed": 42022
+  }
+}

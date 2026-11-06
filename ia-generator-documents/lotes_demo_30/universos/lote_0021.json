@@ -1,0 +1,243 @@
+{
+  "seed": 42021,
+  "data_referencia": "2026-02-18",
+  "empresas": [
+    {
+      "razao_social": "DAS NEVES MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+      "cnpj": "09217368000180",
+      "endereco": "Rua Fogaça Aragão, 1825 – Solar Do Barreiro",
+      "cidade": "Recife/PE",
+      "segmento": "Manutenção Predial",
+      "end": {
+        "logradouro": "Rua Fogaça Aragão",
+        "numero": "1825",
+        "bairro": "Solar Do Barreiro",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "50030832"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "IAN PIMENTA ROCHA",
+      "cpf": "31980675457",
+      "pis": "14782319319",
+      "matricula": "004006",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "5124-14",
+      "salario": 2550.0,
+      "admissao": "2024-01-24",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "09217368000180",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Silva Monteiro",
+        "numero": "1458",
+        "bairro": "Havaí",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54477505"
+      },
+      "nascimento": "1994-05-03"
+    },
+    {
+      "nome": "LUÍSA CORREIA PIMENTA",
+      "cpf": "87342609196",
+      "pis": "18738481290",
+      "matricula": "006249",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "7748-96",
+      "salario": 2110.0,
+      "admissao": "2023-10-07",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "09217368000180",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Marques Rocha",
+        "numero": "1528",
+        "bairro": "Vila São Gabriel Jacui",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "51919955"
+      },
+      "nascimento": "1991-04-30"
+    },
+    {
+      "nome": "RAVY MACHADO NASCIMENTO",
+      "cpf": "75618304910",
+      "pis": "11147993585",
+      "matricula": "001187",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "6722-65",
+      "salario": 1900.0,
+      "admissao": "2023-08-04",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "09217368000180",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Macedo Pinto",
+        "numero": "501",
+        "bairro": "Túnel De Ibirité",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "50330293"
+      },
+      "nascimento": "1975-01-09"
+    },
+    {
+      "nome": "OTÁVIO FERNANDES MOREIRA",
+      "cpf": "15628397482",
+      "pis": "12723945415",
+      "matricula": "001441",
+      "cargo": "ELETRICISTA",
+      "cbo": "5218-24",
+      "salario": 3310.0,
+      "admissao": "2022-04-24",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "09217368000180",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa da Cruz Barros",
+        "numero": "1651",
+        "bairro": "Jardim Atlântico",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52744576"
+      },
+      "nascimento": "1997-05-30"
+    },
+    {
+      "nome": "CAUÊ DIAS NOGUEIRA",
+      "cpf": "27914856002",
+      "pis": "17373298689",
+      "matricula": "007299",
+      "cargo": "ELETRICISTA",
+      "cbo": "7101-25",
+      "salario": 2670.0,
+      "admissao": "2025-05-01",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "09217368000180",
+      "desligado_em": "2026-01-21",
+      "end": {
+        "logradouro": "Rua Barros Cassiano",
+        "numero": "771",
+        "bairro": "Camponesa 1ª Seção",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52281663"
+      },
+      "nascimento": "1971-03-23"
+    },
+    {
+      "nome": "DANIEL DA MATA MELO",
+      "cpf": "72804315690",
+      "pis": "17642603930",
+      "matricula": "001638",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "6923-18",
+      "salario": 2920.0,
+      "admissao": "2025-07-24",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "09217368000180",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Cassiano Oliveira",
+        "numero": "324",
+        "bairro": "Senhor Dos Passos",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52557604"
+      },
+      "nascimento": "1985-04-24"
+    },
+    {
+      "nome": "GABRIELLY NASCIMENTO MACEDO",
+      "cpf": "61840293551",
+      "pis": "14100753809",
+      "matricula": "002288",
+      "cargo": "ELETRICISTA",
+      "cbo": "7325-74",
+      "salario": 2730.0,
+      "admissao": "2020-12-26",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "09217368000180",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Garcia Novais",
+        "numero": "243",
+        "bairro": "Vila Da Amizade",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52391469"
+      },
+      "nascimento": "1996-07-21"
+    },
+    {
+      "nome": "SOPHIE VIEIRA ALVES",
+      "cpf": "79652138002",
+      "pis": "14142204471",
+      "matricula": "000526",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "9641-28",
+      "salario": 2060.0,
+      "admissao": "2023-03-27",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "09217368000180",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Pires Costela",
+        "numero": "1626",
+        "bairro": "Sagrada Família",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52785949"
+      },
+      "nascimento": "1971-10-21"
+    }
+  ],
+  "competencias": [
+    "2025-12",
+    "2026-01"
+  ]
+}

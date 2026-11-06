@@ -1,0 +1,405 @@
+{
+  "seed": 42018,
+  "data_referencia": "2026-05-19",
+  "empresas": [
+    {
+      "razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+      "cnpj": "82534619000140",
+      "endereco": "Rua Moreira Pires, 1055 – Antonio Ribeiro De Abreu 1ª Seção",
+      "cidade": "Belo Jardim/PE",
+      "segmento": "Portaria e Recepção",
+      "end": {
+        "logradouro": "Rua Moreira Pires",
+        "numero": "1055",
+        "bairro": "Antonio Ribeiro De Abreu 1ª Seção",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55152362"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "THEO ARAÚJO OLIVEIRA",
+      "cpf": "47360829500",
+      "pis": "18309497933",
+      "matricula": "001932",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "9571-97",
+      "salario": 1880.0,
+      "admissao": "2019-10-26",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "82534619000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Moreira Peixoto",
+        "numero": "1231",
+        "bairro": "Europa",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53057552"
+      },
+      "nascimento": "2001-05-04"
+    },
+    {
+      "nome": "VALENTINA ALBUQUERQUE PASTOR",
+      "cpf": "61804937584",
+      "pis": "11916703504",
+      "matricula": "004567",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "6480-25",
+      "salario": 1770.0,
+      "admissao": "2024-12-23",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "82534619000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Câmara Freitas",
+        "numero": "1451",
+        "bairro": "Araguaia",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55150645"
+      },
+      "nascimento": "1981-08-24"
+    },
+    {
+      "nome": "YAGO DA ROSA VIEIRA",
+      "cpf": "19543078610",
+      "pis": "15091015276",
+      "matricula": "003979",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "5414-28",
+      "salario": 2070.0,
+      "admissao": "2022-03-12",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "82534619000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Sales Duarte",
+        "numero": "64",
+        "bairro": "Alto Vera Cruz",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55155375"
+      },
+      "nascimento": "1991-06-15"
+    },
+    {
+      "nome": "EDUARDO SOUZA ALBUQUERQUE",
+      "cpf": "15239840660",
+      "pis": "13275438262",
+      "matricula": "000893",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "8948-88",
+      "salario": 1800.0,
+      "admissao": "2020-08-27",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "82534619000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Paz Casa Grande",
+        "numero": "1442",
+        "bairro": "Ambrosina",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55153208"
+      },
+      "nascimento": "1986-02-24"
+    },
+    {
+      "nome": "ANA SOPHIA FONSECA DA PAZ",
+      "cpf": "89632147537",
+      "pis": "11609509484",
+      "matricula": "005928",
+      "cargo": "PORTEIRO",
+      "cbo": "6871-62",
+      "salario": 1880.0,
+      "admissao": "2025-02-05",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "82534619000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida das Neves da Conceição",
+        "numero": "606",
+        "bairro": "São Jorge 3ª Seção",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55150511"
+      },
+      "nascimento": "1988-11-12"
+    },
+    {
+      "nome": "LEONARDO LEÃO ARAGÃO",
+      "cpf": "92457310652",
+      "pis": "12369596556",
+      "matricula": "002521",
+      "cargo": "PORTEIRO",
+      "cbo": "8666-76",
+      "salario": 1770.0,
+      "admissao": "2022-02-25",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "82534619000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Castro Borges",
+        "numero": "1690",
+        "bairro": "Ventosa",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55155184"
+      },
+      "nascimento": "1992-02-21"
+    },
+    {
+      "nome": "DIEGO GUERRA SAMPAIO",
+      "cpf": "05942681333",
+      "pis": "16915090305",
+      "matricula": "009916",
+      "cargo": "PORTEIRO",
+      "cbo": "6190-47",
+      "salario": 1740.0,
+      "admissao": "2024-04-29",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "82534619000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Pereira Dias",
+        "numero": "458",
+        "bairro": "Vila Da Luz",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55157750"
+      },
+      "nascimento": "1992-01-07"
+    },
+    {
+      "nome": "MANUELLA NOVAES FARIAS",
+      "cpf": "40731258690",
+      "pis": "13228941620",
+      "matricula": "000530",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "8696-94",
+      "salario": 1950.0,
+      "admissao": "2022-10-20",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "82534619000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Pimenta Dias",
+        "numero": "275",
+        "bairro": "Alto Barroca",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53101364"
+      },
+      "nascimento": "2001-03-17"
+    },
+    {
+      "nome": "LIZ DUARTE SAMPAIO",
+      "cpf": "52376184053",
+      "pis": "11441105438",
+      "matricula": "008170",
+      "cargo": "PORTEIRO",
+      "cbo": "7598-57",
+      "salario": 1740.0,
+      "admissao": "2021-02-22",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "82534619000140",
+      "desligado_em": "2026-04-29",
+      "end": {
+        "logradouro": "Travessa da Mata Moraes",
+        "numero": "1939",
+        "bairro": "Belvedere",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56506229"
+      },
+      "nascimento": "1994-01-04"
+    },
+    {
+      "nome": "FRANCISCO CASTRO CAVALCANTI",
+      "cpf": "61504982711",
+      "pis": "10725438921",
+      "matricula": "000711",
+      "cargo": "PORTEIRO",
+      "cbo": "6112-25",
+      "salario": 1980.0,
+      "admissao": "2022-11-08",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "82534619000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Peixoto Sousa",
+        "numero": "1891",
+        "bairro": "Santo Antônio",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55154358"
+      },
+      "nascimento": "1982-01-06"
+    },
+    {
+      "nome": "VITOR DA ROCHA CARVALHO",
+      "cpf": "28169735491",
+      "pis": "10115931500",
+      "matricula": "008993",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "7309-38",
+      "salario": 2050.0,
+      "admissao": "2020-10-31",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "82534619000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Ferreira da Rosa",
+        "numero": "1112",
+        "bairro": "Vila Nova Gameleira 3ª Seção",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55156340"
+      },
+      "nascimento": "1972-04-10"
+    },
+    {
+      "nome": "ALICE CORREIA CASSIANO",
+      "cpf": "28403169515",
+      "pis": "15479147246",
+      "matricula": "004380",
+      "cargo": "PORTEIRO",
+      "cbo": "5278-90",
+      "salario": 1780.0,
+      "admissao": "2024-04-05",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "82534619000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Vargas Barros",
+        "numero": "1797",
+        "bairro": "Baleia",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55156635"
+      },
+      "nascimento": "2003-07-26"
+    },
+    {
+      "nome": "JOÃO FELIPE GONÇALVES FOGAÇA",
+      "cpf": "12706845317",
+      "pis": "18233041977",
+      "matricula": "002404",
+      "cargo": "PORTEIRO",
+      "cbo": "7719-96",
+      "salario": 1970.0,
+      "admissao": "2023-02-18",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "82534619000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Vieira Aragão",
+        "numero": "1522",
+        "bairro": "Santo Agostinho",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55150555"
+      },
+      "nascimento": "1995-05-19"
+    },
+    {
+      "nome": "ELOAH DA CUNHA COSTA",
+      "cpf": "79506241325",
+      "pis": "18825296377",
+      "matricula": "009875",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "4841-19",
+      "salario": 2010.0,
+      "admissao": "2020-03-15",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "82534619000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Cunha Câmara",
+        "numero": "645",
+        "bairro": "Dom Joaquim",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56300415"
+      },
+      "nascimento": "1965-05-24"
+    }
+  ],
+  "competencias": [
+    "2026-03",
+    "2026-04"
+  ]
+}

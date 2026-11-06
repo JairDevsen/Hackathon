@@ -1,0 +1,378 @@
+{
+  "seed": 42023,
+  "data_referencia": "2026-04-19",
+  "empresas": [
+    {
+      "razao_social": "SILVA VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+      "cnpj": "35079124000199",
+      "endereco": "Rua Viana Siqueira, 964 – Nova Vista",
+      "cidade": "Recife/PE",
+      "segmento": "Vigilância Patrimonial",
+      "end": {
+        "logradouro": "Rua Viana Siqueira",
+        "numero": "964",
+        "bairro": "Nova Vista",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "50524522"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "GAEL HENRIQUE FONSECA LEÃO",
+      "cpf": "93178524088",
+      "pis": "16931266498",
+      "matricula": "000796",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "8869-47",
+      "salario": 3550.0,
+      "admissao": "2024-12-14",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "35079124000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Peixoto da Rocha",
+        "numero": "840",
+        "bairro": "Ipe",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52073937"
+      },
+      "nascimento": "2005-12-15"
+    },
+    {
+      "nome": "ANA VITÓRIA RAMOS OLIVEIRA",
+      "cpf": "26031594889",
+      "pis": "14670511471",
+      "matricula": "004410",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "5500-79",
+      "salario": 3690.0,
+      "admissao": "2023-11-03",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "35079124000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Almeida Fogaça",
+        "numero": "703",
+        "bairro": "Bonfim",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52749947"
+      },
+      "nascimento": "1995-12-09"
+    },
+    {
+      "nome": "ERICK PORTO DA PAZ",
+      "cpf": "74283019631",
+      "pis": "12584623007",
+      "matricula": "007687",
+      "cargo": "VIGILANTE",
+      "cbo": "4182-50",
+      "salario": 2580.0,
+      "admissao": "2024-02-05",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "35079124000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Fernandes Rios",
+        "numero": "1190",
+        "bairro": "Nova Vista",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52817764"
+      },
+      "nascimento": "2003-03-24"
+    },
+    {
+      "nome": "PEDRO MIGUEL CARVALHO CAVALCANTI",
+      "cpf": "02567481958",
+      "pis": "13112557327",
+      "matricula": "006663",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "6138-38",
+      "salario": 3470.0,
+      "admissao": "2020-03-20",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "35079124000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Cruz Aragão",
+        "numero": "399",
+        "bairro": "Acaiaca",
+        "municipio": "Serra Talhada",
+        "uf": "PE",
+        "cep": "56904336"
+      },
+      "nascimento": "1970-08-06"
+    },
+    {
+      "nome": "MARIA FERNANDA TEIXEIRA ALMEIDA",
+      "cpf": "54386091289",
+      "pis": "13811426620",
+      "matricula": "003472",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "8889-71",
+      "salario": 4110.0,
+      "admissao": "2025-01-10",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "35079124000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Vieira Cunha",
+        "numero": "101",
+        "bairro": "Caiçara - Adelaide",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52399129"
+      },
+      "nascimento": "2006-07-01"
+    },
+    {
+      "nome": "GAEL CAVALCANTE FREITAS",
+      "cpf": "57318260995",
+      "pis": "10133125227",
+      "matricula": "003501",
+      "cargo": "VIGILANTE",
+      "cbo": "6628-45",
+      "salario": 2700.0,
+      "admissao": "2025-09-01",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "35079124000199",
+      "desligado_em": "2026-03-25",
+      "end": {
+        "logradouro": "Travessa Silva Araújo",
+        "numero": "715",
+        "bairro": "Prado",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52104409"
+      },
+      "nascimento": "2002-09-06"
+    },
+    {
+      "nome": "PIETRA NASCIMENTO CORREIA",
+      "cpf": "25801763490",
+      "pis": "16321568970",
+      "matricula": "003515",
+      "cargo": "VIGILANTE",
+      "cbo": "8477-82",
+      "salario": 2560.0,
+      "admissao": "2021-05-11",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "35079124000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Vargas Carvalho",
+        "numero": "1683",
+        "bairro": "Nova Esperança",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55296247"
+      },
+      "nascimento": "1966-08-13"
+    },
+    {
+      "nome": "KAMILLY CARDOSO COSTELA",
+      "cpf": "97460518220",
+      "pis": "11037779953",
+      "matricula": "009926",
+      "cargo": "VIGILANTE",
+      "cbo": "7498-86",
+      "salario": 2620.0,
+      "admissao": "2023-03-24",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "35079124000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Andrade Barros",
+        "numero": "1223",
+        "bairro": "Alpes",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "51965076"
+      },
+      "nascimento": "2004-01-11"
+    },
+    {
+      "nome": "FERNANDO RIOS COSTA",
+      "cpf": "31278549609",
+      "pis": "14563332743",
+      "matricula": "008513",
+      "cargo": "VIGILANTE",
+      "cbo": "7527-39",
+      "salario": 3020.0,
+      "admissao": "2020-08-13",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "35079124000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Lopes Machado",
+        "numero": "636",
+        "bairro": "Lourdes",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52418090"
+      },
+      "nascimento": "1971-03-16"
+    },
+    {
+      "nome": "REBECA GOMES FERREIRA",
+      "cpf": "86103452970",
+      "pis": "11178661223",
+      "matricula": "000317",
+      "cargo": "VIGILANTE",
+      "cbo": "6639-78",
+      "salario": 2430.0,
+      "admissao": "2024-10-11",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "35079124000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Cassiano Azevedo",
+        "numero": "921",
+        "bairro": "Marmiteiros",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56308566"
+      },
+      "nascimento": "1985-02-07"
+    },
+    {
+      "nome": "LAVÍNIA MOREIRA PINTO",
+      "cpf": "73854261071",
+      "pis": "12803988064",
+      "matricula": "004532",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "5476-43",
+      "salario": 3630.0,
+      "admissao": "2020-10-06",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "35079124000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Cassiano da Cunha",
+        "numero": "547",
+        "bairro": "Jatobá",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "50134209"
+      },
+      "nascimento": "1972-05-05"
+    },
+    {
+      "nome": "DOM ALMEIDA COSTELA",
+      "cpf": "79846235119",
+      "pis": "15494690150",
+      "matricula": "004616",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "8396-43",
+      "salario": 4130.0,
+      "admissao": "2024-12-02",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "35079124000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Gomes Freitas",
+        "numero": "353",
+        "bairro": "Ouro Preto",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "50701865"
+      },
+      "nascimento": "1972-09-05"
+    },
+    {
+      "nome": "LUARA APARECIDA SANTOS",
+      "cpf": "79106328431",
+      "pis": "19665123710",
+      "matricula": "000467",
+      "cargo": "VIGILANTE",
+      "cbo": "5398-57",
+      "salario": 2990.0,
+      "admissao": "2023-01-12",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "35079124000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa da Conceição da Conceição",
+        "numero": "1268",
+        "bairro": "Dom Silverio",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "50758960"
+      },
+      "nascimento": "1989-04-25"
+    }
+  ],
+  "competencias": [
+    "2026-02",
+    "2026-03"
+  ]
+}

@@ -1,0 +1,2484 @@
+{
+  "arquivo": "lote_0019.pdf",
+  "perfil": "admissao",
+  "empresa_cnpj": "82956401000184",
+  "competencia": "2025-10",
+  "degradacao": "forte",
+  "total_paginas": 51,
+  "total_documentos": 43,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "post_it:2ª via"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 3
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 43,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 26,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 27,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 3
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 28,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 29,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 30,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 3
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 31,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 32,
+      "documentos": [
+        {
+          "indice": 25,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 33,
+      "documentos": [
+        {
+          "indice": 26,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "post_it:arquivar"
+      ]
+    },
+    {
+      "pagina": 34,
+      "documentos": [
+        {
+          "indice": 27,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 35,
+      "documentos": [
+        {
+          "indice": 28,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 36,
+      "documentos": [
+        {
+          "indice": 29,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 37,
+      "documentos": [
+        {
+          "indice": 30,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 38,
+      "documentos": [
+        {
+          "indice": 31,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 39,
+      "documentos": [
+        {
+          "indice": 32,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 40,
+      "documentos": [
+        {
+          "indice": 33,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 41,
+      "documentos": [
+        {
+          "indice": 34,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 42,
+      "documentos": [
+        {
+          "indice": 35,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 43,
+      "documentos": [
+        {
+          "indice": 36,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 44,
+      "documentos": [
+        {
+          "indice": 37,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 45,
+      "documentos": [
+        {
+          "indice": 38,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 46,
+      "documentos": [
+        {
+          "indice": 39,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 47,
+      "documentos": [
+        {
+          "indice": 39,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 48,
+      "documentos": [
+        {
+          "indice": 39,
+          "pagina_do_documento": 3
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 49,
+      "documentos": [
+        {
+          "indice": 40,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 50,
+      "documentos": [
+        {
+          "indice": 41,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 51,
+      "documentos": [
+        {
+          "indice": 42,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "ASO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "28765903447",
+      "empregado": "AURORA OLIVEIRA GOMES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregado_nome": "Aurora Oliveira Gomes",
+        "empregado_cpf": "28765903447",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Servente",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2023-04-13",
+        "riscos_ocupacionais": [
+          "Acidentes",
+          "Químico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Luana Andrade",
+        "medico_crm": "CRM-AL 39619"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "DECLARACAO_MANUSCRITA",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "28765903447",
+      "empregado": "AURORA OLIVEIRA GOMES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2025-10-15",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Aurora Oliveira Gomes",
+        "empregado_cpf": "28765903447",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "RESIDENCIA",
+        "endereco": "Travessa Guerra Vargas, 418 – São Gonçalo, Paulista/PE"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "TERMO_RESPONSABILIDADE",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "78961034278",
+      "empregado": "CAROLINE VIANA ALVES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2023-06-01",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "CAROLINE VIANA ALVES",
+        "empregado_cpf": "78961034278",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Capa de chuva",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Crachá funcional",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Calça do uniforme",
+            "quantidade": 2
+          },
+          {
+            "descricao": "Alicate universal",
+            "quantidade": 2
+          },
+          {
+            "descricao": "Molho de chaves do posto",
+            "quantidade": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Calça do uniforme"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Alicate universal"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53726849173",
+      "empregado": "NINA SAMPAIO DUARTE",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "ALTERACAO_SALARIAL",
+        "data_anotacao": "2023-02-07",
+        "cargo": "Encarregado De Limpeza",
+        "salario": 2740.0,
+        "ferias_inicio": null,
+        "ferias_fim": null,
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "ENCARREGADO DE LIMPEZA, POR MOTIVO DE"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "63175928455",
+      "empregado": "KAIQUE CUNHA NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2022-05-01",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Kaique Cunha Novaes",
+        "empregado_cpf": "63175928455",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "Yago Novaes",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2011-11-22"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-35 – Trabalho em Altura",
+        "data": "2025-08-06",
+        "carga_horaria_horas": 8.0,
+        "instrutor": "Felipe das Neves",
+        "participantes": [
+          {
+            "nome": "João Gabriel Moura Pinto",
+            "cpf": "03754618253",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Maria Liz Borges Pereira",
+            "cpf": "84253190723",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Brayan Cavalcanti Novais",
+            "cpf": null,
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Davi Lucas Pereira Novais",
+            "cpf": "73405196884",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Leandro Macedo Pacheco",
+            "cpf": "06329851433",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Kaique Cunha Novaes",
+            "cpf": "63175928455",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Davi Miguel Duarte Freitas",
+            "cpf": "10245798323",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Hellena Brito Da Luz",
+            "cpf": "61394752873",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "campo_em_branco",
+          "campo": "participantes.cpf"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "613.947.528-73"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53726849173",
+      "empregado": "NINA SAMPAIO DUARTE",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregado_nome": "Nina Sampaio Duarte",
+        "empregado_cpf": "53726849173",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "19655695070",
+        "matricula": "008585",
+        "data_admissao": "2022-01-29",
+        "cargo": "Encarregado De Limpeza",
+        "salario": 2630.0,
+        "foto_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        8,
+        9,
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53726849173",
+      "empregado": "NINA SAMPAIO DUARTE",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregado_nome": "NINA SAMPAIO DUARTE",
+        "empregado_cpf": "53726849173",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "EXPERIENCIA",
+        "prazo_dias": 45,
+        "data_inicio": "2022-01-29",
+        "cargo": "ENCARREGADO DE LIMPEZA",
+        "salario": 2630.0,
+        "jornada": "08:00 às 12:00 e 13:00 às 17:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "63175928455",
+      "empregado": "KAIQUE CUNHA NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregado_nome": "Kaique Cunha Novaes",
+        "empregado_cpf": "63175928455",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "11401718455",
+        "matricula": "006069",
+        "data_admissao": "2022-04-30",
+        "cargo": "Encarregado De Limpeza",
+        "salario": 2740.0,
+        "foto_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "631.759.284-55"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53726849173",
+      "empregado": "NINA SAMPAIO DUARTE",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2022-01-29",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Nina Sampaio Duarte",
+        "empregado_cpf": "53726849173",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "João Pedro Dias",
+            "parentesco": "Cônjuge",
+            "data_nascimento": "1999-08-20"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "DECLARACAO_MANUSCRITA",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "63175928455",
+      "empregado": "KAIQUE CUNHA NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2025-11-20",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Kaique Cunha Novaes",
+        "empregado_cpf": "63175928455",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "NAO_ACUMULO_EMPREGO",
+        "endereco": null
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "63175928455",
+      "empregado": "KAIQUE CUNHA NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2022-04-30",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "KAIQUE CUNHA NOVAES",
+        "empregado_cpf": "63175928455",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "ENCARREGADO DE LIMPEZA",
+        "riscos": [
+          "Cortes e perfurações",
+          "Agentes biológicos",
+          "Queda de altura",
+          "Postura inadequada"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "28765903447",
+      "empregado": "AURORA OLIVEIRA GOMES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2023-04-21",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "AURORA OLIVEIRA GOMES",
+        "empregado_cpf": "28765903447",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "SERVENTE",
+        "riscos": [
+          "Queda de altura",
+          "Choque elétrico"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "TERMO_RESPONSABILIDADE",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "63175928455",
+      "empregado": "KAIQUE CUNHA NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2022-05-10",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "KAIQUE CUNHA NOVAES",
+        "empregado_cpf": "63175928455",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Bota de segurança",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Rádio comunicador",
+            "quantidade": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53726849173",
+      "empregado": "NINA SAMPAIO DUARTE",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2022-01-30",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "NINA SAMPAIO DUARTE",
+        "empregado_cpf": "53726849173",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "ENCARREGADO DE LIMPEZA",
+        "riscos": [
+          "Ruído",
+          "Queda de altura"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "DECLARACAO_VALE_TRANSPORTE",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "63175928455",
+      "empregado": "KAIQUE CUNHA NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2022-05-01",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Kaique Cunha Novaes",
+        "empregado_cpf": "63175928455",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "opcao": "OPTANTE",
+        "endereco_residencial": "Travessa Sousa Campos, 1296 – Belvedere, Arcoverde/PE",
+        "linhas": [
+          {
+            "linha": "253 – Belvedere/Terminal",
+            "tarifa": 4.3,
+            "viagens_por_dia": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Travessa Sousa Campos, 1296 – Belvedere, Arcoverde/PE"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "FICHA_EPI",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "28765903447",
+      "empregado": "AURORA OLIVEIRA GOMES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregado_nome": "Aurora Oliveira Gomes",
+        "empregado_cpf": "28765903447",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Servente",
+        "entregas": [
+          {
+            "data": "2023-06-30",
+            "descricao": "Avental impermeável",
+            "quantidade": 3,
+            "numero_ca": "48530"
+          },
+          {
+            "data": "2023-09-26",
+            "descricao": "Bota de PVC",
+            "quantidade": 3,
+            "numero_ca": "43368"
+          },
+          {
+            "data": "2023-12-29",
+            "descricao": "Máscara PFF2",
+            "quantidade": 1,
+            "numero_ca": "42629"
+          },
+          {
+            "data": "2024-07-13",
+            "descricao": "Bota de PVC",
+            "quantidade": 1,
+            "numero_ca": "46602"
+          },
+          {
+            "data": "2024-07-14",
+            "descricao": "Óculos de proteção",
+            "quantidade": 1,
+            "numero_ca": "40297"
+          },
+          {
+            "data": "2025-03-23",
+            "descricao": "Luva de látex",
+            "quantidade": 1,
+            "numero_ca": "46864"
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "40297"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "FICHA_EPI",
+      "paginas": [
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "63175928455",
+      "empregado": "KAIQUE CUNHA NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregado_nome": "Kaique Cunha Novaes",
+        "empregado_cpf": "63175928455",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Encarregado De Limpeza",
+        "entregas": [
+          {
+            "data": "2022-05-20",
+            "descricao": "Avental impermeável",
+            "quantidade": 1,
+            "numero_ca": "14807"
+          },
+          {
+            "data": "2022-05-25",
+            "descricao": "Máscara PFF2",
+            "quantidade": 1,
+            "numero_ca": "37336"
+          },
+          {
+            "data": "2024-01-09",
+            "descricao": "Óculos de proteção",
+            "quantidade": 1,
+            "numero_ca": "13475"
+          },
+          {
+            "data": "2025-01-05",
+            "descricao": "Avental impermeável",
+            "quantidade": 1,
+            "numero_ca": "26844"
+          },
+          {
+            "data": "2025-03-18",
+            "descricao": "Óculos de proteção",
+            "quantidade": 3,
+            "numero_ca": "23863"
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "20/05/2022"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "DECLARACAO_VALE_TRANSPORTE",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "78961034278",
+      "empregado": "CAROLINE VIANA ALVES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2023-05-24",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Caroline Viana Alves",
+        "empregado_cpf": "78961034278",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "opcao": "OPTANTE",
+        "endereco_residencial": "Travessa Mendes Freitas, 1579 – Camargos, Paulista/PE",
+        "linhas": [
+          {
+            "linha": "039 – Camargos/Terminal",
+            "tarifa": 4.8,
+            "viagens_por_dia": 2
+          },
+          {
+            "linha": "947 – Camargos/Shopping",
+            "tarifa": 4.3,
+            "viagens_por_dia": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "4,80"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "DECLARACAO_VALE_TRANSPORTE",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "28765903447",
+      "empregado": "AURORA OLIVEIRA GOMES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2023-04-18",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Aurora Oliveira Gomes",
+        "empregado_cpf": "28765903447",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "opcao": "NAO_OPTANTE",
+        "endereco_residencial": "Travessa Guerra Vargas, 418 – São Gonçalo, Paulista/PE",
+        "linhas": []
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "TRAVESSA GUERRA VARGAS, 418 – SÃO GONÇALO, PAULISTA/PE"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "TERMO_RESPONSABILIDADE",
+      "paginas": [
+        24
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53726849173",
+      "empregado": "NINA SAMPAIO DUARTE",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2022-02-03",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "NINA SAMPAIO DUARTE",
+        "empregado_cpf": "53726849173",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Lanterna",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Molho de chaves do posto",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Crachá funcional",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Capa de chuva",
+            "quantidade": 2
+          },
+          {
+            "descricao": "Bota de segurança",
+            "quantidade": 2
+          },
+          {
+            "descricao": "Jogo de chaves de fenda",
+            "quantidade": 3
+          }
+        ]
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Capa de chuva"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        25,
+        26,
+        27
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "78961034278",
+      "empregado": "CAROLINE VIANA ALVES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregado_nome": "CAROLINE VIANA ALVES",
+        "empregado_cpf": "78961034278",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "EXPERIENCIA",
+        "prazo_dias": 90,
+        "data_inicio": "2023-05-22",
+        "cargo": "AUXILIAR DE LIMPEZA",
+        "salario": 1780.0,
+        "jornada": "08:00 às 12:00 e 13:00 às 17:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 23,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        28,
+        29,
+        30
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "28765903447",
+      "empregado": "AURORA OLIVEIRA GOMES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregado_nome": "AURORA OLIVEIRA GOMES",
+        "empregado_cpf": "28765903447",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "EXPERIENCIA",
+        "prazo_dias": 90,
+        "data_inicio": "2023-04-18",
+        "cargo": "SERVENTE",
+        "salario": 1700.0,
+        "jornada": "06:00 às 10:00 e 11:00 às 15:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 24,
+      "tipo": "CHECKLIST_INTEGRACAO",
+      "paginas": [
+        31
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53726849173",
+      "empregado": "NINA SAMPAIO DUARTE",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2022-02-03",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Nina Sampaio Duarte",
+        "empregado_cpf": null,
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Apresentação ao supervisor do posto",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de uniforme",
+            "marcado": true
+          },
+          {
+            "descricao": "Apresentação das normas internas",
+            "marcado": true
+          },
+          {
+            "descricao": "Leitura do código de conduta",
+            "marcado": true
+          },
+          {
+            "descricao": "Orientação sobre rotas de fuga",
+            "marcado": true
+          },
+          {
+            "descricao": "Cadastro biométrico de acesso",
+            "marcado": true
+          },
+          {
+            "descricao": "Senha do sistema de ponto",
+            "marcado": true
+          }
+        ],
+        "assinatura_responsavel_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 25,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        32
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "78961034278",
+      "empregado": "CAROLINE VIANA ALVES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2023-05-24",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "CAROLINE VIANA ALVES",
+        "empregado_cpf": "78961034278",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "AUXILIAR DE LIMPEZA",
+        "riscos": [
+          "Agentes biológicos",
+          "Postura inadequada"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 26,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        33
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "63175928455",
+      "empregado": "KAIQUE CUNHA NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregador_razao_social": "Aparecida Limpeza Soluções Ltda",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "CONTRATO",
+        "data_anotacao": "2022-04-30",
+        "cargo": "Encarregado De Limpeza",
+        "salario": 2740.0,
+        "ferias_inicio": null,
+        "ferias_fim": null,
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Aparecida Limpeza Soluções Ltda"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Paulista/PE"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 27,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        34
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "78961034278",
+      "empregado": "CAROLINE VIANA ALVES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregado_nome": "Caroline Viana Alves",
+        "empregado_cpf": "78961034278",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "16689529992",
+        "matricula": "007918",
+        "data_admissao": "2023-05-22",
+        "cargo": "Auxiliar De Limpeza",
+        "salario": 1780.0,
+        "foto_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Travessa Mendes Freitas, 1579 – Camargos, Paulista/PE"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "08:00 – 12:00 – 13:00 – 17:00"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 28,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        35
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-23 – Prevenção e Combate a Incêndio",
+        "data": "2025-08-13",
+        "carga_horaria_horas": 4.0,
+        "instrutor": "Bernardo da Mata",
+        "participantes": [
+          {
+            "nome": "Luana Pimenta Lopes",
+            "cpf": "47936810269",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "João Gabriel Moura Pinto",
+            "cpf": "03754618253",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Maria Liz Borges Pereira",
+            "cpf": "84253190723",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Davi Lucas Pereira Novais",
+            "cpf": "73405196884",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Gabriela Casa Grande Viana",
+            "cpf": "49382761519",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Lavínia Fernandes Alves",
+            "cpf": "85213409660",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Aurora Oliveira Gomes",
+            "cpf": "28765903447",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Caroline Viana Alves",
+            "cpf": "78961034278",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Leandro Macedo Pacheco",
+            "cpf": "06329851433",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Brayan Cavalcanti Novais",
+            "cpf": "17346805208",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Vinícius Siqueira Rodrigues",
+            "cpf": "47103296804",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Hellena Brito Da Luz",
+            "cpf": "61394752873",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Davi Miguel Duarte Freitas",
+            "cpf": "10245798323",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Arthur Dias Fernandes",
+            "cpf": "01385476290",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "734.051.968-84"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 29,
+      "tipo": "OUTRO",
+      "paginas": [
+        36
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2025-10",
+      "empresa_cnpj": "82956401000184",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 30,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        37
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "78961034278",
+      "empregado": "CAROLINE VIANA ALVES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregador_razao_social": "Aparecida Limpeza Soluções Ltda",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "CONTRATO",
+        "data_anotacao": "2023-05-22",
+        "cargo": "Auxiliar De Limpeza",
+        "salario": 1780.0,
+        "ferias_inicio": null,
+        "ferias_fim": null,
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "22/05/2023"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 31,
+      "tipo": "DECLARACAO_MANUSCRITA",
+      "paginas": [
+        38
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "78961034278",
+      "empregado": "CAROLINE VIANA ALVES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2025-06-28",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Caroline Viana Alves",
+        "empregado_cpf": "78961034278",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "RESIDENCIA",
+        "endereco": "Travessa Mendes Freitas, 1579 – Camargos, Paulista/PE"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "presente declaração."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 32,
+      "tipo": "TERMO_RESPONSABILIDADE",
+      "paginas": [
+        39
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "28765903447",
+      "empregado": "AURORA OLIVEIRA GOMES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2023-04-23",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "AURORA OLIVEIRA GOMES",
+        "empregado_cpf": "28765903447",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Alicate universal",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Crachá funcional",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Camisa do uniforme",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Jogo de chaves de fenda",
+            "quantidade": 1
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 33,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        40
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "28765903447",
+      "empregado": "AURORA OLIVEIRA GOMES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2023-04-21",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Aurora Oliveira Gomes",
+        "empregado_cpf": "28765903447",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "Francisco Gomes",
+            "parentesco": "Enteado(a)",
+            "data_nascimento": "2014-06-28"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Aurora Oliveira Gomes"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 34,
+      "tipo": "DECLARACAO_MANUSCRITA",
+      "paginas": [
+        41
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53726849173",
+      "empregado": "NINA SAMPAIO DUARTE",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2025-09-01",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Nina Sampaio Duarte",
+        "empregado_cpf": "53726849173",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "NAO_ACUMULO_EMPREGO",
+        "endereco": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "que não possuo outro vínculo empregatício além da empresa Aparecida"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 35,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        42
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "28765903447",
+      "empregado": "AURORA OLIVEIRA GOMES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregado_nome": "Aurora Oliveira Gomes",
+        "empregado_cpf": "28765903447",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "11231723445",
+        "matricula": "007449",
+        "data_admissao": "2023-04-18",
+        "cargo": "Servente",
+        "salario": 1700.0,
+        "foto_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "31/03/1980"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 36,
+      "tipo": "ASO",
+      "paginas": [
+        43
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53726849173",
+      "empregado": "NINA SAMPAIO DUARTE",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregado_nome": "Nina Sampaio Duarte",
+        "empregado_cpf": "53726849173",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Encarregado De Limpeza",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2022-01-25",
+        "riscos_ocupacionais": [
+          "Ausência de risco específico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Benjamin Câmara",
+        "medico_crm": null
+      },
+      "nao_conformidades": [
+        {
+          "regra": "aso_sem_crm",
+          "descricao": "ASO sem CRM do médico",
+          "campo": "medico_crm"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 37,
+      "tipo": "ASO",
+      "paginas": [
+        44
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "63175928455",
+      "empregado": "KAIQUE CUNHA NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregado_nome": "Kaique Cunha Novaes",
+        "empregado_cpf": "63175928455",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Encarregado De Limpeza",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2022-04-26",
+        "riscos_ocupacionais": [
+          "Ausência de risco específico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Mirella Araújo",
+        "medico_crm": "CRM-AL 24966"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 38,
+      "tipo": "CHECKLIST_INTEGRACAO",
+      "paginas": [
+        45
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "28765903447",
+      "empregado": "AURORA OLIVEIRA GOMES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2023-04-21",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Aurora Oliveira Gomes",
+        "empregado_cpf": null,
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Entrega de uniforme",
+            "marcado": true
+          },
+          {
+            "descricao": "Apresentação das normas internas",
+            "marcado": false
+          },
+          {
+            "descricao": "Cadastro biométrico de acesso",
+            "marcado": false
+          },
+          {
+            "descricao": "Apresentação ao supervisor do posto",
+            "marcado": false
+          },
+          {
+            "descricao": "Leitura do código de conduta",
+            "marcado": true
+          },
+          {
+            "descricao": "Orientação sobre rotas de fuga",
+            "marcado": true
+          }
+        ],
+        "assinatura_responsavel_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 39,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        46,
+        47,
+        48
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "63175928455",
+      "empregado": "KAIQUE CUNHA NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregado_nome": "KAIQUE CUNHA NOVAES",
+        "empregado_cpf": "63175928455",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "EXPERIENCIA",
+        "prazo_dias": 45,
+        "data_inicio": "2022-04-30",
+        "cargo": "ENCARREGADO DE LIMPEZA",
+        "salario": 2740.0,
+        "jornada": "07:00 às 11:00 e 12:00 às 16:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 40,
+      "tipo": "ASO",
+      "paginas": [
+        49
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "78961034278",
+      "empregado": "CAROLINE VIANA ALVES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregado_nome": "Caroline Viana Alves",
+        "empregado_cpf": "78961034278",
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Auxiliar De Limpeza",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2023-05-16",
+        "riscos_ocupacionais": [
+          "Químico",
+          "Físico (ruído)"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Brenda Cassiano",
+        "medico_crm": "CRM-BA 9967"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 41,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        50
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "28765903447",
+      "empregado": "AURORA OLIVEIRA GOMES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "ALTERACAO_SALARIAL",
+        "data_anotacao": "2024-06-19",
+        "cargo": "Servente",
+        "salario": 1850.0,
+        "ferias_inicio": null,
+        "ferias_fim": null,
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "1.850,00 mensais, no cargo de Servente, por"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 42,
+      "tipo": "CHECKLIST_INTEGRACAO",
+      "paginas": [
+        51
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "63175928455",
+      "empregado": "KAIQUE CUNHA NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "82956401000184",
+      "dados": {
+        "data_documento": "2022-05-04",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Kaique Cunha Novaes",
+        "empregado_cpf": null,
+        "empregador_razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82956401000184",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Entrega de EPI",
+            "marcado": false
+          },
+          {
+            "descricao": "Apresentação ao supervisor do posto",
+            "marcado": true
+          },
+          {
+            "descricao": "Crachá de identificação entregue",
+            "marcado": true
+          },
+          {
+            "descricao": "Orientação sobre rotas de fuga",
+            "marcado": false
+          },
+          {
+            "descricao": "Treinamento de integração de SST",
+            "marcado": true
+          },
+          {
+            "descricao": "Cadastro biométrico de acesso",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de uniforme",
+            "marcado": true
+          },
+          {
+            "descricao": "Apresentação das normas internas",
+            "marcado": true
+          }
+        ],
+        "assinatura_responsavel_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 43,
+      "tipo": "OUTRO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      25,
+      25
+    ],
+    "degradacao": "forte",
+    "taxa_nc": 0.11,
+    "perfil": "admissao",
+    "embaralhar": 0.48,
+    "paginas_em_branco": 0.09,
+    "fora_de_ordem": 0.15,
+    "intercalar": 0.09,
+    "taxa_defeito": 0.07,
+    "taxa_branco": 0.06,
+    "extras": 0.15,
+    "p_celular": 0.21,
+    "p_cabeca_para_baixo": 0.07,
+    "seed": 42019
+  }
+}

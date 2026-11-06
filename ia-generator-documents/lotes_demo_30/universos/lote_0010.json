@@ -1,0 +1,297 @@
+{
+  "seed": 42010,
+  "data_referencia": "2026-09-16",
+  "empresas": [
+    {
+      "razao_social": "DA LUZ MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+      "cnpj": "64359170000140",
+      "endereco": "Travessa da Mata Mendonça, 820 – Nova America",
+      "cidade": "Pesqueira/PE",
+      "segmento": "Manutenção Predial",
+      "end": {
+        "logradouro": "Travessa da Mata Mendonça",
+        "numero": "820",
+        "bairro": "Nova America",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55209208"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "SABRINA FERREIRA MOREIRA",
+      "cpf": "42167083580",
+      "pis": "18584213142",
+      "matricula": "007377",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "8120-66",
+      "salario": 1990.0,
+      "admissao": "2024-04-09",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "64359170000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Montenegro Macedo",
+        "numero": "204",
+        "bairro": "Ribeiro De Abreu",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55211175"
+      },
+      "nascimento": "1999-08-06"
+    },
+    {
+      "nome": "AYLLA FERNANDES SALES",
+      "cpf": "71586902377",
+      "pis": "10140359050",
+      "matricula": "009865",
+      "cargo": "ELETRICISTA",
+      "cbo": "7447-41",
+      "salario": 3050.0,
+      "admissao": "2025-08-17",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "64359170000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Brito da Rosa",
+        "numero": "517",
+        "bairro": "Acaba Mundo",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55215915"
+      },
+      "nascimento": "1981-04-20"
+    },
+    {
+      "nome": "MURILO SANTOS RODRIGUES",
+      "cpf": "50943187648",
+      "pis": "16267108997",
+      "matricula": "005266",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "7639-89",
+      "salario": 2050.0,
+      "admissao": "2025-10-25",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "64359170000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Cunha Monteiro",
+        "numero": "81",
+        "bairro": "Carmo",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55216783"
+      },
+      "nascimento": "1977-04-25"
+    },
+    {
+      "nome": "LARISSA ARAÚJO DA ROSA",
+      "cpf": "62930581786",
+      "pis": "11442372499",
+      "matricula": "004022",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "6874-43",
+      "salario": 2770.0,
+      "admissao": "2023-09-15",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "64359170000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Cassiano Ramos",
+        "numero": "1198",
+        "bairro": "Vila Calafate",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53411853"
+      },
+      "nascimento": "1999-08-27"
+    },
+    {
+      "nome": "GABRIEL APARECIDA MONTENEGRO",
+      "cpf": "30126749850",
+      "pis": "17324623040",
+      "matricula": "009525",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "8483-60",
+      "salario": 2160.0,
+      "admissao": "2020-02-27",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "64359170000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Mota Pacheco",
+        "numero": "854",
+        "bairro": "Frei Leopoldo",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55200418"
+      },
+      "nascimento": "1987-04-07"
+    },
+    {
+      "nome": "CLARA DA LUZ PINTO",
+      "cpf": "02351497643",
+      "pis": "17772893653",
+      "matricula": "001650",
+      "cargo": "ELETRICISTA",
+      "cbo": "9156-53",
+      "salario": 2680.0,
+      "admissao": "2023-03-05",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "64359170000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Novais Rodrigues",
+        "numero": "1646",
+        "bairro": "Rio Branco",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55203169"
+      },
+      "nascimento": "1977-02-27"
+    },
+    {
+      "nome": "MARIA SOPHIA RODRIGUES COSTA",
+      "cpf": "24671508958",
+      "pis": "14102610843",
+      "matricula": "005698",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "7579-71",
+      "salario": 1900.0,
+      "admissao": "2023-09-28",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "64359170000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Cavalcanti Sá",
+        "numero": "1968",
+        "bairro": "Bonsucesso",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55219966"
+      },
+      "nascimento": "1974-11-07"
+    },
+    {
+      "nome": "LIAM AZEVEDO SOUSA",
+      "cpf": "16032957470",
+      "pis": "11982245519",
+      "matricula": "005820",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "5685-20",
+      "salario": 2140.0,
+      "admissao": "2023-11-07",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "64359170000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Mendonça Monteiro",
+        "numero": "1596",
+        "bairro": "Vila Puc",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55218327"
+      },
+      "nascimento": "1973-11-01"
+    },
+    {
+      "nome": "JOÃO FELIPE MORAES PEIXOTO",
+      "cpf": "36507289400",
+      "pis": "16633481005",
+      "matricula": "001753",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "4442-28",
+      "salario": 2820.0,
+      "admissao": "2019-12-30",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "64359170000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Cirino da Cunha",
+        "numero": "1190",
+        "bairro": "Vista Do Sol",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54419064"
+      },
+      "nascimento": "1981-08-27"
+    },
+    {
+      "nome": "HENRY GABRIEL CAVALCANTE PINTO",
+      "cpf": "43062795883",
+      "pis": "15647911858",
+      "matricula": "007447",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "5513-62",
+      "salario": 2010.0,
+      "admissao": "2022-12-18",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "64359170000140",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Lima Borges",
+        "numero": "980",
+        "bairro": "Barão Homem De Melo 1ª Seção",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55207843"
+      },
+      "nascimento": "1970-01-07"
+    }
+  ],
+  "competencias": [
+    "2026-07",
+    "2026-08"
+  ]
+}

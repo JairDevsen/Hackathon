@@ -26,15 +26,17 @@ function Kpi({ icon: I, label, n, pct, tone }: { icon: any; label: string; n: nu
 function PastasRH({ docs, onOpen }: { docs: any[]; onOpen: (id: string) => void }) {
   const tree: Record<string, Record<string, any[]>> = {}
   for (const d of docs) {
-    const emp = d.empresa_nome || 'Empresa não identificada'
+    // separação: própria empresa × terceirizada × fornecedor, e dentro de cada um a empresa (pelo CNPJ) e o funcionário
+    const grupo = d.vinculo === 'TERCEIRIZADA' ? '1|Terceirizada' : d.vinculo === 'FORNECEDOR' ? '2|Fornecedor' : '0|Própria empresa'
+    const emp = `${grupo}|${d.fornecedor || d.empresa_nome || 'Empresa não identificada'}`
     const fn = d.funcionario_nome ? `${d.funcionario_nome} (${d.funcionario_cpf ?? 's/ CPF'})` : 'Documentos da empresa / sem vínculo'
     ;((tree[emp] ??= {})[fn] ??= []).push(d)
   }
   if (!docs.length) return <EmptyState title="Nenhum documento" />
   return (
     <ul className="space-y-3" aria-label="Árvore de pastas do RH">
-      {Object.entries(tree).map(([emp, funcs]) => (
-        <li key={emp}><p className="flex items-center gap-2 font-semibold text-brand-darker"><FolderTree className="h-4 w-4 text-brand-default" aria-hidden />{emp}</p>
+      {Object.entries(tree).sort(([x], [y]) => x.localeCompare(y)).map(([emp, funcs]) => (
+        <li key={emp}><p className="flex items-center gap-2 font-semibold text-brand-darker"><FolderTree className="h-4 w-4 text-brand-default" aria-hidden /><span className="rounded bg-brand-lighter px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide">{emp.split('|')[1]}</span>{emp.split('|').slice(2).join('|')}</p>
           <ul className="ml-3 mt-1 space-y-2 border-l-2 border-brand-lighter pl-4">
             {Object.entries(funcs).map(([fn, ds]) => (
               <li key={fn}><p className="text-sm font-medium text-foreground">{fn}</p>

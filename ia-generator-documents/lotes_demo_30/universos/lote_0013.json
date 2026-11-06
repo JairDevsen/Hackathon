@@ -1,0 +1,324 @@
+{
+  "seed": 42013,
+  "data_referencia": "2026-06-18",
+  "empresas": [
+    {
+      "razao_social": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+      "cnpj": "48167209000170",
+      "endereco": "Rua Silva Almeida, 1083 – Pompéia",
+      "cidade": "Caruaru/PE",
+      "segmento": "Limpeza e Conservação",
+      "end": {
+        "logradouro": "Rua Silva Almeida",
+        "numero": "1083",
+        "bairro": "Pompéia",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55089074"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "GABRIEL RIOS JESUS",
+      "cpf": "61043582762",
+      "pis": "11661808675",
+      "matricula": "003898",
+      "cargo": "SERVENTE",
+      "cbo": "8339-79",
+      "salario": 1710.0,
+      "admissao": "2020-05-10",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "48167209000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Novais Sales",
+        "numero": "1441",
+        "bairro": "Ipe",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55061441"
+      },
+      "nascimento": "1971-01-26"
+    },
+    {
+      "nome": "MARIAH SANTOS MENDES",
+      "cpf": "60279354800",
+      "pis": "14748398260",
+      "matricula": "006046",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "6826-58",
+      "salario": 1730.0,
+      "admissao": "2024-08-14",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "48167209000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Pastor Nascimento",
+        "numero": "1411",
+        "bairro": "Carlos Prates",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54317435"
+      },
+      "nascimento": "1974-09-10"
+    },
+    {
+      "nome": "JOÃO VITOR GONÇALVES RIBEIRO",
+      "cpf": "59627803103",
+      "pis": "10165570129",
+      "matricula": "004318",
+      "cargo": "SERVENTE",
+      "cbo": "7106-79",
+      "salario": 1670.0,
+      "admissao": "2023-05-21",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "48167209000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Sales Pinto",
+        "numero": "380",
+        "bairro": "Novo Das Industrias",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55063872"
+      },
+      "nascimento": "2004-12-21"
+    },
+    {
+      "nome": "MANUELA DA CUNHA CASA GRANDE",
+      "cpf": "01672539480",
+      "pis": "11069226860",
+      "matricula": "004128",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "4389-84",
+      "salario": 1900.0,
+      "admissao": "2025-08-28",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "48167209000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Casa Grande da Cunha",
+        "numero": "1948",
+        "bairro": "Minaslandia",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55093285"
+      },
+      "nascimento": "1978-10-08"
+    },
+    {
+      "nome": "YASMIN FREITAS DA COSTA",
+      "cpf": "94813067557",
+      "pis": "13052583092",
+      "matricula": "001193",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "4258-12",
+      "salario": 2350.0,
+      "admissao": "2023-06-18",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "48167209000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Camargo Ramos",
+        "numero": "1874",
+        "bairro": "Álvaro Camargos",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55206037"
+      },
+      "nascimento": "2002-02-14"
+    },
+    {
+      "nome": "FERNANDA PACHECO CAVALCANTE",
+      "cpf": "26810437940",
+      "pis": "11370996300",
+      "matricula": "004076",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "9371-27",
+      "salario": 2510.0,
+      "admissao": "2019-10-29",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "48167209000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Siqueira da Mota",
+        "numero": "761",
+        "bairro": "Vila Copasa",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55021820"
+      },
+      "nascimento": "1971-02-04"
+    },
+    {
+      "nome": "SAMUEL SOUSA COSTA",
+      "cpf": "30561278407",
+      "pis": "16230080045",
+      "matricula": "007368",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "5093-81",
+      "salario": 1650.0,
+      "admissao": "2021-01-24",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "48167209000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Andrade Almeida",
+        "numero": "945",
+        "bairro": "Cachoeirinha",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53445580"
+      },
+      "nascimento": "2001-01-16"
+    },
+    {
+      "nome": "MARCELA CAVALCANTI LEÃO",
+      "cpf": "75306489265",
+      "pis": "19962688283",
+      "matricula": "002842",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "8460-38",
+      "salario": 2440.0,
+      "admissao": "2022-02-15",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "48167209000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Macedo Albuquerque",
+        "numero": "902",
+        "bairro": "Tupi A",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55074719"
+      },
+      "nascimento": "1994-10-18"
+    },
+    {
+      "nome": "LUANA COSTA ARAÚJO",
+      "cpf": "32607584965",
+      "pis": "15017330139",
+      "matricula": "003957",
+      "cargo": "SERVENTE",
+      "cbo": "8242-41",
+      "salario": 1650.0,
+      "admissao": "2023-08-16",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "48167209000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Marques Rezende",
+        "numero": "204",
+        "bairro": "Pousada Santo Antonio",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55298008"
+      },
+      "nascimento": "1987-12-05"
+    },
+    {
+      "nome": "HELOISA SÁ CARVALHO",
+      "cpf": "30847529150",
+      "pis": "10717959039",
+      "matricula": "009037",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "5121-74",
+      "salario": 1850.0,
+      "admissao": "2019-08-27",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "48167209000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Carvalho Novais",
+        "numero": "26",
+        "bairro": "Aeroporto",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55070227"
+      },
+      "nascimento": "1973-08-17"
+    },
+    {
+      "nome": "HELENA ALBUQUERQUE CÂMARA",
+      "cpf": "97540623152",
+      "pis": "14230047742",
+      "matricula": "003122",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "5419-54",
+      "salario": 2560.0,
+      "admissao": "2023-05-19",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "48167209000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Pereira Pimenta",
+        "numero": "1413",
+        "bairro": "Vila Jardim Leblon",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55075796"
+      },
+      "nascimento": "1995-02-05"
+    }
+  ],
+  "competencias": [
+    "2026-04",
+    "2026-05"
+  ]
+}

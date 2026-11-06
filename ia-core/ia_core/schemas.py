@@ -10,6 +10,8 @@ class CamposBase(BaseModel):
     competencia: Optional[str] = Field(None, description="Competência AAAA-MM")
     data_documento: Optional[str] = Field(None, description="Data do documento (AAAA-MM-DD)")
     validade_ate: Optional[str] = Field(None, description="Validade (AAAA-MM-DD)")
+    empresa_nome: Optional[str] = Field(None, description="Empresa do documento (empregador, terceirizada ou fornecedora)")
+    empresa_cnpj: Optional[str] = Field(None, description="CNPJ da empresa do documento (somente dígitos); agrupa os documentos por fornecedor")
 
 
 class CamposAR(CamposBase):
@@ -99,7 +101,39 @@ class CamposFerias(CamposBase):
     assinatura_detectada: Optional[bool] = None
 
 
+class CamposApolice(CamposBase):
+    seguradora: Optional[str] = None
+    numero_apolice: Optional[str] = None
+    cobertura: Optional[str] = Field(None, description="Responsabilidade civil, vida em grupo, acidentes pessoais...")
+    vigencia_inicio: Optional[str] = Field(None, description="AAAA-MM-DD")
+    valor_segurado: Optional[str] = None
+
+
+class CamposAutoInfracao(CamposBase):
+    orgao_autuante: Optional[str] = Field(None, description="MTE, MPT, Receita, Prefeitura...")
+    numero_auto: Optional[str] = None
+    infracoes: Optional[str] = Field(None, description="Resumo das infrações apontadas")
+    valor_multa: Optional[str] = None
+
+
+class CamposProcesso(CamposBase):
+    numero_processo: Optional[str] = None
+    vara_tribunal: Optional[str] = None
+    reclamante: Optional[str] = None
+    reclamada: Optional[str] = None
+    valor_causa: Optional[str] = None
+    contratante_citada: Optional[bool] = Field(None, description="A empresa contratante figura como responsável subsidiária?")
+
+
+class CamposAuditoria(CamposBase):
+    auditor: Optional[str] = None
+    escopo: Optional[str] = None
+    achados: Optional[str] = Field(None, description="Não conformidades e riscos apontados")
+    nivel_risco: Optional[str] = Field(None, description="BAIXO, MEDIO ou ALTO")
+
+
 SCHEMAS: Dict[str, Type[BaseModel]] = {
+    "APOLICE_SEGURO": CamposApolice, "AUTO_INFRACAO": CamposAutoInfracao, "PROCESSO_JUDICIAL": CamposProcesso, "RELATORIO_AUDITORIA": CamposAuditoria,
     "CNH": CamposCNH, "RG": CamposRG, "FICHA_EPI": CamposEPI, "ATESTADO_MEDICO": CamposAtestado,
     "CONTRATO_TRABALHO": CamposContratoTrabalho, "FICHA_REGISTRO": CamposContratoTrabalho, "TRCT": CamposTRCT, "RECIBO_FERIAS": CamposFerias,
     "AVISO_RECEBIMENTO": CamposAR,

@@ -1,0 +1,270 @@
+{
+  "seed": 42005,
+  "data_referencia": "2026-10-16",
+  "empresas": [
+    {
+      "razao_social": "MARQUES PORTARIA SERVIÇOS LTDA",
+      "cnpj": "79603582000150",
+      "endereco": "Rua Caldeira Rodrigues, 1021 – Senhor Dos Passos",
+      "cidade": "Belo Jardim/PE",
+      "segmento": "Portaria e Recepção",
+      "end": {
+        "logradouro": "Rua Caldeira Rodrigues",
+        "numero": "1021",
+        "bairro": "Senhor Dos Passos",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55157441"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "HELLENA DA COSTA SALES",
+      "cpf": "46907128594",
+      "pis": "18634641827",
+      "matricula": "005716",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "5131-62",
+      "salario": 1810.0,
+      "admissao": "2021-04-26",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "79603582000150",
+      "desligado_em": "2026-09-27",
+      "end": {
+        "logradouro": "Rua Castro Ferreira",
+        "numero": "1216",
+        "bairro": "Santa Amelia",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55157701"
+      },
+      "nascimento": "1983-02-06"
+    },
+    {
+      "nome": "AURORA RIBEIRO PACHECO",
+      "cpf": "97840526101",
+      "pis": "15340715756",
+      "matricula": "002857",
+      "cargo": "PORTEIRO",
+      "cbo": "9153-73",
+      "salario": 1860.0,
+      "admissao": "2026-03-05",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "79603582000150",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Ribeiro Abreu",
+        "numero": "1821",
+        "bairro": "Parque São José",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55154809"
+      },
+      "nascimento": "1997-09-01"
+    },
+    {
+      "nome": "EMANUEL VIANA VASCONCELOS",
+      "cpf": "57918342097",
+      "pis": "13483280889",
+      "matricula": "005749",
+      "cargo": "PORTEIRO",
+      "cbo": "5811-11",
+      "salario": 1830.0,
+      "admissao": "2020-06-22",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "79603582000150",
+      "desligado_em": "2026-09-10",
+      "end": {
+        "logradouro": "Rua Câmara Rocha",
+        "numero": "355",
+        "bairro": "Granja De Freitas",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55150609"
+      },
+      "nascimento": "1966-08-14"
+    },
+    {
+      "nome": "RAVY CAMARGO NOGUEIRA",
+      "cpf": "63475192080",
+      "pis": "11279516512",
+      "matricula": "008162",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "7265-51",
+      "salario": 1970.0,
+      "admissao": "2020-12-02",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "79603582000150",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Montenegro Pires",
+        "numero": "1940",
+        "bairro": "São Francisco",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55157397"
+      },
+      "nascimento": "1984-10-20"
+    },
+    {
+      "nome": "CATARINA CÂMARA ALBUQUERQUE",
+      "cpf": "69254018333",
+      "pis": "15225441142",
+      "matricula": "009640",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "7080-41",
+      "salario": 2060.0,
+      "admissao": "2021-07-27",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "79603582000150",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Montenegro da Mota",
+        "numero": "1438",
+        "bairro": "Vila Maloca",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55150159"
+      },
+      "nascimento": "1995-09-23"
+    },
+    {
+      "nome": "DAVI LUCCA CIRINO MACHADO",
+      "cpf": "95132067859",
+      "pis": "18640698312",
+      "matricula": "004433",
+      "cargo": "PORTEIRO",
+      "cbo": "6070-85",
+      "salario": 1950.0,
+      "admissao": "2023-11-06",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "79603582000150",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Porto da Costa",
+        "numero": "1541",
+        "bairro": "Bonsucesso",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55156942"
+      },
+      "nascimento": "1993-04-27"
+    },
+    {
+      "nome": "LUIZ FELIPE CASA GRANDE COSTA",
+      "cpf": "76823594047",
+      "pis": "16538788859",
+      "matricula": "001386",
+      "cargo": "PORTEIRO",
+      "cbo": "9914-59",
+      "salario": 1950.0,
+      "admissao": "2024-11-14",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "79603582000150",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Cavalcante Fonseca",
+        "numero": "1462",
+        "bairro": "Jardim Felicidade",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55207300"
+      },
+      "nascimento": "1986-11-04"
+    },
+    {
+      "nome": "ANA CECÍLIA SILVEIRA CAMPOS",
+      "cpf": "14697802322",
+      "pis": "16569223047",
+      "matricula": "004338",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "6302-98",
+      "salario": 1790.0,
+      "admissao": "2020-10-23",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "79603582000150",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Cassiano Cavalcanti",
+        "numero": "1200",
+        "bairro": "Delta",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55157028"
+      },
+      "nascimento": "1993-10-12"
+    },
+    {
+      "nome": "RODRIGO LIMA MOREIRA",
+      "cpf": "64038517993",
+      "pis": "19724550489",
+      "matricula": "008946",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "7915-48",
+      "salario": 1960.0,
+      "admissao": "2024-11-11",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "79603582000150",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa da Cunha Pastor",
+        "numero": "1178",
+        "bairro": "Anchieta",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55155328"
+      },
+      "nascimento": "1971-10-23"
+    }
+  ],
+  "competencias": [
+    "2026-08",
+    "2026-09"
+  ]
+}

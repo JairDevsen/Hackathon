@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useQueryClient } from '@tanstack/react-query'
 import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, XAxis, YAxis, Area, AreaChart } from 'recharts'
-import { AlertTriangle, ArrowRight, CheckCircle2, ClipboardCheck, FileClock, FileText, FolderOpen, RefreshCw, Search, ShieldAlert, Upload, Users } from 'lucide-react'
+import { AlertTriangle, ArrowRight, CheckCircle2, ClipboardCheck, FileClock, FileText, FolderOpen, RefreshCw, Search, ShieldAlert, Truck, Upload, Users } from 'lucide-react'
 import { Button, Card, ComplianceRing, ErrorState, Skeleton, StatusPill } from '@/components/ui'
 import { C, ChartTip, Donut, YTick, axis } from '@/components/charts'
 import { useGet } from '@/lib/query'
@@ -12,6 +12,7 @@ type Counted = { n: number; tipo: string }
 type Overview = {
   conformidade_pct: number | null; funcionarios_ativos: number; funcionarios_com_pendencia: number
   documentos_total: number; lotes_total: number; aguardando_revisao: number; documentos_ilegiveis: number
+  por_vinculo?: { vinculo: string; funcionarios: number; empresas: number; ok: number; total: number }[]; fornecedores?: number; fornecedores_risco_alto?: number; fornecedores_pre_cadastro?: number
   pre_cadastros: number; riscos_abertos: number; vencidos: number; vencendo_30d: number; pendentes: number
   sem_vinculo: number; revisoes_mes: number; lotes_falhos: number
   armazenamento: { usado: number; cota: number }; paginas_mes: { usado: number; limite: number }
@@ -115,9 +116,25 @@ export function AdminDashboard() {
         <Metric label="Vencidos" value={fmtNum(o.vencidos, 0)} detail="exigências a regularizar" to="/app/pendencias" icon={FileClock} tone={o.vencidos ? 'text-danger' : 'text-success'} />
         <Metric label="Vencem em 30 dias" value={fmtNum(o.vencendo_30d, 0)} detail="planeje as renovações" to="/app/calendario" icon={FileClock} tone={o.vencendo_30d ? 'text-warning' : 'text-success'} />
         <Metric label="Riscos em aberto" value={fmtNum(o.riscos_abertos, 0)} detail="sinais para conferência" to="/app/riscos" icon={ShieldAlert} tone={o.riscos_abertos ? 'text-danger' : 'text-success'} />
+        <Metric label="Fornecedores em risco alto" value={fmtNum(o.fornecedores_risco_alto ?? 0, 0)} detail={`de ${fmtNum(o.fornecedores ?? 0, 0)} ativos`} to="/app/fornecedores" icon={Truck} tone={o.fornecedores_risco_alto ? 'text-danger' : 'text-success'} />
         <Metric label="Pré-cadastrados" value={fmtNum(o.pre_cadastros, 0)} detail="gerados pelos lotes" to="/app/funcionarios?pre=1" icon={Users} tone="text-brand" />
       </div>}
     </section>
+
+    {!!o?.por_vinculo?.length && (
+      <Card title="Quem trabalha para a empresa" action={<Link to="/app/fornecedores" className="text-sm font-semibold text-brand hover:underline">Ver fornecedores →</Link>}>
+        <div className="grid gap-3 sm:grid-cols-3">
+          {([['PROPRIA', 'Própria empresa', '/app/funcionarios?vinculo=PROPRIA'], ['TERCEIRIZADA', 'Terceirizadas', '/app/funcionarios?vinculo=TERCEIRIZADA'], ['FORNECEDOR', 'Fornecedores', '/app/funcionarios?vinculo=FORNECEDOR']] as const).map(([k, label, to]) => {
+            const g = o.por_vinculo!.find((x) => x.vinculo === k)
+            return <Link key={k} to={to} className="rounded-xl border border-border bg-surface/60 p-3 transition hover:border-brand-light">
+              <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">{label}</p>
+              <p className="text-2xl font-bold text-brand-darker">{g?.funcionarios ?? 0}<span className="ml-1 text-sm font-medium text-muted-foreground">trabalhadores{k !== 'PROPRIA' ? ` · ${g?.empresas ?? 0} empresa(s)` : ''}</span></p>
+              <p className="text-xs text-muted-foreground">{g?.total ? `${fmtPct((100 * g.ok) / g.total)} dos documentos exigidos em dia` : 'sem exigências calculadas'}</p>
+            </Link>
+          })}
+        </div>
+      </Card>
+    )}
 
     <div className="grid gap-4 xl:grid-cols-[1.2fr_1fr]">
       <Card title="Próximas ações" action={<Link to="/app/pendencias" className="text-sm font-semibold text-brand hover:underline">Ver pendências →</Link>}>

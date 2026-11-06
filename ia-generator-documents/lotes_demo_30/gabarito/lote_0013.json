@@ -1,0 +1,1973 @@
+{
+  "arquivo": "lote_0013.pdf",
+  "perfil": "misto",
+  "empresa_cnpj": "48167209000170",
+  "competencia": "2026-05",
+  "degradacao": "media",
+  "total_paginas": 32,
+  "total_documentos": 29,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 2,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 4,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "post_it:devolver",
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 5,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 6,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 7,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 12,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 13,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 18,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 19,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 20,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "post_it:2ª via"
+      ]
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 22,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 180,
+      "extras": [
+        "grampo",
+        "post_it:devolver",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 23,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 26,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 25,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 27,
+      "documentos": [
+        {
+          "indice": 26,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 27,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 180,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 28,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 25,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "post_it:pago",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 29,
+      "documentos": [
+        {
+          "indice": 26,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 27,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 30,
+      "documentos": [
+        {
+          "indice": 28,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 31,
+      "documentos": [
+        {
+          "indice": 29,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 32,
+      "documentos": [
+        {
+          "indice": 29,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "OUTRO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-05",
+      "empresa_cnpj": "48167209000170",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "59627803103",
+      "empregado": "JOÃO VITOR GONÇALVES RIBEIRO",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 250 156 194 AR",
+        "conteudo": "Notificação nº 296/2026",
+        "data_postagem": "2026-05-27",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "João Vitor Gonçalves Ribeiro",
+        "destinatario_endereco": "Avenida Sales Pinto, 380",
+        "destinatario_bairro": "Novo Das Industrias",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55063872",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-05-29",
+            "hora": "13:50"
+          },
+          {
+            "data": "2026-06-01",
+            "hora": "09:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-06-01",
+        "data_devolucao": null,
+        "recebedor_nome": "JOÃO VITOR GONÇALVES RIBEIRO",
+        "recebedor_documento": "7262518",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "01/06/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "30561278407",
+      "empregado": "SAMUEL SOUSA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "empregado_nome": "SAMUEL SOUSA COSTA",
+        "empregado_cpf": "30561278407",
+        "empregador_razao_social": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "48167209000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-06-07",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "30561278407",
+      "empregado": "SAMUEL SOUSA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 195 782 350 AR",
+        "conteudo": "Notificação nº 51/2026",
+        "data_postagem": "2026-06-08",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Samuel Sousa Costa",
+        "destinatario_endereco": "Rua Andrade Almeida, 945",
+        "destinatario_bairro": "Cachoeirinha",
+        "destinatario_municipio": "Paulista",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "53445580",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-06-11",
+            "hora": "14:10"
+          },
+          {
+            "data": "2026-06-15",
+            "hora": "09:45"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-06-15",
+        "data_devolucao": null,
+        "recebedor_nome": "ANA CLARA COSTA",
+        "recebedor_documento": "3719670",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Notificação nº 51/2026"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Cachoeirinha"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "15/06/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "30847529150",
+      "empregado": "HELOISA SÁ CARVALHO",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 685 608 260 AR",
+        "conteudo": "Notificação nº 369/2026",
+        "data_postagem": "2026-06-02",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Heloisa Sá Carvalho",
+        "destinatario_endereco": "Avenida Carvalho Novais, 26",
+        "destinatario_bairro": "Aeroporto",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55070227",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-06-04",
+            "hora": "13:00"
+          },
+          {
+            "data": "2026-06-08",
+            "hora": "11:10"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-06-08",
+        "data_devolucao": null,
+        "recebedor_nome": "HELOISA SÁ CARVALHO",
+        "recebedor_documento": "6583742",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "97540623152",
+      "empregado": "HELENA ALBUQUERQUE CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 658 638 272 AR",
+        "conteudo": "Notificação nº 373/2026",
+        "data_postagem": "2026-06-06",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Helena Albuquerque Câmara",
+        "destinatario_endereco": "Travessa Pereira Pimenta, 1413",
+        "destinatario_bairro": "Vila Jardim Leblon",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55075796",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-06-09",
+            "hora": "13:45"
+          },
+          {
+            "data": "2026-06-10",
+            "hora": "16:00"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-06-10",
+        "data_devolucao": null,
+        "recebedor_nome": "HELENA ALBUQUERQUE CÂMARA",
+        "recebedor_documento": "4907550",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "06/06/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "26810437940",
+      "empregado": "FERNANDA PACHECO CAVALCANTE",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 401 268 755 AR",
+        "conteudo": "Notificação nº 338/2026",
+        "data_postagem": "2026-06-02",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Fernanda Pacheco Cavalcante",
+        "destinatario_endereco": "Rua Siqueira da Mota, 761",
+        "destinatario_bairro": "Vila Copasa",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55021820",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-06-03",
+            "hora": "09:30"
+          },
+          {
+            "data": "2026-06-08",
+            "hora": "09:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-06-08",
+        "data_devolucao": null,
+        "recebedor_nome": "MATHIAS SILVA",
+        "recebedor_documento": "3870086",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "55021-820"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "08/06/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        8,
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "61043582762",
+      "empregado": "GABRIEL RIOS JESUS",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 701 317 286 AR",
+        "conteudo": "Notificação nº 205/2026",
+        "data_postagem": "2026-06-06",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Gabriel Rios Jesus",
+        "destinatario_endereco": "Travessa Novais Sales, 1441",
+        "destinatario_bairro": "Ipe",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55061441",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-06-08",
+            "hora": "08:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-06-08",
+        "data_devolucao": null,
+        "recebedor_nome": "GABRIEL RIOS JESUS",
+        "recebedor_documento": "5051685",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "PE"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "75306489265",
+      "empregado": "MARCELA CAVALCANTI LEÃO",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "empregado_nome": "MARCELA CAVALCANTI LEÃO",
+        "empregado_cpf": "75306489265",
+        "empregador_razao_social": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "48167209000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "ABANDONO_EMPREGO",
+        "data_documento": "2026-05-14",
+        "prazo_dias": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        11,
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "75306489265",
+      "empregado": "MARCELA CAVALCANTI LEÃO",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 788 847 304 AR",
+        "conteudo": "Notificação nº 142/2026",
+        "data_postagem": "2026-05-15",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Marcela Cavalcanti Leão",
+        "destinatario_endereco": "Rua Macedo Albuquerque, 902",
+        "destinatario_bairro": "Tupi A",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55074719",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-05-18",
+            "hora": "15:45"
+          },
+          {
+            "data": "2026-05-19",
+            "hora": "09:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-05-19",
+        "data_devolucao": null,
+        "recebedor_nome": "CAROLINE MOURA",
+        "recebedor_documento": "6784411",
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_sem_assinatura",
+          "descricao": "AR entregue sem assinatura do recebedor",
+          "campo": "assinatura_recebedor_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "6784411"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "94813067557",
+      "empregado": "YASMIN FREITAS DA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "empregado_nome": "YASMIN FREITAS DA COSTA",
+        "empregado_cpf": "94813067557",
+        "empregador_razao_social": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "48167209000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-06-04",
+        "prazo_dias": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "94813067557",
+      "empregado": "YASMIN FREITAS DA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 940 934 804 AR",
+        "conteudo": "Notificação nº 270/2026",
+        "data_postagem": "2026-06-05",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Yasmin Freitas Da Costa",
+        "destinatario_endereco": "Avenida Camargo Ramos, 1874",
+        "destinatario_bairro": "Álvaro Camargos",
+        "destinatario_municipio": "Pesqueira",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55206037",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-06-08",
+            "hora": "09:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-06-08",
+        "data_devolucao": null,
+        "recebedor_nome": "YASMIN FREITAS DA COSTA",
+        "recebedor_documento": "6533596",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "05/06/2026"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "PE"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "01672539480",
+      "empregado": "MANUELA DA CUNHA CASA GRANDE",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 671 718 973 AR",
+        "conteudo": "Notificação nº 379/2026",
+        "data_postagem": "2026-05-22",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Manuela Da Cunha Casa Grande",
+        "destinatario_endereco": "Travessa Casa Grande da Cunha, 1948",
+        "destinatario_bairro": "Minaslandia",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55093285",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-05-25",
+            "hora": "11:45"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-05-25",
+        "data_devolucao": null,
+        "recebedor_nome": "MANUELA DA CUNHA CASA GRANDE",
+        "recebedor_documento": "6162578",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_sem_carimbo",
+          "descricao": "AR sem carimbo da unidade de entrega",
+          "campo": "carimbo_unidade_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "22/05/2026"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Manuela Da Cunha Casa Grande"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Minaslandia"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "55093-285"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "6162578"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "94813067557",
+      "empregado": "YASMIN FREITAS DA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "empregado_nome": "Yasmin Freitas Da Costa",
+        "empregado_cpf": null,
+        "empregador_razao_social": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "48167209000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "SUSPENSAO",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-03-05",
+        "motivo": "abandono do posto de trabalho durante o expediente",
+        "dias_suspensao": 1,
+        "ciencia": "RECUSA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 1
+      },
+      "nao_conformidades": [
+        {
+          "regra": "recusa_sem_testemunhas",
+          "descricao": "recusa de ciência com menos de 2 testemunhas",
+          "campo": "quantidade_testemunhas"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "32607584965",
+      "empregado": "LUANA COSTA ARAÚJO",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "data_documento": "2026-04-20",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Luana Costa Araújo",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "FALTA",
+        "data_ocorrencia": "2026-04-20",
+        "motivo": "ônibus quebrou no caminho",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "003957"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Ônibus quebrou no caminho."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "30561278407",
+      "empregado": "SAMUEL SOUSA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Samuel Sousa Costa",
+        "data_atendimento": "2026-06-14",
+        "dias_afastamento": 3,
+        "cid_informado": true,
+        "medico_nome": "Dr(a). Guilherme Nogueira",
+        "medico_crm": "CRM-PE 39782",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "nesta data, necessitando de 3 (três) dias de afastamento de suas atividades a"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "partir de 14/06/2026."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "30561278407",
+      "empregado": "SAMUEL SOUSA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "data_documento": "2026-05-27",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Samuel Sousa Costa",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-05-27",
+        "motivo": "consulta médica do filho",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "27/05/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "26810437940",
+      "empregado": "FERNANDA PACHECO CAVALCANTE",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 768 342 779 AR",
+        "conteudo": "Notificação nº 360/2026",
+        "data_postagem": "2026-05-24",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Fernanda Pacheco Cavalcante",
+        "destinatario_endereco": "Rua Siqueira da Mota, 761",
+        "destinatario_bairro": "Vila Copasa",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55021820",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-05-26",
+            "hora": "10:10"
+          },
+          {
+            "data": "2026-05-28",
+            "hora": "14:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-05-28",
+        "data_devolucao": null,
+        "recebedor_nome": "FERNANDA PACHECO CAVALCANTE",
+        "recebedor_documento": "1615823",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "24/05/2026"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "28/05/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "01672539480",
+      "empregado": "MANUELA DA CUNHA CASA GRANDE",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 895 304 592 AR",
+        "conteudo": "Notificação nº 294/2026",
+        "data_postagem": "2026-05-10",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Manuela Da Cunha Casa Grande",
+        "destinatario_endereco": "Travessa Casa Grande da Cunha, 1948",
+        "destinatario_bairro": "Minaslandia",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55093285",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-05-13",
+            "hora": "16:50"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-05-13",
+        "data_devolucao": null,
+        "recebedor_nome": "MANUELA DA CUNHA CASA GRANDE",
+        "recebedor_documento": "8595144",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Notificação nº 294/2026"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Caruaru"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "75306489265",
+      "empregado": "MARCELA CAVALCANTI LEÃO",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 948 429 379 AR",
+        "conteudo": "Notificação nº 36/2026",
+        "data_postagem": "2026-05-12",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Marcela Cavalcanti Leão",
+        "destinatario_endereco": "Rua Macedo Albuquerque, 902",
+        "destinatario_bairro": "Tupi A",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55074719",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-05-15",
+            "hora": "14:30"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-05-15",
+        "data_devolucao": null,
+        "recebedor_nome": "MARCELA CAVALCANTI LEÃO",
+        "recebedor_documento": "7739100",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Marcela Cavalcanti Leão"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Caruaru"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "97540623152",
+      "empregado": "HELENA ALBUQUERQUE CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "empregado_nome": "HELENA ALBUQUERQUE CÂMARA",
+        "empregado_cpf": "97540623152",
+        "empregador_razao_social": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "48167209000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-05-18",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        24
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "97540623152",
+      "empregado": "HELENA ALBUQUERQUE CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 106 233 238 AR",
+        "conteudo": "Notificação nº 241/2026",
+        "data_postagem": "2026-05-19",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Helena Albuquerque Câmara",
+        "destinatario_endereco": "Travessa Pereira Pimenta, 1413",
+        "destinatario_bairro": "Vila Jardim Leblon",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55075796",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-05-20",
+            "hora": "11:40"
+          },
+          {
+            "data": "2026-05-22",
+            "hora": "16:15"
+          },
+          {
+            "data": "2026-05-25",
+            "hora": "09:15"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "MUDOU_SE",
+        "data_entrega": null,
+        "data_devolucao": "2026-05-29",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Travessa Pereira Pimenta, 1413"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 23,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        25
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "61043582762",
+      "empregado": "GABRIEL RIOS JESUS",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 308 237 551 AR",
+        "conteudo": "Notificação nº 182/2026",
+        "data_postagem": "2026-05-10",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Gabriel Rios Jesus",
+        "destinatario_endereco": "Travessa Novais Sales, 1441",
+        "destinatario_bairro": "Ipe",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55061441",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-05-11",
+            "hora": "10:00"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-05-11",
+        "data_devolucao": null,
+        "recebedor_nome": "HEITOR CORREIA",
+        "recebedor_documento": "6715545",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "6715545"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 24,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        26,
+        28
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "32607584965",
+      "empregado": "LUANA COSTA ARAÚJO",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 286 715 677 AR",
+        "conteudo": "Notificação nº 39/2026",
+        "data_postagem": "2026-05-25",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Luana Costa Araújo",
+        "destinatario_endereco": "Rua Marques Rezende, 204",
+        "destinatario_bairro": "Pousada Santo Antonio",
+        "destinatario_municipio": "Garanhuns",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55298008",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-05-27",
+            "hora": "15:20"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-05-27",
+        "data_devolucao": null,
+        "recebedor_nome": "MARIA VITÓRIA LOPES",
+        "recebedor_documento": "4493500",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 25,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        26,
+        28
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "94813067557",
+      "empregado": "YASMIN FREITAS DA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 752 962 850 AR",
+        "conteudo": "Notificação nº 266/2026",
+        "data_postagem": "2026-05-18",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Yasmin Freitas Da Costa",
+        "destinatario_endereco": "Avenida Camargo Ramos, 1874",
+        "destinatario_bairro": "Álvaro Camargos",
+        "destinatario_municipio": "Pesqueira",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55206037",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-05-19",
+            "hora": "16:15"
+          },
+          {
+            "data": "2026-05-21",
+            "hora": "16:20"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-05-21",
+        "data_devolucao": null,
+        "recebedor_nome": "YASMIN FREITAS DA COSTA",
+        "recebedor_documento": "5882821",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Notificação nº 266/2026"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Pesqueira"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 26,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        27,
+        29
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "30847529150",
+      "empregado": "HELOISA SÁ CARVALHO",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 456 902 773 AR",
+        "conteudo": "Notificação nº 47/2026",
+        "data_postagem": "2026-05-12",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Heloisa Sá Carvalho",
+        "destinatario_endereco": "Avenida Carvalho Novais, 26",
+        "destinatario_bairro": "Aeroporto",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55070227",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-05-13",
+            "hora": "10:10"
+          },
+          {
+            "data": "2026-05-18",
+            "hora": "16:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-05-18",
+        "data_devolucao": null,
+        "recebedor_nome": "PEDRO HENRIQUE DIAS",
+        "recebedor_documento": "6283244",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Heloisa Sá Carvalho"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "PEDRO HENRIQUE DIAS"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 27,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        27,
+        29
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "60279354800",
+      "empregado": "MARIAH SANTOS MENDES",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 777 620 654 AR",
+        "conteudo": "Notificação nº 84/2026",
+        "data_postagem": "2026-05-30",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Mariah Santos Mendes",
+        "destinatario_endereco": "Avenida Pastor Nascimento, 1411",
+        "destinatario_bairro": "Carlos Prates",
+        "destinatario_municipio": "Jaboatão dos Guararapes",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "54317435",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-06-02",
+            "hora": "13:40"
+          },
+          {
+            "data": "2026-06-03",
+            "hora": "15:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-06-03",
+        "data_devolucao": null,
+        "recebedor_nome": "MARCOS VINICIUS ROCHA",
+        "recebedor_documento": "4631750",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Notificação nº 84/2026"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Mariah Santos Mendes"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Carlos Prates"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "4631750"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 28,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        30
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "59627803103",
+      "empregado": "JOÃO VITOR GONÇALVES RIBEIRO",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "empregado_nome": "JOÃO VITOR GONÇALVES RIBEIRO",
+        "empregado_cpf": "59627803103",
+        "empregador_razao_social": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "48167209000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "ABANDONO_EMPREGO",
+        "data_documento": "2026-05-25",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 29,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        31,
+        32
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "59627803103",
+      "empregado": "JOÃO VITOR GONÇALVES RIBEIRO",
+      "competencia": null,
+      "empresa_cnpj": "48167209000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 431 144 394 AR",
+        "conteudo": "Notificação nº 99/2026",
+        "data_postagem": "2026-05-26",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "João Vitor Gonçalves Ribeiro",
+        "destinatario_endereco": "Avenida Sales Pinto, 380",
+        "destinatario_bairro": "Novo Das Industrias",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55063872",
+        "remetente_nome": "REZENDE LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Silva Almeida, 1083 – Pompéia, Caruaru/PE",
+        "remetente_cep": "55089074",
+        "tentativas": [
+          {
+            "data": "2026-05-29",
+            "hora": "14:50"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-05-29",
+        "data_devolucao": null,
+        "recebedor_nome": "JOÃO VITOR GONÇALVES RIBEIRO",
+        "recebedor_documento": "5944482",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      24,
+      24
+    ],
+    "degradacao": "misto",
+    "taxa_nc": 0.37,
+    "perfil": "misto",
+    "embaralhar": 0.14,
+    "paginas_em_branco": 0.04,
+    "fora_de_ordem": 0.13,
+    "intercalar": 0.06,
+    "taxa_defeito": 0.14,
+    "taxa_branco": 0.05,
+    "extras": 0.26,
+    "p_celular": 0.26,
+    "p_cabeca_para_baixo": 0.04,
+    "seed": 42013
+  }
+}

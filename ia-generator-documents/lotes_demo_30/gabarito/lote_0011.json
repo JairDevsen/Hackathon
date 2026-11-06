@@ -1,0 +1,1231 @@
+{
+  "arquivo": "lote_0011.pdf",
+  "perfil": "ocorrencias",
+  "empresa_cnpj": "09486271000173",
+  "competencia": "2026-03",
+  "degradacao": "media",
+  "total_paginas": 25,
+  "total_documentos": 25,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "post_it:ok - conferido"
+      ]
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 25,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "OUTRO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-03",
+      "empresa_cnpj": "09486271000173",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "83971650457",
+      "empregado": "LAÍS JESUS ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "empregado_nome": "Laís Jesus Rocha",
+        "empregado_cpf": null,
+        "empregador_razao_social": "DA CRUZ VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "09486271000173",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-01-20",
+        "motivo": "abandono do posto de trabalho durante o expediente",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "17908624340",
+      "empregado": "ANA SOPHIA ARAGÃO SÁ",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "data_documento": "2024-08-10",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "ANA SOPHIA ARAGÃO SÁ",
+        "empregado_cpf": "17908624340",
+        "empregador_razao_social": "DA CRUZ VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "09486271000173",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "VIGILANTE",
+        "riscos": [
+          "Agentes biológicos",
+          "Queda de mesmo nível",
+          "Ruído"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "06328971478",
+      "empregado": "ENZO FERREIRA MOURA",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Enzo Ferreira Moura",
+        "empregado_cpf": null,
+        "empregador_razao_social": "DA CRUZ VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "09486271000173",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "ACIDENTE",
+        "data_ocorrencia": "2026-04-14",
+        "hora": "08:10",
+        "local": "Almoxarifado",
+        "descricao": "Cortou o dedo ao manusear caixa com grampo solto no almoxarifado.",
+        "houve_afastamento": false,
+        "testemunha_nome": "Mirella Silva"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "06328971478",
+      "empregado": "ENZO FERREIRA MOURA",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "data_documento": "2020-07-17",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "ENZO FERREIRA MOURA",
+        "empregado_cpf": "06328971478",
+        "empregador_razao_social": "DA CRUZ VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "09486271000173",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "VIGILANTE",
+        "riscos": [
+          "Queda de altura",
+          "Cortes e perfurações"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "57136920434",
+      "empregado": "ASAFE MORAES MONTEIRO",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Asafe Moraes Monteiro",
+        "data_atendimento": "2026-02-27",
+        "dias_afastamento": 7,
+        "cid_informado": false,
+        "medico_nome": "Dr(a). Eduardo Leão",
+        "medico_crm": "CRM-PE 27159",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "57136920434",
+      "empregado": "ASAFE MORAES MONTEIRO",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "data_documento": "2026-03-11",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Asafe Moraes Monteiro",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "FALTA",
+        "data_ocorrencia": "2026-03-10",
+        "motivo": "falecimento de parente",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "10/03/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "38945612033",
+      "empregado": "LARA GOMES DA CONCEIÇÃO",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "data_documento": "2026-02-25",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Lara Gomes Da Conceição",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-02-24",
+        "motivo": "doença na família",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "83971650457",
+      "empregado": "LAÍS JESUS ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "data_documento": "2026-03-04",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Laís Jesus Rocha",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-03-04",
+        "motivo": "falecimento de parente",
+        "visto_chefia_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "27643190887",
+      "empregado": "ANTÔNIO DA LUZ CALDEIRA",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "data_documento": "2026-03-22",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Antônio Da Luz Caldeira",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-03-21",
+        "motivo": "falecimento de parente",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "23807496122",
+      "empregado": "VINICIUS BORGES ALBUQUERQUE",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "data_documento": "2026-04-15",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Vinicius Borges Albuquerque",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-04-14",
+        "motivo": "precisei resolver problema no banco",
+        "visto_chefia_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "63405129842",
+      "empregado": "EVELYN AZEVEDO BARROS",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Evelyn Azevedo Barros",
+        "data_atendimento": "2026-04-08",
+        "dias_afastamento": 2,
+        "cid_informado": true,
+        "medico_nome": "Dr(a). Ana Clara Sá",
+        "medico_crm": "CRM-PE 22710",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "afastamento de suas atividades a partir de 08/04/2026."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "63405129842",
+      "empregado": "EVELYN AZEVEDO BARROS",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "data_documento": "2026-03-06",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Evelyn Azevedo Barros",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "FALTA",
+        "data_ocorrencia": "2026-03-04",
+        "motivo": "ônibus quebrou no caminho",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "empregador_razao_social": "DA CRUZ VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "09486271000173",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-23 – Prevenção e Combate a Incêndio",
+        "data": "2026-01-07",
+        "carga_horaria_horas": 4.0,
+        "instrutor": "Cauã Nogueira",
+        "participantes": [
+          {
+            "nome": "Laís Jesus Rocha",
+            "cpf": "83971650457",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Vinicius Borges Albuquerque",
+            "cpf": "23807496122",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Antônio Da Luz Caldeira",
+            "cpf": "27643190887",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Lara Gomes Da Conceição",
+            "cpf": "38945612033",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Evelyn Azevedo Barros",
+            "cpf": "63405129842",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Enzo Ferreira Moura",
+            "cpf": "06328971478",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Ana Sophia Aragão Sá",
+            "cpf": "17908624340",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Henrique Nunes Da Conceição",
+            "cpf": "76854231035",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Asafe Moraes Monteiro",
+            "cpf": "57136920434",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "VINICIUS BORGES ALBUQUERQUE"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "238.074.961-22"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Lara Gomes Da Conceição"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "634.051.298-42"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "768.542.310-35"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "06328971478",
+      "empregado": "ENZO FERREIRA MOURA",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Enzo Ferreira Moura",
+        "data_atendimento": "2026-02-18",
+        "dias_afastamento": 15,
+        "cid_informado": false,
+        "medico_nome": "Dr(a). Isabela Viana",
+        "medico_crm": "CRM-PE 15487",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "meus cuidados nesta data, necessitando de 15 (quinze) dias de"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "06328971478",
+      "empregado": "ENZO FERREIRA MOURA",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "data_documento": "2026-04-17",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Enzo Ferreira Moura",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-04-16",
+        "motivo": "comparecimento a audiência",
+        "visto_chefia_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "17908624340",
+      "empregado": "ANA SOPHIA ARAGÃO SÁ",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "data_documento": "2026-03-30",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Ana Sophia Aragão Sá",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "FALTA",
+        "data_ocorrencia": "2026-03-28",
+        "motivo": "ônibus quebrou no caminho",
+        "visto_chefia_presente": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "83971650457",
+      "empregado": "LAÍS JESUS ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "data_documento": "2022-06-18",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "LAÍS JESUS ROCHA",
+        "empregado_cpf": "83971650457",
+        "empregador_razao_social": "DA CRUZ VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "09486271000173",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "VIGILANTE",
+        "riscos": [
+          "Agentes biológicos",
+          "Ruído",
+          "Postura inadequada",
+          "Produtos químicos de limpeza"
+        ]
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "76854231035",
+      "empregado": "HENRIQUE NUNES DA CONCEIÇÃO",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Henrique Nunes Da Conceição",
+        "data_atendimento": "2026-03-14",
+        "dias_afastamento": 3,
+        "cid_informado": false,
+        "medico_nome": "Dr(a). Natália Brito",
+        "medico_crm": null,
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "atestado_sem_crm",
+          "descricao": "atestado sem CRM do médico",
+          "campo": "medico_crm"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "afastamento de suas atividades a partir de 14/03/2026."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "27643190887",
+      "empregado": "ANTÔNIO DA LUZ CALDEIRA",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "data_documento": "2023-09-23",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "ANTÔNIO DA LUZ CALDEIRA",
+        "empregado_cpf": "27643190887",
+        "empregador_razao_social": "DA CRUZ VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "09486271000173",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "VIGILANTE",
+        "riscos": [
+          "Queda de altura",
+          "Queda de mesmo nível",
+          "Choque elétrico"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "57136920434",
+      "empregado": "ASAFE MORAES MONTEIRO",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "data_documento": "2026-03-08",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Asafe Moraes Monteiro",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "FALTA",
+        "data_ocorrencia": "2026-03-06",
+        "motivo": "ônibus quebrou no caminho",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        24
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "38945612033",
+      "empregado": "LARA GOMES DA CONCEIÇÃO",
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "empregado_nome": "Lara Gomes Da Conceição",
+        "empregado_cpf": null,
+        "empregador_razao_social": "DA CRUZ VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "09486271000173",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-03-09",
+        "motivo": "atrasos reiterados sem justificativa",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 23,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        25
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "09486271000173",
+      "dados": {
+        "empregador_razao_social": "DA CRUZ VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "09486271000173",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-6 – Uso correto de EPI",
+        "data": "2025-11-18",
+        "carga_horaria_horas": 2.0,
+        "instrutor": "Emanuella Castro",
+        "participantes": [
+          {
+            "nome": "Asafe Moraes Monteiro",
+            "cpf": "57136920434",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Henrique Nunes Da Conceição",
+            "cpf": "76854231035",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Laís Jesus Rocha",
+            "cpf": "83971650457",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Enzo Ferreira Moura",
+            "cpf": "06328971478",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Vinicius Borges Albuquerque",
+            "cpf": "23807496122",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Ana Sophia Aragão Sá",
+            "cpf": "17908624340",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Antônio Da Luz Caldeira",
+            "cpf": "27643190887",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Lara Gomes Da Conceição",
+            "cpf": "38945612033",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Evelyn Azevedo Barros",
+            "cpf": "63405129842",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 24,
+      "tipo": "OUTRO",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 25,
+      "tipo": "OUTRO",
+      "paginas": [
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      21,
+      21
+    ],
+    "degradacao": "media",
+    "taxa_nc": 0.17,
+    "perfil": "ocorrencias",
+    "embaralhar": 0.24,
+    "paginas_em_branco": 0.07,
+    "fora_de_ordem": 0.15,
+    "intercalar": 0.22,
+    "taxa_defeito": 0.15,
+    "taxa_branco": 0.01,
+    "extras": 0.2,
+    "p_celular": 0.05,
+    "p_cabeca_para_baixo": 0.03,
+    "seed": 42011
+  }
+}

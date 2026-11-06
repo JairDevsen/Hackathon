@@ -1,0 +1,297 @@
+{
+  "seed": 42030,
+  "data_referencia": "2026-05-19",
+  "empresas": [
+    {
+      "razao_social": "PACHECO COPA SERVIÇOS LTDA",
+      "cnpj": "02964358000160",
+      "endereco": "Rua Correia da Conceição, 1505 – Cenaculo",
+      "cidade": "Paulista/PE",
+      "segmento": "Copa e Cozinha",
+      "end": {
+        "logradouro": "Rua Correia da Conceição",
+        "numero": "1505",
+        "bairro": "Cenaculo",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53403609"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "MARIA CLARA SIQUEIRA DAS NEVES",
+      "cpf": "41958307297",
+      "pis": "17997441423",
+      "matricula": "006465",
+      "cargo": "COPEIRA",
+      "cbo": "8387-18",
+      "salario": 1650.0,
+      "admissao": "2020-02-15",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "02964358000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Cunha Oliveira",
+        "numero": "1123",
+        "bairro": "Vila São Dimas",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56507048"
+      },
+      "nascimento": "1978-08-06"
+    },
+    {
+      "nome": "LORENA CARVALHO NOVAES",
+      "cpf": "30784259674",
+      "pis": "14490863205",
+      "matricula": "009268",
+      "cargo": "COZINHEIRA",
+      "cbo": "9517-97",
+      "salario": 2210.0,
+      "admissao": "2026-01-02",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "02964358000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Montenegro Rodrigues",
+        "numero": "768",
+        "bairro": "Palmeiras",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53458787"
+      },
+      "nascimento": "2006-12-22"
+    },
+    {
+      "nome": "LUARA COSTELA CIRINO",
+      "cpf": "08267491511",
+      "pis": "14019921748",
+      "matricula": "004747",
+      "cargo": "COPEIRA",
+      "cbo": "4306-60",
+      "salario": 1730.0,
+      "admissao": "2022-10-24",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "02964358000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Vargas Almeida",
+        "numero": "1157",
+        "bairro": "Coqueiros",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53400287"
+      },
+      "nascimento": "1985-09-13"
+    },
+    {
+      "nome": "ANA CAROLINA CORREIA DA MOTA",
+      "cpf": "01269378503",
+      "pis": "10005794649",
+      "matricula": "004097",
+      "cargo": "COPEIRA",
+      "cbo": "6162-17",
+      "salario": 1660.0,
+      "admissao": "2021-04-06",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "02964358000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Gonçalves Guerra",
+        "numero": "132",
+        "bairro": "Parque São José",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53460883"
+      },
+      "nascimento": "1984-02-01"
+    },
+    {
+      "nome": "OTTO ALMEIDA RIOS",
+      "cpf": "80435167901",
+      "pis": "15814245046",
+      "matricula": "002691",
+      "cargo": "COPEIRA",
+      "cbo": "6552-73",
+      "salario": 1720.0,
+      "admissao": "2025-10-02",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "02964358000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Aragão Aparecida",
+        "numero": "716",
+        "bairro": "Mala E Cuia",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53449799"
+      },
+      "nascimento": "2004-05-31"
+    },
+    {
+      "nome": "MARIANA PACHECO DA MATA",
+      "cpf": "64320589700",
+      "pis": "17481969092",
+      "matricula": "007951",
+      "cargo": "COPEIRA",
+      "cbo": "8304-65",
+      "salario": 1670.0,
+      "admissao": "2023-09-24",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "02964358000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Azevedo Melo",
+        "numero": "1496",
+        "bairro": "Santa Efigênia",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53443461"
+      },
+      "nascimento": "1976-03-09"
+    },
+    {
+      "nome": "LIZ SOUSA CORREIA",
+      "cpf": "08547926194",
+      "pis": "17452763805",
+      "matricula": "000533",
+      "cargo": "COZINHEIRA",
+      "cbo": "9245-46",
+      "salario": 2010.0,
+      "admissao": "2025-12-17",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "02964358000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Ramos Farias",
+        "numero": "767",
+        "bairro": "Barão Homem De Melo 2ª Seção",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53451064"
+      },
+      "nascimento": "2001-07-15"
+    },
+    {
+      "nome": "ALEXIA CASTRO DAS NEVES",
+      "cpf": "75934260847",
+      "pis": "17209636739",
+      "matricula": "009312",
+      "cargo": "COZINHEIRA",
+      "cbo": "7110-74",
+      "salario": 2400.0,
+      "admissao": "2024-09-16",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "02964358000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Ramos Cunha",
+        "numero": "1889",
+        "bairro": "Alta Tensão 2ª Seção",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53475223"
+      },
+      "nascimento": "1981-10-17"
+    },
+    {
+      "nome": "MAITÊ DA PAZ NASCIMENTO",
+      "cpf": "16084357253",
+      "pis": "14174458240",
+      "matricula": "005964",
+      "cargo": "COZINHEIRA",
+      "cbo": "4472-46",
+      "salario": 2050.0,
+      "admissao": "2020-04-21",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "02964358000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Fernandes Rocha",
+        "numero": "1344",
+        "bairro": "Itatiaia",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53139906"
+      },
+      "nascimento": "1982-08-05"
+    },
+    {
+      "nome": "LIZ SIQUEIRA FERNANDES",
+      "cpf": "76025381968",
+      "pis": "13741787735",
+      "matricula": "008810",
+      "cargo": "COZINHEIRA",
+      "cbo": "7465-46",
+      "salario": 2170.0,
+      "admissao": "2019-10-30",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "02964358000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Macedo Gonçalves",
+        "numero": "605",
+        "bairro": "Vila São Gabriel Jacui",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53473917"
+      },
+      "nascimento": "1999-12-17"
+    }
+  ],
+  "competencias": [
+    "2026-03",
+    "2026-04"
+  ]
+}

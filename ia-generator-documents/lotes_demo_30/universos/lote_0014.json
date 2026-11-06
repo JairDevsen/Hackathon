@@ -1,0 +1,351 @@
+{
+  "seed": 42014,
+  "data_referencia": "2026-01-19",
+  "empresas": [
+    {
+      "razao_social": "NOGUEIRA COPA TERCEIRIZAÇÃO LTDA",
+      "cnpj": "03572196000187",
+      "endereco": "Rua Melo Pereira, 42 – Tres Marias",
+      "cidade": "Petrolina/PE",
+      "segmento": "Copa e Cozinha",
+      "end": {
+        "logradouro": "Rua Melo Pereira",
+        "numero": "42",
+        "bairro": "Tres Marias",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56312371"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "CARLOS EDUARDO REZENDE MENDONÇA",
+      "cpf": "81452709360",
+      "pis": "10781845910",
+      "matricula": "006364",
+      "cargo": "COPEIRA",
+      "cbo": "8955-20",
+      "salario": 1660.0,
+      "admissao": "2025-02-07",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "03572196000187",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Azevedo Rocha",
+        "numero": "1668",
+        "bairro": "Conjunto Califórnia I",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56318456"
+      },
+      "nascimento": "1970-10-16"
+    },
+    {
+      "nome": "MATEUS PIRES NOVAES",
+      "cpf": "47861052362",
+      "pis": "19384181512",
+      "matricula": "002050",
+      "cargo": "COZINHEIRA",
+      "cbo": "9583-67",
+      "salario": 2090.0,
+      "admissao": "2023-09-07",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "03572196000187",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Santos Brito",
+        "numero": "1191",
+        "bairro": "Serra",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56313592"
+      },
+      "nascimento": "1995-02-03"
+    },
+    {
+      "nome": "STEPHANY CALDEIRA FREITAS",
+      "cpf": "19786023404",
+      "pis": "13014146950",
+      "matricula": "001143",
+      "cargo": "COZINHEIRA",
+      "cbo": "5504-12",
+      "salario": 2090.0,
+      "admissao": "2025-03-03",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "03572196000187",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Pacheco da Costa",
+        "numero": "939",
+        "bairro": "Grota",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56301261"
+      },
+      "nascimento": "1985-08-31"
+    },
+    {
+      "nome": "DANILO GONÇALVES SOUSA",
+      "cpf": "30128694769",
+      "pis": "18763358935",
+      "matricula": "005834",
+      "cargo": "COPEIRA",
+      "cbo": "4554-71",
+      "salario": 1690.0,
+      "admissao": "2020-07-21",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "03572196000187",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Azevedo Cirino",
+        "numero": "107",
+        "bairro": "Alta Tensão 1ª Seção",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56338465"
+      },
+      "nascimento": "1987-05-23"
+    },
+    {
+      "nome": "PAULO MOREIRA DA LUZ",
+      "cpf": "10738265977",
+      "pis": "12703531127",
+      "matricula": "004739",
+      "cargo": "COZINHEIRA",
+      "cbo": "9155-60",
+      "salario": 2190.0,
+      "admissao": "2024-01-16",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "03572196000187",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Melo Nascimento",
+        "numero": "1932",
+        "bairro": "Ribeiro De Abreu",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56304118"
+      },
+      "nascimento": "1974-09-18"
+    },
+    {
+      "nome": "LAÍS TEIXEIRA CUNHA",
+      "cpf": "35962074106",
+      "pis": "18657306978",
+      "matricula": "009529",
+      "cargo": "COZINHEIRA",
+      "cbo": "6739-15",
+      "salario": 2380.0,
+      "admissao": "2019-03-28",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "03572196000187",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Paz Carvalho",
+        "numero": "1505",
+        "bairro": "Barão Homem De Melo 1ª Seção",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56305101"
+      },
+      "nascimento": "1978-10-10"
+    },
+    {
+      "nome": "MARIA FERNANDES VIANA",
+      "cpf": "62513097416",
+      "pis": "16268741138",
+      "matricula": "000477",
+      "cargo": "COPEIRA",
+      "cbo": "5459-41",
+      "salario": 1750.0,
+      "admissao": "2022-10-16",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "03572196000187",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Borges Campos",
+        "numero": "1448",
+        "bairro": "Conjunto Lagoa",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56315182"
+      },
+      "nascimento": "1978-09-24"
+    },
+    {
+      "nome": "ALEXIA PIRES GONÇALVES",
+      "cpf": "70364589175",
+      "pis": "11640069881",
+      "matricula": "006215",
+      "cargo": "COZINHEIRA",
+      "cbo": "6367-66",
+      "salario": 2060.0,
+      "admissao": "2024-11-23",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "03572196000187",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Pacheco da Cunha",
+        "numero": "152",
+        "bairro": "São Jorge 3ª Seção",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56312704"
+      },
+      "nascimento": "1994-03-05"
+    },
+    {
+      "nome": "LETÍCIA FERNANDES MARTINS",
+      "cpf": "30645928747",
+      "pis": "12351903104",
+      "matricula": "000668",
+      "cargo": "COPEIRA",
+      "cbo": "6421-32",
+      "salario": 1820.0,
+      "admissao": "2021-07-06",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "03572196000187",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida da Paz Costa",
+        "numero": "1731",
+        "bairro": "Bela Vitoria",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56501512"
+      },
+      "nascimento": "1979-11-02"
+    },
+    {
+      "nome": "CALEB SOUSA BARROS",
+      "cpf": "18325970405",
+      "pis": "15661354928",
+      "matricula": "006985",
+      "cargo": "COPEIRA",
+      "cbo": "7376-95",
+      "salario": 1730.0,
+      "admissao": "2020-11-21",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "03572196000187",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Nogueira Souza",
+        "numero": "300",
+        "bairro": "Carmo",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56325573"
+      },
+      "nascimento": "1998-04-24"
+    },
+    {
+      "nome": "MARIANA DA CUNHA RODRIGUES",
+      "cpf": "19308567259",
+      "pis": "15550038858",
+      "matricula": "009649",
+      "cargo": "COPEIRA",
+      "cbo": "9305-80",
+      "salario": 1840.0,
+      "admissao": "2020-05-04",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "03572196000187",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Correia Santos",
+        "numero": "1141",
+        "bairro": "Gameleira",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56325326"
+      },
+      "nascimento": "1994-06-03"
+    },
+    {
+      "nome": "LUIZ HENRIQUE PACHECO DUARTE",
+      "cpf": "18932047588",
+      "pis": "17878503514",
+      "matricula": "002604",
+      "cargo": "COZINHEIRA",
+      "cbo": "8544-23",
+      "salario": 2040.0,
+      "admissao": "2022-07-23",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "03572196000187",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Paz Macedo",
+        "numero": "116",
+        "bairro": "Colégio Batista",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56318482"
+      },
+      "nascimento": "1992-03-04"
+    }
+  ],
+  "competencias": [
+    "2025-11",
+    "2025-12"
+  ]
+}

@@ -1,0 +1,798 @@
+{
+  "arquivo": "lote_0020.pdf",
+  "perfil": "desligamento",
+  "empresa_cnpj": "82051746000199",
+  "competencia": "2026-05",
+  "degradacao": "leve",
+  "total_paginas": 18,
+  "total_documentos": 14,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "43817590601",
+      "empregado": "ISIS BARBOSA REZENDE",
+      "competencia": null,
+      "empresa_cnpj": "82051746000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 842 601 222 AR",
+        "conteudo": "Notificação nº 161/2026",
+        "data_postagem": "2026-05-02",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA GARANHUNS",
+        "destinatario_nome": "Isis Barbosa Rezende",
+        "destinatario_endereco": "Rua Ribeiro Caldeira, 1002",
+        "destinatario_bairro": "Vila Batik",
+        "destinatario_municipio": "Garanhuns",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55292307",
+        "remetente_nome": "CAMPOS LIMPEZA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Andrade Farias, 293 – Buritis, Garanhuns/PE",
+        "remetente_cep": "55290701",
+        "tentativas": [
+          {
+            "data": "2026-05-04",
+            "hora": "13:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-05-04",
+        "data_devolucao": null,
+        "recebedor_nome": "THEO CAVALCANTI",
+        "recebedor_documento": "4512815",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "TRCT",
+      "paginas": [
+        2,
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "36728045171",
+      "empregado": "MATHEUS ARAÚJO COSTA",
+      "competencia": "2026-05",
+      "empresa_cnpj": "82051746000199",
+      "dados": {
+        "empregado_nome": "MATHEUS ARAÚJO COSTA",
+        "empregado_cpf": "36728045171",
+        "empregador_razao_social": "CAMPOS LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "82051746000199",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "13033675513",
+        "data_admissao": "2025-02-20",
+        "data_aviso_previo": "2026-04-06",
+        "data_afastamento": "2026-05-06",
+        "causa_afastamento": "Despedida sem justa causa, pelo empregador",
+        "codigo_afastamento": "SJ2",
+        "remuneracao_fins_rescisorios": 1700.0,
+        "total_bruto": 3173.34,
+        "total_deducoes": 68.0,
+        "valor_liquido": 3105.34,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "23950168702",
+      "empregado": "MARIA LAURA CAVALCANTI CAMPOS",
+      "competencia": null,
+      "empresa_cnpj": "82051746000199",
+      "dados": {
+        "data_documento": "2026-04-17",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Maria Laura Cavalcanti Campos",
+        "empregado_cpf": "23950168702",
+        "empregador_razao_social": "Campos Limpeza Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "23950168702",
+      "empregado": "MARIA LAURA CAVALCANTI CAMPOS",
+      "competencia": null,
+      "empresa_cnpj": "82051746000199",
+      "dados": {
+        "data_documento": "2026-04-21",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Maria Laura Cavalcanti Campos",
+        "empregado_cpf": "23950168702",
+        "empregador_razao_social": "Campos Limpeza Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Pedido de Demissão"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "TRCT",
+      "paginas": [
+        6,
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "23950168702",
+      "empregado": "MARIA LAURA CAVALCANTI CAMPOS",
+      "competencia": "2026-05",
+      "empresa_cnpj": "82051746000199",
+      "dados": {
+        "empregado_nome": "MARIA LAURA CAVALCANTI CAMPOS",
+        "empregado_cpf": "23950168702",
+        "empregador_razao_social": "CAMPOS LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "82051746000199",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "13288124105",
+        "data_admissao": "2022-12-11",
+        "data_aviso_previo": null,
+        "data_afastamento": "2026-05-17",
+        "causa_afastamento": "Término do contrato de experiência",
+        "codigo_afastamento": "RA2",
+        "remuneracao_fins_rescisorios": 1780.0,
+        "total_bruto": 2937.01,
+        "total_deducoes": 131.28,
+        "valor_liquido": 2805.73,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "ASO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "36728045171",
+      "empregado": "MATHEUS ARAÚJO COSTA",
+      "competencia": null,
+      "empresa_cnpj": "82051746000199",
+      "dados": {
+        "empregado_nome": "Matheus Araújo Costa",
+        "empregado_cpf": "36728045171",
+        "empregador_razao_social": "CAMPOS LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "82051746000199",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Auxiliar De Limpeza",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-05-06",
+        "riscos_ocupacionais": [
+          "Ergonômico",
+          "Químico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Eloá Souza",
+        "medico_crm": "CRM-PE 38946"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Dr(a). Eloá Souza"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "TRCT",
+      "paginas": [
+        10,
+        9
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": true,
+      "intercalado": false,
+      "cpf": "23950168702",
+      "empregado": "MARIA LAURA CAVALCANTI CAMPOS",
+      "competencia": "2026-05",
+      "empresa_cnpj": "82051746000199",
+      "dados": {
+        "empregado_nome": "MARIA LAURA CAVALCANTI CAMPOS",
+        "empregado_cpf": "23950168702",
+        "empregador_razao_social": "CAMPOS LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "82051746000199",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "13288124105",
+        "data_admissao": "2022-12-11",
+        "data_aviso_previo": "2026-04-21",
+        "data_afastamento": "2026-05-21",
+        "causa_afastamento": "Despedida sem justa causa, pelo empregador",
+        "codigo_afastamento": "SJ2",
+        "remuneracao_fins_rescisorios": 1780.0,
+        "total_bruto": 4954.34,
+        "total_deducoes": 149.08,
+        "valor_liquido": 4805.26,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "36728045171",
+      "empregado": "MATHEUS ARAÚJO COSTA",
+      "competencia": null,
+      "empresa_cnpj": "82051746000199",
+      "dados": {
+        "empregado_nome": "MATHEUS ARAÚJO COSTA",
+        "empregado_cpf": "36728045171",
+        "empregador_razao_social": "CAMPOS LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "82051746000199",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-04-20",
+        "prazo_dias": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "RECIBO_AVULSO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "23950168702",
+      "empregado": "MARIA LAURA CAVALCANTI CAMPOS",
+      "competencia": null,
+      "empresa_cnpj": "82051746000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_pagamento": "ADIANTAMENTO",
+        "valor": 712.0,
+        "valor_por_extenso": "setecentos e doze reais",
+        "recebedor_nome": "Maria Laura Cavalcanti Campos",
+        "recebedor_cpf": "23950168702",
+        "pagador_nome": "Campos Limpeza Serviços Ltda",
+        "referente_a": "adiantamento salarial de maio/2026",
+        "data_documento": "2026-05-07",
+        "assinatura_recebedor_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "TRCT",
+      "paginas": [
+        13,
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "43817590601",
+      "empregado": "ISIS BARBOSA REZENDE",
+      "competencia": "2026-05",
+      "empresa_cnpj": "82051746000199",
+      "dados": {
+        "empregado_nome": "ISIS BARBOSA REZENDE",
+        "empregado_cpf": "43817590601",
+        "empregador_razao_social": "CAMPOS LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "82051746000199",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "13985979145",
+        "data_admissao": "2023-10-02",
+        "data_aviso_previo": "2026-04-22",
+        "data_afastamento": "2026-05-22",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 1800.0,
+        "total_bruto": 3670.0,
+        "total_deducoes": 155.25,
+        "valor_liquido": 3514.75,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "CAMPOS LIMPEZA SERVIÇOS LTDA"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Rua Andrade Farias, 293 – Buritis – Garanhuns/PE"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "1.800,00"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "22/04/2026"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Saldo de salário"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "750,00"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "INSS sobre 13º salário"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "36728045171",
+      "empregado": "MATHEUS ARAÚJO COSTA",
+      "competencia": null,
+      "empresa_cnpj": "82051746000199",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 818 484 230 AR",
+        "conteudo": "Notificação nº 142/2026",
+        "data_postagem": "2026-04-21",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA GARANHUNS",
+        "destinatario_nome": "Matheus Araújo Costa",
+        "destinatario_endereco": "Rua Cunha Barros, 379",
+        "destinatario_bairro": "Jaraguá",
+        "destinatario_municipio": "Jaboatão dos Guararapes",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "54313350",
+        "remetente_nome": "CAMPOS LIMPEZA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Andrade Farias, 293 – Buritis, Garanhuns/PE",
+        "remetente_cep": "55290701",
+        "tentativas": [
+          {
+            "data": "2026-04-24",
+            "hora": "16:45"
+          },
+          {
+            "data": "2026-04-27",
+            "hora": "12:20"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-04-27",
+        "data_devolucao": null,
+        "recebedor_nome": "MATHEUS ARAÚJO COSTA",
+        "recebedor_documento": "9292596",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "ASO",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "43817590601",
+      "empregado": "ISIS BARBOSA REZENDE",
+      "competencia": null,
+      "empresa_cnpj": "82051746000199",
+      "dados": {
+        "empregado_nome": "Isis Barbosa Rezende",
+        "empregado_cpf": "43817590601",
+        "empregador_razao_social": "CAMPOS LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "82051746000199",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Auxiliar De Limpeza",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-05-22",
+        "riscos_ocupacionais": [
+          "Biológico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Diego Costela",
+        "medico_crm": "CRM-PE 24049"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Auxiliar De Limpeza"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "ASO",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "23950168702",
+      "empregado": "MARIA LAURA CAVALCANTI CAMPOS",
+      "competencia": null,
+      "empresa_cnpj": "82051746000199",
+      "dados": {
+        "empregado_nome": "Maria Laura Cavalcanti Campos",
+        "empregado_cpf": "23950168702",
+        "empregador_razao_social": "CAMPOS LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "82051746000199",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Auxiliar De Limpeza",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-05-21",
+        "riscos_ocupacionais": [
+          "Ergonômico",
+          "Acidentes"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Marcelo Souza",
+        "medico_crm": "CRM-AL 10711"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Dr(a). Marcelo Souza"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "43817590601",
+      "empregado": "ISIS BARBOSA REZENDE",
+      "competencia": null,
+      "empresa_cnpj": "82051746000199",
+      "dados": {
+        "empregado_nome": "ISIS BARBOSA REZENDE",
+        "empregado_cpf": "43817590601",
+        "empregador_razao_social": "CAMPOS LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "82051746000199",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "ABANDONO_EMPREGO",
+        "data_documento": "2026-05-01",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      17,
+      17
+    ],
+    "degradacao": "leve",
+    "taxa_nc": 0.14,
+    "perfil": "desligamento",
+    "embaralhar": 0.23,
+    "paginas_em_branco": 0.02,
+    "fora_de_ordem": 0.1,
+    "intercalar": 0.15,
+    "taxa_defeito": 0.09,
+    "taxa_branco": 0.04,
+    "extras": 0.11,
+    "p_celular": 0.08,
+    "p_cabeca_para_baixo": 0.08,
+    "seed": 42020
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "seed": 42007,
+  "data_referencia": "2025-12-20",
+  "empresas": [
+    {
+      "razao_social": "PASTOR COPA SOLUÇÕES LTDA",
+      "cnpj": "29654087000100",
+      "endereco": "Rua Moura Abreu, 300 – Vila Mantiqueira",
+      "cidade": "Recife/PE",
+      "segmento": "Copa e Cozinha",
+      "end": {
+        "logradouro": "Rua Moura Abreu",
+        "numero": "300",
+        "bairro": "Vila Mantiqueira",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52284552"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "GUSTAVO HENRIQUE VIEIRA MENDES",
+      "cpf": "08367514939",
+      "pis": "18170836692",
+      "matricula": "003610",
+      "cargo": "COPEIRA",
+      "cbo": "6365-84",
+      "salario": 1750.0,
+      "admissao": "2021-12-04",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "29654087000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Paz Casa Grande",
+        "numero": "1981",
+        "bairro": "Ventosa",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52490670"
+      },
+      "nascimento": "1987-08-29"
+    },
+    {
+      "nome": "ELOÁ RAMOS CIRINO",
+      "cpf": "34675290116",
+      "pis": "16462984725",
+      "matricula": "005952",
+      "cargo": "COPEIRA",
+      "cbo": "8494-48",
+      "salario": 1820.0,
+      "admissao": "2023-02-25",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "29654087000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Machado Casa Grande",
+        "numero": "1576",
+        "bairro": "Maria Tereza",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52584209"
+      },
+      "nascimento": "1997-05-14"
+    },
+    {
+      "nome": "ÁGATHA DA ROSA FONSECA",
+      "cpf": "48319760593",
+      "pis": "16039826801",
+      "matricula": "004734",
+      "cargo": "COZINHEIRA",
+      "cbo": "5529-78",
+      "salario": 2350.0,
+      "admissao": "2024-04-09",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "29654087000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Aparecida Pires",
+        "numero": "1386",
+        "bairro": "Vila Real 2ª Seção",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55019615"
+      },
+      "nascimento": "2004-02-29"
+    },
+    {
+      "nome": "OTTO VARGAS VIEIRA",
+      "cpf": "98263401542",
+      "pis": "16340456023",
+      "matricula": "002338",
+      "cargo": "COZINHEIRA",
+      "cbo": "6000-47",
+      "salario": 2190.0,
+      "admissao": "2023-03-16",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "29654087000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Nascimento Machado",
+        "numero": "513",
+        "bairro": "Aparecida",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "50950819"
+      },
+      "nascimento": "1977-01-07"
+    },
+    {
+      "nome": "ANA CECÍLIA CASTRO ROCHA",
+      "cpf": "20415739888",
+      "pis": "17330753520",
+      "matricula": "002353",
+      "cargo": "COPEIRA",
+      "cbo": "9298-97",
+      "salario": 1700.0,
+      "admissao": "2025-07-01",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "29654087000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Rosa Abreu",
+        "numero": "1027",
+        "bairro": "Heliopolis",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52115021"
+      },
+      "nascimento": "1999-10-24"
+    },
+    {
+      "nome": "CECÍLIA JESUS ALVES",
+      "cpf": "29387160440",
+      "pis": "19651172030",
+      "matricula": "002415",
+      "cargo": "COPEIRA",
+      "cbo": "7987-27",
+      "salario": 1650.0,
+      "admissao": "2023-05-01",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "29654087000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida da Cunha da Conceição",
+        "numero": "1637",
+        "bairro": "Virgínia",
+        "municipio": "Serra Talhada",
+        "uf": "PE",
+        "cep": "56919934"
+      },
+      "nascimento": "1978-12-30"
+    },
+    {
+      "nome": "JOSÉ PEDRO PINTO ALMEIDA",
+      "cpf": "57310829603",
+      "pis": "13335074806",
+      "matricula": "006510",
+      "cargo": "COPEIRA",
+      "cbo": "7926-86",
+      "salario": 1650.0,
+      "admissao": "2023-07-19",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "29654087000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Cassiano Sousa",
+        "numero": "365",
+        "bairro": "Renascença",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52861463"
+      },
+      "nascimento": "1979-12-09"
+    },
+    {
+      "nome": "JOÃO GUILHERME RAMOS RODRIGUES",
+      "cpf": "30417859279",
+      "pis": "10570872143",
+      "matricula": "002838",
+      "cargo": "COZINHEIRA",
+      "cbo": "4310-89",
+      "salario": 2170.0,
+      "admissao": "2020-02-21",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "29654087000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Cunha Novais",
+        "numero": "319",
+        "bairro": "União",
+        "municipio": "Serra Talhada",
+        "uf": "PE",
+        "cep": "56901942"
+      },
+      "nascimento": "1979-07-26"
+    },
+    {
+      "nome": "JULIA FOGAÇA BARBOSA",
+      "cpf": "17205943680",
+      "pis": "18895725676",
+      "matricula": "006319",
+      "cargo": "COPEIRA",
+      "cbo": "9219-71",
+      "salario": 1840.0,
+      "admissao": "2021-01-22",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "29654087000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Almeida da Rosa",
+        "numero": "787",
+        "bairro": "Estoril",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52788172"
+      },
+      "nascimento": "1992-10-10"
+    },
+    {
+      "nome": "ANA CLARA MOURA DIAS",
+      "cpf": "92316547052",
+      "pis": "19137451041",
+      "matricula": "008355",
+      "cargo": "COZINHEIRA",
+      "cbo": "7874-14",
+      "salario": 2190.0,
+      "admissao": "2025-06-11",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "29654087000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Mendonça da Luz",
+        "numero": "936",
+        "bairro": "Vila Sumaré",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "51523991"
+      },
+      "nascimento": "1972-04-05"
+    },
+    {
+      "nome": "SARAH ALMEIDA GONÇALVES",
+      "cpf": "70913562416",
+      "pis": "11298108424",
+      "matricula": "000975",
+      "cargo": "COZINHEIRA",
+      "cbo": "5491-45",
+      "salario": 2150.0,
+      "admissao": "2023-10-23",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "29654087000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Oliveira Lima",
+        "numero": "1740",
+        "bairro": "Vila Jardim Alvorada",
+        "municipio": "Serra Talhada",
+        "uf": "PE",
+        "cep": "56909255"
+      },
+      "nascimento": "1991-09-16"
+    },
+    {
+      "nome": "MAYSA LEÃO ALVES",
+      "cpf": "57043186900",
+      "pis": "10157211140",
+      "matricula": "004434",
+      "cargo": "COPEIRA",
+      "cbo": "7393-56",
+      "salario": 1740.0,
+      "admissao": "2025-07-10",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "29654087000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Andrade Pinto",
+        "numero": "1767",
+        "bairro": "Novo Santa Cecilia",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52628058"
+      },
+      "nascimento": "1983-08-10"
+    },
+    {
+      "nome": "GABRIELLY CAVALCANTI CAVALCANTI",
+      "cpf": "82904513779",
+      "pis": "11321822094",
+      "matricula": "003496",
+      "cargo": "COZINHEIRA",
+      "cbo": "5313-12",
+      "salario": 2250.0,
+      "admissao": "2025-04-03",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "29654087000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Melo Cardoso",
+        "numero": "174",
+        "bairro": "Lagoa",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52596987"
+      },
+      "nascimento": "1971-11-07"
+    },
+    {
+      "nome": "HADASSA REZENDE SÁ",
+      "cpf": "76985201458",
+      "pis": "11254439727",
+      "matricula": "005659",
+      "cargo": "COZINHEIRA",
+      "cbo": "5413-78",
+      "salario": 2290.0,
+      "admissao": "2024-07-06",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "29654087000100",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Rodrigues Cavalcante",
+        "numero": "773",
+        "bairro": "Fazendinha",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55029139"
+      },
+      "nascimento": "1999-06-17"
+    }
+  ],
+  "competencias": [
+    "2025-10",
+    "2025-11"
+  ]
+}

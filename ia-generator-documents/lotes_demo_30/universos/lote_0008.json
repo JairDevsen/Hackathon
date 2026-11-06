@@ -1,0 +1,378 @@
+{
+  "seed": 42008,
+  "data_referencia": "2026-07-18",
+  "empresas": [
+    {
+      "razao_social": "TEIXEIRA VIGILÂNCIA SERVIÇOS LTDA",
+      "cnpj": "71295643000158",
+      "endereco": "Rua Pires Casa Grande, 365 – Conjunto Califórnia I",
+      "cidade": "Pesqueira/PE",
+      "segmento": "Vigilância Patrimonial",
+      "end": {
+        "logradouro": "Rua Pires Casa Grande",
+        "numero": "365",
+        "bairro": "Conjunto Califórnia I",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55210806"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "ANA LÍVIA JESUS REZENDE",
+      "cpf": "16509728494",
+      "pis": "11650224065",
+      "matricula": "005388",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "6417-40",
+      "salario": 3900.0,
+      "admissao": "2022-10-24",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "71295643000158",
+      "desligado_em": "2026-06-25",
+      "end": {
+        "logradouro": "Avenida Pires Duarte",
+        "numero": "1951",
+        "bairro": "Jardim Leblon",
+        "municipio": "Serra Talhada",
+        "uf": "PE",
+        "cep": "56915587"
+      },
+      "nascimento": "1984-12-08"
+    },
+    {
+      "nome": "RENAN RIOS DA MOTA",
+      "cpf": "50437621871",
+      "pis": "12417675511",
+      "matricula": "003643",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "5610-33",
+      "salario": 3600.0,
+      "admissao": "2023-05-04",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "71295643000158",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Sales Teixeira",
+        "numero": "969",
+        "bairro": "Cidade Jardim Taquaril",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53416085"
+      },
+      "nascimento": "1991-04-26"
+    },
+    {
+      "nome": "ANA LÍVIA BARROS MACHADO",
+      "cpf": "67592014858",
+      "pis": "10034085910",
+      "matricula": "003740",
+      "cargo": "VIGILANTE",
+      "cbo": "5654-42",
+      "salario": 2820.0,
+      "admissao": "2020-07-03",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "71295643000158",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Farias Viana",
+        "numero": "617",
+        "bairro": "Sport Club",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55200907"
+      },
+      "nascimento": "2000-11-16"
+    },
+    {
+      "nome": "PEDRO CORREIA MELO",
+      "cpf": "21576409830",
+      "pis": "11024902875",
+      "matricula": "000838",
+      "cargo": "VIGILANTE",
+      "cbo": "8454-16",
+      "salario": 2970.0,
+      "admissao": "2021-11-27",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "71295643000158",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Albuquerque Alves",
+        "numero": "261",
+        "bairro": "Graça",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55213063"
+      },
+      "nascimento": "1978-07-04"
+    },
+    {
+      "nome": "VITOR HUGO APARECIDA NOGUEIRA",
+      "cpf": "51382406924",
+      "pis": "16286874640",
+      "matricula": "005556",
+      "cargo": "VIGILANTE",
+      "cbo": "8955-15",
+      "salario": 2510.0,
+      "admissao": "2020-01-27",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "71295643000158",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Albuquerque Andrade",
+        "numero": "1095",
+        "bairro": "Flavio De Oliveira",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55218786"
+      },
+      "nascimento": "1971-04-24"
+    },
+    {
+      "nome": "HELOÍSA CÂMARA CAMARGO",
+      "cpf": "02465793152",
+      "pis": "19587272164",
+      "matricula": "000177",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "7788-24",
+      "salario": 3930.0,
+      "admissao": "2020-07-14",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "71295643000158",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Pereira Aparecida",
+        "numero": "1174",
+        "bairro": "São Marcos",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55206678"
+      },
+      "nascimento": "1978-08-03"
+    },
+    {
+      "nome": "CALEBE MARQUES CAMARGO",
+      "cpf": "53268017444",
+      "pis": "17764545781",
+      "matricula": "003858",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "9410-11",
+      "salario": 3410.0,
+      "admissao": "2025-06-15",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "71295643000158",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Gonçalves Cavalcanti",
+        "numero": "1531",
+        "bairro": "Vila Paris",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55218420"
+      },
+      "nascimento": "1989-08-24"
+    },
+    {
+      "nome": "REBECA RIOS GONÇALVES",
+      "cpf": "87432506965",
+      "pis": "10876200517",
+      "matricula": "003033",
+      "cargo": "VIGILANTE",
+      "cbo": "4032-13",
+      "salario": 2760.0,
+      "admissao": "2022-08-12",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "71295643000158",
+      "desligado_em": "2026-06-27",
+      "end": {
+        "logradouro": "Rua Carvalho Carvalho",
+        "numero": "1260",
+        "bairro": "Novo Tupi",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55200237"
+      },
+      "nascimento": "1980-08-27"
+    },
+    {
+      "nome": "SOPHIE NUNES VARGAS",
+      "cpf": "48579316057",
+      "pis": "13018451251",
+      "matricula": "006903",
+      "cargo": "VIGILANTE",
+      "cbo": "8569-77",
+      "salario": 2700.0,
+      "admissao": "2020-12-07",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "71295643000158",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Azevedo Gonçalves",
+        "numero": "1082",
+        "bairro": "Vila Engenho Nogueira",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56518292"
+      },
+      "nascimento": "1999-05-23"
+    },
+    {
+      "nome": "ANTHONY MARTINS CAMARGO",
+      "cpf": "28534160970",
+      "pis": "15700884562",
+      "matricula": "007402",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "7669-73",
+      "salario": 4130.0,
+      "admissao": "2021-02-20",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "71295643000158",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Monteiro Macedo",
+        "numero": "318",
+        "bairro": "Nossa Senhora De Fátima",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55157141"
+      },
+      "nascimento": "1969-09-03"
+    },
+    {
+      "nome": "AMANDA VARGAS FREITAS",
+      "cpf": "45769103884",
+      "pis": "17869025559",
+      "matricula": "003707",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "7805-48",
+      "salario": 3750.0,
+      "admissao": "2020-04-08",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "71295643000158",
+      "desligado_em": "2026-06-10",
+      "end": {
+        "logradouro": "Travessa Sousa da Cunha",
+        "numero": "633",
+        "bairro": "Pindura Saia",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56515226"
+      },
+      "nascimento": "2000-04-07"
+    },
+    {
+      "nome": "JULIANA GONÇALVES AZEVEDO",
+      "cpf": "53048917241",
+      "pis": "14006619975",
+      "matricula": "003707",
+      "cargo": "VIGILANTE",
+      "cbo": "8043-34",
+      "salario": 2940.0,
+      "admissao": "2023-08-02",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "71295643000158",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Fonseca Souza",
+        "numero": "1480",
+        "bairro": "Biquinhas",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55202255"
+      },
+      "nascimento": "1980-06-16"
+    },
+    {
+      "nome": "LUIZ HENRIQUE ABREU ALVES",
+      "cpf": "83914062533",
+      "pis": "13902834624",
+      "matricula": "004595",
+      "cargo": "VIGILANTE",
+      "cbo": "9894-84",
+      "salario": 2620.0,
+      "admissao": "2024-03-27",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "71295643000158",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Sampaio Pereira",
+        "numero": "233",
+        "bairro": "Vila Puc",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55205865"
+      },
+      "nascimento": "2004-04-01"
+    }
+  ],
+  "competencias": [
+    "2026-05",
+    "2026-06"
+  ]
+}

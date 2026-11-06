@@ -1,0 +1,3253 @@
+{
+  "arquivo": "lote_0018.pdf",
+  "perfil": "mensal",
+  "empresa_cnpj": "82534619000140",
+  "competencia": "2026-03",
+  "degradacao": "media",
+  "total_paginas": 29,
+  "total_documentos": 25,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "post_it:ver c/ RH"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "post_it:devolver"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 26,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 27,
+      "documentos": [
+        {
+          "indice": 25,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 28,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 29,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "OUTRO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "CRF_FGTS",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": "FICT-17453441/2026",
+        "data_emissao": "2026-04-30",
+        "data_validade": "2026-05-30",
+        "situacao": "REGULAR",
+        "codigo_controle": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "CNDT",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": "FICT-20832339/2026",
+        "data_emissao": "2026-05-15",
+        "data_validade": "2026-11-11",
+        "situacao": "NEGATIVA",
+        "codigo_controle": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "CND_FEDERAL",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": null,
+        "data_emissao": "2026-04-29",
+        "data_validade": "2026-10-26",
+        "situacao": "POSITIVA",
+        "codigo_controle": "FICT-2690.2462.2569"
+      },
+      "nao_conformidades": [
+        {
+          "regra": "certidao_positiva",
+          "descricao": "certidão positiva / situação irregular",
+          "campo": "situacao"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "GUIA_FGTS",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "anotacao_manuscrita": null,
+        "identificador_guia": "FICT8427973479936708",
+        "competencia": "2026-03",
+        "data_vencimento": "2026-04-20",
+        "valor_total": 2148.43,
+        "data_pagamento": "2026-04-20",
+        "autenticacao_bancaria_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "DARF",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "periodo_apuracao": "2026-03",
+        "codigo_receita": "1082",
+        "data_vencimento": "2026-04-20",
+        "valor_total": 7469.33,
+        "anotacao_manuscrita": null,
+        "autenticacao_bancaria_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        7,
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "28169735491",
+      "empregado": "VITOR DA ROCHA CARVALHO",
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregado_nome": "VITOR DA ROCHA CARVALHO",
+        "empregado_cpf": null,
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "008993",
+        "periodo_inicio": "2026-03-01",
+        "periodo_fim": "2026-03-31",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-03-01",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-02",
+            "marcacoes": [
+              "08:04",
+              "11:57",
+              "13:04",
+              "16:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-03",
+            "marcacoes": [
+              "07:59",
+              "12:01",
+              "13:04",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-04",
+            "marcacoes": [
+              "08:02",
+              "11:57",
+              "13:05",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-05",
+            "marcacoes": [
+              "07:49",
+              "11:59",
+              "13:04",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-06",
+            "marcacoes": [
+              "07:57",
+              "11:58",
+              "13:04",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-07",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-08",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-09",
+            "marcacoes": [
+              "07:58",
+              "12:06",
+              "13:07",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-10",
+            "marcacoes": [
+              "08:01",
+              "12:02",
+              "13:03",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-11",
+            "marcacoes": [
+              "08:01",
+              "12:01",
+              "13:01",
+              "18:11"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-12",
+            "marcacoes": [
+              "08:04",
+              "11:58",
+              "13:01",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-13",
+            "marcacoes": [
+              "08:00",
+              "12:02",
+              "13:05",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-14",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-15",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-16",
+            "marcacoes": [
+              "07:58",
+              "12:01",
+              "13:01",
+              "17:41"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-17",
+            "marcacoes": [
+              "07:57",
+              "11:57",
+              "13:08",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-18",
+            "marcacoes": [
+              "08:06",
+              "12:01",
+              "13:01",
+              "17:18"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-19",
+            "marcacoes": [
+              "07:49",
+              "12:00",
+              "13:03",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-20",
+            "marcacoes": [
+              "08:04",
+              "12:04",
+              "13:06",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-21",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-22",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-23",
+            "marcacoes": [
+              "08:03",
+              "12:05",
+              "13:07",
+              "17:31"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-24",
+            "marcacoes": [
+              "07:49",
+              "11:59",
+              "13:07",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-25",
+            "marcacoes": [
+              "08:03",
+              "11:58",
+              "12:59",
+              "17:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-26",
+            "marcacoes": [
+              "07:54",
+              "11:57",
+              "13:01",
+              "16:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-27",
+            "marcacoes": [
+              "07:49",
+              "12:00",
+              "13:06",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-28",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-29",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-30",
+            "marcacoes": [
+              "07:56",
+              "12:05",
+              "13:05",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-31",
+            "marcacoes": [
+              "07:49",
+              "12:00",
+              "13:00",
+              "16:58"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Recepcionista"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "16:57"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "13:05"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "17:08"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "DSR"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "12:02"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "12:01"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "01/03/2026 a 31/03/2026"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "12:00"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "16:59"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "08:03"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "17:03"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "12:00"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "13:00"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "HOLERITE",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "28169735491",
+      "empregado": "VITOR DA ROCHA CARVALHO",
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregado_nome": "VITOR DA ROCHA CARVALHO",
+        "empregado_cpf": "28169735491",
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "008993",
+        "cargo": "RECEPCIONISTA",
+        "competencia": "2026-03",
+        "salario_base": 2050.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2050.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "03:24",
+            "provento": 47.52,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,91",
+            "provento": null,
+            "desconto": 166.01
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 123.0
+          }
+        ],
+        "total_proventos": 2097.52,
+        "total_descontos": 289.01,
+        "valor_liquido": 1808.51,
+        "base_calculo_inss": 2097.52,
+        "base_calculo_fgts": 2097.52,
+        "valor_fgts_mes": 167.8,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "12706845317",
+      "empregado": "JOÃO FELIPE GONÇALVES FOGAÇA",
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregado_nome": "JOÃO FELIPE GONÇALVES FOGAÇA",
+        "empregado_cpf": "12706845317",
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "002404",
+        "periodo_inicio": "2026-03-01",
+        "periodo_fim": "2026-03-31",
+        "forma_registro": "ELETRONICO",
+        "registros": [
+          {
+            "data": "2026-03-01",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-02",
+            "marcacoes": [
+              "05:54",
+              "10:00",
+              "11:00",
+              "15:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-03",
+            "marcacoes": [],
+            "ocorrencia": "ATESTADO"
+          },
+          {
+            "data": "2026-03-04",
+            "marcacoes": [
+              "05:58",
+              "10:05",
+              "11:08",
+              "15:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-05",
+            "marcacoes": [
+              "06:05",
+              "10:02",
+              "11:05",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-06",
+            "marcacoes": [
+              "06:02",
+              "09:59",
+              "11:01",
+              "15:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-07",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-08",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-09",
+            "marcacoes": [
+              "06:00",
+              "10:06",
+              "11:07",
+              "15:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-10",
+            "marcacoes": [
+              "05:58",
+              "10:03",
+              "11:03",
+              "15:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-11",
+            "marcacoes": [
+              "05:58",
+              "10:05",
+              "11:05",
+              "15:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-12",
+            "marcacoes": [
+              "05:57",
+              "09:59",
+              "10:59",
+              "15:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-13",
+            "marcacoes": [
+              "06:05",
+              "10:02",
+              "11:02",
+              "15:46"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-14",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-15",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-16",
+            "marcacoes": [
+              "05:54",
+              "10:06",
+              "11:06",
+              "15:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-17",
+            "marcacoes": [
+              "05:59",
+              "10:05",
+              "11:06",
+              "15:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-18",
+            "marcacoes": [
+              "06:03",
+              "10:05",
+              "11:05",
+              "15:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-19",
+            "marcacoes": [
+              "05:51",
+              "10:01",
+              "11:05",
+              "15:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-20",
+            "marcacoes": [
+              "06:02",
+              "10:00",
+              "11:04",
+              "14:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-21",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-22",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-23",
+            "marcacoes": [
+              "05:55",
+              "10:02",
+              "11:02",
+              "15:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-24",
+            "marcacoes": [
+              "05:52",
+              "10:06",
+              "11:07",
+              "15:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-25",
+            "marcacoes": [
+              "06:03",
+              "10:05",
+              "11:05",
+              "15:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-26",
+            "marcacoes": [
+              "05:48",
+              "10:04",
+              "11:06",
+              "15:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-27",
+            "marcacoes": [
+              "05:58",
+              "10:04",
+              "11:04",
+              "14:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-28",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-29",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-30",
+            "marcacoes": [
+              "05:48",
+              "10:01",
+              "11:05",
+              "15:23"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-31",
+            "marcacoes": [
+              "05:53",
+              "10:04",
+              "11:04",
+              "15:10"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "HOLERITE",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "12706845317",
+      "empregado": "JOÃO FELIPE GONÇALVES FOGAÇA",
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregado_nome": "JOÃO FELIPE GONÇALVES FOGAÇA",
+        "empregado_cpf": "12706845317",
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "002404",
+        "cargo": "PORTEIRO",
+        "competencia": "2026-03",
+        "salario_base": 1970.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 1970.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "03:29",
+            "provento": 46.79,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,87",
+            "provento": null,
+            "desconto": 158.74
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 118.2
+          }
+        ],
+        "total_proventos": 2016.79,
+        "total_descontos": 276.94,
+        "valor_liquido": 1739.85,
+        "base_calculo_inss": 2016.79,
+        "base_calculo_fgts": 2016.79,
+        "valor_fgts_mes": 161.34,
+        "assinatura_empregado_presente": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        11,
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "92457310652",
+      "empregado": "LEONARDO LEÃO ARAGÃO",
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregado_nome": "LEONARDO LEÃO ARAGÃO",
+        "empregado_cpf": null,
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "002521",
+        "periodo_inicio": "2026-03-01",
+        "periodo_fim": "2026-03-31",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-03-01",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-02",
+            "marcacoes": [
+              "07:50",
+              "12:06",
+              "13:06",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-03",
+            "marcacoes": [
+              "07:49",
+              "12:01",
+              "13:06",
+              "17:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-04",
+            "marcacoes": [
+              "07:55",
+              "12:00",
+              "13:02",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-05",
+            "marcacoes": [
+              "07:59",
+              "12:02",
+              "13:02",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-06",
+            "marcacoes": [
+              "07:53",
+              "12:06",
+              "13:08",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-07",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-08",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-09",
+            "marcacoes": [
+              "08:04",
+              "12:04",
+              "13:04",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-10",
+            "marcacoes": [],
+            "ocorrencia": "ATESTADO"
+          },
+          {
+            "data": "2026-03-11",
+            "marcacoes": [
+              "08:01",
+              "12:04",
+              "13:04",
+              "17:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-12",
+            "marcacoes": [
+              "07:52",
+              "12:05",
+              "13:05",
+              "17:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-13",
+            "marcacoes": [
+              "07:52",
+              "11:57",
+              "13:05",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-14",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-15",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-16",
+            "marcacoes": [
+              "07:51",
+              "12:06",
+              "13:06",
+              "17:40"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-17",
+            "marcacoes": [
+              "08:01",
+              "12:02",
+              "13:07",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-18",
+            "marcacoes": [
+              "07:53",
+              "12:06",
+              "13:06",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-19",
+            "marcacoes": [
+              "07:49",
+              "11:59",
+              "13:03",
+              "17:31"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-20",
+            "marcacoes": [
+              "07:58",
+              "12:03",
+              "13:06",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-21",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-22",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-23",
+            "marcacoes": [
+              "07:53",
+              "12:00",
+              "13:00",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-24",
+            "marcacoes": [
+              "08:04",
+              "11:58",
+              "13:07",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-25",
+            "marcacoes": [
+              "07:54",
+              "12:03",
+              "13:03",
+              "18:21"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-26",
+            "marcacoes": [
+              "07:55",
+              "12:05",
+              "13:08",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-27",
+            "marcacoes": [
+              "08:05",
+              "11:58",
+              "12:58",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-28",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-29",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-30",
+            "marcacoes": [
+              "07:49",
+              "12:00",
+              "13:05",
+              "17:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-31",
+            "marcacoes": [
+              "08:02",
+              "12:05",
+              "13:05",
+              "17:08"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "08:00 ÀS 17:00"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "12:01"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "17:04"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "13:02"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "DSR"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "12:05"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "17:07"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "11:57"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "17:06"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "12:06"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "PORTEIRO"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "12:06"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "11:59"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "17:08"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "HOLERITE",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "92457310652",
+      "empregado": "LEONARDO LEÃO ARAGÃO",
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregado_nome": "LEONARDO LEÃO ARAGÃO",
+        "empregado_cpf": "92457310652",
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "002521",
+        "cargo": "PORTEIRO",
+        "competencia": "2026-03",
+        "salario_base": 1770.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 1770.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "05:27",
+            "provento": 65.77,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,76",
+            "provento": null,
+            "desconto": 142.45
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 106.2
+          }
+        ],
+        "total_proventos": 1835.77,
+        "total_descontos": 248.65,
+        "valor_liquido": 1587.12,
+        "base_calculo_inss": 1835.77,
+        "base_calculo_fgts": 1835.77,
+        "valor_fgts_mes": 146.86,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "92457310652",
+      "empregado": "LEONARDO LEÃO ARAGÃO",
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2026-04-06",
+        "valor": 1587.12,
+        "pagador_nome": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "pagador_documento": "82534619000140",
+        "favorecido_nome": "LEONARDO LEÃO ARAGÃO",
+        "favorecido_documento": "92457310652",
+        "finalidade": "Pagamento de salário 03/2026",
+        "autenticacao": "FICT-E915849941093703162947"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        17,
+        15
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": true,
+      "intercalado": true,
+      "cpf": "89632147537",
+      "empregado": "ANA SOPHIA FONSECA DA PAZ",
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregado_nome": "ANA SOPHIA FONSECA DA PAZ",
+        "empregado_cpf": null,
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "005928",
+        "periodo_inicio": "2026-03-01",
+        "periodo_fim": "2026-03-31",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-03-01",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-02",
+            "marcacoes": [
+              "05:55",
+              "09:57",
+              "11:07",
+              "14:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-03",
+            "marcacoes": [
+              "05:52",
+              "09:58",
+              "10:58",
+              "15:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-04",
+            "marcacoes": [
+              "05:54",
+              "10:06",
+              "10:41",
+              "15:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-05",
+            "marcacoes": [
+              "05:54",
+              "09:59",
+              "11:08",
+              "14:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-06",
+            "marcacoes": [
+              "05:59",
+              "09:59",
+              "10:59",
+              "15:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-07",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-08",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-09",
+            "marcacoes": [
+              "06:06",
+              "10:05",
+              "11:05",
+              "15:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-10",
+            "marcacoes": [
+              "05:52",
+              "10:02",
+              "11:02",
+              "15:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-11",
+            "marcacoes": [
+              "05:48",
+              "10:03",
+              "11:03",
+              "15:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-12",
+            "marcacoes": [
+              "05:52",
+              "10:01",
+              "11:01",
+              "15:23"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-13",
+            "marcacoes": [
+              "05:53",
+              "10:06",
+              "11:06",
+              "15:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-14",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-15",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-16",
+            "marcacoes": [],
+            "ocorrencia": "FALTA"
+          },
+          {
+            "data": "2026-03-17",
+            "marcacoes": [
+              "05:52",
+              "10:03",
+              "11:08",
+              "14:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-18",
+            "marcacoes": [],
+            "ocorrencia": "FALTA"
+          },
+          {
+            "data": "2026-03-19",
+            "marcacoes": [
+              "05:58",
+              "10:00",
+              "11:04",
+              "14:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-20",
+            "marcacoes": [
+              "05:57",
+              "10:05",
+              "11:05",
+              "14:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-21",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-22",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-23",
+            "marcacoes": [
+              "05:56",
+              "10:04",
+              "11:04",
+              "14:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-24",
+            "marcacoes": [
+              "05:49",
+              "10:02",
+              "11:08",
+              "15:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-25",
+            "marcacoes": [
+              "05:52",
+              "09:59",
+              "11:08",
+              "15:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-26",
+            "marcacoes": [
+              "06:01",
+              "10:00",
+              "11:05",
+              "15:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-27",
+            "marcacoes": [
+              "05:56",
+              "09:58",
+              "10:59",
+              "15:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-28",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-29",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-30",
+            "marcacoes": [
+              "06:02",
+              "10:03",
+              "11:03",
+              "15:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-31",
+            "marcacoes": [
+              "05:55",
+              "10:04",
+              "11:04",
+              "14:58"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "intervalo_curto",
+          "descricao": "dia com intervalo menor que 1h",
+          "campo": "registros"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Porteiro"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "05:54"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "10:06"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "05:54"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "10:59"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "10:06"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "FALTA"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "11:04"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "11:08"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "15:03"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "06:01"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "10:59"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "DSR"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "HOLERITE",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "89632147537",
+      "empregado": "ANA SOPHIA FONSECA DA PAZ",
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregado_nome": "ANA SOPHIA FONSECA DA PAZ",
+        "empregado_cpf": "89632147537",
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "005928",
+        "cargo": "PORTEIRO",
+        "competencia": "2026-03",
+        "salario_base": 1880.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 1880.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "03:04",
+            "provento": 39.31,
+            "desconto": null
+          },
+          {
+            "codigo": "210",
+            "descricao": "FALTAS",
+            "referencia": "2,00",
+            "provento": null,
+            "desconto": 125.33
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,73",
+            "provento": null,
+            "desconto": 138.69
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 112.8
+          }
+        ],
+        "total_proventos": 1919.31,
+        "total_descontos": 376.82,
+        "valor_liquido": 1542.49,
+        "base_calculo_inss": 1793.98,
+        "base_calculo_fgts": 1793.98,
+        "valor_fgts_mes": 143.52,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "06  04  2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "89632147537",
+      "empregado": "ANA SOPHIA FONSECA DA PAZ",
+      "competencia": null,
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Ana Sophia Fonseca Da Paz",
+        "data_atendimento": "2026-03-26",
+        "dias_afastamento": 10,
+        "cid_informado": true,
+        "medico_nome": "Dr(a). Vitor Hugo Mendonça",
+        "medico_crm": "CRM-PE 22576",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        20,
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79506241325",
+      "empregado": "ELOAH DA CUNHA COSTA",
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregado_nome": "ELOAH DA CUNHA COSTA",
+        "empregado_cpf": null,
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "009875",
+        "periodo_inicio": "2026-03-01",
+        "periodo_fim": "2026-03-31",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-03-01",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-02",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-03",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-04",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-05",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-06",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-07",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-08",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-09",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-10",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-11",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-12",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-13",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-14",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-15",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-16",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-17",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-18",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-19",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-20",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-21",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-22",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-23",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-24",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-25",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-26",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-27",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-28",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-29",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-30",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-31",
+            "marcacoes": [
+              "06:00",
+              "10:00",
+              "11:00",
+              "15:00"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ponto_britanico",
+          "descricao": "horários idênticos todos os dias",
+          "campo": "registros"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "01/03/2026 a 31/03/2026"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "DSR"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "11:00"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "15:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "10:00"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "11:00"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "11:00"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "01/03/2026 a 31/03/2026"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "06:00 às 15:00"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "10:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "11:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "06:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "06:00"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "FOLGA"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "10:00"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "HOLERITE",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79506241325",
+      "empregado": "ELOAH DA CUNHA COSTA",
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregado_nome": "ELOAH DA CUNHA COSTA",
+        "empregado_cpf": "79506241325",
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "009875",
+        "cargo": "RECEPCIONISTA",
+        "competencia": "2026-03",
+        "salario_base": 2010.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2010.0,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,87",
+            "provento": null,
+            "desconto": 158.13
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 120.6
+          }
+        ],
+        "total_proventos": 2010.0,
+        "total_descontos": 278.73,
+        "valor_liquido": 1731.27,
+        "base_calculo_inss": 2010.0,
+        "base_calculo_fgts": 2010.0,
+        "valor_fgts_mes": 160.8,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "FERIAS",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79506241325",
+      "empregado": "ELOAH DA CUNHA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "data_documento": "2026-06-16",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Eloah Da Cunha Costa",
+        "empregado_cpf": null,
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "subtipo": "RECIBO",
+        "aquisitivo_inicio": "2025-03-14",
+        "aquisitivo_fim": "2026-03-13",
+        "gozo_inicio": "2026-06-18",
+        "gozo_fim": "2026-07-17",
+        "dias": 30,
+        "valor_liquido": 2461.57
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Eloah Da Cunha Costa"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "18/06/2026 a 17/07/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        24,
+        25
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19543078610",
+      "empregado": "YAGO DA ROSA VIEIRA",
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregado_nome": "YAGO DA ROSA VIEIRA",
+        "empregado_cpf": null,
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "003979",
+        "periodo_inicio": "2026-03-01",
+        "periodo_fim": "2026-03-31",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-03-01",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-02",
+            "marcacoes": [
+              "08:00",
+              "12:05",
+              "13:05",
+              "17:42"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-03",
+            "marcacoes": [
+              "07:55",
+              "12:00",
+              "13:03",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-04",
+            "marcacoes": [
+              "07:59",
+              "12:03",
+              "13:03",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-05",
+            "marcacoes": [
+              "07:51",
+              "12:04",
+              "13:04",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-06",
+            "marcacoes": [
+              "07:55",
+              "11:58",
+              "13:06",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-07",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-08",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-09",
+            "marcacoes": [
+              "07:53",
+              "12:06",
+              "13:06",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-10",
+            "marcacoes": [
+              "07:56",
+              "12:00",
+              "13:00",
+              "17:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-11",
+            "marcacoes": [
+              "08:06",
+              "12:01",
+              "13:08",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-12",
+            "marcacoes": [
+              "07:58",
+              "11:59",
+              "13:01",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-13",
+            "marcacoes": [],
+            "ocorrencia": "ATESTADO"
+          },
+          {
+            "data": "2026-03-14",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-15",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-16",
+            "marcacoes": [
+              "08:02",
+              "11:58",
+              "13:07",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-17",
+            "marcacoes": [
+              "07:57",
+              "11:59",
+              "13:04",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-18",
+            "marcacoes": [
+              "08:03",
+              "12:01",
+              "13:07",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-19",
+            "marcacoes": [
+              "07:55",
+              "12:03",
+              "13:08",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-20",
+            "marcacoes": [
+              "07:56",
+              "12:05",
+              "13:05",
+              "17:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-21",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-22",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-23",
+            "marcacoes": [
+              "07:52",
+              "12:04",
+              "13:04",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-24",
+            "marcacoes": [
+              "07:53",
+              "12:05",
+              "13:05",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-25",
+            "marcacoes": [
+              "07:53",
+              "12:03",
+              "13:03",
+              "17:21"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-26",
+            "marcacoes": [
+              "07:55",
+              "12:03",
+              "13:05",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-27",
+            "marcacoes": [
+              "07:59",
+              "11:57",
+              "13:06",
+              "17:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-28",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-03-29",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-03-30",
+            "marcacoes": [
+              "07:58",
+              "12:01",
+              "13:01",
+              "17:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-03-31",
+            "marcacoes": [
+              "08:01",
+              "12:05",
+              "13:05",
+              "17:09"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "08:00 às 17:00"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "07:55"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "13:06"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "13:08"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "07:58"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "ATESTADO"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "17:02"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "07:56"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "07:53"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "13:06"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "HOLERITE",
+      "paginas": [
+        26
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19543078610",
+      "empregado": "YAGO DA ROSA VIEIRA",
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "empregado_nome": "YAGO DA ROSA VIEIRA",
+        "empregado_cpf": "19543078610",
+        "empregador_razao_social": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "empregador_cnpj": "82534619000140",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "003979",
+        "cargo": "RECEPCIONISTA",
+        "competencia": "2026-03",
+        "salario_base": 2070.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2070.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "02:57",
+            "provento": 41.64,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,92",
+            "provento": null,
+            "desconto": 167.28
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 124.2
+          }
+        ],
+        "total_proventos": 2111.64,
+        "total_descontos": 291.48,
+        "valor_liquido": 1868.06,
+        "base_calculo_inss": 2111.64,
+        "base_calculo_fgts": 2111.64,
+        "valor_fgts_mes": 168.93,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "liquido_divergente",
+          "descricao": "valor líquido não fecha com a soma",
+          "campo": "valor_liquido"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "06  04  2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        28
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79506241325",
+      "empregado": "ELOAH DA CUNHA COSTA",
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2026-04-06",
+        "valor": 1731.27,
+        "pagador_nome": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "pagador_documento": "82534619000140",
+        "favorecido_nome": "ELOAH DA CUNHA COSTA",
+        "favorecido_documento": "79506241325",
+        "finalidade": "Pagamento de salário 03/2026",
+        "autenticacao": "FICT-E485490514649676491357"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 23,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        28
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19543078610",
+      "empregado": "YAGO DA ROSA VIEIRA",
+      "competencia": "2026-03",
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2026-04-06",
+        "valor": 1820.16,
+        "pagador_nome": "GARCIA PORTARIA SOLUÇÕES LTDA",
+        "pagador_documento": "82534619000140",
+        "favorecido_nome": "YAGO DA ROSA VIEIRA",
+        "favorecido_documento": "19543078610",
+        "finalidade": "Pagamento de salário 03/2026",
+        "autenticacao": "FICT-E567450901074240192215"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 24,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        29
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19543078610",
+      "empregado": "YAGO DA ROSA VIEIRA",
+      "competencia": null,
+      "empresa_cnpj": "82534619000140",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Yago Da Rosa Vieira",
+        "data_atendimento": "2026-05-11",
+        "dias_afastamento": 1,
+        "cid_informado": false,
+        "medico_nome": "Dr(a). Apollo Souza",
+        "medico_crm": "CRM-PE 24605",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "atividades a partir de 11/05/2026."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 25,
+      "tipo": "OUTRO",
+      "paginas": [
+        27
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      24,
+      24
+    ],
+    "degradacao": "media",
+    "taxa_nc": 0.37,
+    "perfil": "mensal",
+    "embaralhar": 0.2,
+    "paginas_em_branco": 0.04,
+    "fora_de_ordem": 0.28,
+    "intercalar": 0.19,
+    "taxa_defeito": 0.12,
+    "taxa_branco": 0.01,
+    "extras": 0.15,
+    "p_celular": 0.14,
+    "p_cabeca_para_baixo": 0.03,
+    "seed": 42018
+  }
+}

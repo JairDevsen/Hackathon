@@ -1,0 +1,1524 @@
+{
+  "arquivo": "lote_0009.pdf",
+  "perfil": "misto",
+  "empresa_cnpj": "93254760000106",
+  "competencia": "2025-12",
+  "degradacao": "forte",
+  "total_paginas": 27,
+  "total_documentos": 22,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 2,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 5,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 6,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 180,
+      "extras": [
+        "clipe",
+        "post_it:2ª via",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 7,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 11,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "post_it:arquivar"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 13,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 19,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 20,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "post_it:lançar"
+      ]
+    },
+    {
+      "pagina": 26,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 21,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 27,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "post_it:pago"
+      ]
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "TRCT",
+      "paginas": [
+        2,
+        1
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": true,
+      "intercalado": false,
+      "cpf": "90516382721",
+      "empregado": "MARIA LUÍSA SALES CUNHA",
+      "competencia": "2025-12",
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "empregado_nome": "MARIA LUÍSA SALES CUNHA",
+        "empregado_cpf": "90516382721",
+        "empregador_razao_social": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "empregador_cnpj": "93254760000106",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "16855302387",
+        "data_admissao": "2022-06-09",
+        "data_aviso_previo": "2025-11-28",
+        "data_afastamento": "2025-12-28",
+        "causa_afastamento": "Despedida sem justa causa, pelo empregador",
+        "codigo_afastamento": "SJ2",
+        "remuneracao_fins_rescisorios": 2200.0,
+        "total_bruto": 8164.44,
+        "total_deducoes": 337.26,
+        "valor_liquido": 7827.18,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "12563798400",
+      "empregado": "JOÃO LUCAS PIMENTA CAVALCANTI",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 355 856 726 AR",
+        "conteudo": "Notificação nº 372/2026",
+        "data_postagem": "2026-02-04",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "João Lucas Pimenta Cavalcanti",
+        "destinatario_endereco": "Avenida da Rocha Melo, 397",
+        "destinatario_bairro": "Manacas",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55152229",
+        "remetente_nome": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Nogueira Pires, 453 – Outro, Belo Jardim/PE",
+        "remetente_cep": "55159180",
+        "tentativas": [
+          {
+            "data": "2026-02-06",
+            "hora": "08:50"
+          },
+          {
+            "data": "2026-02-09",
+            "hora": "09:45"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-02-09",
+        "data_devolucao": null,
+        "recebedor_nome": "JOÃO LUCAS PIMENTA CAVALCANTI",
+        "recebedor_documento": "6312691",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Manacas"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "6312691"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "ASO",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "94516270811",
+      "empregado": "SAMUEL SOUSA PEREIRA",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "empregado_nome": "Samuel Sousa Pereira",
+        "empregado_cpf": "94516270811",
+        "empregador_razao_social": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "empregador_cnpj": "93254760000106",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Bombeiro Hidráulico",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2025-12-07",
+        "riscos_ocupacionais": [
+          "Físico (ruído)",
+          "Ergonômico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Ana Julia Costa",
+        "medico_crm": "CRM-AL 23692"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Samuel Sousa Pereira"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Dr(a). Ana Julia Costa"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "RECIBO_AVULSO",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "90516382721",
+      "empregado": "MARIA LUÍSA SALES CUNHA",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_pagamento": "VALE",
+        "valor": 100.0,
+        "valor_por_extenso": "cem reais",
+        "recebedor_nome": "Maria Luísa Sales Cunha",
+        "recebedor_cpf": "90516382721",
+        "pagador_nome": "Da Rocha Manutenção Soluções Ltda",
+        "referente_a": "vale (desconto em folha)",
+        "data_documento": "2026-01-24",
+        "assinatura_recebedor_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "90516382721",
+      "empregado": "MARIA LUÍSA SALES CUNHA",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 618 701 619 AR",
+        "conteudo": "Notificação nº 113/2025",
+        "data_postagem": "2025-12-15",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Maria Luísa Sales Cunha",
+        "destinatario_endereco": "Avenida Fernandes Cirino, 964",
+        "destinatario_bairro": "Outro",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55151197",
+        "remetente_nome": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Nogueira Pires, 453 – Outro, Belo Jardim/PE",
+        "remetente_cep": "55159180",
+        "tentativas": [
+          {
+            "data": "2025-12-18",
+            "hora": "10:15"
+          },
+          {
+            "data": "2025-12-22",
+            "hora": "09:10"
+          },
+          {
+            "data": "2025-12-23",
+            "hora": "14:30"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "RECUSADO",
+        "data_entrega": null,
+        "data_devolucao": "2025-12-24",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "55151-197"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "97631054800",
+      "empregado": "ELOAH DA ROSA APARECIDA",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 534 682 976 AR",
+        "conteudo": "Notificação nº 293/2026",
+        "data_postagem": "2026-01-16",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Eloah Da Rosa Aparecida",
+        "destinatario_endereco": "Avenida Andrade Freitas, 561",
+        "destinatario_bairro": "Vila Nova Cachoeirinha 3ª Seção",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55155188",
+        "remetente_nome": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Nogueira Pires, 453 – Outro, Belo Jardim/PE",
+        "remetente_cep": "55159180",
+        "tentativas": [
+          {
+            "data": "2026-01-19",
+            "hora": "10:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-01-19",
+        "data_devolucao": null,
+        "recebedor_nome": "LUIZ GUSTAVO BARROS",
+        "recebedor_documento": "3257488",
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_sem_assinatura",
+          "descricao": "AR entregue sem assinatura do recebedor",
+          "campo": "assinatura_recebedor_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Notificação nº 293/2026"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "55155-188"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "3257488"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "94516270811",
+      "empregado": "SAMUEL SOUSA PEREIRA",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 401 655 459 AR",
+        "conteudo": "Notificação nº 154/2025",
+        "data_postagem": "2025-11-21",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Samuel Sousa Pereira",
+        "destinatario_endereco": "Travessa Guerra Aragão, 598",
+        "destinatario_bairro": "Baleia",
+        "destinatario_municipio": "Jaboatão dos Guararapes",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "54485208",
+        "remetente_nome": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Nogueira Pires, 453 – Outro, Belo Jardim/PE",
+        "remetente_cep": "55159180",
+        "tentativas": [
+          {
+            "data": "2025-11-24",
+            "hora": "09:30"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2025-11-24",
+        "data_devolucao": null,
+        "recebedor_nome": "ALÍCIA CARDOSO",
+        "recebedor_documento": "2923505",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "PE"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "TRCT",
+      "paginas": [
+        9,
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "39160584793",
+      "empregado": "ANA CLARA CORREIA CARVALHO",
+      "competencia": "2025-12",
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "empregado_nome": "ANA CLARA CORREIA CARVALHO",
+        "empregado_cpf": "39160584793",
+        "empregador_razao_social": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "empregador_cnpj": "93254760000106",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "11605813189",
+        "data_admissao": "2025-02-02",
+        "data_aviso_previo": "2025-11-07",
+        "data_afastamento": "2025-12-07",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 2420.0,
+        "total_bruto": 5471.89,
+        "total_deducoes": 219.23,
+        "valor_liquido": 5252.66,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "1/3 CONSTITUCIONAL DE FÉRIAS"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        11,
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "20546918360",
+      "empregado": "MIGUEL MARTINS SANTOS",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 636 353 641 AR",
+        "conteudo": "Notificação nº 31/2026",
+        "data_postagem": "2026-01-20",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Miguel Martins Santos",
+        "destinatario_endereco": "Rua da Rocha Costela, 880",
+        "destinatario_bairro": "Juliana",
+        "destinatario_municipio": "Paulista",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "53403650",
+        "remetente_nome": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Nogueira Pires, 453 – Outro, Belo Jardim/PE",
+        "remetente_cep": "55159180",
+        "tentativas": [
+          {
+            "data": "2026-01-23",
+            "hora": "15:15"
+          },
+          {
+            "data": "2026-01-26",
+            "hora": "08:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-01-26",
+        "data_devolucao": null,
+        "recebedor_nome": "PIETRA CAMPOS",
+        "recebedor_documento": "8055014",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "90516382721",
+      "empregado": "MARIA LUÍSA SALES CUNHA",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "empregado_nome": "MARIA LUÍSA SALES CUNHA",
+        "empregado_cpf": "90516382721",
+        "empregador_razao_social": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "empregador_cnpj": "93254760000106",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2025-12-14",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "39160584793",
+      "empregado": "ANA CLARA CORREIA CARVALHO",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 996 723 560 AR",
+        "conteudo": "Notificação nº 364/2025",
+        "data_postagem": "2025-11-22",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Ana Clara Correia Carvalho",
+        "destinatario_endereco": "Rua Pacheco Cassiano, 251",
+        "destinatario_bairro": "Biquinhas",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55152861",
+        "remetente_nome": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Nogueira Pires, 453 – Outro, Belo Jardim/PE",
+        "remetente_cep": "55159180",
+        "tentativas": [
+          {
+            "data": "2025-11-24",
+            "hora": "13:50"
+          },
+          {
+            "data": "2025-11-27",
+            "hora": "08:10"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2025-11-27",
+        "data_devolucao": null,
+        "recebedor_nome": "CALEBE MOURA",
+        "recebedor_documento": "9706565",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Ana Clara Correia Carvalho"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Rua Pacheco Cassiano, 251"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "9706565"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "94516270811",
+      "empregado": "SAMUEL SOUSA PEREIRA",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "empregado_nome": "SAMUEL SOUSA PEREIRA",
+        "empregado_cpf": "94516270811",
+        "empregador_razao_social": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "empregador_cnpj": "93254760000106",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "ABANDONO_EMPREGO",
+        "data_documento": "2025-11-20",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "08392761413",
+      "empregado": "ENZO MONTENEGRO PEREIRA",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 186 667 768 AR",
+        "conteudo": "Notificação nº 201/2026",
+        "data_postagem": "2026-02-03",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Enzo Montenegro Pereira",
+        "destinatario_endereco": "Avenida Duarte Carvalho, 1336",
+        "destinatario_bairro": "Engenho Nogueira",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55153599",
+        "remetente_nome": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Nogueira Pires, 453 – Outro, Belo Jardim/PE",
+        "remetente_cep": "55159180",
+        "tentativas": [
+          {
+            "data": "2026-02-05",
+            "hora": "16:45"
+          },
+          {
+            "data": "2026-02-09",
+            "hora": "10:20"
+          },
+          {
+            "data": "2026-02-10",
+            "hora": "13:40"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "MUDOU_SE",
+        "data_entrega": null,
+        "data_devolucao": "2026-02-16",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "55153-599"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "55159-180"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "TRCT",
+      "paginas": [
+        17,
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "46895372164",
+      "empregado": "ASAFE GUERRA BARROS",
+      "competencia": "2025-12",
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "empregado_nome": "ASAFE GUERRA BARROS",
+        "empregado_cpf": "46895372164",
+        "empregador_razao_social": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "empregador_cnpj": "93254760000106",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "11697836954",
+        "data_admissao": "2023-10-30",
+        "data_aviso_previo": null,
+        "data_afastamento": "2025-12-28",
+        "causa_afastamento": "Término do contrato de experiência",
+        "codigo_afastamento": "RA2",
+        "remuneracao_fins_rescisorios": 1820.0,
+        "total_bruto": 4125.34,
+        "total_deducoes": 271.14,
+        "valor_liquido": 3854.2,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "30/10/2023"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "INSS sobre 13º salário"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "141,03"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "ASO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "39160584793",
+      "empregado": "ANA CLARA CORREIA CARVALHO",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "empregado_nome": "Ana Clara Correia Carvalho",
+        "empregado_cpf": "39160584793",
+        "empregador_razao_social": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "empregador_cnpj": "93254760000106",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Bombeiro Hidráulico",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2025-12-07",
+        "riscos_ocupacionais": [
+          "Ergonômico",
+          "Biológico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Alexandre Sá",
+        "medico_crm": "CRM-BA 36229"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "391.605.847-93"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Bombeiro Hidráulico"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "TRCT",
+      "paginas": [
+        20,
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "94516270811",
+      "empregado": "SAMUEL SOUSA PEREIRA",
+      "competencia": "2025-12",
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "empregado_nome": "SAMUEL SOUSA PEREIRA",
+        "empregado_cpf": "94516270811",
+        "empregador_razao_social": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "empregador_cnpj": "93254760000106",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "10705921376",
+        "data_admissao": "2024-07-05",
+        "data_aviso_previo": "2025-11-07",
+        "data_afastamento": "2025-12-07",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 2720.0,
+        "total_bruto": 4639.11,
+        "total_deducoes": 249.23,
+        "valor_liquido": 4389.88,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "93.254.760/0001-06"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "05/07/2024"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "07/11/2025"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "2.493,33"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "INSS sobre saldo de salário"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "4.389,88"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "46895372164",
+      "empregado": "ASAFE GUERRA BARROS",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "data_documento": "2025-11-28",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Asafe Guerra Barros",
+        "empregado_cpf": "46895372164",
+        "empregador_razao_social": "Da Rocha Manutenção Soluções Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "39160584793",
+      "empregado": "ANA CLARA CORREIA CARVALHO",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "empregado_nome": "ANA CLARA CORREIA CARVALHO",
+        "empregado_cpf": "39160584793",
+        "empregador_razao_social": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "empregador_cnpj": "93254760000106",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2025-11-21",
+        "prazo_dias": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        24
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "46895372164",
+      "empregado": "ASAFE GUERRA BARROS",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 935 565 218 AR",
+        "conteudo": "Notificação nº 252/2026",
+        "data_postagem": "2026-01-12",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Asafe Guerra Barros",
+        "destinatario_endereco": "Travessa Nascimento Peixoto, 391",
+        "destinatario_bairro": "Mangabeiras",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55151803",
+        "remetente_nome": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Nogueira Pires, 453 – Outro, Belo Jardim/PE",
+        "remetente_cep": "55159180",
+        "tentativas": [
+          {
+            "data": "2026-01-14",
+            "hora": "14:20"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-01-14",
+        "data_devolucao": null,
+        "recebedor_nome": "ASAFE GUERRA BARROS",
+        "recebedor_documento": "5037523",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Travessa Nascimento Peixoto, 391"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        25
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "81064759300",
+      "empregado": "GAEL DA CRUZ CAMARGO",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 797 272 468 AR",
+        "conteudo": "Notificação nº 73/2026",
+        "data_postagem": "2026-02-05",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Gael Da Cruz Camargo",
+        "destinatario_endereco": "Avenida Costa Campos, 981",
+        "destinatario_bairro": "Conjunto Serra Verde",
+        "destinatario_municipio": "Pesqueira",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55219367",
+        "remetente_nome": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Nogueira Pires, 453 – Outro, Belo Jardim/PE",
+        "remetente_cep": "55159180",
+        "tentativas": [
+          {
+            "data": "2026-02-09",
+            "hora": "14:15"
+          },
+          {
+            "data": "2026-02-12",
+            "hora": "15:30"
+          },
+          {
+            "data": "2026-02-16",
+            "hora": "13:20"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "NAO_PROCURADO",
+        "data_entrega": null,
+        "data_devolucao": "2026-02-23",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Conjunto Serra Verde"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        26
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "30945817223",
+      "empregado": "MARIA EDUARDA GOMES CAVALCANTI",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 308 834 921 AR",
+        "conteudo": "Notificação nº 71/2026",
+        "data_postagem": "2026-01-15",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Maria Eduarda Gomes Cavalcanti",
+        "destinatario_endereco": "Avenida Nunes Castro, 1575",
+        "destinatario_bairro": "Coração De Jesus",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55157825",
+        "remetente_nome": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Nogueira Pires, 453 – Outro, Belo Jardim/PE",
+        "remetente_cep": "55159180",
+        "tentativas": [
+          {
+            "data": "2026-01-16",
+            "hora": "11:40"
+          },
+          {
+            "data": "2026-01-19",
+            "hora": "09:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-01-19",
+        "data_devolucao": null,
+        "recebedor_nome": "MARIA EDUARDA GOMES CAVALCANTI",
+        "recebedor_documento": "8279125",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "15/01/2026"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Belo Jardim"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "19/01/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        27
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "30945817223",
+      "empregado": "MARIA EDUARDA GOMES CAVALCANTI",
+      "competencia": null,
+      "empresa_cnpj": "93254760000106",
+      "dados": {
+        "empregado_nome": "MARIA EDUARDA GOMES CAVALCANTI",
+        "empregado_cpf": "30945817223",
+        "empregador_razao_social": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+        "empregador_cnpj": "93254760000106",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-01-14",
+        "prazo_dias": 3
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      17,
+      17
+    ],
+    "degradacao": "forte",
+    "taxa_nc": 0.19,
+    "perfil": "misto",
+    "embaralhar": 0.59,
+    "paginas_em_branco": 0.09,
+    "fora_de_ordem": 0.09,
+    "intercalar": 0.06,
+    "taxa_defeito": 0.14,
+    "taxa_branco": 0.04,
+    "extras": 0.31,
+    "p_celular": 0.23,
+    "p_cabeca_para_baixo": 0.07,
+    "seed": 42009
+  }
+}

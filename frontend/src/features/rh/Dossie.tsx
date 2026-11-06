@@ -46,6 +46,7 @@ export function DossieLayout() {
           <div className="min-w-0 flex-1">
             <h1 className="truncate font-display text-3xl font-bold text-brand-darker">{e.nome}</h1>
             <p className="text-sm text-muted-foreground">{e.cpf_mascarado} · {e.cargo ?? 'sem cargo'} · {e.unidade ?? 'sem unidade'} · matrícula {e.matricula ?? '—'}</p>
+            <p className="text-sm text-muted-foreground">{e.supplier_id ? <>{e.vinculo === 'TERCEIRIZADA' ? 'Terceirizado de' : 'Trabalha para o fornecedor'} <Link to={`/app/fornecedores/${e.supplier_id}`} className="font-medium text-brand underline">{e.fornecedor}</Link></> : 'Funcionário da própria empresa'}</p>
           </div>
           <StatusPill status={e.status} />
           {e.pre_cadastro && <span className="rounded-full bg-warning-bg px-2 py-1 text-xs font-semibold text-warning">Pré-cadastrado pelo lote</span>}

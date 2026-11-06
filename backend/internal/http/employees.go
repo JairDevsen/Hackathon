@@ -22,9 +22,9 @@ import (
 )
 
 const employeeSelect = `SELECT e.id, e.nome, e.cpf_mascarado, e.matricula, e.status, e.pre_cadastro, e.origem, e.admissao, e.desligamento, e.email, e.telefone,
-  p.nome AS cargo, e.cargo_id, dp.nome AS setor, e.department_id, e.extra, u.nome AS unidade, e.unit_id,
+  p.nome AS cargo, e.cargo_id, dp.nome AS setor, e.department_id, e.extra, u.nome AS unidade, e.unit_id, e.supplier_id, su.razao_social AS fornecedor, su.cnpj AS fornecedor_cnpj, CASE WHEN e.supplier_id IS NULL THEN 'PROPRIA' ELSE su.tipo END AS vinculo,
   coalesce(c.ok,0) AS ok, coalesce(c.total,0) AS total, coalesce(c.pend,0) AS pendencias, coalesce(rk.alto,0) AS riscos_altos, coalesce(rk.total,0) AS riscos, e.criado_em
-  FROM employees e LEFT JOIN positions p ON p.id=e.cargo_id LEFT JOIN departments dp ON dp.id=e.department_id LEFT JOIN units u ON u.id=e.unit_id
+  FROM employees e LEFT JOIN positions p ON p.id=e.cargo_id LEFT JOIN departments dp ON dp.id=e.department_id LEFT JOIN units u ON u.id=e.unit_id LEFT JOIN suppliers su ON su.id=e.supplier_id
   LEFT JOIN LATERAL (SELECT count(*) FILTER (WHERE status='OK') ok, count(*) FILTER (WHERE status<>'DISPENSADO') total,
      count(*) FILTER (WHERE status IN ('PENDENTE','VENCIDO')) pend FROM compliance_items WHERE employee_id=e.id) c ON true
   LEFT JOIN LATERAL (SELECT count(*) FILTER (WHERE severidade='ALTO') alto, count(*) total FROM risk_indicators WHERE employee_id=e.id AND status='ABERTO') rk ON true`
@@ -112,6 +112,17 @@ func (s *Server) listEmployees(c *gin.Context) {
 	if c.Query("pre") == "1" {
 		where = append(where, "e.pre_cadastro = true")
 	}
+	switch v := c.Query("vinculo"); v { // própria empresa × terceirizadas × fornecedores
+	case "PROPRIA":
+		where = append(where, "e.supplier_id IS NULL")
+	case "TERCEIRIZADA", "FORNECEDOR":
+		add("su.tipo = ?", v)
+	}
+	if v := c.Query("supplier"); v == "none" { // só funcionários da própria empresa
+		where = append(where, "e.supplier_id IS NULL")
+	} else if v != "" {
+		add("e.supplier_id = ?::uuid", v)
+	}
 	if v := c.Query("setor"); v != "" {
 		add("e.department_id = ?::uuid", v)
 	}
@@ -156,6 +167,7 @@ type empIn struct {
 	Email        string         `json:"email"`
 	Telefone     string         `json:"telefone"`
 	Extra        map[string]any `json:"extra"`
+	SupplierID   *string        `json:"supplier_id"`
 }
 
 func str0(p *string) string {
@@ -185,7 +197,7 @@ func (s *Server) createEmployee(c *gin.Context) {
 			return err
 		}
 		var e error
-		id, e = s.Ingest.CreateEmployee(ctx, tx, tid(c), documents.NewEmployee{Nome: in.Nome, CPF: in.CPF, Matricula: in.Matricula, CargoID: in.CargoID, UnitID: in.UnitID, Admissao: in.Admissao})
+		id, e = s.Ingest.CreateEmployee(ctx, tx, tid(c), documents.NewEmployee{Nome: in.Nome, CPF: in.CPF, Matricula: in.Matricula, CargoID: in.CargoID, UnitID: in.UnitID, Admissao: in.Admissao, SupplierID: nilIfEmpty(in.SupplierID)})
 		if e != nil {
 			return e
 		}
@@ -230,6 +242,7 @@ func (s *Server) patchEmployee(c *gin.Context) {
 		Email        *string        `json:"email"`
 		Telefone     *string        `json:"telefone"`
 		PreCadastro  *bool          `json:"pre_cadastro"`
+		SupplierID   *string        `json:"supplier_id"` // "" = volta a ser da própria empresa
 	}
 	if !bindJSON(c, &in) {
 		return
@@ -238,8 +251,8 @@ func (s *Server) patchEmployee(c *gin.Context) {
 	if !s.tx(c, func(ctx context.Context, tx pgx.Tx) error {
 		ct, err := tx.Exec(ctx, `UPDATE employees SET nome=coalesce($2,nome), matricula=coalesce($3,matricula), cargo_id=coalesce($4::uuid,cargo_id), unit_id=coalesce($5::uuid,unit_id),
 		  admissao=coalesce($6::date,admissao), desligamento=coalesce($7::date,desligamento), status=coalesce($8,status), email=coalesce($9,email), telefone=coalesce($10,telefone),
-		  department_id=coalesce($11::uuid,department_id), extra=extra || coalesce($12::jsonb,'{}'), pre_cadastro=coalesce($13,pre_cadastro) WHERE id=$1`,
-			id, in.Nome, in.Matricula, in.CargoID, in.UnitID, in.Admissao, in.Desligamento, in.Status, in.Email, in.Telefone, in.DepartmentID, mustJSONOrNil(in.Extra), in.PreCadastro)
+		  department_id=coalesce($11::uuid,department_id), extra=extra || coalesce($12::jsonb,'{}'), pre_cadastro=coalesce($13,pre_cadastro), supplier_id=CASE WHEN $14::text IS NULL THEN supplier_id ELSE nullif($14,'')::uuid END WHERE id=$1`,
+			id, in.Nome, in.Matricula, in.CargoID, in.UnitID, in.Admissao, in.Desligamento, in.Status, in.Email, in.Telefone, in.DepartmentID, mustJSONOrNil(in.Extra), in.PreCadastro, in.SupplierID)
 		if err != nil {
 			return err
 		}
@@ -262,14 +275,14 @@ func docRowSQL(saudeParam string) string {
 	  CASE WHEN d.sensivel_saude AND NOT ` + saudeParam + ` THEN 'Documento de saúde (acesso restrito)' ELSE d.titulo END AS titulo,
 	  d.competencia, d.data_documento, d.validade_ate, d.status, d.confianca, d.paginas, d.employee_id, d.batch_id,
 	  CASE WHEN d.sensivel_saude AND NOT ` + saudeParam + ` THEN '[]'::jsonb ELSE d.alertas END AS alertas,
-	  d.motivos_revisao, d.nao_conformidades, d.sensivel_saude, (d.sensivel_saude AND NOT ` + saudeParam + `) AS mascarado, d.possui_manuscrito, d.versao, d.duplicata_de, d.criado_em, d.origem,
+	  d.motivos_revisao, d.nao_conformidades, d.sensivel_saude, (d.sensivel_saude AND NOT ` + saudeParam + `) AS mascarado, d.possui_manuscrito, d.versao, d.duplicata_de, d.criado_em, d.origem, d.supplier_id, sup.razao_social AS fornecedor, sup.cnpj AS fornecedor_cnpj, CASE WHEN d.supplier_id IS NULL THEN 'PROPRIA' ELSE sup.tipo END AS vinculo,
 	  CASE WHEN d.sensivel_saude AND NOT ` + saudeParam + ` THEN NULL ELSE ef.nome END AS funcionario_nome,
 	  CASE WHEN d.sensivel_saude AND NOT ` + saudeParam + ` THEN NULL ELSE ef.cpf_mascarado END AS funcionario_cpf,
 	  CASE WHEN d.sensivel_saude AND NOT ` + saudeParam + ` THEN NULL ELSE d.campos->>'empresa_nome' END AS empresa_nome,
 	  CASE WHEN d.sensivel_saude AND NOT ` + saudeParam + ` THEN NULL ELSE d.pasta_destino END AS pasta_destino,
 	  CASE WHEN d.sensivel_saude AND NOT ` + saudeParam + ` THEN NULL ELSE d.nome_arquivo END AS nome_arquivo,
 	  CASE WHEN d.sensivel_saude AND NOT ` + saudeParam + ` THEN '[]'::jsonb ELSE d.checklist END AS checklist
-	  FROM documents d JOIN document_types dt ON dt.codigo=d.document_type LEFT JOIN employees ef ON ef.id=d.employee_id`
+	  FROM documents d JOIN document_types dt ON dt.codigo=d.document_type LEFT JOIN employees ef ON ef.id=d.employee_id LEFT JOIN suppliers sup ON sup.id=d.supplier_id`
 }
 
 func (s *Server) employeeDocuments(c *gin.Context) {
@@ -485,3 +498,10 @@ func (j jsonRaw) MarshalJSON() ([]byte, error) { return j, nil }
 func base64RawURL(s string) string { return base64.RawURLEncoding.EncodeToString([]byte(s)) }
 
 func unmarshal(b []byte, v any) { _ = json.Unmarshal(b, v) }
+
+func nilIfEmpty(p *string) *string {
+	if p == nil || strings.TrimSpace(*p) == "" {
+		return nil
+	}
+	return p
+}

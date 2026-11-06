@@ -1,0 +1,351 @@
+{
+  "seed": 42022,
+  "data_referencia": "2026-09-16",
+  "empresas": [
+    {
+      "razao_social": "MONTEIRO PORTARIA SOLUÇÕES LTDA",
+      "cnpj": "74251896000118",
+      "endereco": "Rua Moraes Correia, 1595 – Cardoso",
+      "cidade": "Paulista/PE",
+      "segmento": "Portaria e Recepção",
+      "end": {
+        "logradouro": "Rua Moraes Correia",
+        "numero": "1595",
+        "bairro": "Cardoso",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53462649"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "BRYAN CAMPOS CASSIANO",
+      "cpf": "58071432644",
+      "pis": "14401258904",
+      "matricula": "001822",
+      "cargo": "PORTEIRO",
+      "cbo": "5478-82",
+      "salario": 1840.0,
+      "admissao": "2024-10-14",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "74251896000118",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida da Rosa Borges",
+        "numero": "188",
+        "bairro": "Novo Aarão Reis",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "51735008"
+      },
+      "nascimento": "1971-07-28"
+    },
+    {
+      "nome": "ANTONY VIANA RAMOS",
+      "cpf": "01297534670",
+      "pis": "11546920751",
+      "matricula": "006955",
+      "cargo": "PORTEIRO",
+      "cbo": "7457-72",
+      "salario": 1840.0,
+      "admissao": "2025-06-04",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "74251896000118",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Alves Mendes",
+        "numero": "307",
+        "bairro": "Coração De Jesus",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56300333"
+      },
+      "nascimento": "1976-09-17"
+    },
+    {
+      "nome": "ELOAH LEÃO LIMA",
+      "cpf": "79086453210",
+      "pis": "19013381459",
+      "matricula": "009235",
+      "cargo": "PORTEIRO",
+      "cbo": "8099-20",
+      "salario": 1860.0,
+      "admissao": "2020-11-28",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "74251896000118",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Duarte Rodrigues",
+        "numero": "1155",
+        "bairro": "Comiteco",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53443836"
+      },
+      "nascimento": "1989-09-19"
+    },
+    {
+      "nome": "MAYA GOMES PACHECO",
+      "cpf": "01384927603",
+      "pis": "15687383119",
+      "matricula": "001467",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "8149-72",
+      "salario": 2000.0,
+      "admissao": "2021-04-30",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "74251896000118",
+      "desligado_em": "2026-08-17",
+      "end": {
+        "logradouro": "Rua Novais Montenegro",
+        "numero": "256",
+        "bairro": "Bom Jesus",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53437971"
+      },
+      "nascimento": "1993-06-21"
+    },
+    {
+      "nome": "RAFAELA COSTA FERNANDES",
+      "cpf": "15862734937",
+      "pis": "19987262620",
+      "matricula": "000374",
+      "cargo": "PORTEIRO",
+      "cbo": "5657-69",
+      "salario": 1750.0,
+      "admissao": "2024-05-25",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "74251896000118",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Jesus Vasconcelos",
+        "numero": "1057",
+        "bairro": "Vila Trinta E Um De Março",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53125746"
+      },
+      "nascimento": "1977-03-09"
+    },
+    {
+      "nome": "NICOLE MARQUES CORREIA",
+      "cpf": "83150692768",
+      "pis": "10965473284",
+      "matricula": "002073",
+      "cargo": "PORTEIRO",
+      "cbo": "5676-76",
+      "salario": 2000.0,
+      "admissao": "2023-12-09",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "74251896000118",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Gonçalves da Paz",
+        "numero": "1485",
+        "bairro": "Goiania",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53403337"
+      },
+      "nascimento": "1984-07-09"
+    },
+    {
+      "nome": "ALEXANDRE CAMPOS DA ROCHA",
+      "cpf": "31204596824",
+      "pis": "15684159188",
+      "matricula": "007332",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "7319-61",
+      "salario": 1940.0,
+      "admissao": "2022-03-23",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "74251896000118",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Casa Grande Leão",
+        "numero": "1968",
+        "bairro": "Vila Suzana Primeira Seção",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53460419"
+      },
+      "nascimento": "1982-06-09"
+    },
+    {
+      "nome": "LUAN ALMEIDA COSTA",
+      "cpf": "72485016380",
+      "pis": "19345340818",
+      "matricula": "005085",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "4170-66",
+      "salario": 1920.0,
+      "admissao": "2025-08-14",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "74251896000118",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Siqueira Rezende",
+        "numero": "1873",
+        "bairro": "Vila Tirol",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53485996"
+      },
+      "nascimento": "2003-08-23"
+    },
+    {
+      "nome": "LÉO CÂMARA VARGAS",
+      "cpf": "60927318512",
+      "pis": "10664641480",
+      "matricula": "000413",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "8366-59",
+      "salario": 2080.0,
+      "admissao": "2023-03-11",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "74251896000118",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Costela Moreira",
+        "numero": "1612",
+        "bairro": "Capitão Eduardo",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53407255"
+      },
+      "nascimento": "1989-02-10"
+    },
+    {
+      "nome": "VITOR GABRIEL CAMARGO SIQUEIRA",
+      "cpf": "60534971261",
+      "pis": "14302879277",
+      "matricula": "004661",
+      "cargo": "PORTEIRO",
+      "cbo": "7525-75",
+      "salario": 1870.0,
+      "admissao": "2025-08-08",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "74251896000118",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Leão Montenegro",
+        "numero": "718",
+        "bairro": "Independência",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55016626"
+      },
+      "nascimento": "1973-04-30"
+    },
+    {
+      "nome": "EMANUEL FERNANDES OLIVEIRA",
+      "cpf": "18736459291",
+      "pis": "16303840907",
+      "matricula": "006003",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "4868-18",
+      "salario": 1910.0,
+      "admissao": "2020-08-02",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "74251896000118",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Mendes Barbosa",
+        "numero": "191",
+        "bairro": "Conjunto Novo Dom Bosco",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53458414"
+      },
+      "nascimento": "1993-11-28"
+    },
+    {
+      "nome": "THALES DA MOTA FONSECA",
+      "cpf": "34087251608",
+      "pis": "14247457337",
+      "matricula": "002114",
+      "cargo": "PORTEIRO",
+      "cbo": "7579-60",
+      "salario": 1750.0,
+      "admissao": "2021-01-04",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "74251896000118",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Ferreira Dias",
+        "numero": "707",
+        "bairro": "Paraíso",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53445772"
+      },
+      "nascimento": "1969-02-19"
+    }
+  ],
+  "competencias": [
+    "2026-07",
+    "2026-08"
+  ]
+}

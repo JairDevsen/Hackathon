@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react'
 import { Navigate, Outlet, Route, Routes, useParams } from 'react-router-dom'
-import { Activity, BarChart3, Briefcase, Building2, CalendarDays, ClipboardCheck, Database, FileCog, FileText, FolderCog, Gauge, HardDrive, Home, LifeBuoy, ListChecks, Receipt, ScrollText, Search, Settings, ShieldCheck, Upload, UserCog, Users, Wallet, Bot, Layers, History, Coins, FolderOpen } from 'lucide-react'
+import { Activity, BarChart3, Briefcase, Building2, CalendarDays, ClipboardCheck, Database, FileCog, FileText, FolderCog, Gauge, HardDrive, Home, LifeBuoy, ListChecks, Receipt, ScrollText, Search, Settings, ShieldCheck, Upload, UserCog, Users, Wallet, Bot, Layers, History, Coins, FolderOpen, Truck } from 'lucide-react'
 import { AppShell } from '@/components/shell/AppShell'
 import { filterNav, type NavEntry } from '@/components/shell/nav'
 import { SkeletonRows } from '@/components/ui'
@@ -15,6 +15,7 @@ import { DocumentosPage } from '@/features/rh/Documentos'
 import { BatchDetail, BatchList, BatchUpload } from '@/features/rh/Batches'
 import { ReviewPage } from '@/features/rh/Review'
 import { RiscosPage } from '@/features/rh/Riscos'
+import { SupplierDados, SupplierDocs, SupplierFuncionarios, SupplierLayout, SupplierPendencias, SupplierRiscos, SuppliersPage } from '@/features/rh/Fornecedores'
 import { CalendarPage, EmployeesPage, PendenciasPage, ProfilePage, ReportsPage } from '@/features/rh/Lists'
 const AdminDashboard = lazy(() => import('@/features/empresa/Dashboard').then((m) => ({ default: m.AdminDashboard })))
 const FinopsPage = lazy(() => import('@/features/finops/Finops').then((m) => ({ default: m.FinopsPage })))
@@ -61,6 +62,7 @@ function useNav(): NavEntry[] {
     { kind: 'link', to: '/app', label: 'Início', icon: Home, roles: T },
     { kind: 'link', to: '/app/buscar', label: 'Buscar', icon: Search, roles: T },
     { kind: 'link', to: '/app/funcionarios', label: 'Funcionários', icon: Users, roles: T },
+    { kind: 'link', to: '/app/fornecedores', label: 'Fornecedores', icon: Truck, badge: ov.data?.fornecedores_risco_alto || undefined, roles: T },
     { kind: 'link', to: '/app/documentos', label: 'Documentos', icon: FolderOpen, roles: T },
     { kind: 'link', to: '/app/lotes', label: 'Lotes', icon: FileText, roles: T },
     { kind: 'link', to: '/app/lotes/novo', label: 'Enviar lote', icon: Upload, roles: T },
@@ -126,6 +128,14 @@ export function App() {
           <Route path="linha-do-tempo" element={<DossieTimeline />} />
           <Route path="revisoes" element={<DossieRevisoes />} />
           <Route path="exportar" element={<DossieExport />} />
+        </Route>
+        <Route path="fornecedores" element={<SuppliersPage />} />
+        <Route path="fornecedores/:id" element={<SupplierLayout />}>
+          <Route index element={<SupplierDados />} />
+          <Route path="documentos" element={<SupplierDocs />} />
+          <Route path="funcionarios" element={<SupplierFuncionarios />} />
+          <Route path="pendencias" element={<SupplierPendencias />} />
+          <Route path="riscos" element={<SupplierRiscos />} />
         </Route>
         <Route path="documentos" element={<DocumentosPage />} />
         <Route path="documentos/:id" element={<DocumentPage />} />

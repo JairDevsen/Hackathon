@@ -20,7 +20,7 @@ def _rodar(pdf: bytes):
 
 
 def test_catalogo_tem_32_tipos():
-    assert len(catalogo.CODIGOS) == 32
+    assert len(catalogo.CODIGOS) == 36
 
 
 def test_lote_misto_separa_e_classifica():
@@ -172,3 +172,29 @@ def test_formularios_manuais_por_tipo():
     assert "data_desligamento" in schema_do_tipo("TRCT")["properties"]
     assert "cid" in schema_do_tipo("ATESTADO_MEDICO")["properties"]
     assert "cpf" in schema_do_tipo("OUTRO")["properties"]  # tipos sem schema próprio caem no base
+
+
+def test_cnpj_da_contratada_e_nao_da_contratante():
+    """Um contrato cita duas empresas: o fornecedor é a CONTRATADA, mesmo quando a contratante vem primeiro."""
+    from ia_core.extracao import extrair_campos
+    t = ("CONTRATO DE PRESTACAO DE SERVICO\nCONTRATANTE: AGROTECH GARANHUNS LTDA, CNPJ 14.589.201/0001-80\n"
+         "CONTRATADA: BRILHO LIMPEZA LTDA, CNPJ 11.222.333/0001-81\n")
+    assert extrair_campos(t)["empresa_cnpj"] == "11222333000181"
+    # sem rótulo de contratada, ignora o CNPJ rotulado como contratante
+    t2 = "CONTRATANTE: AGROTECH LTDA CNPJ 14.589.201/0001-80\nEmpresa prestadora 11.222.333/0001-81"
+    assert extrair_campos(t2)["empresa_cnpj"] == "11222333000181"
+    # documento comum: primeiro CNPJ válido
+    assert extrair_campos("CRF FGTS CNPJ: 14.589.201/0001-80")["empresa_cnpj"] == "14589201000180"
+
+
+def test_tipos_de_risco_para_a_contratante():
+    from ia_core import catalogo, schemas
+    casos = {
+        "APOLICE_SEGURO": "APOLICE DE SEGURO SEGURADORA PREMIO DO SEGURO RESPONSABILIDADE CIVIL",
+        "AUTO_INFRACAO": "AUTO DE INFRACAO AUDITOR FISCAL DO TRABALHO FISCALIZACAO DO TRABALHO",
+        "PROCESSO_JUDICIAL": "RECLAMACAO TRABALHISTA VARA DO TRABALHO RECLAMANTE RECLAMADA CITACAO",
+        "RELATORIO_AUDITORIA": "RELATORIO DE AUDITORIA ACHADOS DA AUDITORIA NAO CONFORMIDADES IDENTIFICADAS",
+    }
+    for tipo, texto in casos.items():
+        assert catalogo.classificar(texto)[0] == tipo, tipo
+        assert "empresa_cnpj" in schemas.schema_do_tipo(tipo)["properties"], tipo  # o formulário manual permite corrigir o fornecedor

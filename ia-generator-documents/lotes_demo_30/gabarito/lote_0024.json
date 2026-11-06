@@ -1,0 +1,1638 @@
+{
+  "arquivo": "lote_0024.pdf",
+  "perfil": "admissao",
+  "empresa_cnpj": "24813956000170",
+  "competencia": "2026-10",
+  "degradacao": "forte",
+  "total_paginas": 29,
+  "total_documentos": 25,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 3
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe",
+        "post_it:ver c/ RH"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 3
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 25,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "post_it:pago",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 26,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 27,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 28,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 29,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "OUTRO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-10",
+      "empresa_cnpj": "24813956000170",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        2,
+        3,
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "87492106530",
+      "empregado": "MANUELA ARAGÃO DA MOTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "empregado_nome": "MANUELA ARAGÃO DA MOTA",
+        "empregado_cpf": "87492106530",
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "EXPERIENCIA",
+        "prazo_dias": 45,
+        "data_inicio": "2021-02-27",
+        "cargo": "PORTEIRO",
+        "salario": 1900.0,
+        "jornada": "07:00 às 11:00 e 12:00 às 16:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": false,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "87492106530",
+      "empregado": "MANUELA ARAGÃO DA MOTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "empregado_nome": "Manuela Aragão Da Mota",
+        "empregado_cpf": "87492106530",
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "19667048783",
+        "matricula": "005191",
+        "data_admissao": "2021-02-27",
+        "cargo": "Porteiro",
+        "salario": 1900.0,
+        "foto_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Porteiro"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "27/02/2021"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "87492106530",
+      "empregado": "MANUELA ARAGÃO DA MOTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "empregador_razao_social": "Sales Portaria Terceirização Ltda",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "CONTRATO",
+        "data_anotacao": "2021-02-27",
+        "cargo": "Porteiro",
+        "salario": 1900.0,
+        "ferias_inicio": null,
+        "ferias_fim": null,
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Sales Portaria Terceirização Ltda"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "24.813.956/0001-70"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Recife/PE"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "27/02/2021"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "ASO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "87492106530",
+      "empregado": "MANUELA ARAGÃO DA MOTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "empregado_nome": "Manuela Aragão Da Mota",
+        "empregado_cpf": "87492106530",
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Porteiro",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2021-02-21",
+        "riscos_ocupacionais": [
+          "Ergonômico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Manuella Carvalho",
+        "medico_crm": "CRM-PB 21541"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "DECLARACAO_VALE_TRANSPORTE",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "87492106530",
+      "empregado": "MANUELA ARAGÃO DA MOTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "data_documento": "2021-03-01",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Manuela Aragão Da Mota",
+        "empregado_cpf": "87492106530",
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "opcao": "OPTANTE",
+        "endereco_residencial": "Avenida Montenegro Abreu, 1900 – Itapoa, Recife/PE",
+        "linhas": [
+          {
+            "linha": "085 – Itapoa/Shopping",
+            "tarifa": 4.1,
+            "viagens_por_dia": 2
+          },
+          {
+            "linha": "155 – Itapoa/Shopping",
+            "tarifa": 4.1,
+            "viagens_por_dia": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "4,10"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "87492106530",
+      "empregado": "MANUELA ARAGÃO DA MOTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "data_documento": "2021-02-27",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Manuela Aragão Da Mota",
+        "empregado_cpf": "87492106530",
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "Henrique Mota",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2014-08-25"
+          },
+          {
+            "nome": "Vinícius Mota",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2013-08-16"
+          },
+          {
+            "nome": "Evelyn Mota",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2022-04-07"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "874.921.065-30"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "25/08/2014"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "87492106530",
+      "empregado": "MANUELA ARAGÃO DA MOTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "data_documento": "2021-03-02",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "MANUELA ARAGÃO DA MOTA",
+        "empregado_cpf": "87492106530",
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "PORTEIRO",
+        "riscos": [
+          "Produtos químicos de limpeza",
+          "Cortes e perfurações",
+          "Queda de mesmo nível",
+          "Agentes biológicos"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "TERMO_RESPONSABILIDADE",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "87492106530",
+      "empregado": "MANUELA ARAGÃO DA MOTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "data_documento": "2021-03-01",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "MANUELA ARAGÃO DA MOTA",
+        "empregado_cpf": "87492106530",
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Rádio comunicador",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Bota de segurança",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Lanterna",
+            "quantidade": 2
+          },
+          {
+            "descricao": "Jogo de chaves de fenda",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Camisa do uniforme",
+            "quantidade": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "CHECKLIST_INTEGRACAO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "87492106530",
+      "empregado": "MANUELA ARAGÃO DA MOTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "data_documento": "2021-03-03",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Manuela Aragão Da Mota",
+        "empregado_cpf": null,
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Senha do sistema de ponto",
+            "marcado": true
+          },
+          {
+            "descricao": "Cadastro biométrico de acesso",
+            "marcado": true
+          },
+          {
+            "descricao": "Crachá de identificação entregue",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de uniforme",
+            "marcado": true
+          },
+          {
+            "descricao": "Orientação sobre rotas de fuga",
+            "marcado": false
+          },
+          {
+            "descricao": "Apresentação das normas internas",
+            "marcado": true
+          },
+          {
+            "descricao": "Treinamento de integração de SST",
+            "marcado": true
+          },
+          {
+            "descricao": "Leitura do código de conduta",
+            "marcado": false
+          },
+          {
+            "descricao": "Apresentação ao supervisor do posto",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de EPI",
+            "marcado": true
+          }
+        ],
+        "assinatura_responsavel_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "FICHA_EPI",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "87492106530",
+      "empregado": "MANUELA ARAGÃO DA MOTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "empregado_nome": "Manuela Aragão Da Mota",
+        "empregado_cpf": "87492106530",
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Porteiro",
+        "entregas": [
+          {
+            "data": "2021-05-27",
+            "descricao": "Calçado de segurança",
+            "quantidade": 3,
+            "numero_ca": "46593"
+          },
+          {
+            "data": "2022-10-25",
+            "descricao": "Protetor auricular plug",
+            "quantidade": 1,
+            "numero_ca": "30235"
+          },
+          {
+            "data": "2022-12-18",
+            "descricao": "Calçado de segurança",
+            "quantidade": 2,
+            "numero_ca": "24224"
+          },
+          {
+            "data": "2023-05-04",
+            "descricao": "Protetor auricular plug",
+            "quantidade": 3,
+            "numero_ca": "25112"
+          },
+          {
+            "data": "2024-06-16",
+            "descricao": "Calçado de segurança",
+            "quantidade": 3,
+            "numero_ca": "33353"
+          },
+          {
+            "data": "2025-03-21",
+            "descricao": "Calçado de segurança",
+            "quantidade": 1,
+            "numero_ca": "40279"
+          },
+          {
+            "data": "2025-05-22",
+            "descricao": "Protetor auricular plug",
+            "quantidade": 1,
+            "numero_ca": "37602"
+          },
+          {
+            "data": "2026-06-27",
+            "descricao": "Calçado de segurança",
+            "quantidade": 2,
+            "numero_ca": "38613"
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "27/05/2021"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "25/10/2022"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "18/12/2022"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "CALÇADO DE SEGURANÇA"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "40279"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "CALÇADO DE SEGURANÇA"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "DECLARACAO_MANUSCRITA",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "87492106530",
+      "empregado": "MANUELA ARAGÃO DA MOTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "data_documento": "2026-06-09",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Manuela Aragão Da Mota",
+        "empregado_cpf": "87492106530",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "RESIDENCIA",
+        "endereco": "Avenida Montenegro Abreu, 1900 – Itapoa, Recife/PE"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "Integração de SST",
+        "data": "2026-07-28",
+        "carga_horaria_horas": 4.0,
+        "instrutor": "Julia Gonçalves",
+        "participantes": [
+          {
+            "nome": "Maria Alice Dias Borges",
+            "cpf": "29564710316",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Alice Azevedo Rocha",
+            "cpf": "42698715391",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "João Pedro Da Rosa Da Costa",
+            "cpf": "31054987610",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Carolina Sousa Novaes",
+            "cpf": "34260159863",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Manuela Aragão Da Mota",
+            "cpf": "87492106530",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Pietra Pastor Costela",
+            "cpf": "15407693801",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Anna Liz Correia Cirino",
+            "cpf": "63870149213",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Isaac Vieira Freitas",
+            "cpf": "20745689329",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Breno Alves Porto",
+            "cpf": "27358149637",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Gustavo Da Costa Dias",
+            "cpf": "96078214322",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Ana Carolina Viana Lopes",
+            "cpf": "49382756000",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Henrique Rocha Freitas",
+            "cpf": "60283951451",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [
+        {
+          "regra": "cpf_invalido",
+          "descricao": "CPF impresso com dígito verificador errado",
+          "campo": "participantes"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "João Pedro Da Rosa Da Costa"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Isaac Vieira Freitas"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "273.581.496-37"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Ana Carolina Viana Lopes"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        17,
+        18,
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31054987610",
+      "empregado": "JOÃO PEDRO DA ROSA DA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "empregado_nome": "JOÃO PEDRO DA ROSA DA COSTA",
+        "empregado_cpf": "31054987610",
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "PRAZO_INDETERMINADO",
+        "prazo_dias": null,
+        "data_inicio": "2021-01-19",
+        "cargo": "RECEPCIONISTA",
+        "salario": 1820.0,
+        "jornada": "07:00 às 11:00 e 12:00 às 16:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Recife, 19/01/2021"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31054987610",
+      "empregado": "JOÃO PEDRO DA ROSA DA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "empregado_nome": "João Pedro Da Rosa Da Costa",
+        "empregado_cpf": "31054987610",
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "17592308329",
+        "matricula": "003779",
+        "data_admissao": "2021-01-19",
+        "cargo": "Recepcionista",
+        "salario": 1820.0,
+        "foto_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "15/09/1989"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Recepcionista"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "07:00 – 11:00 – 12:00 – 16:00"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31054987610",
+      "empregado": "JOÃO PEDRO DA ROSA DA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "ALTERACAO_SALARIAL",
+        "data_anotacao": "2025-12-17",
+        "cargo": "Recepcionista",
+        "salario": 2030.0,
+        "ferias_inicio": null,
+        "ferias_fim": null,
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "ASO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31054987610",
+      "empregado": "JOÃO PEDRO DA ROSA DA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "empregado_nome": "João Pedro Da Rosa Da Costa",
+        "empregado_cpf": "31054987610",
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Recepcionista",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2021-01-16",
+        "riscos_ocupacionais": [
+          "Químico"
+        ],
+        "conclusao": "INAPTO",
+        "medico_nome": "Dr(a). Daniel Campos",
+        "medico_crm": "CRM-BA 28372"
+      },
+      "nao_conformidades": [
+        {
+          "regra": "aso_inapto",
+          "descricao": "ASO com conclusão INAPTO",
+          "campo": "conclusao"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "16/01/2021"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        24
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31054987610",
+      "empregado": "JOÃO PEDRO DA ROSA DA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "data_documento": "2021-01-20",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "João Pedro Da Rosa Da Costa",
+        "empregado_cpf": "31054987610",
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "André Costa",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2014-07-28"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Recife, 20/01/2021"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        25
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31054987610",
+      "empregado": "JOÃO PEDRO DA ROSA DA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "data_documento": "2021-01-19",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "JOÃO PEDRO DA ROSA DA COSTA",
+        "empregado_cpf": "31054987610",
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "RECEPCIONISTA",
+        "riscos": [
+          "Queda de mesmo nível",
+          "Choque elétrico",
+          "Ruído",
+          "Cortes e perfurações"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Recife, 19/01/2021"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "TERMO_RESPONSABILIDADE",
+      "paginas": [
+        26
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31054987610",
+      "empregado": "JOÃO PEDRO DA ROSA DA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "data_documento": "2021-01-24",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "JOÃO PEDRO DA ROSA DA COSTA",
+        "empregado_cpf": "31054987610",
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Calça do uniforme",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Bota de segurança",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Crachá funcional",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Molho de chaves do posto",
+            "quantidade": 1
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "CHECKLIST_INTEGRACAO",
+      "paginas": [
+        27
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31054987610",
+      "empregado": "JOÃO PEDRO DA ROSA DA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "data_documento": "2021-01-19",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "João Pedro Da Rosa Da Costa",
+        "empregado_cpf": null,
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Entrega de uniforme",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de EPI",
+            "marcado": true
+          },
+          {
+            "descricao": "Crachá de identificação entregue",
+            "marcado": true
+          },
+          {
+            "descricao": "Apresentação ao supervisor do posto",
+            "marcado": true
+          },
+          {
+            "descricao": "Orientação sobre rotas de fuga",
+            "marcado": true
+          },
+          {
+            "descricao": "Treinamento de integração de SST",
+            "marcado": true
+          },
+          {
+            "descricao": "Senha do sistema de ponto",
+            "marcado": true
+          },
+          {
+            "descricao": "Cadastro biométrico de acesso",
+            "marcado": true
+          }
+        ],
+        "assinatura_responsavel_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "FICHA_EPI",
+      "paginas": [
+        28
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31054987610",
+      "empregado": "JOÃO PEDRO DA ROSA DA COSTA",
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "empregado_nome": "João Pedro Da Rosa Da Costa",
+        "empregado_cpf": "31054987610",
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Recepcionista",
+        "entregas": [
+          {
+            "data": "2022-03-04",
+            "descricao": "Calçado de segurança",
+            "quantidade": 2,
+            "numero_ca": "20094"
+          },
+          {
+            "data": "2022-09-25",
+            "descricao": "Protetor auricular plug",
+            "quantidade": 1,
+            "numero_ca": "11667"
+          },
+          {
+            "data": "2024-05-13",
+            "descricao": "Protetor auricular plug",
+            "quantidade": 2,
+            "numero_ca": "49466"
+          },
+          {
+            "data": "2024-11-05",
+            "descricao": "Calçado de segurança",
+            "quantidade": 1,
+            "numero_ca": "18696"
+          },
+          {
+            "data": "2025-04-15",
+            "descricao": "Calçado de segurança",
+            "quantidade": 1,
+            "numero_ca": "40893"
+          },
+          {
+            "data": "2025-08-03",
+            "descricao": "Calçado de segurança",
+            "quantidade": 1,
+            "numero_ca": "29805"
+          },
+          {
+            "data": "2026-05-17",
+            "descricao": "Protetor auricular plug",
+            "quantidade": 1,
+            "numero_ca": "26690"
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Calçado de segurança"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Protetor auricular plug"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Calçado de segurança"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Protetor auricular plug"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 23,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        29
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "24813956000170",
+      "dados": {
+        "empregador_razao_social": "SALES PORTARIA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "24813956000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "Integração de SST",
+        "data": "2026-05-05",
+        "carga_horaria_horas": 4.0,
+        "instrutor": "Dante Oliveira",
+        "participantes": [
+          {
+            "nome": "Gustavo Da Costa Dias",
+            "cpf": "96078214322",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Breno Alves Porto",
+            "cpf": "27358149637",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Ana Carolina Viana Lopes",
+            "cpf": "49382756000",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Pietra Pastor Costela",
+            "cpf": "15407693801",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Henrique Rocha Freitas",
+            "cpf": "60283951451",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Isaac Vieira Freitas",
+            "cpf": "20745689329",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Maria Alice Dias Borges",
+            "cpf": null,
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "ISAAC VIEIRA FREITAS"
+        },
+        {
+          "defeito": "campo_em_branco",
+          "campo": "participantes.cpf"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 24,
+      "tipo": "OUTRO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 25,
+      "tipo": "OUTRO",
+      "paginas": [
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      18,
+      18
+    ],
+    "degradacao": "forte",
+    "taxa_nc": 0.31,
+    "perfil": "admissao",
+    "embaralhar": 0.19,
+    "paginas_em_branco": 0.08,
+    "fora_de_ordem": 0.24,
+    "intercalar": 0.23,
+    "taxa_defeito": 0.11,
+    "taxa_branco": 0.01,
+    "extras": 0.21,
+    "p_celular": 0.2,
+    "p_cabeca_para_baixo": 0.06,
+    "seed": 42024
+  }
+}

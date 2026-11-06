@@ -22,6 +22,14 @@ func (s *Server) tenantRoutes(t *gin.RouterGroup) {
 	t.GET("/requirements", s.listRequirements)
 	t.GET("/tenant", s.getTenant)
 
+	// fornecedores e terceirizadas (agrupados pelo CNPJ lido nos documentos)
+	t.GET("/suppliers", s.listSuppliers)
+	t.POST("/suppliers", auth.RequirePerm("funcionarios:gerir"), s.createSupplier)
+	t.GET("/suppliers/:id", s.getSupplier)
+	t.PATCH("/suppliers/:id", auth.RequirePerm("funcionarios:gerir"), s.patchSupplier)
+	t.GET("/suppliers/:id/documents", s.supplierDocuments)
+	t.GET("/suppliers/:id/compliance", s.supplierCompliance)
+
 	// funcionários e dossiê
 	t.GET("/employees", s.listEmployees)
 	t.POST("/employees", auth.RequirePerm("funcionarios:gerir"), s.createEmployee)

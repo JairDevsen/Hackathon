@@ -279,6 +279,7 @@ A sidebar muda conforme o perfil do usuário. [ACESSO.md](ACESSO.md) explica Mas
 | **Lotes e Enviar lote** | Upload retomável de PDF ou imagens, validação, acompanhamento do processamento, resultado por documento, reenvio de cópia legível e exportação do lote separado. |
 | **Documentos** | Lista e filtra documentos; abre páginas, campos extraídos, alertas e versões; permite baixar o PDF original, pesquisável ou anonimizado conforme a permissão. |
 | **Revisão** | Prioriza baixa confiança, ilegibilidade e ausência de vínculo; permite corrigir tipo e campos, vincular funcionário, dividir/juntar páginas, rejeitar ou solicitar novo envio. |
+| **Fornecedores** | Terceirizadas e fornecedores agrupados pelo CNPJ lido nos documentos: dados e contrato, documentos da empresa, funcionários alocados, documentos exigidos e indicadores de risco de processo trabalhista para a contratante. |
 | **Pendências, Riscos trabalhistas e Calendário** | Aplica a matriz de documentos exigidos, acompanha faltas e vencimentos e mostra possíveis divergências de jornada, remuneração, rescisão e prova documental. |
 | **Relatórios e Escala 950k & FinOps** | Exporta relatórios CSV/XLSX e mostra consumo de análise; a simulação de escala usa premissas, não preços oficiais de modelos. |
 | **Configurações e Conta** | Administrador define unidades, setores, cargos, exigências, campos de cadastro, usuários, retenção e acesso de suporte; consulta plano, auditoria e logs. |
@@ -321,7 +322,7 @@ Esta seção descreve o que acontece com um arquivo enviado, da página escanead
 
 1. O PDF ou a imagem vira uma lista de páginas, renderizadas em 150 dpi, com miniatura e as palavras com suas coordenadas. Quando a página tem texto digital, ele é lido direto; quando é só imagem, usa-se OCR (Tesseract em português) se estiver instalado.
 2. Antes de ler o conteúdo, o sistema confere a imagem: página sem conteúdo é marcada **em branco** (e descartada) e página com baixa nitidez é marcada **borrada** (`qualidade_img.py`, limite configurável em `IA_NITIDEZ_MIN`). Uma foto desfocada não é confundida com página em branco: ela vira um alerta de erro e pede uma imagem melhor. O limite foi calibrado com amostras sintéticas; ajuste-o com imagens reais.
-3. Cada página recebe um **tipo** (um dos 32 do catálogo, ou `OUTRO`), uma confiança e a informação "inicia um documento novo?".
+3. Cada página recebe um **tipo** (um dos 36 do catálogo, ou `OUTRO`), uma confiança e a informação "inicia um documento novo?".
 4. O agrupamento é determinístico: uma página que inicia documento abre um grupo; verso e continuações são anexados ao último documento **do mesmo tipo**, mesmo que haja páginas de outros tipos no meio (frente e verso digitalizados separados). Página em branco encerra o documento corrente. O resultado é a lista de documentos, cada um com as suas páginas.
 5. O sistema tolera falha no meio do processamento: cada página é gravada ao ser analisada, e o worker retoma de onde parou.
 
@@ -370,6 +371,18 @@ Um segundo cálculo cruza os documentos do mesmo funcionário e grava **indicado
 | Qualidade documental | Imagem borrada, página ilegível, dados divergentes, CPF inválido | CLT art. 818 (prova) |
 
 Pontos importantes: os indicadores são **sinais de triagem**, não parecer jurídico nem prova de infração, e o texto do sistema diz isso. Documentos de saúde seguem a permissão `saude:ler`. Somente o administrador pode **ignorar** um indicador (com justificativa registrada na auditoria) ou reabri-lo, e o recálculo preserva essa decisão. Dados digitados manualmente podem **acrescentar** indicadores, mas nunca fazem um indicador de ausência desaparecer: isso exige um documento com imagem.
+
+**6b. Fornecedores e terceirizadas: três grupos de trabalhadores** (`backend/internal/documents/suppliers.go`, `compliance/risk.go`)
+
+Uma empresa que contrata terceirizadas responde de forma subsidiária pelas obrigações trabalhistas que elas deixarem de cumprir (TST Súmula 331, IV e VI; Lei 6.019/74, art. 5º-A, §5º). Por isso o sistema separa quem trabalha para a empresa em **três grupos**: a **própria empresa**, as **terceirizadas** e os **fornecedores** (que também podem ter trabalhadores alocados). A separação vale para funcionários, documentos, conformidade, riscos e para o painel.
+
+1. **Identificação pelo CNPJ.** O IA Core lê o CNPJ da empresa do documento (`empresa_cnpj`). Em um contrato, que cita duas empresas, vale o da **contratada/prestadora**, não o da contratante (`ia_core/extracao.py`). Um CNPJ igual ao da própria empresa não cria fornecedor.
+2. **Pré-cadastro do fornecedor.** CNPJ válido e desconhecido cria um fornecedor "pré-cadastrado" (a mesma chave `pre_cadastro_automatico` dos funcionários). O RH completa o tipo (terceirizada ou fornecedor), a criticidade e as datas do contrato. Um CNPJ válido nunca é fundido com outro: o CNPJ é único por empresa contratante.
+3. **Agrupamento.** O funcionário pré-cadastrado a partir de um documento herda o empregador. Um documento de **outra** empresa para o mesmo funcionário vai para revisão com o motivo `EMPREGADOR_DIVERGENTE` (possível troca de empregador). Se o revisor corrigir o CNPJ, o documento muda de fornecedor.
+4. **Documentos exigidos.** As exigências de escopo *empresa* (CRF do FGTS, CNDT, CND federal, guias de FGTS e DARF mensais, contrato, apólice de seguro) são avaliadas **por fornecedor**, com os documentos dele. A terceirizada, ou o fornecedor com trabalhadores alocados, é cobrada por certidões e guias mensais; o fornecedor sem trabalhadores, só pelos documentos não mensais. O ciclo mensal começa no início do contrato ou na primeira competência com documento: o sistema não inventa meses de pendência.
+5. **Exposição a processo trabalhista.** Cada fornecedor recebe um nível calculado: **alta** (indicador de risco alto ou documento exigido vencido), **média** (indicador ou exigência pendente) ou **baixa** (tudo em dia). Os indicadores específicos são: certidão ausente, contrato ausente ou vencido com trabalhadores alocados, guia de FGTS ausente na competência com holerite ou ponto, autuação ou fiscalização, processo trabalhista, auditoria com risco alto e empregador divergente. Cada um traz a base legal e o documento de origem. Quatro tipos de documento foram acrescentados ao catálogo para isso: apólice de seguro, auto de infração, processo judicial e relatório de auditoria.
+
+São indicadores de triagem, não parecer jurídico. Dado digitado manualmente pode acrescentar indicadores (por exemplo, registrar um processo), mas nunca faz desaparecer um indicador de ausência: isso exige documento com imagem.
 
 **7. Métricas e painéis** (`backend/internal/http/reports.go`)
 

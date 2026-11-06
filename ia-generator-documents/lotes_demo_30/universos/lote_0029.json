@@ -1,0 +1,432 @@
+{
+  "seed": 42029,
+  "data_referencia": "2026-10-16",
+  "empresas": [
+    {
+      "razao_social": "CAMARGO LIMPEZA TERCEIRIZAÇÃO LTDA",
+      "cnpj": "20435198000143",
+      "endereco": "Rua Freitas Gomes, 1939 – Vila Maloca",
+      "cidade": "Arcoverde/PE",
+      "segmento": "Limpeza e Conservação",
+      "end": {
+        "logradouro": "Rua Freitas Gomes",
+        "numero": "1939",
+        "bairro": "Vila Maloca",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56500258"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "YAGO BORGES SANTOS",
+      "cpf": "20897134532",
+      "pis": "13412080518",
+      "matricula": "002366",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "7795-51",
+      "salario": 2340.0,
+      "admissao": "2024-01-01",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "20435198000143",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Sá das Neves",
+        "numero": "185",
+        "bairro": "Guaratã",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56519312"
+      },
+      "nascimento": "1993-09-05"
+    },
+    {
+      "nome": "EVELYN GOMES BORGES",
+      "cpf": "94837516084",
+      "pis": "12614869025",
+      "matricula": "001037",
+      "cargo": "SERVENTE",
+      "cbo": "4071-95",
+      "salario": 1780.0,
+      "admissao": "2020-09-26",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "20435198000143",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Cunha Vasconcelos",
+        "numero": "1872",
+        "bairro": "Senhor Dos Passos",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53422805"
+      },
+      "nascimento": "1980-12-01"
+    },
+    {
+      "nome": "LARISSA NUNES ARAGÃO",
+      "cpf": "20865319740",
+      "pis": "19643234382",
+      "matricula": "005144",
+      "cargo": "SERVENTE",
+      "cbo": "7236-20",
+      "salario": 1740.0,
+      "admissao": "2020-05-19",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "20435198000143",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Costa Cavalcanti",
+        "numero": "673",
+        "bairro": "Vila Sumaré",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56501705"
+      },
+      "nascimento": "1980-10-10"
+    },
+    {
+      "nome": "MARIAH DA ROSA PASTOR",
+      "cpf": "85629140370",
+      "pis": "12435459418",
+      "matricula": "009096",
+      "cargo": "SERVENTE",
+      "cbo": "4383-28",
+      "salario": 1760.0,
+      "admissao": "2022-08-18",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "20435198000143",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa da Cruz Sampaio",
+        "numero": "1743",
+        "bairro": "Satelite",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56500345"
+      },
+      "nascimento": "2002-03-20"
+    },
+    {
+      "nome": "ANA LIZ GONÇALVES BARROS",
+      "cpf": "14320789504",
+      "pis": "12559050945",
+      "matricula": "000116",
+      "cargo": "SERVENTE",
+      "cbo": "8680-49",
+      "salario": 1760.0,
+      "admissao": "2021-04-18",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "20435198000143",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Mota Costa",
+        "numero": "769",
+        "bairro": "Maravilha",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56515026"
+      },
+      "nascimento": "2000-08-28"
+    },
+    {
+      "nome": "VICENTE FOGAÇA SÁ",
+      "cpf": "94168072304",
+      "pis": "16191715960",
+      "matricula": "005197",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "6411-53",
+      "salario": 1850.0,
+      "admissao": "2024-01-23",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "20435198000143",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Leão Leão",
+        "numero": "1652",
+        "bairro": "Renascença",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56501978"
+      },
+      "nascimento": "1992-09-08"
+    },
+    {
+      "nome": "BENJAMIN FERNANDES ARAGÃO",
+      "cpf": "47182506335",
+      "pis": "17933081299",
+      "matricula": "001377",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "8834-56",
+      "salario": 1840.0,
+      "admissao": "2025-08-29",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "20435198000143",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Pimenta da Rocha",
+        "numero": "66",
+        "bairro": "Aarão Reis",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56517799"
+      },
+      "nascimento": "1972-04-20"
+    },
+    {
+      "nome": "ANA LÍVIA VIEIRA NOVAES",
+      "cpf": "04873596238",
+      "pis": "19242579460",
+      "matricula": "006118",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "7166-29",
+      "salario": 1720.0,
+      "admissao": "2024-08-17",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "20435198000143",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Porto Câmara",
+        "numero": "1742",
+        "bairro": "Manacas",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54050077"
+      },
+      "nascimento": "1993-11-01"
+    },
+    {
+      "nome": "JOANA VIEIRA AZEVEDO",
+      "cpf": "91702438597",
+      "pis": "19600987192",
+      "matricula": "004553",
+      "cargo": "SERVENTE",
+      "cbo": "7883-16",
+      "salario": 1650.0,
+      "admissao": "2021-12-25",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "20435198000143",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Fernandes Marques",
+        "numero": "296",
+        "bairro": "Bela Vitoria",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55299804"
+      },
+      "nascimento": "1991-08-29"
+    },
+    {
+      "nome": "JULIA SILVEIRA DA ROCHA",
+      "cpf": "04957382638",
+      "pis": "13799269788",
+      "matricula": "007780",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "8620-24",
+      "salario": 2790.0,
+      "admissao": "2026-05-12",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "20435198000143",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Cunha Araújo",
+        "numero": "1865",
+        "bairro": "São Geraldo",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56515063"
+      },
+      "nascimento": "1996-10-16"
+    },
+    {
+      "nome": "EMANUEL CAVALCANTI PASTOR",
+      "cpf": "15023976840",
+      "pis": "12108511573",
+      "matricula": "007355",
+      "cargo": "SERVENTE",
+      "cbo": "4977-85",
+      "salario": 1680.0,
+      "admissao": "2022-11-12",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "20435198000143",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Cavalcante Martins",
+        "numero": "1411",
+        "bairro": "Serrano",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55216534"
+      },
+      "nascimento": "1983-03-12"
+    },
+    {
+      "nome": "JUAN DA MATA CASA GRANDE",
+      "cpf": "57432618062",
+      "pis": "12737674796",
+      "matricula": "002748",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "5996-28",
+      "salario": 2400.0,
+      "admissao": "2024-09-20",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "20435198000143",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Azevedo Sales",
+        "numero": "1003",
+        "bairro": "Conjunto Paulo Vi",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56512544"
+      },
+      "nascimento": "1977-12-23"
+    },
+    {
+      "nome": "ANTONY BRITO BARBOSA",
+      "cpf": "47609382574",
+      "pis": "15575144872",
+      "matricula": "004136",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "4908-12",
+      "salario": 2640.0,
+      "admissao": "2023-09-01",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "20435198000143",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Pinto Montenegro",
+        "numero": "1015",
+        "bairro": "Paulo Vi",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56512075"
+      },
+      "nascimento": "1973-07-24"
+    },
+    {
+      "nome": "ISAQUE SANTOS PEIXOTO",
+      "cpf": "47012953888",
+      "pis": "11881288123",
+      "matricula": "009549",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "8274-18",
+      "salario": 1840.0,
+      "admissao": "2023-01-07",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "20435198000143",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Pereira Viana",
+        "numero": "585",
+        "bairro": "Ipe",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56519892"
+      },
+      "nascimento": "2000-02-25"
+    },
+    {
+      "nome": "ARTHUR GABRIEL LEÃO SIQUEIRA",
+      "cpf": "37294658056",
+      "pis": "19097897362",
+      "matricula": "008842",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "9664-98",
+      "salario": 2380.0,
+      "admissao": "2021-10-06",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "20435198000143",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Novaes Sampaio",
+        "numero": "353",
+        "bairro": "Copacabana",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54023071"
+      },
+      "nascimento": "1986-03-06"
+    }
+  ],
+  "competencias": [
+    "2026-08",
+    "2026-09"
+  ]
+}

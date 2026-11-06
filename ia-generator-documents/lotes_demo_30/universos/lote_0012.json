@@ -1,0 +1,432 @@
+{
+  "seed": 42012,
+  "data_referencia": "2026-11-15",
+  "empresas": [
+    {
+      "razao_social": "MONTENEGRO COPA SERVIÇOS LTDA",
+      "cnpj": "47538092000121",
+      "endereco": "Rua Correia Aparecida, 580 – Alpes",
+      "cidade": "Recife/PE",
+      "segmento": "Copa e Cozinha",
+      "end": {
+        "logradouro": "Rua Correia Aparecida",
+        "numero": "580",
+        "bairro": "Alpes",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52868630"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "BENJAMIN MONTENEGRO CAVALCANTE",
+      "cpf": "18754902649",
+      "pis": "11908219887",
+      "matricula": "008058",
+      "cargo": "COZINHEIRA",
+      "cbo": "9825-79",
+      "salario": 2290.0,
+      "admissao": "2021-05-06",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "47538092000121",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Gonçalves Mendonça",
+        "numero": "812",
+        "bairro": "Vila Real 2ª Seção",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "51994770"
+      },
+      "nascimento": "2000-06-05"
+    },
+    {
+      "nome": "DAVI LUCCA CORREIA RIBEIRO",
+      "cpf": "81526403951",
+      "pis": "18545801721",
+      "matricula": "000932",
+      "cargo": "COPEIRA",
+      "cbo": "9076-81",
+      "salario": 1700.0,
+      "admissao": "2020-06-19",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "47538092000121",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Pires Cavalcante",
+        "numero": "1911",
+        "bairro": "Barão Homem De Melo 1ª Seção",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56505560"
+      },
+      "nascimento": "1995-12-21"
+    },
+    {
+      "nome": "SAMUEL ROCHA MELO",
+      "cpf": "96241083589",
+      "pis": "15553387403",
+      "matricula": "000362",
+      "cargo": "COPEIRA",
+      "cbo": "6969-44",
+      "salario": 1690.0,
+      "admissao": "2025-12-23",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "47538092000121",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Viana Silva",
+        "numero": "753",
+        "bairro": "Itaipu",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "51258934"
+      },
+      "nascimento": "2007-04-04"
+    },
+    {
+      "nome": "BIANCA FERNANDES SANTOS",
+      "cpf": "39720561416",
+      "pis": "10205989532",
+      "matricula": "005413",
+      "cargo": "COPEIRA",
+      "cbo": "9179-69",
+      "salario": 1690.0,
+      "admissao": "2022-10-10",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "47538092000121",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Barros da Rosa",
+        "numero": "1597",
+        "bairro": "Tiradentes",
+        "municipio": "Serra Talhada",
+        "uf": "PE",
+        "cep": "56902402"
+      },
+      "nascimento": "1979-06-10"
+    },
+    {
+      "nome": "EMILLY DAS NEVES ALMEIDA",
+      "cpf": "15809623786",
+      "pis": "10114007672",
+      "matricula": "003142",
+      "cargo": "COPEIRA",
+      "cbo": "7126-31",
+      "salario": 1800.0,
+      "admissao": "2020-11-01",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "47538092000121",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Conceição Duarte",
+        "numero": "1333",
+        "bairro": "Vila Calafate",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55296892"
+      },
+      "nascimento": "1999-02-27"
+    },
+    {
+      "nome": "MARIA FLOR CAVALCANTI ANDRADE",
+      "cpf": "53460812915",
+      "pis": "13985305241",
+      "matricula": "001913",
+      "cargo": "COPEIRA",
+      "cbo": "5267-46",
+      "salario": 1720.0,
+      "admissao": "2021-05-21",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "47538092000121",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Aparecida Barbosa",
+        "numero": "822",
+        "bairro": "Candelaria",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55214473"
+      },
+      "nascimento": "1975-04-13"
+    },
+    {
+      "nome": "ANA JULIA VIEIRA ANDRADE",
+      "cpf": "07635189484",
+      "pis": "13948101956",
+      "matricula": "007030",
+      "cargo": "COZINHEIRA",
+      "cbo": "4588-65",
+      "salario": 2090.0,
+      "admissao": "2020-08-28",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "47538092000121",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Brito Rezende",
+        "numero": "1031",
+        "bairro": "Nova Pampulha",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52862012"
+      },
+      "nascimento": "1992-04-25"
+    },
+    {
+      "nome": "ENZO AZEVEDO MARTINS",
+      "cpf": "43510268717",
+      "pis": "10408853201",
+      "matricula": "000887",
+      "cargo": "COZINHEIRA",
+      "cbo": "4512-71",
+      "salario": 2140.0,
+      "admissao": "2022-12-30",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "47538092000121",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Cassiano da Paz",
+        "numero": "614",
+        "bairro": "Leticia",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52908202"
+      },
+      "nascimento": "1986-10-04"
+    },
+    {
+      "nome": "ANTONY PIMENTA MENDONÇA",
+      "cpf": "36795482065",
+      "pis": "17705099592",
+      "matricula": "001695",
+      "cargo": "COZINHEIRA",
+      "cbo": "7527-15",
+      "salario": 2050.0,
+      "admissao": "2026-02-16",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "47538092000121",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Costela Pastor",
+        "numero": "1849",
+        "bairro": "Heliopolis",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55159958"
+      },
+      "nascimento": "1981-01-17"
+    },
+    {
+      "nome": "JOAQUIM ABREU BORGES",
+      "cpf": "95603142707",
+      "pis": "11798718191",
+      "matricula": "005442",
+      "cargo": "COPEIRA",
+      "cbo": "6927-20",
+      "salario": 1820.0,
+      "admissao": "2023-05-07",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "47538092000121",
+      "desligado_em": "2026-10-22",
+      "end": {
+        "logradouro": "Avenida da Conceição Pastor",
+        "numero": "1658",
+        "bairro": "Jaraguá",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "51432837"
+      },
+      "nascimento": "1968-08-16"
+    },
+    {
+      "nome": "AYLA BRITO ARAÚJO",
+      "cpf": "40516893793",
+      "pis": "11238203382",
+      "matricula": "005014",
+      "cargo": "COZINHEIRA",
+      "cbo": "5485-33",
+      "salario": 2150.0,
+      "admissao": "2023-09-05",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "47538092000121",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Ferreira da Rosa",
+        "numero": "920",
+        "bairro": "Vila Do Pombal",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "51570793"
+      },
+      "nascimento": "2001-03-18"
+    },
+    {
+      "nome": "MARIA LAURA FOGAÇA MOREIRA",
+      "cpf": "43620789169",
+      "pis": "14730740005",
+      "matricula": "002732",
+      "cargo": "COZINHEIRA",
+      "cbo": "4729-16",
+      "salario": 2220.0,
+      "admissao": "2022-09-13",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "47538092000121",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Andrade Rezende",
+        "numero": "398",
+        "bairro": "Manacas",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52694969"
+      },
+      "nascimento": "1981-03-18"
+    },
+    {
+      "nome": "APOLLO NUNES PIRES",
+      "cpf": "95130726499",
+      "pis": "14997810556",
+      "matricula": "006874",
+      "cargo": "COZINHEIRA",
+      "cbo": "7582-64",
+      "salario": 2390.0,
+      "admissao": "2021-04-05",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "47538092000121",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Rezende Rocha",
+        "numero": "824",
+        "bairro": "Monte São José",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52585213"
+      },
+      "nascimento": "1966-05-16"
+    },
+    {
+      "nome": "DANTE PASTOR DA ROCHA",
+      "cpf": "61749302543",
+      "pis": "10131818934",
+      "matricula": "003129",
+      "cargo": "COZINHEIRA",
+      "cbo": "5056-82",
+      "salario": 2030.0,
+      "admissao": "2023-03-31",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "47538092000121",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Pimenta Vasconcelos",
+        "numero": "1995",
+        "bairro": "Leonina",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "50144619"
+      },
+      "nascimento": "2000-02-12"
+    },
+    {
+      "nome": "EDUARDA BARROS ABREU",
+      "cpf": "64892570338",
+      "pis": "11848819042",
+      "matricula": "006424",
+      "cargo": "COPEIRA",
+      "cbo": "4936-90",
+      "salario": 1660.0,
+      "admissao": "2023-09-18",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "47538092000121",
+      "desligado_em": "2026-10-26",
+      "end": {
+        "logradouro": "Avenida Cavalcante Porto",
+        "numero": "402",
+        "bairro": "Dom Bosco",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "51748812"
+      },
+      "nascimento": "1996-07-30"
+    }
+  ],
+  "competencias": [
+    "2026-09",
+    "2026-10"
+  ]
+}

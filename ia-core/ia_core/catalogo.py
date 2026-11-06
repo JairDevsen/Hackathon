@@ -1,4 +1,4 @@
-"""Catálogo dos 32 tipos documentais do IA Core (mesmo código do `document_types` do backend Go)."""
+"""Catálogo dos 36 tipos documentais do IA Core (mesmo código do `document_types` do backend Go)."""
 import re
 import unicodedata
 from typing import Dict, List, Optional
@@ -44,11 +44,16 @@ TIPOS: Dict[str, dict] = {
     "DARF": dict(nome="DARF", pistas=[r"\bDARF\b", "DOCUMENTO DE ARRECADACAO DE RECEITAS FEDERAIS"], assina=False),
     "LISTA_PRESENCA": dict(nome="Lista de presença", pistas=["LISTA DE PRESENCA", "PRESENCA EM TREINAMENTO"], assina=False),
     "CONTRATO_PRESTACAO_SERVICO": dict(nome="Contrato de prestação de serviço", pistas=["CONTRATO DE PRESTACAO DE SERVICO", "INSTRUMENTO PARTICULAR", "PRESTADORA", "CONTRATANTE"], assina=True),
+    # documentos da empresa terceirizada/fornecedora que revelam risco para a contratante
+    "APOLICE_SEGURO": dict(nome="Apólice de seguro", pistas=["APOLICE DE SEGURO", "SEGURADORA", "PREMIO DO SEGURO", "VIGENCIA DA APOLICE", "SEGURO DE VIDA EM GRUPO", "RESPONSABILIDADE CIVIL", r"\bAPOLICE\b"], assina=False),
+    "AUTO_INFRACAO": dict(nome="Auto de infração / fiscalização", pistas=["AUTO DE INFRACAO", "AUDITOR FISCAL DO TRABALHO", "MINISTERIO PUBLICO DO TRABALHO", "FISCALIZACAO DO TRABALHO", "TERMO DE AJUSTAMENTO DE CONDUTA", "NOTIFICACAO FISCAL"], assina=False),
+    "PROCESSO_JUDICIAL": dict(nome="Citação / processo judicial", pistas=["RECLAMACAO TRABALHISTA", "VARA DO TRABALHO", "TRIBUNAL REGIONAL DO TRABALHO", r"\bRECLAMANTE\b", r"\bRECLAMADA\b", r"\bCITACAO\b", "NUMERO DO PROCESSO"], assina=False),
+    "RELATORIO_AUDITORIA": dict(nome="Relatório de auditoria / diligência", pistas=["RELATORIO DE AUDITORIA", "RELATORIO DE DILIGENCIA", "AUDITORIA DE FORNECEDOR", "ACHADOS DA AUDITORIA", "NAO CONFORMIDADES IDENTIFICADAS"], assina=False),
     "OUTRO": dict(nome="Outro", pistas=[], assina=False),
 }
 
 CODIGOS: List[str] = list(TIPOS.keys())
-assert len(CODIGOS) == 32, "o catálogo deve ter exatamente 32 tipos"
+assert len(CODIGOS) == 36, "o catálogo deve ter exatamente 36 tipos"
 
 # Mapeamento dos códigos do protótipo antigo.
 LEGADO = {

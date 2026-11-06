@@ -1,0 +1,378 @@
+{
+  "seed": 42002,
+  "data_referencia": "2026-01-19",
+  "empresas": [
+    {
+      "razao_social": "RIBEIRO VIGILÂNCIA SERVIÇOS LTDA",
+      "cnpj": "45938206000103",
+      "endereco": "Avenida Costa Câmara, 1164 – Vila Santa Monica 2ª Seção",
+      "cidade": "Caruaru/PE",
+      "segmento": "Vigilância Patrimonial",
+      "end": {
+        "logradouro": "Avenida Costa Câmara",
+        "numero": "1164",
+        "bairro": "Vila Santa Monica 2ª Seção",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55038479"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "LAÍS AZEVEDO SALES",
+      "cpf": "15304976800",
+      "pis": "11153183603",
+      "matricula": "008221",
+      "cargo": "VIGILANTE",
+      "cbo": "6794-12",
+      "salario": 2720.0,
+      "admissao": "2024-12-08",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "45938206000103",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Fernandes Sá",
+        "numero": "1738",
+        "bairro": "Alta Tensão 2ª Seção",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55034735"
+      },
+      "nascimento": "2004-02-04"
+    },
+    {
+      "nome": "MARIA CLARA BARBOSA VASCONCELOS",
+      "cpf": "53490716299",
+      "pis": "17508307370",
+      "matricula": "004518",
+      "cargo": "VIGILANTE",
+      "cbo": "5045-45",
+      "salario": 2830.0,
+      "admissao": "2024-07-12",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "45938206000103",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Marques Rodrigues",
+        "numero": "1219",
+        "bairro": "Lagoa",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55044450"
+      },
+      "nascimento": "1970-03-29"
+    },
+    {
+      "nome": "DANTE NOVAES DA CRUZ",
+      "cpf": "07382156435",
+      "pis": "17335218045",
+      "matricula": "009715",
+      "cargo": "VIGILANTE",
+      "cbo": "5931-11",
+      "salario": 2700.0,
+      "admissao": "2022-07-13",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "45938206000103",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Costa Ramos",
+        "numero": "1852",
+        "bairro": "Glória",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55072287"
+      },
+      "nascimento": "1996-06-18"
+    },
+    {
+      "nome": "CECILIA MACEDO CARVALHO",
+      "cpf": "47816250967",
+      "pis": "10839268030",
+      "matricula": "002338",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "6614-46",
+      "salario": 4070.0,
+      "admissao": "2024-10-17",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "45938206000103",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Pires da Mota",
+        "numero": "1492",
+        "bairro": "Túnel De Ibirité",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56315716"
+      },
+      "nascimento": "1973-07-12"
+    },
+    {
+      "nome": "RAVY ALBUQUERQUE LOPES",
+      "cpf": "57684920111",
+      "pis": "15786768884",
+      "matricula": "009199",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "8364-48",
+      "salario": 3310.0,
+      "admissao": "2019-12-02",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "45938206000103",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Pastor Borges",
+        "numero": "793",
+        "bairro": "Conjunto Taquaril",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55043796"
+      },
+      "nascimento": "1976-12-27"
+    },
+    {
+      "nome": "DANIEL SAMPAIO MORAES",
+      "cpf": "32640179896",
+      "pis": "16539265426",
+      "matricula": "003333",
+      "cargo": "VIGILANTE",
+      "cbo": "5986-60",
+      "salario": 3080.0,
+      "admissao": "2025-02-07",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "45938206000103",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Costa da Mata",
+        "numero": "54",
+        "bairro": "Sagrada Família",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55021218"
+      },
+      "nascimento": "2003-02-09"
+    },
+    {
+      "nome": "VINICIUS SIQUEIRA DA CRUZ",
+      "cpf": "58963471209",
+      "pis": "12514746550",
+      "matricula": "003493",
+      "cargo": "VIGILANTE",
+      "cbo": "5770-54",
+      "salario": 2400.0,
+      "admissao": "2021-09-24",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "45938206000103",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Pires Moreira",
+        "numero": "1544",
+        "bairro": "São Jorge 3ª Seção",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55016306"
+      },
+      "nascimento": "1991-01-31"
+    },
+    {
+      "nome": "REBECA SILVEIRA NOVAIS",
+      "cpf": "84092173687",
+      "pis": "12032026548",
+      "matricula": "009583",
+      "cargo": "VIGILANTE",
+      "cbo": "8683-42",
+      "salario": 3030.0,
+      "admissao": "2022-09-11",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "45938206000103",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Fernandes Vasconcelos",
+        "numero": "1640",
+        "bairro": "Satelite",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55011631"
+      },
+      "nascimento": "1976-02-13"
+    },
+    {
+      "nome": "GABRIEL SAMPAIO AZEVEDO",
+      "cpf": "36517489282",
+      "pis": "12354847299",
+      "matricula": "007032",
+      "cargo": "VIGILANTE",
+      "cbo": "9224-76",
+      "salario": 2790.0,
+      "admissao": "2024-10-12",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "45938206000103",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Souza da Mota",
+        "numero": "33",
+        "bairro": "Chácara Leonina",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55294281"
+      },
+      "nascimento": "1980-11-21"
+    },
+    {
+      "nome": "MIGUEL DA CRUZ GONÇALVES",
+      "cpf": "78301569484",
+      "pis": "12848967392",
+      "matricula": "002422",
+      "cargo": "VIGILANTE",
+      "cbo": "7068-65",
+      "salario": 3090.0,
+      "admissao": "2022-02-07",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "45938206000103",
+      "desligado_em": "2025-12-15",
+      "end": {
+        "logradouro": "Rua Novaes Rios",
+        "numero": "339",
+        "bairro": "Vila Paraíso",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55040018"
+      },
+      "nascimento": "1997-03-01"
+    },
+    {
+      "nome": "LUIZ OTÁVIO FERNANDES CAMARGO",
+      "cpf": "47932510643",
+      "pis": "14567770923",
+      "matricula": "008012",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "6690-87",
+      "salario": 3780.0,
+      "admissao": "2020-09-17",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "45938206000103",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Abreu Sampaio",
+        "numero": "1470",
+        "bairro": "Alto Das Antenas",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55076566"
+      },
+      "nascimento": "1972-03-27"
+    },
+    {
+      "nome": "ANA LÍVIA SÁ CARDOSO",
+      "cpf": "49062187501",
+      "pis": "12254611919",
+      "matricula": "001724",
+      "cargo": "VIGILANTE",
+      "cbo": "7684-93",
+      "salario": 2540.0,
+      "admissao": "2020-03-09",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "45938206000103",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Viana Castro",
+        "numero": "546",
+        "bairro": "Alpes",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55015556"
+      },
+      "nascimento": "1971-03-23"
+    },
+    {
+      "nome": "LUCAS GOMES FONSECA",
+      "cpf": "49365270847",
+      "pis": "12039804325",
+      "matricula": "003182",
+      "cargo": "VIGILANTE",
+      "cbo": "5044-54",
+      "salario": 2430.0,
+      "admissao": "2025-09-12",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "45938206000103",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Borges Viana",
+        "numero": "1237",
+        "bairro": "Vila Ipiranga",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55078152"
+      },
+      "nascimento": "1977-12-03"
+    }
+  ],
+  "competencias": [
+    "2025-11",
+    "2025-12"
+  ]
+}

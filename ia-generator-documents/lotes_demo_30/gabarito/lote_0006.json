@@ -1,0 +1,1893 @@
+{
+  "arquivo": "lote_0006.pdf",
+  "perfil": "admissao",
+  "empresa_cnpj": "25409813000160",
+  "competencia": "2026-03",
+  "degradacao": "leve",
+  "total_paginas": 35,
+  "total_documentos": 29,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 3
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 180,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 3
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 26,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 27,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 28,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 29,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 3
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 30,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 31,
+      "documentos": [
+        {
+          "indice": 25,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 32,
+      "documentos": [
+        {
+          "indice": 26,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 33,
+      "documentos": [
+        {
+          "indice": 27,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 34,
+      "documentos": [
+        {
+          "indice": 28,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 35,
+      "documentos": [
+        {
+          "indice": 29,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "05134298670",
+      "empregado": "CLARICE MELO MARQUES",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "data_documento": "2023-09-27",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Clarice Melo Marques",
+        "empregado_cpf": "05134298670",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "Raul Marques",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2018-02-27"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "051.342.986-70"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Filho(a)"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "27/02/2018"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "DECLARACAO_MANUSCRITA",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "75160829377",
+      "empregado": "MARIA LUIZA CASA GRANDE ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "data_documento": "2026-01-19",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Maria Luiza Casa Grande Rocha",
+        "empregado_cpf": "75160829377",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "RESIDENCIA",
+        "endereco": "Avenida Santos Andrade, 751 – Sport Club, Belo Jardim/PE"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "89173054232",
+      "empregado": "AMANDA LOPES ABREU",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregador_razao_social": "Borges Limpeza Serviços Ltda",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "CONTRATO",
+        "data_anotacao": "2020-05-30",
+        "cargo": "Servente",
+        "salario": 1630.0,
+        "ferias_inicio": null,
+        "ferias_fim": null,
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        4,
+        5,
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "89173054232",
+      "empregado": "AMANDA LOPES ABREU",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregado_nome": "AMANDA LOPES ABREU",
+        "empregado_cpf": "89173054232",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "PRAZO_INDETERMINADO",
+        "prazo_dias": null,
+        "data_inicio": "2020-05-30",
+        "cargo": "SERVENTE",
+        "salario": 1630.0,
+        "jornada": "08:00 às 12:00 e 13:00 às 17:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": false,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [
+        {
+          "regra": "contrato_sem_rubrica",
+          "descricao": "página do contrato sem rubrica",
+          "campo": "rubricas_em_todas_paginas"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "TERMO_RESPONSABILIDADE",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "05134298670",
+      "empregado": "CLARICE MELO MARQUES",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "data_documento": "2023-09-29",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "CLARICE MELO MARQUES",
+        "empregado_cpf": "05134298670",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Alicate universal",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Jogo de chaves de fenda",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Calça do uniforme",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Molho de chaves do posto",
+            "quantidade": 2
+          },
+          {
+            "descricao": "Lanterna",
+            "quantidade": 1
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Jogo de chaves de fenda"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-17 – Ergonomia",
+        "data": "2026-03-24",
+        "carga_horaria_horas": 2.0,
+        "instrutor": "Augusto Dias",
+        "participantes": [
+          {
+            "nome": "Kamilly Aparecida Da Mota",
+            "cpf": "56740913234",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Rhavi Rocha Costela",
+            "cpf": "31829567446",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Leonardo Cassiano Peixoto",
+            "cpf": "28643791555",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Amanda Lopes Abreu",
+            "cpf": "89173054232",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Vitor Hugo Pacheco Freitas",
+            "cpf": "02416539833",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Maria Luiza Casa Grande Rocha",
+            "cpf": "75160829377",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Clarice Melo Marques",
+            "cpf": "05134298670",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Joana Lima Barbosa",
+            "cpf": "37162850995",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Gabriel Da Rosa Fogaça",
+            "cpf": "27043961831",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Ana Julia Ribeiro Brito",
+            "cpf": "09275638438",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Rhavi Rocha Costela"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "751.608.293-77"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Clarice Melo Marques"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "270.439.618-31"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "75160829377",
+      "empregado": "MARIA LUIZA CASA GRANDE ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregado_nome": "Maria Luiza Casa Grande Rocha",
+        "empregado_cpf": "75160829377",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "18126170811",
+        "matricula": "007761",
+        "data_admissao": "2026-01-22",
+        "cargo": "Servente",
+        "salario": 1760.0,
+        "foto_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "R$ 1.760,00"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "89173054232",
+      "empregado": "AMANDA LOPES ABREU",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "data_documento": "2020-05-31",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Amanda Lopes Abreu",
+        "empregado_cpf": "89173054232",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "Pedro Henrique da Cruz",
+            "parentesco": "Cônjuge",
+            "data_nascimento": "1996-11-24"
+          },
+          {
+            "nome": "Augusto Abreu",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2024-02-21"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Pedro Henrique da Cruz"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Filho(a)"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Belo Jardim, 31/05/2020"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        11,
+        13,
+        14
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": true,
+      "cpf": "05134298670",
+      "empregado": "CLARICE MELO MARQUES",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregado_nome": "CLARICE MELO MARQUES",
+        "empregado_cpf": "05134298670",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "EXPERIENCIA",
+        "prazo_dias": 90,
+        "data_inicio": "2023-09-25",
+        "cargo": "ENCARREGADO DE LIMPEZA",
+        "salario": 2340.0,
+        "jornada": "07:00 às 11:00 e 12:00 às 16:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "TERMO_RESPONSABILIDADE",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "75160829377",
+      "empregado": "MARIA LUIZA CASA GRANDE ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "data_documento": "2026-01-22",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "MARIA LUIZA CASA GRANDE ROCHA",
+        "empregado_cpf": "75160829377",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Molho de chaves do posto",
+            "quantidade": 2
+          },
+          {
+            "descricao": "Calça do uniforme",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Lanterna",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Camisa do uniforme",
+            "quantidade": 1
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Molho de chaves do posto"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Lanterna"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Camisa do uniforme"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "89173054232",
+      "empregado": "AMANDA LOPES ABREU",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "data_documento": "2020-05-30",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "AMANDA LOPES ABREU",
+        "empregado_cpf": "89173054232",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "SERVENTE",
+        "riscos": [
+          "Queda de mesmo nível",
+          "Postura inadequada",
+          "Cortes e perfurações",
+          "Produtos químicos de limpeza"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "05134298670",
+      "empregado": "CLARICE MELO MARQUES",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregador_razao_social": "Borges Limpeza Serviços Ltda",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "CONTRATO",
+        "data_anotacao": "2023-09-25",
+        "cargo": "Encarregado De Limpeza",
+        "salario": 2340.0,
+        "ferias_inicio": null,
+        "ferias_fim": null,
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "ASO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "89173054232",
+      "empregado": "AMANDA LOPES ABREU",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregado_nome": "Amanda Lopes Abreu",
+        "empregado_cpf": "89173054232",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Servente",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2020-05-25",
+        "riscos_ocupacionais": [
+          "Químico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Otto Peixoto",
+        "medico_crm": "CRM-PE 25823"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "891.730.542-32"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "DECLARACAO_VALE_TRANSPORTE",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "05134298670",
+      "empregado": "CLARICE MELO MARQUES",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "data_documento": "2023-09-25",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Clarice Melo Marques",
+        "empregado_cpf": "05134298670",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "opcao": "OPTANTE",
+        "endereco_residencial": "Avenida Gonçalves Nunes, 1028 – Grajaú, Caruaru/PE",
+        "linhas": [
+          {
+            "linha": "222 – Grajaú/Shopping",
+            "tarifa": 4.1,
+            "viagens_por_dia": 2
+          },
+          {
+            "linha": "122 – Grajaú/Shopping",
+            "tarifa": 4.5,
+            "viagens_por_dia": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "222 – Grajaú/Shopping"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "ASO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "75160829377",
+      "empregado": "MARIA LUIZA CASA GRANDE ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregado_nome": "Maria Luiza Casa Grande Rocha",
+        "empregado_cpf": "75160829377",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Servente",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2026-01-21",
+        "riscos_ocupacionais": [
+          "Físico (ruído)"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Nicole Machado",
+        "medico_crm": "CRM-BA 17518"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "DECLARACAO_VALE_TRANSPORTE",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "89173054232",
+      "empregado": "AMANDA LOPES ABREU",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "data_documento": "2020-05-31",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Amanda Lopes Abreu",
+        "empregado_cpf": "89173054232",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "opcao": "OPTANTE",
+        "endereco_residencial": "Rua Martins das Neves, 1736 – Pousada Santo Antonio, Belo Jardim/PE",
+        "linhas": [
+          {
+            "linha": "092 – Pousada Santo Anto/Centro",
+            "tarifa": 4.5,
+            "viagens_por_dia": 2
+          },
+          {
+            "linha": "491 – Pousada Santo Anto/Centro",
+            "tarifa": 4.1,
+            "viagens_por_dia": 2
+          },
+          {
+            "linha": "795 – Pousada Santo Anto/Centro",
+            "tarifa": 4.3,
+            "viagens_por_dia": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "092 – Pousada Santo Anto/Centro"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Belo Jardim, 31/05/2020"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "DECLARACAO_MANUSCRITA",
+      "paginas": [
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "05134298670",
+      "empregado": "CLARICE MELO MARQUES",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "data_documento": "2026-01-16",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Clarice Melo Marques",
+        "empregado_cpf": "05134298670",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "NAO_ACUMULO_EMPREGO",
+        "endereco": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "DECLARACAO_VALE_TRANSPORTE",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "75160829377",
+      "empregado": "MARIA LUIZA CASA GRANDE ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "data_documento": "2026-01-22",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Maria Luiza Casa Grande Rocha",
+        "empregado_cpf": "75160829377",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "opcao": "OPTANTE",
+        "endereco_residencial": "Avenida Santos Andrade, 751 – Sport Club, Belo Jardim/PE",
+        "linhas": [
+          {
+            "linha": "223 – Sport Club/Terminal",
+            "tarifa": 4.1,
+            "viagens_por_dia": 2
+          },
+          {
+            "linha": "157 – Sport Club/Centro",
+            "tarifa": 4.5,
+            "viagens_por_dia": 2
+          },
+          {
+            "linha": "157 – Sport Club/Centro",
+            "tarifa": 4.5,
+            "viagens_por_dia": 2
+          }
+        ]
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Maria Luiza Casa Grande Rocha"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "751.608.293-77"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "4,50"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "89173054232",
+      "empregado": "AMANDA LOPES ABREU",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregado_nome": "Amanda Lopes Abreu",
+        "empregado_cpf": "89173054232",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "19952599148",
+        "matricula": "005878",
+        "data_admissao": "2020-05-30",
+        "cargo": "Servente",
+        "salario": 1630.0,
+        "foto_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Amanda Lopes Abreu"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "R$ 1.630,00"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        24
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-10 – Segurança em Eletricidade",
+        "data": "2026-01-16",
+        "carga_horaria_horas": 40.0,
+        "instrutor": "Luan Campos",
+        "participantes": [
+          {
+            "nome": "Clarice Melo Marques",
+            "cpf": "05134298670",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Ravi Lucca Mendonça Ramos",
+            "cpf": "45719362819",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Leonardo Cassiano Peixoto",
+            "cpf": "28643791555",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Amanda Lopes Abreu",
+            "cpf": "89173054232",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Mariane Cassiano Macedo",
+            "cpf": "87590164348",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Maria Luiza Casa Grande Rocha",
+            "cpf": "75160829377",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Kamilly Aparecida Da Mota",
+            "cpf": "56740913234",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Gabriel Da Rosa Fogaça",
+            "cpf": "27043961831",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Joana Lima Barbosa",
+            "cpf": "37162850995",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Ana Julia Ribeiro Brito",
+            "cpf": "09275638438",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Rhavi Rocha Costela",
+            "cpf": "31829567446",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "891.730.542-32"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "875.901.643-48"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "567.409.132-34"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Gabriel Da Rosa Fogaça"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "092.756.384-38"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "318.295.674-46"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        25
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "75160829377",
+      "empregado": "MARIA LUIZA CASA GRANDE ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "data_documento": "2026-01-24",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Maria Luiza Casa Grande Rocha",
+        "empregado_cpf": "75160829377",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "Maria da Rocha",
+            "parentesco": "Cônjuge",
+            "data_nascimento": "1996-11-21"
+          },
+          {
+            "nome": "Maria Laura Rocha",
+            "parentesco": "Enteado(a)",
+            "data_nascimento": "2013-08-04"
+          },
+          {
+            "nome": "Ana Rocha",
+            "parentesco": "Enteado(a)",
+            "data_nascimento": "2018-01-17"
+          },
+          {
+            "nome": "Antony Rocha",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2017-01-08"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "751.608.293-77"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "MARIA DA ROCHA"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "ANTONY ROCHA"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "FILHO(A)"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "ASO",
+      "paginas": [
+        26
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "05134298670",
+      "empregado": "CLARICE MELO MARQUES",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregado_nome": "Clarice Melo Marques",
+        "empregado_cpf": "05134298670",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Encarregado De Limpeza",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2023-09-18",
+        "riscos_ocupacionais": [
+          "Ausência de risco específico"
+        ],
+        "conclusao": "INAPTO",
+        "medico_nome": "Dr(a). Thomas Marques",
+        "medico_crm": "CRM-PB 14625"
+      },
+      "nao_conformidades": [
+        {
+          "regra": "aso_inapto",
+          "descricao": "ASO com conclusão INAPTO",
+          "campo": "conclusao"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 23,
+      "tipo": "CHECKLIST_INTEGRACAO",
+      "paginas": [
+        27
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "75160829377",
+      "empregado": "MARIA LUIZA CASA GRANDE ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "data_documento": "2026-01-27",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Maria Luiza Casa Grande Rocha",
+        "empregado_cpf": null,
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Orientação sobre rotas de fuga",
+            "marcado": true
+          },
+          {
+            "descricao": "Senha do sistema de ponto",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de uniforme",
+            "marcado": true
+          },
+          {
+            "descricao": "Leitura do código de conduta",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de EPI",
+            "marcado": false
+          },
+          {
+            "descricao": "Apresentação das normas internas",
+            "marcado": true
+          },
+          {
+            "descricao": "Crachá de identificação entregue",
+            "marcado": false
+          },
+          {
+            "descricao": "Treinamento de integração de SST",
+            "marcado": true
+          },
+          {
+            "descricao": "Apresentação ao supervisor do posto",
+            "marcado": true
+          },
+          {
+            "descricao": "Cadastro biométrico de acesso",
+            "marcado": true
+          }
+        ],
+        "assinatura_responsavel_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 24,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        28,
+        30,
+        29
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": true,
+      "intercalado": false,
+      "cpf": "75160829377",
+      "empregado": "MARIA LUIZA CASA GRANDE ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregado_nome": "MARIA LUIZA CASA GRANDE ROCHA",
+        "empregado_cpf": "75160829377",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "EXPERIENCIA",
+        "prazo_dias": 90,
+        "data_inicio": "2026-01-22",
+        "cargo": "SERVENTE",
+        "salario": 1760.0,
+        "jornada": "07:00 às 11:00 e 12:00 às 16:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 25,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        31
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "05134298670",
+      "empregado": "CLARICE MELO MARQUES",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "data_documento": "2023-09-27",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "CLARICE MELO MARQUES",
+        "empregado_cpf": "05134298670",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "ENCARREGADO DE LIMPEZA",
+        "riscos": [
+          "Agentes biológicos",
+          "Produtos químicos de limpeza"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 26,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        32
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-17 – Ergonomia",
+        "data": "2026-01-05",
+        "carga_horaria_horas": 2.0,
+        "instrutor": "Gabriela Cirino",
+        "participantes": [
+          {
+            "nome": "Ravi Lucca Mendonça Ramos",
+            "cpf": "45719362819",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Mariane Cassiano Macedo",
+            "cpf": "87590164348",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Joana Lima Barbosa",
+            "cpf": "37162850995",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Kamilly Aparecida Da Mota",
+            "cpf": "56740913234",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Amanda Lopes Abreu",
+            "cpf": "89173054232",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Gabriel Da Rosa Fogaça",
+            "cpf": "27043961831",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Maria Luiza Casa Grande Rocha",
+            "cpf": "75160829377",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Ravi Lucca Mendonça Ramos"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "875.901.643-48"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 27,
+      "tipo": "FICHA_EPI",
+      "paginas": [
+        33
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "75160829377",
+      "empregado": "MARIA LUIZA CASA GRANDE ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregado_nome": "Maria Luiza Casa Grande Rocha",
+        "empregado_cpf": "75160829377",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Servente",
+        "entregas": [
+          {
+            "data": "2026-02-02",
+            "descricao": "Luva de látex",
+            "quantidade": 1,
+            "numero_ca": "37783"
+          },
+          {
+            "data": "2026-02-14",
+            "descricao": "Bota de PVC",
+            "quantidade": 3,
+            "numero_ca": "25759"
+          },
+          {
+            "data": "2026-04-22",
+            "descricao": "Avental impermeável",
+            "quantidade": 1,
+            "numero_ca": "24312"
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Servente"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "22/01/2026"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "24312"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Belo Jardim, 22/04/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 28,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        34
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "75160829377",
+      "empregado": "MARIA LUIZA CASA GRANDE ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "FERIAS",
+        "data_anotacao": "2026-03-13",
+        "cargo": null,
+        "salario": null,
+        "ferias_inicio": "2026-03-13",
+        "ferias_fim": "2026-04-11",
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 29,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        35
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "05134298670",
+      "empregado": "CLARICE MELO MARQUES",
+      "competencia": null,
+      "empresa_cnpj": "25409813000160",
+      "dados": {
+        "empregado_nome": "Clarice Melo Marques",
+        "empregado_cpf": "05134298670",
+        "empregador_razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "25409813000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "10651756526",
+        "matricula": "008434",
+        "data_admissao": "2023-09-25",
+        "cargo": "Encarregado De Limpeza",
+        "salario": 2340.0,
+        "foto_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Avenida Gonçalves Nunes, 1028 – Grajaú, Caruaru/PE"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "008434"
+        }
+      ],
+      "observacao": null
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      23,
+      23
+    ],
+    "degradacao": "leve",
+    "taxa_nc": 0.13,
+    "perfil": "admissao",
+    "embaralhar": 0.4,
+    "paginas_em_branco": 0.03,
+    "fora_de_ordem": 0.11,
+    "intercalar": 0.28,
+    "taxa_defeito": 0.2,
+    "taxa_branco": 0.04,
+    "extras": 0.21,
+    "p_celular": 0.06,
+    "p_cabeca_para_baixo": 0.08,
+    "seed": 42006
+  }
+}

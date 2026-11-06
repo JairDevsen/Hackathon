@@ -62,6 +62,10 @@ paths:
   /compliance/{id}/dispensar: { post: { summary: Dispensa com justificativa (auditada) } }
   /compliance/cobrar: { post: { summary: E-mail aos gestores com as pendências } }
   /employees/{id}/documents/manual: { post: { summary: "Lança um documento escrevendo as informações (formulário por tipo), sem imagem" } }
+  /suppliers: { get: { summary: "Fornecedores e terceirizadas (q, tipo, status, pre=1) com funcionários, conformidade, riscos e exposição a processo trabalhista" }, post: { summary: "Cadastra fornecedor (CNPJ válido e único; recusa o CNPJ da própria empresa)" } }
+  /suppliers/{id}: { get: { summary: "Detalhe do fornecedor" }, patch: { summary: "Edita/completa o cadastro (pre_cadastro=false), tipo, status e contrato; recalcula conformidade e riscos" } }
+  /suppliers/{id}/documents: { get: { summary: "Documentos da empresa do fornecedor (certidões, guias, contrato, apólice, autuações, processos, auditorias)" } }
+  /suppliers/{id}/compliance: { get: { summary: "Documentos exigidos da empresa para este fornecedor" } }
   /calendar: { get: { summary: Vencimentos do mês } }
   /notifications: { get: { summary: Lista + contagem } }
   /metrics/overview: { get: { summary: Cartões e ações } }

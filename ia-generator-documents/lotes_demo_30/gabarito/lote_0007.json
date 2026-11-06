@@ -1,0 +1,1578 @@
+{
+  "arquivo": "lote_0007.pdf",
+  "perfil": "misto",
+  "empresa_cnpj": "29654087000100",
+  "competencia": "2025-10",
+  "degradacao": "media",
+  "total_paginas": 21,
+  "total_documentos": 18,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 5,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 6,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 15,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "post_it:2ª via"
+      ]
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        1,
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "30417859279",
+      "empregado": "JOÃO GUILHERME RAMOS RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 887 746 309 AR",
+        "conteudo": "Notificação nº 370/2025",
+        "data_postagem": "2025-11-19",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "João Guilherme Ramos Rodrigues",
+        "destinatario_endereco": "Rua Cunha Novais, 319",
+        "destinatario_bairro": "União",
+        "destinatario_municipio": "Serra Talhada",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56901942",
+        "remetente_nome": "PASTOR COPA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moura Abreu, 300 – Vila Mantiqueira, Recife/PE",
+        "remetente_cep": "52284552",
+        "tentativas": [
+          {
+            "data": "2025-11-24",
+            "hora": "14:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2025-11-24",
+        "data_devolucao": null,
+        "recebedor_nome": "ANA PACHECO",
+        "recebedor_documento": "1114030",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_sem_carimbo",
+          "descricao": "AR sem carimbo da unidade de entrega",
+          "campo": "carimbo_unidade_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "98263401542",
+      "empregado": "OTTO VARGAS VIEIRA",
+      "competencia": "2025-10",
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "empregado_nome": "OTTO VARGAS VIEIRA",
+        "empregado_cpf": "98263401542",
+        "empregador_razao_social": "PASTOR COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "29654087000100",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "002338",
+        "periodo_inicio": "2025-10-01",
+        "periodo_fim": "2025-10-31",
+        "forma_registro": "ELETRONICO",
+        "registros": [
+          {
+            "data": "2025-10-01",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:04",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-02",
+            "marcacoes": [
+              "07:53",
+              "11:59",
+              "13:04",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-03",
+            "marcacoes": [
+              "08:01",
+              "12:00",
+              "13:00",
+              "17:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-04",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2025-10-05",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2025-10-06",
+            "marcacoes": [
+              "07:57",
+              "12:05",
+              "13:05",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-07",
+            "marcacoes": [
+              "08:06",
+              "12:02",
+              "13:05",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-08",
+            "marcacoes": [
+              "08:02",
+              "12:05",
+              "13:05",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-09",
+            "marcacoes": [
+              "07:52",
+              "11:57",
+              "12:59",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-10",
+            "marcacoes": [
+              "08:00",
+              "12:06",
+              "13:06",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-11",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2025-10-12",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2025-10-13",
+            "marcacoes": [
+              "08:02",
+              "12:04",
+              "13:08",
+              "17:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-14",
+            "marcacoes": [
+              "08:03",
+              "11:58",
+              "13:05",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-15",
+            "marcacoes": [
+              "08:03",
+              "11:59",
+              "13:04",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-16",
+            "marcacoes": [
+              "07:57",
+              "12:00",
+              "13:04",
+              "17:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-17",
+            "marcacoes": [
+              "08:06",
+              "12:03",
+              "13:07",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-18",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2025-10-19",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2025-10-20",
+            "marcacoes": [
+              "07:52",
+              "11:59",
+              "13:03",
+              "17:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-21",
+            "marcacoes": [
+              "07:56",
+              "12:03",
+              "13:07",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-22",
+            "marcacoes": [
+              "07:56",
+              "11:57",
+              "13:00",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-23",
+            "marcacoes": [
+              "08:06",
+              "12:06",
+              "13:06",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-24",
+            "marcacoes": [
+              "07:56",
+              "12:04",
+              "13:06",
+              "17:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-25",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2025-10-26",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2025-10-27",
+            "marcacoes": [
+              "08:04",
+              "11:59",
+              "13:01",
+              "17:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-28",
+            "marcacoes": [
+              "08:00",
+              "12:06",
+              "13:06",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-29",
+            "marcacoes": [
+              "07:55",
+              "12:04",
+              "13:04",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-30",
+            "marcacoes": [
+              "08:06",
+              "12:06",
+              "13:06",
+              "16:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-31",
+            "marcacoes": [
+              "08:00",
+              "12:05",
+              "13:05",
+              "16:57"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "CRF_FGTS",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "empregador_razao_social": "PASTOR COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "29654087000100",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": "FICT-49035799/2025",
+        "data_emissao": "2025-12-12",
+        "data_validade": "2026-01-11",
+        "situacao": "REGULAR",
+        "codigo_controle": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "HOLERITE",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "48319760593",
+      "empregado": "ÁGATHA DA ROSA FONSECA",
+      "competencia": "2025-10",
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "empregado_nome": "ÁGATHA DA ROSA FONSECA",
+        "empregado_cpf": "48319760593",
+        "empregador_razao_social": "PASTOR COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "29654087000100",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "004734",
+        "cargo": "COZINHEIRA",
+        "competencia": "2025-10",
+        "salario_base": 2350.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2350.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "08:17",
+            "provento": 132.72,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "8,08",
+            "provento": null,
+            "desconto": 200.67
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 141.0
+          }
+        ],
+        "total_proventos": 2482.72,
+        "total_descontos": 341.67,
+        "valor_liquido": 2141.05,
+        "base_calculo_inss": 2482.72,
+        "base_calculo_fgts": 2482.72,
+        "valor_fgts_mes": 198.62,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "48319760593",
+      "empregado": "ÁGATHA DA ROSA FONSECA",
+      "competencia": null,
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 814 202 936 AR",
+        "conteudo": "Notificação nº 320/2025",
+        "data_postagem": "2025-11-20",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Ágatha Da Rosa Fonseca",
+        "destinatario_endereco": "Rua Aparecida Pires, 1386",
+        "destinatario_bairro": "Vila Real 2ª Seção",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55019615",
+        "remetente_nome": "PASTOR COPA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moura Abreu, 300 – Vila Mantiqueira, Recife/PE",
+        "remetente_cep": "52284552",
+        "tentativas": [
+          {
+            "data": "2025-11-24",
+            "hora": "08:50"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2025-11-24",
+        "data_devolucao": null,
+        "recebedor_nome": "CECÍLIA ANDRADE",
+        "recebedor_documento": "7748659",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "82904513779",
+      "empregado": "GABRIELLY CAVALCANTI CAVALCANTI",
+      "competencia": null,
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 585 853 308 AR",
+        "conteudo": "Notificação nº 127/2025",
+        "data_postagem": "2025-11-27",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Gabrielly Cavalcanti Cavalcanti",
+        "destinatario_endereco": "Rua Melo Cardoso, 174",
+        "destinatario_bairro": "Lagoa",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52596987",
+        "remetente_nome": "PASTOR COPA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moura Abreu, 300 – Vila Mantiqueira, Recife/PE",
+        "remetente_cep": "52284552",
+        "tentativas": [
+          {
+            "data": "2025-11-28",
+            "hora": "14:20"
+          },
+          {
+            "data": "2025-12-01",
+            "hora": "11:50"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2025-12-01",
+        "data_devolucao": null,
+        "recebedor_nome": "GABRIELLY CAVALCANTI CAVALCANTI",
+        "recebedor_documento": "1619635",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "GUIA_FGTS",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2025-10",
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "empregador_razao_social": "PASTOR COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "29654087000100",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "anotacao_manuscrita": null,
+        "identificador_guia": "FICT1553632453438243",
+        "competencia": "2025-10",
+        "data_vencimento": "2025-11-20",
+        "valor_total": 2257.73,
+        "data_pagamento": "2025-11-19",
+        "autenticacao_bancaria_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "RECIBO_BENEFICIO",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "48319760593",
+      "empregado": "ÁGATHA DA ROSA FONSECA",
+      "competencia": "2025-10",
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "data_documento": "2025-09-29",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Ágatha Da Rosa Fonseca",
+        "empregado_cpf": null,
+        "empregador_razao_social": "PASTOR COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "29654087000100",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "beneficio": "VALE_REFEICAO",
+        "competencia": "2025-10",
+        "quantidade": 23,
+        "valor_total": 414.0
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "29/09/2025"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "DARF",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2025-10",
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "empregador_razao_social": "PASTOR COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "29654087000100",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "periodo_apuracao": "2025-10",
+        "codigo_receita": "1082",
+        "data_vencimento": "2025-11-20",
+        "valor_total": 7865.42,
+        "anotacao_manuscrita": null,
+        "autenticacao_bancaria_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "CND_FEDERAL",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "empregador_razao_social": "PASTOR COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "29654087000100",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": null,
+        "data_emissao": "2025-12-19",
+        "data_validade": "2026-06-17",
+        "situacao": "NEGATIVA",
+        "codigo_controle": "FICT-9132.5501.4748"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "48319760593",
+      "empregado": "ÁGATHA DA ROSA FONSECA",
+      "competencia": "2025-10",
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2025-11-06",
+        "valor": 2141.05,
+        "pagador_nome": "PASTOR COPA SOLUÇÕES LTDA",
+        "pagador_documento": "29654087000100",
+        "favorecido_nome": "ÁGATHA DA ROSA FONSECA",
+        "favorecido_documento": "48319760593",
+        "finalidade": "Pagamento de salário 10/2025",
+        "autenticacao": "FICT-E334181628897324483327"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "98263401542",
+      "empregado": "OTTO VARGAS VIEIRA",
+      "competencia": null,
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "empregado_nome": "OTTO VARGAS VIEIRA",
+        "empregado_cpf": "98263401542",
+        "empregador_razao_social": "PASTOR COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "29654087000100",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2025-11-17",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "HOLERITE",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "98263401542",
+      "empregado": "OTTO VARGAS VIEIRA",
+      "competencia": "2025-10",
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "empregado_nome": "OTTO VARGAS VIEIRA",
+        "empregado_cpf": "98263401542",
+        "empregador_razao_social": "PASTOR COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "29654087000100",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "002338",
+        "cargo": "COZINHEIRA",
+        "competencia": "2025-10",
+        "salario_base": 2190.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2190.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "02:15",
+            "provento": 33.6,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,98",
+            "provento": null,
+            "desconto": 177.35
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 131.4
+          }
+        ],
+        "total_proventos": 2223.6,
+        "total_descontos": 308.75,
+        "valor_liquido": 1914.85,
+        "base_calculo_inss": 2223.6,
+        "base_calculo_fgts": 2223.6,
+        "valor_fgts_mes": 177.89,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        15,
+        17
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "48319760593",
+      "empregado": "ÁGATHA DA ROSA FONSECA",
+      "competencia": "2025-10",
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "empregado_nome": "ÁGATHA DA ROSA FONSECA",
+        "empregado_cpf": null,
+        "empregador_razao_social": "PASTOR COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "29654087000100",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "004734",
+        "periodo_inicio": "2025-10-01",
+        "periodo_fim": "2025-10-31",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2025-10-01",
+            "marcacoes": [
+              "07:49",
+              "12:04",
+              "13:04",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-02",
+            "marcacoes": [
+              "07:56",
+              "12:00",
+              "13:00",
+              "17:29"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-03",
+            "marcacoes": [
+              "08:04",
+              "11:58",
+              "13:08",
+              "18:23"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-04",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2025-10-05",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2025-10-06",
+            "marcacoes": [
+              "07:57",
+              "12:04",
+              "13:06",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-07",
+            "marcacoes": [
+              "08:00",
+              "12:06",
+              "13:08",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-08",
+            "marcacoes": [
+              "08:01",
+              "12:04",
+              "13:07",
+              "17:44"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-09",
+            "marcacoes": [
+              "07:56",
+              "11:57",
+              "13:00",
+              "17:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-10",
+            "marcacoes": [
+              "07:57",
+              "12:00",
+              "13:08",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-11",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2025-10-12",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2025-10-13",
+            "marcacoes": [
+              "07:50",
+              "12:04",
+              "13:04",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-14",
+            "marcacoes": [
+              "07:56",
+              "12:06",
+              "13:06",
+              "18:14"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-15",
+            "marcacoes": [
+              "07:48",
+              "11:57",
+              "13:01",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-16",
+            "marcacoes": [
+              "07:59",
+              "12:05",
+              "13:05",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-17",
+            "marcacoes": [
+              "08:02",
+              "12:04",
+              "13:04",
+              "17:53"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-18",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2025-10-19",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2025-10-20",
+            "marcacoes": [
+              "07:58",
+              "12:00",
+              "13:02",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-21",
+            "marcacoes": [
+              "08:00",
+              "12:03",
+              "13:05",
+              "17:56"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-22",
+            "marcacoes": [],
+            "ocorrencia": "ATESTADO"
+          },
+          {
+            "data": "2025-10-23",
+            "marcacoes": [
+              "07:57",
+              "12:03",
+              "13:04",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-24",
+            "marcacoes": [
+              "07:48",
+              "12:03",
+              "13:03",
+              "17:30"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-25",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2025-10-26",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2025-10-27",
+            "marcacoes": [
+              "07:56",
+              "11:57",
+              "13:02",
+              "16:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-28",
+            "marcacoes": [
+              "07:49",
+              "11:58",
+              "13:02",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-29",
+            "marcacoes": [
+              "07:57",
+              "12:03",
+              "13:03",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-30",
+            "marcacoes": [
+              "08:02",
+              "11:58",
+              "13:03",
+              "17:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2025-10-31",
+            "marcacoes": [
+              "07:59",
+              "11:57",
+              "13:02",
+              "17:03"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "18:23"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "12:03"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "FOLGA"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "07:59"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "98263401542",
+      "empregado": "OTTO VARGAS VIEIRA",
+      "competencia": null,
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 545 826 804 AR",
+        "conteudo": "Notificação nº 146/2025",
+        "data_postagem": "2025-11-18",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Otto Vargas Vieira",
+        "destinatario_endereco": "Travessa Nascimento Machado, 513",
+        "destinatario_bairro": "Aparecida",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "50950819",
+        "remetente_nome": "PASTOR COPA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moura Abreu, 300 – Vila Mantiqueira, Recife/PE",
+        "remetente_cep": "52284552",
+        "tentativas": [
+          {
+            "data": "2025-11-19",
+            "hora": "12:00"
+          },
+          {
+            "data": "2025-11-21",
+            "hora": "08:50"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2025-11-21",
+        "data_devolucao": null,
+        "recebedor_nome": "OTTO VARGAS VIEIRA",
+        "recebedor_documento": "5445521",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "OUTRO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2025-10",
+      "empresa_cnpj": "29654087000100",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        20,
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "57043186900",
+      "empregado": "MAYSA LEÃO ALVES",
+      "competencia": null,
+      "empresa_cnpj": "29654087000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 649 380 555 AR",
+        "conteudo": "Notificação nº 183/2025",
+        "data_postagem": "2025-11-15",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Maysa Leão Alves",
+        "destinatario_endereco": "Avenida Andrade Pinto, 1767",
+        "destinatario_bairro": "Novo Santa Cecilia",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52628058",
+        "remetente_nome": "PASTOR COPA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Moura Abreu, 300 – Vila Mantiqueira, Recife/PE",
+        "remetente_cep": "52284552",
+        "tentativas": [
+          {
+            "data": "2025-11-17",
+            "hora": "11:00"
+          },
+          {
+            "data": "2025-11-20",
+            "hora": "10:20"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2025-11-20",
+        "data_devolucao": null,
+        "recebedor_nome": "MAYSA LEÃO ALVES",
+        "recebedor_documento": "7251894",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "OUTRO",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      10,
+      10
+    ],
+    "degradacao": "media",
+    "taxa_nc": 0.28,
+    "perfil": "misto",
+    "embaralhar": 0.37,
+    "paginas_em_branco": 0.05,
+    "fora_de_ordem": 0.19,
+    "intercalar": 0.27,
+    "taxa_defeito": 0.03,
+    "taxa_branco": 0.05,
+    "extras": 0.15,
+    "p_celular": 0.18,
+    "p_cabeca_para_baixo": 0.08,
+    "seed": 42007
+  }
+}

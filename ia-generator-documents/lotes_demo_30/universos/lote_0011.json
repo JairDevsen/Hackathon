@@ -1,0 +1,270 @@
+{
+  "seed": 42011,
+  "data_referencia": "2026-04-19",
+  "empresas": [
+    {
+      "razao_social": "DA CRUZ VIGILÂNCIA TERCEIRIZAÇÃO LTDA",
+      "cnpj": "09486271000173",
+      "endereco": "Travessa Lima Rocha, 56 – Novo Aarão Reis",
+      "cidade": "Belo Jardim/PE",
+      "segmento": "Vigilância Patrimonial",
+      "end": {
+        "logradouro": "Travessa Lima Rocha",
+        "numero": "56",
+        "bairro": "Novo Aarão Reis",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55150298"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "LAÍS JESUS ROCHA",
+      "cpf": "83971650457",
+      "pis": "14666833737",
+      "matricula": "006872",
+      "cargo": "VIGILANTE",
+      "cbo": "5973-35",
+      "salario": 2610.0,
+      "admissao": "2022-06-16",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "09486271000173",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Guerra Novais",
+        "numero": "992",
+        "bairro": "Vila União",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56326416"
+      },
+      "nascimento": "1976-03-22"
+    },
+    {
+      "nome": "HENRIQUE NUNES DA CONCEIÇÃO",
+      "cpf": "76854231035",
+      "pis": "13099041270",
+      "matricula": "006529",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "8408-68",
+      "salario": 3490.0,
+      "admissao": "2021-10-19",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "09486271000173",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Aragão Sá",
+        "numero": "775",
+        "bairro": "Ventosa",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55156877"
+      },
+      "nascimento": "1986-05-27"
+    },
+    {
+      "nome": "ANTÔNIO DA LUZ CALDEIRA",
+      "cpf": "27643190887",
+      "pis": "13983993620",
+      "matricula": "005247",
+      "cargo": "VIGILANTE",
+      "cbo": "4431-21",
+      "salario": 2740.0,
+      "admissao": "2023-09-23",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "09486271000173",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida da Costa Borges",
+        "numero": "1721",
+        "bairro": "Minas Caixa",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53034085"
+      },
+      "nascimento": "1977-01-26"
+    },
+    {
+      "nome": "LARA GOMES DA CONCEIÇÃO",
+      "cpf": "38945612033",
+      "pis": "14102331790",
+      "matricula": "004378",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "5259-65",
+      "salario": 3610.0,
+      "admissao": "2020-04-01",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "09486271000173",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Gomes Ramos",
+        "numero": "856",
+        "bairro": "Conjunto Floramar",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55153837"
+      },
+      "nascimento": "1989-11-24"
+    },
+    {
+      "nome": "ANA SOPHIA ARAGÃO SÁ",
+      "cpf": "17908624340",
+      "pis": "10834808754",
+      "matricula": "008072",
+      "cargo": "VIGILANTE",
+      "cbo": "4821-69",
+      "salario": 2950.0,
+      "admissao": "2024-08-07",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "09486271000173",
+      "desligado_em": "2026-03-10",
+      "end": {
+        "logradouro": "Rua Porto Ferreira",
+        "numero": "429",
+        "bairro": "São Bernardo",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55158293"
+      },
+      "nascimento": "1972-12-24"
+    },
+    {
+      "nome": "VINICIUS BORGES ALBUQUERQUE",
+      "cpf": "23807496122",
+      "pis": "10996344192",
+      "matricula": "008032",
+      "cargo": "VIGILANTE",
+      "cbo": "8032-25",
+      "salario": 2500.0,
+      "admissao": "2022-02-16",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "09486271000173",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Fernandes Garcia",
+        "numero": "967",
+        "bairro": "Vila Engenho Nogueira",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55150552"
+      },
+      "nascimento": "1984-12-12"
+    },
+    {
+      "nome": "EVELYN AZEVEDO BARROS",
+      "cpf": "63405129842",
+      "pis": "12527791680",
+      "matricula": "005334",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "5159-76",
+      "salario": 3920.0,
+      "admissao": "2022-01-09",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "09486271000173",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Rosa Moreira",
+        "numero": "1044",
+        "bairro": "Vila Nossa Senhora Do Rosário",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55150203"
+      },
+      "nascimento": "2000-02-18"
+    },
+    {
+      "nome": "ASAFE MORAES MONTEIRO",
+      "cpf": "57136920434",
+      "pis": "12835789601",
+      "matricula": "005515",
+      "cargo": "VIGILANTE",
+      "cbo": "5024-86",
+      "salario": 2720.0,
+      "admissao": "2025-12-09",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "09486271000173",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Montenegro da Paz",
+        "numero": "1238",
+        "bairro": "Vila Puc",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55158421"
+      },
+      "nascimento": "1976-04-18"
+    },
+    {
+      "nome": "ENZO FERREIRA MOURA",
+      "cpf": "06328971478",
+      "pis": "11761430658",
+      "matricula": "007607",
+      "cargo": "VIGILANTE",
+      "cbo": "5294-68",
+      "salario": 2420.0,
+      "admissao": "2020-07-15",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "09486271000173",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Casa Grande Pacheco",
+        "numero": "1645",
+        "bairro": "Etelvina Carneiro",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55150413"
+      },
+      "nascimento": "1990-04-19"
+    }
+  ],
+  "competencias": [
+    "2026-02",
+    "2026-03"
+  ]
+}

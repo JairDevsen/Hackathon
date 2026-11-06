@@ -1,0 +1,1220 @@
+{
+  "arquivo": "lote_0002.pdf",
+  "perfil": "desligamento",
+  "empresa_cnpj": "45938206000103",
+  "competencia": "2025-11",
+  "degradacao": "media",
+  "total_paginas": 30,
+  "total_documentos": 23,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "post_it:devolver",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "post_it:2ª via",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "post_it:pago",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "post_it:devolver"
+      ]
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 26,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 27,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 28,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 29,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "post_it:lançar"
+      ]
+    },
+    {
+      "pagina": 30,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "ASO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "58963471209",
+      "empregado": "VINICIUS SIQUEIRA DA CRUZ",
+      "competencia": null,
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "empregado_nome": "Vinicius Siqueira Da Cruz",
+        "empregado_cpf": "58963471209",
+        "empregador_razao_social": "RIBEIRO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "45938206000103",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Vigilante",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2025-11-17",
+        "riscos_ocupacionais": [
+          "Acidentes",
+          "Ergonômico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Aylla Martins",
+        "medico_crm": "CRM-PE 34042"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        2,
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "84092173687",
+      "empregado": "REBECA SILVEIRA NOVAIS",
+      "competencia": null,
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 844 594 315 AR",
+        "conteudo": "Notificação nº 374/2025",
+        "data_postagem": "2025-11-01",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA CARUARU",
+        "destinatario_nome": "Rebeca Silveira Novais",
+        "destinatario_endereco": "Travessa Fernandes Vasconcelos, 1640",
+        "destinatario_bairro": "Satelite",
+        "destinatario_municipio": "Caruaru",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55011631",
+        "remetente_nome": "RIBEIRO VIGILÂNCIA SERVIÇOS LTDA",
+        "remetente_endereco": "Avenida Costa Câmara, 1164 – Vila Santa Monica 2ª Seção, Caruaru/PE",
+        "remetente_cep": "55038479",
+        "tentativas": [
+          {
+            "data": "2025-11-03",
+            "hora": "16:15"
+          },
+          {
+            "data": "2025-11-04",
+            "hora": "16:15"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2025-11-04",
+        "data_devolucao": null,
+        "recebedor_nome": "REBECA SILVEIRA NOVAIS",
+        "recebedor_documento": "1513594",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Satelite"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "04/11/2025"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "ASO",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "57684920111",
+      "empregado": "RAVY ALBUQUERQUE LOPES",
+      "competencia": null,
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "empregado_nome": "Ravy Albuquerque Lopes",
+        "empregado_cpf": "57684920111",
+        "empregador_razao_social": "RIBEIRO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "45938206000103",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Supervisor De Vigilância",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2025-11-09",
+        "riscos_ocupacionais": [
+          "Ergonômico",
+          "Acidentes"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Vinícius Aparecida",
+        "medico_crm": "CRM-BA 17989"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "57684920111",
+      "empregado": "RAVY ALBUQUERQUE LOPES",
+      "competencia": null,
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "data_documento": "2025-10-10",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Ravy Albuquerque Lopes",
+        "empregado_cpf": "57684920111",
+        "empregador_razao_social": "Ribeiro Vigilância Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "do cargo de supervisor de vigilância, venho por meio desta solicitar meu"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "dias."
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Ravy Albuquerque Lopes"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "84092173687",
+      "empregado": "REBECA SILVEIRA NOVAIS",
+      "competencia": null,
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "empregado_nome": "REBECA SILVEIRA NOVAIS",
+        "empregado_cpf": "84092173687",
+        "empregador_razao_social": "RIBEIRO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "45938206000103",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2025-10-31",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "78301569484",
+      "empregado": "MIGUEL DA CRUZ GONÇALVES",
+      "competencia": null,
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "data_documento": "2025-10-26",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Miguel Da Cruz Gonçalves",
+        "empregado_cpf": "78301569484",
+        "empregador_razao_social": "Ribeiro Vigilância Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "desligamento da empresa."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "58963471209",
+      "empregado": "VINICIUS SIQUEIRA DA CRUZ",
+      "competencia": null,
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "data_documento": "2025-10-18",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Vinicius Siqueira Da Cruz",
+        "empregado_cpf": "58963471209",
+        "empregador_razao_social": "Ribeiro Vigilância Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "cumprimento do aviso prévio."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "TRCT",
+      "paginas": [
+        12,
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "78301569484",
+      "empregado": "MIGUEL DA CRUZ GONÇALVES",
+      "competencia": "2025-11",
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "empregado_nome": "MIGUEL DA CRUZ GONÇALVES",
+        "empregado_cpf": "78301569484",
+        "empregador_razao_social": "RIBEIRO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "45938206000103",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "12848967392",
+        "data_admissao": "2022-02-07",
+        "data_aviso_previo": "2025-10-26",
+        "data_afastamento": "2025-11-25",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 3090.0,
+        "total_bruto": 8840.83,
+        "total_deducoes": 442.29,
+        "valor_liquido": 8398.54,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "26/10/2025"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "TRCT",
+      "paginas": [
+        14,
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "15304976800",
+      "empregado": "LAÍS AZEVEDO SALES",
+      "competencia": "2025-11",
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "empregado_nome": "LAÍS AZEVEDO SALES",
+        "empregado_cpf": "15304976800",
+        "empregador_razao_social": "RIBEIRO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "45938206000103",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "11153183603",
+        "data_admissao": "2024-12-08",
+        "data_aviso_previo": "2025-10-11",
+        "data_afastamento": "2025-11-10",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 2720.0,
+        "total_bruto": 6497.78,
+        "total_deducoes": 249.23,
+        "valor_liquido": 6248.55,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "TRCT",
+      "paginas": [
+        16,
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "57684920111",
+      "empregado": "RAVY ALBUQUERQUE LOPES",
+      "competencia": "2025-11",
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "empregado_nome": "RAVY ALBUQUERQUE LOPES",
+        "empregado_cpf": "57684920111",
+        "empregador_razao_social": "RIBEIRO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "45938206000103",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "15786768884",
+        "data_admissao": "2019-12-02",
+        "data_aviso_previo": null,
+        "data_afastamento": "2025-11-09",
+        "causa_afastamento": "Término do contrato de experiência",
+        "codigo_afastamento": "RA2",
+        "remuneracao_fins_rescisorios": 3310.0,
+        "total_bruto": 7796.89,
+        "total_deducoes": 299.95,
+        "valor_liquido": 7496.94,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "OUTRO",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2025-11",
+      "empresa_cnpj": "45938206000103",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "ASO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "15304976800",
+      "empregado": "LAÍS AZEVEDO SALES",
+      "competencia": null,
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "empregado_nome": "Laís Azevedo Sales",
+        "empregado_cpf": "15304976800",
+        "empregador_razao_social": "RIBEIRO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "45938206000103",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Vigilante",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2025-11-10",
+        "riscos_ocupacionais": [
+          "Químico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Hellena Nogueira",
+        "medico_crm": "CRM-PB 26352"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "TRCT",
+      "paginas": [
+        20,
+        22
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "58963471209",
+      "empregado": "VINICIUS SIQUEIRA DA CRUZ",
+      "competencia": "2025-11",
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "empregado_nome": "VINICIUS SIQUEIRA DA CRUZ",
+        "empregado_cpf": "58963471209",
+        "empregador_razao_social": "RIBEIRO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "45938206000103",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "12514746550",
+        "data_admissao": "2021-09-24",
+        "data_aviso_previo": "2025-10-18",
+        "data_afastamento": "2025-11-17",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 2400.0,
+        "total_bruto": 4360.0,
+        "total_deducoes": 277.23,
+        "valor_liquido": 4082.77,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "600,00"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "102,00"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "4.082,77"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "57684920111",
+      "empregado": "RAVY ALBUQUERQUE LOPES",
+      "competencia": null,
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "data_documento": "2025-10-10",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Ravy Albuquerque Lopes",
+        "empregado_cpf": "57684920111",
+        "empregador_razao_social": "Ribeiro Vigilância Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "RECIBO_AVULSO",
+      "paginas": [
+        24
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "78301569484",
+      "empregado": "MIGUEL DA CRUZ GONÇALVES",
+      "competencia": null,
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_pagamento": "ADIANTAMENTO",
+        "valor": 1236.0,
+        "valor_por_extenso": "mil e duzentos e trinta e seis reais",
+        "recebedor_nome": "Miguel Da Cruz Gonçalves",
+        "recebedor_cpf": "78301569484",
+        "pagador_nome": "Ribeiro Vigilância Serviços Ltda",
+        "referente_a": "adiantamento salarial de novembro/2025",
+        "data_documento": "2025-11-06",
+        "assinatura_recebedor_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        25
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "15304976800",
+      "empregado": "LAÍS AZEVEDO SALES",
+      "competencia": null,
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "data_documento": "2025-10-11",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Laís Azevedo Sales",
+        "empregado_cpf": "15304976800",
+        "empregador_razao_social": "Ribeiro Vigilância Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "do cargo de vigilante, venho por meio desta solicitar meu desligamento da"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "empresa por ter recebido outra proposta de trabalho. Solicito a"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "TRCT",
+      "paginas": [
+        26,
+        27
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "84092173687",
+      "empregado": "REBECA SILVEIRA NOVAIS",
+      "competencia": "2025-11",
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "empregado_nome": "REBECA SILVEIRA NOVAIS",
+        "empregado_cpf": "84092173687",
+        "empregador_razao_social": "RIBEIRO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "45938206000103",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "12032026548",
+        "data_admissao": "2022-09-11",
+        "data_aviso_previo": null,
+        "data_afastamento": "2025-11-21",
+        "causa_afastamento": "Término do contrato de experiência",
+        "codigo_afastamento": "RA2",
+        "remuneracao_fins_rescisorios": 3030.0,
+        "total_bruto": 5908.5,
+        "total_deducoes": 395.32,
+        "valor_liquido": 5513.18,
+        "assinatura_empregado_presente": false,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "ASO",
+      "paginas": [
+        28
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "78301569484",
+      "empregado": "MIGUEL DA CRUZ GONÇALVES",
+      "competencia": null,
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "empregado_nome": "Miguel Da Cruz Gonçalves",
+        "empregado_cpf": "78301569484",
+        "empregador_razao_social": "RIBEIRO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "45938206000103",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Vigilante",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2025-11-25",
+        "riscos_ocupacionais": [
+          "Ausência de risco específico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Ryan Silva",
+        "medico_crm": "CRM-PB 20569"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Dr(a). Ryan Silva"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "TRCT",
+      "paginas": [
+        29,
+        30
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "57684920111",
+      "empregado": "RAVY ALBUQUERQUE LOPES",
+      "competencia": "2025-11",
+      "empresa_cnpj": "45938206000103",
+      "dados": {
+        "empregado_nome": "RAVY ALBUQUERQUE LOPES",
+        "empregado_cpf": "57684920111",
+        "empregador_razao_social": "RIBEIRO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "45938206000103",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "15786768884",
+        "data_admissao": "2019-12-02",
+        "data_aviso_previo": "2025-10-10",
+        "data_afastamento": "2025-11-09",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 3310.0,
+        "total_bruto": 7796.89,
+        "total_deducoes": 299.95,
+        "valor_liquido": 7496.94,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "OUTRO",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 21,
+      "tipo": "OUTRO",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 22,
+      "tipo": "OUTRO",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 23,
+      "tipo": "OUTRO",
+      "paginas": [
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      16,
+      16
+    ],
+    "degradacao": "misto",
+    "taxa_nc": 0.34,
+    "perfil": "desligamento",
+    "embaralhar": 0.28,
+    "paginas_em_branco": 0.09,
+    "fora_de_ordem": 0.25,
+    "intercalar": 0.21,
+    "taxa_defeito": 0.06,
+    "taxa_branco": 0.05,
+    "extras": 0.32,
+    "p_celular": 0.18,
+    "p_cabeca_para_baixo": 0.04,
+    "seed": 42002
+  }
+}

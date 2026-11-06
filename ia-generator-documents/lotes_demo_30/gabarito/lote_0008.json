@@ -1,0 +1,854 @@
+{
+  "arquivo": "lote_0008.pdf",
+  "perfil": "admissao",
+  "empresa_cnpj": "71295643000158",
+  "competencia": "2026-05",
+  "degradacao": "forte",
+  "total_paginas": 15,
+  "total_documentos": 13,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "post_it:lançar",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 3
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "post_it:arquivar",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 180,
+      "extras": [
+        "post_it:conferir"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "post_it:pago",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "post_it:devolver"
+      ]
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        1,
+        2,
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53048917241",
+      "empregado": "JULIANA GONÇALVES AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "71295643000158",
+      "dados": {
+        "empregado_nome": "JULIANA GONÇALVES AZEVEDO",
+        "empregado_cpf": "53048917241",
+        "empregador_razao_social": "TEIXEIRA VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "71295643000158",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "PRAZO_INDETERMINADO",
+        "prazo_dias": null,
+        "data_inicio": "2023-08-02",
+        "cargo": "VIGILANTE",
+        "salario": 2940.0,
+        "jornada": "07:00 às 11:00 e 12:00 às 16:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": false,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "DECLARACAO_VALE_TRANSPORTE",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53048917241",
+      "empregado": "JULIANA GONÇALVES AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "71295643000158",
+      "dados": {
+        "data_documento": "2023-08-04",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Juliana Gonçalves Azevedo",
+        "empregado_cpf": "53048917241",
+        "empregador_razao_social": "TEIXEIRA VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "71295643000158",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "opcao": "OPTANTE",
+        "endereco_residencial": "Avenida Fonseca Souza, 1480 – Biquinhas, Pesqueira/PE",
+        "linhas": [
+          {
+            "linha": "320 – Biquinhas/Terminal",
+            "tarifa": 4.8,
+            "viagens_por_dia": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "530.489.172-41"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "71295643000158",
+      "dados": {
+        "empregador_razao_social": "TEIXEIRA VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "71295643000158",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-17 – Ergonomia",
+        "data": "2026-06-17",
+        "carga_horaria_horas": 2.0,
+        "instrutor": "Maria Eduarda Sampaio",
+        "participantes": [
+          {
+            "nome": "Rebeca Rios Gonçalves",
+            "cpf": "87432506965",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Sophie Nunes Vargas",
+            "cpf": "48579316057",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Heloísa Câmara Camargo",
+            "cpf": "02465793152",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Pedro Correia Melo",
+            "cpf": "21576409830",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Amanda Vargas Freitas",
+            "cpf": "45769103884",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Vitor Hugo Aparecida Nogueira",
+            "cpf": "51382406924",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Anthony Martins Camargo",
+            "cpf": "28534160970",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Ana Lívia Barros Machado",
+            "cpf": "67592014858",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Luiz Henrique Abreu Alves",
+            "cpf": "83914062533",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Ana Lívia Jesus Rezende",
+            "cpf": "16509728494",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Renan Rios Da Mota",
+            "cpf": "50437621871",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Juliana Gonçalves Azevedo",
+            "cpf": "53048917241",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Calebe Marques Camargo",
+            "cpf": "53268017444",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "874.325.069-65"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "513.824.069-24"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Ana Lívia Jesus Rezende"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "165.097.284-94"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "532.680.174-44"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "TERMO_RESPONSABILIDADE",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53048917241",
+      "empregado": "JULIANA GONÇALVES AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "71295643000158",
+      "dados": {
+        "data_documento": "2023-08-12",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "JULIANA GONÇALVES AZEVEDO",
+        "empregado_cpf": "53048917241",
+        "empregador_razao_social": "TEIXEIRA VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "71295643000158",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Alicate universal",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Camisa do uniforme",
+            "quantidade": 2
+          },
+          {
+            "descricao": "Lanterna",
+            "quantidade": 3
+          }
+        ]
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Alicate universal"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "OUTRO",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-05",
+      "empresa_cnpj": "71295643000158",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53048917241",
+      "empregado": "JULIANA GONÇALVES AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "71295643000158",
+      "dados": {
+        "empregador_razao_social": "TEIXEIRA VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "71295643000158",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "FERIAS",
+        "data_anotacao": "2024-09-29",
+        "cargo": null,
+        "salario": null,
+        "ferias_inicio": "2024-09-29",
+        "ferias_fim": "2024-10-28",
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "DECLARACAO_MANUSCRITA",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53048917241",
+      "empregado": "JULIANA GONÇALVES AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "71295643000158",
+      "dados": {
+        "data_documento": "2026-05-20",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Juliana Gonçalves Azevedo",
+        "empregado_cpf": "53048917241",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "NAO_ACUMULO_EMPREGO",
+        "endereco": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "ASO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53048917241",
+      "empregado": "JULIANA GONÇALVES AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "71295643000158",
+      "dados": {
+        "empregado_nome": "Juliana Gonçalves Azevedo",
+        "empregado_cpf": "53048917241",
+        "empregador_razao_social": "TEIXEIRA VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "71295643000158",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Vigilante",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2023-07-26",
+        "riscos_ocupacionais": [
+          "Acidentes",
+          "Físico (ruído)"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Manuela Rocha",
+        "medico_crm": null
+      },
+      "nao_conformidades": [
+        {
+          "regra": "aso_sem_crm",
+          "descricao": "ASO sem CRM do médico",
+          "campo": "medico_crm"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "530.489.172-41"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53048917241",
+      "empregado": "JULIANA GONÇALVES AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "71295643000158",
+      "dados": {
+        "data_documento": "2023-08-03",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Juliana Gonçalves Azevedo",
+        "empregado_cpf": "53048917241",
+        "empregador_razao_social": "TEIXEIRA VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "71295643000158",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "Davi Miguel Azevedo",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2013-11-27"
+          },
+          {
+            "nome": "Milena Azevedo",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2019-09-18"
+          },
+          {
+            "nome": "Enzo Gabriel Azevedo",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2021-12-20"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Filho(a)"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "FICHA_EPI",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53048917241",
+      "empregado": "JULIANA GONÇALVES AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "71295643000158",
+      "dados": {
+        "empregado_nome": "Juliana Gonçalves Azevedo",
+        "empregado_cpf": "53048917241",
+        "empregador_razao_social": "TEIXEIRA VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "71295643000158",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Vigilante",
+        "entregas": [
+          {
+            "data": "2023-12-17",
+            "descricao": "Protetor auricular plug",
+            "quantidade": 1,
+            "numero_ca": "24006"
+          },
+          {
+            "data": "2024-05-13",
+            "descricao": "Colete balístico",
+            "quantidade": 3,
+            "numero_ca": "42341"
+          },
+          {
+            "data": "2024-11-10",
+            "descricao": "Bota de segurança",
+            "quantidade": 1,
+            "numero_ca": "48918"
+          },
+          {
+            "data": "2026-02-15",
+            "descricao": "Protetor auricular plug",
+            "quantidade": 1,
+            "numero_ca": "29024"
+          },
+          {
+            "data": "2026-05-23",
+            "descricao": "Protetor auricular plug",
+            "quantidade": 3,
+            "numero_ca": "10923"
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "02/08/2023"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "CHECKLIST_INTEGRACAO",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53048917241",
+      "empregado": "JULIANA GONÇALVES AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "71295643000158",
+      "dados": {
+        "data_documento": "2023-08-06",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Juliana Gonçalves Azevedo",
+        "empregado_cpf": null,
+        "empregador_razao_social": "TEIXEIRA VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "71295643000158",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Entrega de uniforme",
+            "marcado": true
+          },
+          {
+            "descricao": "Cadastro biométrico de acesso",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de EPI",
+            "marcado": true
+          },
+          {
+            "descricao": "Orientação sobre rotas de fuga",
+            "marcado": false
+          },
+          {
+            "descricao": "Senha do sistema de ponto",
+            "marcado": true
+          },
+          {
+            "descricao": "Apresentação das normas internas",
+            "marcado": true
+          }
+        ],
+        "assinatura_responsavel_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "06/08/2023"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53048917241",
+      "empregado": "JULIANA GONÇALVES AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "71295643000158",
+      "dados": {
+        "empregado_nome": "Juliana Gonçalves Azevedo",
+        "empregado_cpf": "53048917241",
+        "empregador_razao_social": "TEIXEIRA VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "71295643000158",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "14006619975",
+        "matricula": "003707",
+        "data_admissao": "2023-08-02",
+        "cargo": "Vigilante",
+        "salario": 2940.0,
+        "foto_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "16/06/1980"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "OUTRO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      12,
+      12
+    ],
+    "degradacao": "misto",
+    "taxa_nc": 0.39,
+    "perfil": "admissao",
+    "embaralhar": 0.28,
+    "paginas_em_branco": 0.07,
+    "fora_de_ordem": 0.26,
+    "intercalar": 0.29,
+    "taxa_defeito": 0.14,
+    "taxa_branco": 0.02,
+    "extras": 0.42,
+    "p_celular": 0.08,
+    "p_cabeca_para_baixo": 0.06,
+    "seed": 42008
+  }
+}

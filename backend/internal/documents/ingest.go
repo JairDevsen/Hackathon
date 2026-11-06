@@ -22,8 +22,9 @@ type Ingestor struct{ KR *crypto.Keyring }
 type Hints struct{ EmployeeID, Tipo, Substitui *string }
 
 type Summary struct {
-	PreCadastros int   `json:"pre_cadastros"`        // funcionários criados automaticamente a partir dos documentos
-	Ilegiveis    int   `json:"classificacao_manual"` // documentos ilegíveis/sem tipo que exigem classificação manual
+	Fornecedores int   `json:"fornecedores_pre_cadastrados"` // fornecedores/terceirizadas criados a partir do CNPJ lido nos documentos
+	PreCadastros int   `json:"pre_cadastros"`                // funcionários criados automaticamente a partir dos documentos
+	Ilegiveis    int   `json:"classificacao_manual"`         // documentos ilegíveis/sem tipo que exigem classificação manual
 	Documentos   int   `json:"documentos"`
 	AutoAprovado int   `json:"auto_aprovados"`
 	Revisao      int   `json:"para_revisao"`
@@ -140,6 +141,7 @@ func (i *Ingestor) Ingest(ctx context.Context, tx pgx.Tx, tenantID, batchID stri
 	affected := map[string]bool{}
 	var autoPre bool
 	tx.QueryRow(ctx, `SELECT pre_cadastro_automatico FROM tenants WHERE id=$1`, tenantID).Scan(&autoPre)
+	novosFornecedores := map[string]bool{}
 	var firstDoc string
 	for n, d := range docs {
 		tipo := d.Tipo
@@ -160,6 +162,16 @@ func (i *Ingestor) Ingest(ctx context.Context, tx pgx.Tx, tenantID, batchID stri
 		nome := str(campos, "nome")
 		motivos := append([]string{}, d.MotivosRevisao...)
 		alertas := d.Alertas
+		// fornecedor/terceirizada: o CNPJ lido no documento agrupa tudo da mesma empresa
+		supID, supNovo, err := i.ResolveSupplier(ctx, tx, tenantID, campos, autoPre, "PRE_CADASTRO")
+		if err != nil {
+			return nil, nil, err
+		}
+		if supNovo && supID != nil && !novosFornecedores[*supID] {
+			novosFornecedores[*supID] = true
+			sum.Fornecedores++
+			alertas = append(alertas, iacore.Alerta{Severidade: "info", Codigo: "FORNECEDOR_PRE_CADASTRO", Mensagem: "Fornecedor/terceirizada pré-cadastrado a partir do CNPJ deste documento: complete o cadastro"})
+		}
 		var empID *string
 		how := ""
 		if ti.Escopo == "FUNCIONARIO" {
@@ -204,6 +216,21 @@ func (i *Ingestor) Ingest(ctx context.Context, tx pgx.Tx, tenantID, batchID stri
 				motivos = append(motivos, "DADOS_DIVERGENTES")
 			}
 		}
+		// empregador do funcionário: o primeiro documento com CNPJ de fornecedor define; um documento de OUTRA empresa é divergência
+		if empID != nil && supID != nil && ti.Escopo == "FUNCIONARIO" {
+			var empSup *string
+			if tx.QueryRow(ctx, `SELECT supplier_id::text FROM employees WHERE id=$1`, *empID).Scan(&empSup) == nil {
+				switch {
+				case empSup == nil:
+					if _, err := tx.Exec(ctx, `UPDATE employees SET supplier_id=$2 WHERE id=$1`, *empID, *supID); err != nil {
+						return nil, nil, err
+					}
+				case *empSup != *supID:
+					alertas = append(alertas, iacore.Alerta{Severidade: "aviso", Codigo: "EMPREGADOR_DIVERGENTE", Mensagem: "A empresa (CNPJ) deste documento difere do empregador cadastrado para o funcionário"})
+					motivos = append(motivos, "EMPREGADOR_DIVERGENTE")
+				}
+			}
+		}
 		// pré-cadastro automático: CPF válido + nome lido, sem vínculo, página legível
 		if tipo != "OUTRO" && ti.Escopo == "FUNCIONARIO" && empID == nil && autoPre && cpf.Valid(cpfDigits) && nome != "" && !d.PaginaIlegivel && !d.MultiplosDocs {
 			blocked, limitErr := i.limitReached(ctx, tx, tenantID)
@@ -214,7 +241,7 @@ func (i *Ingestor) Ingest(ctx context.Context, tx pgx.Tx, tenantID, batchID stri
 				motivos = append(motivos, "LIMITE_FUNCIONARIOS")
 				alertas = append(alertas, iacore.Alerta{Severidade: "aviso", Codigo: "LIMITE_FUNCIONARIOS", Mensagem: "Limite de funcionários do plano atingido; pré-cadastro não realizado"})
 			} else {
-				newID, err := i.CreateEmployee(ctx, tx, tenantID, NewEmployee{Nome: nome, CPF: cpfDigits, Matricula: str(campos, "matricula"), UnitID: unitID, Origem: "PRE_CADASTRO", Pre: true})
+				newID, err := i.CreateEmployee(ctx, tx, tenantID, NewEmployee{Nome: nome, CPF: cpfDigits, Matricula: str(campos, "matricula"), UnitID: unitID, Origem: "PRE_CADASTRO", Pre: true, SupplierID: supID})
 				if err == nil {
 					empID, how = &newID, "PRE_CADASTRO"
 					sum.PreCadastros++
@@ -312,10 +339,10 @@ func (i *Ingestor) Ingest(ctx context.Context, tx pgx.Tx, tenantID, batchID stri
 		var id string
 		err = tx.QueryRow(ctx, `INSERT INTO documents (tenant_id, batch_id, employee_id, unit_id, document_type, titulo, competencia, data_documento, validade_ate,
 		  paginas, confianca, status, campos, alertas, motivos_revisao, nao_conformidades, dados_sensiveis, finops, texto_ocr, texto_anonimizado,
-		  cpf_extraido_hash, nome_extraido, nome_arquivo, pasta_destino, possui_manuscrito, sensivel_saude, duplicata_de, checklist)
-		  VALUES ($1,$2,$3,$4,$5,$6,nullif($7,''),$8::date,$9::date,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21,$22,$23,$24,$25,$26,$27,$28) RETURNING id::text`,
+		  cpf_extraido_hash, nome_extraido, nome_arquivo, pasta_destino, possui_manuscrito, sensivel_saude, duplicata_de, checklist, supplier_id)
+		  VALUES ($1,$2,$3,$4,$5,$6,nullif($7,''),$8::date,$9::date,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21,$22,$23,$24,$25,$26,$27,$28,$29) RETURNING id::text`,
 			tenantID, batchID, empID, unitID, tipo, d.Titulo, comp, dataDoc, validade, intsToArr(d.Paginas), d.Confianca, status, cj, aj, mj, nj, sj, nullJSON(fj),
-			d.TextoOCR, d.TextoAnonimizado, cpfHash, nome, fname, pasta, d.PossuiManuscrito, ti.Saude, dupOf, ckj).Scan(&id)
+			d.TextoOCR, d.TextoAnonimizado, cpfHash, nome, fname, pasta, d.PossuiManuscrito, ti.Saude, dupOf, ckj, supID).Scan(&id)
 		if err != nil {
 			return nil, nil, fmt.Errorf("inserir documento: %w", err)
 		}

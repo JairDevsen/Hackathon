@@ -307,4 +307,92 @@ with concurrent.futures.ThreadPoolExecutor(12) as ex: list(ex.map(tentar, range(
 falhas = len(get(adm, "/audit", params={"acao": "MFA_FALHA", "limit": 200})["items"]) - before_n
 assert falhas <= 5, f"{falhas} códigos foram avaliados em paralelo (máx. permitido: 5)"; ok(f"12 tentativas simultâneas: no máximo {falhas} avaliadas (limite 5, contador atômico)")
 
+print("13. Fornecedores e terceirizadas: agrupamento por CNPJ e exposição a processo trabalhista")
+import fitz as _fz
+def cnpj_dv(base12):
+    ps1 = [5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2]; ps2 = [6] + ps1
+    d = [int(x) for x in base12]
+    for ps in (ps1, ps2):
+        r = sum(a * b for a, b in zip(d, ps)) % 11; d.append(0 if r < 2 else 11 - r)
+    return "".join(map(str, d))
+def mask(c): return f"{c[:2]}.{c[2:5]}.{c[5:8]}/{c[8:12]}-{c[12:]}"
+FORN = "112223330001" + cnpj_dv("112223330001")[12:]
+assert FORN[:12] == "112223330001"
+FORN2 = cnpj_dv("445556660001")
+def pdf_paginas(paginas):
+    doc = _fz.open()
+    for linhas in paginas:
+        pg = doc.new_page(width=595, height=842)
+        for i, l in enumerate(linhas): pg.insert_text((50, 80 + 22 * i), l, fontsize=11)
+    b = doc.tobytes(); doc.close(); return b
+def enviar_e_esperar(nome, conteudo):
+    r = c.post(f"{API}/batches", headers=H(rh), files={"file": (nome, conteudo)}); assert r.status_code == 202, r.text; bid = r.json()["id"]
+    for _ in range(90):
+        bb = get(rh, f"/batches/{bid}")
+        if bb["status"].startswith("PROCESSADO") or bb["status"] == "FALHOU": break
+        time.sleep(1)
+    assert bb["status"].startswith("PROCESSADO"), bb["status"]; return bb
+antes = get(rh, "/suppliers"); assert antes == [], antes; ok("documentos com o CNPJ da própria empresa não criam fornecedor")
+lote = pdf_paginas([
+    ["CONTRATO DE PRESTACAO DE SERVICO", "CONTRATANTE: AGROTECH GARANHUNS LTDA, CNPJ 14.589.201/0001-80", f"CONTRATADA: BRILHO LIMPEZA LTDA, CNPJ {mask(FORN)}", "OBJETO: servicos de limpeza e conservacao", "assinado pelas partes"],
+    ["RECIBO DE PAGAMENTO - HOLERITE", f"EMPRESA: BRILHO LIMPEZA LTDA CNPJ: {mask(FORN)}", "NOME: JOSE ALVES DA SILVA", "CPF: 746.023.188-60", "COMPETENCIA: 09/2026", "SALARIO BASE: R$ 2.000,00", "LIQUIDO A RECEBER: R$ 1.700,00"],
+    ["AUTO DE INFRACAO", "AUDITOR FISCAL DO TRABALHO - FISCALIZACAO DO TRABALHO", f"EMPRESA AUTUADA: BRILHO LIMPEZA LTDA CNPJ: {mask(FORN)}", "NUMERO DO AUTO: 22.123.456-7"],
+    ["RECLAMACAO TRABALHISTA - CITACAO", "VARA DO TRABALHO DE GARANHUNS", "RECLAMANTE: MARCOS ANTONIO PEREIRA", f"RECLAMADA: BRILHO LIMPEZA LTDA CNPJ: {mask(FORN)}", "NUMERO DO PROCESSO: 0001234-56.2026.5.06.0001"],
+])
+b13 = enviar_e_esperar("lote_terceirizada.pdf", lote)
+assert b13["resumo"]["fornecedores_pre_cadastrados"] == 1, b13["resumo"]; ok("lote com CNPJ de terceirizada: 1 fornecedor pré-cadastrado automaticamente")
+sup = get(rh, "/suppliers"); assert len(sup) == 1, sup; f1 = sup[0]
+assert f1["cnpj"] == FORN and f1["razao_social"].startswith("BRILHO LIMPEZA") and f1["pre_cadastro"] and f1["origem"] == "PRE_CADASTRO" and f1["tipo"] == "TERCEIRIZADA"; ok(f"fornecedor identificado pelo CNPJ: {f1['razao_social']}")
+assert f1["funcionarios"] == 1 and f1["documentos"] >= 4, f1; ok("funcionário e documentos do lote ficaram agrupados no fornecedor")
+emp_f = get(rh, "/employees", params={"supplier": f1["id"]})["items"]; assert len(emp_f) == 1 and emp_f[0]["fornecedor_cnpj"] == FORN and emp_f[0]["nome"].upper().startswith("JOSE ALVES"); ok("funcionário pré-cadastrado herdou o empregador (filtro por fornecedor)")
+assert not [e for e in get(rh, "/employees", params={"supplier": "none", "limit": 100})["items"] if e["nome"].upper().startswith("JOSE ALVES")]; ok("quem é de terceirizada não aparece como funcionário da própria empresa")
+dsup = {d["document_type"] for d in get(rh, f"/suppliers/{f1['id']}/documents")}; assert {"CONTRATO_PRESTACAO_SERVICO", "AUTO_INFRACAO", "PROCESSO_JUDICIAL"} <= dsup, dsup; ok("documentos da empresa do fornecedor: contrato, autuação e processo")
+rk = get(rh, "/risks", params={"supplier": f1["id"]}); cods = {i["codigo"] for i in rk["items"]}
+assert {"FORN_AUTUACAO", "FORN_PROCESSO_JUDICIAL", "FORN_CERTIDAO_AUSENTE", "FORN_GUIA_FGTS_AUSENTE"} <= cods, cods; ok(f"indicadores de risco do fornecedor: {sorted(cods)}")
+assert "FORN_CONTRATO_AUSENTE" not in cods; ok("contrato com imagem enviado: não acusa contrato ausente")
+assert all(i["base_legal"] and i["fornecedor"] and i["severidade"] in ("ALTO", "MEDIO") for i in rk["items"]) and all("331" in i["base_legal"] or "6.019" in i["base_legal"] or "8.036" in i["base_legal"] for i in rk["items"] if i["codigo"].startswith("FORN_")); ok("cada indicador traz o fornecedor e a base legal de responsabilidade da contratante")
+f1 = get(rh, f"/suppliers/{f1['id']}"); assert f1["exposicao"] == "ALTA" and f1["riscos_altos"] >= 2; ok("exposição a processo trabalhista: ALTA (autuação e processo registrados)")
+ov = get(rh, "/metrics/overview"); assert ov["fornecedores"] >= 1 and ov["fornecedores_pre_cadastro"] >= 1 and ov["fornecedores_risco_alto"] >= 1; ok("painel conta fornecedores e os de risco alto")
+assert "FORNECEDOR" in {n["tipo"] for n in get(rh, "/notifications")["itens"]}; ok("RH é avisado dos fornecedores identificados")
+# cadastro manual: validações
+assert c.post(f"{API}/suppliers", headers=H(rh), json={"cnpj": "11.111.111/1111-11", "razao_social": "X LTDA"}).status_code == 400; ok("CNPJ inválido → 400")
+assert c.post(f"{API}/suppliers", headers=H(rh), json={"cnpj": "14.589.201/0001-80", "razao_social": "AGROTECH"}).status_code == 400; ok("CNPJ da própria empresa não pode ser fornecedor")
+assert c.post(f"{API}/suppliers", headers=H(rh), json={"cnpj": mask(FORN), "razao_social": "BRILHO"}).status_code == 409; ok("CNPJ repetido → 409")
+r = c.post(f"{API}/suppliers", headers=H(rh), json={"cnpj": mask(FORN2), "razao_social": "Segura Vigilância Ltda", "tipo": "TERCEIRIZADA", "criticidade": "ALTA", "contrato_inicio": "2026-01-01", "contrato_fim": "2026-06-30", "objeto": "Vigilância patrimonial"}); assert r.status_code == 201, r.text; f2 = r.json()["id"]
+assert get(rh, f"/suppliers/{f2}")["razao_social"] == "SEGURA VIGILÂNCIA LTDA"; ok("cadastro manual de fornecedor")
+assert c.post(f"{API}/suppliers", headers=H(rh2), json={"cnpj": mask(cnpj_dv("778889990001")), "razao_social": "Y LTDA"}).status_code == 201; ok("RH com gerir funcionários cadastra fornecedores")
+# completar o pré-cadastro e mudar o tipo: fornecedor de materiais não é cobrado por certidões trabalhistas
+assert c.patch(f"{API}/suppliers/{f1['id']}", headers=H(rh), json={"pre_cadastro": False, "tipo": "FORNECEDOR", "criticidade": "BAIXA"}).status_code == 204
+assert f1["id"] not in {x["id"] for x in get(rh, "/suppliers", params={"pre": "1"})}; ok("completar o cadastro tira o fornecedor da lista de pré-cadastros")
+cods = {i["codigo"] for i in get(rh, "/risks", params={"supplier": f1["id"]})["items"]}
+assert {"FORN_CERTIDAO_AUSENTE", "FORN_GUIA_FGTS_AUSENTE", "FORN_AUTUACAO"} <= cods; ok("fornecedor COM trabalhador alocado continua cobrado por certidões e guias (e a autuação segue apontada)")
+sem = get(rh, "/suppliers", params={"q": "Y LTDA"}); assert sem and sem[0]["funcionarios"] == 0
+assert c.patch(f"{API}/suppliers/{sem[0]['id']}", headers=H(rh), json={"tipo": "FORNECEDOR"}).status_code == 204
+assert not [i for i in get(rh, "/risks", params={"supplier": sem[0]["id"]})["items"] if i["codigo"] in ("FORN_CERTIDAO_AUSENTE", "FORN_GUIA_FGTS_AUSENTE")]; ok("fornecedor SEM trabalhadores alocados: sem cobrança de certidões trabalhistas e guias mensais")
+# separação em três grupos: própria empresa, terceirizada e fornecedor
+vp = {e["vinculo"] for e in get(rh, "/employees", params={"limit": 100})["items"]}; assert {"PROPRIA", "FORNECEDOR"} <= vp, vp
+assert all(e["vinculo"] == "PROPRIA" for e in get(rh, "/employees", params={"vinculo": "PROPRIA", "limit": 100})["items"]); ok("funcionários da própria empresa separados dos de fornecedores")
+assert [e["nome"] for e in get(rh, "/employees", params={"vinculo": "FORNECEDOR"})["items"]] and not get(rh, "/employees", params={"vinculo": "TERCEIRIZADA"})["items"]; ok("filtro por vínculo: fornecedor × terceirizada")
+pv = {x["vinculo"]: x for x in get(rh, "/metrics/overview")["por_vinculo"]}; assert pv["PROPRIA"]["funcionarios"] >= 5 and pv["FORNECEDOR"]["funcionarios"] >= 1; ok(f"painel separa os trabalhadores por vínculo: {dict((k, v['funcionarios']) for k, v in pv.items())}")
+dv_ = get(rh, "/documents", params={"vinculo": "FORNECEDOR", "limit": 100})["items"]; assert dv_ and all(d["vinculo"] == "FORNECEDOR" for d in dv_) and all(d["vinculo"] == "PROPRIA" for d in get(rh, "/documents", params={"vinculo": "PROPRIA", "limit": 100})["items"]); ok("documentos também separados por vínculo")
+assert c.patch(f"{API}/suppliers/{f1['id']}", headers=H(rh), json={"contrato_inicio": "2026-12-31", "contrato_fim": "2026-01-01"}).status_code == 400; ok("fim do contrato antes do início → 400")
+# contrato vencido com funcionário ativo alocado ao fornecedor f2
+cpf_novo = "168.995.350-09"
+fx = [e for e in get(rh, "/employees", params={"q": "FULANO", "limit": 20})["items"]]
+assert fx, "funcionário criado na revisão (seção 4) deveria existir"
+assert c.patch(f"{API}/employees/{fx[0]['id']}", headers=H(rh), json={"supplier_id": f2}).status_code == 204; ok("funcionário passa a ser de uma terceirizada (empregador editável)")
+cods2 = {i["codigo"] for i in get(rh, "/risks", params={"supplier": f2})["items"]}
+assert {"FORN_CONTRATO_AUSENTE", "FORN_CERTIDAO_AUSENTE"} <= cods2; ok("terceirizada sem contrato nem certidões: indicadores de ausência")
+# empregador divergente: documento do mesmo funcionário com CNPJ de outra empresa
+lote2 = pdf_paginas([["RECIBO DE PAGAMENTO - HOLERITE", f"EMPRESA: SEGURA VIGILANCIA LTDA CNPJ: {mask(FORN2)}", "NOME: JOSE ALVES DA SILVA", "CPF: 746.023.188-60", "COMPETENCIA: 10/2026", "SALARIO BASE: R$ 2.000,00", "LIQUIDO A RECEBER: R$ 1.700,00"]])
+b14 = enviar_e_esperar("holerite_outra_empresa.pdf", lote2)
+dv = [d for d in b14["documentos"] if "EMPREGADOR_DIVERGENTE" in d["motivos_revisao"]]; assert dv, [d["motivos_revisao"] for d in b14["documentos"]]; ok("holerite de outra empresa para o mesmo funcionário: EMPREGADOR_DIVERGENTE (vai para revisão)")
+assert "EMPREGADOR_DIVERGENTE" in {i["codigo"] for i in get(rh, "/risks")["items"]}; ok("a divergência vira indicador de risco")
+# o revisor corrige o CNPJ da empresa: o documento muda de fornecedor
+r = c.post(f"{API}/review/{dv[0]['id']}", headers=H(rh), json={"acao": "CORRIGIR", "campos": {"empresa_cnpj": FORN}, "forcado": True}); assert r.status_code == 204, r.text
+assert get(rh, f"/documents/{dv[0]['id']}")["fornecedor_cnpj"] == FORN; ok("correção do CNPJ na revisão reagrupa o documento no fornecedor certo")
+# fornecedor inativo não gera cobrança nem indicadores
+assert c.patch(f"{API}/suppliers/{f2}", headers=H(rh), json={"status": "INATIVO"}).status_code == 204
+assert not [i for i in get(rh, "/risks", params={"supplier": f2})["items"] if i["codigo"].startswith("FORN_")]; ok("fornecedor inativo: deixa de ser cobrado e de gerar indicadores de fornecedor")
+
 print("\nOK — todos os checks passaram")

@@ -1,0 +1,1398 @@
+{
+  "arquivo": "lote_0014.pdf",
+  "perfil": "ocorrencias",
+  "empresa_cnpj": "03572196000187",
+  "competencia": "2025-11",
+  "degradacao": "media",
+  "total_paginas": 27,
+  "total_documentos": 27,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "post_it:devolver"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 27,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "post_it:2ª via"
+      ]
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "post_it:ver c/ RH",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "post_it:ver c/ RH"
+      ]
+    },
+    {
+      "pagina": 26,
+      "documentos": [
+        {
+          "indice": 25,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 27,
+      "documentos": [
+        {
+          "indice": 26,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "OUTRO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2025-11",
+      "empresa_cnpj": "03572196000187",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19308567259",
+      "empregado": "MARIANA DA CUNHA RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "data_documento": "2020-05-05",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "MARIANA DA CUNHA RODRIGUES",
+        "empregado_cpf": "19308567259",
+        "empregador_razao_social": "NOGUEIRA COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "03572196000187",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "COPEIRA",
+        "riscos": [
+          "Queda de mesmo nível",
+          "Postura inadequada"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "10738265977",
+      "empregado": "PAULO MOREIRA DA LUZ",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "empregado_nome": "Paulo Moreira Da Luz",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Nogueira Copa Terceirização Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "SUSPENSAO",
+        "forma": "MANUSCRITA",
+        "data_documento": "2025-11-16",
+        "motivo": "atrasos reiterados sem justificativa",
+        "dias_suspensao": 1,
+        "ciencia": "RECUSA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "30128694769",
+      "empregado": "DANILO GONÇALVES SOUSA",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "data_documento": "2025-12-28",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Danilo Gonçalves Sousa",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2025-12-28",
+        "motivo": "precisei resolver problema no banco",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "DANILO GONÇALVES SOUSA"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "47861052362",
+      "empregado": "MATEUS PIRES NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "data_documento": "2023-09-07",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "MATEUS PIRES NOVAES",
+        "empregado_cpf": "47861052362",
+        "empregador_razao_social": "NOGUEIRA COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "03572196000187",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "COZINHEIRA",
+        "riscos": [
+          "Queda de altura",
+          "Ruído"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Petrolina, 07/09/2023"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "81452709360",
+      "empregado": "CARLOS EDUARDO REZENDE MENDONÇA",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "empregado_nome": "Carlos Eduardo Rezende Mendonça",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Nogueira Copa Terceirização Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "MANUSCRITA",
+        "data_documento": "2025-09-23",
+        "motivo": "descumprimento de ordem do supervisor",
+        "dias_suspensao": null,
+        "ciencia": "RECUSA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "empregador_razao_social": "NOGUEIRA COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "03572196000187",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-33 – Espaço Confinado",
+        "data": "2025-10-29",
+        "carga_horaria_horas": 16.0,
+        "instrutor": "Noah Costa",
+        "participantes": [
+          {
+            "nome": "Alexia Pires Gonçalves",
+            "cpf": "70364589175",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Stephany Caldeira Freitas",
+            "cpf": "19786023404",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Paulo Moreira Da Luz",
+            "cpf": "10738265977",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Caleb Sousa Barros",
+            "cpf": "18325970405",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Mateus Pires Novaes",
+            "cpf": "47861052362",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Luiz Henrique Pacheco Duarte",
+            "cpf": "18932047588",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Letícia Fernandes Martins",
+            "cpf": "30645928747",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Danilo Gonçalves Sousa",
+            "cpf": "30128694769",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Mariana Da Cunha Rodrigues",
+            "cpf": "19308567259",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Carlos Eduardo Rezende Mendonça",
+            "cpf": "81452709360",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "301.286.947-69"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "18932047588",
+      "empregado": "LUIZ HENRIQUE PACHECO DUARTE",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "empregado_nome": "Luiz Henrique Pacheco Duarte",
+        "empregado_cpf": null,
+        "empregador_razao_social": "NOGUEIRA COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "03572196000187",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2025-11-22",
+        "motivo": "ausência injustificada ao serviço",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "81452709360",
+      "empregado": "CARLOS EDUARDO REZENDE MENDONÇA",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Carlos Eduardo Rezende Mendonça",
+        "data_atendimento": "2025-12-19",
+        "dias_afastamento": 1,
+        "cid_informado": false,
+        "medico_nome": "Dr(a). Augusto Pimenta",
+        "medico_crm": null,
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "atestado_sem_crm",
+          "descricao": "atestado sem CRM do médico",
+          "campo": "medico_crm"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "70364589175",
+      "empregado": "ALEXIA PIRES GONÇALVES",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Alexia Pires Gonçalves",
+        "empregado_cpf": null,
+        "empregador_razao_social": "NOGUEIRA COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "03572196000187",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "QUASE_ACIDENTE",
+        "data_ocorrencia": "2025-12-26",
+        "hora": "11:20",
+        "local": "Almoxarifado",
+        "descricao": "Fio desencapado encontrado próximo ao quadro de energia, isolado antes de contato.",
+        "houve_afastamento": false,
+        "testemunha_nome": "Luna Aparecida"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "11:20"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Almoxarifado"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Fio desencapado encontrado próximo ao quadro de energia, isolado antes de"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "30128694769",
+      "empregado": "DANILO GONÇALVES SOUSA",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "empregado_nome": "Danilo Gonçalves Sousa",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Nogueira Copa Terceirização Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "SUSPENSAO",
+        "forma": "MANUSCRITA",
+        "data_documento": "2025-12-17",
+        "motivo": "abandono do posto de trabalho durante o expediente",
+        "dias_suspensao": 1,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19308567259",
+      "empregado": "MARIANA DA CUNHA RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Mariana Da Cunha Rodrigues",
+        "empregado_cpf": null,
+        "empregador_razao_social": "NOGUEIRA COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "03572196000187",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "ACIDENTE",
+        "data_ocorrencia": "2025-11-27",
+        "hora": "14:30",
+        "local": "Copa do 2º andar",
+        "descricao": "Cortou o dedo ao manusear caixa com grampo solto no almoxarifado.",
+        "houve_afastamento": false,
+        "testemunha_nome": "Alexia Novais"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "47861052362",
+      "empregado": "MATEUS PIRES NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Mateus Pires Novaes",
+        "empregado_cpf": null,
+        "empregador_razao_social": "NOGUEIRA COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "03572196000187",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "ACIDENTE",
+        "data_ocorrencia": "2026-01-11",
+        "hora": "16:30",
+        "local": "Recepção",
+        "descricao": "Torceu o tornozelo ao descer a escada de acesso ao estacionamento.",
+        "houve_afastamento": true,
+        "testemunha_nome": "Ravy Campos"
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "002050"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "81452709360",
+      "empregado": "CARLOS EDUARDO REZENDE MENDONÇA",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "data_documento": "2025-02-10",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "CARLOS EDUARDO REZENDE MENDONÇA",
+        "empregado_cpf": "81452709360",
+        "empregador_razao_social": "NOGUEIRA COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "03572196000187",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "COPEIRA",
+        "riscos": [
+          "Ruído",
+          "Agentes biológicos"
+        ]
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "47861052362",
+      "empregado": "MATEUS PIRES NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "data_documento": "2025-12-14",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Mateus Pires Novaes",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2025-12-12",
+        "motivo": "comparecimento a audiência",
+        "visto_chefia_presente": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "30128694769",
+      "empregado": "DANILO GONÇALVES SOUSA",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "data_documento": "2020-07-23",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "DANILO GONÇALVES SOUSA",
+        "empregado_cpf": "30128694769",
+        "empregador_razao_social": "NOGUEIRA COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "03572196000187",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "COPEIRA",
+        "riscos": [
+          "Choque elétrico",
+          "Cortes e perfurações"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "70364589175",
+      "empregado": "ALEXIA PIRES GONÇALVES",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "empregado_nome": "Alexia Pires Gonçalves",
+        "empregado_cpf": null,
+        "empregador_razao_social": "NOGUEIRA COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "03572196000187",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2025-11-28",
+        "motivo": "atrasos reiterados sem justificativa",
+        "dias_suspensao": null,
+        "ciencia": "SEM_CIENCIA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_ciencia",
+          "descricao": "medida disciplinar sem ciência",
+          "campo": "ciencia"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19308567259",
+      "empregado": "MARIANA DA CUNHA RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "data_documento": "2020-05-06",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "MARIANA DA CUNHA RODRIGUES",
+        "empregado_cpf": "19308567259",
+        "empregador_razao_social": "NOGUEIRA COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "03572196000187",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "COPEIRA",
+        "riscos": [
+          "Postura inadequada",
+          "Queda de altura"
+        ]
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "47861052362",
+      "empregado": "MATEUS PIRES NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "empregado_nome": "Mateus Pires Novaes",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Nogueira Copa Terceirização Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "SUSPENSAO",
+        "forma": "MANUSCRITA",
+        "data_documento": "2025-11-10",
+        "motivo": "descumprimento de ordem do supervisor",
+        "dias_suspensao": 1,
+        "ciencia": "SEM_CIENCIA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_ciencia",
+          "descricao": "medida disciplinar sem ciência",
+          "campo": "ciencia"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "35962074106",
+      "empregado": "LAÍS TEIXEIRA CUNHA",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "data_documento": "2025-12-13",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Laís Teixeira Cunha",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "FALTA",
+        "data_ocorrencia": "2025-12-12",
+        "motivo": "problema com o transporte público",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "18325970405",
+      "empregado": "CALEB SOUSA BARROS",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "data_documento": "2026-01-02",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Caleb Sousa Barros",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-01-01",
+        "motivo": "precisei resolver problema no banco",
+        "visto_chefia_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19308567259",
+      "empregado": "MARIANA DA CUNHA RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Mariana Da Cunha Rodrigues",
+        "data_atendimento": "2025-12-07",
+        "dias_afastamento": 10,
+        "cid_informado": false,
+        "medico_nome": "Dr(a). Diogo Câmara",
+        "medico_crm": null,
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "atestado_sem_crm",
+          "descricao": "atestado sem CRM do médico",
+          "campo": "medico_crm"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 23,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        24
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19308567259",
+      "empregado": "MARIANA DA CUNHA RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "data_documento": "2026-01-17",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Mariana Da Cunha Rodrigues",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-01-17",
+        "motivo": "comparecimento a audiência",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "17/01/2026, POIS COMPARECIMENTO A AUDIÊNCIA. PEÇO A COMPREENSÃO DA"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 24,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        25
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "18932047588",
+      "empregado": "LUIZ HENRIQUE PACHECO DUARTE",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Luiz Henrique Pacheco Duarte",
+        "data_atendimento": "2025-12-28",
+        "dias_afastamento": 10,
+        "cid_informado": false,
+        "medico_nome": "Dr(a). Eduarda Vasconcelos",
+        "medico_crm": "CRM-PE 31306",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 25,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        26
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "18932047588",
+      "empregado": "LUIZ HENRIQUE PACHECO DUARTE",
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "data_documento": "2025-12-05",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Luiz Henrique Pacheco Duarte",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "FALTA",
+        "data_ocorrencia": "2025-12-03",
+        "motivo": "consulta médica do filho",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Consulta médica do filho."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 26,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        27
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "03572196000187",
+      "dados": {
+        "empregador_razao_social": "NOGUEIRA COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "03572196000187",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-17 – Ergonomia",
+        "data": "2025-11-06",
+        "carga_horaria_horas": 2.0,
+        "instrutor": "Sophia Moraes",
+        "participantes": [
+          {
+            "nome": "Letícia Fernandes Martins",
+            "cpf": "30645928747",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Alexia Pires Gonçalves",
+            "cpf": "70364589175",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Carlos Eduardo Rezende Mendonça",
+            "cpf": null,
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Stephany Caldeira Freitas",
+            "cpf": "19786023404",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Maria Fernandes Viana",
+            "cpf": "62513097416",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Caleb Sousa Barros",
+            "cpf": "18325970405",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Paulo Moreira Da Luz",
+            "cpf": "10738265977",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Letícia Fernandes Martins"
+        },
+        {
+          "defeito": "campo_em_branco",
+          "campo": "participantes.cpf"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Paulo Moreira Da Luz"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 27,
+      "tipo": "OUTRO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      19,
+      19
+    ],
+    "degradacao": "media",
+    "taxa_nc": 0.26,
+    "perfil": "ocorrencias",
+    "embaralhar": 0.13,
+    "paginas_em_branco": 0.09,
+    "fora_de_ordem": 0.06,
+    "intercalar": 0.21,
+    "taxa_defeito": 0.13,
+    "taxa_branco": 0.01,
+    "extras": 0.23,
+    "p_celular": 0.11,
+    "p_cabeca_para_baixo": 0.06,
+    "seed": 42014
+  }
+}

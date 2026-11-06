@@ -1,0 +1,405 @@
+{
+  "seed": 42028,
+  "data_referencia": "2026-03-20",
+  "empresas": [
+    {
+      "razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+      "cnpj": "93657104000154",
+      "endereco": "Rua Costela Rezende, 1211 – Canaa",
+      "cidade": "Belo Jardim/PE",
+      "segmento": "Vigilância Patrimonial",
+      "end": {
+        "logradouro": "Rua Costela Rezende",
+        "numero": "1211",
+        "bairro": "Canaa",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55153856"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "THOMAS CORREIA NOVAES",
+      "cpf": "62453917846",
+      "pis": "10743862470",
+      "matricula": "007208",
+      "cargo": "VIGILANTE",
+      "cbo": "5392-63",
+      "salario": 2960.0,
+      "admissao": "2020-02-03",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93657104000154",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Almeida Gonçalves",
+        "numero": "1243",
+        "bairro": "Sagrada Família",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55155352"
+      },
+      "nascimento": "1992-04-15"
+    },
+    {
+      "nome": "BRUNA PEREIRA RODRIGUES",
+      "cpf": "59382146709",
+      "pis": "17761410257",
+      "matricula": "005085",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "8892-72",
+      "salario": 3980.0,
+      "admissao": "2024-05-21",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "93657104000154",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Mendonça Jesus",
+        "numero": "1939",
+        "bairro": "Campo Alegre",
+        "municipio": "Serra Talhada",
+        "uf": "PE",
+        "cep": "56916971"
+      },
+      "nascimento": "1972-07-23"
+    },
+    {
+      "nome": "ANA LAURA BARBOSA SILVEIRA",
+      "cpf": "02584367190",
+      "pis": "17388094286",
+      "matricula": "005270",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "6417-98",
+      "salario": 4030.0,
+      "admissao": "2025-10-23",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "93657104000154",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Albuquerque da Cunha",
+        "numero": "1932",
+        "bairro": "Pompéia",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55150860"
+      },
+      "nascimento": "1975-12-02"
+    },
+    {
+      "nome": "RHAVI PORTO NASCIMENTO",
+      "cpf": "80417253680",
+      "pis": "11890988078",
+      "matricula": "003906",
+      "cargo": "VIGILANTE",
+      "cbo": "4228-94",
+      "salario": 2870.0,
+      "admissao": "2024-07-15",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "93657104000154",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Sá Monteiro",
+        "numero": "203",
+        "bairro": "Acaiaca",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55154804"
+      },
+      "nascimento": "1997-11-23"
+    },
+    {
+      "nome": "LEONARDO CARDOSO FERNANDES",
+      "cpf": "18064579384",
+      "pis": "19221002716",
+      "matricula": "004200",
+      "cargo": "VIGILANTE",
+      "cbo": "7335-52",
+      "salario": 2540.0,
+      "admissao": "2022-05-16",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93657104000154",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Alves Ribeiro",
+        "numero": "941",
+        "bairro": "Vila Fumec",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "50216001"
+      },
+      "nascimento": "1988-04-10"
+    },
+    {
+      "nome": "BIANCA PIMENTA BORGES",
+      "cpf": "27156984020",
+      "pis": "15788191789",
+      "matricula": "007439",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "9178-39",
+      "salario": 3330.0,
+      "admissao": "2021-03-04",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93657104000154",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Duarte Jesus",
+        "numero": "1449",
+        "bairro": "Venda Nova",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55219132"
+      },
+      "nascimento": "1975-12-01"
+    },
+    {
+      "nome": "LUAN CARDOSO AZEVEDO",
+      "cpf": "09238761540",
+      "pis": "12435753294",
+      "matricula": "007586",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "5855-72",
+      "salario": 3540.0,
+      "admissao": "2022-02-07",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93657104000154",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Santos Freitas",
+        "numero": "1383",
+        "bairro": "Vila Suzana Primeira Seção",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55201876"
+      },
+      "nascimento": "1996-11-03"
+    },
+    {
+      "nome": "LUCCA ANDRADE PINTO",
+      "cpf": "70826345107",
+      "pis": "16761401462",
+      "matricula": "008885",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "8776-13",
+      "salario": 4100.0,
+      "admissao": "2021-07-17",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93657104000154",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Melo Novaes",
+        "numero": "1333",
+        "bairro": "Vila Esplanada",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55150571"
+      },
+      "nascimento": "2003-02-10"
+    },
+    {
+      "nome": "ÁGATHA BARBOSA PEIXOTO",
+      "cpf": "17865904258",
+      "pis": "15467439760",
+      "matricula": "008280",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "8900-20",
+      "salario": 3790.0,
+      "admissao": "2022-08-24",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93657104000154",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Vasconcelos Melo",
+        "numero": "718",
+        "bairro": "Vila Batik",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55159687"
+      },
+      "nascimento": "1983-08-12"
+    },
+    {
+      "nome": "OTTO SANTOS PEREIRA",
+      "cpf": "25831976491",
+      "pis": "18278053141",
+      "matricula": "005632",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "8212-74",
+      "salario": 3400.0,
+      "admissao": "2025-05-17",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93657104000154",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Duarte da Costa",
+        "numero": "1417",
+        "bairro": "Conjunto Taquaril",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55152652"
+      },
+      "nascimento": "1981-03-21"
+    },
+    {
+      "nome": "MARIA ALICE CÂMARA MENDONÇA",
+      "cpf": "49631052761",
+      "pis": "15308726020",
+      "matricula": "009711",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "9688-55",
+      "salario": 3930.0,
+      "admissao": "2024-01-05",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93657104000154",
+      "desligado_em": "2026-02-25",
+      "end": {
+        "logradouro": "Travessa Gonçalves Rezende",
+        "numero": "1685",
+        "bairro": "Bonfim",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55151380"
+      },
+      "nascimento": "1987-08-25"
+    },
+    {
+      "nome": "HADASSA MELO LEÃO",
+      "cpf": "14072365980",
+      "pis": "18775656782",
+      "matricula": "003221",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "8827-40",
+      "salario": 3840.0,
+      "admissao": "2025-01-15",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "93657104000154",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Freitas Duarte",
+        "numero": "541",
+        "bairro": "São Jorge 3ª Seção",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56507190"
+      },
+      "nascimento": "1979-06-03"
+    },
+    {
+      "nome": "CARLOS EDUARDO NOVAIS ALBUQUERQUE",
+      "cpf": "74326985119",
+      "pis": "14348659083",
+      "matricula": "005941",
+      "cargo": "VIGILANTE",
+      "cbo": "4277-36",
+      "salario": 2910.0,
+      "admissao": "2025-01-02",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "93657104000154",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Câmara Nunes",
+        "numero": "675",
+        "bairro": "Vila Real 2ª Seção",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55156644"
+      },
+      "nascimento": "1994-06-03"
+    },
+    {
+      "nome": "MARCELA LOPES MONTEIRO",
+      "cpf": "91527063895",
+      "pis": "17684806961",
+      "matricula": "006231",
+      "cargo": "VIGILANTE",
+      "cbo": "9220-68",
+      "salario": 2590.0,
+      "admissao": "2021-02-11",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "93657104000154",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Cunha Aragão",
+        "numero": "416",
+        "bairro": "Maria Goretti",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55153650"
+      },
+      "nascimento": "1969-03-10"
+    }
+  ],
+  "competencias": [
+    "2026-01",
+    "2026-02"
+  ]
+}

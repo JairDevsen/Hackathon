@@ -9,7 +9,7 @@ Legenda: ✅ implementado **e verificado** (teste/E2E citado) · 🟡 implementa
 |---|---|---|
 | Arquivos grandes (500 MB, PDF/TIFF/JPG/PNG/HEIC) | 🟡 | upload retomável em partes ✅ (`e2e_smoke` interrompe e retoma); fatiamento em streaming via PyMuPDF/Pillow; HEIC exige `pillow-heif`; **500 MB não foi testado** (maior teste: 60 páginas) |
 | Início/fim de cada documento + agrupamento | ✅ | `ia_core/agrupar.py`; teste com gabarito (frente/verso, página em branco); "Dividir aqui" (usa a página do meio — falta seletor na UI) e "Juntar" na revisão |
-| Classificação (32 tipos) | ✅ | `ia_core/catalogo.py` (assert de 32) ; acurácia medida **só no motor local, em lotes fictícios** |
+| Classificação (36 tipos: 32 de RH/terceirização + 4 de risco da terceirizada) | ✅ | `ia_core/catalogo.py` (assert de 36) ; acurácia medida **só no motor local, em lotes fictícios** |
 | OCR pesquisável | 🟡 | PDF com camada de texto invisível posicionada (palavra a palavra quando há texto/OCR) ✅; busca em texto completo (`tsvector` pt, sem acento) e destaque na imagem ✅. **PDF/A-2b não** (PDF comum); OCR de **imagens escaneadas depende de Tesseract**, não instalado no ambiente de teste (não verificado) |
 | Confiança e fila de revisão | ✅ | confiança por página/documento, motivos, fila priorizada, tela dividida, medição de duração |
 | Modelos multimodais (Gemini) | 🟡 | `GeminiProvider` (imagem + `response_schema` + fallback Pro) **escrito mas nunca executado** (sem chave); o motor local é o que roda nos testes |
@@ -126,6 +126,22 @@ Esse prompt foi escrito para o protótipo antigo (`backend/main.py`, `app.js`/Bo
 | **Indicadores de risco trabalhista** (jornada, intervalo, ponto britânico, horas extras sem pagamento, FGTS, férias, TRCT, vínculo, qualidade documental) com severidade e base legal | ✅/🟡 | `compliance/risk.go` (testes), `GET /risks`, página Riscos, aba no dossiê, cartões no Início. **São indicadores de triagem, não parecer jurídico**; as bases legais citadas devem ser **validadas pelo jurídico** antes de uso em produção |
 | Ignorar (com justificativa) e reabrir indicador, só admin, auditado; recálculo preserva a decisão | ✅ | `POST /risks/:id/ignore` e `/reabrir`; E2E seção 11 |
 | Cobertura das regras | 🟡 | A detecção depende dos campos extraídos: `horas_extras` e `pagamento_horas_extras` têm regex testada em amostras sintéticas; documentos reais podem usar outros rótulos |
+
+## Fornecedores e terceirizadas (risco de processo trabalhista para a contratante)
+| Item | Status | Onde / evidência |
+|---|---|---|
+| **Fornecedor/terceirizada** como entidade, identificada pelo **CNPJ** lido no documento (único por empresa) | ✅ | migração `000006`; `documents/suppliers.go`; E2E seção 13 |
+| Em contrato, vale o CNPJ da **contratada**, não o da contratante | ✅ | `ia_core/extracao.py` (`cnpj_da_empresa`, testado); depende de o texto trazer o rótulo "CONTRATADA/PRESTADORA" |
+| **Pré-cadastro automático** do fornecedor; completar tipo, criticidade e contrato | ✅ | ingestão + `/suppliers` (POST/PATCH); tela Fornecedores |
+| **Três grupos**: própria empresa × terceirizada × fornecedor, em funcionários, documentos, painel e árvore de pastas do lote | ✅ | campo `vinculo` e filtros `?vinculo=`; E2E |
+| Funcionário herda o empregador; documento de **outra empresa** → `EMPREGADOR_DIVERGENTE` (revisão) | ✅ | `ingest.go`; E2E |
+| Exigências da empresa avaliadas **por fornecedor** (certidões, guias mensais, contrato, apólice) | ✅ | `compliance/engine.go` (`recomputeSuppliers`), modelo de exigências da empresa ampliado |
+| Fornecedor **sem trabalhadores** não é cobrado por certidões e guias mensais; **com** trabalhadores, sim | ✅ | `risk.go` + `engine.go` (testes unitários e E2E) |
+| **Indicadores de risco** do fornecedor: certidão, contrato (ausente/vencido), guia de FGTS por competência, autuação, processo, auditoria, empregador divergente, com base legal | ✅/🟡 | `compliance/risk.go` (`deriveSupplierRisks`, testes). **Triagem, não parecer jurídico**; as bases legais precisam de validação do jurídico |
+| **Nível de exposição** a processo trabalhista por fornecedor (alta/média/baixa) | ✅/🟡 | regra simples e explicada na tela (`supplierSelect`); não é um modelo estatístico |
+| 4 tipos de documento novos: apólice de seguro, auto de infração, processo judicial, relatório de auditoria | ✅/🟡 | catálogo do IA Core, schemas e migração. O gerador de documentos fictícios **não** produz estes 4 tipos, então a acurácia de classificação deles não foi medida |
+| Telas: lista, dossiê do fornecedor (dados, documentos, funcionários, exigidos, riscos), painel por vínculo | ✅ | `features/rh/Fornecedores.tsx`; verificado com capturas reais (Playwright) |
+| Limites | 🟡 | Sem importação em planilha de fornecedores; sem exceção de exigência por fornecedor (a regra vale para todos); o motor local só reconhece o CNPJ quando o texto do documento tem camada de texto ou OCR |
 
 ## Revisão de segurança (código, funcionalidades, landing e perfis)
 Escopo: backend Go, IA Core, frontend (landing e as telas dos perfis Master, Administrador, RH e RH restrito por unidade), infraestrutura (Docker/Traefik/nginx/CI) e dependências. Método: leitura do código com buscas dirigidas (SQL dinâmico, cobertura do filtro de dados de saúde, uso de escopo de unidade, sinks de XSS), `govulncheck`, `npm audit` e `pip-audit`.

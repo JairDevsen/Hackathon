@@ -1,0 +1,459 @@
+{
+  "seed": 42019,
+  "data_referencia": "2025-12-20",
+  "empresas": [
+    {
+      "razao_social": "APARECIDA LIMPEZA SOLUÇÕES LTDA",
+      "cnpj": "82956401000184",
+      "endereco": "Travessa Nascimento da Costa, 1069 – Nossa Senhora Da Conceição",
+      "cidade": "Paulista/PE",
+      "segmento": "Limpeza e Conservação",
+      "end": {
+        "logradouro": "Travessa Nascimento da Costa",
+        "numero": "1069",
+        "bairro": "Nossa Senhora Da Conceição",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53417151"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "BRAYAN CAVALCANTI NOVAIS",
+      "cpf": "17346805208",
+      "pis": "12817399600",
+      "matricula": "002398",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "5878-70",
+      "salario": 1680.0,
+      "admissao": "2021-01-09",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": "2025-11-28",
+      "end": {
+        "logradouro": "Rua Siqueira Melo",
+        "numero": "105",
+        "bairro": "Canaa",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53422542"
+      },
+      "nascimento": "1971-02-21"
+    },
+    {
+      "nome": "DAVI MIGUEL DUARTE FREITAS",
+      "cpf": "10245798323",
+      "pis": "16918650859",
+      "matricula": "003007",
+      "cargo": "SERVENTE",
+      "cbo": "5711-66",
+      "salario": 1700.0,
+      "admissao": "2024-04-22",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Nunes Brito",
+        "numero": "612",
+        "bairro": "São Marcos",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55010847"
+      },
+      "nascimento": "1983-06-05"
+    },
+    {
+      "nome": "LAVÍNIA FERNANDES ALVES",
+      "cpf": "85213409660",
+      "pis": "19375577867",
+      "matricula": "001783",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "7089-28",
+      "salario": 2690.0,
+      "admissao": "2022-01-28",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Pastor da Rosa",
+        "numero": "1864",
+        "bairro": "Boa Viagem",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55085827"
+      },
+      "nascimento": "1995-02-24"
+    },
+    {
+      "nome": "NINA SAMPAIO DUARTE",
+      "cpf": "53726849173",
+      "pis": "19655695070",
+      "matricula": "008585",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "9190-99",
+      "salario": 2630.0,
+      "admissao": "2022-01-29",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Vieira Vargas",
+        "numero": "1548",
+        "bairro": "Calafate",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "50322519"
+      },
+      "nascimento": "1996-02-29"
+    },
+    {
+      "nome": "GABRIELA CASA GRANDE VIANA",
+      "cpf": "49382761519",
+      "pis": "12790634051",
+      "matricula": "001420",
+      "cargo": "SERVENTE",
+      "cbo": "6684-77",
+      "salario": 1740.0,
+      "admissao": "2021-07-24",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Garcia Sá",
+        "numero": "200",
+        "bairro": "Santa Rosa",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53433885"
+      },
+      "nascimento": "1985-09-20"
+    },
+    {
+      "nome": "CAROLINE VIANA ALVES",
+      "cpf": "78961034278",
+      "pis": "16689529992",
+      "matricula": "007918",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "4715-87",
+      "salario": 1780.0,
+      "admissao": "2023-05-22",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Mendes Freitas",
+        "numero": "1579",
+        "bairro": "Camargos",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53487152"
+      },
+      "nascimento": "1998-09-19"
+    },
+    {
+      "nome": "LEANDRO MACEDO PACHECO",
+      "cpf": "06329851433",
+      "pis": "17795962872",
+      "matricula": "004198",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "9491-20",
+      "salario": 1650.0,
+      "admissao": "2023-11-16",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Cardoso Pacheco",
+        "numero": "1075",
+        "bairro": "Marieta 3ª Seção",
+        "municipio": "Serra Talhada",
+        "uf": "PE",
+        "cep": "56919044"
+      },
+      "nascimento": "1997-05-07"
+    },
+    {
+      "nome": "HELLENA BRITO DA LUZ",
+      "cpf": "61394752873",
+      "pis": "19889274798",
+      "matricula": "000893",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "7545-88",
+      "salario": 2520.0,
+      "admissao": "2019-03-06",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": "2025-11-26",
+      "end": {
+        "logradouro": "Travessa Cirino Oliveira",
+        "numero": "800",
+        "bairro": "Taquaril",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53467204"
+      },
+      "nascimento": "1996-01-08"
+    },
+    {
+      "nome": "MARIA LIZ BORGES PEREIRA",
+      "cpf": "84253190723",
+      "pis": "10723863137",
+      "matricula": "003814",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "6762-95",
+      "salario": 2500.0,
+      "admissao": "2025-08-28",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Cruz Machado",
+        "numero": "1950",
+        "bairro": "Santa Branca",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53408618"
+      },
+      "nascimento": "1982-10-10"
+    },
+    {
+      "nome": "AURORA OLIVEIRA GOMES",
+      "cpf": "28765903447",
+      "pis": "11231723445",
+      "matricula": "007449",
+      "cargo": "SERVENTE",
+      "cbo": "4688-14",
+      "salario": 1700.0,
+      "admissao": "2023-04-18",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": "2025-11-23",
+      "end": {
+        "logradouro": "Travessa Guerra Vargas",
+        "numero": "418",
+        "bairro": "São Gonçalo",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53415029"
+      },
+      "nascimento": "1980-03-31"
+    },
+    {
+      "nome": "JOÃO GABRIEL MOURA PINTO",
+      "cpf": "03754618253",
+      "pis": "15013386547",
+      "matricula": "001644",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "8565-23",
+      "salario": 2590.0,
+      "admissao": "2025-07-25",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Mendes Pastor",
+        "numero": "1323",
+        "bairro": "Bairro Das Indústrias Ii",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53477057"
+      },
+      "nascimento": "1977-01-01"
+    },
+    {
+      "nome": "LUANA PIMENTA LOPES",
+      "cpf": "47936810269",
+      "pis": "16112814685",
+      "matricula": "002983",
+      "cargo": "SERVENTE",
+      "cbo": "6532-95",
+      "salario": 1630.0,
+      "admissao": "2024-03-22",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Camargo Alves",
+        "numero": "1345",
+        "bairro": "Santa Amelia",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53422935"
+      },
+      "nascimento": "1992-11-29"
+    },
+    {
+      "nome": "KAIQUE CUNHA NOVAES",
+      "cpf": "63175928455",
+      "pis": "11401718455",
+      "matricula": "006069",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "6725-99",
+      "salario": 2740.0,
+      "admissao": "2022-04-30",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Sousa Campos",
+        "numero": "1296",
+        "bairro": "Belvedere",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56516023"
+      },
+      "nascimento": "1985-01-12"
+    },
+    {
+      "nome": "DAVI LUCAS PEREIRA NOVAIS",
+      "cpf": "73405196884",
+      "pis": "19964903998",
+      "matricula": "007681",
+      "cargo": "SERVENTE",
+      "cbo": "9891-46",
+      "salario": 1760.0,
+      "admissao": "2023-06-15",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Castro da Cruz",
+        "numero": "1461",
+        "bairro": "Prado",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53436390"
+      },
+      "nascimento": "1973-01-06"
+    },
+    {
+      "nome": "VINÍCIUS SIQUEIRA RODRIGUES",
+      "cpf": "47103296804",
+      "pis": "16736802149",
+      "matricula": "000123",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "6048-50",
+      "salario": 1830.0,
+      "admissao": "2023-04-19",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Costela Campos",
+        "numero": "287",
+        "bairro": "Álvaro Camargos",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53425969"
+      },
+      "nascimento": "1972-03-30"
+    },
+    {
+      "nome": "ARTHUR DIAS FERNANDES",
+      "cpf": "01385476290",
+      "pis": "13980868302",
+      "matricula": "003007",
+      "cargo": "SERVENTE",
+      "cbo": "4962-44",
+      "salario": 1720.0,
+      "admissao": "2021-02-22",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "82956401000184",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Brito Novais",
+        "numero": "108",
+        "bairro": "Calafate",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53410660"
+      },
+      "nascimento": "1997-08-05"
+    }
+  ],
+  "competencias": [
+    "2025-10",
+    "2025-11"
+  ]
+}

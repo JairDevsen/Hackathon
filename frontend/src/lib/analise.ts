@@ -5,7 +5,7 @@ export interface Problema { codigo: string; titulo: string; texto: string; nivel
 const TITULOS: Record<string, string> = {
   DOCUMENTO_VENCIDO: 'Documento vencido', CERTIDAO_VENCIDA: 'Certidão vencida', IMAGEM_BORRADA: 'Imagem borrada', DADOS_DIVERGENTES: 'Dados divergentes',
   CPF_INVALIDO: 'CPF inválido', CPF_DIVERGENTE: 'CPF divergente', POSSIVEL_DUPLICATA: 'Possível duplicata', DOCUMENTO_SEM_ASSINATURA: 'Documento sem assinatura', JORNADA_ACIMA_10H: 'Jornada acima de 10 horas',
-  INTERVALO_INFERIOR_1H: 'Intervalo menor que 1 hora', FGTS_DIVERGENTE: 'FGTS divergente', PONTO_BRITANICO: 'Ponto britânico', RECUSA_SEM_TESTEMUNHAS: 'Recusa sem testemunhas',
+  INTERVALO_INFERIOR_1H: 'Intervalo menor que 1 hora', FGTS_DIVERGENTE: 'FGTS divergente', PONTO_BRITANICO: 'Ponto britânico', RECUSA_SEM_TESTEMUNHAS: 'Recusa sem testemunhas', EMPREGADOR_DIVERGENTE: 'Empregador divergente',
 }
 const MOTIVOS: Record<string, [string, string, 'atencao' | 'erro']> = {
   SEM_VINCULO: ['Sem vínculo', 'Não foi possível ligar este documento a um funcionário cadastrado.', 'atencao'],
@@ -15,6 +15,7 @@ const MOTIVOS: Record<string, [string, string, 'atencao' | 'erro']> = {
   MULTIPLOS_DOCUMENTOS: ['Mais de um documento na imagem', 'A imagem parece conter mais de um documento.', 'atencao'],
   VINCULO_POR_NOME: ['Vínculo só pelo nome', 'O funcionário foi encontrado apenas pelo nome: confirme.', 'atencao'],
   TRANSCRICAO_MANUAL: ['Transcrição manual', 'Os campos foram informados por uma pessoa; uma cópia legível ainda é necessária para comprovação.', 'atencao'],
+  EMPREGADOR_DIVERGENTE: ['Empregador divergente', 'A empresa (CNPJ) deste documento difere do empregador cadastrado para o funcionário: confirme se houve troca de empregador.', 'atencao'],
   LIMITE_FUNCIONARIOS: ['Limite do plano', 'O limite de funcionários impediu o pré-cadastro; confira o plano da empresa.', 'atencao'],
 }
 

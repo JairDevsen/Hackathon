@@ -1,0 +1,634 @@
+{
+  "arquivo": "lote_0030.pdf",
+  "perfil": "desligamento",
+  "empresa_cnpj": "02964358000160",
+  "competencia": "2026-03",
+  "degradacao": "forte",
+  "total_paginas": 14,
+  "total_documentos": 11,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "76025381968",
+      "empregado": "LIZ SIQUEIRA FERNANDES",
+      "competencia": null,
+      "empresa_cnpj": "02964358000160",
+      "dados": {
+        "empregado_nome": "LIZ SIQUEIRA FERNANDES",
+        "empregado_cpf": "76025381968",
+        "empregador_razao_social": "PACHECO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "02964358000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "ABANDONO_EMPREGO",
+        "data_documento": "2026-02-15",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "76025381968",
+      "empregado": "LIZ SIQUEIRA FERNANDES",
+      "competencia": null,
+      "empresa_cnpj": "02964358000160",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 127 150 146 AR",
+        "conteudo": "Notificação nº 284/2026",
+        "data_postagem": "2026-02-16",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA PAULISTA",
+        "destinatario_nome": "Liz Siqueira Fernandes",
+        "destinatario_endereco": "Rua Macedo Gonçalves, 605",
+        "destinatario_bairro": "Vila São Gabriel Jacui",
+        "destinatario_municipio": "Paulista",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "53473917",
+        "remetente_nome": "PACHECO COPA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Correia da Conceição, 1505 – Cenaculo, Paulista/PE",
+        "remetente_cep": "53403609",
+        "tentativas": [
+          {
+            "data": "2026-02-18",
+            "hora": "12:45"
+          },
+          {
+            "data": "2026-02-20",
+            "hora": "11:30"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-02-20",
+        "data_devolucao": null,
+        "recebedor_nome": "LIZ SIQUEIRA FERNANDES",
+        "recebedor_documento": "1241260",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Notificação nº 284/2026"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Rua Correia da Conceição, 1505 – Cenaculo, Paulista/PE"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "TRCT",
+      "paginas": [
+        3,
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "76025381968",
+      "empregado": "LIZ SIQUEIRA FERNANDES",
+      "competencia": "2026-03",
+      "empresa_cnpj": "02964358000160",
+      "dados": {
+        "empregado_nome": "LIZ SIQUEIRA FERNANDES",
+        "empregado_cpf": "76025381968",
+        "empregador_razao_social": "PACHECO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "02964358000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "13741787735",
+        "data_admissao": "2019-10-30",
+        "data_aviso_previo": "2026-02-08",
+        "data_afastamento": "2026-03-10",
+        "causa_afastamento": "Despedida sem justa causa, pelo empregador",
+        "codigo_afastamento": "SJ2",
+        "remuneracao_fins_rescisorios": 2170.0,
+        "total_bruto": 4460.56,
+        "total_deducoes": 81.38,
+        "valor_liquido": 4379.18,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "ASO",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "76025381968",
+      "empregado": "LIZ SIQUEIRA FERNANDES",
+      "competencia": null,
+      "empresa_cnpj": "02964358000160",
+      "dados": {
+        "empregado_nome": "Liz Siqueira Fernandes",
+        "empregado_cpf": "76025381968",
+        "empregador_razao_social": "PACHECO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "02964358000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Cozinheira",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-03-10",
+        "riscos_ocupacionais": [
+          "Biológico",
+          "Ergonômico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Yago Barros",
+        "medico_crm": "CRM-PE 7454"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "08547926194",
+      "empregado": "LIZ SOUSA CORREIA",
+      "competencia": null,
+      "empresa_cnpj": "02964358000160",
+      "dados": {
+        "data_documento": "2026-02-17",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Liz Sousa Correia",
+        "empregado_cpf": "08547926194",
+        "empregador_razao_social": "Pacheco Copa Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Sem mais,"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "TRCT",
+      "paginas": [
+        8,
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "08547926194",
+      "empregado": "LIZ SOUSA CORREIA",
+      "competencia": "2026-03",
+      "empresa_cnpj": "02964358000160",
+      "dados": {
+        "empregado_nome": "LIZ SOUSA CORREIA",
+        "empregado_cpf": "08547926194",
+        "empregador_razao_social": "PACHECO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "02964358000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "17452763805",
+        "data_admissao": "2025-12-17",
+        "data_aviso_previo": "2026-02-17",
+        "data_afastamento": "2026-03-19",
+        "causa_afastamento": "Despedida sem justa causa, pelo empregador",
+        "codigo_afastamento": "SJ2",
+        "remuneracao_fins_rescisorios": 2010.0,
+        "total_bruto": 4678.83,
+        "total_deducoes": 133.16,
+        "valor_liquido": 4593.8,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "liquido_divergente",
+          "descricao": "valor líquido não fecha com a soma",
+          "campo": "valor_liquido"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "COZINHEIRA"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Saldo de salário"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "1/3 constitucional de férias"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "ASO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "08547926194",
+      "empregado": "LIZ SOUSA CORREIA",
+      "competencia": null,
+      "empresa_cnpj": "02964358000160",
+      "dados": {
+        "empregado_nome": "Liz Sousa Correia",
+        "empregado_cpf": "08547926194",
+        "empregador_razao_social": "PACHECO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "02964358000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Cozinheira",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-03-19",
+        "riscos_ocupacionais": [
+          "Biológico",
+          "Acidentes"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Renan Sampaio",
+        "medico_crm": "CRM-AL 34400"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Cozinheira"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "01269378503",
+      "empregado": "ANA CAROLINA CORREIA DA MOTA",
+      "competencia": null,
+      "empresa_cnpj": "02964358000160",
+      "dados": {
+        "data_documento": "2026-02-08",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Ana Carolina Correia Da Mota",
+        "empregado_cpf": "01269378503",
+        "empregador_razao_social": "Pacheco Copa Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "TRCT",
+      "paginas": [
+        13,
+        12
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": true,
+      "intercalado": false,
+      "cpf": "01269378503",
+      "empregado": "ANA CAROLINA CORREIA DA MOTA",
+      "competencia": "2026-03",
+      "empresa_cnpj": "02964358000160",
+      "dados": {
+        "empregado_nome": "ANA CAROLINA CORREIA DA MOTA",
+        "empregado_cpf": "01269378503",
+        "empregador_razao_social": "PACHECO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "02964358000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "10005794649",
+        "data_admissao": "2021-04-06",
+        "data_aviso_previo": null,
+        "data_afastamento": "2026-03-10",
+        "causa_afastamento": "Término do contrato de experiência",
+        "codigo_afastamento": "RA2",
+        "remuneracao_fins_rescisorios": 1660.0,
+        "total_bruto": 2858.89,
+        "total_deducoes": 62.25,
+        "valor_liquido": 2796.64,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "ANA CAROLINA CORREIA DA MOTA"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "2.858,89"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "ASO",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "01269378503",
+      "empregado": "ANA CAROLINA CORREIA DA MOTA",
+      "competencia": null,
+      "empresa_cnpj": "02964358000160",
+      "dados": {
+        "empregado_nome": "Ana Carolina Correia Da Mota",
+        "empregado_cpf": "01269378503",
+        "empregador_razao_social": "PACHECO COPA SERVIÇOS LTDA",
+        "empregador_cnpj": "02964358000160",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Copeira",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-03-10",
+        "riscos_ocupacionais": [
+          "Químico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). João Vitor Lima",
+        "medico_crm": "CRM-PE 17792"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "OUTRO",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      10,
+      10
+    ],
+    "degradacao": "forte",
+    "taxa_nc": 0.27,
+    "perfil": "desligamento",
+    "embaralhar": 0.37,
+    "paginas_em_branco": 0.05,
+    "fora_de_ordem": 0.26,
+    "intercalar": 0.19,
+    "taxa_defeito": 0.07,
+    "taxa_branco": 0.05,
+    "extras": 0.11,
+    "p_celular": 0.08,
+    "p_cabeca_para_baixo": 0.0,
+    "seed": 42030
+  }
+}

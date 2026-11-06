@@ -1,0 +1,378 @@
+{
+  "seed": 42027,
+  "data_referencia": "2026-08-17",
+  "empresas": [
+    {
+      "razao_social": "SANTOS COPA SOLUÇÕES LTDA",
+      "cnpj": "97132508000185",
+      "endereco": "Rua Nogueira Ramos, 915 – Capitão Eduardo",
+      "cidade": "Olinda/PE",
+      "segmento": "Copa e Cozinha",
+      "end": {
+        "logradouro": "Rua Nogueira Ramos",
+        "numero": "915",
+        "bairro": "Capitão Eduardo",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53023417"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "ANA CLARA MARQUES AZEVEDO",
+      "cpf": "81742056911",
+      "pis": "14718179501",
+      "matricula": "004934",
+      "cargo": "COZINHEIRA",
+      "cbo": "4609-72",
+      "salario": 2090.0,
+      "admissao": "2025-10-19",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "97132508000185",
+      "desligado_em": "2026-07-26",
+      "end": {
+        "logradouro": "Travessa da Costa Correia",
+        "numero": "686",
+        "bairro": "Vila Ipiranga",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53110010"
+      },
+      "nascimento": "1978-05-22"
+    },
+    {
+      "nome": "LARISSA SILVEIRA GARCIA",
+      "cpf": "56091843206",
+      "pis": "12750601276",
+      "matricula": "002670",
+      "cargo": "COPEIRA",
+      "cbo": "5412-72",
+      "salario": 1840.0,
+      "admissao": "2024-06-21",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "97132508000185",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Araújo Gomes",
+        "numero": "318",
+        "bairro": "Savassi",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56312980"
+      },
+      "nascimento": "1986-03-02"
+    },
+    {
+      "nome": "CALEBE CAMPOS CARDOSO",
+      "cpf": "72831560977",
+      "pis": "10158256937",
+      "matricula": "002147",
+      "cargo": "COPEIRA",
+      "cbo": "8124-34",
+      "salario": 1720.0,
+      "admissao": "2022-12-04",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "97132508000185",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Machado Araújo",
+        "numero": "1",
+        "bairro": "João Alfredo",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53016581"
+      },
+      "nascimento": "1997-08-04"
+    },
+    {
+      "nome": "GABRIELA ABREU CALDEIRA",
+      "cpf": "58273410617",
+      "pis": "14814135854",
+      "matricula": "009177",
+      "cargo": "COPEIRA",
+      "cbo": "4764-18",
+      "salario": 1840.0,
+      "admissao": "2023-12-03",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "97132508000185",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Freitas Cassiano",
+        "numero": "172",
+        "bairro": "Olaria",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "51597513"
+      },
+      "nascimento": "1989-01-31"
+    },
+    {
+      "nome": "ISABELLA ABREU AZEVEDO",
+      "cpf": "92361587068",
+      "pis": "13759406032",
+      "matricula": "005872",
+      "cargo": "COZINHEIRA",
+      "cbo": "7321-44",
+      "salario": 2210.0,
+      "admissao": "2021-05-16",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "97132508000185",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Mata Brito",
+        "numero": "615",
+        "bairro": "Vila Paraíso",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53115109"
+      },
+      "nascimento": "1988-03-17"
+    },
+    {
+      "nome": "PAULO DIAS NOVAES",
+      "cpf": "58107649320",
+      "pis": "14636552780",
+      "matricula": "006865",
+      "cargo": "COPEIRA",
+      "cbo": "4708-96",
+      "salario": 1720.0,
+      "admissao": "2020-08-24",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "97132508000185",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Gomes Montenegro",
+        "numero": "244",
+        "bairro": "Minas Brasil",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53048613"
+      },
+      "nascimento": "1996-08-15"
+    },
+    {
+      "nome": "CLARA MACHADO CAVALCANTE",
+      "cpf": "37568420108",
+      "pis": "10680191370",
+      "matricula": "004451",
+      "cargo": "COZINHEIRA",
+      "cbo": "5989-88",
+      "salario": 2230.0,
+      "admissao": "2025-03-29",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "97132508000185",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Almeida Costela",
+        "numero": "1986",
+        "bairro": "Maria Goretti",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54155297"
+      },
+      "nascimento": "1973-04-06"
+    },
+    {
+      "nome": "JADE DA MATA MOURA",
+      "cpf": "53827069483",
+      "pis": "12831812315",
+      "matricula": "008567",
+      "cargo": "COPEIRA",
+      "cbo": "8568-21",
+      "salario": 1770.0,
+      "admissao": "2021-01-05",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "97132508000185",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Moraes Nogueira",
+        "numero": "1322",
+        "bairro": "Jardim Dos Comerciarios",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53005593"
+      },
+      "nascimento": "1996-07-25"
+    },
+    {
+      "nome": "FERNANDA CÂMARA GARCIA",
+      "cpf": "59263480133",
+      "pis": "11071641969",
+      "matricula": "008350",
+      "cargo": "COZINHEIRA",
+      "cbo": "4441-41",
+      "salario": 2280.0,
+      "admissao": "2019-10-14",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "97132508000185",
+      "desligado_em": "2026-07-26",
+      "end": {
+        "logradouro": "Avenida Pinto Almeida",
+        "numero": "1096",
+        "bairro": "Comiteco",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53004830"
+      },
+      "nascimento": "1966-08-22"
+    },
+    {
+      "nome": "ANA JULIA CAMPOS CORREIA",
+      "cpf": "92503678483",
+      "pis": "13418139816",
+      "matricula": "003371",
+      "cargo": "COPEIRA",
+      "cbo": "5882-49",
+      "salario": 1840.0,
+      "admissao": "2024-05-20",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "97132508000185",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Borges Rios",
+        "numero": "1412",
+        "bairro": "Santo Agostinho",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53165483"
+      },
+      "nascimento": "2001-02-07"
+    },
+    {
+      "nome": "HEITOR DA COSTA MONTEIRO",
+      "cpf": "43967105261",
+      "pis": "11577079803",
+      "matricula": "001147",
+      "cargo": "COPEIRA",
+      "cbo": "7446-85",
+      "salario": 1770.0,
+      "admissao": "2024-10-24",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "97132508000185",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Sá Câmara",
+        "numero": "102",
+        "bairro": "Luxemburgo",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53062383"
+      },
+      "nascimento": "1977-06-26"
+    },
+    {
+      "nome": "MARIA LUIZA REZENDE TEIXEIRA",
+      "cpf": "62305497865",
+      "pis": "12012824112",
+      "matricula": "002108",
+      "cargo": "COZINHEIRA",
+      "cbo": "7159-49",
+      "salario": 2010.0,
+      "admissao": "2023-04-28",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "97132508000185",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Azevedo Moreira",
+        "numero": "901",
+        "bairro": "Saudade",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53002558"
+      },
+      "nascimento": "1973-01-23"
+    },
+    {
+      "nome": "FERNANDO PIMENTA MACEDO",
+      "cpf": "23150479860",
+      "pis": "10558940479",
+      "matricula": "002256",
+      "cargo": "COPEIRA",
+      "cbo": "7785-28",
+      "salario": 1750.0,
+      "admissao": "2020-03-13",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "97132508000185",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Pastor Campos",
+        "numero": "647",
+        "bairro": "Capitão Eduardo",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53040502"
+      },
+      "nascimento": "1988-09-05"
+    }
+  ],
+  "competencias": [
+    "2026-06",
+    "2026-07"
+  ]
+}

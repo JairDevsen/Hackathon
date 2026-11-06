@@ -1,0 +1,727 @@
+{
+  "arquivo": "lote_0001.pdf",
+  "perfil": "mensal",
+  "empresa_cnpj": "95438721000194",
+  "competencia": "2026-04",
+  "degradacao": "forte",
+  "total_paginas": 9,
+  "total_documentos": 9,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe",
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "post_it:ver c/ RH"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "post_it:ok - conferido",
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_forte",
+      "rotacao": 180,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "CRF_FGTS",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "95438721000194",
+      "dados": {
+        "empregador_razao_social": "REZENDE VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "95438721000194",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": "FICT-64728705/2026",
+        "data_emissao": "2026-06-08",
+        "data_validade": "2026-07-08",
+        "situacao": "REGULAR",
+        "codigo_controle": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "CNDT",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "95438721000194",
+      "dados": {
+        "empregador_razao_social": "REZENDE VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "95438721000194",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": "FICT-61674065/2026",
+        "data_emissao": "2026-05-29",
+        "data_validade": "2026-11-25",
+        "situacao": "NEGATIVA",
+        "codigo_controle": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "CND_FEDERAL",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "95438721000194",
+      "dados": {
+        "empregador_razao_social": "REZENDE VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "95438721000194",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": null,
+        "data_emissao": "2025-11-10",
+        "data_validade": "2026-05-09",
+        "situacao": "NEGATIVA",
+        "codigo_controle": "FICT-5605.6361.2336"
+      },
+      "nao_conformidades": [
+        {
+          "regra": "certidao_vencida",
+          "descricao": "certidão fora da validade",
+          "campo": "data_validade"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "GUIA_FGTS",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-04",
+      "empresa_cnpj": "95438721000194",
+      "dados": {
+        "empregador_razao_social": "REZENDE VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "95438721000194",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "anotacao_manuscrita": null,
+        "identificador_guia": "FICT8822538253808509",
+        "competencia": "2026-04",
+        "data_vencimento": "2026-05-20",
+        "valor_total": 3971.98,
+        "data_pagamento": "2026-05-19",
+        "autenticacao_bancaria_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "DARF",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-04",
+      "empresa_cnpj": "95438721000194",
+      "dados": {
+        "empregador_razao_social": "REZENDE VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "95438721000194",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "periodo_apuracao": "2026-04",
+        "codigo_receita": "1082",
+        "data_vencimento": "2026-05-20",
+        "valor_total": 14312.24,
+        "anotacao_manuscrita": "conferido",
+        "autenticacao_bancaria_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "71062984331",
+      "empregado": "ISABELA AZEVEDO JESUS",
+      "competencia": "2026-04",
+      "empresa_cnpj": "95438721000194",
+      "dados": {
+        "empregado_nome": "ISABELA AZEVEDO JESUS",
+        "empregado_cpf": "71062984331",
+        "empregador_razao_social": "REZENDE VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "95438721000194",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "003050",
+        "periodo_inicio": "2026-04-01",
+        "periodo_fim": "2026-04-30",
+        "forma_registro": "ELETRONICO",
+        "registros": [
+          {
+            "data": "2026-04-01",
+            "marcacoes": [
+              "07:59",
+              "12:06",
+              "13:06",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-02",
+            "marcacoes": [
+              "08:01",
+              "11:57",
+              "13:03",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-03",
+            "marcacoes": [
+              "07:51",
+              "11:59",
+              "13:04",
+              "16:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-04",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-04-05",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-04-06",
+            "marcacoes": [
+              "07:55",
+              "12:02",
+              "13:02",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-07",
+            "marcacoes": [
+              "07:48",
+              "12:00",
+              "13:08",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-08",
+            "marcacoes": [
+              "08:06",
+              "11:59",
+              "13:03",
+              "17:50"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-09",
+            "marcacoes": [
+              "07:55",
+              "12:05",
+              "13:06",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-10",
+            "marcacoes": [
+              "07:54",
+              "11:57",
+              "13:05",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-11",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-04-12",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-04-13",
+            "marcacoes": [
+              "08:05",
+              "11:58",
+              "13:03",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-14",
+            "marcacoes": [
+              "07:56",
+              "12:04",
+              "13:08",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-15",
+            "marcacoes": [
+              "08:02",
+              "12:06",
+              "13:06",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-16",
+            "marcacoes": [
+              "07:50",
+              "12:03",
+              "13:03",
+              "17:39"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-17",
+            "marcacoes": [
+              "07:56",
+              "12:01",
+              "13:01",
+              "17:32"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-18",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-04-19",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-04-20",
+            "marcacoes": [
+              "08:06",
+              "12:04",
+              "13:04",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-21",
+            "marcacoes": [
+              "07:53",
+              "12:02",
+              "13:02",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-22",
+            "marcacoes": [
+              "07:52",
+              "11:57",
+              "13:08",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-23",
+            "marcacoes": [
+              "08:05",
+              "12:01",
+              "13:05",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-24",
+            "marcacoes": [
+              "07:56",
+              "12:03",
+              "13:08",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-25",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-04-26",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-04-27",
+            "marcacoes": [
+              "08:03",
+              "12:01",
+              "13:03",
+              "17:38"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-28",
+            "marcacoes": [
+              "07:52",
+              "12:00",
+              "13:04",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-29",
+            "marcacoes": [
+              "08:06",
+              "12:04",
+              "13:04",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-30",
+            "marcacoes": [
+              "07:57",
+              "11:59",
+              "12:59",
+              "17:02"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "HOLERITE",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "71062984331",
+      "empregado": "ISABELA AZEVEDO JESUS",
+      "competencia": "2026-04",
+      "empresa_cnpj": "95438721000194",
+      "dados": {
+        "empregado_nome": "ISABELA AZEVEDO JESUS",
+        "empregado_cpf": "71062984331",
+        "empregador_razao_social": "REZENDE VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "95438721000194",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "003050",
+        "cargo": "VIGILANTE",
+        "competencia": "2026-04",
+        "salario_base": 2990.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2990.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "04:04",
+            "provento": 82.9,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "8,53",
+            "provento": null,
+            "desconto": 262.16
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 179.4
+          }
+        ],
+        "total_proventos": 3072.9,
+        "total_descontos": 441.56,
+        "valor_liquido": 2631.34,
+        "base_calculo_inss": 3072.9,
+        "base_calculo_fgts": 3072.9,
+        "valor_fgts_mes": 245.83,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "06  05  2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "71062984331",
+      "empregado": "ISABELA AZEVEDO JESUS",
+      "competencia": "2026-04",
+      "empresa_cnpj": "95438721000194",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2026-05-06",
+        "valor": 2631.34,
+        "pagador_nome": "REZENDE VIGILÂNCIA SERVIÇOS LTDA",
+        "pagador_documento": "95438721000194",
+        "favorecido_nome": "ISABELA AZEVEDO JESUS",
+        "favorecido_documento": "71062984331",
+        "finalidade": "Pagamento de salário 04/2026",
+        "autenticacao": "FICT-E112149074294235132553"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "71062984331",
+      "empregado": "ISABELA AZEVEDO JESUS",
+      "competencia": null,
+      "empresa_cnpj": "95438721000194",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Isabela Azevedo Jesus",
+        "data_atendimento": "2026-05-23",
+        "dias_afastamento": 10,
+        "cid_informado": false,
+        "medico_nome": "Dr(a). Aurora Fonseca",
+        "medico_crm": "CRM-PE 36204",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      9,
+      9
+    ],
+    "degradacao": "forte",
+    "taxa_nc": 0.29,
+    "perfil": "mensal",
+    "embaralhar": 0.52,
+    "paginas_em_branco": 0.07,
+    "fora_de_ordem": 0.13,
+    "intercalar": 0.21,
+    "taxa_defeito": 0.05,
+    "taxa_branco": 0.04,
+    "extras": 0.33,
+    "p_celular": 0.11,
+    "p_cabeca_para_baixo": 0.07,
+    "seed": 42001
+  }
+}

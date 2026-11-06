@@ -1,0 +1,1384 @@
+{
+  "arquivo": "lote_0025.pdf",
+  "perfil": "mensal",
+  "empresa_cnpj": "34986502000155",
+  "competencia": "2026-04",
+  "degradacao": "media",
+  "total_paginas": 17,
+  "total_documentos": 15,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "post_it:conferir"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 180,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "post_it:2ª via"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 180,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "CNDT",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "34986502000155",
+      "dados": {
+        "empregador_razao_social": "REZENDE COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "34986502000155",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": "FICT-97644770/2026",
+        "data_emissao": "2026-05-29",
+        "data_validade": "2026-11-25",
+        "situacao": "NEGATIVA",
+        "codigo_controle": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "CND_FEDERAL",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "34986502000155",
+      "dados": {
+        "empregador_razao_social": "REZENDE COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "34986502000155",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": null,
+        "data_emissao": "2026-06-14",
+        "data_validade": "2026-12-11",
+        "situacao": "NEGATIVA",
+        "codigo_controle": "FICT-4999.6609.5635"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "GUIA_FGTS",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-04",
+      "empresa_cnpj": "34986502000155",
+      "dados": {
+        "empregador_razao_social": "REZENDE COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "34986502000155",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "anotacao_manuscrita": null,
+        "identificador_guia": "FICT6517977451249167",
+        "competencia": "2026-04",
+        "data_vencimento": "2026-05-20",
+        "valor_total": 1629.04,
+        "data_pagamento": "2026-05-18",
+        "autenticacao_bancaria_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "DARF",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-04",
+      "empresa_cnpj": "34986502000155",
+      "dados": {
+        "empregador_razao_social": "REZENDE COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "34986502000155",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "periodo_apuracao": "2026-04",
+        "codigo_receita": "1082",
+        "data_vencimento": "2026-05-20",
+        "valor_total": 5654.79,
+        "anotacao_manuscrita": "pago 20/05",
+        "autenticacao_bancaria_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        6,
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74895302610",
+      "empregado": "RAEL SANTOS PACHECO",
+      "competencia": "2026-04",
+      "empresa_cnpj": "34986502000155",
+      "dados": {
+        "empregado_nome": "RAEL SANTOS PACHECO",
+        "empregado_cpf": null,
+        "empregador_razao_social": "REZENDE COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "34986502000155",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "007696",
+        "periodo_inicio": "2026-04-01",
+        "periodo_fim": "2026-04-30",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-04-01",
+            "marcacoes": [
+              "08:04",
+              "12:06",
+              "13:06",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-02",
+            "marcacoes": [
+              "08:01",
+              "12:04",
+              "13:04",
+              "16:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-03",
+            "marcacoes": [
+              "07:58",
+              "11:59",
+              "13:03",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-04",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-04-05",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-04-06",
+            "marcacoes": [
+              "08:00",
+              "12:03",
+              "13:06",
+              "17:56"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-07",
+            "marcacoes": [
+              "07:49",
+              "12:00",
+              "13:06",
+              "17:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-08",
+            "marcacoes": [
+              "08:05",
+              "12:01",
+              "13:02",
+              "17:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-09",
+            "marcacoes": [
+              "07:48",
+              "11:58",
+              "13:00",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-10",
+            "marcacoes": [
+              "07:58",
+              "11:57",
+              "12:59",
+              "17:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-11",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-04-12",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-04-13",
+            "marcacoes": [],
+            "ocorrencia": "ATESTADO"
+          },
+          {
+            "data": "2026-04-14",
+            "marcacoes": [
+              "07:55",
+              "11:59",
+              "12:59",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-15",
+            "marcacoes": [
+              "07:56",
+              "12:00",
+              "13:07",
+              "17:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-16",
+            "marcacoes": [
+              "07:58",
+              "12:01",
+              "13:02",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-17",
+            "marcacoes": [
+              "08:04",
+              "12:01",
+              "13:06",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-18",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-04-19",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-04-20",
+            "marcacoes": [
+              "07:49",
+              "12:03",
+              "13:03",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-21",
+            "marcacoes": [
+              "07:53",
+              "12:01",
+              "13:01",
+              "17:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-22",
+            "marcacoes": [
+              "07:52",
+              "12:05",
+              "13:05",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-23",
+            "marcacoes": [
+              "07:55",
+              "12:05",
+              "13:05",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-24",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:05",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-25",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-04-26",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-04-27",
+            "marcacoes": [
+              "07:52",
+              "11:59",
+              "13:03",
+              "16:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-28",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:05",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-29",
+            "marcacoes": [
+              "08:01",
+              "11:59",
+              "13:03",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-30",
+            "marcacoes": [
+              "07:56",
+              "12:03",
+              "13:06",
+              "17:02"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "007696"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "13:03"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "08:00"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "17:56"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "17:02"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "08:00 às 17:00"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "DSR"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "12:05"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "17:09"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "16:57"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "08:01"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "HOLERITE",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74895302610",
+      "empregado": "RAEL SANTOS PACHECO",
+      "competencia": "2026-04",
+      "empresa_cnpj": "34986502000155",
+      "dados": {
+        "empregado_nome": "RAEL SANTOS PACHECO",
+        "empregado_cpf": "74895302610",
+        "empregador_razao_social": "REZENDE COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "34986502000155",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "007696",
+        "cargo": "COPEIRA",
+        "competencia": "2026-04",
+        "salario_base": 1720.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 1720.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "02:55",
+            "provento": 34.2,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,70",
+            "provento": null,
+            "desconto": 135.11
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 103.2
+          }
+        ],
+        "total_proventos": 1754.2,
+        "total_descontos": 238.31,
+        "valor_liquido": 1515.89,
+        "base_calculo_inss": 1754.2,
+        "base_calculo_fgts": 1754.2,
+        "valor_fgts_mes": 140.34,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "RECIBO_BENEFICIO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74895302610",
+      "empregado": "RAEL SANTOS PACHECO",
+      "competencia": "2026-04",
+      "empresa_cnpj": "34986502000155",
+      "dados": {
+        "data_documento": "2026-03-28",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Rael Santos Pacheco",
+        "empregado_cpf": null,
+        "empregador_razao_social": "REZENDE COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "34986502000155",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "beneficio": "VALE_REFEICAO",
+        "competencia": "2026-04",
+        "quantidade": 23,
+        "valor_total": 575.0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "FERIAS",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74895302610",
+      "empregado": "RAEL SANTOS PACHECO",
+      "competencia": null,
+      "empresa_cnpj": "34986502000155",
+      "dados": {
+        "data_documento": "2025-10-31",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Rael Santos Pacheco",
+        "empregado_cpf": null,
+        "empregador_razao_social": "REZENDE COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "subtipo": "AVISO",
+        "aquisitivo_inicio": "2024-08-01",
+        "aquisitivo_fim": "2025-07-31",
+        "gozo_inicio": "2025-11-30",
+        "gozo_fim": "2025-12-29",
+        "dias": 30,
+        "valor_liquido": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Arcoverde, 31/10/2025"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        13,
+        12
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": true,
+      "intercalado": false,
+      "cpf": "16349287509",
+      "empregado": "BIANCA RIBEIRO ARAÚJO",
+      "competencia": "2026-04",
+      "empresa_cnpj": "34986502000155",
+      "dados": {
+        "empregado_nome": "BIANCA RIBEIRO ARAÚJO",
+        "empregado_cpf": null,
+        "empregador_razao_social": "REZENDE COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "34986502000155",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "005974",
+        "periodo_inicio": "2026-04-01",
+        "periodo_fim": "2026-04-30",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-04-01",
+            "marcacoes": [
+              "07:02",
+              "11:00",
+              "12:01",
+              "15:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-02",
+            "marcacoes": [
+              "06:55",
+              "11:06",
+              "12:06",
+              "16:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-03",
+            "marcacoes": [
+              "06:55",
+              "11:06",
+              "12:06",
+              "16:38"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-04",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-04-05",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-04-06",
+            "marcacoes": [
+              "06:51",
+              "11:06",
+              "12:08",
+              "15:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-07",
+            "marcacoes": [
+              "07:05",
+              "11:06",
+              "12:06",
+              "16:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-08",
+            "marcacoes": [
+              "07:05",
+              "11:04",
+              "12:05",
+              "16:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-09",
+            "marcacoes": [
+              "06:51",
+              "11:06",
+              "12:06",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-10",
+            "marcacoes": [
+              "06:52",
+              "11:06",
+              "12:06",
+              "16:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-11",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-04-12",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-04-13",
+            "marcacoes": [
+              "06:53",
+              "11:01",
+              "12:07",
+              "15:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-14",
+            "marcacoes": [
+              "06:48",
+              "11:03",
+              "12:06",
+              "15:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-15",
+            "marcacoes": [
+              "06:59",
+              "10:58",
+              "12:04",
+              "16:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-16",
+            "marcacoes": [
+              "07:03",
+              "10:58",
+              "12:02",
+              "16:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-17",
+            "marcacoes": [
+              "07:02",
+              "10:57",
+              "12:08",
+              "16:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-18",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-04-19",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-04-20",
+            "marcacoes": [
+              "07:02",
+              "11:04",
+              "12:08",
+              "15:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-21",
+            "marcacoes": [
+              "06:50",
+              "11:05",
+              "12:05",
+              "16:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-22",
+            "marcacoes": [
+              "07:06",
+              "11:04",
+              "12:04",
+              "16:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-23",
+            "marcacoes": [
+              "07:05",
+              "11:06",
+              "12:06",
+              "16:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-24",
+            "marcacoes": [
+              "07:03",
+              "10:57",
+              "11:59",
+              "15:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-25",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-04-26",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-04-27",
+            "marcacoes": [
+              "06:50",
+              "11:04",
+              "12:07",
+              "15:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-28",
+            "marcacoes": [
+              "06:54",
+              "11:05",
+              "12:05",
+              "16:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-29",
+            "marcacoes": [
+              "06:55",
+              "11:02",
+              "12:02",
+              "16:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-04-30",
+            "marcacoes": [
+              "06:49",
+              "11:04",
+              "12:04",
+              "15:58"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "005974"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "06:55"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "12:06"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "12:06"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "16:59"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "11:06"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "DSR"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "06:48"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "11:04"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "12:08"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "11:05"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "06:55"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "HOLERITE",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "16349287509",
+      "empregado": "BIANCA RIBEIRO ARAÚJO",
+      "competencia": "2026-04",
+      "empresa_cnpj": "34986502000155",
+      "dados": {
+        "empregado_nome": "BIANCA RIBEIRO ARAÚJO",
+        "empregado_cpf": "16349287509",
+        "empregador_razao_social": "REZENDE COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "34986502000155",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "005974",
+        "cargo": "COPEIRA",
+        "competencia": "2026-04",
+        "salario_base": 1760.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 1760.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "03:27",
+            "provento": 41.4,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,74",
+            "provento": null,
+            "desconto": 139.36
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 105.6
+          }
+        ],
+        "total_proventos": 1801.4,
+        "total_descontos": 244.96,
+        "valor_liquido": 1556.44,
+        "base_calculo_inss": 1801.4,
+        "base_calculo_fgts": 1801.4,
+        "valor_fgts_mes": 144.11,
+        "assinatura_empregado_presente": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "16349287509",
+      "empregado": "BIANCA RIBEIRO ARAÚJO",
+      "competencia": null,
+      "empresa_cnpj": "34986502000155",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Bianca Ribeiro Araújo",
+        "data_atendimento": "2026-05-02",
+        "dias_afastamento": 3,
+        "cid_informado": true,
+        "medico_nome": "Dr(a). Vinicius Duarte",
+        "medico_crm": "CRM-PE 33905",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "16349287509",
+      "empregado": "BIANCA RIBEIRO ARAÚJO",
+      "competencia": null,
+      "empresa_cnpj": "34986502000155",
+      "dados": {
+        "data_documento": "2026-06-13",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Bianca Ribeiro Araújo",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-06-12",
+        "motivo": "chuva forte e alagamento na rua",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Arcoverde, 13/06/2026"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "da empresa."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "OUTRO",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 14,
+      "tipo": "OUTRO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 15,
+      "tipo": "OUTRO",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      14,
+      14
+    ],
+    "degradacao": "media",
+    "taxa_nc": 0.3,
+    "perfil": "mensal",
+    "embaralhar": 0.4,
+    "paginas_em_branco": 0.09,
+    "fora_de_ordem": 0.2,
+    "intercalar": 0.21,
+    "taxa_defeito": 0.12,
+    "taxa_branco": 0.02,
+    "extras": 0.37,
+    "p_celular": 0.1,
+    "p_cabeca_para_baixo": 0.08,
+    "seed": 42025
+  }
+}

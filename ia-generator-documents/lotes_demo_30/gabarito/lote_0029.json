@@ -1,0 +1,1282 @@
+{
+  "arquivo": "lote_0029.pdf",
+  "perfil": "ocorrencias",
+  "empresa_cnpj": "20435198000143",
+  "competencia": "2026-09",
+  "degradacao": "leve",
+  "total_paginas": 25,
+  "total_documentos": 25,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 180,
+      "extras": [
+        "grampo",
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:ver c/ RH"
+      ]
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 180,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 25,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "OUTRO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-09",
+      "empresa_cnpj": "20435198000143",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "57432618062",
+      "empregado": "JUAN DA MATA CASA GRANDE",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "data_documento": "2024-09-20",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "JUAN DA MATA CASA GRANDE",
+        "empregado_cpf": "57432618062",
+        "empregador_razao_social": "CAMARGO LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "20435198000143",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "ENCARREGADO DE LIMPEZA",
+        "riscos": [
+          "Produtos químicos de limpeza",
+          "Queda de altura",
+          "Choque elétrico"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "20897134532",
+      "empregado": "YAGO BORGES SANTOS",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "data_documento": "2026-08-22",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Yago Borges Santos",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-08-21",
+        "motivo": "problema com o transporte público",
+        "visto_chefia_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "EU, YAGO BORGES SANTOS, VENHO JUSTIFICAR MEU ATRASO NO DIA 21/08/2026, POIS PROBLEMA COM O"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "14320789504",
+      "empregado": "ANA LIZ GONÇALVES BARROS",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "data_documento": "2026-10-05",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Ana Liz Gonçalves Barros",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "FALTA",
+        "data_ocorrencia": "2026-10-04",
+        "motivo": "problema com o transporte público",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "04873596238",
+      "empregado": "ANA LÍVIA VIEIRA NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "data_documento": "2024-08-19",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "ANA LÍVIA VIEIRA NOVAES",
+        "empregado_cpf": "04873596238",
+        "empregador_razao_social": "CAMARGO LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "20435198000143",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "AUXILIAR DE LIMPEZA",
+        "riscos": [
+          "Choque elétrico",
+          "Queda de altura",
+          "Agentes biológicos",
+          "Cortes e perfurações"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "04957382638",
+      "empregado": "JULIA SILVEIRA DA ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Julia Silveira Da Rocha",
+        "data_atendimento": "2026-09-20",
+        "dias_afastamento": 1,
+        "cid_informado": true,
+        "medico_nome": "Dr(a). Henry Gabriel da Cunha",
+        "medico_crm": "CRM-PE 33483",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "94837516084",
+      "empregado": "EVELYN GOMES BORGES",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Evelyn Gomes Borges",
+        "data_atendimento": "2026-09-02",
+        "dias_afastamento": 3,
+        "cid_informado": false,
+        "medico_nome": "Dr(a). João Pedro Mendes",
+        "medico_crm": "CRM-PE 7341",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "cuidados nesta data, necessitando de 3 (três) dias de afastamento de"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "85629140370",
+      "empregado": "MARIAH DA ROSA PASTOR",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "empregado_nome": "Mariah Da Rosa Pastor",
+        "empregado_cpf": null,
+        "empregador_razao_social": "CAMARGO LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "20435198000143",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "SUSPENSAO",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-09-10",
+        "motivo": "uso de celular em área proibida",
+        "dias_suspensao": 3,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "91702438597",
+      "empregado": "JOANA VIEIRA AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "data_documento": "2026-09-18",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Joana Vieira Azevedo",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-09-17",
+        "motivo": "consulta médica do filho",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Joana Vieira Azevedo"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "47182506335",
+      "empregado": "BENJAMIN FERNANDES ARAGÃO",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Benjamin Fernandes Aragão",
+        "data_atendimento": "2026-09-04",
+        "dias_afastamento": 3,
+        "cid_informado": true,
+        "medico_nome": "Dr(a). Vitória Macedo",
+        "medico_crm": "CRM-PE 13704",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "47609382574",
+      "empregado": "ANTONY BRITO BARBOSA",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "empregado_nome": "Antony Brito Barbosa",
+        "empregado_cpf": null,
+        "empregador_razao_social": "CAMARGO LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "20435198000143",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "SUSPENSAO",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-06-19",
+        "motivo": "uso de celular em área proibida",
+        "dias_suspensao": 1,
+        "ciencia": "SEM_CIENCIA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_ciencia",
+          "descricao": "medida disciplinar sem ciência",
+          "campo": "ciencia"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "20897134532",
+      "empregado": "YAGO BORGES SANTOS",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "empregado_nome": "Yago Borges Santos",
+        "empregado_cpf": null,
+        "empregador_razao_social": "CAMARGO LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "20435198000143",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-09-12",
+        "motivo": "uso de celular em área proibida",
+        "dias_suspensao": null,
+        "ciencia": "RECUSA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [
+        {
+          "regra": "recusa_sem_testemunhas",
+          "descricao": "recusa de ciência com menos de 2 testemunhas",
+          "campo": "quantidade_testemunhas"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "empregador_razao_social": "CAMARGO LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "20435198000143",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-35 – Trabalho em Altura",
+        "data": "2026-04-17",
+        "carga_horaria_horas": 8.0,
+        "instrutor": "Miguel Mendonça",
+        "participantes": [
+          {
+            "nome": "Larissa Nunes Aragão",
+            "cpf": "20865319740",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Isaque Santos Peixoto",
+            "cpf": "47012953888",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Benjamin Fernandes Aragão",
+            "cpf": "47182506335",
+            "assinatura_presente": false
+          },
+          {
+            "nome": "Juan Da Mata Casa Grande",
+            "cpf": "57432618062",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Emanuel Cavalcanti Pastor",
+            "cpf": "15023976840",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Julia Silveira Da Rocha",
+            "cpf": "04957382638",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Vicente Fogaça Sá",
+            "cpf": "94168072304",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Arthur Gabriel Leão Siqueira",
+            "cpf": "37294658056",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Ana Liz Gonçalves Barros",
+            "cpf": "14320789504",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Antony Brito Barbosa",
+            "cpf": "47609382574",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [
+        {
+          "regra": "presenca_sem_assinatura",
+          "descricao": "participante sem assinatura na lista",
+          "campo": "participantes"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "574.326.180-62"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "372.946.580-56"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "20865319740",
+      "empregado": "LARISSA NUNES ARAGÃO",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "data_documento": "2020-05-20",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "LARISSA NUNES ARAGÃO",
+        "empregado_cpf": "20865319740",
+        "empregador_razao_social": "CAMARGO LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "20435198000143",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "SERVENTE",
+        "riscos": [
+          "Queda de altura",
+          "Postura inadequada",
+          "Cortes e perfurações"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Arcoverde, 20/05/2020"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "91702438597",
+      "empregado": "JOANA VIEIRA AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "empregado_nome": "Joana Vieira Azevedo",
+        "empregado_cpf": null,
+        "empregador_razao_social": "CAMARGO LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "20435198000143",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-09-06",
+        "motivo": "descumprimento de ordem do supervisor",
+        "dias_suspensao": null,
+        "ciencia": "RECUSA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "37294658056",
+      "empregado": "ARTHUR GABRIEL LEÃO SIQUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "empregado_nome": "Arthur Gabriel Leão Siqueira",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Camargo Limpeza Terceirização Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "MANUSCRITA",
+        "data_documento": "2026-08-05",
+        "motivo": "abandono do posto de trabalho durante o expediente",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "14320789504",
+      "empregado": "ANA LIZ GONÇALVES BARROS",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Ana Liz Gonçalves Barros",
+        "data_atendimento": "2026-10-07",
+        "dias_afastamento": 1,
+        "cid_informado": true,
+        "medico_nome": "Dr(a). Luísa Mendonça",
+        "medico_crm": "CRM-PE 30254",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "47012953888",
+      "empregado": "ISAQUE SANTOS PEIXOTO",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "empregado_nome": "Isaque Santos Peixoto",
+        "empregado_cpf": null,
+        "empregador_razao_social": "CAMARGO LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "20435198000143",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-08-06",
+        "motivo": "uso de celular em área proibida",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "37294658056",
+      "empregado": "ARTHUR GABRIEL LEÃO SIQUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "data_documento": "2021-10-09",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "ARTHUR GABRIEL LEÃO SIQUEIRA",
+        "empregado_cpf": "37294658056",
+        "empregador_razao_social": "CAMARGO LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "20435198000143",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "ENCARREGADO DE LIMPEZA",
+        "riscos": [
+          "Choque elétrico",
+          "Queda de mesmo nível"
+        ]
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "04957382638",
+      "empregado": "JULIA SILVEIRA DA ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "data_documento": "2026-08-25",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Julia Silveira Da Rocha",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "FALTA",
+        "data_ocorrencia": "2026-08-24",
+        "motivo": "consulta médica do filho",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "20865319740",
+      "empregado": "LARISSA NUNES ARAGÃO",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "empregado_nome": "Larissa Nunes Aragão",
+        "empregado_cpf": null,
+        "empregador_razao_social": "CAMARGO LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "20435198000143",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "SUSPENSAO",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-10-04",
+        "motivo": "ausência injustificada ao serviço",
+        "dias_suspensao": 2,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "20897134532",
+      "empregado": "YAGO BORGES SANTOS",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "data_documento": "2026-09-06",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Yago Borges Santos",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-09-05",
+        "motivo": "doença na família",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 23,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "14320789504",
+      "empregado": "ANA LIZ GONÇALVES BARROS",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Ana Liz Gonçalves Barros",
+        "data_atendimento": "2026-09-28",
+        "dias_afastamento": 10,
+        "cid_informado": true,
+        "medico_nome": "Dr(a). Brenda Abreu",
+        "medico_crm": "CRM-PE 6010",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 24,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        24
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "14320789504",
+      "empregado": "ANA LIZ GONÇALVES BARROS",
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "data_documento": "2026-09-30",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Ana Liz Gonçalves Barros",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "FALTA",
+        "data_ocorrencia": "2026-09-30",
+        "motivo": "falecimento de parente",
+        "visto_chefia_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 25,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        25
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "20435198000143",
+      "dados": {
+        "empregador_razao_social": "CAMARGO LIMPEZA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "20435198000143",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-6 – Uso correto de EPI",
+        "data": "2026-06-27",
+        "carga_horaria_horas": 2.0,
+        "instrutor": "Luiz Felipe Silva",
+        "participantes": [
+          {
+            "nome": "Emanuel Cavalcanti Pastor",
+            "cpf": "15023976840",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Benjamin Fernandes Aragão",
+            "cpf": "47182506335",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Joana Vieira Azevedo",
+            "cpf": "91702438597",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Larissa Nunes Aragão",
+            "cpf": "20865319740",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Juan Da Mata Casa Grande",
+            "cpf": "57432618062",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Ana Lívia Vieira Novaes",
+            "cpf": "04873596238",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Evelyn Gomes Borges",
+            "cpf": "94837516084",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Isaque Santos Peixoto",
+            "cpf": "47012953888",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Vicente Fogaça Sá",
+            "cpf": "94168072304",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Benjamin Fernandes Aragão"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Larissa Nunes Aragão"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "208.653.197-40"
+        }
+      ],
+      "observacao": null
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      22,
+      22
+    ],
+    "degradacao": "leve",
+    "taxa_nc": 0.13,
+    "perfil": "ocorrencias",
+    "embaralhar": 0.23,
+    "paginas_em_branco": 0.04,
+    "fora_de_ordem": 0.07,
+    "intercalar": 0.08,
+    "taxa_defeito": 0.1,
+    "taxa_branco": 0.02,
+    "extras": 0.36,
+    "p_celular": 0.1,
+    "p_cabeca_para_baixo": 0.05,
+    "seed": 42029
+  }
+}

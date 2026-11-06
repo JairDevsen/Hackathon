@@ -1,0 +1,1323 @@
+{
+  "arquivo": "lote_0017.pdf",
+  "perfil": "mensal",
+  "empresa_cnpj": "89120567000105",
+  "competencia": "2026-09",
+  "degradacao": "media",
+  "total_paginas": 14,
+  "total_documentos": 12,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "OUTRO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-09",
+      "empresa_cnpj": "89120567000105",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "CRF_FGTS",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "89120567000105",
+      "dados": {
+        "empregador_razao_social": "PINTO COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "89120567000105",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": "FICT-88527043/2026",
+        "data_emissao": "2026-10-06",
+        "data_validade": "2026-11-05",
+        "situacao": "REGULAR",
+        "codigo_controle": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "CNDT",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "89120567000105",
+      "dados": {
+        "empregador_razao_social": "PINTO COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "89120567000105",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": "FICT-79700545/2026",
+        "data_emissao": "2026-10-10",
+        "data_validade": "2027-04-08",
+        "situacao": "NEGATIVA",
+        "codigo_controle": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "CND_FEDERAL",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "89120567000105",
+      "dados": {
+        "empregador_razao_social": "PINTO COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "89120567000105",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": null,
+        "data_emissao": "2026-04-12",
+        "data_validade": "2026-10-09",
+        "situacao": "NEGATIVA",
+        "codigo_controle": "FICT-4106.1531.8959"
+      },
+      "nao_conformidades": [
+        {
+          "regra": "certidao_vencida",
+          "descricao": "certidão fora da validade",
+          "campo": "data_validade"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "GUIA_FGTS",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-09",
+      "empresa_cnpj": "89120567000105",
+      "dados": {
+        "empregador_razao_social": "PINTO COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "89120567000105",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "anotacao_manuscrita": "conferido",
+        "identificador_guia": "FICT9776623939801876",
+        "competencia": "2026-09",
+        "data_vencimento": "2026-10-20",
+        "valor_total": 1902.33,
+        "data_pagamento": "2026-10-18",
+        "autenticacao_bancaria_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "DARF",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-09",
+      "empresa_cnpj": "89120567000105",
+      "dados": {
+        "empregador_razao_social": "PINTO COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "89120567000105",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "periodo_apuracao": "2026-09",
+        "codigo_receita": "1082",
+        "data_vencimento": "2026-10-20",
+        "valor_total": 6645.45,
+        "anotacao_manuscrita": "conferido",
+        "autenticacao_bancaria_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        6,
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "20314968598",
+      "empregado": "BRYAN SAMPAIO MOREIRA",
+      "competencia": "2026-09",
+      "empresa_cnpj": "89120567000105",
+      "dados": {
+        "empregado_nome": "BRYAN SAMPAIO MOREIRA",
+        "empregado_cpf": null,
+        "empregador_razao_social": "PINTO COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "89120567000105",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "008608",
+        "periodo_inicio": "2026-09-01",
+        "periodo_fim": "2026-09-30",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-09-01",
+            "marcacoes": [
+              "06:54",
+              "11:05",
+              "12:05",
+              "15:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-02",
+            "marcacoes": [
+              "07:00",
+              "10:58",
+              "12:00",
+              "16:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-03",
+            "marcacoes": [
+              "06:58",
+              "11:05",
+              "12:05",
+              "16:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-04",
+            "marcacoes": [
+              "06:59",
+              "11:02",
+              "12:02",
+              "16:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-05",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-06",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-07",
+            "marcacoes": [
+              "06:58",
+              "10:57",
+              "11:59",
+              "16:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-08",
+            "marcacoes": [
+              "06:57",
+              "11:01",
+              "12:07",
+              "16:40"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-09",
+            "marcacoes": [
+              "06:53",
+              "11:01",
+              "12:05",
+              "16:47"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-10",
+            "marcacoes": [
+              "06:51",
+              "11:04",
+              "12:04",
+              "16:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-11",
+            "marcacoes": [
+              "06:50",
+              "11:03",
+              "12:06",
+              "15:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-12",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-13",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-14",
+            "marcacoes": [
+              "06:54",
+              "11:05",
+              "12:05",
+              "16:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-15",
+            "marcacoes": [
+              "06:57",
+              "11:06",
+              "12:06",
+              "16:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-16",
+            "marcacoes": [
+              "06:56",
+              "10:57",
+              "12:03",
+              "16:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-17",
+            "marcacoes": [
+              "07:06",
+              "11:05",
+              "12:07",
+              "16:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-18",
+            "marcacoes": [
+              "06:51",
+              "11:02",
+              "12:02",
+              "16:25"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-19",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-20",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-21",
+            "marcacoes": [
+              "07:01",
+              "10:57",
+              "12:03",
+              "16:51"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-22",
+            "marcacoes": [
+              "06:57",
+              "11:06",
+              "12:06",
+              "15:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-23",
+            "marcacoes": [
+              "07:03",
+              "11:03",
+              "12:03",
+              "15:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-24",
+            "marcacoes": [],
+            "ocorrencia": "FALTA"
+          },
+          {
+            "data": "2026-09-25",
+            "marcacoes": [],
+            "ocorrencia": "ATESTADO"
+          },
+          {
+            "data": "2026-09-26",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-27",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-28",
+            "marcacoes": [
+              "06:59",
+              "11:01",
+              "12:08",
+              "16:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-29",
+            "marcacoes": [
+              "06:49",
+              "10:57",
+              "12:00",
+              "16:31"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-30",
+            "marcacoes": [
+              "07:02",
+              "11:06",
+              "12:06",
+              "15:59"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "15:57"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "07:00"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "11:05"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "16:10"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "16:06"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "FOLGA"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "06:57"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "16:01"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "11:03"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "06:54"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "16:10"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Bryan Sampaio Moreira"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "07:00 às 16:00"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "DSR"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "12:03"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "06:59"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "11:06"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "12:06"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "HOLERITE",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "20314968598",
+      "empregado": "BRYAN SAMPAIO MOREIRA",
+      "competencia": "2026-09",
+      "empresa_cnpj": "89120567000105",
+      "dados": {
+        "empregado_nome": "BRYAN SAMPAIO MOREIRA",
+        "empregado_cpf": "20314968598",
+        "empregador_razao_social": "PINTO COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "89120567000105",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "008608",
+        "cargo": "COPEIRA",
+        "competencia": "2026-09",
+        "salario_base": 1690.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 1690.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "04:47",
+            "provento": 55.12,
+            "desconto": null
+          },
+          {
+            "codigo": "210",
+            "descricao": "FALTAS",
+            "referencia": "1,00",
+            "provento": null,
+            "desconto": 56.33
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,65",
+            "provento": null,
+            "desconto": 129.22
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 101.4
+          }
+        ],
+        "total_proventos": 1745.12,
+        "total_descontos": 286.95,
+        "valor_liquido": 1458.17,
+        "base_calculo_inss": 1688.79,
+        "base_calculo_fgts": 1688.79,
+        "valor_fgts_mes": 135.1,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "20314968598",
+      "empregado": "BRYAN SAMPAIO MOREIRA",
+      "competencia": "2026-09",
+      "empresa_cnpj": "89120567000105",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2026-10-06",
+        "valor": 1458.17,
+        "pagador_nome": "PINTO COPA TERCEIRIZAÇÃO LTDA",
+        "pagador_documento": "89120567000105",
+        "favorecido_nome": "BRYAN SAMPAIO MOREIRA",
+        "favorecido_documento": "20314968598",
+        "finalidade": "Pagamento de salário 09/2026",
+        "autenticacao": "FICT-E848254569049434890286"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        10,
+        12
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": true,
+      "cpf": "29715684076",
+      "empregado": "JOSÉ SILVA CAVALCANTI",
+      "competencia": "2026-09",
+      "empresa_cnpj": "89120567000105",
+      "dados": {
+        "empregado_nome": "JOSÉ SILVA CAVALCANTI",
+        "empregado_cpf": null,
+        "empregador_razao_social": "PINTO COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "89120567000105",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "009198",
+        "periodo_inicio": "2026-09-01",
+        "periodo_fim": "2026-09-30",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-09-01",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-02",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-03",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-04",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-05",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-06",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-07",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-08",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-09",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-10",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-11",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-12",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-13",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-14",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-15",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-16",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-17",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-18",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-19",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-20",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-21",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-22",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-23",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-24",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-25",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-26",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-09-27",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-09-28",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-29",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-09-30",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ponto_britanico",
+          "descricao": "horários idênticos todos os dias",
+          "campo": "registros"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "01/09/2026 a 30/09/2026"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "08:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "13:00"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "12:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "13:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "12:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "DSR"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "12:00"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "17:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "12:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "13:00"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "17:00"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "12:00"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "009198"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "08:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "13:00"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "FOLGA"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "08:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "17:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "17:00"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "08:00"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "13:00"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "17:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "17:00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "12:00"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "HOLERITE",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "29715684076",
+      "empregado": "JOSÉ SILVA CAVALCANTI",
+      "competencia": "2026-09",
+      "empresa_cnpj": "89120567000105",
+      "dados": {
+        "empregado_nome": "JOSÉ SILVA CAVALCANTI",
+        "empregado_cpf": "29715684076",
+        "empregador_razao_social": "PINTO COPA TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "89120567000105",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "009198",
+        "cargo": "COZINHEIRA",
+        "competencia": "2026-09",
+        "salario_base": 2280.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2280.0,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "8,00",
+            "provento": null,
+            "desconto": 182.43
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 136.8
+          }
+        ],
+        "total_proventos": 2280.0,
+        "total_descontos": 319.23,
+        "valor_liquido": 1960.77,
+        "base_calculo_inss": 2280.0,
+        "base_calculo_fgts": 2280.0,
+        "valor_fgts_mes": 182.4,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "29715684076",
+      "empregado": "JOSÉ SILVA CAVALCANTI",
+      "competencia": "2026-09",
+      "empresa_cnpj": "89120567000105",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2026-10-06",
+        "valor": 1960.77,
+        "pagador_nome": "PINTO COPA TERCEIRIZAÇÃO LTDA",
+        "pagador_documento": "89120567000105",
+        "favorecido_nome": "JOSÉ SILVA CAVALCANTI",
+        "favorecido_documento": "29715684076",
+        "finalidade": "Pagamento de salário 09/2026",
+        "autenticacao": "FICT-E260672786714452370333"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      11,
+      11
+    ],
+    "degradacao": "misto",
+    "taxa_nc": 0.38,
+    "perfil": "mensal",
+    "embaralhar": 0.26,
+    "paginas_em_branco": 0.02,
+    "fora_de_ordem": 0.05,
+    "intercalar": 0.29,
+    "taxa_defeito": 0.18,
+    "taxa_branco": 0.03,
+    "extras": 0.11,
+    "p_celular": 0.26,
+    "p_cabeca_para_baixo": 0.01,
+    "seed": 42017
+  }
+}

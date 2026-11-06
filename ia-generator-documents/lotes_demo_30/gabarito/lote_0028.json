@@ -1,0 +1,1321 @@
+{
+  "arquivo": "lote_0028.pdf",
+  "perfil": "admissao",
+  "empresa_cnpj": "93657104000154",
+  "competencia": "2026-01",
+  "degradacao": "media",
+  "total_paginas": 25,
+  "total_documentos": 21,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 3
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 3
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "DECLARACAO_MANUSCRITA",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "59382146709",
+      "empregado": "BRUNA PEREIRA RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "data_documento": "2026-02-12",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Bruna Pereira Rodrigues",
+        "empregado_cpf": "59382146709",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "RESIDENCIA",
+        "endereco": "Rua Mendonça Jesus, 1939 – Campo Alegre, Serra Talhada/PE"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "que resido no endereço Rua Mendonça Jesus, 1939 – Campo Alegre, Serra"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "TERMO_RESPONSABILIDADE",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "59382146709",
+      "empregado": "BRUNA PEREIRA RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "data_documento": "2024-05-22",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "BRUNA PEREIRA RODRIGUES",
+        "empregado_cpf": "59382146709",
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Jogo de chaves de fenda",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Camisa do uniforme",
+            "quantidade": 1
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Camisa do uniforme"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "CHECKLIST_INTEGRACAO",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "59382146709",
+      "empregado": "BRUNA PEREIRA RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "data_documento": "2024-05-22",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Bruna Pereira Rodrigues",
+        "empregado_cpf": null,
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Leitura do código de conduta",
+            "marcado": true
+          },
+          {
+            "descricao": "Cadastro biométrico de acesso",
+            "marcado": false
+          },
+          {
+            "descricao": "Senha do sistema de ponto",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de EPI",
+            "marcado": true
+          },
+          {
+            "descricao": "Apresentação ao supervisor do posto",
+            "marcado": true
+          },
+          {
+            "descricao": "Orientação sobre rotas de fuga",
+            "marcado": true
+          }
+        ],
+        "assinatura_responsavel_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "59382146709",
+      "empregado": "BRUNA PEREIRA RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "FERIAS",
+        "data_anotacao": "2025-07-06",
+        "cargo": null,
+        "salario": null,
+        "ferias_inicio": "2025-07-06",
+        "ferias_fim": "2025-08-04",
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "DECLARACAO_VALE_TRANSPORTE",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "70826345107",
+      "empregado": "LUCCA ANDRADE PINTO",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "data_documento": "2021-07-19",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Lucca Andrade Pinto",
+        "empregado_cpf": "70826345107",
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "opcao": "OPTANTE",
+        "endereco_residencial": "Rua Melo Novaes, 1333 – Vila Esplanada, Belo Jardim/PE",
+        "linhas": [
+          {
+            "linha": "333 – Vila Esplanada/Shopping",
+            "tarifa": 4.5,
+            "viagens_por_dia": 2
+          },
+          {
+            "linha": "837 – Vila Esplanada/Terminal",
+            "tarifa": 4.5,
+            "viagens_por_dia": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Lucca Andrade Pinto"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Rua Melo Novaes, 1333 – Vila Esplanada, Belo Jardim/PE"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-35 – Trabalho em Altura",
+        "data": "2026-01-23",
+        "carga_horaria_horas": 8.0,
+        "instrutor": "Léo Novais",
+        "participantes": [
+          {
+            "nome": "Lucca Andrade Pinto",
+            "cpf": "70826345107",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Rhavi Porto Nascimento",
+            "cpf": "80417253680",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Bianca Pimenta Borges",
+            "cpf": "27156984020",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Hadassa Melo Leão",
+            "cpf": "14072365980",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Leonardo Cardoso Fernandes",
+            "cpf": "18064579384",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Carlos Eduardo Novais Albuquerque",
+            "cpf": "74326985119",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Thomas Correia Novaes",
+            "cpf": "62453917846",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Maria Alice Câmara Mendonça",
+            "cpf": "49631052761",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Bruna Pereira Rodrigues",
+            "cpf": "59382146709",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Bruna Pereira Rodrigues"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "593.821.467-09"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "59382146709",
+      "empregado": "BRUNA PEREIRA RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "data_documento": "2024-05-22",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Bruna Pereira Rodrigues",
+        "empregado_cpf": "59382146709",
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "Luísa Rodrigues",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2016-07-13"
+          },
+          {
+            "nome": "Laís Rodrigues",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2013-09-24"
+          },
+          {
+            "nome": "Amanda Rodrigues",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2012-06-26"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Luísa Rodrigues"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Filho(a)"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Amanda Rodrigues"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        8,
+        9,
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "59382146709",
+      "empregado": "BRUNA PEREIRA RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "empregado_nome": "BRUNA PEREIRA RODRIGUES",
+        "empregado_cpf": "59382146709",
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "PRAZO_INDETERMINADO",
+        "prazo_dias": null,
+        "data_inicio": "2024-05-21",
+        "cargo": "SUPERVISOR DE VIGILÂNCIA",
+        "salario": 3980.0,
+        "jornada": "06:00 às 10:00 e 11:00 às 15:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "70826345107",
+      "empregado": "LUCCA ANDRADE PINTO",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "data_documento": "2021-07-20",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "LUCCA ANDRADE PINTO",
+        "empregado_cpf": "70826345107",
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "SUPERVISOR DE VIGILÂNCIA",
+        "riscos": [
+          "Agentes biológicos",
+          "Queda de altura",
+          "Postura inadequada"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "70826345107",
+      "empregado": "LUCCA ANDRADE PINTO",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "ALTERACAO_SALARIAL",
+        "data_anotacao": "2026-02-22",
+        "cargo": "Supervisor De Vigilância",
+        "salario": 4330.0,
+        "ferias_inicio": null,
+        "ferias_fim": null,
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "coletivo."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-6 – Uso correto de EPI",
+        "data": "2025-09-07",
+        "carga_horaria_horas": 2.0,
+        "instrutor": "Benjamim Caldeira",
+        "participantes": [
+          {
+            "nome": "Lucca Andrade Pinto",
+            "cpf": "70826345107",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Bruna Pereira Rodrigues",
+            "cpf": "59382146709",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Bianca Pimenta Borges",
+            "cpf": "27156984020",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Leonardo Cardoso Fernandes",
+            "cpf": "18064579384",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Hadassa Melo Leão",
+            "cpf": "14072365980",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "708.263.451-07"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "ASO",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "59382146709",
+      "empregado": "BRUNA PEREIRA RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "empregado_nome": "Bruna Pereira Rodrigues",
+        "empregado_cpf": "59382146709",
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Supervisor De Vigilância",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2024-05-17",
+        "riscos_ocupacionais": [
+          "Ausência de risco específico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Luiz Otávio Silva",
+        "medico_crm": "CRM-PB 28111"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        15,
+        16,
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "70826345107",
+      "empregado": "LUCCA ANDRADE PINTO",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "empregado_nome": "LUCCA ANDRADE PINTO",
+        "empregado_cpf": "70826345107",
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "EXPERIENCIA",
+        "prazo_dias": 45,
+        "data_inicio": "2021-07-17",
+        "cargo": "SUPERVISOR DE VIGILÂNCIA",
+        "salario": 4100.0,
+        "jornada": "08:00 às 12:00 e 13:00 às 17:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": false,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "59382146709",
+      "empregado": "BRUNA PEREIRA RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "empregado_nome": "Bruna Pereira Rodrigues",
+        "empregado_cpf": "59382146709",
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "17761410257",
+        "matricula": "005085",
+        "data_admissao": "2024-05-21",
+        "cargo": "Supervisor De Vigilância",
+        "salario": 3980.0,
+        "foto_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "70826345107",
+      "empregado": "LUCCA ANDRADE PINTO",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "empregado_nome": "Lucca Andrade Pinto",
+        "empregado_cpf": "70826345107",
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "16761401462",
+        "matricula": "008885",
+        "data_admissao": "2021-07-17",
+        "cargo": "Supervisor De Vigilância",
+        "salario": 4100.0,
+        "foto_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "08:00 – 12:00 – 13:00 – 17:00"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "ASO",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "70826345107",
+      "empregado": "LUCCA ANDRADE PINTO",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "empregado_nome": "Lucca Andrade Pinto",
+        "empregado_cpf": "70826345107",
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Supervisor De Vigilância",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2021-07-10",
+        "riscos_ocupacionais": [
+          "Ergonômico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Arthur Andrade",
+        "medico_crm": "CRM-PE 10691"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Lucca Andrade Pinto"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "TERMO_RESPONSABILIDADE",
+      "paginas": [
+        21
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "70826345107",
+      "empregado": "LUCCA ANDRADE PINTO",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "data_documento": "2021-07-24",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "LUCCA ANDRADE PINTO",
+        "empregado_cpf": "70826345107",
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Alicate universal",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Lanterna",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Bota de segurança",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Jogo de chaves de fenda",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Crachá funcional",
+            "quantidade": 2
+          }
+        ]
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Alicate universal"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Lanterna"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "DECLARACAO_MANUSCRITA",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "70826345107",
+      "empregado": "LUCCA ANDRADE PINTO",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "data_documento": "2025-09-26",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Lucca Andrade Pinto",
+        "empregado_cpf": "70826345107",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "RESIDENCIA",
+        "endereco": "Rua Melo Novaes, 1333 – Vila Esplanada, Belo Jardim/PE"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Eu, Lucca Andrade Pinto, CPF 708.263.451-07, declaro para os devidos fins que resido no endereço Rua Melo"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "FICHA_EPI",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "59382146709",
+      "empregado": "BRUNA PEREIRA RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "empregado_nome": "Bruna Pereira Rodrigues",
+        "empregado_cpf": "59382146709",
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Supervisor De Vigilância",
+        "entregas": [
+          {
+            "data": "2024-12-27",
+            "descricao": "Protetor auricular plug",
+            "quantidade": 2,
+            "numero_ca": "48354"
+          },
+          {
+            "data": "2024-12-31",
+            "descricao": "Protetor auricular plug",
+            "quantidade": 1,
+            "numero_ca": "49649"
+          },
+          {
+            "data": "2025-02-05",
+            "descricao": "Protetor auricular plug",
+            "quantidade": 2,
+            "numero_ca": "44642"
+          },
+          {
+            "data": "2025-03-23",
+            "descricao": "Colete balístico",
+            "quantidade": 3,
+            "numero_ca": "28933"
+          },
+          {
+            "data": "2025-06-13",
+            "descricao": "Colete balístico",
+            "quantidade": 3,
+            "numero_ca": "12772"
+          },
+          {
+            "data": "2025-09-24",
+            "descricao": "Colete balístico",
+            "quantidade": 2,
+            "numero_ca": "33668"
+          },
+          {
+            "data": "2026-02-02",
+            "descricao": "Bota de segurança",
+            "quantidade": 2,
+            "numero_ca": "27587"
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "05/02/2025"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "44642"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Colete balístico"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        24
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "70826345107",
+      "empregado": "LUCCA ANDRADE PINTO",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "data_documento": "2021-07-20",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Lucca Andrade Pinto",
+        "empregado_cpf": "70826345107",
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "Juliana Rocha",
+            "parentesco": "Cônjuge",
+            "data_nascimento": "2001-08-19"
+          },
+          {
+            "nome": "Lívia Pinto",
+            "parentesco": "Enteado(a)",
+            "data_nascimento": "2024-09-17"
+          },
+          {
+            "nome": "Enzo Pinto",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2021-11-18"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "19/08/2001"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Lívia Pinto"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "DECLARACAO_VALE_TRANSPORTE",
+      "paginas": [
+        25
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "59382146709",
+      "empregado": "BRUNA PEREIRA RODRIGUES",
+      "competencia": null,
+      "empresa_cnpj": "93657104000154",
+      "dados": {
+        "data_documento": "2024-05-22",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Bruna Pereira Rodrigues",
+        "empregado_cpf": "59382146709",
+        "empregador_razao_social": "CASSIANO VIGILÂNCIA SERVIÇOS LTDA",
+        "empregador_cnpj": "93657104000154",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "opcao": "OPTANTE",
+        "endereco_residencial": "Rua Mendonça Jesus, 1939 – Campo Alegre, Serra Talhada/PE",
+        "linhas": [
+          {
+            "linha": "654 – Campo Alegre/Centro",
+            "tarifa": 4.1,
+            "viagens_por_dia": 2
+          },
+          {
+            "linha": "629 – Campo Alegre/Shopping",
+            "tarifa": 4.1,
+            "viagens_por_dia": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Bruna Pereira Rodrigues"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "4,10"
+        }
+      ],
+      "observacao": null
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      15,
+      15
+    ],
+    "degradacao": "media",
+    "taxa_nc": 0.15,
+    "perfil": "admissao",
+    "embaralhar": 0.46,
+    "paginas_em_branco": 0.06,
+    "fora_de_ordem": 0.06,
+    "intercalar": 0.17,
+    "taxa_defeito": 0.14,
+    "taxa_branco": 0.04,
+    "extras": 0.17,
+    "p_celular": 0.29,
+    "p_cabeca_para_baixo": 0.03,
+    "seed": 42028
+  }
+}

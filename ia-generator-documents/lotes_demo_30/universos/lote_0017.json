@@ -1,0 +1,351 @@
+{
+  "seed": 42017,
+  "data_referencia": "2026-10-16",
+  "empresas": [
+    {
+      "razao_social": "PINTO COPA TERCEIRIZAÇÃO LTDA",
+      "cnpj": "89120567000105",
+      "endereco": "Rua Martins Gonçalves, 1044 – Alto Caiçaras",
+      "cidade": "Arcoverde/PE",
+      "segmento": "Copa e Cozinha",
+      "end": {
+        "logradouro": "Rua Martins Gonçalves",
+        "numero": "1044",
+        "bairro": "Alto Caiçaras",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56517095"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "BRYAN SAMPAIO MOREIRA",
+      "cpf": "20314968598",
+      "pis": "19470820331",
+      "matricula": "008608",
+      "cargo": "COPEIRA",
+      "cbo": "6793-32",
+      "salario": 1690.0,
+      "admissao": "2026-06-28",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "89120567000105",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Pacheco Siqueira",
+        "numero": "67",
+        "bairro": "Dom Silverio",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56506033"
+      },
+      "nascimento": "1986-09-17"
+    },
+    {
+      "nome": "BENÍCIO CORREIA ANDRADE",
+      "cpf": "79530614810",
+      "pis": "10735340681",
+      "matricula": "006276",
+      "cargo": "COZINHEIRA",
+      "cbo": "7670-93",
+      "salario": 2360.0,
+      "admissao": "2022-05-28",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "89120567000105",
+      "desligado_em": "2026-09-10",
+      "end": {
+        "logradouro": "Rua da Mota Abreu",
+        "numero": "68",
+        "bairro": "Vila Dos Anjos",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56511582"
+      },
+      "nascimento": "1979-10-29"
+    },
+    {
+      "nome": "GABRIELLY SOUSA NOVAIS",
+      "cpf": "67018245362",
+      "pis": "11404649080",
+      "matricula": "009478",
+      "cargo": "COZINHEIRA",
+      "cbo": "8192-51",
+      "salario": 2370.0,
+      "admissao": "2025-04-12",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "89120567000105",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Vieira Caldeira",
+        "numero": "1672",
+        "bairro": "João Alfredo",
+        "municipio": "Serra Talhada",
+        "uf": "PE",
+        "cep": "56901560"
+      },
+      "nascimento": "1981-09-13"
+    },
+    {
+      "nome": "ARTHUR MIGUEL DAS NEVES LOPES",
+      "cpf": "40579328104",
+      "pis": "17366971284",
+      "matricula": "006864",
+      "cargo": "COZINHEIRA",
+      "cbo": "4664-13",
+      "salario": 2230.0,
+      "admissao": "2022-01-09",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "89120567000105",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Rezende Guerra",
+        "numero": "476",
+        "bairro": "Morro Dos Macacos",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56514805"
+      },
+      "nascimento": "1978-06-01"
+    },
+    {
+      "nome": "MARIANA CÂMARA JESUS",
+      "cpf": "67198432069",
+      "pis": "19370143052",
+      "matricula": "002611",
+      "cargo": "COZINHEIRA",
+      "cbo": "8547-29",
+      "salario": 2230.0,
+      "admissao": "2023-06-03",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "89120567000105",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Alves Oliveira",
+        "numero": "1746",
+        "bairro": "Universo",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56501077"
+      },
+      "nascimento": "1979-11-09"
+    },
+    {
+      "nome": "GABRIEL DA COSTA ANDRADE",
+      "cpf": "37620419543",
+      "pis": "19446171655",
+      "matricula": "007243",
+      "cargo": "COPEIRA",
+      "cbo": "6112-67",
+      "salario": 1730.0,
+      "admissao": "2023-01-08",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "89120567000105",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Borges da Cunha",
+        "numero": "1072",
+        "bairro": "Frei Leopoldo",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56511250"
+      },
+      "nascimento": "1989-08-31"
+    },
+    {
+      "nome": "BENÍCIO FONSECA CASSIANO",
+      "cpf": "82730156968",
+      "pis": "11995290216",
+      "matricula": "005794",
+      "cargo": "COZINHEIRA",
+      "cbo": "5131-90",
+      "salario": 2220.0,
+      "admissao": "2023-10-26",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "89120567000105",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Dias Santos",
+        "numero": "1819",
+        "bairro": "Mangueiras",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56515796"
+      },
+      "nascimento": "1970-01-21"
+    },
+    {
+      "nome": "YURI SOUSA DA MOTA",
+      "cpf": "61703258444",
+      "pis": "12395367151",
+      "matricula": "003839",
+      "cargo": "COZINHEIRA",
+      "cbo": "5259-51",
+      "salario": 2350.0,
+      "admissao": "2024-04-18",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "89120567000105",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Lima Vieira",
+        "numero": "279",
+        "bairro": "São Francisco",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54474884"
+      },
+      "nascimento": "1998-06-03"
+    },
+    {
+      "nome": "KEVIN NASCIMENTO MOREIRA",
+      "cpf": "53981402723",
+      "pis": "19541342151",
+      "matricula": "009730",
+      "cargo": "COZINHEIRA",
+      "cbo": "5615-92",
+      "salario": 2120.0,
+      "admissao": "2023-12-05",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "89120567000105",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Sousa Castro",
+        "numero": "347",
+        "bairro": "Unidas",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56506351"
+      },
+      "nascimento": "1974-04-07"
+    },
+    {
+      "nome": "CARLOS EDUARDO CASA GRANDE CAMARGO",
+      "cpf": "52876341026",
+      "pis": "14674520041",
+      "matricula": "008270",
+      "cargo": "COZINHEIRA",
+      "cbo": "8956-42",
+      "salario": 2390.0,
+      "admissao": "2023-02-27",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "89120567000105",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Alves Carvalho",
+        "numero": "1245",
+        "bairro": "Vila Santa Monica 1ª Seção",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56328892"
+      },
+      "nascimento": "1980-02-13"
+    },
+    {
+      "nome": "THEO TEIXEIRA PINTO",
+      "cpf": "53680219768",
+      "pis": "15427466197",
+      "matricula": "001759",
+      "cargo": "COPEIRA",
+      "cbo": "5968-81",
+      "salario": 1700.0,
+      "admissao": "2021-04-07",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "89120567000105",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Costela Rios",
+        "numero": "1739",
+        "bairro": "Vila Madre Gertrudes 3ª Seção",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56509906"
+      },
+      "nascimento": "1978-09-20"
+    },
+    {
+      "nome": "JOSÉ SILVA CAVALCANTI",
+      "cpf": "29715684076",
+      "pis": "15607267800",
+      "matricula": "009198",
+      "cargo": "COZINHEIRA",
+      "cbo": "7928-23",
+      "salario": 2280.0,
+      "admissao": "2019-12-26",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "89120567000105",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Santos da Cruz",
+        "numero": "1958",
+        "bairro": "Ipe",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56513201"
+      },
+      "nascimento": "1983-12-14"
+    }
+  ],
+  "competencias": [
+    "2026-08",
+    "2026-09"
+  ]
+}

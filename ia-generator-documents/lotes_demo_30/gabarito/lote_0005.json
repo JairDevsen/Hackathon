@@ -1,0 +1,644 @@
+{
+  "arquivo": "lote_0005.pdf",
+  "perfil": "recebimento_ar",
+  "empresa_cnpj": "79603582000150",
+  "competencia": "2026-08",
+  "degradacao": "leve",
+  "total_paginas": 8,
+  "total_documentos": 8,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 1,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 4,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 6,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 7,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 8,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "69254018333",
+      "empregado": "CATARINA CÂMARA ALBUQUERQUE",
+      "competencia": null,
+      "empresa_cnpj": "79603582000150",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 961 566 476 AR",
+        "conteudo": "Notificação nº 363/2026",
+        "data_postagem": "2026-09-28",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Catarina Câmara Albuquerque",
+        "destinatario_endereco": "Rua Montenegro da Mota, 1438",
+        "destinatario_bairro": "Vila Maloca",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55150159",
+        "remetente_nome": "MARQUES PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Caldeira Rodrigues, 1021 – Senhor Dos Passos, Belo Jardim/PE",
+        "remetente_cep": "55157441",
+        "tentativas": [
+          {
+            "data": "2026-10-01",
+            "hora": "15:50"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-10-01",
+        "data_devolucao": null,
+        "recebedor_nome": "VITOR FERNANDES",
+        "recebedor_documento": "4717086",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_sem_carimbo",
+          "descricao": "AR sem carimbo da unidade de entrega",
+          "campo": "carimbo_unidade_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Vila Maloca"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Belo Jardim"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "97840526101",
+      "empregado": "AURORA RIBEIRO PACHECO",
+      "competencia": null,
+      "empresa_cnpj": "79603582000150",
+      "dados": {
+        "empregado_nome": "AURORA RIBEIRO PACHECO",
+        "empregado_cpf": "97840526101",
+        "empregador_razao_social": "MARQUES PORTARIA SERVIÇOS LTDA",
+        "empregador_cnpj": "79603582000150",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-09-19",
+        "prazo_dias": 3
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        2,
+        4
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "97840526101",
+      "empregado": "AURORA RIBEIRO PACHECO",
+      "competencia": null,
+      "empresa_cnpj": "79603582000150",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 314 780 722 AR",
+        "conteudo": "Notificação nº 73/2026",
+        "data_postagem": "2026-09-20",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Aurora Ribeiro Pacheco",
+        "destinatario_endereco": "Rua Ribeiro Abreu, 1821",
+        "destinatario_bairro": "Parque São José",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55154809",
+        "remetente_nome": "MARQUES PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Caldeira Rodrigues, 1021 – Senhor Dos Passos, Belo Jardim/PE",
+        "remetente_cep": "55157441",
+        "tentativas": [
+          {
+            "data": "2026-09-22",
+            "hora": "10:45"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-09-22",
+        "data_devolucao": null,
+        "recebedor_nome": "AURORA RIBEIRO PACHECO",
+        "recebedor_documento": "3367591",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Notificação nº 73/2026"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Aurora Ribeiro Pacheco"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "55154-809"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "3367591"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "22/09/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        2,
+        4
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": true,
+      "cpf": "57918342097",
+      "empregado": "EMANUEL VIANA VASCONCELOS",
+      "competencia": null,
+      "empresa_cnpj": "79603582000150",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 863 754 627 AR",
+        "conteudo": "Notificação nº 293/2026",
+        "data_postagem": "2026-09-30",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Emanuel Viana Vasconcelos",
+        "destinatario_endereco": "Rua Câmara Rocha, 355",
+        "destinatario_bairro": "Granja De Freitas",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55150609",
+        "remetente_nome": "MARQUES PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Caldeira Rodrigues, 1021 – Senhor Dos Passos, Belo Jardim/PE",
+        "remetente_cep": "55157441",
+        "tentativas": [
+          {
+            "data": "2026-10-01",
+            "hora": "13:30"
+          },
+          {
+            "data": "2026-10-05",
+            "hora": "10:20"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-10-05",
+        "data_devolucao": null,
+        "recebedor_nome": "EMANUEL VIANA VASCONCELOS",
+        "recebedor_documento": "2938663",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Emanuel Viana Vasconcelos"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "PE"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        5,
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "57918342097",
+      "empregado": "EMANUEL VIANA VASCONCELOS",
+      "competencia": null,
+      "empresa_cnpj": "79603582000150",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 156 688 184 AR",
+        "conteudo": "Notificação nº 277/2026",
+        "data_postagem": "2026-09-11",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Emanuel Viana Vasconcelos",
+        "destinatario_endereco": "Rua Câmara Rocha, 355",
+        "destinatario_bairro": "Granja De Freitas",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55150609",
+        "remetente_nome": "MARQUES PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Caldeira Rodrigues, 1021 – Senhor Dos Passos, Belo Jardim/PE",
+        "remetente_cep": "55157441",
+        "tentativas": [
+          {
+            "data": "2026-09-14",
+            "hora": "08:45"
+          },
+          {
+            "data": "2026-09-17",
+            "hora": "10:30"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-09-17",
+        "data_devolucao": null,
+        "recebedor_nome": "YAGO MONTENEGRO",
+        "recebedor_documento": "3672479",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "17/09/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        5,
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "14697802322",
+      "empregado": "ANA CECÍLIA SILVEIRA CAMPOS",
+      "competencia": null,
+      "empresa_cnpj": "79603582000150",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 575 938 690 AR",
+        "conteudo": "Notificação nº 86/2026",
+        "data_postagem": "2026-09-11",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Ana Cecília Silveira Campos",
+        "destinatario_endereco": "Rua Cassiano Cavalcanti, 1200",
+        "destinatario_bairro": "Delta",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55157028",
+        "remetente_nome": "MARQUES PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Caldeira Rodrigues, 1021 – Senhor Dos Passos, Belo Jardim/PE",
+        "remetente_cep": "55157441",
+        "tentativas": [
+          {
+            "data": "2026-09-14",
+            "hora": "11:20"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-09-14",
+        "data_devolucao": null,
+        "recebedor_nome": "ANA CECÍLIA SILVEIRA CAMPOS",
+        "recebedor_documento": "5055182",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "11/09/2026"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Rua Cassiano Cavalcanti, 1200"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "55157-441"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "ANA CECÍLIA SILVEIRA CAMPOS"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "95132067859",
+      "empregado": "DAVI LUCCA CIRINO MACHADO",
+      "competencia": null,
+      "empresa_cnpj": "79603582000150",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 690 608 404 AR",
+        "conteudo": "Notificação nº 249/2026",
+        "data_postagem": "2026-09-15",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Davi Lucca Cirino Machado",
+        "destinatario_endereco": "Rua Porto da Costa, 1541",
+        "destinatario_bairro": "Bonsucesso",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55156942",
+        "remetente_nome": "MARQUES PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Caldeira Rodrigues, 1021 – Senhor Dos Passos, Belo Jardim/PE",
+        "remetente_cep": "55157441",
+        "tentativas": [
+          {
+            "data": "2026-09-16",
+            "hora": "11:20"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-09-16",
+        "data_devolucao": null,
+        "recebedor_nome": "DAVI LUCCA CIRINO MACHADO",
+        "recebedor_documento": "3606136",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "3606136"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "16/09/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "76823594047",
+      "empregado": "LUIZ FELIPE CASA GRANDE COSTA",
+      "competencia": null,
+      "empresa_cnpj": "79603582000150",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 158 421 462 AR",
+        "conteudo": "Notificação nº 274/2026",
+        "data_postagem": "2026-09-25",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Luiz Felipe Casa Grande Costa",
+        "destinatario_endereco": "Travessa Cavalcante Fonseca, 1462",
+        "destinatario_bairro": "Jardim Felicidade",
+        "destinatario_municipio": "Pesqueira",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55207300",
+        "remetente_nome": "MARQUES PORTARIA SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Caldeira Rodrigues, 1021 – Senhor Dos Passos, Belo Jardim/PE",
+        "remetente_cep": "55157441",
+        "tentativas": [
+          {
+            "data": "2026-09-28",
+            "hora": "08:00"
+          },
+          {
+            "data": "2026-09-29",
+            "hora": "12:40"
+          },
+          {
+            "data": "2026-10-02",
+            "hora": "15:30"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "AUSENTE",
+        "data_entrega": null,
+        "data_devolucao": "2026-10-05",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "25/09/2026"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Luiz Felipe Casa Grande Costa"
+        }
+      ],
+      "observacao": null
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      8,
+      8
+    ],
+    "degradacao": "leve",
+    "taxa_nc": 0.24,
+    "perfil": "recebimento_ar",
+    "embaralhar": 0.29,
+    "paginas_em_branco": 0.03,
+    "fora_de_ordem": 0.15,
+    "intercalar": 0.22,
+    "taxa_defeito": 0.2,
+    "taxa_branco": 0.04,
+    "extras": 0.27,
+    "p_celular": 0.2,
+    "p_cabeca_para_baixo": 0.03,
+    "seed": 42005
+  }
+}

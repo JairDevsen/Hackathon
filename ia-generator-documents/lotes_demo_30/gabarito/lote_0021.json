@@ -1,0 +1,1105 @@
+{
+  "arquivo": "lote_0021.pdf",
+  "perfil": "misto",
+  "empresa_cnpj": "09217368000180",
+  "competencia": "2026-01",
+  "degradacao": "leve",
+  "total_paginas": 20,
+  "total_documentos": 19,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 1,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 4,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 8,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 10,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "87342609196",
+      "empregado": "LUÍSA CORREIA PIMENTA",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 891 706 678 AR",
+        "conteudo": "Notificação nº 159/2026",
+        "data_postagem": "2026-01-24",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Luísa Correia Pimenta",
+        "destinatario_endereco": "Rua Marques Rocha, 1528",
+        "destinatario_bairro": "Vila São Gabriel Jacui",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "51919955",
+        "remetente_nome": "DAS NEVES MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Fogaça Aragão, 1825 – Solar Do Barreiro, Recife/PE",
+        "remetente_cep": "50030832",
+        "tentativas": [
+          {
+            "data": "2026-01-26",
+            "hora": "15:50"
+          },
+          {
+            "data": "2026-01-28",
+            "hora": "14:20"
+          },
+          {
+            "data": "2026-02-02",
+            "hora": "14:10"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "AUSENTE",
+        "data_entrega": null,
+        "data_devolucao": "2026-02-05",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "51919-955"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "15628397482",
+      "empregado": "OTÁVIO FERNANDES MOREIRA",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "empregado_nome": "OTÁVIO FERNANDES MOREIRA",
+        "empregado_cpf": "15628397482",
+        "empregador_razao_social": "DAS NEVES MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "09217368000180",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-02-07",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        4,
+        6
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "15628397482",
+      "empregado": "OTÁVIO FERNANDES MOREIRA",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 369 876 470 AR",
+        "conteudo": "Notificação nº 340/2026",
+        "data_postagem": "2026-02-08",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Otávio Fernandes Moreira",
+        "destinatario_endereco": "Travessa da Cruz Barros, 1651",
+        "destinatario_bairro": "Jardim Atlântico",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52744576",
+        "remetente_nome": "DAS NEVES MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Fogaça Aragão, 1825 – Solar Do Barreiro, Recife/PE",
+        "remetente_cep": "50030832",
+        "tentativas": [
+          {
+            "data": "2026-02-09",
+            "hora": "13:45"
+          },
+          {
+            "data": "2026-02-12",
+            "hora": "11:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-02-12",
+        "data_devolucao": null,
+        "recebedor_nome": "OTÁVIO FERNANDES MOREIRA",
+        "recebedor_documento": "2629309",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_sem_carimbo",
+          "descricao": "AR sem carimbo da unidade de entrega",
+          "campo": "carimbo_unidade_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "52744-576"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        4,
+        6
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "75618304910",
+      "empregado": "RAVY MACHADO NASCIMENTO",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 204 156 319 AR",
+        "conteudo": "Notificação nº 84/2026",
+        "data_postagem": "2026-02-03",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Ravy Machado Nascimento",
+        "destinatario_endereco": "Avenida Macedo Pinto, 501",
+        "destinatario_bairro": "Túnel De Ibirité",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "50330293",
+        "remetente_nome": "DAS NEVES MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Fogaça Aragão, 1825 – Solar Do Barreiro, Recife/PE",
+        "remetente_cep": "50030832",
+        "tentativas": [
+          {
+            "data": "2026-02-04",
+            "hora": "13:30"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-02-04",
+        "data_devolucao": null,
+        "recebedor_nome": "RAVY MACHADO NASCIMENTO",
+        "recebedor_documento": "2370678",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        5,
+        7
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79652138002",
+      "empregado": "SOPHIE VIEIRA ALVES",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 976 553 155 AR",
+        "conteudo": "Notificação nº 274/2026",
+        "data_postagem": "2026-01-25",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Sophie Vieira Alves",
+        "destinatario_endereco": "Rua Pires Costela, 1626",
+        "destinatario_bairro": "Sagrada Família",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52785949",
+        "remetente_nome": "DAS NEVES MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Fogaça Aragão, 1825 – Solar Do Barreiro, Recife/PE",
+        "remetente_cep": "50030832",
+        "tentativas": [
+          {
+            "data": "2026-01-26",
+            "hora": "12:20"
+          },
+          {
+            "data": "2026-01-29",
+            "hora": "12:50"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-01-29",
+        "data_devolucao": null,
+        "recebedor_nome": "LÉO CÂMARA",
+        "recebedor_documento": "2819851",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "25/01/2026"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "2819851"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "72804315690",
+      "empregado": "DANIEL DA MATA MELO",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "empregado_nome": "DANIEL DA MATA MELO",
+        "empregado_cpf": "72804315690",
+        "empregador_razao_social": "DAS NEVES MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "09217368000180",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-01-12",
+        "prazo_dias": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        9,
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "72804315690",
+      "empregado": "DANIEL DA MATA MELO",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 269 325 609 AR",
+        "conteudo": "Notificação nº 181/2026",
+        "data_postagem": "2026-01-13",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Daniel Da Mata Melo",
+        "destinatario_endereco": "Rua Cassiano Oliveira, 324",
+        "destinatario_bairro": "Senhor Dos Passos",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52557604",
+        "remetente_nome": "DAS NEVES MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Fogaça Aragão, 1825 – Solar Do Barreiro, Recife/PE",
+        "remetente_cep": "50030832",
+        "tentativas": [
+          {
+            "data": "2026-01-16",
+            "hora": "15:10"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-01-16",
+        "data_devolucao": null,
+        "recebedor_nome": "DANIEL DA MATA MELO",
+        "recebedor_documento": "9671628",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Rua Fogaça Aragão, 1825 – Solar Do Barreiro, Recife/PE"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        9,
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "27914856002",
+      "empregado": "CAUÊ DIAS NOGUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 603 341 415 AR",
+        "conteudo": "Notificação nº 289/2026",
+        "data_postagem": "2026-02-04",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Cauê Dias Nogueira",
+        "destinatario_endereco": "Rua Barros Cassiano, 771",
+        "destinatario_bairro": "Camponesa 1ª Seção",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52281663",
+        "remetente_nome": "DAS NEVES MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Fogaça Aragão, 1825 – Solar Do Barreiro, Recife/PE",
+        "remetente_cep": "50030832",
+        "tentativas": [
+          {
+            "data": "2026-02-06",
+            "hora": "14:50"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-02-06",
+        "data_devolucao": null,
+        "recebedor_nome": "CAUÊ DIAS NOGUEIRA",
+        "recebedor_documento": "3989424",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        11,
+        13
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": true,
+      "cpf": "61840293551",
+      "empregado": "GABRIELLY NASCIMENTO MACEDO",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 188 621 460 AR",
+        "conteudo": "Notificação nº 201/2026",
+        "data_postagem": "2026-01-22",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Gabrielly Nascimento Macedo",
+        "destinatario_endereco": "Rua Garcia Novais, 243",
+        "destinatario_bairro": "Vila Da Amizade",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52391469",
+        "remetente_nome": "DAS NEVES MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Fogaça Aragão, 1825 – Solar Do Barreiro, Recife/PE",
+        "remetente_cep": "50030832",
+        "tentativas": [
+          {
+            "data": "2026-01-23",
+            "hora": "09:20"
+          },
+          {
+            "data": "2026-01-26",
+            "hora": "16:45"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-01-26",
+        "data_devolucao": null,
+        "recebedor_nome": "YASMIN NASCIMENTO",
+        "recebedor_documento": "9459546",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        11,
+        13
+      ],
+      "paginas_contiguas": false,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31980675457",
+      "empregado": "IAN PIMENTA ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 875 509 635 AR",
+        "conteudo": "Notificação nº 325/2026",
+        "data_postagem": "2026-01-27",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Ian Pimenta Rocha",
+        "destinatario_endereco": "Travessa Silva Monteiro, 1458",
+        "destinatario_bairro": "Havaí",
+        "destinatario_municipio": "Jaboatão dos Guararapes",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "54477505",
+        "remetente_nome": "DAS NEVES MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Fogaça Aragão, 1825 – Solar Do Barreiro, Recife/PE",
+        "remetente_cep": "50030832",
+        "tentativas": [
+          {
+            "data": "2026-01-30",
+            "hora": "11:20"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-01-30",
+        "data_devolucao": null,
+        "recebedor_nome": "IAN PIMENTA ROCHA",
+        "recebedor_documento": "4110637",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Notificação nº 325/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "87342609196",
+      "empregado": "LUÍSA CORREIA PIMENTA",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Luísa Correia Pimenta",
+        "data_atendimento": "2026-01-19",
+        "dias_afastamento": 1,
+        "cid_informado": false,
+        "medico_nome": "Dr(a). Maria Cecília Caldeira",
+        "medico_crm": "CRM-PE 32465",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "87342609196",
+      "empregado": "LUÍSA CORREIA PIMENTA",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "data_documento": "2026-01-18",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Luísa Correia Pimenta",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "FALTA",
+        "data_ocorrencia": "2026-01-17",
+        "motivo": "chuva forte e alagamento na rua",
+        "visto_chefia_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "27914856002",
+      "empregado": "CAUÊ DIAS NOGUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Cauê Dias Nogueira",
+        "empregado_cpf": null,
+        "empregador_razao_social": "DAS NEVES MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "09217368000180",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "QUASE_ACIDENTE",
+        "data_ocorrencia": "2025-12-05",
+        "hora": "12:30",
+        "local": "Copa do 2º andar",
+        "descricao": "Escada portátil escorregou durante a troca de lâmpada, sem queda do trabalhador.",
+        "houve_afastamento": false,
+        "testemunha_nome": "Ryan Silveira"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "trabalhador."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "15628397482",
+      "empregado": "OTÁVIO FERNANDES MOREIRA",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Otávio Fernandes Moreira",
+        "empregado_cpf": null,
+        "empregador_razao_social": "DAS NEVES MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "09217368000180",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "QUASE_ACIDENTE",
+        "data_ocorrencia": "2025-12-29",
+        "hora": "07:20",
+        "local": "Almoxarifado",
+        "descricao": "Escada portátil escorregou durante a troca de lâmpada, sem queda do trabalhador.",
+        "houve_afastamento": false,
+        "testemunha_nome": "Pedro Henrique Cassiano"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Escada portátil escorregou durante a troca de lâmpada, sem queda do"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "75618304910",
+      "empregado": "RAVY MACHADO NASCIMENTO",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "empregado_nome": "Ravy Machado Nascimento",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Das Neves Manutenção Terceirização Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "SUSPENSAO",
+        "forma": "MANUSCRITA",
+        "data_documento": "2025-12-22",
+        "motivo": "não utilização do EPI obrigatório",
+        "dias_suspensao": 1,
+        "ciencia": "RECUSA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "72804315690",
+      "empregado": "DANIEL DA MATA MELO",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "data_documento": "2026-02-15",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Daniel Da Mata Melo",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-02-13",
+        "motivo": "precisei resolver problema no banco",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "13/02/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79652138002",
+      "empregado": "SOPHIE VIEIRA ALVES",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "empregado_nome": "Sophie Vieira Alves",
+        "empregado_cpf": null,
+        "empregador_razao_social": "DAS NEVES MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "09217368000180",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-01-20",
+        "motivo": "uso de celular em área proibida",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "61840293551",
+      "empregado": "GABRIELLY NASCIMENTO MACEDO",
+      "competencia": null,
+      "empresa_cnpj": "09217368000180",
+      "dados": {
+        "empregado_nome": "Gabrielly Nascimento Macedo",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Das Neves Manutenção Terceirização Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "SUSPENSAO",
+        "forma": "MANUSCRITA",
+        "data_documento": "2026-01-27",
+        "motivo": "ausência injustificada ao serviço",
+        "dias_suspensao": 3,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "OUTRO",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      21,
+      21
+    ],
+    "degradacao": "leve",
+    "taxa_nc": 0.19,
+    "perfil": "misto",
+    "embaralhar": 0.11,
+    "paginas_em_branco": 0.1,
+    "fora_de_ordem": 0.09,
+    "intercalar": 0.12,
+    "taxa_defeito": 0.04,
+    "taxa_branco": 0.05,
+    "extras": 0.1,
+    "p_celular": 0.19,
+    "p_cabeca_para_baixo": 0.07,
+    "seed": 42021
+  }
+}

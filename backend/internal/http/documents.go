@@ -112,7 +112,8 @@ func (s *Server) getDocument(c *gin.Context) {
 		err = tx.QueryRow(ctx, `SELECT row_to_json(t) FROM (SELECT d.id, d.document_type, dt.nome AS tipo_nome, dt.categoria, d.titulo, d.competencia, d.data_documento, d.validade_ate,
 		  d.status, d.origem, d.confianca, d.paginas, d.employee_id, d.batch_id, d.campos, d.alertas, d.motivos_revisao, d.nao_conformidades, d.dados_sensiveis, d.finops, `+textCol+` AS texto_ocr,
 		  d.texto_anonimizado, d.nome_extraido, d.nome_arquivo, d.pasta_destino, d.checklist, d.origem, d.possui_manuscrito, d.sensivel_saude, d.versao, d.substitui_id, d.duplicata_de, d.criado_em,
-		  e.nome AS funcionario_nome, e.cpf_mascarado AS funcionario_cpf
+		  e.nome AS funcionario_nome, e.cpf_mascarado AS funcionario_cpf, d.supplier_id,
+		  (SELECT razao_social FROM suppliers WHERE id=d.supplier_id) AS fornecedor, (SELECT cnpj FROM suppliers WHERE id=d.supplier_id) AS fornecedor_cnpj
 		  FROM documents d JOIN document_types dt ON dt.codigo=d.document_type LEFT JOIN employees e ON e.id=d.employee_id WHERE d.id=$1) t`, d.ID).Scan(&raw)
 		if err != nil {
 			return err
@@ -586,6 +587,13 @@ func (s *Server) listDocuments(c *gin.Context) {
 	add("d.document_type = ?", c.Query("tipo"))
 	add("dt.categoria = ?", c.Query("categoria"))
 	add("d.employee_id = ?::uuid", c.Query("employee"))
+	add("d.supplier_id = ?::uuid", c.Query("supplier"))
+	switch v := c.Query("vinculo"); v { // documentos da própria empresa × de terceirizadas × de fornecedores
+	case "PROPRIA":
+		where = append(where, "d.supplier_id IS NULL")
+	case "TERCEIRIZADA", "FORNECEDOR":
+		add("sup.tipo = ?", v)
+	}
 	add("d.batch_id = ?::uuid", c.Query("lote"))
 	add("d.competencia = ?", c.Query("competencia"))
 	if q := strings.TrimSpace(c.Query("q")); q != "" {
@@ -612,7 +620,7 @@ func (s *Server) listDocuments(c *gin.Context) {
 		cargs := args[:len(args)-(len(args)-countParams(base))]
 		return tx.QueryRow(ctx, `SELECT json_build_object('todos', count(*), 'aprovados', count(*) FILTER (WHERE d.status IN ('AUTO_APROVADO','REVISADO')),
 		  'revisao', count(*) FILTER (WHERE d.status='AGUARDANDO_REVISAO'), 'rejeitados', count(*) FILTER (WHERE d.status='REJEITADO'))
-		  FROM documents d JOIN document_types dt ON dt.codigo=d.document_type LEFT JOIN employees ef ON ef.id=d.employee_id WHERE ($1::boolean IS NOT NULL) AND `+base, cargs...).Scan(&resumo)
+		  FROM documents d JOIN document_types dt ON dt.codigo=d.document_type LEFT JOIN employees ef ON ef.id=d.employee_id LEFT JOIN suppliers sup ON sup.id=d.supplier_id WHERE ($1::boolean IS NOT NULL) AND `+base, cargs...).Scan(&resumo)
 	}) {
 		return
 	}

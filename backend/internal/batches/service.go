@@ -490,6 +490,9 @@ func (s *Service) complete(ctx context.Context, tenantID string, unitID *string,
 		if sum.PreCadastros > 0 {
 			tx.Exec(ctx, `INSERT INTO notifications (tenant_id, tipo, titulo, link) VALUES ($1,'PRE_CADASTRO',$2,'/funcionarios?pre=1')`, tenantID, fmt.Sprintf("%d funcionário(s) pré-cadastrado(s) a partir do lote: complete o cadastro", sum.PreCadastros))
 		}
+		if sum.Fornecedores > 0 {
+			tx.Exec(ctx, `INSERT INTO notifications (tenant_id, tipo, titulo, link) VALUES ($1,'FORNECEDOR',$2,'/fornecedores?pre=1')`, tenantID, fmt.Sprintf("%d fornecedor(es)/terceirizada(s) identificado(s) pelo CNPJ nos documentos: complete o cadastro", sum.Fornecedores))
+		}
 		if sum.Ilegiveis > 0 {
 			tx.Exec(ctx, `INSERT INTO notifications (tenant_id, tipo, titulo, link) VALUES ($1,'ILEGIVEL',$2,'/revisao')`, tenantID, fmt.Sprintf("%d documento(s) ilegível(is) precisam de classificação manual", sum.Ilegiveis))
 		}

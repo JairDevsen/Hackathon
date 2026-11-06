@@ -42,6 +42,27 @@ def cnpj_valido(s: str) -> bool:
     return True
 
 
+_CNPJ_NUM = r"(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})"
+_ROTULO_PRESTADORA = re.compile(r"(?:CONTRATADA|PRESTADORA|FORNECEDORA?|TERCEIRIZADA|EMPREGADOR|RAZAO SOCIAL|EMPRESA)\b[^\n]{0,140}?CNPJ[^\d]{0,14}" + _CNPJ_NUM)
+_ROTULO_CONTRATANTE = re.compile(r"CONTRATANTE\b[^\n]{0,140}?CNPJ[^\d]{0,14}" + _CNPJ_NUM)
+
+
+def cnpj_da_empresa(texto: str) -> Optional[str]:
+    t = norm(texto)
+    for m in _ROTULO_PRESTADORA.finditer(t):
+        if cnpj_valido(m.group(1)):
+            return re.sub(r"\D", "", m.group(1))
+    contratantes = {re.sub(r"\D", "", m.group(1)) for m in _ROTULO_CONTRATANTE.finditer(t)}
+    validos = [re.sub(r"\D", "", m.group(0)) for m in CNPJ_RE.finditer(texto) if cnpj_valido(m.group(0))]
+    for c in validos:
+        if c not in contratantes:
+            return c
+    if validos:
+        return validos[0]
+    todos = [re.sub(r"\D", "", m.group(0)) for m in CNPJ_RE.finditer(texto)]
+    return todos[0] if todos else None
+
+
 def extrair_campos(texto: str) -> Dict[str, Optional[str]]:
     t = norm(texto)
     out: Dict[str, Optional[str]] = {}
@@ -69,10 +90,9 @@ def extrair_campos(texto: str) -> Dict[str, Optional[str]]:
     out["horas_extras"] = f"{int(m.group(1)):02d}:{m.group(2)}" if m else None
     m = re.search(r"HORAS EXTRAS[^\n]{0,24}R\$\s*([\d\.]+,\d{2})", t)
     out["pagamento_horas_extras"] = m.group(1) if m else None
-    # empresa: CNPJ (primeiro válido) e razão social
-    cnpjs = [m.group(0) for m in CNPJ_RE.finditer(texto)]
-    cnpj = next((c for c in cnpjs if cnpj_valido(c)), cnpjs[0] if cnpjs else None)
-    out["empresa_cnpj"] = re.sub(r"\D", "", cnpj) if cnpj else None
+    # empresa: CNPJ e razão social. Um contrato cita DUAS empresas: vale a CONTRATADA/prestadora/fornecedora (o risco é dela),
+    # não a contratante. Sem rótulo, o primeiro CNPJ válido.
+    out["empresa_cnpj"] = cnpj_da_empresa(texto)
     m = re.search(r"(?:EMPRESA|EMPREGADOR|RAZAO SOCIAL|CONTRATADA|PRESTADORA)\s*[:\-]\s*([A-Z0-9][A-Z0-9 .&\-]{4,60}?)(?=\s*(?:\||\n|$|CNPJ|CPF))", t)
     out["empresa_nome"] = m.group(1).strip() if m else None
     m = DATA_RE.search(texto)

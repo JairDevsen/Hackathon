@@ -1,0 +1,1111 @@
+{
+  "arquivo": "lote_0027.pdf",
+  "perfil": "misto",
+  "empresa_cnpj": "97132508000185",
+  "competencia": "2026-07",
+  "degradacao": "leve",
+  "total_paginas": 23,
+  "total_documentos": 18,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:2ª via"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:falta assinar"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:2ª via"
+      ]
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "ASO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "23150479860",
+      "empregado": "FERNANDO PIMENTA MACEDO",
+      "competencia": null,
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "empregado_nome": "Fernando Pimenta Macedo",
+        "empregado_cpf": "23150479860",
+        "empregador_razao_social": "SANTOS COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "97132508000185",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Copeira",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-07-22",
+        "riscos_ocupacionais": [
+          "Químico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Raquel da Luz",
+        "medico_crm": "CRM-BA 6209"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Fernando Pimenta Macedo"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        2,
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "37568420108",
+      "empregado": "CLARA MACHADO CAVALCANTE",
+      "competencia": null,
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 362 610 746 AR",
+        "conteudo": "Notificação nº 63/2026",
+        "data_postagem": "2026-06-29",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA OLINDA",
+        "destinatario_nome": "Clara Machado Cavalcante",
+        "destinatario_endereco": "Rua Almeida Costela, 1986",
+        "destinatario_bairro": "Maria Goretti",
+        "destinatario_municipio": "Jaboatão dos Guararapes",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "54155297",
+        "remetente_nome": "SANTOS COPA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Nogueira Ramos, 915 – Capitão Eduardo, Olinda/PE",
+        "remetente_cep": "53023417",
+        "tentativas": [
+          {
+            "data": "2026-07-02",
+            "hora": "15:10"
+          },
+          {
+            "data": "2026-07-06",
+            "hora": "08:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-06",
+        "data_devolucao": null,
+        "recebedor_nome": "PIETRO MENDES",
+        "recebedor_documento": "4836879",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "37568420108",
+      "empregado": "CLARA MACHADO CAVALCANTE",
+      "competencia": null,
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "empregado_nome": "CLARA MACHADO CAVALCANTE",
+        "empregado_cpf": "37568420108",
+        "empregador_razao_social": "SANTOS COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "97132508000185",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "ABANDONO_EMPREGO",
+        "data_documento": "2026-06-28",
+        "prazo_dias": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "TRCT",
+      "paginas": [
+        5,
+        6
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53827069483",
+      "empregado": "JADE DA MATA MOURA",
+      "competencia": "2026-07",
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "empregado_nome": "JADE DA MATA MOURA",
+        "empregado_cpf": "53827069483",
+        "empregador_razao_social": "SANTOS COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "97132508000185",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "12831812315",
+        "data_admissao": "2021-01-05",
+        "data_aviso_previo": "2026-06-10",
+        "data_afastamento": "2026-07-10",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 1770.0,
+        "total_bruto": 2655.0,
+        "total_deducoes": 110.63,
+        "valor_liquido": 2544.37,
+        "assinatura_empregado_presente": false,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Olinda, 16/07/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "TRCT",
+      "paginas": [
+        7,
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "37568420108",
+      "empregado": "CLARA MACHADO CAVALCANTE",
+      "competencia": "2026-07",
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "empregado_nome": "CLARA MACHADO CAVALCANTE",
+        "empregado_cpf": "37568420108",
+        "empregador_razao_social": "SANTOS COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "97132508000185",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "10680191370",
+        "data_admissao": "2025-03-29",
+        "data_aviso_previo": "2026-06-15",
+        "data_afastamento": "2026-07-15",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 2230.0,
+        "total_bruto": 3654.72,
+        "total_deducoes": 181.18,
+        "valor_liquido": 3473.54,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Olinda, 22/07/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "empregador_razao_social": "SANTOS COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "97132508000185",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-17 – Ergonomia",
+        "data": "2026-03-05",
+        "carga_horaria_horas": 2.0,
+        "instrutor": "Maria Fernanda Marques",
+        "participantes": [
+          {
+            "nome": "Fernando Pimenta Macedo",
+            "cpf": "23150479860",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Paulo Dias Novaes",
+            "cpf": "58107649320",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Jade Da Mata Moura",
+            "cpf": "53827069483",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Fernanda Câmara Garcia",
+            "cpf": "59263480133",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Larissa Silveira Garcia",
+            "cpf": "56091843206",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Calebe Campos Cardoso",
+            "cpf": "72831560977",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Ana Julia Campos Correia",
+            "cpf": "92503678483",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Clara Machado Cavalcante",
+            "cpf": "37568420108",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Gabriela Abreu Caldeira",
+            "cpf": "58273410617",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Fernando Pimenta Macedo"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "581.076.493-20"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "375.684.201-08"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "23150479860",
+      "empregado": "FERNANDO PIMENTA MACEDO",
+      "competencia": null,
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "data_documento": "2026-06-22",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Fernando Pimenta Macedo",
+        "empregado_cpf": "23150479860",
+        "empregador_razao_social": "Santos Copa Soluções Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "OLINDA, 22 DE JUNHO DE 2026"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "PEDIDO DE DEMISSÃO"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "TRCT",
+      "paginas": [
+        11,
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "92361587068",
+      "empregado": "ISABELLA ABREU AZEVEDO",
+      "competencia": "2026-07",
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "empregado_nome": "ISABELLA ABREU AZEVEDO",
+        "empregado_cpf": "92361587068",
+        "empregador_razao_social": "SANTOS COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "97132508000185",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "13759406032",
+        "data_admissao": "2021-05-16",
+        "data_aviso_previo": "2026-06-10",
+        "data_afastamento": "2026-07-10",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 2210.0,
+        "total_bruto": 2332.78,
+        "total_deducoes": 138.13,
+        "valor_liquido": 2194.65,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "92361587068",
+      "empregado": "ISABELLA ABREU AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "empregado_nome": "Isabella Abreu Azevedo",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Santos Copa Soluções Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "MANUSCRITA",
+        "data_documento": "2026-04-19",
+        "motivo": "uso de celular em área proibida",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "SR(A). ISABELLA ABREU AZEVEDO, PELA PRESENTE FICA V.SA. ADVERTIDO(A)"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "EM RAZÃO DE USO DE CELULAR EM ÁREA PROIBIDA. SOLICITAMOS QUE TAL FATO"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53827069483",
+      "empregado": "JADE DA MATA MOURA",
+      "competencia": null,
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "empregado_nome": "Jade Da Mata Moura",
+        "empregado_cpf": null,
+        "empregador_razao_social": "SANTOS COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "97132508000185",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-05-28",
+        "motivo": "ausência injustificada ao serviço",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53827069483",
+      "empregado": "JADE DA MATA MOURA",
+      "competencia": null,
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "empregado_nome": "JADE DA MATA MOURA",
+        "empregado_cpf": "53827069483",
+        "empregador_razao_social": "SANTOS COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "97132508000185",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-06-24",
+        "prazo_dias": 3
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "81742056911",
+      "empregado": "ANA CLARA MARQUES AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "data_documento": "2026-07-19",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Ana Clara Marques Azevedo",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-07-19",
+        "motivo": "consulta médica do filho",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "53827069483",
+      "empregado": "JADE DA MATA MOURA",
+      "competencia": null,
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 921 454 177 AR",
+        "conteudo": "Notificação nº 74/2026",
+        "data_postagem": "2026-06-25",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA OLINDA",
+        "destinatario_nome": "Jade Da Mata Moura",
+        "destinatario_endereco": "Rua Moraes Nogueira, 1322",
+        "destinatario_bairro": "Jardim Dos Comerciarios",
+        "destinatario_municipio": "Olinda",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "53005593",
+        "remetente_nome": "SANTOS COPA SOLUÇÕES LTDA",
+        "remetente_endereco": "Rua Nogueira Ramos, 915 – Capitão Eduardo, Olinda/PE",
+        "remetente_cep": "53023417",
+        "tentativas": [
+          {
+            "data": "2026-06-29",
+            "hora": "08:45"
+          },
+          {
+            "data": "2026-07-02",
+            "hora": "10:40"
+          },
+          {
+            "data": "2026-07-06",
+            "hora": "10:10"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "RECUSADO",
+        "data_entrega": null,
+        "data_devolucao": "2026-07-07",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "25/06/2026"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "53005-593"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "58107649320",
+      "empregado": "PAULO DIAS NOVAES",
+      "competencia": null,
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "empregado_nome": "Paulo Dias Novaes",
+        "empregado_cpf": null,
+        "empregador_razao_social": "SANTOS COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "97132508000185",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-06-03",
+        "motivo": "abandono do posto de trabalho durante o expediente",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "92361587068",
+      "empregado": "ISABELLA ABREU AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "data_documento": "2026-06-10",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Isabella Abreu Azevedo",
+        "empregado_cpf": "92361587068",
+        "empregador_razao_social": "Santos Copa Soluções Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": null
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Olinda, 10 de junho de 2026"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "À Santos Copa Soluções Ltda"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Isabella Abreu Azevedo"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "37568420108",
+      "empregado": "CLARA MACHADO CAVALCANTE",
+      "competencia": null,
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Clara Machado Cavalcante",
+        "empregado_cpf": null,
+        "empregador_razao_social": "SANTOS COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "97132508000185",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "QUASE_ACIDENTE",
+        "data_ocorrencia": "2026-05-31",
+        "hora": "07:30",
+        "local": "Copa do 2º andar",
+        "descricao": "Fio desencapado encontrado próximo ao quadro de energia, isolado antes de contato.",
+        "houve_afastamento": false,
+        "testemunha_nome": "Marcelo Sampaio"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Fio desencapado encontrado próximo ao quadro de energia, isolado antes"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Marcelo Sampaio"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "TRCT",
+      "paginas": [
+        21,
+        22
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "23150479860",
+      "empregado": "FERNANDO PIMENTA MACEDO",
+      "competencia": "2026-07",
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "empregado_nome": "FERNANDO PIMENTA MACEDO",
+        "empregado_cpf": "23150479860",
+        "empregador_razao_social": "SANTOS COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "97132508000185",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "10558940479",
+        "data_admissao": "2020-03-13",
+        "data_aviso_previo": "2026-06-22",
+        "data_afastamento": "2026-07-22",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 1750.0,
+        "total_bruto": 3276.39,
+        "total_deducoes": 172.81,
+        "valor_liquido": 3103.58,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "ASO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "92361587068",
+      "empregado": "ISABELLA ABREU AZEVEDO",
+      "competencia": null,
+      "empresa_cnpj": "97132508000185",
+      "dados": {
+        "empregado_nome": "Isabella Abreu Azevedo",
+        "empregado_cpf": "92361587068",
+        "empregador_razao_social": "SANTOS COPA SOLUÇÕES LTDA",
+        "empregador_cnpj": "97132508000185",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Cozinheira",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-07-10",
+        "riscos_ocupacionais": [
+          "Químico",
+          "Acidentes"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Pedro Lucas Camargo",
+        "medico_crm": "CRM-AL 27802"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      13,
+      13
+    ],
+    "degradacao": "leve",
+    "taxa_nc": 0.31,
+    "perfil": "misto",
+    "embaralhar": 0.46,
+    "paginas_em_branco": 0.09,
+    "fora_de_ordem": 0.07,
+    "intercalar": 0.26,
+    "taxa_defeito": 0.14,
+    "taxa_branco": 0.04,
+    "extras": 0.13,
+    "p_celular": 0.13,
+    "p_cabeca_para_baixo": 0.0,
+    "seed": 42027
+  }
+}

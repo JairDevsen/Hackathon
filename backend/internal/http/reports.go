@@ -31,17 +31,17 @@ func (s *Server) listRisks(c *gin.Context) {
 	s.queryJSON(c, `SELECT json_build_object(
 	  'resumo', (SELECT json_build_object('alto',count(*) FILTER (WHERE r.severidade='ALTO'), 'medio',count(*) FILTER (WHERE r.severidade='MEDIO'), 'baixo',count(*) FILTER (WHERE r.severidade='BAIXO'))
 	    FROM risk_indicators r LEFT JOIN employees e ON e.id=r.employee_id LEFT JOIN documents d ON d.id=r.document_id
-	    WHERE r.status='ABERTO' AND ($1::uuid[]='{}' OR coalesce(e.unit_id,d.unit_id)=ANY($1)) AND ($4::text='' OR r.employee_id::text=$4)),
+	    WHERE r.status='ABERTO' AND ($1::uuid[]='{}' OR coalesce(e.unit_id,d.unit_id)=ANY($1)) AND ($4::text='' OR r.employee_id::text=$4) AND ($5::text='' OR r.supplier_id::text=$5)),
 	  'items', (SELECT coalesce(json_agg(t ORDER BY t.prioridade,t.criado_em DESC),'[]') FROM (
 	    SELECT r.id, r.codigo, r.severidade, r.categoria, r.titulo,
 	      CASE WHEN d.sensivel_saude AND NOT $3 THEN 'Documento de saúde: acesso restrito' ELSE r.descricao END AS descricao,
 	      r.base_legal, r.referencia, r.status, r.justificativa, r.criado_em,
 	      r.employee_id, CASE WHEN d.sensivel_saude AND NOT $3 THEN NULL ELSE e.nome END AS funcionario,
-	      r.document_id, d.document_type, d.batch_id,
+	      r.document_id, d.document_type, d.batch_id, r.supplier_id, sp.razao_social AS fornecedor, sp.cnpj AS fornecedor_cnpj,
 	      CASE r.severidade WHEN 'ALTO' THEN 0 WHEN 'MEDIO' THEN 1 ELSE 2 END AS prioridade
-	    FROM risk_indicators r LEFT JOIN employees e ON e.id=r.employee_id LEFT JOIN documents d ON d.id=r.document_id
-	    WHERE r.status=$2 AND ($1::uuid[]='{}' OR coalesce(e.unit_id,d.unit_id)=ANY($1)) AND ($4::text='' OR r.employee_id::text=$4)
-	    ORDER BY prioridade,r.criado_em DESC LIMIT 200) t))`, units, status, saude, c.Query("employee"))
+	    FROM risk_indicators r LEFT JOIN employees e ON e.id=r.employee_id LEFT JOIN documents d ON d.id=r.document_id LEFT JOIN suppliers sp ON sp.id=r.supplier_id
+	    WHERE r.status=$2 AND ($1::uuid[]='{}' OR coalesce(e.unit_id,d.unit_id)=ANY($1)) AND ($4::text='' OR r.employee_id::text=$4) AND ($5::text='' OR r.supplier_id::text=$5)
+	    ORDER BY prioridade,r.criado_em DESC LIMIT 200) t))`, units, status, saude, c.Query("employee"), c.Query("supplier"))
 }
 
 func (s *Server) ignoreRisk(c *gin.Context) {
@@ -85,9 +85,9 @@ func (s *Server) reopenRisk(c *gin.Context) {
 }
 
 const complianceSelect = `SELECT ci.id, ci.status, ci.referencia, ci.vence_em, ci.employee_id, e.nome AS funcionario, e.cpf_mascarado, p.nome AS cargo, u.nome AS unidade,
-  dt.codigo AS tipo, dt.nome AS tipo_nome, dt.categoria, r.momento, ci.document_id, ci.justificativa_dispensa
+  dt.codigo AS tipo, dt.nome AS tipo_nome, dt.categoria, r.momento, ci.document_id, ci.justificativa_dispensa, ci.supplier_id, sp.razao_social AS fornecedor
   FROM compliance_items ci JOIN requirements r ON r.id=ci.requirement_id JOIN document_types dt ON dt.id=r.document_type_id
-  LEFT JOIN employees e ON e.id=ci.employee_id LEFT JOIN positions p ON p.id=e.cargo_id LEFT JOIN units u ON u.id=e.unit_id`
+  LEFT JOIN employees e ON e.id=ci.employee_id LEFT JOIN positions p ON p.id=e.cargo_id LEFT JOIN units u ON u.id=e.unit_id LEFT JOIN suppliers sp ON sp.id=ci.supplier_id`
 
 func (s *Server) complianceWhere(c *gin.Context) (string, []any) {
 	units, _ := s.userScope(c)
@@ -293,6 +293,17 @@ func (s *Server) metricsOverview(c *gin.Context) {
 	 'pre_cadastros', (SELECT count(*) FROM scoped_employees WHERE pre_cadastro),
 	 'documentos_ilegiveis', (SELECT count(*) FROM scoped_documents WHERE status='AGUARDANDO_REVISAO' AND (motivos_revisao ? 'PAGINA_ILEGIVEL' OR motivos_revisao ? 'IMAGEM_BORRADA' OR motivos_revisao ? 'TIPO_OUTRO')),
 	 'riscos_abertos', (SELECT count(*) FROM scoped_risks WHERE status='ABERTO'),
+	 'por_vinculo', (SELECT coalesce(json_agg(x ORDER BY x.ordem),'[]') FROM (
+	    SELECT CASE WHEN e.supplier_id IS NULL THEN 'PROPRIA' ELSE su.tipo END AS vinculo,
+	      CASE WHEN e.supplier_id IS NULL THEN 0 WHEN su.tipo='TERCEIRIZADA' THEN 1 ELSE 2 END AS ordem,
+	      count(DISTINCT e.id) FILTER (WHERE e.status='ATIVO') AS funcionarios,
+	      count(DISTINCT e.supplier_id) AS empresas,
+	      count(ci.id) FILTER (WHERE ci.status='OK') AS ok, count(ci.id) FILTER (WHERE ci.status<>'DISPENSADO') AS total
+	    FROM scoped_employees e LEFT JOIN suppliers su ON su.id=e.supplier_id LEFT JOIN compliance_items ci ON ci.employee_id=e.id
+	    GROUP BY 1,2) x),
+	 'fornecedores', (SELECT count(*) FROM suppliers WHERE status='ATIVO'),
+	 'fornecedores_pre_cadastro', (SELECT count(*) FROM suppliers WHERE pre_cadastro),
+	 'fornecedores_risco_alto', (SELECT count(DISTINCT supplier_id) FROM risk_indicators WHERE status='ABERTO' AND severidade='ALTO' AND supplier_id IS NOT NULL),
 	 'revisoes_mes', (SELECT count(*) FROM reviews r JOIN scoped_documents d ON d.id=r.document_id WHERE r.criado_em >= date_trunc('month', now())),
 	 'armazenamento', (SELECT json_build_object('usado', bytes_usados, 'cota', quota_bytes) FROM tenants WHERE id=$1),
 	 'paginas_mes', (SELECT json_build_object('usado', coalesce((SELECT paginas FROM usage_monthly WHERE mes=to_char(now(),'YYYY-MM')),0), 'limite', quota_paginas_mes) FROM tenants WHERE id=$1),

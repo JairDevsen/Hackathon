@@ -1,0 +1,351 @@
+{
+  "seed": 42006,
+  "data_referencia": "2026-05-19",
+  "empresas": [
+    {
+      "razao_social": "BORGES LIMPEZA SERVIÇOS LTDA",
+      "cnpj": "25409813000160",
+      "endereco": "Rua Costela Teixeira, 666 – Vila Inestan",
+      "cidade": "Belo Jardim/PE",
+      "segmento": "Limpeza e Conservação",
+      "end": {
+        "logradouro": "Rua Costela Teixeira",
+        "numero": "666",
+        "bairro": "Vila Inestan",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55154107"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "RHAVI ROCHA COSTELA",
+      "cpf": "31829567446",
+      "pis": "13331881561",
+      "matricula": "007103",
+      "cargo": "SERVENTE",
+      "cbo": "6412-54",
+      "salario": 1690.0,
+      "admissao": "2024-04-05",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "25409813000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Teixeira Marques",
+        "numero": "155",
+        "bairro": "Madre Gertrudes",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55153840"
+      },
+      "nascimento": "1975-10-21"
+    },
+    {
+      "nome": "JOANA LIMA BARBOSA",
+      "cpf": "37162850995",
+      "pis": "12853321721",
+      "matricula": "007372",
+      "cargo": "SERVENTE",
+      "cbo": "6928-22",
+      "salario": 1770.0,
+      "admissao": "2024-11-21",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "25409813000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Carvalho Azevedo",
+        "numero": "1675",
+        "bairro": "Nova Suíça",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55150584"
+      },
+      "nascimento": "1993-11-19"
+    },
+    {
+      "nome": "MARIA LUIZA CASA GRANDE ROCHA",
+      "cpf": "75160829377",
+      "pis": "18126170811",
+      "matricula": "007761",
+      "cargo": "SERVENTE",
+      "cbo": "6553-70",
+      "salario": 1760.0,
+      "admissao": "2026-01-22",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "25409813000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Santos Andrade",
+        "numero": "751",
+        "bairro": "Sport Club",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55157231"
+      },
+      "nascimento": "1983-02-09"
+    },
+    {
+      "nome": "AMANDA LOPES ABREU",
+      "cpf": "89173054232",
+      "pis": "19952599148",
+      "matricula": "005878",
+      "cargo": "SERVENTE",
+      "cbo": "9172-92",
+      "salario": 1630.0,
+      "admissao": "2020-05-30",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "25409813000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Martins das Neves",
+        "numero": "1736",
+        "bairro": "Pousada Santo Antonio",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55156976"
+      },
+      "nascimento": "1985-11-25"
+    },
+    {
+      "nome": "RAVI LUCCA MENDONÇA RAMOS",
+      "cpf": "45719362819",
+      "pis": "10197278750",
+      "matricula": "001837",
+      "cargo": "SERVENTE",
+      "cbo": "5783-10",
+      "salario": 1650.0,
+      "admissao": "2022-11-22",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "25409813000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Casa Grande Fernandes",
+        "numero": "1330",
+        "bairro": "Vila Antena",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56312424"
+      },
+      "nascimento": "2003-01-13"
+    },
+    {
+      "nome": "GABRIEL DA ROSA FOGAÇA",
+      "cpf": "27043961831",
+      "pis": "17911376830",
+      "matricula": "005045",
+      "cargo": "SERVENTE",
+      "cbo": "9413-22",
+      "salario": 1610.0,
+      "admissao": "2022-01-28",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "25409813000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Sales Abreu",
+        "numero": "1970",
+        "bairro": "Caetano Furquim",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55156814"
+      },
+      "nascimento": "1998-10-10"
+    },
+    {
+      "nome": "MARIANE CASSIANO MACEDO",
+      "cpf": "87590164348",
+      "pis": "19502894238",
+      "matricula": "003264",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "7781-40",
+      "salario": 1880.0,
+      "admissao": "2023-04-29",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "25409813000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Rezende Pires",
+        "numero": "320",
+        "bairro": "Diamante",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55152610"
+      },
+      "nascimento": "1999-03-08"
+    },
+    {
+      "nome": "KAMILLY APARECIDA DA MOTA",
+      "cpf": "56740913234",
+      "pis": "16856435771",
+      "matricula": "000241",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "6565-91",
+      "salario": 2650.0,
+      "admissao": "2021-11-01",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "25409813000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Rios Nascimento",
+        "numero": "1070",
+        "bairro": "Estrela Do Oriente",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55011404"
+      },
+      "nascimento": "1978-04-30"
+    },
+    {
+      "nome": "ANA JULIA RIBEIRO BRITO",
+      "cpf": "09275638438",
+      "pis": "10939764145",
+      "matricula": "001127",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "8206-49",
+      "salario": 1870.0,
+      "admissao": "2021-12-16",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "25409813000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Pimenta da Cunha",
+        "numero": "1047",
+        "bairro": "Vila Mangueiras",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55153109"
+      },
+      "nascimento": "1984-09-08"
+    },
+    {
+      "nome": "VITOR HUGO PACHECO FREITAS",
+      "cpf": "02416539833",
+      "pis": "14811344754",
+      "matricula": "009433",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "8522-74",
+      "salario": 1750.0,
+      "admissao": "2021-05-16",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "25409813000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Mendonça Castro",
+        "numero": "1612",
+        "bairro": "Alípio De Melo",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55153904"
+      },
+      "nascimento": "1974-03-11"
+    },
+    {
+      "nome": "LEONARDO CASSIANO PEIXOTO",
+      "cpf": "28643791555",
+      "pis": "10130005042",
+      "matricula": "000885",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "7643-67",
+      "salario": 2310.0,
+      "admissao": "2024-02-16",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "25409813000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Ramos Rocha",
+        "numero": "589",
+        "bairro": "Dom Silverio",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55159385"
+      },
+      "nascimento": "1977-07-12"
+    },
+    {
+      "nome": "CLARICE MELO MARQUES",
+      "cpf": "05134298670",
+      "pis": "10651756526",
+      "matricula": "008434",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "8677-90",
+      "salario": 2340.0,
+      "admissao": "2023-09-25",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "25409813000160",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Gonçalves Nunes",
+        "numero": "1028",
+        "bairro": "Grajaú",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55031236"
+      },
+      "nascimento": "1981-01-28"
+    }
+  ],
+  "competencias": [
+    "2026-03",
+    "2026-04"
+  ]
+}

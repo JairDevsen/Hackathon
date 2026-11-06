@@ -1,0 +1,432 @@
+{
+  "seed": 42001,
+  "data_referencia": "2026-06-18",
+  "empresas": [
+    {
+      "razao_social": "REZENDE VIGILÂNCIA SERVIÇOS LTDA",
+      "cnpj": "95438721000194",
+      "endereco": "Rua Cardoso Campos, 1356 – Céu Azul",
+      "cidade": "Jaboatão dos Guararapes/PE",
+      "segmento": "Vigilância Patrimonial",
+      "end": {
+        "logradouro": "Rua Cardoso Campos",
+        "numero": "1356",
+        "bairro": "Céu Azul",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54187298"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "ARTHUR MIGUEL GONÇALVES RIBEIRO",
+      "cpf": "02146385707",
+      "pis": "16029919963",
+      "matricula": "006100",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "9721-59",
+      "salario": 3550.0,
+      "admissao": "2021-08-23",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "95438721000194",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida da Mota Casa Grande",
+        "numero": "253",
+        "bairro": "Goiania",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54287287"
+      },
+      "nascimento": "1988-12-23"
+    },
+    {
+      "nome": "ASAFE ALMEIDA DIAS",
+      "cpf": "18420596701",
+      "pis": "19273022998",
+      "matricula": "005456",
+      "cargo": "VIGILANTE",
+      "cbo": "6392-59",
+      "salario": 2870.0,
+      "admissao": "2025-05-26",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "95438721000194",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Melo da Cruz",
+        "numero": "880",
+        "bairro": "Acaiaca",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54404481"
+      },
+      "nascimento": "2004-04-09"
+    },
+    {
+      "nome": "LUIGI CARVALHO ROCHA",
+      "cpf": "95438726191",
+      "pis": "16807189002",
+      "matricula": "000161",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "8055-30",
+      "salario": 3530.0,
+      "admissao": "2025-03-14",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "95438721000194",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Lima Vieira",
+        "numero": "50",
+        "bairro": "Pompéia",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54424341"
+      },
+      "nascimento": "2004-05-31"
+    },
+    {
+      "nome": "DAVI MIGUEL MACHADO BORGES",
+      "cpf": "76039458283",
+      "pis": "18117754989",
+      "matricula": "002525",
+      "cargo": "VIGILANTE",
+      "cbo": "5202-93",
+      "salario": 2760.0,
+      "admissao": "2025-02-08",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "95438721000194",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Monteiro Castro",
+        "numero": "990",
+        "bairro": "Guarani",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56328979"
+      },
+      "nascimento": "1987-11-01"
+    },
+    {
+      "nome": "ISABELA AZEVEDO JESUS",
+      "cpf": "71062984331",
+      "pis": "15263630844",
+      "matricula": "003050",
+      "cargo": "VIGILANTE",
+      "cbo": "8493-67",
+      "salario": 2990.0,
+      "admissao": "2020-08-18",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "95438721000194",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Moraes Azevedo",
+        "numero": "375",
+        "bairro": "Brasil Industrial",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "51692046"
+      },
+      "nascimento": "1984-12-14"
+    },
+    {
+      "nome": "MARIA LIZ MACEDO FOGAÇA",
+      "cpf": "48215937691",
+      "pis": "12911926368",
+      "matricula": "007840",
+      "cargo": "VIGILANTE",
+      "cbo": "9116-36",
+      "salario": 3080.0,
+      "admissao": "2024-04-13",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "95438721000194",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Macedo Lopes",
+        "numero": "1346",
+        "bairro": "Ademar Maldonado",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54116441"
+      },
+      "nascimento": "1984-07-01"
+    },
+    {
+      "nome": "MELINA BARBOSA FERNANDES",
+      "cpf": "26371098403",
+      "pis": "12994340544",
+      "matricula": "009203",
+      "cargo": "VIGILANTE",
+      "cbo": "4026-38",
+      "salario": 2470.0,
+      "admissao": "2025-07-20",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "95438721000194",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Novaes Machado",
+        "numero": "1751",
+        "bairro": "Planalto",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54385984"
+      },
+      "nascimento": "1982-07-08"
+    },
+    {
+      "nome": "CATARINA ANDRADE PACHECO",
+      "cpf": "26083714931",
+      "pis": "10570243405",
+      "matricula": "003370",
+      "cargo": "VIGILANTE",
+      "cbo": "7146-84",
+      "salario": 3060.0,
+      "admissao": "2024-03-22",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "95438721000194",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Pimenta Barros",
+        "numero": "48",
+        "bairro": "Cabana Do Pai Tomás",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54305721"
+      },
+      "nascimento": "1981-12-14"
+    },
+    {
+      "nome": "LUIZ FERNANDO GUERRA DA CRUZ",
+      "cpf": "67395412052",
+      "pis": "11474353872",
+      "matricula": "006726",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "4182-59",
+      "salario": 3840.0,
+      "admissao": "2020-08-26",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "95438721000194",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Lopes Mendonça",
+        "numero": "1016",
+        "bairro": "Alta Tensão 2ª Seção",
+        "municipio": "Olinda",
+        "uf": "PE",
+        "cep": "53070927"
+      },
+      "nascimento": "1997-02-12"
+    },
+    {
+      "nome": "DANTE MARTINS CASSIANO",
+      "cpf": "94320687574",
+      "pis": "11875733269",
+      "matricula": "006634",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "5158-12",
+      "salario": 4080.0,
+      "admissao": "2022-05-16",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "95438721000194",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Câmara Brito",
+        "numero": "883",
+        "bairro": "Vila Mangueiras",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54430183"
+      },
+      "nascimento": "1977-09-23"
+    },
+    {
+      "nome": "YASMIN DA MOTA DUARTE",
+      "cpf": "82956401785",
+      "pis": "14208353852",
+      "matricula": "008594",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "8926-96",
+      "salario": 4200.0,
+      "admissao": "2020-01-07",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "95438721000194",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Santos Aparecida",
+        "numero": "1793",
+        "bairro": "Grajaú",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56310638"
+      },
+      "nascimento": "1995-04-24"
+    },
+    {
+      "nome": "LORENZO DA ROCHA CORREIA",
+      "cpf": "40379215888",
+      "pis": "10138480645",
+      "matricula": "003747",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "7229-75",
+      "salario": 3340.0,
+      "admissao": "2022-08-20",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "95438721000194",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Carvalho Almeida",
+        "numero": "593",
+        "bairro": "Universitário",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54329339"
+      },
+      "nascimento": "1990-01-30"
+    },
+    {
+      "nome": "VITÓRIA ROCHA RAMOS",
+      "cpf": "47068231535",
+      "pis": "13435557477",
+      "matricula": "005435",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "9097-33",
+      "salario": 3760.0,
+      "admissao": "2023-04-02",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "95438721000194",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Freitas da Conceição",
+        "numero": "576",
+        "bairro": "São Francisco Das Chagas",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54353702"
+      },
+      "nascimento": "2002-01-20"
+    },
+    {
+      "nome": "MAITÊ SIQUEIRA GUERRA",
+      "cpf": "06235918712",
+      "pis": "10803381716",
+      "matricula": "002745",
+      "cargo": "SUPERVISOR DE VIGILÂNCIA",
+      "cbo": "7445-22",
+      "salario": 3350.0,
+      "admissao": "2022-09-26",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "95438721000194",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Campos Moraes",
+        "numero": "1",
+        "bairro": "Trevo",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52912885"
+      },
+      "nascimento": "1972-05-15"
+    },
+    {
+      "nome": "MARIA FERNANDA PEIXOTO VASCONCELOS",
+      "cpf": "50143296833",
+      "pis": "14686206479",
+      "matricula": "005124",
+      "cargo": "VIGILANTE",
+      "cbo": "6229-99",
+      "salario": 2590.0,
+      "admissao": "2025-03-15",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "95438721000194",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Viana Cunha",
+        "numero": "1298",
+        "bairro": "Esplanada",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55292406"
+      },
+      "nascimento": "1989-09-05"
+    }
+  ],
+  "competencias": [
+    "2026-04",
+    "2026-05"
+  ]
+}

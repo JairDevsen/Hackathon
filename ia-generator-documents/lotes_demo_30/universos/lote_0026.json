@@ -1,0 +1,270 @@
+{
+  "seed": 42026,
+  "data_referencia": "2026-01-19",
+  "empresas": [
+    {
+      "razao_social": "PORTO PORTARIA SOLUÇÕES LTDA",
+      "cnpj": "56720934000152",
+      "endereco": "Travessa Mendonça Novais, 1002 – Vila Real 2ª Seção",
+      "cidade": "Garanhuns/PE",
+      "segmento": "Portaria e Recepção",
+      "end": {
+        "logradouro": "Travessa Mendonça Novais",
+        "numero": "1002",
+        "bairro": "Vila Real 2ª Seção",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55294031"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "THEODORO SANTOS PORTO",
+      "cpf": "09458136784",
+      "pis": "10040396360",
+      "matricula": "006468",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "5631-70",
+      "salario": 1870.0,
+      "admissao": "2025-04-06",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "56720934000152",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Silva Gomes",
+        "numero": "181",
+        "bairro": "Distrito Industrial Do Jatoba",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55297344"
+      },
+      "nascimento": "2005-09-13"
+    },
+    {
+      "nome": "MARIA JÚLIA FOGAÇA COSTELA",
+      "cpf": "02795386186",
+      "pis": "18894404531",
+      "matricula": "002996",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "4951-13",
+      "salario": 2060.0,
+      "admissao": "2024-11-26",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "56720934000152",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Barros Vieira",
+        "numero": "1854",
+        "bairro": "Funcionários",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55294401"
+      },
+      "nascimento": "1973-03-13"
+    },
+    {
+      "nome": "BENJAMIN NOGUEIRA NOGUEIRA",
+      "cpf": "94802516711",
+      "pis": "10986414414",
+      "matricula": "008824",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "8846-72",
+      "salario": 1840.0,
+      "admissao": "2021-04-22",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "56720934000152",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Alves Barros",
+        "numero": "1220",
+        "bairro": "Cônego Pinheiro 2ª Seção",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55294721"
+      },
+      "nascimento": "1988-04-26"
+    },
+    {
+      "nome": "HENRY MONTEIRO PACHECO",
+      "cpf": "46532081906",
+      "pis": "18945254965",
+      "matricula": "002535",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "5994-45",
+      "salario": 1860.0,
+      "admissao": "2021-10-30",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "56720934000152",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Silva Sales",
+        "numero": "345",
+        "bairro": "Serra",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55296652"
+      },
+      "nascimento": "1990-09-25"
+    },
+    {
+      "nome": "ANA JÚLIA SALES TEIXEIRA",
+      "cpf": "41723895628",
+      "pis": "16550117071",
+      "matricula": "009632",
+      "cargo": "PORTEIRO",
+      "cbo": "4537-86",
+      "salario": 1920.0,
+      "admissao": "2019-07-24",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "56720934000152",
+      "desligado_em": "2025-12-25",
+      "end": {
+        "logradouro": "Rua Santos Farias",
+        "numero": "1558",
+        "bairro": "Ouro Minas",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55296980"
+      },
+      "nascimento": "1971-02-25"
+    },
+    {
+      "nome": "DANIELA VARGAS MORAES",
+      "cpf": "84512730923",
+      "pis": "18752470160",
+      "matricula": "006792",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "9244-25",
+      "salario": 2090.0,
+      "admissao": "2025-07-23",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "56720934000152",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Souza Viana",
+        "numero": "1293",
+        "bairro": "Jaqueline",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55298432"
+      },
+      "nascimento": "1975-10-08"
+    },
+    {
+      "nome": "AURORA PORTO CORREIA",
+      "cpf": "52698143746",
+      "pis": "12712137975",
+      "matricula": "007443",
+      "cargo": "PORTEIRO",
+      "cbo": "5788-47",
+      "salario": 1940.0,
+      "admissao": "2020-06-16",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "56720934000152",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Fonseca Araújo",
+        "numero": "1493",
+        "bairro": "Vitoria",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56337699"
+      },
+      "nascimento": "1996-07-14"
+    },
+    {
+      "nome": "DAVI LUCAS VASCONCELOS BARROS",
+      "cpf": "70948632178",
+      "pis": "16081588042",
+      "matricula": "001036",
+      "cargo": "PORTEIRO",
+      "cbo": "4075-19",
+      "salario": 1830.0,
+      "admissao": "2020-09-13",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "56720934000152",
+      "desligado_em": "2025-12-13",
+      "end": {
+        "logradouro": "Travessa Leão Cassiano",
+        "numero": "1133",
+        "bairro": "Vila Santa Rosa",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56513777"
+      },
+      "nascimento": "1992-12-21"
+    },
+    {
+      "nome": "HELENA ROCHA MARTINS",
+      "cpf": "02781639478",
+      "pis": "15401526893",
+      "matricula": "005632",
+      "cargo": "RECEPCIONISTA",
+      "cbo": "6531-65",
+      "salario": 1980.0,
+      "admissao": "2021-08-24",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "56720934000152",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Guerra Jesus",
+        "numero": "555",
+        "bairro": "Vila Cloris",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55297300"
+      },
+      "nascimento": "2003-02-21"
+    }
+  ],
+  "competencias": [
+    "2025-11",
+    "2025-12"
+  ]
+}

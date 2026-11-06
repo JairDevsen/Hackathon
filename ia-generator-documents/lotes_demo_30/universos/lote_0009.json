@@ -1,0 +1,378 @@
+{
+  "seed": 42009,
+  "data_referencia": "2026-02-18",
+  "empresas": [
+    {
+      "razao_social": "DA ROCHA MANUTENÇÃO SOLUÇÕES LTDA",
+      "cnpj": "93254760000106",
+      "endereco": "Rua Nogueira Pires, 453 – Outro",
+      "cidade": "Belo Jardim/PE",
+      "segmento": "Manutenção Predial",
+      "end": {
+        "logradouro": "Rua Nogueira Pires",
+        "numero": "453",
+        "bairro": "Outro",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55159180"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "CARLOS EDUARDO SÁ PIRES",
+      "cpf": "94607385166",
+      "pis": "19460076281",
+      "matricula": "006618",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "6201-25",
+      "salario": 1840.0,
+      "admissao": "2024-01-01",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93254760000106",
+      "desligado_em": "2026-01-28",
+      "end": {
+        "logradouro": "Rua da Mata Campos",
+        "numero": "421",
+        "bairro": "Califórnia",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55158936"
+      },
+      "nascimento": "1975-11-17"
+    },
+    {
+      "nome": "MARIA EDUARDA GOMES CAVALCANTI",
+      "cpf": "30945817223",
+      "pis": "15921360787",
+      "matricula": "003210",
+      "cargo": "ELETRICISTA",
+      "cbo": "9324-33",
+      "salario": 2870.0,
+      "admissao": "2024-06-25",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93254760000106",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Nunes Castro",
+        "numero": "1575",
+        "bairro": "Coração De Jesus",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55157825"
+      },
+      "nascimento": "2000-03-17"
+    },
+    {
+      "nome": "HENRY RODRIGUES DA COSTA",
+      "cpf": "60741529343",
+      "pis": "12576274759",
+      "matricula": "004127",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "8973-86",
+      "salario": 2580.0,
+      "admissao": "2023-11-21",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93254760000106",
+      "desligado_em": "2026-01-10",
+      "end": {
+        "logradouro": "Rua Vargas Mendonça",
+        "numero": "534",
+        "bairro": "Vitoria",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55153234"
+      },
+      "nascimento": "1969-07-30"
+    },
+    {
+      "nome": "JOÃO LUCAS PIMENTA CAVALCANTI",
+      "cpf": "12563798400",
+      "pis": "10769364753",
+      "matricula": "008930",
+      "cargo": "ELETRICISTA",
+      "cbo": "4510-15",
+      "salario": 3270.0,
+      "admissao": "2021-05-24",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "93254760000106",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida da Rocha Melo",
+        "numero": "397",
+        "bairro": "Manacas",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55152229"
+      },
+      "nascimento": "1994-05-24"
+    },
+    {
+      "nome": "SAMUEL SOUSA PEREIRA",
+      "cpf": "94516270811",
+      "pis": "10705921376",
+      "matricula": "002645",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "4242-55",
+      "salario": 2720.0,
+      "admissao": "2024-07-05",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93254760000106",
+      "desligado_em": "2026-01-21",
+      "end": {
+        "logradouro": "Travessa Guerra Aragão",
+        "numero": "598",
+        "bairro": "Baleia",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54485208"
+      },
+      "nascimento": "1992-06-29"
+    },
+    {
+      "nome": "MARIA VITÓRIA JESUS PINTO",
+      "cpf": "36489205700",
+      "pis": "11466977854",
+      "matricula": "008868",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "8878-56",
+      "salario": 2580.0,
+      "admissao": "2025-08-28",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "93254760000106",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Carvalho Barros",
+        "numero": "1775",
+        "bairro": "Engenho Nogueira",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55156464"
+      },
+      "nascimento": "2000-07-18"
+    },
+    {
+      "nome": "ANA CLARA CORREIA CARVALHO",
+      "cpf": "39160584793",
+      "pis": "11605813189",
+      "matricula": "001661",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "4293-82",
+      "salario": 2420.0,
+      "admissao": "2025-02-02",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93254760000106",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Pacheco Cassiano",
+        "numero": "251",
+        "bairro": "Biquinhas",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55152861"
+      },
+      "nascimento": "2003-05-31"
+    },
+    {
+      "nome": "MIGUEL MARTINS SANTOS",
+      "cpf": "20546918360",
+      "pis": "13156043523",
+      "matricula": "003557",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "7944-98",
+      "salario": 2530.0,
+      "admissao": "2025-07-31",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "93254760000106",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Rocha Costela",
+        "numero": "880",
+        "bairro": "Juliana",
+        "municipio": "Paulista",
+        "uf": "PE",
+        "cep": "53403650"
+      },
+      "nascimento": "1985-04-27"
+    },
+    {
+      "nome": "ASAFE GUERRA BARROS",
+      "cpf": "46895372164",
+      "pis": "11697836954",
+      "matricula": "007759",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "6110-53",
+      "salario": 1820.0,
+      "admissao": "2023-10-30",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "93254760000106",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Nascimento Peixoto",
+        "numero": "391",
+        "bairro": "Mangabeiras",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55151803"
+      },
+      "nascimento": "1976-03-07"
+    },
+    {
+      "nome": "ELOAH DA ROSA APARECIDA",
+      "cpf": "97631054800",
+      "pis": "13948191351",
+      "matricula": "001905",
+      "cargo": "ELETRICISTA",
+      "cbo": "9558-96",
+      "salario": 3140.0,
+      "admissao": "2020-08-13",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93254760000106",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Andrade Freitas",
+        "numero": "561",
+        "bairro": "Vila Nova Cachoeirinha 3ª Seção",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55155188"
+      },
+      "nascimento": "1982-10-13"
+    },
+    {
+      "nome": "GAEL DA CRUZ CAMARGO",
+      "cpf": "81064759300",
+      "pis": "10563113437",
+      "matricula": "003435",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "5484-11",
+      "salario": 2440.0,
+      "admissao": "2021-12-02",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "93254760000106",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Costa Campos",
+        "numero": "981",
+        "bairro": "Conjunto Serra Verde",
+        "municipio": "Pesqueira",
+        "uf": "PE",
+        "cep": "55219367"
+      },
+      "nascimento": "1996-03-24"
+    },
+    {
+      "nome": "ENZO MONTENEGRO PEREIRA",
+      "cpf": "08392761413",
+      "pis": "10323358877",
+      "matricula": "008192",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "7692-38",
+      "salario": 2720.0,
+      "admissao": "2025-05-21",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93254760000106",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Duarte Carvalho",
+        "numero": "1336",
+        "bairro": "Engenho Nogueira",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55153599"
+      },
+      "nascimento": "1988-05-02"
+    },
+    {
+      "nome": "MARIA LUÍSA SALES CUNHA",
+      "cpf": "90516382721",
+      "pis": "16855302387",
+      "matricula": "000383",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "4369-54",
+      "salario": 2200.0,
+      "admissao": "2022-06-09",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "93254760000106",
+      "desligado_em": "2026-01-25",
+      "end": {
+        "logradouro": "Avenida Fernandes Cirino",
+        "numero": "964",
+        "bairro": "Outro",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55151197"
+      },
+      "nascimento": "1970-09-17"
+    }
+  ],
+  "competencias": [
+    "2025-12",
+    "2026-01"
+  ]
+}

@@ -1,0 +1,983 @@
+{
+  "arquivo": "lote_0003.pdf",
+  "perfil": "recebimento_ar",
+  "empresa_cnpj": "49376502000100",
+  "competencia": "2026-06",
+  "degradacao": "media",
+  "total_paginas": 15,
+  "total_documentos": 14,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "post_it:urgente!"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 3,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 5,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 7,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 9,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 10,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 2
+        },
+        {
+          "indice": 12,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 2
+        }
+      ],
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "captura": "scanner_media",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "69158432728",
+      "empregado": "ANA CECÍLIA VIEIRA BARROS",
+      "competencia": null,
+      "empresa_cnpj": "49376502000100",
+      "dados": {
+        "empregado_nome": "ANA CECÍLIA VIEIRA BARROS",
+        "empregado_cpf": "69158432728",
+        "empregador_razao_social": "RODRIGUES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "49376502000100",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-07-27",
+        "prazo_dias": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        2,
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79506831475",
+      "empregado": "VITÓRIA CAVALCANTI SILVEIRA",
+      "competencia": null,
+      "empresa_cnpj": "49376502000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 221 850 101 AR",
+        "conteudo": "Notificação nº 120/2026",
+        "data_postagem": "2026-07-09",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Vitória Cavalcanti Silveira",
+        "destinatario_endereco": "Travessa Montenegro Pires, 1168",
+        "destinatario_bairro": "São Lucas",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56308634",
+        "remetente_nome": "RODRIGUES LIMPEZA SERVIÇOS LTDA",
+        "remetente_endereco": "Avenida Araújo Costa, 610 – Vila Batik, Belo Jardim/PE",
+        "remetente_cep": "55153467",
+        "tentativas": [
+          {
+            "data": "2026-07-13",
+            "hora": "16:10"
+          },
+          {
+            "data": "2026-07-14",
+            "hora": "14:00"
+          },
+          {
+            "data": "2026-07-16",
+            "hora": "11:15"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "DESCONHECIDO",
+        "data_entrega": null,
+        "data_devolucao": "2026-07-17",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Vitória Cavalcanti Silveira"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Petrolina"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        2,
+        3
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "62407583108",
+      "empregado": "LUNA DA PAZ PIMENTA",
+      "competencia": null,
+      "empresa_cnpj": "49376502000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 401 953 344 AR",
+        "conteudo": "Notificação nº 21/2026",
+        "data_postagem": "2026-07-11",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Luna Da Paz Pimenta",
+        "destinatario_endereco": "Rua Macedo Ribeiro, 193",
+        "destinatario_bairro": "Coração Eucarístico",
+        "destinatario_municipio": "Jaboatão dos Guararapes",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "54347443",
+        "remetente_nome": "RODRIGUES LIMPEZA SERVIÇOS LTDA",
+        "remetente_endereco": "Avenida Araújo Costa, 610 – Vila Batik, Belo Jardim/PE",
+        "remetente_cep": "55153467",
+        "tentativas": [
+          {
+            "data": "2026-07-13",
+            "hora": "16:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-13",
+        "data_devolucao": null,
+        "recebedor_nome": "OTTO DA MOTA",
+        "recebedor_documento": "1137510",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        4,
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "83657941010",
+      "empregado": "HENRY GABRIEL BARBOSA DUARTE",
+      "competencia": null,
+      "empresa_cnpj": "49376502000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 788 367 919 AR",
+        "conteudo": "Notificação nº 238/2026",
+        "data_postagem": "2026-07-09",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Henry Gabriel Barbosa Duarte",
+        "destinatario_endereco": "Avenida Santos Ribeiro, 1421",
+        "destinatario_bairro": "Vila Mantiqueira",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55152045",
+        "remetente_nome": "RODRIGUES LIMPEZA SERVIÇOS LTDA",
+        "remetente_endereco": "Avenida Araújo Costa, 610 – Vila Batik, Belo Jardim/PE",
+        "remetente_cep": "55153467",
+        "tentativas": [
+          {
+            "data": "2026-07-13",
+            "hora": "11:10"
+          },
+          {
+            "data": "2026-07-14",
+            "hora": "13:50"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-14",
+        "data_devolucao": null,
+        "recebedor_nome": "HENRY GABRIEL BARBOSA DUARTE",
+        "recebedor_documento": "5601775",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        4,
+        5
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "62407583108",
+      "empregado": "LUNA DA PAZ PIMENTA",
+      "competencia": null,
+      "empresa_cnpj": "49376502000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 708 280 780 AR",
+        "conteudo": "Notificação nº 184/2026",
+        "data_postagem": "2026-07-21",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Luna Da Paz Pimenta",
+        "destinatario_endereco": "Rua Macedo Ribeiro, 193",
+        "destinatario_bairro": "Coração Eucarístico",
+        "destinatario_municipio": "Jaboatão dos Guararapes",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "54347443",
+        "remetente_nome": "RODRIGUES LIMPEZA SERVIÇOS LTDA",
+        "remetente_endereco": "Avenida Araújo Costa, 610 – Vila Batik, Belo Jardim/PE",
+        "remetente_cep": "55153467",
+        "tentativas": [
+          {
+            "data": "2026-07-24",
+            "hora": "09:45"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-24",
+        "data_devolucao": null,
+        "recebedor_nome": "MARCELO DUARTE",
+        "recebedor_documento": "9670635",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Notificação nº 184/2026"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Luna Da Paz Pimenta"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "54347-443"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "24/07/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        6,
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "69158432728",
+      "empregado": "ANA CECÍLIA VIEIRA BARROS",
+      "competencia": null,
+      "empresa_cnpj": "49376502000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 829 320 540 AR",
+        "conteudo": "Notificação nº 202/2026",
+        "data_postagem": "2026-07-28",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Ana Cecília Vieira Barros",
+        "destinatario_endereco": "Rua Sales Cirino, 1752",
+        "destinatario_bairro": "Atila De Paiva",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55159900",
+        "remetente_nome": "RODRIGUES LIMPEZA SERVIÇOS LTDA",
+        "remetente_endereco": "Avenida Araújo Costa, 610 – Vila Batik, Belo Jardim/PE",
+        "remetente_cep": "55153467",
+        "tentativas": [
+          {
+            "data": "2026-07-29",
+            "hora": "14:50"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-29",
+        "data_devolucao": null,
+        "recebedor_nome": "ANA CECÍLIA VIEIRA BARROS",
+        "recebedor_documento": "9971782",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Rua Sales Cirino, 1752"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        6,
+        7
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "45039178204",
+      "empregado": "LUNA MACEDO SAMPAIO",
+      "competencia": null,
+      "empresa_cnpj": "49376502000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 599 879 590 AR",
+        "conteudo": "Notificação nº 157/2026",
+        "data_postagem": "2026-07-19",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Luna Macedo Sampaio",
+        "destinatario_endereco": "Rua Sousa Sampaio, 1818",
+        "destinatario_bairro": "Aguas Claras",
+        "destinatario_municipio": "Paulista",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "53433260",
+        "remetente_nome": "RODRIGUES LIMPEZA SERVIÇOS LTDA",
+        "remetente_endereco": "Avenida Araújo Costa, 610 – Vila Batik, Belo Jardim/PE",
+        "remetente_cep": "55153467",
+        "tentativas": [
+          {
+            "data": "2026-07-20",
+            "hora": "13:10"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-20",
+        "data_devolucao": null,
+        "recebedor_nome": "LARISSA LEÃO",
+        "recebedor_documento": "3811571",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "LARISSA LEÃO"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "3811571"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79506831475",
+      "empregado": "VITÓRIA CAVALCANTI SILVEIRA",
+      "competencia": null,
+      "empresa_cnpj": "49376502000100",
+      "dados": {
+        "empregado_nome": "VITÓRIA CAVALCANTI SILVEIRA",
+        "empregado_cpf": "79506831475",
+        "empregador_razao_social": "RODRIGUES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "49376502000100",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "ABANDONO_EMPREGO",
+        "data_documento": "2026-07-30",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "15783206903",
+      "empregado": "ÁGATHA RIBEIRO VASCONCELOS",
+      "competencia": null,
+      "empresa_cnpj": "49376502000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 288 446 730 AR",
+        "conteudo": "Notificação nº 63/2026",
+        "data_postagem": "2026-07-14",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Ágatha Ribeiro Vasconcelos",
+        "destinatario_endereco": "Rua Gonçalves da Luz, 36",
+        "destinatario_bairro": "Novo Santa Cecilia",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55153051",
+        "remetente_nome": "RODRIGUES LIMPEZA SERVIÇOS LTDA",
+        "remetente_endereco": "Avenida Araújo Costa, 610 – Vila Batik, Belo Jardim/PE",
+        "remetente_cep": "55153467",
+        "tentativas": [
+          {
+            "data": "2026-07-15",
+            "hora": "11:30"
+          },
+          {
+            "data": "2026-07-20",
+            "hora": "12:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-20",
+        "data_devolucao": null,
+        "recebedor_nome": "KAIQUE GONÇALVES",
+        "recebedor_documento": "9412792",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "45039178204",
+      "empregado": "LUNA MACEDO SAMPAIO",
+      "competencia": null,
+      "empresa_cnpj": "49376502000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 542 304 238 AR",
+        "conteudo": "Notificação nº 328/2026",
+        "data_postagem": "2026-07-16",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Luna Macedo Sampaio",
+        "destinatario_endereco": "Rua Sousa Sampaio, 1818",
+        "destinatario_bairro": "Aguas Claras",
+        "destinatario_municipio": "Paulista",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "53433260",
+        "remetente_nome": "RODRIGUES LIMPEZA SERVIÇOS LTDA",
+        "remetente_endereco": "Avenida Araújo Costa, 610 – Vila Batik, Belo Jardim/PE",
+        "remetente_cep": "55153467",
+        "tentativas": [
+          {
+            "data": "2026-07-20",
+            "hora": "10:50"
+          },
+          {
+            "data": "2026-07-23",
+            "hora": "13:30"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-23",
+        "data_devolucao": null,
+        "recebedor_nome": "LUIZ FELIPE MOREIRA",
+        "recebedor_documento": "9438125",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        11,
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "79506831475",
+      "empregado": "VITÓRIA CAVALCANTI SILVEIRA",
+      "competencia": null,
+      "empresa_cnpj": "49376502000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 578 641 988 AR",
+        "conteudo": "Notificação nº 205/2026",
+        "data_postagem": "2026-07-31",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Vitória Cavalcanti Silveira",
+        "destinatario_endereco": "Travessa Montenegro Pires, 1168",
+        "destinatario_bairro": "São Lucas",
+        "destinatario_municipio": "Petrolina",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "56308634",
+        "remetente_nome": "RODRIGUES LIMPEZA SERVIÇOS LTDA",
+        "remetente_endereco": "Avenida Araújo Costa, 610 – Vila Batik, Belo Jardim/PE",
+        "remetente_cep": "55153467",
+        "tentativas": [
+          {
+            "data": "2026-08-03",
+            "hora": "08:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-08-03",
+        "data_devolucao": null,
+        "recebedor_nome": "MATTEO DA ROCHA",
+        "recebedor_documento": "1188783",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        11,
+        12
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "70629318530",
+      "empregado": "ENZO GABRIEL MOURA DA ROCHA",
+      "competencia": null,
+      "empresa_cnpj": "49376502000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 542 756 805 AR",
+        "conteudo": "Notificação nº 354/2026",
+        "data_postagem": "2026-07-25",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Enzo Gabriel Moura Da Rocha",
+        "destinatario_endereco": "Rua Leão Rodrigues, 1123",
+        "destinatario_bairro": "Penha",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55152947",
+        "remetente_nome": "RODRIGUES LIMPEZA SERVIÇOS LTDA",
+        "remetente_endereco": "Avenida Araújo Costa, 610 – Vila Batik, Belo Jardim/PE",
+        "remetente_cep": "55153467",
+        "tentativas": [
+          {
+            "data": "2026-07-27",
+            "hora": "15:30"
+          },
+          {
+            "data": "2026-07-30",
+            "hora": "15:10"
+          },
+          {
+            "data": "2026-08-03",
+            "hora": "13:45"
+          }
+        ],
+        "entregue": false,
+        "motivo_devolucao": "RECUSADO",
+        "data_entrega": null,
+        "data_devolucao": "2026-08-10",
+        "recebedor_nome": null,
+        "recebedor_documento": null,
+        "assinatura_recebedor_presente": false,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_devolvido",
+          "descricao": "AR devolvido sem entrega ao destinatário",
+          "campo": "motivo_devolucao"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "NOTIFICAÇÃO Nº 354/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        13,
+        14
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "17368029413",
+      "empregado": "MARIA LUIZA DA MOTA SANTOS",
+      "competencia": null,
+      "empresa_cnpj": "49376502000100",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 702 613 522 AR",
+        "conteudo": "Notificação nº 339/2026",
+        "data_postagem": "2026-07-31",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA BELO JARDIM",
+        "destinatario_nome": "Maria Luiza Da Mota Santos",
+        "destinatario_endereco": "Rua Cunha Correia, 13",
+        "destinatario_bairro": "Vale Do Jatoba",
+        "destinatario_municipio": "Belo Jardim",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55157204",
+        "remetente_nome": "RODRIGUES LIMPEZA SERVIÇOS LTDA",
+        "remetente_endereco": "Avenida Araújo Costa, 610 – Vila Batik, Belo Jardim/PE",
+        "remetente_cep": "55153467",
+        "tentativas": [
+          {
+            "data": "2026-08-03",
+            "hora": "12:20"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-08-03",
+        "data_devolucao": null,
+        "recebedor_nome": "HELOISA SANTOS",
+        "recebedor_documento": "7284216",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "55157-204"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "45039178204",
+      "empregado": "LUNA MACEDO SAMPAIO",
+      "competencia": null,
+      "empresa_cnpj": "49376502000100",
+      "dados": {
+        "empregado_nome": "LUNA MACEDO SAMPAIO",
+        "empregado_cpf": "45039178204",
+        "empregador_razao_social": "RODRIGUES LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "49376502000100",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-07-18",
+        "prazo_dias": 3
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    }
+  ],
+  "tentativas": 1,
+  "parametros": {
+    "paginas": [
+      14,
+      14
+    ],
+    "degradacao": "misto",
+    "taxa_nc": 0.31,
+    "perfil": "recebimento_ar",
+    "embaralhar": 0.33,
+    "paginas_em_branco": 0.02,
+    "fora_de_ordem": 0.07,
+    "intercalar": 0.12,
+    "taxa_defeito": 0.06,
+    "taxa_branco": 0.04,
+    "extras": 0.2,
+    "p_celular": 0.28,
+    "p_cabeca_para_baixo": 0.04,
+    "seed": 42003
+  }
+}

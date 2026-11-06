@@ -1,0 +1,297 @@
+{
+  "seed": 42020,
+  "data_referencia": "2026-07-18",
+  "empresas": [
+    {
+      "razao_social": "CAMPOS LIMPEZA SERVIÇOS LTDA",
+      "cnpj": "82051746000199",
+      "endereco": "Rua Andrade Farias, 293 – Buritis",
+      "cidade": "Garanhuns/PE",
+      "segmento": "Limpeza e Conservação",
+      "end": {
+        "logradouro": "Rua Andrade Farias",
+        "numero": "293",
+        "bairro": "Buritis",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55290701"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "MATHEUS ARAÚJO COSTA",
+      "cpf": "36728045171",
+      "pis": "13033675513",
+      "matricula": "002062",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "8950-72",
+      "salario": 1700.0,
+      "admissao": "2025-02-20",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "82051746000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Cunha Barros",
+        "numero": "379",
+        "bairro": "Jaraguá",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54313350"
+      },
+      "nascimento": "1997-05-25"
+    },
+    {
+      "nome": "THALES CAVALCANTI PEIXOTO",
+      "cpf": "25371946080",
+      "pis": "15815147218",
+      "matricula": "002995",
+      "cargo": "SERVENTE",
+      "cbo": "5709-85",
+      "salario": 1790.0,
+      "admissao": "2024-01-12",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "82051746000199",
+      "desligado_em": "2026-06-29",
+      "end": {
+        "logradouro": "Rua Fonseca Barbosa",
+        "numero": "1736",
+        "bairro": "Jardim Vitoria",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55291239"
+      },
+      "nascimento": "1980-12-26"
+    },
+    {
+      "nome": "MARIA LAURA CAVALCANTI CAMPOS",
+      "cpf": "23950168702",
+      "pis": "13288124105",
+      "matricula": "002122",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "4674-77",
+      "salario": 1780.0,
+      "admissao": "2022-12-11",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "82051746000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Souza Vieira",
+        "numero": "1728",
+        "bairro": "Jardim São José",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55292501"
+      },
+      "nascimento": "1986-04-09"
+    },
+    {
+      "nome": "VITOR HUGO COSTA CASSIANO",
+      "cpf": "89172045388",
+      "pis": "10187292687",
+      "matricula": "000898",
+      "cargo": "SERVENTE",
+      "cbo": "5865-57",
+      "salario": 1790.0,
+      "admissao": "2021-04-10",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "82051746000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Barros Moura",
+        "numero": "1488",
+        "bairro": "São Bernardo",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55296723"
+      },
+      "nascimento": "1979-05-21"
+    },
+    {
+      "nome": "EMANUELLA CALDEIRA CORREIA",
+      "cpf": "19236758002",
+      "pis": "13327672511",
+      "matricula": "003634",
+      "cargo": "SERVENTE",
+      "cbo": "9699-23",
+      "salario": 1730.0,
+      "admissao": "2025-06-26",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "82051746000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Camargo Sousa",
+        "numero": "1220",
+        "bairro": "São Francisco Das Chagas",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55299692"
+      },
+      "nascimento": "1980-09-30"
+    },
+    {
+      "nome": "MARIA VITÓRIA CARVALHO PIMENTA",
+      "cpf": "26019385442",
+      "pis": "12555473922",
+      "matricula": "009639",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "6910-67",
+      "salario": 1780.0,
+      "admissao": "2026-03-29",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "82051746000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Santos Nascimento",
+        "numero": "811",
+        "bairro": "Vila Santa Monica 1ª Seção",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55294106"
+      },
+      "nascimento": "1982-11-17"
+    },
+    {
+      "nome": "ISIS BARBOSA REZENDE",
+      "cpf": "43817590601",
+      "pis": "13985979145",
+      "matricula": "000693",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "7187-82",
+      "salario": 1800.0,
+      "admissao": "2023-10-02",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "82051746000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Ribeiro Caldeira",
+        "numero": "1002",
+        "bairro": "Vila Batik",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55292307"
+      },
+      "nascimento": "1997-08-29"
+    },
+    {
+      "nome": "PEDRO SAMPAIO CALDEIRA",
+      "cpf": "79425103607",
+      "pis": "15096319435",
+      "matricula": "000470",
+      "cargo": "SERVENTE",
+      "cbo": "9556-22",
+      "salario": 1610.0,
+      "admissao": "2022-04-03",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "82051746000199",
+      "desligado_em": "2026-06-23",
+      "end": {
+        "logradouro": "Travessa Freitas Freitas",
+        "numero": "703",
+        "bairro": "Marieta 2ª Seção",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55293252"
+      },
+      "nascimento": "2001-04-28"
+    },
+    {
+      "nome": "AGATHA MACHADO DA CRUZ",
+      "cpf": "92534708104",
+      "pis": "13619445850",
+      "matricula": "006245",
+      "cargo": "SERVENTE",
+      "cbo": "6421-84",
+      "salario": 1740.0,
+      "admissao": "2023-08-18",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "82051746000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Gonçalves Rezende",
+        "numero": "78",
+        "bairro": "Jardim Guanabara",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55294035"
+      },
+      "nascimento": "1968-11-05"
+    },
+    {
+      "nome": "GUSTAVO HENRIQUE NUNES CORREIA",
+      "cpf": "31946275034",
+      "pis": "18246012695",
+      "matricula": "007283",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "9428-63",
+      "salario": 2340.0,
+      "admissao": "2021-09-28",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "82051746000199",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Rios da Cunha",
+        "numero": "46",
+        "bairro": "Fernão Dias",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55297321"
+      },
+      "nascimento": "1973-05-30"
+    }
+  ],
+  "competencias": [
+    "2026-05",
+    "2026-06"
+  ]
+}

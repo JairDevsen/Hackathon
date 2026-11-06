@@ -16,8 +16,9 @@ type NewEmployee struct {
 	Nome, CPF, Matricula string
 	CargoID, UnitID      *string
 	Admissao             *string
-	Origem               string // PRE_CADASTRO | REVISAO | MANUAL | IMPORTACAO (padrão MANUAL)
-	Pre                  bool   // cadastro incompleto: o RH precisa completar
+	Origem               string  // PRE_CADASTRO | REVISAO | MANUAL | IMPORTACAO (padrão MANUAL)
+	Pre                  bool    // cadastro incompleto: o RH precisa completar
+	SupplierID           *string // empregador (fornecedor/terceirizada); nulo = a própria empresa
 }
 
 type ReviewInput struct {
@@ -137,6 +138,9 @@ func (i *Ingestor) Apply(ctx context.Context, tx pgx.Tx, tenantID, userID, docID
 		if _, err := tx.Exec(ctx, `UPDATE documents SET campos=$2 WHERE id=$1`, docID, b); err != nil {
 			return nil, err
 		}
+		if err := i.reassignSupplier(ctx, tx, tenantID, docID, cur); err != nil { // o revisor pode ter corrigido o CNPJ da empresa
+			return nil, err
+		}
 		if comp := str(in.Campos, "competencia"); comp != "" {
 			if parsed, err := time.Parse("2006-01", comp); err != nil || parsed.Format("2006-01") != comp {
 				return nil, problem.BadRequest("competência deve estar em AAAA-MM")
@@ -207,7 +211,7 @@ func (i *Ingestor) Apply(ctx context.Context, tx pgx.Tx, tenantID, userID, docID
 					if blocked, _ := i.limitReached(ctx, tx, tenantID); !blocked {
 						var unit *string
 						tx.QueryRow(ctx, `SELECT unit_id::text FROM documents WHERE id=$1`, docID).Scan(&unit)
-						newID, err := i.CreateEmployee(ctx, tx, tenantID, NewEmployee{Nome: nome, CPF: raw, UnitID: unit, Origem: "REVISAO", Pre: true})
+						newID, err := i.CreateEmployee(ctx, tx, tenantID, NewEmployee{Nome: nome, CPF: raw, UnitID: unit, Origem: "REVISAO", Pre: true, SupplierID: documentSupplier(ctx, tx, docID)})
 						if err != nil {
 							return nil, err
 						}
@@ -223,7 +227,7 @@ func (i *Ingestor) Apply(ctx context.Context, tx pgx.Tx, tenantID, userID, docID
 		if !cpf.Valid(d) {
 			return nil, problem.BadRequest("CPF do novo funcionário inválido")
 		}
-		id, err := i.CreateEmployee(ctx, tx, tenantID, NewEmployee{Nome: in.NovoFunc.Nome, CPF: d, Matricula: in.NovoFunc.Matricula, CargoID: in.NovoFunc.CargoID, UnitID: in.NovoFunc.UnitID, Admissao: in.NovoFunc.Admissao, Origem: "REVISAO", Pre: true})
+		id, err := i.CreateEmployee(ctx, tx, tenantID, NewEmployee{Nome: in.NovoFunc.Nome, CPF: d, Matricula: in.NovoFunc.Matricula, CargoID: in.NovoFunc.CargoID, UnitID: in.NovoFunc.UnitID, Admissao: in.NovoFunc.Admissao, Origem: "REVISAO", Pre: true, SupplierID: documentSupplier(ctx, tx, docID)})
 		if err != nil {
 			return nil, err
 		}
@@ -510,13 +514,13 @@ func (i *Ingestor) CreateEmployee(ctx context.Context, tx pgx.Tx, tenantID strin
 	if origem == "" {
 		origem = "MANUAL"
 	}
-	query := `INSERT INTO employees (tenant_id, unit_id, cpf_cifrado, cpf_hash, cpf_mascarado, nome, matricula, cargo_id, admissao, pre_cadastro, origem)
-	  VALUES ($1,$2,$3,$4,$5,$6,nullif($7,''),$8,$9::date,$10,$11)`
+	query := `INSERT INTO employees (tenant_id, unit_id, cpf_cifrado, cpf_hash, cpf_mascarado, nome, matricula, cargo_id, admissao, pre_cadastro, origem, supplier_id)
+	  VALUES ($1,$2,$3,$4,$5,$6,nullif($7,''),$8,$9::date,$10,$11,$12)`
 	if e.Pre {
 		query += ` ON CONFLICT (tenant_id, cpf_hash) DO NOTHING`
 	}
 	err = tx.QueryRow(ctx, query+` RETURNING id::text`,
-		tenantID, e.UnitID, enc, i.KR.Blind(tenantID, d), cpf.Mask(d), strings.TrimSpace(e.Nome), e.Matricula, e.CargoID, e.Admissao, e.Pre, origem).Scan(&id)
+		tenantID, e.UnitID, enc, i.KR.Blind(tenantID, d), cpf.Mask(d), strings.TrimSpace(e.Nome), e.Matricula, e.CargoID, e.Admissao, e.Pre, origem, e.SupplierID).Scan(&id)
 	if err == pgx.ErrNoRows && e.Pre {
 		err = tx.QueryRow(ctx, `SELECT id::text FROM employees WHERE tenant_id=$1 AND cpf_hash=$2`, tenantID, i.KR.Blind(tenantID, d)).Scan(&id)
 	}

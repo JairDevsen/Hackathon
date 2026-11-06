@@ -185,7 +185,7 @@ var segTpl = map[string][]tpl{
 	"PORTARIA":       {{"RECIBO_BENEFICIOS", "MENSAL", 0}},
 	"ADMINISTRATIVO": {},
 }
-var companyTpl = []tpl{{"CRF_FGTS", "PERIODICO", 30}, {"CNDT", "PERIODICO", 180}, {"CND_FEDERAL", "PERIODICO", 180}, {"GUIA_FGTS", "MENSAL", 0}, {"DARF", "MENSAL", 0}}
+var companyTpl = []tpl{{"CRF_FGTS", "PERIODICO", 30}, {"CNDT", "PERIODICO", 180}, {"CND_FEDERAL", "PERIODICO", 180}, {"GUIA_FGTS", "MENSAL", 0}, {"DARF", "MENSAL", 0}, {"CONTRATO_PRESTACAO_SERVICO", "ADMISSAO", 0}, {"APOLICE_SEGURO", "ANUAL", 365}}
 
 // POST /requirements/apply-template {segmento, position_id?, nome_cargo?, empresa?}
 func (s *Server) applyTemplate(c *gin.Context) {
