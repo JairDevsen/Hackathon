@@ -19,31 +19,35 @@
 
 ## ⏱️ PARTE 1: ROTEIRO CRONOMETRADO DE 3 MINUTOS (ZERO JARGÃO TÉCNICO)
 
-### 🔴 `0:00 - 0:20` (20s) — PROBLEMA: A Dor e Quanto Custa (Storytelling — Slides 8 e 16)
-🎙️ **Apresentador 1 (Lucas — Produto & Negócios):**
-> **"Às 8 horas da manhã, chega no RH um único PDF escaneado com 500 páginas misturadas de trabalhadores recém-contratados: tem exame médico, ficha de EPI sem assinatura, atestado escrito à mão e comprovante dos Correios. Às 17 horas, um analista ainda está cortando e renomeando arquivo por arquivo na mão — travando a entrada do trabalhador na obra por 3 dias e expondo a empresa a multas trabalhistas milionárias."**
+### 🔴 BLOCO 1: A Dor Real do Mercado (`0:00 até 0:35` — 35 segundos)
+🎙️ **Apresentador 1 (Lucas — Postura firme, olhando para os jurados. Sem falar da Bernhoeft ainda — apresente como um produto SaaS de mercado real):**
+> **"Boa noite! Todos os dias, milhares de construtoras, indústrias, hospitais e agroindústrias no Brasil precisam contratar e mobilizar trabalhadores rápido. Mas antes de qualquer funcionário entrar na operação, o RH precisa auditar dezenas de documentos obrigatórios.**
+>
+> **Qual é o problema real? Os documentos nunca chegam organizados. Eles chegam num único PDF 'Frankenstein' com 50 páginas misturadas no e-mail: tem exame ASO junto com ficha de EPI, contrato sem assinatura, atestado escrito à mão por médico de plantão e até comprovante AR dos Correios.**
+>
+> **O resultado disso? Equipes de RH perdendo 80% do dia recortando e renomeando PDF na mão, funcionários parados esperando dias pela liberação da catraca, e empresas levando multas milionárias por deixarem passar um documento vencido ou vazarem dados na LGPD."**
 
 ---
 
-### ⚡ `0:20 - 0:35` (15s) — SOLUÇÃO: O Que É e o Que a Diferencia (Critério 2: Inovação — Slide 6)
+### ⚡ BLOCO 2: A Solução — Citadel AI (`0:35 até 0:50` — 15 segundos)
 🎙️ **Apresentador 1 (Lucas):**
-> **"Para resolver isso, criamos o Citadel AI: uma plataforma online onde a empresa joga qualquer lote de documentos misturados e, em segundos, recebe tudo separado em pastas por funcionário, auditado contra riscos trabalhistas e protegido pela Lei Geral de Proteção de Dados. Vamos ver na tela:"**
+> **"Para acabar com esse gargalo, criamos o Citadel AI: uma plataforma SaaS online que recebe qualquer lote de documentos caóticos e, em segundos, devolve tudo separado em pastas por funcionário, auditado contra riscos trabalhistas e protegido pela LGPD. Vejam funcionando ao vivo:"**
 
 ---
 
-### 🖥️ `0:35 - 1:50` (1m15s = 75s) — DEMO AO VIVO (40% do Tempo — Critério 1: Pertinência e Capacidades Mínimas)
+### 🖥️ BLOCO 3: Apresentando o SaaS na Prática (`0:50 até 1:50` — 60 segundos de Demo Ao Vivo)
 🎙️ **Apresentador 2 (Demo na Tela — ex: Jair/Davi falando + Operador clicando na tela):**
 
-* **`[0:35 - 0:55 | Clique 1: "Carregar Exemplo" / Separação e Pastas]`**
-  > **"Direto pelo navegador, sem instalar nada, o analista envia o PDF misturado. Em segundos, o sistema identifica onde começa e termina cada documento — exame ASO, Contrato, EPI, Manuscrito e comprovante dos Correios — e já cria as pastas por Empresa e Funcionário, prontas para baixar com cada arquivo recortado e nomeado pela data de validade."**
+* **`[0:50 - 1:05 | Clique 1: "Carregar Exemplo" / Separação e Pastas]`**
+  > **"Direto pelo navegador, sem instalar nada, o RH ou a terceirizada envia o PDF misturado. Em segundos, o sistema identifica onde começa e termina cada documento — ASO, Contrato, EPI, Manuscrito e AR dos Correios — e já cria as pastas por Empresa e Funcionário, prontas para baixar com cada PDF recortado e nomeado pela data de validade."**
 
-* **`[0:55 - 1:15 | Clique 2: Abre Documento -> Mostra Dados Extraídos e Radar Trabalhista]`**
-  > **"Ao clicar no documento, o sistema já extrai todos os dados automaticamente: nomes, CPFs, datas e assinaturas. E aqui entra o nosso grande diferencial: o Radar Trabalhista cruza as informações, detecta que a ficha de EPI está sem assinatura, bloqueia a catraca preventivamente e já calcula em Reais a multa trabalhista que a empresa acabou de evitar."**
+* **`[1:05 - 1:22 | Clique 2: Abre Documento -> Mostra Dados Extraídos e Radar Trabalhista]`**
+  > **"Ao abrir o documento, o sistema já extrai todos os dados automaticamente: nomes, CPFs, datas e assinaturas. E aqui entra o nosso grande diferencial: o Radar Trabalhista cruza as informações, detecta que a ficha de EPI está sem assinatura, bloqueia a catraca preventivamente e já calcula em Reais a multa trabalhista que a empresa acabou de evitar."**
 
-* **`[1:15 - 1:32 | Clique 3: Abre Manuscrito Médico + Fila de Revisão Humana]`**
-  > **"Mesmo neste prontuário escrito à mão e no comprovante dos Correios, o sistema lê a caligrafia. Como a letra médica estava difícil e teve 74% de confiança — abaixo da nossa margem segura de 85% — o sistema não arrisca sozinho: ele separa o documento direto na Fila de Revisão Humana."**
+* **`[1:22 - 1:37 | Clique 3: Abre Manuscrito Médico + Fila de Revisão Humana]`**
+  > **"Mesmo neste prontuário escrito à mão e no AR dos Correios, o sistema lê a caligrafia. Como a letra médica estava difícil e teve 74% de confiança — abaixo da nossa margem segura de 85% — o sistema não arrisca sozinho: ele separa o documento direto na Fila de Revisão Humana."**
 
-* **`[1:32 - 1:50 | Clique 4: Ativa "Anonimizar (LGPD)" + Mostra Painel de Resultados]`**
+* **`[1:37 - 1:50 | Clique 4: Ativa "Anonimizar (LGPD)" + Mostra Painel de Resultados]`**
   > **"E para garantir a privacidade na LGPD: com um clique aplicamos tarja preta automática sobre os dados pessoais no documento e geramos o painel completo com relatório de auditoria."**
 
 ---
