@@ -260,4 +260,51 @@ ovr = get(rh, "/metrics/overview"); assert ovr["riscos"]["alto"] >= 3 and ovr["r
 assert c.patch(f"{API}/employees/{paulo['id']}", headers=H(rh), json={"admissao": "2026-03-01", "pre_cadastro": False}).status_code == 204
 assert get(rh, f"/employees/{paulo['id']}")["pre_cadastro"] is False and paulo["id"] not in {e["id"] for e in get(rh, "/employees", params={"pre": "1"})["items"]}; ok("RH completa o pré-cadastro e ele sai da lista (o criado na revisão continua pendente)")
 
+print("12. Segurança: escopo por unidade, injeção de fórmula, convite e tentativas do 2FA")
+import concurrent.futures, re as _re, json as _j
+def invite_token(email):
+    txt = open(os.environ["MAIL_LOG"]).read().replace("\\n", " ")
+    m = _re.findall(r'"to":"%s".*?convite\?token=([A-Za-z0-9_\-]+)' % _re.escape(email), txt)
+    assert m, "convite não encontrado no log"; return m[-1]
+def step_up(tok):
+    """Obtém o token de step-up (código por e-mail) para ações sensíveis do admin."""
+    me_email = "admin@agrotech.demo"; before = codes_count(me_email)
+    r = c.post(f"{API}/auth/step-up", headers=H(tok), json={}); assert r.status_code == 202, r.text
+    code = code_from_mail(me_email, before)
+    r = c.post(f"{API}/auth/step-up", headers=H(tok), json={"ticket": r.json()["ticket"], "code": code}); assert r.status_code == 200, r.text
+    return r.json()["token"]
+units = get(adm, "/units"); carlos_full = get(rh, f"/employees/{carlos['id']}")
+outra = [u for u in units if u["id"] != carlos_full["unit_id"]]; assert outra, "a demo precisa de 2+ unidades"
+r = c.post(f"{API}/users", headers=H(adm), json={"nome": "Rui Restrito", "email": "rh3@agrotech.demo", "role": "RH", "unit_scope": [outra[0]["id"]]}); assert r.status_code == 201, r.text
+r = c.post(f"{API}/auth/invite/accept", json={"token": invite_token("rh3@agrotech.demo"), "senha": "Restrito!Senha#2026"}); assert r.status_code == 204, r.text
+rh3 = login("rh3@agrotech.demo", "Restrito!Senha#2026"); ok("RH restrito a uma unidade convidado e autenticado")
+doc_carlos = get(rh, f"/employees/{carlos['id']}/documents")[0]["id"]
+for path in (f"/employees/{carlos['id']}", f"/employees/{carlos['id']}/documents", f"/employees/{carlos['id']}/compliance", f"/employees/{carlos['id']}/timeline",
+             f"/employees/{carlos['id']}/requirements", f"/documents/{doc_carlos}", f"/documents/{doc_carlos}/pages/1/url", f"/documents/{doc_carlos}/download", f"/batches/{batch}", f"/batches/{batch}/export-zip"):
+    st = c.get(f"{API}{path}", headers=H(rh3)).status_code; assert st == 404, (path, st)
+    assert c.get(f"{API}{path}", headers=H(rh)).status_code == 200, path
+ok("RH restrito não alcança, por ID, funcionário, documento nem lote de outra unidade (404); o RH sem restrição continua acessando")
+assert c.post(f"{API}/review/{doc_carlos}", headers=H(rh3), json={"acao": "REJEITAR", "motivo": "teste de escopo"}).status_code == 404; ok("revisão de documento de outra unidade → 404")
+assert c.post(f"{API}/employees/{carlos['id']}/documents/manual", headers=H(rh3), json={"tipo": "RECIBO_FERIAS"}).status_code == 404; ok("lançamento manual em funcionário de outra unidade → 404")
+assert carlos["id"] not in {e["id"] for e in get(rh3, "/employees", params={"limit": 100})["items"]}; ok("a listagem também não traz funcionários de outra unidade")
+assert c.get(f"{API}/reports/nao-conformidades", headers=H(rh3)).status_code == 200; ok("relatório por unidade")
+# injeção de fórmula em CSV: nome vindo de documento/cadastro nunca vira fórmula
+assert c.patch(f"{API}/employees/{emp_id}", headers=H(rh), json={"nome": "=HYPERLINK(\"http://evil\",\"x\")"}).status_code == 204
+csvt = c.get(f"{API}/reports/pendencias", headers=H(adm)).content.decode("utf-8")
+assert "'=HYPERLINK" in csvt and ";=HYPERLINK" not in csvt and not any(l.startswith("=") for l in csvt.splitlines()); ok("CSV: célula iniciada por '=' sai prefixada com apóstrofo (sem execução de fórmula)")
+# convite não reativa quem o admin desativou depois
+r = c.post(f"{API}/users", headers=H(adm), json={"nome": "Dora Desativada", "email": "rh4@agrotech.demo", "role": "RH"}); assert r.status_code == 201, r.text
+tok4 = invite_token("rh4@agrotech.demo")
+uid4 = [u["id"] for u in get(adm, "/users") if u["email"] == "rh4@agrotech.demo"][0]
+r = c.patch(f"{API}/users/{uid4}", headers=H(adm, {"X-Step-Up-Token": step_up(adm)}), json={"status": "INATIVO"}); assert r.status_code == 204, r.text
+r = c.post(f"{API}/auth/invite/accept", json={"token": tok4, "senha": "Desativada!Senha#2026"}); assert r.status_code == 400, r.text; ok("convite de usuário desativado é recusado (não reativa a conta)")
+# 2FA: tentativas paralelas contra o mesmo ticket não ultrapassam 5 (contador atômico)
+before_n = len(get(adm, "/audit", params={"acao": "MFA_FALHA", "limit": 200})["items"])
+r = c.post(f"{API}/auth/login", json={"email": "rh2@agrotech.demo", "senha": "Demo!Citadel#2026"}); assert r.status_code == 200 and r.json().get("mfa_ticket"), r.text
+tk = r.json()["mfa_ticket"]
+def tentar(i): return c.post(f"{API}/auth/mfa/verify", json={"mfa_ticket": tk, "code": "%06d" % (111111 + i)}).status_code
+with concurrent.futures.ThreadPoolExecutor(12) as ex: list(ex.map(tentar, range(12)))
+falhas = len(get(adm, "/audit", params={"acao": "MFA_FALHA", "limit": 200})["items"]) - before_n
+assert falhas <= 5, f"{falhas} códigos foram avaliados em paralelo (máx. permitido: 5)"; ok(f"12 tentativas simultâneas: no máximo {falhas} avaliadas (limite 5, contador atômico)")
+
 print("\nOK — todos os checks passaram")

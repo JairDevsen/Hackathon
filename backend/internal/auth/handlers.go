@@ -367,12 +367,13 @@ func (s *Service) inviteAccept(c *gin.Context) {
 	err := s.DB.System(ctx, func(tx pgx.Tx) error {
 		var uid, tid string
 		var role string
+		// só convite pendente de quem ainda está CONVIDADO: um usuário desativado depois do convite não se reativa pelo link
 		if e := tx.QueryRow(ctx, `SELECT i.user_id::text, coalesce(u.tenant_id::text,''), u.role FROM user_invites i JOIN users u ON u.id=i.user_id
-		  WHERE i.token_hash=$1 AND i.usado_em IS NULL AND i.expira_em>now()`, sha(in.Token)).Scan(&uid, &tid, &role); e != nil {
+		  WHERE i.token_hash=$1 AND i.usado_em IS NULL AND i.expira_em>now() AND u.status='CONVIDADO'`, sha(in.Token)).Scan(&uid, &tid, &role); e != nil {
 			return problem.BadRequest("convite inválido ou expirado")
 		}
 		tx.Exec(ctx, `UPDATE user_invites SET usado_em=now() WHERE token_hash=$1`, sha(in.Token))
-		_, e := tx.Exec(ctx, `UPDATE users SET senha_hash=$2, status='ATIVO' WHERE id=$1`, uid, HashPassword(in.Senha))
+		_, e := tx.Exec(ctx, `UPDATE users SET senha_hash=$2, status='ATIVO' WHERE id=$1 AND status='CONVIDADO'`, uid, HashPassword(in.Senha))
 		return e
 	})
 	if err != nil {

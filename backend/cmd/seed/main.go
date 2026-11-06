@@ -44,6 +44,10 @@ func main() {
 	}
 	slog.Info("usuário Master garantido", "email", cfg.MasterEmail)
 	if cfg.SeedDemo {
+		if cfg.Prod() { // as contas de demonstração têm senha pública (ACESSO.md): nunca em produção
+			slog.Error("SEED_DEMO=true é proibido com APP_ENV=production: contas de demonstração não são criadas")
+			os.Exit(1)
+		}
 		if err := demo(ctx, a); err != nil {
 			slog.Error("demo", "erro", err)
 			os.Exit(1)

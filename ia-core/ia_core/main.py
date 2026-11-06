@@ -1,5 +1,6 @@
 """IA Core — serviço FastAPI: fatia lotes, separa/classifica/extrai por página (multimodal) e devolve por callback assinado."""
 import hashlib
+import hmac
 import io
 import logging
 import os
@@ -27,7 +28,9 @@ DELAY_MS = int(os.environ.get("IA_PAGE_DELAY_MS", "0"))
 
 
 def auth(x_iacore_key: Optional[str] = Header(None)):
-    if x_iacore_key != os.environ.get("IA_CORE_API_KEY", "dev-ia-core-key"):
+    esperada = os.environ.get("IA_CORE_API_KEY", "dev-ia-core-key")
+    # comparação em tempo constante (evita descobrir a chave por diferença de tempo de resposta)
+    if not x_iacore_key or not hmac.compare_digest(x_iacore_key.encode(), esperada.encode()):
         raise HTTPException(401, "chave do IA Core inválida")
 
 

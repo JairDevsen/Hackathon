@@ -127,5 +127,34 @@ Esse prompt foi escrito para o protótipo antigo (`backend/main.py`, `app.js`/Bo
 | Ignorar (com justificativa) e reabrir indicador, só admin, auditado; recálculo preserva a decisão | ✅ | `POST /risks/:id/ignore` e `/reabrir`; E2E seção 11 |
 | Cobertura das regras | 🟡 | A detecção depende dos campos extraídos: `horas_extras` e `pagamento_horas_extras` têm regex testada em amostras sintéticas; documentos reais podem usar outros rótulos |
 
+## Revisão de segurança (código, funcionalidades, landing e perfis)
+Escopo: backend Go, IA Core, frontend (landing e as telas dos perfis Master, Administrador, RH e RH restrito por unidade), infraestrutura (Docker/Traefik/nginx/CI) e dependências. Método: leitura do código com buscas dirigidas (SQL dinâmico, cobertura do filtro de dados de saúde, uso de escopo de unidade, sinks de XSS), `govulncheck`, `npm audit` e `pip-audit`.
+
+| Achado | Gravidade | Estado | Correção / evidência |
+|---|---|---|---|
+| Contador de tentativas do código 2FA era lido e gravado sem trava: requisições paralelas contra o mesmo ticket avaliavam mais de 5 códigos | Média | ✅ corrigido | `auth/service.go`: `INCR` atômico no Redis e uso único por `DEL`; E2E seção 12 (12 tentativas simultâneas → no máximo 5 avaliadas) |
+| `POST /exports/dossie` ignorava o modo suporte: o Master com acesso aprovado recebia PDFs **não anonimizados** | Média | ✅ corrigido | `http/documents.go`: no suporte força `anonimizado`, como o download e o ZIP do lote |
+| RH restrito a unidades alcançava, **por ID**, funcionário, documento (páginas, download, revisão), lote e exportações de outra unidade; os IDs vazavam pelas notificações, que valem para a empresa toda | Média | ✅ corrigido | `http/scope.go` (middleware) aplicado em todas as rotas com ID; responde 404; E2E seção 12 |
+| Relatórios CSV: nomes e textos vindos de documentos ou cadastro podiam virar fórmula no Excel (`=`, `+`, `-`, `@`) | Média | ✅ corrigido | `csvSafe` prefixa apóstrofo (o XLSX grava string e não fórmula); E2E seção 12 |
+| Relatório de não conformidades ignorava escopo de unidade e a permissão de saúde; o de conformidade ignorava o escopo | Média | ✅ corrigido | `http/reports.go` |
+| Convite pendente reativava um usuário que o admin desativou depois | Baixa | ✅ corrigido | `auth/handlers.go` (só `CONVIDADO`) e `patchUser` invalida convites; E2E seção 12 |
+| Cookie de dispositivo confiável usava `sha256(segredo‖msg)` e comparação não constante; chave do IA Core comparada com `!=` | Baixa | ✅ endurecido | HMAC-SHA256 + `hmac.Equal`; `hmac.compare_digest` no IA Core (os cookies antigos deixam de valer: o 2FA é pedido de novo) |
+| `SEED_DEMO=true` em produção criaria contas de demonstração com senha pública | Baixa | ✅ endurecido | `cmd/seed` recusa em `APP_ENV=production` |
+| `quic-go` v0.59.0 (GO-2026-5676, alcançável pelo servidor HTTP) | Baixa (negação de serviço) | ✅ corrigido | atualizado para v0.59.1; `govulncheck`: 0 vulnerabilidades |
+| Dependências Python do IA Core sem piso de versão (pip-audit apontou `python-multipart`, `starlette`, `urllib3`, `requests`, `pymupdf`, `pillow-heif`, `python-dotenv`) | Baixa a média | ✅ pisos adicionados | `ia-core/requirements.txt` |
+
+**Verificado sem achado:** SQL parametrizado em todos os pontos (só fragmentos constantes são concatenados); JWT EdDSA com algoritmo fixado, `iss`/`exp` obrigatórios, refresh rotativo com detecção de reuso; CORS por lista; cookies `HttpOnly`/`SameSite=Strict` e CSRF no refresh; token de acesso só em memória no navegador; `dangerouslySetInnerHTML` único (busca) escapa antes de aplicar `<mark>`; cifra em segmentos com contador e marca de fim (sem truncamento); URLs assinadas curtas por HMAC com comparação em tempo constante; validação de nome, tamanho e assinatura do arquivo no upload; `callback` do IA Core com HMAC e janela de 10 min, fora do Traefik público; contêineres não-root, `read_only` e `cap_drop`; `npm audit`: 0.
+
+**Riscos residuais (não corrigidos):**
+- O IA Core baixa as URLs que recebe (`arquivo_url`, `image_url`, `callback_url`) e só a chave de API o protege; uma lista de hosts permitidos reduziria o impacto de vazamento da chave.
+- A CSP do nginx mantém `script-src 'unsafe-inline'` por causa do script inline de tema no `index.html`; mover para arquivo externo permitiria removê-la.
+- Com o Redis indisponível, a checagem de sessão revogada e os limites de tentativa falham abertos (o login ainda exige Argon2 e 2FA).
+- A cobrança por e-mail (`POST /compliance/cobrar`) lista pendências de todas as unidades para todos os usuários, sem filtrar pelo escopo de cada destinatário.
+- Um RH restrito pode vincular um documento (ação VINCULAR da revisão) a um funcionário de outra unidade.
+- No acesso de suporte o Master ainda vê nome, e-mail e telefone de funcionários; só os documentos são anonimizados.
+- Com `GEMINI_API_KEY`, imagens e textos dos documentos saem para a API do Gemini; valide o tratamento de dados reais antes de ativar.
+- `ia-core/requirements.txt` não fixa versões exatas: a imagem Docker resolve as mais novas (por exemplo `fastapi` 0.162 e `starlette` 1.10), enquanto os testes locais rodaram em `fastapi` 0.128 e `starlette` 0.49 (Python 3.9). Fixe um lock e rode a suíte do IA Core em Python 3.12.
+- Os testes de regressão da seção 12 foram executados só com o código corrigido; não foram rodados contra o código anterior para confirmar que falhavam.
+
 ## Qualidade (12)
 Testes: `go test -race` (unit + RLS + auditoria), `pytest`, `vitest`, scripts E2E em Python. ⛔ Testcontainers, Playwright, `golangci-lint`, Prometheus, OpenTelemetry, PITR configurado, restauração testada.

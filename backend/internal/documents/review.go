@@ -326,14 +326,18 @@ func (i *Ingestor) Apply(ctx context.Context, tx pgx.Tx, tenantID, userID, docID
 		if err := needEmployee(); err != nil {
 			return nil, err
 		}
-		setStatus("REVISADO")
+		if err := setStatus("REVISADO"); err != nil {
+			return nil, err
+		}
 	case "SOLICITAR_REENVIO":
 		tx.Exec(ctx, `UPDATE documents SET status='REJEITADO', motivos_revisao='["REENVIO_SOLICITADO"]', atualizado_em=now() WHERE id=$1`, docID)
 	case "REJEITAR", "DESCARTAR":
 		if strings.TrimSpace(in.Motivo) == "" {
 			return nil, problem.BadRequest("informe o motivo da rejeição")
 		}
-		setStatus("REJEITADO")
+		if err := setStatus("REJEITADO"); err != nil {
+			return nil, err
+		}
 	case "DIVIDIR":
 		if batchID == "" {
 			return nil, problem.BadRequest("documento sem lote de origem")

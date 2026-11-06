@@ -91,9 +91,9 @@ func (s *Signer) KID() string { return s.kid }
 
 func (s *Signer) Sign(c Claims, ttl time.Duration) (string, error) {
 	now := time.Now()
-	c.RegisteredClaims.IssuedAt = jwt.NewNumericDate(now)
-	c.RegisteredClaims.ExpiresAt = jwt.NewNumericDate(now.Add(ttl))
-	c.RegisteredClaims.Issuer = s.issuer
+	c.IssuedAt = jwt.NewNumericDate(now)
+	c.ExpiresAt = jwt.NewNumericDate(now.Add(ttl))
+	c.Issuer = s.issuer
 	t := jwt.NewWithClaims(jwt.SigningMethodEdDSA, c)
 	t.Header["kid"] = s.kid
 	return t.SignedString(s.priv)

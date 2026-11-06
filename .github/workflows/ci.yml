@@ -22,8 +22,10 @@ jobs:
       - uses: actions/setup-go@v5
         with: { go-version-file: backend/go.mod }
       - run: go vet ./...
-      - uses: golangci/golangci-lint-action@v6
-        with: { working-directory: backend }
+      # golangci-lint v2 (a ação @v6 só entende a v1). Instalado com o Go do projeto (go.mod: 1.26.0) e versão fixa;
+      # a configuração está em backend/.golangci.yml.
+      - run: go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@v2.15.0
+      - run: $(go env GOPATH)/bin/golangci-lint run
       - run: go run ./cmd/migrate
       - run: go test -race ./...   # inclui o teste de isolamento entre empresas (RLS) e de imutabilidade da auditoria
   ia-core:

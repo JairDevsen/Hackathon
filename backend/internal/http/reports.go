@@ -408,22 +408,25 @@ func (s *Server) listAudit(c *gin.Context) {
 func (s *Server) report(c *gin.Context) {
 	var sql string
 	args := []any{}
+	units, saude := s.userScope(c)
 	switch c.Param("tipo") {
 	case "conformidade":
+		args = []any{units}
 		sql = `SELECT coalesce(u.nome,'Sem unidade') AS unidade, coalesce(p.nome,'Sem cargo') AS cargo, count(DISTINCT e.id) AS funcionarios,
 		  count(*) FILTER (WHERE ci.status='OK') AS ok, count(*) FILTER (WHERE ci.status='PENDENTE') AS pendente, count(*) FILTER (WHERE ci.status='VENCIDO') AS vencido,
 		  count(*) FILTER (WHERE ci.status='A_VENCER') AS a_vencer,
 		  round(100.0*count(*) FILTER (WHERE ci.status='OK')/nullif(count(*) FILTER (WHERE ci.status<>'DISPENSADO'),0),1) AS conformidade_pct
-		  FROM compliance_items ci JOIN employees e ON e.id=ci.employee_id LEFT JOIN units u ON u.id=e.unit_id LEFT JOIN positions p ON p.id=e.cargo_id GROUP BY 1,2 ORDER BY 1,2`
+		  FROM compliance_items ci JOIN employees e ON e.id=ci.employee_id LEFT JOIN units u ON u.id=e.unit_id LEFT JOIN positions p ON p.id=e.cargo_id WHERE ($1::uuid[]='{}' OR e.unit_id=ANY($1)) GROUP BY 1,2 ORDER BY 1,2`
 	case "pendencias":
 		where, a := s.complianceWhere(c)
 		sql, args = `SELECT e.nome AS funcionario, e.cpf_mascarado AS cpf, p.nome AS cargo, u.nome AS unidade, dt.nome AS documento, ci.referencia, ci.status, ci.vence_em
 		  FROM compliance_items ci JOIN requirements r ON r.id=ci.requirement_id JOIN document_types dt ON dt.id=r.document_type_id
 		  LEFT JOIN employees e ON e.id=ci.employee_id LEFT JOIN positions p ON p.id=e.cargo_id LEFT JOIN units u ON u.id=e.unit_id WHERE `+where+` ORDER BY e.nome, dt.nome`, a
 	case "nao-conformidades":
+		args = []any{units, saude}
 		sql = `SELECT e.nome AS funcionario, dt.nome AS documento, d.competencia, nc->>'codigo' AS codigo, nc->>'descricao' AS descricao, d.criado_em
 		  FROM documents d JOIN document_types dt ON dt.codigo=d.document_type LEFT JOIN employees e ON e.id=d.employee_id, jsonb_array_elements(d.nao_conformidades) nc
-		  WHERE d.status NOT IN ('REJEITADO','SUBSTITUIDO') ORDER BY d.criado_em DESC`
+		  WHERE d.status NOT IN ('REJEITADO','SUBSTITUIDO') AND (NOT d.sensivel_saude OR $2) AND ($1::uuid[]='{}' OR d.unit_id=ANY($1) OR e.unit_id=ANY($1)) ORDER BY d.criado_em DESC`
 	case "armazenamento":
 		sql = `SELECT to_char(criado_em,'YYYY-MM') AS mes, tipo, count(*) AS eventos, sum(bytes) AS bytes FROM storage_events GROUP BY 1,2 ORDER BY 1 DESC,2`
 	default:
@@ -487,13 +490,27 @@ func writeTable(c *gin.Context, name, formato string, rows []map[string]any) {
 	for _, row := range rows {
 		rec := make([]string, len(cols))
 		for i, col := range cols {
-			rec[i] = cell(row[col])
+			rec[i] = csvSafe(row[col], cell(row[col]))
 		}
 		w.Write(rec)
 	}
 	w.Flush()
 	c.Header("Content-Disposition", fmt.Sprintf(`attachment; filename="%s.csv"`, name))
 	c.Data(http.StatusOK, "text/csv; charset=utf-8", b.Bytes())
+}
+
+// csvSafe neutraliza injeção de fórmula: nomes e textos vêm de documentos enviados (OCR) e de cadastros; uma célula
+// textual iniciada por = + - @ (ou tab/CR) seria executada como fórmula ao abrir o CSV no Excel/LibreOffice.
+// Números reais (float64) não são alterados.
+func csvSafe(orig any, out string) string {
+	if _, num := orig.(float64); num || out == "" {
+		return out
+	}
+	switch out[0] {
+	case '=', '+', '-', '@', '\t', '\r':
+		return "'" + out
+	}
+	return out
 }
 
 func encodeCursor(parts ...string) string {

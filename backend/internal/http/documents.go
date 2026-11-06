@@ -439,6 +439,10 @@ func (s *Server) exportDossie(c *gin.Context) {
 	ctx := c.Request.Context()
 	empID := c.Param("employeeId")
 	_, saude := s.userScope(c)
+	modo := "pesquisavel"
+	if support(c) { // acesso de suporte: só cópia anonimizada, como no download e no ZIP do lote
+		modo = "anonimizado"
+	}
 	type item struct{ ID, Pasta, Nome, Tipo, Comp, Status string }
 	var items []item
 	var empNome string
@@ -465,7 +469,7 @@ func (s *Server) exportDossie(c *gin.Context) {
 	zw := zip.NewWriter(&buf)
 	index := []map[string]string{}
 	for _, it := range items {
-		pdf, _, err := s.renderDoc(ctx, tid(c), it.ID, "pesquisavel")
+		pdf, _, err := s.renderDoc(ctx, tid(c), it.ID, modo)
 		if err != nil {
 			continue
 		}

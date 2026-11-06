@@ -7,6 +7,8 @@ import (
 	"encoding/base64"
 	"encoding/hex"
 	"fmt"
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
 	"net/http"
 	"strings"
 	"time"
@@ -211,7 +213,7 @@ func (s *Server) applyTemplate(c *gin.Context) {
 		} else if pos == nil {
 			nome := in.NomeCargo
 			if nome == "" {
-				nome = strings.Title(strings.ToLower(seg))
+				nome = cases.Title(language.Portuguese).String(strings.ToLower(seg))
 			}
 			var id string
 			if err := tx.QueryRow(ctx, `INSERT INTO positions (tenant_id,nome,segmento) VALUES ($1,$2,$3) ON CONFLICT (tenant_id,nome) DO UPDATE SET segmento=EXCLUDED.segmento RETURNING id::text`, tid(c), nome, seg).Scan(&id); err != nil {
@@ -357,6 +359,7 @@ func (s *Server) patchUser(c *gin.Context) {
 			if err := s.Auth.RevokeAllForUser(ctx, tx, id); err != nil { // desativar revoga tudo
 				return err
 			}
+			tx.Exec(ctx, `UPDATE user_invites SET usado_em=now() WHERE user_id=$1 AND usado_em IS NULL`, id) // e invalida convites pendentes
 		}
 		return s.audit(ctx, tx, c, "USUARIO_ALTERADO", "user", id, map[string]any{"perms": in.Perms, "status": in.Status})
 	}) {

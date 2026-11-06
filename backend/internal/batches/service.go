@@ -296,7 +296,7 @@ func (s *Service) dispatch(ctx context.Context, b *batchRow, failAt int) error {
 		return err
 	}
 	if len(req.AnalisesPrevias) > 0 { // retomada: só o que falta é reprocessado
-		err = s.DB.Tenant(ctx, b.TenantID, func(tx pgx.Tx) error {
+		_ = s.DB.Tenant(ctx, b.TenantID, func(tx pgx.Tx) error { // a linha do tempo é informativa: falha aqui não impede a retomada
 			timeline(ctx, tx, b.ID, "RETOMADO", fmt.Sprintf("retomado do checkpoint: %d páginas já concluídas, %d pendentes", len(req.AnalisesPrevias), pending))
 			return nil
 		})

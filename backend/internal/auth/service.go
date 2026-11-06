@@ -3,8 +3,10 @@ package auth
 
 import (
 	"context"
+	"crypto/hmac"
 	"crypto/rand"
 	"crypto/sha256"
+	"crypto/subtle"
 	"encoding/base64"
 	"encoding/hex"
 	"encoding/json"
@@ -239,26 +241,41 @@ func (s *Service) StartTicket(ctx context.Context, u *User, purpose, ip, ua stri
 var ErrCode = errors.New("código inválido ou expirado")
 
 // VerifyTicket confere o código (máx. 5 tentativas, uso único). Devolve o usuário.
+// O contador de tentativas é atômico (INCR no Redis): requisições paralelas contra o mesmo ticket não
+// conseguem testar mais de MaxAttempts códigos, o que antes era possível lendo e gravando o contador sem trava.
 func (s *Service) VerifyTicket(ctx context.Context, tok, code, purpose string) (*ticket, error) {
 	t, err := s.getTicket(ctx, tok)
 	if err != nil || t.Purpose != purpose {
 		return nil, ErrCode
 	}
-	if t.Attempts >= MaxAttempts || time.Now().After(t.CodeExp) {
+	if time.Now().After(t.CodeExp) {
+		s.Redis.Del(ctx, "mfa:"+sha(tok), "mfa:att:"+sha(tok))
+		return nil, ErrCode
+	}
+	attKey := "mfa:att:" + sha(tok)
+	n, err := s.Redis.Incr(ctx, attKey).Result()
+	if err != nil {
+		return nil, ErrCode // sem o contador não há como limitar: nega
+	}
+	if n == 1 {
+		s.Redis.Expire(ctx, attKey, CodeTTL+TicketTTL)
+	}
+	t.Attempts = int(n)
+	if n > MaxAttempts {
 		s.Redis.Del(ctx, "mfa:"+sha(tok))
 		return nil, ErrCode
 	}
-	if sha(tok+":"+strings.TrimSpace(code)) != t.CodeHash {
-		t.Attempts++
-		if t.Attempts >= MaxAttempts {
+	if subtle.ConstantTimeCompare([]byte(sha(tok+":"+strings.TrimSpace(code))), []byte(t.CodeHash)) != 1 {
+		if n >= MaxAttempts {
 			s.Redis.Del(ctx, "mfa:"+sha(tok))
-		} else {
-			b, _ := json.Marshal(t)
-			s.Redis.SetArgs(ctx, "mfa:"+sha(tok), b, redis.SetArgs{KeepTTL: true})
 		}
 		return t, ErrCode
 	}
-	s.Redis.Del(ctx, "mfa:"+sha(tok))
+	// uso único: só o request que apagar o ticket (DEL == 1) é aceito, mesmo com acertos simultâneos
+	if s.Redis.Del(ctx, "mfa:"+sha(tok)).Val() != 1 {
+		return nil, ErrCode
+	}
+	s.Redis.Del(ctx, attKey)
 	return t, nil
 }
 
@@ -276,6 +293,7 @@ func (s *Service) Resend(ctx context.Context, tok string) (time.Time, error) {
 	}
 	code := otp()
 	t.CodeHash, t.CodeExp, t.ResendAt, t.Attempts = sha(tok+":"+code), time.Now().Add(CodeTTL), time.Now().Add(ResendInterval), 0
+	s.Redis.Del(ctx, "mfa:att:"+sha(tok))
 	if err := s.putTicket(ctx, tok, t); err != nil {
 		return time.Time{}, err
 	}
@@ -434,11 +452,16 @@ func (s *Service) IsRevoked(ctx context.Context, sid string) bool {
 
 // ---------- dispositivo confiável (30 dias) ----------
 
+// trustMAC: HMAC-SHA256 com a chave do servidor (antes era sha256(segredo||mensagem), construção sem HMAC).
+func (s *Service) trustMAC(uid, exp string) string {
+	m := hmac.New(sha256.New, []byte(s.Cfg.HMACHex))
+	m.Write([]byte("trust|" + uid + "|" + exp))
+	return hex.EncodeToString(m.Sum(nil))
+}
+
 func (s *Service) trustCookieValue(uid string) string {
-	exp := time.Now().Add(TrustDays * 24 * time.Hour).Unix()
-	p := fmt.Sprintf("%s|%d", uid, exp)
-	m := sha(s.Cfg.HMACHex + "|trust|" + p)
-	return base64.RawURLEncoding.EncodeToString([]byte(p + "|" + m))
+	exp := fmt.Sprint(time.Now().Add(TrustDays * 24 * time.Hour).Unix())
+	return base64.RawURLEncoding.EncodeToString([]byte(uid + "|" + exp + "|" + s.trustMAC(uid, exp)))
 }
 
 func (s *Service) trustValid(val, uid string) bool {
@@ -451,6 +474,8 @@ func (s *Service) trustValid(val, uid string) bool {
 		return false
 	}
 	var exp int64
-	fmt.Sscan(parts[1], &exp)
-	return time.Now().Unix() < exp && sha(s.Cfg.HMACHex+"|trust|"+parts[0]+"|"+parts[1]) == parts[2]
+	if _, err := fmt.Sscan(parts[1], &exp); err != nil || time.Now().Unix() >= exp {
+		return false
+	}
+	return hmac.Equal([]byte(s.trustMAC(parts[0], parts[1])), []byte(parts[2]))
 }

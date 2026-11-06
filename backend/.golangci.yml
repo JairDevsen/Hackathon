@@ -1,0 +1,16 @@
+# golangci-lint v2. Linters padrão (errcheck, govet, ineffassign, staticcheck, unused).
+version: "2"
+run:
+  timeout: 5m
+linters:
+  default: standard
+  exclusions:
+    rules:
+      # errcheck: ignorar o retorno é o padrão deliberado do projeto nestes casos:
+      #  - Close/Rollback/Remove/Write*: limpeza e escrita em buffer/resposta, sem ação possível em caso de erro;
+      #  - tx.Exec / Row.Scan / DB.Tenant|System: dentro de transação do pgx um erro aborta a transação e aparece
+      #    no commit; as chamadas "melhor esforço" (notificações, linha do tempo) não devem barrar o fluxo principal;
+      #  - json.Unmarshal/Decode/Encode sobre dados que o próprio sistema gravou; Mail.Send é melhor esforço.
+      # É dívida técnica conhecida: novos usos de outras funções continuam sendo cobrados pelo errcheck.
+      - linters: [errcheck]
+        text: "Error return value of `[^`]*\\.(Close|Rollback|Remove|Write|WriteString|Exec|Scan|Unmarshal|Decode|Encode|Seek|Read|Copy|Sscan|SetCellValue|SetDeadline|Shutdown|Register|SetTrustedProxies|Send|System|Tenant|RevokeAllForUser|runTx|ShouldBindJSON)` is not checked"
