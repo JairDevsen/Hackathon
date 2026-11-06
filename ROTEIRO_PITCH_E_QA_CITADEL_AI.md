@@ -14,7 +14,7 @@
 
 > **"Boa noite! Todos os dias, milhares de construtoras, indústrias, hospitais e agroindústrias no Brasil precisam contratar e mobilizar trabalhadores rápido. Mas antes de qualquer funcionário entrar na operação, o RH precisa auditar dezenas de documentos obrigatórios.**
 >
-> **Qual é o problema real? Os documentos nunca chegam organizados. Eles chegam num único PDF 'Frankenstein' com 50 páginas misturadas no e-mail: tem exame ASO junto com ficha de EPI, contrato sem assinatura, atestado escrito à mão por médico de plantão e até comprovante AR dos Correios.**
+> **Qual é o problema real? Quando as empresas terceirizadas ou os próprios trabalhadores enviam essa papelada, ela nunca vem separada: eles colocam a pilha inteira no scanner e mandam um único PDF 'Frankenstein' com 50 páginas misturadas no e-mail — tem exame ASO junto com ficha de EPI, contrato sem assinatura, atestado escrito à mão por médico de plantão e até comprovante AR dos Correios.**
 >
 > **O resultado disso? Equipes de RH perdendo 80% do dia recortando e renomeando PDF na mão, funcionários parados esperando dias pela liberação da catraca, e empresas levando multas milionárias por deixarem passar um documento vencido ou vazarem dados na LGPD."**
 
