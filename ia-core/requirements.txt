@@ -5,6 +5,7 @@ pydantic>=2.9
 pillow>=11.0
 pymupdf>=1.26.7,<2         # 1.26.7+ corrige CVE; <2 mantém a série testada (a 2.x traz dependências pesadas)
 google-genai>=1.0
+openai>=1.50
 python-multipart>=0.0.31     # piso de segurança (pip-audit)
 pillow-heif>=1.3.0           # piso de segurança (pip-audit)
 

@@ -1,10 +1,61 @@
 # Citadel IA
 
-Plataforma multiempresa para receber lotes de documentos trabalhistas, separar páginas, identificar o tipo, extrair dados e montar o dossiê de cada funcionário. O RH acompanha o processamento, revisa leituras duvidosas e confere pendências e indicadores de risco documental.
+Plataforma multiempresa para **qualquer organização que precise controlar o risco documental e trabalhista de quem trabalha para ela**: empregados próprios, trabalhadores de empresas terceirizadas e fornecedores. Ela recebe lotes de documentos escaneados, separa as páginas, identifica o tipo, extrai os dados, reúne tudo por pessoa (CPF) e por empresa (CNPJ) e mostra o que está faltando, vencido ou inconsistente, antes que isso vire autuação, passivo ou processo.
+
+Serve a empresas de qualquer porte e setor, de um escritório com poucos contratos a um grupo com muitos contratados, e também a escritórios jurídicos e consultorias que fazem essa gestão para seus clientes. Cada empresa define os próprios documentos obrigatórios, por cargo, setor ou funcionário. Escritórios como a Bernhoeft, que atuam nessa gestão, são um exemplo de uso, não o único: o sistema não carrega regras nem dados de nenhum cliente específico.
+
+Em termos práticos, o RH e o jurídico:
+
+- enviam documentos em lote, sem precisar separá-los antes;
+- acompanham o processamento e revisam apenas o que a leitura automática deixou em dúvida;
+- consultam o dossiê de cada pessoa e de cada empresa contratada;
+- veem pendências, vencimentos e **indicadores de risco** para priorizar a conferência.
+
+> É um protótipo. Os indicadores são sinais de triagem para o RH e o jurídico, não parecer jurídico, e a leitura por IA precisa ser validada com os documentos reais de cada operação.
 
 **Fluxo principal:** `envio do lote → validação e armazenamento → análise por página → agrupamento em documentos → pré-cadastro/vínculo do funcionário → revisão humana quando necessária → dossiê, conformidade e alertas`.
 
 Quando o documento permite identificar nome e CPF válido, o sistema pré-cadastra o funcionário por padrão. Documentos ilegíveis ou sem tipo identificado entram na fila para classificação, transcrição manual ou envio de uma cópia legível. A transcrição manual fica identificada como tal e não comprova sozinha uma exigência documental. Os indicadores de risco são sinais para conferência do RH e do jurídico, não conclusões jurídicas.
+
+## Como funciona a aplicação
+
+O trabalho do RH começa pelo envio de um lote. A aplicação processa o arquivo em segundo plano e organiza os resultados para conferência:
+
+1. **Receber e proteger o arquivo.** A API verifica formato, tamanho, cota e duplicidade; executa antivírus quando configurado e guarda o original cifrado.
+2. **Preparar as páginas.** O worker solicita ao IA Core a conversão em imagens e miniaturas. O texto vem da camada digital do PDF ou do OCR quando disponível.
+3. **Reconhecer os documentos.** Cada página recebe tipo, campos, confiança e indicação de início ou continuação. O agrupador reúne as páginas de cada documento.
+4. **Identificar pessoa e empresa.** O backend procura o funcionário por CPF, matrícula ou nome e identifica fornecedores pelo CNPJ. Quando os dados permitem, cria pré-cadastros para o RH completar.
+5. **Conferir as exceções.** Leituras duvidosas entram na revisão humana. O usuário pode corrigir, vincular, dividir, juntar, rejeitar ou solicitar uma cópia melhor.
+6. **Atualizar a gestão documental.** Os documentos aparecem nos dossiês. Regras de exigência e cruzamentos alimentam pendências, vencimentos, indicadores e relatórios.
+
+**Exemplo:** um PDF com holerite, cartão de ponto de duas páginas e ASO pode gerar três documentos. O ponto é agrupado pelas marcas de continuação; o CPF ajuda a localizar o titular; e o CNPJ pode associar os registros a uma terceirizada. Se o ASO estiver ilegível, ele permanece disponível para tratamento. Quando exigido e sem outro comprovante elegível no dossiê, o ASO continua pendente até a regularização ou uma dispensa justificada.
+
+### O papel da IA e das regras
+
+O **IA Core** lê e classifica as páginas. Sem chave de IA, usa texto nativo, Tesseract e expressões regulares. Com uma chave da OpenAI ou do Gemini, pode encaminhar páginas ao modelo sobre texto ou imagem. Páginas idênticas já analisadas em outro lote da mesma empresa podem reutilizar a análise por SHA-256. O serviço ativo analisa uma página por vez; o extrator em janelas de oito páginas pertence ao material complementar em `ia-generator-documents/`.
+
+O **backend Go** decide vínculos, revisão, exigências e indicadores. A empresa configura quais documentos cobrar de todos, de um setor, de um cargo ou de uma pessoa. A precedência é **funcionário → cargo → setor → todos**. As correções humanas ficam registradas, mas não retreinam automaticamente o modelo.
+
+### Como interpretar os resultados
+
+| Resultado | O que significa |
+|---|---|
+| **Status do documento** | Situação no fluxo: autoaprovado, aguardando revisão, revisado, rejeitado ou substituído. |
+| **Conformidade** | Atendimento às exigências configuradas: OK, pendente, vencido, a vencer ou dispensado. |
+| **Checklist e mobilização** | Conferências de um documento, como legibilidade e validade; o rótulo “apto” não representa liberação consolidada do funcionário. |
+| **Indicador de risco** | Sinal para conferência, derivado do conteúdo ou de cruzamentos entre documentos. Não é probabilidade de processo nem conclusão jurídica. |
+
+Um documento revisado pode continuar vencido ou com um indicador de risco. Um registro manual pode acrescentar informações, mas não comprova a exigência documental. A conformidade do painel é `100 × itens OK / itens não dispensados`; sem itens avaliáveis, a taxa pode ficar sem valor.
+
+### Login e proteção dos dados
+
+O acesso usa senha com hash Argon2id e código por e-mail. Há dispositivo confiável por até 30 dias, JWT de acesso de 12 minutos e refresh rotativo em cookie HttpOnly. Algumas ações, como exportar o dossiê e alterar permissões, exigem nova confirmação por código. Master administra a plataforma; admin configura a empresa; RH executa a operação, com restrição por unidade quando definida.
+
+O banco aplica isolamento por empresa com RLS; arquivos e CPF do cadastro usam criptografia, e ações relevantes entram na auditoria encadeada por hash. OCR e checkpoints podem conter dados pessoais em claro no banco. Cópias com tarjas dependem da detecção e das coordenadas disponíveis, e precisam de conferência. Os controles e suas limitações estão detalhados no guia abaixo.
+
+### Documentação completa e preparação para a banca
+
+O [guia completo do sistema e da banca](DOCUMENTACAO_COMPLETA_SISTEMA_E_GUIA_BANCA.md) reúne arquitetura, funcionalidades, o catálogo de tipos de documentos, os indicadores de risco, regras de IA, segurança, APIs e **40 perguntas com respostas**. Use este README para entender o fluxo e executar a aplicação; consulte o guia para fórmulas, critérios exatos, evidências e limitações.
 
 ## Requisitos para rodar localmente
 
@@ -20,17 +71,19 @@ Instale estes itens antes de começar. As versões mínimas vêm do projeto (`ba
 | **make** | qualquer | atalhos `make dev` e `make web` | `make --version` | macOS e Linux. No Windows **não é necessário** ([como rodar sem ele](#windows--powershell-nativo-sem-wsl-e-sem-make)) |
 | **OpenSSL** e **curl** | qualquer | `make keys` e as verificações do `scripts/dev.sh` | `openssl version` · `curl --version` | macOS e Linux. Não usados no caminho nativo do Windows |
 | **Tesseract** com idioma `por` | qualquer com `por` | OCR de páginas escaneadas sem texto digital | `tesseract --list-langs` | Não. Sem ele, só páginas com texto digital são lidas e as demais vão para revisão |
-| **Chave do Gemini** | `GEMINI_API_KEY` | camadas 2 e 3 do funil de IA | veja [Variáveis, chaves e Gemini](#variáveis-chaves-e-gemini) | Não. Sem a chave, funciona o motor local (heurístico) |
+| **Chave de IA (OpenAI ou Gemini)** | `OPENAI_API_KEY` ou `GEMINI_API_KEY` | camadas 2 e 3 do funil de IA | veja [Variáveis, chaves e IA externa](#variáveis-chaves-e-ia-externa) | Não. Sem a chave, funciona o motor local (heurístico) |
 | **Navegador** moderno | testado no Chromium (Chrome/Edge) | usar a interface em `http://localhost:5173` | — | Sim |
 
 **Sistemas:** macOS, Linux (Ubuntu 24.04/Debian) e Windows 10/11 (via WSL2 ou direto no PowerShell). Cada guia abaixo traz os comandos de instalação.
 
 **Portas livres:** `5432` (Postgres), `6379` (Redis), `8080` (API), `8001` (IA Core) e `5173` (frontend). Se for usar MinIO, Mailpit e ClamAV, libere também `9000`, `9001`, `1025`, `8025` e `3310`.
 
-**Internet:** necessária para instalar as dependências e baixar as imagens do Docker; o processamento local não chama serviços externos, a não ser que você configure o Gemini. Não medimos requisitos mínimos de CPU, memória e disco.
+**Internet:** necessária para instalar as dependências e baixar as imagens do Docker. O processamento documental local não chama modelos externos; OpenAI/Gemini, SMTP externo, CAPTCHA e verificação de senha vazada podem depender de rede conforme a configuração. Não medimos requisitos mínimos de CPU, memória e disco.
 
 ## Índice
 
+- [Como funciona a aplicação](#como-funciona-a-aplicação)
+- [Documentação completa e preparação para a banca](#documentação-completa-e-preparação-para-a-banca)
 - [Requisitos para rodar localmente](#requisitos-para-rodar-localmente)
 - [Executar em desenvolvimento](#executar-em-desenvolvimento)
 - [Windows sem WSL e sem make](#windows--powershell-nativo-sem-wsl-e-sem-make)
@@ -38,7 +91,7 @@ Instale estes itens antes de começar. As versões mínimas vêm do projeto (`ba
 - [Módulos da aplicação](#módulos-da-aplicação)
 - [Arquitetura e pastas](#arquitetura-e-pastas)
 - [Como o sistema analisa, separa e mede os documentos](#como-o-sistema-analisa-separa-e-mede-os-documentos)
-- [Variáveis, chaves e Gemini](#variáveis-chaves-e-gemini)
+- [Variáveis, chaves e IA externa](#variáveis-chaves-e-ia-externa)
 - [Testes e solução de problemas](#testes-e-solução-de-problemas)
 
 ## Executar em desenvolvimento
@@ -201,7 +254,7 @@ cd backend; .\bin\worker.exe
 
 # Terminal 3: IA Core (http://localhost:8001)
 cd ia-core; ..\.venv\Scripts\python.exe -m uvicorn ia_core.main:app --port 8001
-#   Opcional, para usar o Gemini: $env:GEMINI_API_KEY = "sua-chave"  (antes de iniciar o uvicorn)
+#   Opcional, para usar IA externa: $env:OPENAI_API_KEY = "<sua-chave>"  (ou GEMINI_API_KEY; antes de iniciar o uvicorn)
 
 # Terminal 4: frontend (http://localhost:5173)
 cd frontend; npm run dev
@@ -276,7 +329,7 @@ A sidebar muda conforme o perfil do usuário. [ACESSO.md](ACESSO.md) explica Mas
 |---|---|
 | **Início** | Resumo de lotes, pendências, revisão, vencimentos e riscos que precisam de atenção. |
 | **Buscar, Funcionários e Dossiê** | Busca por CPF, matrícula, nome ou texto dos documentos; pré-cadastros do lote; dados do funcionário, exigências, documentos, pendências, linha do tempo e exportação. |
-| **Lotes e Enviar lote** | Upload retomável de PDF ou imagens, validação, acompanhamento do processamento, resultado por documento, reenvio de cópia legível e exportação do lote separado. |
+| **Lotes e Enviar lote** | Upload retomável de PDF ou imagens, validação, acompanhamento do processamento, resultado por documento, reenvio de cópia legível e exportação do lote separado e exclusão do lote enviado, com confirmação e motivo auditado. |
 | **Documentos** | Lista e filtra documentos; abre páginas, campos extraídos, alertas e versões; permite baixar o PDF original, pesquisável ou anonimizado conforme a permissão. |
 | **Revisão** | Prioriza baixa confiança, ilegibilidade e ausência de vínculo; permite corrigir tipo e campos, vincular funcionário, dividir/juntar páginas, rejeitar ou solicitar novo envio. |
 | **Fornecedores** | Terceirizadas e fornecedores agrupados pelo CNPJ lido nos documentos: dados e contrato, documentos da empresa, funcionários alocados, documentos exigidos e indicadores de risco de processo trabalhista para a contratante. |
@@ -308,7 +361,7 @@ A API pública está descrita em [backend/api/openapi.yaml](backend/api/openapi.
 
 1. O frontend envia o arquivo em partes para a API. `backend/internal/batches/` controla tamanho, retomada, cota, hash e verificação antivírus quando o ClamAV está configurado.
 2. A API guarda o arquivo e publica uma tarefa no Redis. `backend/cmd/worker/` consome a tarefa e solicita ao IA Core o fatiamento e a análise das páginas.
-3. `ia-core/ia_core/fatiar.py` prepara páginas e miniaturas; `providers.py` escolhe o motor local ou Gemini; `catalogo.py` e `extracao.py` definem tipos e campos; `agrupar.py` reúne páginas em documentos.
+3. `ia-core/ia_core/fatiar.py` prepara páginas e miniaturas; `providers.py` escolhe o motor local, a OpenAI ou o Gemini; `catalogo.py` e `extracao.py` definem tipos e campos; `agrupar.py` reúne páginas em documentos.
 4. O IA Core devolve resultados por callbacks assinados. `backend/internal/documents/` grava os documentos, cria ou associa pré-cadastros e encaminha casos duvidosos à revisão. `backend/internal/compliance/` recalcula exigências e indicadores.
 5. A interface acompanha o progresso do lote e apresenta o resultado, os documentos e as ações pendentes. O worker também executa rotinas periódicas de vencimento e verificação da auditoria.
 
@@ -320,32 +373,34 @@ Esta seção descreve o que acontece com um arquivo enviado, da página escanead
 
 **1. Separação do lote em documentos** (`ia-core/ia_core/fatiar.py`, `agrupar.py`)
 
-1. O PDF ou a imagem vira uma lista de páginas, renderizadas em 150 dpi, com miniatura e as palavras com suas coordenadas. Quando a página tem texto digital, ele é lido direto; quando é só imagem, usa-se OCR (Tesseract em português) se estiver instalado.
-2. Antes de ler o conteúdo, o sistema confere a imagem: página sem conteúdo é marcada **em branco** (e descartada) e página com baixa nitidez é marcada **borrada** (`qualidade_img.py`, limite configurável em `IA_NITIDEZ_MIN`). Uma foto desfocada não é confundida com página em branco: ela vira um alerta de erro e pede uma imagem melhor. O limite foi calibrado com amostras sintéticas; ajuste-o com imagens reais.
-3. Cada página recebe um **tipo** (um dos 36 do catálogo, ou `OUTRO`), uma confiança e a informação "inicia um documento novo?".
-4. O agrupamento é determinístico: uma página que inicia documento abre um grupo; verso e continuações são anexados ao último documento **do mesmo tipo**, mesmo que haja páginas de outros tipos no meio (frente e verso digitalizados separados). Página em branco encerra o documento corrente. O resultado é a lista de documentos, cada um com as suas páginas.
+1. O PDF vira páginas renderizadas em 150 dpi; entradas de imagem são convertidas em PNG. O sistema gera miniaturas e extrai texto e coordenadas quando disponíveis. Texto digital é lido direto; páginas sem texto podem usar OCR (Tesseract em português) quando instalado. O OCR feito depois do fatiamento nem sempre gera coordenadas para destaques e tarjas.
+2. Quando não há texto embutido, o provedor verifica a nitidez da imagem (`qualidade_img.py`, limite configurável em `IA_NITIDEZ_MIN`). No modo local, também distingue página **em branco**, descartada do agrupamento, de conteúdo sem OCR suficiente, preservado para revisão. A heurística de borrão pode gerar falsos positivos e negativos; o limite foi calibrado com amostras sintéticas.
+3. Cada página recebe um **tipo** (um dos 44 do catálogo, incluindo `OUTRO`), uma confiança e a informação "inicia um documento novo?".
+4. O agrupamento é determinístico: uma página que inicia documento abre um grupo; páginas marcadas como continuação são anexadas ao último documento **do mesmo tipo**, podendo usar um grupo anterior quando há intercalação. O resultado depende das marcas propostas pelo provedor; vários documentos intercalados do mesmo tipo podem ser confundidos. Páginas em branco são omitidas, e folhas com múltiplos documentos não são recortadas automaticamente.
 5. O sistema tolera falha no meio do processamento: cada página é gravada ao ser analisada, e o worker retoma de onde parou.
 
 **2. Classificação e extração** (`providers.py`, `catalogo.py`, `extracao.py`, `schemas.py`)
 
 O processamento é um funil que só gasta IA quando o custo menor não resolve:
 
-| Camada | O que faz | Custo |
+| Camada | O que faz | Uso de modelo externo |
 |---|---|---|
-| **0** | Se a mesma página (SHA-256) já foi analisada, reaproveita o resultado. | Zero |
-| **1** | Texto nativo ou OCR + palavras-chave do catálogo + expressões regulares para CPF, datas, valores, horas etc. | Zero |
-| **2** | Gemini Flash-Lite sobre o texto já extraído, quando a camada 1 não tem confiança. | Baixo |
-| **3** | Gemini Flash Vision sobre a imagem reduzida (1024 px, WebP), com modelo Pro de reserva. | Maior |
+| **0** | Reaproveita análise de página idêntica já concluída em outro lote da mesma empresa. | Nenhuma nova chamada |
+| **1** | Texto nativo ou OCR + palavras-chave do catálogo e expressões regulares. | Nenhuma chamada |
+| **2** | Modelo leve (`OPENAI_MODEL_LITE` / `GEMINI_MODEL_LITE`) sobre texto elegível com pelo menos 120 caracteres, quando a confiança local fica abaixo de 0,85. | Chamada sobre texto |
+| **3** | Modelo multimodal sobre imagem reduzida (lado máximo padrão de 1024 px, WebP), com modelo reserva maior para respostas difíceis. | Chamada sobre imagem |
 
-Sem `GEMINI_API_KEY`, só as camadas 0 e 1 funcionam (motor local). A integração com o Gemini está implementada, mas não foi exercitada com uma chave real neste repositório. Cada tipo tem um schema com os campos esperados (por exemplo, horas e intervalo no cartão de ponto, bruto, FGTS e horas extras no holerite). Cada página registra a camada usada e os tokens consumidos, que alimentam a tela de FinOps.
+Sem chave de IA, só as camadas 0 e 1 funcionam (motor local). Com a chave, tipos visuais, manuscritos e páginas sem texto suficiente podem ir diretamente à visão; o fluxo não passa obrigatoriamente por todas as camadas. O limiar de 0,85 é de roteamento local, enquanto o limiar da empresa, padrão 0,75, decide a revisão na ingestão.
+
+Há schemas especializados para alguns tipos, como ponto, holerite e ASO; os demais usam campos base. Esses schemas também alimentam os formulários e não garantem que a regex local extraia todos os campos. Camada e tokens são registrados por página e agregados por documento no FinOps. Zero tokens externos não significa custo zero de infraestrutura. O [guia completo](DOCUMENTACAO_COMPLETA_SISTEMA_E_GUIA_BANCA.md#funil) descreve os critérios de fallback e o escopo das verificações realizadas.
 
 **3. Validações e alertas** (`validacoes.py`, `checklist.py`, `backend/internal/documents/`)
 
-Sobre os campos extraídos, regras objetivas geram **alertas** e **não conformidades**: jornada acima de 10 horas, intervalo menor que 1 hora, ponto britânico (marcações idênticas), FGTS depositado diferente do devido (valores lidos no holerite ou na guia), certidão ou documento vencido, ausência de assinatura, recusa sem testemunhas, CPF inválido e nome diferente do cadastro. Cada documento também recebe um **checklist** (por exemplo, NR-7 no ASO) e um status de mobilização (apto, em análise ou bloqueado).
+Sobre o texto e os campos extraídos, regras geram **alertas** e **não conformidades**: jornada acima de 10 horas, intervalo menor que 1 hora, menção a ponto britânico/horários idênticos, FGTS depositado diferente do devido (valores lidos no holerite ou na guia), certidão ou documento vencido, ausência de sinal textual de assinatura, recusa sem testemunhas, CPF inválido e nome diferente do cadastro. Cada documento também recebe um **checklist** (por exemplo, NR-7 no ASO) e um status de mobilização (apto, em análise ou bloqueado). A análise não autentica assinaturas nem consulta depósitos oficiais.
 
 **4. Vínculo com o funcionário e pré-cadastro** (`backend/internal/documents/ingest.go`)
 
-1. A busca segue esta ordem: CPF (comparado por hash cego, sem guardar o CPF em claro) → matrícula → nome por similaridade (a partir de 0,85 e só se não houver empate). Vínculo apenas por nome sempre vai para revisão. Um CPF válido e desconhecido nunca é ligado a outra pessoa por nome.
+1. A busca segue esta ordem: CPF por hash cego → matrícula → nome por similaridade (a partir de 0,85 e com margem mínima de 0,10 para o segundo candidato). O CPF do cadastro é cifrado e sua exibição é mascarada; o texto OCR e os checkpoints podem conter o número em claro. Vínculo apenas por nome sempre vai para revisão. Um CPF válido e desconhecido nunca é ligado a outra pessoa por nome.
 2. Se não há cadastro, o CPF é válido, o nome foi lido e a página está legível, o sistema **cria um pré-cadastro** (nome, CPF e matrícula do documento). O RH não precisa cadastrar antes. A empresa pode desligar esse comportamento, e o limite de funcionários do plano é respeitado. O funcionário fica marcado como "pré-cadastrado" até o RH conferir e completar admissão, cargo e setor.
 3. Um documento vai para a **fila de revisão humana** quando a confiança fica abaixo do limiar da empresa (padrão 0,75), a página é ilegível ou borrada, o tipo não foi identificado, há mais de um documento na imagem, falta vínculo, há possível duplicata ou existe alerta de erro. O lote informa quantos documentos exigem **classificação manual**.
 4. Na revisão, a pessoa escolhe o tipo, preenche o formulário daquele tipo (transcrição manual), vincula ou cria o funcionário, divide ou junta páginas, rejeita, solicita novo envio ou envia uma cópia legível que substitui o documento ilegível. Também é possível **lançar um documento manualmente** pelo dossiê, sem imagem. A transcrição digitada é registrada como manual: ela alimenta os indicadores, mas **não comprova** uma exigência documental.
@@ -374,7 +429,7 @@ Pontos importantes: os indicadores são **sinais de triagem**, não parecer jur�
 
 **6b. Fornecedores e terceirizadas: três grupos de trabalhadores** (`backend/internal/documents/suppliers.go`, `compliance/risk.go`)
 
-Uma empresa que contrata terceirizadas responde de forma subsidiária pelas obrigações trabalhistas que elas deixarem de cumprir (TST Súmula 331, IV e VI; Lei 6.019/74, art. 5º-A, §5º). Por isso o sistema separa quem trabalha para a empresa em **três grupos**: a **própria empresa**, as **terceirizadas** e os **fornecedores** (que também podem ter trabalhadores alocados). A separação vale para funcionários, documentos, conformidade, riscos e para o painel.
+O módulo reúne documentos de prestadores para apoiar a conferência de obrigações e de sinais de risco para a contratante. As referências jurídicas exibidas são as cadastradas no código e precisam de validação no contexto de uso. O sistema separa os vínculos em **três grupos**: a **própria empresa**, as **terceirizadas** e os **fornecedores** (que também podem ter trabalhadores alocados). A separação aparece em funcionários, documentos e indicadores do painel.
 
 1. **Identificação pelo CNPJ.** O IA Core lê o CNPJ da empresa do documento (`empresa_cnpj`). Em um contrato, que cita duas empresas, vale o da **contratada/prestadora**, não o da contratante (`ia_core/extracao.py`). Um CNPJ igual ao da própria empresa não cria fornecedor.
 2. **Pré-cadastro do fornecedor.** CNPJ válido e desconhecido cria um fornecedor "pré-cadastrado" (a mesma chave `pre_cadastro_automatico` dos funcionários). O RH completa o tipo (terceirizada ou fornecedor), a criticidade e as datas do contrato. Um CNPJ válido nunca é fundido com outro: o CNPJ é único por empresa contratante.
@@ -386,36 +441,38 @@ São indicadores de triagem, não parecer jurídico. Dado digitado manualmente p
 
 **7. Métricas e painéis** (`backend/internal/http/reports.go`)
 
-Todos os números são calculados no banco, respeitando o isolamento por empresa e as unidades do usuário:
+Os indicadores operacionais são calculados no banco, com isolamento por empresa. A visão geral e as métricas de conformidade aplicam filtros de unidade em diversas consultas; cotas e alguns agregados continuam sendo do tenant inteiro. Processamento, armazenamento e FinOps não possuem recorte completo por unidade:
 
 | Tela / endpoint | O que mostra |
 |---|---|
-| Início, `/metrics/overview` | Conformidade (% de itens `OK` entre os exigidos), funcionários ativos e com pendência, vencidos, a vencer em 30 dias, documentos aguardando revisão, ilegíveis, pré-cadastros, riscos em aberto por severidade e principais não conformidades. |
+| Início, `/metrics/overview` | Conformidade (% de itens `OK` entre os não dispensados), funcionários ativos e com pendência, vencidos, a vencer em 30 dias, documentos aguardando revisão, ilegíveis, pré-cadastros, riscos em aberto por severidade e principais não conformidades. |
 | `/metrics/compliance` | Pendências por tipo de documento e conformidade por unidade. |
 | `/metrics/processing` | Volume mensal de páginas e documentos e tempo médio por lote. |
-| Escala 950k & FinOps, `/metrics/finops` | Páginas e tokens por camada do funil, economia do cache e do funil local, e simulação de escala com premissas editáveis (não são preços oficiais de modelos). |
+| Escala 950k & FinOps, `/metrics/finops` | Documentos e tokens registrados por camada, economia estimada em relação a um baseline e simulação de escala com premissas editáveis. A simulação não comprova preço oficial nem capacidade de processamento nessa escala. |
 | Riscos trabalhistas, `/risks` | Lista filtrável por status e funcionário, com base legal e ação de ignorar para o administrador. |
 | Relatórios, `/reports/:tipo` | Exportação CSV/XLSX de conformidade, pendências, não conformidades e armazenamento. |
 
 Cada ação relevante (revisão, lançamento manual, dispensa, ignorar indicador, download) entra na **auditoria encadeada por hash**, que o worker verifica periodicamente.
 
-## Variáveis, chaves e Gemini
+## Variáveis, chaves e IA externa
 
 | Ambiente | De onde vêm os valores |
 |---|---|
 | **Desenvolvimento (`make dev`)** | `backend/internal/config/config.go` fornece padrões locais. `scripts/dev.sh` define `SEED_DEMO=true`. A chave JWT é criada por `make keys`. Esse fluxo **não lê** o `.env` de produção. |
-| **IA Core local com Gemini** | `scripts/dev.sh` lê somente `ia-core/.env.local` para `GEMINI_API_KEY` e opções `GEMINI_MODEL*`; esse arquivo é ignorado pelo Git. |
+| **IA Core local com IA externa** | `scripts/dev.sh` lê somente `ia-core/.env.local` para `OPENAI_API_KEY`, `GEMINI_API_KEY`, `IA_PROVIDER` e as opções `OPENAI_MODEL*`/`GEMINI_MODEL*`; esse arquivo é ignorado pelo Git. |
 | **Produção (Compose)** | `.env` fornece credenciais e opções; `docker-compose.yml` monta a chave JWT e repassa as variáveis a cada serviço. `make keys` preenche os segredos em branco sem mostrá-los no terminal. |
 
-Sem `GEMINI_API_KEY`, o IA Core usa **texto do PDF, OCR local com Tesseract e regras determinísticas**. Para usar Gemini no desenvolvimento:
+Sem nenhuma chave, o IA Core usa **texto do PDF, OCR local com Tesseract e regras determinísticas**. Para usar a OpenAI (ou o Gemini) no desenvolvimento:
 
 ```bash
 cp ia-core/.env.local.example ia-core/.env.local
-# Preencha GEMINI_API_KEY em ia-core/.env.local e reinicie make dev.
+# Preencha OPENAI_API_KEY (ou GEMINI_API_KEY) em ia-core/.env.local e reinicie make dev.
 curl http://localhost:8001/health
+# testa cada modelo configurado e mostra o erro, se houver:
+curl -H 'X-IACore-Key: dev-ia-core-key' http://localhost:8001/diagnostico
 ```
 
-O campo `provider` passa de `local-heuristico` para `gemini:<modelo>`. Isso mostra qual provedor foi selecionado, mas uma análise real é necessária para validar a chave. Algumas páginas com texto nativo suficiente continuam sendo resolvidas localmente. Em produção, configure `GEMINI_API_KEY` no `.env` se decidir usar esse provedor; páginas difíceis podem enviar imagem ou texto ao serviço externo. O provedor Vertex AI ainda não está implementado.
+O campo `provider` passa de `local-heuristico` para `openai:<modelo>` ou `gemini:<modelo>`. Com as duas chaves, a OpenAI tem prioridade; `IA_PROVIDER=openai|gemini|local` força a escolha. Os modelos padrão da OpenAI (`gpt-5-mini`, `gpt-5`, `gpt-5-nano`) ainda não foram validados com chave real; se o `/diagnostico` mostrar erro de modelo, ajuste `OPENAI_MODEL*`. Isso mostra qual provedor foi selecionado, mas uma análise real é necessária para validar a chave. Algumas páginas com texto nativo suficiente continuam sendo resolvidas localmente. Em produção, configure a chave no `.env` se decidir usar esse provedor; páginas difíceis podem enviar imagem ou texto ao serviço externo. O provedor Vertex AI ainda não está implementado.
 
 `.env`, `ia-core/.env.local`, chaves privadas e credenciais de provedores são ignorados pelo Git. Execute `make check-secrets` antes de preparar um commit; `make install-hooks` ativa essa checagem automaticamente. **Não use `git add -f` para incluí-los.** Se uma chave já foi publicada, revogue ou rotacione-a. Veja todas as opções em [VARIAVEIS_AMBIENTE.md](VARIAVEIS_AMBIENTE.md).
 
@@ -434,7 +491,7 @@ Os testes de isolamento RLS e auditoria que usam banco precisam de `DATABASE_URL
 |---|---|
 | `make dev` reclama da `.venv` | Confira `.venv/bin/python --version` (3.11+) e instale `ia-core/requirements.txt`. |
 | A interface abre, mas não carrega dados | Confirme `http://localhost:8080/healthz` e veja `citadel-api.log`; o Vite precisa estar na porta `5173`. |
-| IA Core retorna `local-heuristico` | É o comportamento esperado sem `GEMINI_API_KEY`; reinicie `make dev` depois de editar `ia-core/.env.local`. |
+| IA Core retorna `local-heuristico` | É o comportamento esperado sem `OPENAI_API_KEY`/`GEMINI_API_KEY`; reinicie `make dev` depois de editar `ia-core/.env.local`. |
 | Documento escaneado fica sem texto | Confira `tesseract --list-langs` e a presença do idioma `por`; veja `citadel-ia.log`. |
 | Login pede código | No desenvolvimento, procure o código no terminal de `make dev`; em produção, confira SMTP e os logs da API. |
 | Lote não avança | Veja os logs do worker e IA Core; em produção, `docker compose logs -f worker ia-core`. |

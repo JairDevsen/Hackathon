@@ -24,6 +24,8 @@ type Store interface {
 	Put(ctx context.Context, key string, r io.Reader, size int64) error
 	Get(ctx context.Context, key string) (io.ReadCloser, error)
 	Delete(ctx context.Context, key string) error
+	// DeletePrefix remove todos os objetos sob o prefixo (ex.: tudo de um lote) e devolve quantos removeu.
+	DeletePrefix(ctx context.Context, prefix string) (int, error)
 }
 
 // ---------- disco ----------
@@ -74,6 +76,25 @@ func (f *FS) Delete(ctx context.Context, key string) error {
 	return os.Remove(p)
 }
 
+// DeletePrefix apaga a pasta do prefixo (sem barra final). O prefixo vem de IDs do banco; o caminho continua preso ao Root.
+func (f *FS) DeletePrefix(ctx context.Context, prefix string) (int, error) {
+	p, err := f.path(strings.TrimSuffix(prefix, "/"))
+	if err != nil {
+		return 0, err
+	}
+	n := 0
+	_ = filepath.WalkDir(p, func(_ string, d os.DirEntry, err error) error {
+		if err == nil && !d.IsDir() {
+			n++
+		}
+		return nil
+	})
+	if err := os.RemoveAll(p); err != nil {
+		return 0, err
+	}
+	return n, nil
+}
+
 // ---------- S3 / MinIO ----------
 type S3 struct {
 	c      *minio.Client
@@ -113,6 +134,20 @@ func (s *S3) Get(ctx context.Context, key string) (io.ReadCloser, error) {
 	}
 	return o, nil
 }
+func (s *S3) DeletePrefix(ctx context.Context, prefix string) (int, error) {
+	n := 0
+	for obj := range s.c.ListObjects(ctx, s.bucket, minio.ListObjectsOptions{Prefix: prefix, Recursive: true}) {
+		if obj.Err != nil {
+			return n, obj.Err
+		}
+		if err := s.c.RemoveObject(ctx, s.bucket, obj.Key, minio.RemoveObjectOptions{}); err != nil {
+			return n, err
+		}
+		n++
+	}
+	return n, nil
+}
+
 func (s *S3) Delete(ctx context.Context, key string) error {
 	return s.c.RemoveObject(ctx, s.bucket, key, minio.RemoveObjectOptions{})
 }
@@ -186,6 +221,15 @@ func (v *Vault) Get(ctx context.Context, tenantID, key string) (io.ReadCloser, e
 		return nil, err
 	}
 	return readCloser{dr, raw}, nil
+}
+
+// DeleteBatch remove todos os objetos de um lote (original, páginas, miniaturas e PDFs gerados).
+func (v *Vault) DeleteBatch(ctx context.Context, tenantID, batchID string) (int, error) {
+	prefix := tenantID + "/" + batchID + "/"
+	if err := checkPrefix(tenantID, prefix); err != nil {
+		return 0, err
+	}
+	return v.Store.DeletePrefix(ctx, prefix)
 }
 
 func (v *Vault) ReadAll(ctx context.Context, tenantID, key string) ([]byte, error) {

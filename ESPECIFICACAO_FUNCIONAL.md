@@ -9,10 +9,11 @@ Legenda: ✅ implementado **e verificado** (teste/E2E citado) · 🟡 implementa
 |---|---|---|
 | Arquivos grandes (500 MB, PDF/TIFF/JPG/PNG/HEIC) | 🟡 | upload retomável em partes ✅ (`e2e_smoke` interrompe e retoma); fatiamento em streaming via PyMuPDF/Pillow; HEIC exige `pillow-heif`; **500 MB não foi testado** (maior teste: 60 páginas) |
 | Início/fim de cada documento + agrupamento | ✅ | `ia_core/agrupar.py`; teste com gabarito (frente/verso, página em branco); "Dividir aqui" (usa a página do meio — falta seletor na UI) e "Juntar" na revisão |
-| Classificação (36 tipos: 32 de RH/terceirização + 4 de risco da terceirizada) | ✅ | `ia_core/catalogo.py` (assert de 36) ; acurácia medida **só no motor local, em lotes fictícios** |
+| Classificação (44 tipos: 32 iniciais + 4 de risco da terceirizada + 8 que o gerador de documentos produz) | ✅ | `ia_core/catalogo.py` (assert de 44) ; acurácia medida **só no motor local, em lotes fictícios** |
 | OCR pesquisável | 🟡 | PDF com camada de texto invisível posicionada (palavra a palavra quando há texto/OCR) ✅; busca em texto completo (`tsvector` pt, sem acento) e destaque na imagem ✅. **PDF/A-2b não** (PDF comum); OCR de **imagens escaneadas depende de Tesseract**, não instalado no ambiente de teste (não verificado) |
 | Confiança e fila de revisão | ✅ | confiança por página/documento, motivos, fila priorizada, tela dividida, medição de duração |
-| Modelos multimodais (Gemini) | 🟡 | `GeminiProvider` (imagem + `response_schema` + fallback Pro) **escrito mas nunca executado** (sem chave); o motor local é o que roda nos testes |
+| Modelos multimodais (OpenAI) | 🟡 | `OpenAIProvider` (imagem em data URL + JSON com esquema no prompt, modelo reserva, tentativas automáticas) com testes usando cliente simulado. **Nunca executado com chave real**: os nomes padrão `gpt-5-mini`/`gpt-5`/`gpt-5-nano` não foram confirmados; `GET /diagnostico` mostra qual modelo responde. Tem prioridade sobre o Gemini quando as duas chaves existem |
+| Modelos multimodais (Gemini) | ✅/🟡 | `GeminiProvider` (imagem + `response_schema`, tentativas automáticas em 429/5xx e modelo reserva) **validado com uma chave real em 6 páginas fictícias**: 6/6 tipos corretos, confiança 0,95–0,99, CPF e CNPJ lidos. Amostra pequena, só de documentos impressos (certidões, guias, ponto): **manuscritos e imagens ruins não foram testados**. Os modelos `2.5-*` foram **fechados para chaves novas** (404): os padrões passaram a `gemini-3.5-flash` (visão), `gemini-3.5-flash-lite` (texto) e `gemini-3.6-flash` (reserva); nenhum modelo Pro estava acessível nessa chave. Cada página levou 9 a 17 s e 3 a 4,4 mil tokens |
 | Retomada após falha | ✅ | checkpoint por página, `/retry`, watchdog, backoff, fila de mensagens mortas; `chaos_test.py`: kill -9 do worker e IA Core com 15/60 páginas → termina com os 60 documentos do gabarito |
 | Anonimização | ✅/🟡 | cópia com tarja **queimada**, sem camada de texto e sem metadados (teste automático) ✅; mascaramento por perfil ✅; **política por empresa existe como dado mas não é aplicada** campo a campo; recusa gerar cópia de página sem OCR; pseudonimização em exportações ⛔ |
 
@@ -92,8 +93,8 @@ Esse prompt foi escrito para o protótipo antigo (`backend/main.py`, `app.js`/Bo
 | 5. Deduplicação SHA-256 (Camada 0) | ✅ | hash do PNG de cada página no fatiamento; páginas idênticas já processadas **na mesma empresa** reaproveitam a análise (0 tokens, 100 % de economia); E2E: lote variante reaproveita 11 páginas. Escopo: entre lotes (dentro do mesmo lote o cache não atua) |
 | 6. Extração dinâmica de empresa/CNPJ/funcionário | ✅ | `extracao.py` (regex; CNPJ validado por dígito) e campos `empresa_nome/empresa_cnpj` no schema do Gemini; sem nomes hardcoded; pasta usa a empresa lida (senão a do tenant) |
 | 7. Tarja LGPD por coordenadas exatas | ✅ (já existia) | `fatiar._caixas_pii` (`page.search_for` do PyMuPDF) + `render._tarjar`. **Sem tarjas fixas de fallback**: em página sem texto/OCR a cópia anonimizada é recusada (um retângulo "chutado" daria falsa sensação de anonimização) |
-| 8. Imagem 1024 px WebP antes do Gemini | 🟡 | `providers._reduzir` (`thumbnail` + WebP q=80; testado). A chamada real ao Gemini **não foi executada**. Atenção: 258 tokens vale para imagens ≤ 384 px; a 1024 px o consumo tende a ser maior (blocos de 768 px) |
-| Funil de 4 camadas no provedor Gemini | 🟡 | Camada 1 (texto nativo + regex) e Camada 3 (visão, Pro como fallback) escritas; **Camada 2 (Flash-Lite sobre texto) escrita sem *context caching*** e nunca executada com chave real |
+| 8. Imagem 1024 px WebP antes do Gemini | 🟡 | `providers._reduzir` (`thumbnail` + WebP q=80; testado). A chamada real foi executada (6 páginas): o consumo medido foi de **3 a 4,4 mil tokens por página**, bem acima dos 258 do simulador (ver nota abaixo). Atenção: 258 tokens vale para imagens ≤ 384 px; a 1024 px o consumo tende a ser maior (blocos de 768 px) |
+| Funil de 4 camadas nos provedores externos (OpenAI/Gemini) | 🟡 | Camada 1 (texto nativo + regex) e Camada 3 (visão, Pro como fallback) escritas; **Camada 2 (Flash-Lite sobre texto) escrita sem *context caching*** e nunca executada com chave real |
 
 ## Análise de erros e configuração por empresa (telas de referência: documento vencido, imagem borrada, dados divergentes)
 | Item | Status | Onde / evidência |
@@ -143,6 +144,17 @@ Esse prompt foi escrito para o protótipo antigo (`backend/main.py`, `app.js`/Bo
 | Telas: lista, dossiê do fornecedor (dados, documentos, funcionários, exigidos, riscos), painel por vínculo | ✅ | `features/rh/Fornecedores.tsx`; verificado com capturas reais (Playwright) |
 | Limites | 🟡 | Sem importação em planilha de fornecedores; sem exceção de exigência por fornecedor (a regra vale para todos); o motor local só reconhece o CNPJ quando o texto do documento tem camada de texto ou OCR |
 
+## Apagar lote enviado (com confirmação)
+| Item | Status | Onde / evidência |
+|---|---|---|
+| **Apagar um lote** enviado (botão na lista e no detalhe), com **modal de confirmação**: o que sai, o que fica, motivo obrigatório e caixa "entendo que é definitivo" | ✅ | `features/rh/ApagarLote.tsx`; `DELETE /batches/:id`; verificado com capturas reais e E2E seção 15 |
+| A API também exige a confirmação (`confirmar:true`) e o motivo (mín. 5 caracteres) | ✅ | `http/batches_delete.go` (400 sem eles) |
+| Só lote **terminado** (processado ou falho); em processamento → 409 | ✅ | E2E |
+| Remove o lote, as páginas, os documentos (com revisões, indicadores e itens ligados) e os **arquivos** (original, páginas, miniaturas, PDFs gerados); devolve os bytes à cota; recalcula conformidade e riscos | ✅ | `Store.DeletePrefix` (disco e S3); E2E |
+| Mantém funcionários/fornecedores criados a partir do lote, o consumo de páginas do mês e a **auditoria** (`LOTE_EXCLUIDO`, com motivo, arquivo e SHA-256) | ✅ | E2E |
+| Escopo por unidade respeitado (RH restrito não apaga lote de outra unidade → 404); documentos de outros lotes que este havia substituído voltam a valer | ✅ | `scopeBatch`; E2E (a restauração de substituídos tem implementação, sem teste dedicado) |
+| Limites | 🟡 | A exclusão é **definitiva**: não há lixeira nem restauração. A remoção dos arquivos ocorre depois do commit; se falhar, sobram objetos cifrados órfãos (registrado em log). Não verifica prazo legal de guarda dos documentos: o aviso na tela pede conferir com o jurídico |
+
 ## Revisão de segurança (código, funcionalidades, landing e perfis)
 Escopo: backend Go, IA Core, frontend (landing e as telas dos perfis Master, Administrador, RH e RH restrito por unidade), infraestrutura (Docker/Traefik/nginx/CI) e dependências. Método: leitura do código com buscas dirigidas (SQL dinâmico, cobertura do filtro de dados de saúde, uso de escopo de unidade, sinks de XSS), `govulncheck`, `npm audit` e `pip-audit`.
 
@@ -168,7 +180,7 @@ Escopo: backend Go, IA Core, frontend (landing e as telas dos perfis Master, Adm
 - A cobrança por e-mail (`POST /compliance/cobrar`) lista pendências de todas as unidades para todos os usuários, sem filtrar pelo escopo de cada destinatário.
 - Um RH restrito pode vincular um documento (ação VINCULAR da revisão) a um funcionário de outra unidade.
 - No acesso de suporte o Master ainda vê nome, e-mail e telefone de funcionários; só os documentos são anonimizados.
-- Com `GEMINI_API_KEY`, imagens e textos dos documentos saem para a API do Gemini; valide o tratamento de dados reais antes de ativar.
+- Com `OPENAI_API_KEY` ou `GEMINI_API_KEY`, imagens e textos dos documentos saem para a API do provedor escolhido; valide o tratamento de dados reais antes de ativar.
 - `ia-core/requirements.txt` não fixa versões exatas: a imagem Docker resolve as mais novas (por exemplo `fastapi` 0.162 e `starlette` 1.10), enquanto os testes locais rodaram em `fastapi` 0.128 e `starlette` 0.49 (Python 3.9). Fixe um lock e rode a suíte do IA Core em Python 3.12.
 - Os testes de regressão da seção 12 foram executados só com o código corrigido; não foram rodados contra o código anterior para confirmar que falhavam.
 

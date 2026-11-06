@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { fireEvent, render, screen } from '@testing-library/react'
 import { ComplianceRing, DataTable, EmptyState, Modal, StatusPill } from '.'
 import { filterNav } from '../shell/nav'
@@ -18,6 +19,20 @@ describe('componentes', () => {
     expect(screen.getByRole('dialog')).toHaveAccessibleName('Teste')
     fireEvent.keyDown(document, { key: 'Escape' })
     expect(onClose).toHaveBeenCalled()
+  })
+  it('Modal mantém o foco no campo enquanto se digita, mesmo com onClose inline', () => {
+    function Exemplo() {
+      const [v, setV] = useState('')
+      return <Modal open onClose={() => setV('')} title="Teste"><textarea aria-label="motivo" value={v} onChange={(e) => setV(e.target.value)} /></Modal>
+    }
+    render(<Exemplo />)
+    const campo = screen.getByLabelText('motivo') as HTMLTextAreaElement
+    campo.focus()
+    for (const texto of ['e', 'er', 'err', 'erro']) {
+      fireEvent.change(campo, { target: { value: texto } })
+      expect(campo).toHaveFocus()
+    }
+    expect(campo.value).toBe('erro')
   })
   it('DataTable mostra estado vazio', () => {
     render(<DataTable rows={[]} cols={[]} empty={<EmptyState title="Nada aqui" />} />)

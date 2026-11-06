@@ -67,14 +67,18 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaHTMLAttributes<H
 /* ---------- Modal (overlay com blur, cartão em degradê, eyebrow, título em Playfair, fechar circular) ---------- */
 export function Modal({ open, onClose, eyebrow, title, children, footer, wide }: { open: boolean; onClose: () => void; eyebrow?: string; title: string; children: ReactNode; footer?: ReactNode; wide?: boolean }) {
   const ref = useRef<HTMLDivElement>(null)
+  // onClose costuma ser uma função inline (nova a cada render). Se entrasse nas dependências do efeito, cada tecla digitada
+  // num campo do modal reexecutaria o efeito e devolveria o foco ao diálogo. Por isso fica numa ref e o efeito só reage a `open`.
+  const onCloseRef = useRef(onClose)
+  useEffect(() => { onCloseRef.current = onClose })
   useEffect(() => {
     if (!open) return
     const prev = document.activeElement as HTMLElement | null
-    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onCloseRef.current() }
     document.addEventListener('keydown', onKey)
     ref.current?.focus()
     return () => { document.removeEventListener('keydown', onKey); prev?.focus() }
-  }, [open, onClose])
+  }, [open])
   if (!open) return null
   return createPortal(
     <div className="fixed inset-0 z-50 grid place-items-center p-4 backdrop-blur-sm" style={{ background: 'rgba(20,11,40,.45)' }} onMouseDown={(e) => e.target === e.currentTarget && onClose()}>

@@ -55,6 +55,7 @@ func (s *Server) tenantRoutes(t *gin.RouterGroup) {
 	t.GET("/batches/:id/events", s.scopeBatch("id"), s.batchEvents)
 	t.GET("/batches/:id/export-zip", s.scopeBatch("id"), s.exportBatchZip)
 	t.POST("/batches/:id/retry", up, s.scopeBatch("id"), s.retryBatch)
+	t.DELETE("/batches/:id", up, s.scopeBatch("id"), s.deleteBatch)
 
 	// documentos e revisão
 	t.GET("/documents", s.listDocuments)

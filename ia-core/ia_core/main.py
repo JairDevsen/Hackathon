@@ -177,6 +177,14 @@ def render_pdf(body: RenderIn):
     return Response(pdf, media_type="application/pdf")
 
 
+@app.get("/diagnostico", dependencies=[Depends(auth)])
+def diagnostico():
+    """Chamada mínima (sem documento) a cada modelo configurado: confere chave, nomes de modelo e disponibilidade."""
+    if hasattr(PROVIDER, "diagnosticar"):
+        return {"provider": PROVIDER.nome, "modelos": PROVIDER.diagnosticar()}
+    return {"provider": PROVIDER.nome, "modelos": [], "aviso": "motor local: não há modelo externo configurado"}
+
+
 @app.post("/qualidade", dependencies=[Depends(auth)])
 def qualidade():
     from .qualidade import executar

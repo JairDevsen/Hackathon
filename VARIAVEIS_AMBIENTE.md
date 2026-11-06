@@ -31,10 +31,16 @@ Para produção, copie `.env.example` para `.env` e execute `make keys`: ele pre
 | `IA_CORE_URL` | endereço do IA Core | `http://localhost:8001` | |
 | `IA_CORE_API_KEY` | chave API → IA Core | `dev-ia-core-key` | **obrigatória** |
 | `IA_CALLBACK_SECRET` | HMAC dos callbacks IA Core → API (janela de 10 min) | fixa de dev | **obrigatória**; mesmo valor nos dois |
-| `GEMINI_API_KEY` | liga o provedor Gemini no IA Core; vazio = motor local | vazio | no `make dev`, coloque em `ia-core/.env.local` e reinicie; no Compose, configure no `.env` |
-| `GEMINI_MODEL`, `GEMINI_MODEL_FALLBACK` | modelo padrão e modelo maior para páginas difíceis | `gemini-2.5-flash` / `gemini-2.5-pro` | |
-| `GEMINI_MODEL_LITE` | modelo barato da Camada 2 (texto extraído, sem imagem) | `gemini-2.5-flash-lite` | |
-| `GEMINI_IMAGE_MAX_PX` | lado máximo da imagem enviada ao Gemini Vision (redução proporcional, WebP q=80) | `1024` | só a cópia enviada à IA é reduzida; o original fica guardado. Menos pixels = menos tokens, mas pior para manuscrito |
+| `IA_PROVIDER` | força o provedor: `openai`, `gemini` ou `local`. Vazio = escolha automática (OpenAI, depois Gemini, depois local) | vazio | provedor explícito sem a chave correspondente impede o IA Core de subir |
+| `OPENAI_API_KEY` | liga o provedor OpenAI no IA Core; vazio = não usa | vazio | no `make dev`, coloque em `ia-core/.env.local` e reinicie; no Compose, configure no `.env`. Tem prioridade sobre a chave do Gemini |
+| `OPENAI_MODEL`, `OPENAI_MODEL_FALLBACK` | modelo padrão (visão) e modelo maior para páginas difíceis | `gpt-5-mini` / `gpt-5` | nomes não validados com chave real: confira em `GET /diagnostico` |
+| `OPENAI_MODEL_LITE` | modelo barato da Camada 2 (texto extraído, sem imagem) | `gpt-5-nano` | |
+| `OPENAI_REASONING_EFFORT` | opcional: `minimal`, `low`, `medium` ou `high` (só para modelos que aceitam) | vazio | menos esforço = respostas mais rápidas e baratas |
+| `OPENAI_BASE_URL` | opcional: endpoint compatível com a API da OpenAI (Azure, proxy interno) | vazio | |
+| `GEMINI_API_KEY` | liga o provedor Gemini no IA Core; vazio = não usa | vazio | no `make dev`, coloque em `ia-core/.env.local` e reinicie; no Compose, configure no `.env` |
+| `GEMINI_MODEL`, `GEMINI_MODEL_FALLBACK` | modelo padrão e modelo maior para páginas difíceis | `gemini-3.5-flash` / `gemini-3.6-flash` | |
+| `GEMINI_MODEL_LITE` | modelo barato da Camada 2 (texto extraído, sem imagem) | `gemini-3.5-flash-lite` | |
+| `IA_IMAGE_MAX_PX` (ou `GEMINI_IMAGE_MAX_PX`) | lado máximo da imagem enviada ao modelo de visão (redução proporcional, WebP q=80) | `1024` | só a cópia enviada à IA é reduzida; o original fica guardado. Menos pixels = menos tokens, mas pior para manuscrito |
 | `IA_NITIDEZ_MIN` | limite de nitidez abaixo do qual uma imagem sem texto é tratada como **borrada** (variância do filtro de bordas) | `600` | heurística calibrada só com amostras sintéticas (texto nítido ≈ 2000, desfoque forte ≈ 400): **calibre com digitalizações reais** |
 | `IA_WORKERS` | threads de análise no IA Core | `4` | |
 | `IA_PAGE_DELAY_MS` | atraso por página (**só teste de caos**) | `0` | |
@@ -49,4 +55,4 @@ Para produção, copie `.env.example` para `.env` e execute `make keys`: ele pre
 | `CORS_ORIGINS` | origens extras (dev sem proxy) | `http://localhost:5173` | em produção a SPA e a API usam o mesmo domínio |
 | `PUBLIC_API_URL` (frontend) | base da API na SPA | vazio (mesma origem) | gerada em `/config.js` pelo `entrypoint.sh` |
 
-**IA em produção:** o provedor Vertex AI ainda não está implementado. O motor local não envia páginas a serviços externos, mas tem limitações em manuscritos e digitalizações ruins. Se usar uma chave Gemini, valide antes as condições de tratamento dos documentos reais; o fluxo pode enviar imagem ou texto de páginas difíceis ao serviço externo.
+**IA em produção:** o provedor Vertex AI ainda não está implementado. O motor local não envia páginas a serviços externos, mas tem limitações em manuscritos e digitalizações ruins. Se usar uma chave OpenAI ou Gemini, valide antes as condições de tratamento dos documentos reais; o fluxo pode enviar imagem ou texto de páginas difíceis ao serviço externo.

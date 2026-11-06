@@ -19,8 +19,8 @@ def _rodar(pdf: bytes):
         return man, zf.namelist(), agrupar.agrupar(analises)
 
 
-def test_catalogo_tem_32_tipos():
-    assert len(catalogo.CODIGOS) == 36
+def test_catalogo_tem_44_tipos():
+    assert len(catalogo.CODIGOS) == 44
 
 
 def test_lote_misto_separa_e_classifica():
@@ -198,3 +198,92 @@ def test_tipos_de_risco_para_a_contratante():
     for tipo, texto in casos.items():
         assert catalogo.classificar(texto)[0] == tipo, tipo
         assert "empresa_cnpj" in schemas.schema_do_tipo(tipo)["properties"], tipo  # o formulário manual permite corrigir o fornecedor
+
+
+# ---------- provedores de IA (cliente simulado: sem rede e sem chave) ----------
+
+def _png_branco():
+    import io
+    from PIL import Image
+    b = io.BytesIO(); Image.new("RGB", (300, 300), "white").save(b, "PNG"); return b.getvalue()
+
+
+class _FakeOpenAI:
+    """Imita client.chat.completions.create e guarda os argumentos recebidos."""
+    def __init__(self, respostas, falhar_em=()):
+        self.chamadas, self._resp, self._falhar = [], list(respostas), set(falhar_em)
+        self.chat = type("C", (), {"completions": self})()
+
+    def create(self, **kw):
+        import json
+        self.chamadas.append(kw)
+        if kw["model"] in self._falhar:
+            raise RuntimeError("404 model not found")
+        corpo = self._resp.pop(0) if self._resp else {"tipo": "OUTRO", "inicia_documento": True, "confianca": 0.9}
+        msg = type("M", (), {"content": json.dumps(corpo)})()
+        return type("R", (), {"choices": [type("Ch", (), {"message": msg})()], "usage": type("U", (), {"total_tokens": 1234})()})()
+
+
+def _provider_openai(fake):
+    from ia_core.providers import OpenAIProvider
+    p = OpenAIProvider("sk-teste"); p.client = fake; return p
+
+
+def test_escolha_do_provedor(monkeypatch):
+    import pytest
+    from ia_core.providers import obter_provider
+    for k in ("IA_PROVIDER", "OPENAI_API_KEY", "GEMINI_API_KEY"):
+        monkeypatch.delenv(k, raising=False)
+    assert obter_provider().nome == "local-heuristico"
+    monkeypatch.setenv("GEMINI_API_KEY", "g-teste")
+    assert obter_provider().nome.startswith("gemini:")
+    monkeypatch.setenv("OPENAI_API_KEY", "sk-teste")
+    assert obter_provider().nome.startswith("openai:"), "com as duas chaves, a OpenAI tem prioridade"
+    monkeypatch.setenv("IA_PROVIDER", "gemini")
+    assert obter_provider().nome.startswith("gemini:"), "IA_PROVIDER explícito manda"
+    monkeypatch.setenv("IA_PROVIDER", "local")
+    assert obter_provider().nome == "local-heuristico"
+    monkeypatch.delenv("OPENAI_API_KEY"); monkeypatch.setenv("IA_PROVIDER", "openai")
+    with pytest.raises(RuntimeError):
+        obter_provider()  # pedir a OpenAI sem chave falha na inicialização, em vez de cair em silêncio no motor local
+    monkeypatch.setenv("IA_PROVIDER", "outra")
+    with pytest.raises(RuntimeError):
+        obter_provider()
+
+
+def test_openai_visao_monta_o_pedido_e_normaliza():
+    resp = {"tipo": "HOLERITE", "inicia_documento": True, "confianca": 0.93, "titulo": "Holerite", "cpf": "74602318860", "empresa_cnpj": "11222333000181",
+            "extras": [{"chave": "salario_base", "valor": "2000,00"}]}
+    fake = _FakeOpenAI([resp]); p = _provider_openai(fake)
+    pg = p.analisar(_png_branco(), 1, None, "", "MISTO")
+    kw = fake.chamadas[0]
+    assert kw["model"] == p.model and kw["response_format"] == {"type": "json_object"} and "temperature" not in kw
+    partes = kw["messages"][0]["content"]
+    assert partes[0]["type"] == "text" and "JSON Schema" in partes[0]["text"] and "HOLERITE" in partes[0]["text"]
+    assert partes[1]["type"] == "image_url" and partes[1]["image_url"]["url"].startswith("data:image/webp;base64,")
+    assert pg["tipo"] == "HOLERITE" and pg["confianca"] == 0.93 and pg["tokens"] == 1234 and pg["camada"].startswith("Camada 3")
+    assert pg["campos"]["cpf"] == "74602318860" and pg["campos"]["salario_base"] == "2000,00"
+
+
+def test_openai_texto_usa_modelo_leve_e_resposta_invalida_vira_outro():
+    fake = _FakeOpenAI([{"tipo": "NAO_EXISTE", "inicia_documento": True, "confianca": "alta"}]); p = _provider_openai(fake)
+    pg = p.analisar(_png_branco(), 1, None, "texto livre sem pista nenhuma de documento " * 4, "MISTO")
+    assert fake.chamadas[0]["model"] == p.lite and isinstance(fake.chamadas[0]["messages"][0]["content"], str)
+    assert pg["camada"].startswith("Camada 2") and pg["tipo"] == "OUTRO" and pg["confianca"] == 0.5
+
+
+def test_openai_modelo_reserva_quando_o_principal_falha():
+    fake = _FakeOpenAI([], falhar_em={"gpt-5-mini"}); p = _provider_openai(fake)
+    pg = p.analisar(_png_branco(), 1, None, "", "MISTO")
+    assert [c["model"] for c in fake.chamadas] == ["gpt-5-mini", "gpt-5"] and pg["camada"].startswith("Camada 3")
+
+
+def test_diagnostico_lista_cada_modelo_e_o_erro():
+    class P(_FakeOpenAI):
+        def create(self, **kw):
+            if kw["model"] == "gpt-5-nano":
+                raise RuntimeError("model_not_found")
+            return type("R", (), {"choices": [type("Ch", (), {"message": type("M", (), {"content": "OK"})()})()], "usage": None})()
+    r = _provider_openai(P([])).diagnosticar()
+    por_modelo = {x["modelo"]: x for x in r}
+    assert por_modelo["gpt-5-mini"]["ok"] and not por_modelo["gpt-5-nano"]["ok"] and "model_not_found" in por_modelo["gpt-5-nano"]["erro"]

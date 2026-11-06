@@ -22,7 +22,7 @@ load_ia_env() {
     name="${line%%=*}"
     value="${line#*=}"
     case "$name" in
-      GEMINI_API_KEY|GEMINI_MODEL|GEMINI_MODEL_FALLBACK|GEMINI_MODEL_LITE|GEMINI_IMAGE_MAX_PX) export "$name=$value" ;;
+      IA_PROVIDER|IA_IMAGE_MAX_PX|OPENAI_API_KEY|OPENAI_MODEL|OPENAI_MODEL_FALLBACK|OPENAI_MODEL_LITE|OPENAI_REASONING_EFFORT|OPENAI_BASE_URL|GEMINI_API_KEY|GEMINI_MODEL|GEMINI_MODEL_FALLBACK|GEMINI_MODEL_LITE|GEMINI_IMAGE_MAX_PX) export "$name=$value" ;;
       *) echo "IA Core: variável não permitida em .env.local: $name" >&2; return 1 ;;
     esac
   done < "$file"

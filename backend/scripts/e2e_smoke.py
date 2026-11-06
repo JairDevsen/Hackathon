@@ -395,4 +395,54 @@ assert get(rh, f"/documents/{dv[0]['id']}")["fornecedor_cnpj"] == FORN; ok("corr
 assert c.patch(f"{API}/suppliers/{f2}", headers=H(rh), json={"status": "INATIVO"}).status_code == 204
 assert not [i for i in get(rh, "/risks", params={"supplier": f2})["items"] if i["codigo"].startswith("FORN_")]; ok("fornecedor inativo: deixa de ser cobrado e de gerar indicadores de fornecedor")
 
+print("14. Cobertura dos tipos do gerador de documentos: tipos novos classificados e vinculados")
+tipos_novos = {t["codigo"] for t in get(adm, "/document-types")}
+assert len(tipos_novos) == 44 and {"COMPROVANTE_PAGAMENTO", "NOTIFICACAO_EMPREGADO", "DECLARACAO_MANUSCRITA", "RECIBO_AVULSO", "JUSTIFICATIVA_FALTA", "DECLARACAO_DEPENDENTES", "CHECKLIST_INTEGRACAO", "TERMO_RESPONSABILIDADE"} <= tipos_novos; ok("catálogo do banco com 44 tipos (inclui os 8 que o gerador produz)")
+for t in ("RECIBO_AVULSO", "JUSTIFICATIVA_FALTA", "TERMO_RESPONSABILIDADE", "CAT_ACIDENTE"):
+    sch = get(rh, f"/document-types/{t}/schema"); assert "empresa_cnpj" in sch["properties"] and len(sch["properties"]) > 8, t
+ok("formulário manual disponível para os tipos novos")
+CPF_J = "746.023.188-60"
+lote3 = pdf_paginas([
+    ["Comprovante de Transferencia PIX", "BANCO FICTICIO S.A.", "Valor: R$ 1.941,87", "Finalidade: Pagamento de salario 10/2026", "Pagador: BRILHO LIMPEZA LTDA", f"CPF do favorecido: {CPF_J}", "Favorecido: JOSE ALVES DA SILVA", "ID da transacao: FICT-0001"],
+    ["RECIBO", "R$ 860,00", "Recebi(emos) de BRILHO LIMPEZA LTDA", "a quantia de oitocentos e sessenta reais", "referente a adiantamento salarial de setembro/2026", "JOSE ALVES DA SILVA", f"CPF {CPF_J}"],
+    ["JUSTIFICATIVA", "Ausencia / Atraso", "Empregado: JOSE ALVES DA SILVA", f"CPF {CPF_J}", "Data da ocorrencia: 03/11/2026", "Motivo: Falecimento de parente.", "Visto da chefia imediata"],
+    ["TERMO DE RESPONSABILIDADE", "Ferramentas, uniforme e cracha", "Empregado: JOSE ALVES DA SILVA", f"CPF {CPF_J}", "Recebi os itens abaixo em perfeito estado, comprometendo-me a zelar por sua conservacao", "autorizando o desconto em caso de perda ou dano", "Assinatura do empregado"],
+    ["DECLARACAO DE DEPENDENTES", "Salario-familia / IRRF", "Empregado: JOSE ALVES DA SILVA", f"CPF {CPF_J}", "Nome do dependente | Parentesco", "Declaro, sob as penas da lei, que as informacoes acima sao verdadeiras", "Assinatura do empregado"],
+])
+b15 = enviar_e_esperar("tipos_gerador.pdf", lote3)
+tp = {d["document_type"] for d in b15["documentos"]}
+assert {"COMPROVANTE_PAGAMENTO", "RECIBO_AVULSO", "JUSTIFICATIVA_FALTA", "TERMO_RESPONSABILIDADE", "DECLARACAO_DEPENDENTES"} <= tp, tp; ok(f"lote com documentos novos: classificados como {sorted(tp)}")
+assert all(d["employee_id"] for d in b15["documentos"] if d["document_type"] != "OUTRO"); ok("e vinculados ao funcionário pelo CPF")
+
+print("15. Apagar lote enviado, com confirmação")
+paginas_apagar = [["RECIBO DE PAGAMENTO - HOLERITE", "EMPRESA: AGROTECH GARANHUNS LTDA CNPJ: 14.589.201/0001-80", "NOME: JOSE ALVES DA SILVA", "CPF: 746.023.188-60", f"COMPETENCIA: {m:02d}/2025", "SALARIO BASE: R$ 2.000,00", "LIQUIDO A RECEBER: R$ 1.700,00"] for m in range(1, 7)]
+pdf_apagar = pdf_paginas(paginas_apagar)
+jose = get(rh, "/employees", params={"q": "746.023.188-60"})["items"][0]
+docs_jose_antes = len(get(rh, f"/employees/{jose['id']}/documents"))
+bytes_antes = get(rh, "/tenant")["bytes_usados"]
+r = c.post(f"{API}/batches", headers=H(rh), files={"file": ("lote_para_apagar.pdf", pdf_apagar)}); assert r.status_code == 202, r.text; bid = r.json()["id"]
+r = c.request("DELETE", f"{API}/batches/{bid}", headers=H(rh), json={"confirmar": True, "motivo": "teste de exclusão"}); assert r.status_code == 409, r.text; ok("lote ainda em processamento: exclusão recusada (409)")
+for _ in range(90):
+    bb = get(rh, f"/batches/{bid}")
+    if bb["status"].startswith("PROCESSADO") or bb["status"] == "FALHOU": break
+    time.sleep(1)
+assert bb["status"].startswith("PROCESSADO"), bb["status"]
+n_docs = len(get(rh, "/documents", params={"lote": bid, "limit": 100})["items"]); assert n_docs >= 6; assert len(get(rh, f"/employees/{jose['id']}/documents")) > docs_jose_antes
+assert get(rh, "/tenant")["bytes_usados"] > bytes_antes; ok(f"lote processado: {n_docs} documentos e mais bytes na cota")
+D = lambda tok, body: c.request("DELETE", f"{API}/batches/{bid}", headers=H(tok), json=body)
+assert D(rh, {}).status_code == 400 and D(rh, {"confirmar": False, "motivo": "teste de exclusão"}).status_code == 400; ok("sem confirmação explícita: 400 (a API também exige)")
+assert D(rh, {"confirmar": True, "motivo": "x"}).status_code == 400; ok("sem motivo (mín. 5 caracteres): 400")
+assert D(rh3, {"confirmar": True, "motivo": "tentativa fora do escopo"}).status_code == 404; ok("RH restrito a outra unidade não apaga o lote (404)")
+assert get(rh, f"/batches/{bid}") is not None and len(get(rh, "/documents", params={"lote": bid, "limit": 100})["items"]) == n_docs; ok("nada foi apagado pelas tentativas recusadas")
+r = D(rh, {"confirmar": True, "motivo": "arquivo enviado por engano"}); assert r.status_code == 200, r.text; res = r.json()
+assert res["documentos"] == n_docs and res["paginas"] == 6 and res["arquivos_removidos"] >= 13 and res["bytes_liberados"] > 0 and not res["arquivos_com_falha"], res; ok(f"lote apagado: {res['documentos']} documentos, {res['paginas']} páginas, {res['arquivos_removidos']} arquivos removidos")
+assert get(rh, f"/batches/{bid}") is None; ok("o lote deixou de existir")
+assert not get(rh, "/documents", params={"lote": bid, "limit": 100})["items"] and len(get(rh, f"/employees/{jose['id']}/documents")) == docs_jose_antes; ok("os documentos do lote saíram do dossiê do funcionário")
+assert get(rh, "/tenant")["bytes_usados"] <= bytes_antes; ok("os bytes voltaram para a cota")
+assert not any(n.get("link") == f"/lotes/{bid}" for n in get(rh, "/notifications")["itens"]); ok("as notificações do lote foram removidas")
+ev = [a for a in get(adm, "/audit", params={"acao": "LOTE_EXCLUIDO", "limit": 50})["items"] if a["entidade_id"] == bid]; assert ev and ev[0]["dados"]["motivo"] == "arquivo enviado por engano" and ev[0]["dados"]["arquivo"] == "lote_para_apagar.pdf"; ok("a exclusão ficou na auditoria, com motivo e arquivo")
+assert D(rh, {"confirmar": True, "motivo": "de novo"}).status_code == 404; ok("apagar de novo: 404")
+r = c.post(f"{API}/batches", headers=H(rh), files={"file": ("lote_para_apagar.pdf", pdf_apagar)}); assert r.status_code == 202, r.text; ok("o mesmo arquivo pode ser reenviado (não cai mais na duplicidade por SHA-256)")
+enviar_e_esperar  # (o lote reenviado termina de processar em segundo plano)
+
 print("\nOK — todos os checks passaram")

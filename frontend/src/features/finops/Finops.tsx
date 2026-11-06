@@ -16,8 +16,8 @@ export function FinopsPage() {
   const camadas = [
     { n: 0, icon: Database, titulo: 'Deduplicação SHA-256 + validade vigente', pct: 30, docs: r.docs.c0, custo: r.custo.c0, nota: 'Mesma página já processada: resultado reaproveitado, 0 tokens', cor: 'bg-success' },
     { n: 1, icon: ScanText, titulo: 'Texto nativo do PDF + regex local + poda de páginas inúteis', pct: 45, docs: r.docs.c1, custo: r.custo.c1, nota: 'Sem chamada de IA', cor: 'bg-success' },
-    { n: 2, icon: Layers, titulo: 'Context caching + Gemini 2.5 Flash-Lite sobre o texto extraído', pct: 15, docs: r.docs.c2, custo: r.custo.c2, nota: '≈ US$ 0,01 por 1 mi de tokens (premissa do cenário)', cor: 'bg-brand-light' },
-    { n: 3, icon: Cpu, titulo: 'Gemini 2.5 Flash Vision, imagem 1024 px em WebP, só manuscritos/AR/exames', pct: 10, docs: r.docs.c3, custo: r.custo.c3, nota: '258 tokens/página (premissa do cenário)', cor: 'bg-brand' },
+    { n: 2, icon: Layers, titulo: 'Modelo leve de texto sobre o texto extraído (premissa: com context caching, que o código ainda não usa)', pct: 15, docs: r.docs.c2, custo: r.custo.c2, nota: '≈ US$ 0,01 por 1 mi de tokens (premissa do cenário)', cor: 'bg-brand-light' },
+    { n: 3, icon: Cpu, titulo: 'Modelo multimodal (visão), imagem 1024 px em WebP, só manuscritos/AR/exames', pct: 10, docs: r.docs.c3, custo: r.custo.c3, nota: '258 tokens/página (premissa do cenário)', cor: 'bg-brand' },
   ]
   return (
     <div>
@@ -58,7 +58,7 @@ export function FinopsPage() {
               <Field key={k} label={l}>{(id) => <Input id={id} type="number" step="0.000001" min={0} value={p[k]} onChange={(e) => setP({ ...p, [k]: Number(e.target.value) })} />}</Field>
             ))}
           </div>
-          <p className="mt-3 text-xs text-muted-foreground">Nota: na documentação do Gemini que conheço, 258 tokens correspondem a imagens de até 384 px; imagens maiores são divididas em blocos de 768 px (≈ 258 tokens cada). Uma página reduzida a 1024 px pode, portanto, consumir mais de 258 tokens: use o consumo real medido (ao lado) para calibrar.</p>
+          <p className="mt-3 text-xs text-muted-foreground">Nota: na documentação do Gemini que conheço, 258 tokens correspondem a imagens de até 384 px; imagens maiores são divididas em blocos de 768 px (≈ 258 tokens cada). Uma página reduzida a 1024 px pode, portanto, consumir mais de 258 tokens: use o consumo real medido (ao lado) para calibrar. Em um teste real com 6 páginas (chave de protótipo), medimos de 3 a 4,4 mil tokens por página, incluindo a resposta estruturada.</p>
         </Card>
         <Card title="Consumo real da sua empresa">
           <DataTable rows={real.data?.map((x) => ({ id: x.camada, ...x }))} loading={real.isLoading} empty={<p className="text-sm text-muted-foreground">Processe um lote para ver o consumo por camada.</p>}

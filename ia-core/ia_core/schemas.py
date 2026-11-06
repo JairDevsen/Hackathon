@@ -132,7 +132,72 @@ class CamposAuditoria(CamposBase):
     nivel_risco: Optional[str] = Field(None, description="BAIXO, MEDIO ou ALTO")
 
 
+class CamposComprovantePagamento(CamposBase):
+    banco: Optional[str] = None
+    data_pagamento: Optional[str] = Field(None, description="AAAA-MM-DD")
+    valor: Optional[str] = Field(None, description="Valor pago (R$)")
+    pagador_nome: Optional[str] = None
+    pagador_documento: Optional[str] = Field(None, description="CPF/CNPJ do pagador")
+    favorecido_nome: Optional[str] = None
+    favorecido_documento: Optional[str] = Field(None, description="CPF/CNPJ do favorecido")
+    finalidade: Optional[str] = Field(None, description="Ex.: pagamento de salário 10/2026")
+    autenticacao: Optional[str] = Field(None, description="ID da transação / autenticação bancária")
+
+
+class CamposNotificacao(CamposBase):
+    assunto: Optional[str] = Field(None, description="Ex.: ausência ao trabalho, convocação para retorno")
+    prazo_dias: Optional[str] = Field(None, description="Prazo para resposta, em dias")
+
+
+class CamposDeclaracaoManuscrita(CamposBase):
+    assunto: Optional[str] = Field(None, description="Residência, dependentes, não acúmulo de emprego...")
+    endereco: Optional[str] = None
+
+
+class CamposReciboAvulso(CamposBase):
+    tipo_pagamento: Optional[str] = Field(None, description="Adiantamento, vale, diária...")
+    valor: Optional[str] = Field(None, description="Valor (R$)")
+    valor_por_extenso: Optional[str] = None
+    recebedor_nome: Optional[str] = None
+    pagador_nome: Optional[str] = None
+    referente_a: Optional[str] = None
+
+
+class CamposJustificativaFalta(CamposBase):
+    tipo_ocorrencia: Optional[str] = Field(None, description="Falta ou atraso")
+    data_ocorrencia: Optional[str] = Field(None, description="AAAA-MM-DD")
+    motivo: Optional[str] = None
+    visto_chefia_presente: Optional[bool] = None
+
+
+class CamposDependentes(CamposBase):
+    dependentes: Optional[str] = Field(None, description="Nome e parentesco de cada dependente")
+    quantidade: Optional[str] = None
+
+
+class CamposChecklistIntegracao(CamposBase):
+    itens_marcados: Optional[str] = Field(None, description="Itens do checklist marcados")
+    assinatura_responsavel_presente: Optional[bool] = None
+
+
+class CamposTermoResponsabilidade(CamposBase):
+    itens_entregues: Optional[str] = Field(None, description="Ferramentas, uniforme, crachá e quantidades")
+
+
+class CamposOcorrencia(CamposBase):
+    tipo: Optional[str] = Field(None, description="ACIDENTE ou QUASE_ACIDENTE")
+    data_ocorrencia: Optional[str] = Field(None, description="AAAA-MM-DD")
+    hora: Optional[str] = None
+    local: Optional[str] = None
+    descricao: Optional[str] = None
+    houve_afastamento: Optional[bool] = None
+    testemunha_nome: Optional[str] = None
+
+
 SCHEMAS: Dict[str, Type[BaseModel]] = {
+    "COMPROVANTE_PAGAMENTO": CamposComprovantePagamento, "NOTIFICACAO_EMPREGADO": CamposNotificacao, "DECLARACAO_MANUSCRITA": CamposDeclaracaoManuscrita,
+    "RECIBO_AVULSO": CamposReciboAvulso, "JUSTIFICATIVA_FALTA": CamposJustificativaFalta, "DECLARACAO_DEPENDENTES": CamposDependentes,
+    "CHECKLIST_INTEGRACAO": CamposChecklistIntegracao, "TERMO_RESPONSABILIDADE": CamposTermoResponsabilidade, "CAT_ACIDENTE": CamposOcorrencia,
     "APOLICE_SEGURO": CamposApolice, "AUTO_INFRACAO": CamposAutoInfracao, "PROCESSO_JUDICIAL": CamposProcesso, "RELATORIO_AUDITORIA": CamposAuditoria,
     "CNH": CamposCNH, "RG": CamposRG, "FICHA_EPI": CamposEPI, "ATESTADO_MEDICO": CamposAtestado,
     "CONTRATO_TRABALHO": CamposContratoTrabalho, "FICHA_REGISTRO": CamposContratoTrabalho, "TRCT": CamposTRCT, "RECIBO_FERIAS": CamposFerias,

@@ -1,15 +1,19 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { useQueryClient } from '@tanstack/react-query'
-import { Archive, CheckCircle2, FileUp, RefreshCw, UploadCloud } from 'lucide-react'
+import { Archive, CheckCircle2, FileUp, RefreshCw, Trash2, UploadCloud } from 'lucide-react'
 import { Button, Card, DataTable, EmptyState, ErrorState, Field, Select, SectionHeading, SkeletonRows, StatusPill, clsx } from '@/components/ui'
 import { useGet } from '@/lib/query'
 import { api, download, streamEvents, uploadBatch } from '@/lib/api'
 import { fmtBytes, fmtDateTime, TIPOS_LOTE } from '@/lib/format'
+import { useAuth } from '@/lib/auth'
+import { ApagarLoteModal, type LoteParaApagar } from './ApagarLote'
 import { ResultadoLote } from './ResultadoLote'
 
 export function BatchList() {
   const nav = useNavigate()
+  const { can } = useAuth()
+  const [apagar, setApagar] = useState<LoteParaApagar | null>(null)
   const r = useGet<{ items: any[] }>('/batches', { limit: 50 }, { refetchInterval: 8000 })
   return (
     <div>
@@ -18,8 +22,10 @@ export function BatchList() {
         <DataTable rows={r.data?.items} loading={r.isLoading} onRow={(b) => nav(`/app/lotes/${b.id}`)} empty={<EmptyState icon={<FileUp className="h-5 w-5" />} title="Nenhum lote ainda" text="Arraste um PDF, TIFF ou ZIP de imagens digitalizadas para começar." action={<Button variant="primary" onClick={() => nav('/app/lotes/novo')}>Enviar o primeiro lote</Button>} />}
           cols={[{ key: 'arquivo_original', header: 'Arquivo' }, { key: 'total_paginas', header: 'Páginas' }, { key: 'bytes', header: 'Tamanho', render: (b) => fmtBytes(b.bytes) },
             { key: 'status', header: 'Status', render: (b) => <StatusPill status={b.status} /> }, { key: 'para_revisao', header: 'Revisão', render: (b) => (b.para_revisao ? <span className="font-semibold text-warning">{b.para_revisao}</span> : '—') },
-            { key: 'criado_em', header: 'Enviado em', render: (b) => fmtDateTime(b.criado_em) }]} />
+            { key: 'criado_em', header: 'Enviado em', render: (b) => fmtDateTime(b.criado_em) },
+            ...(can('lotes:enviar') ? [{ key: 'acoes', header: '', render: (b: any) => <Button size="sm" variant="danger" aria-label={`Apagar o lote ${b.arquivo_original}`} onClick={(e) => { e.stopPropagation(); setApagar({ id: b.id, arquivo_original: b.arquivo_original, status: b.status, total_paginas: b.total_paginas, documentos: b.resumo?.documentos }) }}><Trash2 className="h-4 w-4" /></Button> }] : [])]} />
       )}
+      {apagar && <ApagarLoteModal lote={apagar} open onClose={() => setApagar(null)} onDone={() => setApagar(null)} />}
     </div>
   )
 }
@@ -81,6 +87,9 @@ export function BatchDetail() {
   const [lgpd, setLgpd] = useState(false)
   const [zipBusy, setZipBusy] = useState(false)
   const [zipErr, setZipErr] = useState('')
+  const [apagando, setApagando] = useState(false)
+  const nav = useNavigate()
+  const { can } = useAuth()
   useEffect(() => {
     const ac = new AbortController()
     streamEvents(`/batches/${id}/events`, (e) => { setLive(e.lote); if (['concluido', 'falhou', 'falha'].includes(e.evento)) qc.invalidateQueries({ queryKey: [`/batches/${id}`] }) }, ac.signal)
@@ -104,7 +113,7 @@ export function BatchDetail() {
         {fmtBytes(b.bytes)} · enviado por {b.enviado_por ?? '—'} em {fmtDateTime(b.criado_em)} · SHA-256 {b.sha256?.slice(0, 12)}…</SectionHeading>
       {zipErr && <p role="alert" className="mb-3 rounded-lg bg-danger-bg p-2 text-sm text-danger">{zipErr}</p>}
       <Card className="mb-5">
-        <div className="flex flex-wrap items-center justify-between gap-3"><StatusPill status={status} />
+        <div className="flex flex-wrap items-center justify-between gap-3"><span className="flex items-center gap-3"><StatusPill status={status} />{can('lotes:enviar') && <Button size="sm" variant="danger" onClick={() => setApagando(true)}><Trash2 className="h-4 w-4" />Apagar lote</Button>}</span>
           <span className="text-sm text-muted-foreground" aria-live="polite">{total ? `${done} de ${total} páginas processadas` : 'Preparando páginas…'}{live?.paginas_falhas ? ` · ${live.paginas_falhas} com falha` : ''}</span></div>
         <div className="mt-3 h-2.5 overflow-hidden rounded-full bg-brand-lighter" role="progressbar" aria-valuenow={done} aria-valuemax={total || 1}><div className={clsx('h-full transition-all', status === 'FALHOU' ? 'bg-danger' : 'bg-brand-default', running && 'animate-pulse')} style={{ width: `${total ? (100 * done) / total : 8}%` }} /></div>
         {b.erro && <p role="alert" className="mt-3 rounded-lg bg-danger-bg p-2 text-sm text-danger">{b.erro}</p>}
@@ -128,6 +137,7 @@ export function BatchDetail() {
           </ol>
         </Card>
       </div>
+      <ApagarLoteModal lote={{ id: b.id, arquivo_original: b.arquivo_original, status, total_paginas: total, documentos: b.documentos?.length, revisados: (b.documentos ?? []).filter((d: any) => d.status === 'REVISADO').length }} open={apagando} onClose={() => setApagando(false)} onDone={() => { setApagando(false); nav('/app/lotes') }} />
     </div>
   )
 }

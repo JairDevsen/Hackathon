@@ -45,6 +45,7 @@ paths:
   /batches: { get: { summary: Lista }, post: { summary: Envio simples multipart, parameters: [{ $ref: "#/components/parameters/Idem" }] } }
   /batches/{id}: { get: { summary: "Lote + páginas + documentos + linha do tempo + resumo de pré-cadastros e ilegíveis" } }
   /batches/{id}/events: { get: { summary: SSE (snapshot + progresso), responses: { "200": { description: text/event-stream } } } }
+  /batches/{id}: { delete: { summary: "Apaga o lote terminado e o que veio dele (documentos, arquivos, indicadores); corpo {confirmar:true, motivo}; 409 se em processamento; auditado" } }
   /batches/{id}/export-zip: { get: { summary: "ZIP hierárquico Empresa/Funcionário + manifesto; anonimizado=true gera cópias com tarja (saúde omitida sem permissão)", parameters: [{ name: anonimizado, in: query, schema: { type: boolean } }] } }
   /batches/{id}/retry: { post: { summary: Retoma só o que falhou } }
   /documents: { get: { summary: "Lista de documentos da empresa (q, tipo, categoria, status, employee, lote, competencia) com cursor e totais por status; saúde mascarada sem saude:ler" } }
