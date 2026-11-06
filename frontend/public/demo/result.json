@@ -1,0 +1,169 @@
+{
+ "arquivo": "Lote_RH_Misto_11pags.pdf (fictício)",
+ "paginas": 11,
+ "documentos": [
+  {
+   "id": 1,
+   "tipo": "Holerite",
+   "paginas": [
+    1
+   ],
+   "funcionario": "Carlos Eduardo Silva",
+   "cpf_mascarado": "***.712.903-**",
+   "confianca": 0.98,
+   "status": "Auto-aprovado",
+   "motivos": [],
+   "alertas": [],
+   "campos": {
+    "nome": "Carlos Eduardo Silva",
+    "matricula": "1001",
+    "competencia": "2026-10"
+   }
+  },
+  {
+   "id": 2,
+   "tipo": "Cartão de ponto",
+   "paginas": [
+    2,
+    3
+   ],
+   "funcionario": "Carlos Eduardo Silva",
+   "cpf_mascarado": "***.712.903-**",
+   "confianca": 0.98,
+   "status": "Auto-aprovado",
+   "motivos": [],
+   "alertas": [
+    "Jornada diária de 11:30 excede 10 horas",
+    "Intervalo intrajornada de 00:30 é menor que 1 hora"
+   ],
+   "campos": {
+    "nome": "Carlos Eduardo Silva",
+    "competencia": "2026-10"
+   }
+  },
+  {
+   "id": 3,
+   "tipo": "ASO",
+   "paginas": [
+    4
+   ],
+   "funcionario": "Carlos Eduardo Silva",
+   "cpf_mascarado": "***.712.903-**",
+   "confianca": 0.98,
+   "status": "Auto-aprovado",
+   "motivos": [],
+   "alertas": [],
+   "campos": {
+    "nome": "Carlos Eduardo Silva",
+    "data_documento": "2026-10-16"
+   }
+  },
+  {
+   "id": 4,
+   "tipo": "Ficha de EPI",
+   "paginas": [
+    6
+   ],
+   "funcionario": "Maria Fernanda Costa",
+   "cpf_mascarado": "***.204.881-**",
+   "confianca": 0.98,
+   "status": "Auto-aprovado",
+   "motivos": [],
+   "alertas": [],
+   "campos": {
+    "data_documento": "2026-10-16"
+   }
+  },
+  {
+   "id": 5,
+   "tipo": "Holerite",
+   "paginas": [
+    7
+   ],
+   "funcionario": "Maria Fernanda Costa",
+   "cpf_mascarado": "***.204.881-**",
+   "confianca": 0.98,
+   "status": "Auto-aprovado",
+   "motivos": [],
+   "alertas": [
+    "FGTS depositado (R$ 120,00) difere do devido (R$ 144,00)"
+   ],
+   "campos": {
+    "nome": "Maria Fernanda Costa",
+    "matricula": "1002",
+    "competencia": "2026-10"
+   }
+  },
+  {
+   "id": 6,
+   "tipo": "Aviso de recebimento (AR)",
+   "paginas": [
+    8
+   ],
+   "funcionario": "Roberto Almeida Mendes",
+   "cpf_mascarado": "***.340.911-**",
+   "confianca": 0.58,
+   "status": "Aguardando revisão",
+   "motivos": [
+    "Baixa confiança"
+   ],
+   "alertas": [],
+   "campos": {}
+  },
+  {
+   "id": 7,
+   "tipo": "CRF do FGTS",
+   "paginas": [
+    9
+   ],
+   "funcionario": "Empresa",
+   "cpf_mascarado": null,
+   "confianca": 0.98,
+   "status": "Auto-aprovado",
+   "motivos": [],
+   "alertas": [
+    "Certidão vencida em 2026-09-21"
+   ],
+   "campos": {
+    "data_documento": "2026-09-21",
+    "validade_ate": "2026-09-21"
+   }
+  },
+  {
+   "id": 8,
+   "tipo": "Holerite",
+   "paginas": [
+    10
+   ],
+   "funcionario": null,
+   "cpf_mascarado": "***.444.777-**",
+   "confianca": 0.98,
+   "status": "Aguardando revisão",
+   "motivos": [
+    "Sem vínculo"
+   ],
+   "alertas": [],
+   "campos": {
+    "nome": "Paulo Henrique Torres",
+    "competencia": "2026-10"
+   }
+  },
+  {
+   "id": 9,
+   "tipo": "Atestado médico",
+   "paginas": [
+    11
+   ],
+   "funcionario": "Roberto Almeida Mendes",
+   "cpf_mascarado": "***.340.911-**",
+   "confianca": 0.98,
+   "status": "Auto-aprovado",
+   "motivos": [],
+   "alertas": [],
+   "campos": {
+    "nome": "Roberto Almeida Mendes",
+    "data_documento": "2026-10-16"
+   }
+  }
+ ]
+}

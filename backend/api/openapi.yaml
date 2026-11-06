@@ -1,0 +1,109 @@
+openapi: 3.0.3
+info:
+  title: Citadel IA — API
+  version: 1.0.0
+  description: >
+    REST em /api/v1, JSON, paginação por cursor (`next_cursor`), erros `application/problem+json` (RFC 7807).
+    Documento escrito à mão (resumo do contrato); o roteador real está em backend/internal/http/routes.go.
+servers: [{ url: /api/v1 }]
+components:
+  securitySchemes:
+    bearer: { type: http, scheme: bearer, bearerFormat: JWT (EdDSA) }
+  parameters:
+    StepUp: { name: X-Step-Up-Token, in: header, required: false, schema: { type: string }, description: "Obrigatório nas rotas marcadas com step-up (token de /auth/step-up, 5 min)." }
+    Idem: { name: Idempotency-Key, in: header, schema: { type: string } }
+    Cursor: { name: cursor, in: query, schema: { type: string } }
+    Limit: { name: limit, in: query, schema: { type: integer, maximum: 500 } }
+  schemas:
+    Problem:
+      type: object
+      properties: { type: { type: string }, title: { type: string }, status: { type: integer }, detail: { type: string }, code: { type: string }, errors: { type: object } }
+    Page: { type: object, properties: { items: { type: array, items: { type: object } }, next_cursor: { type: string, nullable: true } } }
+security: [{ bearer: [] }]
+paths:
+  /auth/login: { post: { security: [], summary: "Senha → mfa_ticket (código de 6 dígitos por e-mail)", responses: { "200": { description: "{mfa_ticket, mfa_required}" }, "401": { description: Problem }, "429": { description: Problem } } } }
+  /auth/mfa/verify: { post: { security: [], summary: "Código → access token (corpo) + refresh (cookie HttpOnly, Path=/api/v1/auth/refresh)", responses: { "200": { description: ok } } } }
+  /auth/mfa/resend: { post: { security: [], summary: "Reenvio (intervalo de 60 s)" } }
+  /auth/refresh: { post: { security: [], summary: "Rotaciona o refresh (cookie + X-CSRF-Token). Reuso de token antigo revoga a família" } }
+  /auth/logout: { post: { summary: Encerra a sessão } }
+  /auth/me: { get: { summary: Usuário, perfil, permissões } }
+  /auth/sessions: { get: { summary: Sessões ativas } }
+  /auth/sessions/{id}: { delete: { summary: Encerra uma sessão } }
+  /auth/step-up: { post: { summary: "Sem código: envia código por e-mail (202 {ticket}). Com {ticket, code}: devolve o token de step-up" } }
+  /auth/password: { post: { summary: Troca de senha (step-up; revoga todas as sessões), parameters: [{ $ref: "#/components/parameters/StepUp" }] } }
+  /auth/invite/accept: { post: { security: [], summary: Define a senha a partir do convite } }
+  /employees: { get: { summary: "Busca/lista (q = CPF, matrícula ou nome; pre=1 filtra pré-cadastros do lote)", parameters: [{ name: q, in: query, schema: { type: string } }, { $ref: "#/components/parameters/Cursor" }, { $ref: "#/components/parameters/Limit" }] }, post: { summary: Cria funcionário (CPF validado, cifrado) } }
+  /employees/import: { post: { summary: "CSV/XLSX multipart; dry_run=true pré-valida" } }
+  /employees/{id}: { get: { summary: Resumo + conformidade }, patch: { summary: Altera } }
+  /employees/{id}/documents: { get: { summary: "Documentos (categoria, competencia); saúde mascarada sem saude:ler" } }
+  /employees/{id}/compliance: { get: { summary: Itens de conformidade } }
+  /employees/{id}/timeline: { get: { summary: Linha do tempo } }
+  /exports/dossie/{employeeId}: { post: { summary: ZIP com PDFs pesquisáveis + índice (step-up), parameters: [{ $ref: "#/components/parameters/StepUp" }] } }
+  /batches/uploads: { post: { summary: "Inicia upload retomável (filename, size, unit_id, tipo_lote; dica_funcionario_id, dica_tipo e substitui_documento_id para nova cópia)" } }
+  /batches/uploads/{id}: { get: { summary: Offset atual }, patch: { summary: "Anexa parte (cabeçalho Upload-Offset)" } }
+  /batches/uploads/{id}/complete: { post: { summary: "Valida formato, SHA-256 (409 se duplicado), cota, antivírus; grava cifrado e enfileira" } }
+  /batches: { get: { summary: Lista }, post: { summary: Envio simples multipart, parameters: [{ $ref: "#/components/parameters/Idem" }] } }
+  /batches/{id}: { get: { summary: "Lote + páginas + documentos + linha do tempo + resumo de pré-cadastros e ilegíveis" } }
+  /batches/{id}/events: { get: { summary: SSE (snapshot + progresso), responses: { "200": { description: text/event-stream } } } }
+  /batches/{id}/export-zip: { get: { summary: "ZIP hierárquico Empresa/Funcionário + manifesto; anonimizado=true gera cópias com tarja (saúde omitida sem permissão)", parameters: [{ name: anonimizado, in: query, schema: { type: boolean } }] } }
+  /batches/{id}/retry: { post: { summary: Retoma só o que falhou } }
+  /documents: { get: { summary: "Lista de documentos da empresa (q, tipo, categoria, status, employee, lote, competencia) com cursor e totais por status; saúde mascarada sem saude:ler" } }
+  /documents/search: { get: { summary: Busca em texto completo (tsvector pt), parameters: [{ name: q, in: query, schema: { type: string } }] } }
+  /documents/{id}: { get: { summary: "Detalhe + páginas com URL assinada (120 s); saúde exige saude:ler" } }
+  /documents/{id}/pages/{n}/url: { get: { summary: URL assinada de 90 s } }
+  /documents/{id}/highlights: { get: { summary: Caixas do OCR para o termo q } }
+  /documents/{id}/download: { get: { summary: "formato=original|pesquisavel|anonimizado", parameters: [{ name: formato, in: query, schema: { type: string, enum: [original, pesquisavel, anonimizado] } }] } }
+  /review/queue: { get: { summary: "Fila priorizada (erro > sem vínculo > baixa confiança); filtros tipo, lote, motivo" } }
+  /review/{documentId}: { post: { summary: "acao: CONFIRMAR|CORRIGIR|TRANSCRICAO_MANUAL|MUDAR_TIPO|VINCULAR|DIVIDIR|JUNTAR|REJEITAR|SOLICITAR_REENVIO|SUBSTITUIR_ANTERIOR|MANTER_AMBOS; transcrição manual não comprova exigência documental" } }
+  /compliance: { get: { summary: "Itens (status, employee, type, unit, cargo)" } }
+  /risks: { get: { summary: "Indicadores de risco trabalhista para triagem; status=ABERTO|IGNORADO, resumo por severidade, até 200 itens" } }
+  /risks/{id}/ignore: { post: { summary: "Admin ignora indicador com justificativa auditada" } }
+  /risks/{id}/reabrir: { post: { summary: "Admin reabre um indicador ignorado (auditado)" } }
+  /compliance/{id}/dispensar: { post: { summary: Dispensa com justificativa (auditada) } }
+  /compliance/cobrar: { post: { summary: E-mail aos gestores com as pendências } }
+  /employees/{id}/documents/manual: { post: { summary: "Lança um documento escrevendo as informações (formulário por tipo), sem imagem" } }
+  /calendar: { get: { summary: Vencimentos do mês } }
+  /notifications: { get: { summary: Lista + contagem } }
+  /metrics/overview: { get: { summary: Cartões e ações } }
+  /metrics/compliance: { get: { summary: Por unidade, cargo e tipo } }
+  /metrics/processing: { get: { summary: Volume, tempo médio, auto × revisado, produtividade } }
+  /metrics/finops: { get: { summary: "Consumo real por camada do funil (Camada 0 cache SHA-256 … Camada 3 visão): documentos, tokens gastos/economizados" } }
+  /metrics/storage: { get: { summary: Uso e crescimento } }
+  /reports/{tipo}: { get: { summary: "conformidade|pendencias|nao-conformidades|armazenamento; formato=csv|xlsx" } }
+  /audit: { get: { summary: "Auditoria da empresa (RH vê só o próprio histórico)" } }
+  /logs/{tipo}: { get: { summary: "armazenamento|processamento|organizacao|revisao (admin)" } }
+  /units: { get: { summary: Lista }, post: { summary: Cria (admin) } }
+  /positions: { get: { summary: Lista }, post: { summary: Cria (admin) } }
+  /requirements: { get: { summary: Matriz }, put: { summary: Altera uma célula (admin) } }
+  /requirements/bulk: { put: { summary: "Define de uma vez os documentos exigidos de um escopo (todos | setor | cargo); dry_run=true simula e devolve pendências antes/depois sem salvar" } }
+  /departments: { get: { summary: Setores }, post: { summary: Cria setor (admin) } }
+  /employees/{id}/requirements: { get: { summary: "O que é exigido deste funcionário e a origem da regra (todos/setor/cargo/exceção)" } }
+  /employees/{id}/requirements/{codigo}: { put: { summary: "Exige ou dispensa um documento só para este funcionário (obrigatorio=null volta ao padrão; dispensa exige justificativa)" } }
+  /tenant/cadastro-config: { get: { summary: "Campos do cadastro de funcionário (ativos/obrigatórios) e campos personalizados" }, put: { summary: Configura (admin) } }
+  /requirements/apply-template: { post: { summary: Modelo por segmento (LIMPEZA, VIGILANCIA, MANUTENCAO, PORTARIA, ADMINISTRATIVO) ou empresa } }
+  /requirements/impact: { get: { summary: Estimativa de pendências criadas } }
+  /users: { get: { summary: Lista (admin) }, post: { summary: "Convite por e-mail de domínio permitido (admin)" } }
+  /users/{id}: { patch: { summary: Permissões/escopo/status (admin, step-up), parameters: [{ $ref: "#/components/parameters/StepUp" }] } }
+  /tenant: { get: { summary: Dados e limites }, patch: { summary: Limiar de confiança, política (admin) } }
+  /tenant/domains: { put: { summary: Domínios de e-mail permitidos (admin, step-up) } }
+  /retention: { get: { summary: Política }, }
+  /billing: { get: { summary: Plano, uso e faturas } }
+  /support-access: { get: { summary: Pedidos de acesso de suporte } }
+  /support-access/{id}/{acao}: { post: { summary: "approve|deny|revoke (admin, step-up)" } }
+  /public/leads: { post: { security: [], summary: "Formulário da landing (rate limit, honeypot, e-mail corporativo, consentimento)" } }
+  /files/{token}: { get: { security: [], summary: "Objeto decifrado via URL assinada de curta duração" } }
+  /admin/overview: { get: { summary: "Master: KPIs" } }
+  /admin/tenants: { get: { summary: Clientes }, post: { summary: Cria empresa + admin convidado } }
+  /admin/tenants/{id}: { get: { summary: Ficha }, patch: { summary: Limites/plano } }
+  /admin/tenants/{id}/status: { post: { summary: Ativar/suspender/encerrar (derruba sessões) } }
+  /admin/tenants/{id}/users/{uid}/reset-2fa: { post: { summary: Reset com justificativa registrada } }
+  /admin/audit: { get: { summary: "Auditoria global; `motivo` obrigatório e registrado na trilha da empresa" } }
+  /admin/audit/verify: { get: { summary: Verifica a cadeia de hash } }
+  /admin/plans: { get: { summary: Planos }, }
+  /admin/storage: { get: { summary: Uso por cliente } }
+  /admin/document-types: { get: { summary: "Catálogo global (32 tipos)" } }
+  /admin/ia/overview: { get: { summary: Fila, reprocessamentos, custo } }
+  /admin/ia/dead-letters: { get: { summary: Fila de mensagens mortas } }
+  /admin/ia/quality: { get: { summary: Benchmark com lotes fictícios } }
+  /admin/support-access/{tenantId}: { post: { summary: Solicita acesso (aprovação do admin da empresa) } }
+  /internal/ia/callback: { post: { servers: [{ url: / }], security: [], summary: "Callback do IA Core (HMAC X-Signature + X-Timestamp, Idempotency-Key). NÃO exposto no Traefik público" } }

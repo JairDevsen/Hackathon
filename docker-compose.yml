@@ -1,0 +1,265 @@
+# Produção independente: só Traefik publica 80/443; serviços internos não expõem portas.
+# Primeiro uso: cp .env.example .env, ajuste domínio/e-mail/SMTP e execute make keys.
+# Imagens locais: docker compose up -d --build
+# Imagens publicadas: docker compose pull && docker compose up -d
+name: citadel
+
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "5"
+
+x-backend-image: &backend-image
+  image: ghcr.io/agreser-innovations/citadel-backend:${TAG:-latest}
+  build:
+    context: ./backend
+
+x-app-env: &app-env
+  APP_ENV: production
+  DATABASE_URL: "postgres://citadel_app:${APP_DB_PASSWORD:?APP_DB_PASSWORD ausente}@postgres:5432/citadel?sslmode=disable"
+  REDIS_URL: "redis://:${REDIS_PASSWORD:?REDIS_PASSWORD ausente}@redis:6379/0"
+  STORAGE_DRIVER: s3
+  S3_ENDPOINT: minio:9000
+  S3_USE_SSL: "false"
+  CLAMAV_ADDR: clamav:3310
+  JWT_PRIVATE_KEY_FILE: /run/secrets/jwt_ed25519.pem
+  INTERNAL_BASE_URL: http://api:8080
+  PUBLIC_BASE_URL: "https://${DOMAIN:?DOMAIN ausente}"
+  APP_URL: "https://${DOMAIN:?DOMAIN ausente}"
+  CORS_ORIGINS: "https://${DOMAIN:?DOMAIN ausente}"
+  IA_CORE_URL: http://ia-core:8001
+  UPLOAD_STAGING_DIR: /var/staging
+  HEALTH_URL: http://127.0.0.1:8080/readyz
+
+x-app-volumes: &app-volumes
+  - type: bind
+    source: ./secrets
+    target: /run/secrets
+    read_only: true
+    bind:
+      create_host_path: false
+  - type: bind
+    source: ./var/staging
+    target: /var/staging
+    bind:
+      create_host_path: false
+
+services:
+  traefik:
+    image: traefik:v3.5
+    restart: unless-stopped
+    command:
+      - --api.dashboard=false
+      - --providers.docker=true
+      - --providers.docker.exposedbydefault=false
+      - --entrypoints.web.address=:80
+      - --entrypoints.websecure.address=:443
+      - --entrypoints.web.http.redirections.entrypoint.to=websecure
+      - --entrypoints.web.http.redirections.entrypoint.scheme=https
+      - --certificatesresolvers.letsencrypt.acme.email=${ACME_EMAIL:?ACME_EMAIL ausente}
+      - --certificatesresolvers.letsencrypt.acme.storage=/acme/acme.json
+      - --certificatesresolvers.letsencrypt.acme.httpchallenge.entrypoint=web
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - acme:/acme
+    networks: [edge]
+    security_opt: [no-new-privileges:true]
+    logging: *logging
+
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: citadel
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?POSTGRES_PASSWORD ausente}"
+      POSTGRES_DB: citadel
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks: [internal]
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U citadel -d citadel"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    logging: *logging
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    environment:
+      REDIS_PASSWORD: "${REDIS_PASSWORD:?REDIS_PASSWORD ausente}"
+    command: [sh, -ec, 'exec redis-server --appendonly yes --requirepass "$$REDIS_PASSWORD"']
+    volumes:
+      - redisdata:/data
+    networks: [internal]
+    healthcheck:
+      test: [CMD-SHELL, 'REDISCLI_AUTH="$$REDIS_PASSWORD" redis-cli ping | grep -q PONG']
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    logging: *logging
+
+  minio:
+    image: minio/minio:latest
+    restart: unless-stopped
+    command: server /data --console-address :9001
+    environment:
+      MINIO_ROOT_USER: "${S3_ACCESS_KEY:?S3_ACCESS_KEY ausente}"
+      MINIO_ROOT_PASSWORD: "${S3_SECRET_KEY:?S3_SECRET_KEY ausente}"
+    volumes:
+      - miniodata:/data
+    networks: [internal]
+    logging: *logging
+
+  clamav:
+    image: clamav/clamav:stable
+    restart: unless-stopped
+    volumes:
+      - clamdata:/var/lib/clamav
+    networks: [internal]
+    logging: *logging
+
+  migrate:
+    <<: *backend-image
+    entrypoint: [/migrate]
+    restart: "no"
+    env_file: .env
+    environment:
+      APP_ENV: production
+      DATABASE_MIGRATE_URL: "postgres://citadel:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD ausente}@postgres:5432/citadel?sslmode=disable"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks: [internal]
+    healthcheck:
+      disable: true
+    logging: *logging
+
+  api:
+    <<: *backend-image
+    entrypoint: [/api]
+    restart: unless-stopped
+    user: "${APP_UID:?APP_UID ausente}:${APP_GID:?APP_GID ausente}"
+    env_file: .env
+    environment: *app-env
+    read_only: true
+    tmpfs: [/tmp]
+    volumes: *app-volumes
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+      minio:
+        condition: service_started
+      clamav:
+        condition: service_started
+    networks: [internal, edge]
+    healthcheck:
+      test: [CMD, /healthcheck]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    stop_grace_period: 30s
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    logging: *logging
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: citadel_edge
+      traefik.http.routers.citadel-api.rule: "Host(`${DOMAIN:?DOMAIN ausente}`) && PathPrefix(`/api/v1`)"
+      traefik.http.routers.citadel-api.priority: "100"
+      traefik.http.routers.citadel-api.entrypoints: websecure
+      traefik.http.routers.citadel-api.tls.certresolver: letsencrypt
+      traefik.http.services.citadel-api.loadbalancer.server.port: "8080"
+      traefik.http.services.citadel-api.loadbalancer.healthcheck.path: /readyz
+
+  worker:
+    <<: *backend-image
+    entrypoint: [/worker]
+    restart: unless-stopped
+    user: "${APP_UID:?APP_UID ausente}:${APP_GID:?APP_GID ausente}"
+    env_file: .env
+    environment: *app-env
+    read_only: true
+    tmpfs: [/tmp]
+    volumes: *app-volumes
+    depends_on:
+      api:
+        condition: service_healthy
+      ia-core:
+        condition: service_healthy
+    networks: [internal]
+    healthcheck:
+      disable: true # a imagem herda o healthcheck HTTP da API; o worker não expõe HTTP
+    stop_grace_period: 60s
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    logging: *logging
+
+  ia-core:
+    image: ghcr.io/agreser-innovations/citadel-ia-core:${TAG:-latest}
+    build:
+      context: ./ia-core
+    restart: unless-stopped
+    environment:
+      IA_CORE_API_KEY: "${IA_CORE_API_KEY:?IA_CORE_API_KEY ausente}"
+      IA_CALLBACK_SECRET: "${IA_CALLBACK_SECRET:?IA_CALLBACK_SECRET ausente}"
+      GEMINI_API_KEY: "${GEMINI_API_KEY:-}"
+      GEMINI_MODEL: "${GEMINI_MODEL:-gemini-2.5-flash}"
+      GEMINI_MODEL_FALLBACK: "${GEMINI_MODEL_FALLBACK:-gemini-2.5-pro}"
+      GEMINI_MODEL_LITE: "${GEMINI_MODEL_LITE:-gemini-2.5-flash-lite}"
+    networks: [internal]
+    healthcheck:
+      test: [CMD, curl, -fsS, http://127.0.0.1:8001/health]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    stop_grace_period: 60s
+    security_opt: [no-new-privileges:true]
+    logging: *logging
+
+  web:
+    image: ghcr.io/agreser-innovations/citadel-frontend:${TAG:-latest}
+    build:
+      context: ./frontend
+    restart: unless-stopped
+    environment:
+      PUBLIC_API_URL: "" # mesma origem; Traefik encaminha /api/v1 para a API
+    networks: [edge]
+    healthcheck:
+      test: [CMD, wget, -qO-, http://127.0.0.1/healthz]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+    security_opt: [no-new-privileges:true]
+    logging: *logging
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: citadel_edge
+      traefik.http.routers.citadel-web.rule: "Host(`${DOMAIN:?DOMAIN ausente}`)"
+      traefik.http.routers.citadel-web.priority: "1"
+      traefik.http.routers.citadel-web.entrypoints: websecure
+      traefik.http.routers.citadel-web.tls.certresolver: letsencrypt
+      traefik.http.services.citadel-web.loadbalancer.server.port: "80"
+      traefik.http.services.citadel-web.loadbalancer.healthcheck.path: /healthz
+
+networks:
+  internal: {}
+  edge: {}
+
+volumes:
+  pgdata: {}
+  redisdata: {}
+  miniodata: {}
+  clamdata: {}
+  acme: {}

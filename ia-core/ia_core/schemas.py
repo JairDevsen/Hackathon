@@ -1,114 +1,115 @@
-from enum import Enum
-from typing import List, Optional, Dict, Any
+"""Schemas Pydantic dos campos extraídos por tipo (viram o JSON Schema do formulário de revisão)."""
+from typing import Dict, List, Optional, Type
 from pydantic import BaseModel, Field
 
 
-class TipoDocumento(str, Enum):
-    AR_CORREIOS = "AVISO_RECEBIMENTO_CORREIOS"
-    DOCUMENTO_MANUSCRITO = "DOCUMENTO_MANUSCRITO"
-    ASO_SST = "ASO_SAUDE_OCUPACIONAL"
-    FICHA_EPI = "FICHA_EPI_MANUSCRITA"
-    CARTAO_PONTO = "CARTAO_PONTO_TRABALHISTA"
-    CND_FISCAL = "CERTIDAO_NEGATIVA_CND"
-    CNH = "CNH"
-    RG = "RG"
-    COMPROVANTE_RESIDENCIA = "COMPROVANTE_RESIDENCIA"
-    CONTRATO = "CONTRATO"
-    NOTA_FISCAL = "NOTA_FISCAL"
-    HOLERITE = "HOLERITE"
-    OUTROS = "OUTROS"
+class CamposBase(BaseModel):
+    cpf: Optional[str] = Field(None, description="CPF do titular (somente dígitos ou com máscara)")
+    nome: Optional[str] = Field(None, description="Nome completo do titular")
+    matricula: Optional[str] = Field(None, description="Matrícula do funcionário")
+    competencia: Optional[str] = Field(None, description="Competência AAAA-MM")
+    data_documento: Optional[str] = Field(None, description="Data do documento (AAAA-MM-DD)")
+    validade_ate: Optional[str] = Field(None, description="Validade (AAAA-MM-DD)")
 
 
-class StatusPagina(str, Enum):
-    PENDING = "PENDING"
-    PROCESSING = "PROCESSING"
-    COMPLETED = "COMPLETED"
-    FAILED = "FAILED"
+class CamposAR(CamposBase):
+    codigo_rastreio: Optional[str] = None
+    remetente: Optional[str] = None
+    destinatario: Optional[str] = None
+    endereco_entrega: Optional[str] = None
+    data_entrega_manuscrita: Optional[str] = None
+    nome_recebedor_manuscrito: Optional[str] = None
+    documento_recebedor_manuscrito: Optional[str] = None
+    assinatura_detectada: Optional[bool] = None
 
 
-class StatusJob(str, Enum):
-    PROCESSING = "PROCESSING"
-    INTERRUPTED_FAILURE = "INTERRUPTED_FAILURE"
-    COMPLETED = "COMPLETED"
-    NEEDS_HUMAN_REVIEW = "NEEDS_HUMAN_REVIEW"
+class CamposHolerite(CamposBase):
+    empregador: Optional[str] = None
+    pagamento_horas_extras: Optional[str] = Field(None, description="Valor de horas extras pago no mês (R$)")
+    salario_base: Optional[str] = None
+    liquido_a_receber: Optional[str] = None
+    fgts_depositado: Optional[str] = None
+    fgts_devido: Optional[str] = None
 
 
-class CamposAR(BaseModel):
-    codigo_rastreio: str = Field(default="", description="Código de rastreamento dos Correios (ex: BR984512390BR)")
-    remetente: str = Field(default="", description="Nome/empresa remetente (ex: Bernhoeft Compliance / Notificações)")
-    destinatario: str = Field(default="", description="Fornecedor Terceirizado ou Colaborador notificado")
-    endereco_entrega: str = Field(default="", description="Endereço completo de entrega")
-    data_entrega_manuscrita: str = Field(default="", description="Data preenchida à mão no recebimento")
-    nome_recebedor_manuscrito: str = Field(default="", description="Nome legível preenchido à caneta pelo recebedor")
-    documento_recebedor_manuscrito: str = Field(default="", description="RG ou CPF do recebedor escrito à mão")
-    assinatura_detectada: bool = Field(default=True, description="Indica se há rubrica/assinatura física no campo do recebedor")
-    tentativas_entrega: int = Field(default=1, description="Número de tentativas marcadas no AR")
+class CamposPonto(CamposBase):
+    jornada_diaria: Optional[str] = Field(None, description="Jornada diária HH:MM")
+    horas_extras_total: Optional[str] = Field(None, description="Total de horas extras no mês HH:MM")
+    intervalo: Optional[str] = Field(None, description="Intervalo HH:MM")
+    horas_extras: Optional[str] = None
 
 
-class ItemSensivelLGPD(BaseModel):
-    tipo: str = Field(description="CPF, RG, TELEFONE, NOME_PESSOAL, DADO_MEDICO_ASO, ASSINATURA")
-    valor_original_preview: str = Field(description="Trecho identificado")
-    valor_mascarado: str = Field(description="Valor anonimizado conforme LGPD")
-    pagina: int = Field(description="Página onde o dado sensível aparece")
+class CamposASO(CamposBase):
+    tipo_exame: Optional[str] = Field(None, description="admissional, periódico, demissional...")
+    resultado: Optional[str] = Field(None, description="APTO ou INAPTO")
+    medico_crm: Optional[str] = None
 
 
-class RegraComplianceGRT(BaseModel):
-    regra: str = Field(description="Nome da regra de negócio Bernhoeft GRT (ex: Validade Normativa, Assinatura Manuscrita)")
-    aprovado: bool = Field(description="True se cumpriu o requisito de mobilização")
-    detalhe: str = Field(description="Explicação técnica da validação")
+class CamposTreinamento(CamposBase):
+    norma: Optional[str] = Field(None, description="NR-10, NR-35...")
+    carga_horaria: Optional[str] = None
 
 
-class TelemetriaFinOps(BaseModel):
-    camada_roteamento: str = Field(description="Camada do funil que resolveu o documento (Camada 0 Hash, Camada 1 PyMuPDF, Camada 2 OCR Local, Camada 3 Gemini Flex)")
-    sha256_hash: str = Field(description="Hash criptográfico para deduplicação de documentos repetidos")
-    tokens_consumidos: int = Field(description="Tokens reais gastos na inferência")
-    tokens_economizados: int = Field(description="Tokens poupados pelo roteamento inteligente")
-    custo_estimado_brl: float = Field(description="Custo em R$ deste documento")
+class CamposCertidao(CamposBase):
+    cnpj: Optional[str] = None
+    numero: Optional[str] = None
 
 
-class DocumentoExtraidoSchema(BaseModel):
-    """Schema estruturado retornado pelo motor Gemini Multimodal para a esteira Bernhoeft."""
-    id: str = Field(description="Identificador único do documento no lote (ex: doc-01)")
-    tipo: TipoDocumento = Field(description="Classificação automática do tipo documental")
-    vertical_bernhoeft: str = Field(
-        default="Gestão de Riscos com Terceiros (GRT)",
-        description="Vertical de negócio Bernhoeft: GRT / Mobilização, BPO Trabalhista & Fiscal, ou Cálculos Judiciais",
-    )
-    status_mobilizacao: str = Field(
-        default="LIBERADO PARA CATRACA / MOBILIZAÇÃO",
-        description="Status de conformidade Bernhoeft (LIBERADO PARA CATRACA, BLOQUEIO PREVENTIVO GRT)",
-    )
-    nome_arquivo_separado: str = Field(
-        default="",
-        description="Nome padronizado do PDF recortado por Empresa/Funcionário (ex: CNH_CARLOS_EDUARDO_SILVA_CPF_458712.pdf)",
-    )
-    empresa_nome: str = Field(default="AGROTECH GARANHUNS LTDA", description="Razão Social da prestadora terceirizada")
-    empresa_cnpj: str = Field(default="14.589.201/0001-88", description="CNPJ da prestadora terceirizada")
-    funcionario_nome: str = Field(default="", description="Nome do colaborador terceirizado titular do documento")
-    funcionario_cpf: str = Field(default="", description="CPF do colaborador titular para indexação automática no RH")
-    pasta_destino_rh: str = Field(default="", description="Caminho de pasta hierárquico gerado automaticamente para o RH")
-    titulo_resumo: str = Field(description="Título amigável identificando o documento")
-    pagina_inicial: int = Field(description="Página de início deste documento no lote (1-based)")
-    pagina_final: int = Field(description="Página de término deste documento no lote (1-based)")
-    paginas: List[int] = Field(description="Lista de páginas agrupadas que compõem este documento")
-    confianca: float = Field(description="Score de confiança entre 0.0 e 1.0")
-    needs_review: bool = Field(description="True se confiança < 0.78 ou caligrafia crítica duvidosa")
-    review_status: str = Field(default="PENDING_REVIEW", description="AUTO_APPROVED, PENDING_REVIEW, HUMAN_APPROVED")
-    review_reason: Optional[str] = Field(default=None, description="Motivo pelo qual caiu na fila do Analista Bernhoeft")
-    possui_manuscrito: bool = Field(default=False, description="True se contém escrita à mão / caligrafia cursiva")
-    texto_ocr: str = Field(description="Texto completo extraído (impresso + manuscrito)")
-    texto_ocr_anonimizado: str = Field(default="", description="Texto OCR com dados PII/SST mascarados pela LGPD")
-    campos_ar: Optional[CamposAR] = Field(default=None, description="Preenchido se tipo == AVISO_RECEBIMENTO_CORREIOS")
-    dados_sensiveis_lgpd: List[ItemSensivelLGPD] = Field(default_factory=list, description="Itens anonimizados pela camada LGPD")
-    compliance_checklist: List[RegraComplianceGRT] = Field(default_factory=list, description="Checklist de Mobilização e Compliance GRT Bernhoeft")
-    finops_telemetria: Optional[TelemetriaFinOps] = Field(default=None, description="Métricas de economia de tokens do Funil de 5 Camadas")
-    revisado_por: Optional[str] = Field(default=None)
-    notas_revisao: Optional[str] = Field(default=None)
+class CamposCNH(CamposBase):
+    numero_registro: Optional[str] = None
+    categoria: Optional[str] = None
 
 
-class RevisaoHumanaInput(BaseModel):
-    tipo: TipoDocumento
-    texto_ocr: str
-    revisado_por: str = "Analista GRT Bernhoeft (Davi)"
-    notas_revisao: Optional[str] = "Conformidade validada manualmente — Colaborador liberado para mobilização"
-    campos_ar: Optional[Dict[str, Any]] = None
+class CamposRG(CamposBase):
+    numero_rg: Optional[str] = Field(None, description="Número do RG")
+    orgao_emissor: Optional[str] = None
+    data_nascimento: Optional[str] = Field(None, description="AAAA-MM-DD")
+
+
+class CamposEPI(CamposBase):
+    certificado_aprovacao: Optional[str] = Field(None, description="Número do CA do equipamento")
+    equipamentos: Optional[str] = Field(None, description="EPIs entregues")
+    assinatura_detectada: Optional[bool] = None
+
+
+class CamposAtestado(CamposBase):
+    cid: Optional[str] = None
+    dias_afastamento: Optional[str] = None
+    medico_crm: Optional[str] = None
+
+
+class CamposContratoTrabalho(CamposBase):
+    cargo: Optional[str] = None
+    salario: Optional[str] = None
+    data_admissao: Optional[str] = Field(None, description="AAAA-MM-DD")
+    assinatura_detectada: Optional[bool] = None
+
+
+class CamposTRCT(CamposBase):
+    data_desligamento: Optional[str] = Field(None, description="AAAA-MM-DD")
+    motivo: Optional[str] = None
+    valor_liquido: Optional[str] = None
+    assinatura_detectada: Optional[bool] = None
+
+
+class CamposFerias(CamposBase):
+    periodo_aquisitivo: Optional[str] = None
+    inicio_gozo: Optional[str] = Field(None, description="AAAA-MM-DD")
+    dias: Optional[str] = None
+    assinatura_detectada: Optional[bool] = None
+
+
+SCHEMAS: Dict[str, Type[BaseModel]] = {
+    "CNH": CamposCNH, "RG": CamposRG, "FICHA_EPI": CamposEPI, "ATESTADO_MEDICO": CamposAtestado,
+    "CONTRATO_TRABALHO": CamposContratoTrabalho, "FICHA_REGISTRO": CamposContratoTrabalho, "TRCT": CamposTRCT, "RECIBO_FERIAS": CamposFerias,
+    "AVISO_RECEBIMENTO": CamposAR,
+    "HOLERITE": CamposHolerite,
+    "CARTAO_PONTO": CamposPonto,
+    "ASO": CamposASO,
+    "TREINAMENTO_NR": CamposTreinamento,
+    "CRF_FGTS": CamposCertidao, "CNDT": CamposCertidao, "CND_FEDERAL": CamposCertidao,
+}
+
+
+def schema_do_tipo(tipo: str) -> dict:
+    return SCHEMAS.get(tipo, CamposBase).model_json_schema()

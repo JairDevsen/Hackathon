@@ -1,0 +1,40 @@
+-- Planos padrão (porte → limites da seção 3.5). GRANDE: conforme contrato (valores altos editáveis pelo Master).
+INSERT INTO plans (codigo, nome, porte, quota_bytes, quota_paginas_mes, max_usuarios_rh, max_funcionarios, preco_mensal_centavos) VALUES
+ ('PEQUENA','Pequena','PEQUENA', 20::bigint*1024*1024*1024, 3000, 3, 50, NULL),
+ ('MEDIA','Média','MEDIA', 200::bigint*1024*1024*1024, 30000, 15, 500, NULL),
+ ('GRANDE','Grande','GRANDE', 2000::bigint*1024*1024*1024, 300000, NULL, NULL, NULL);
+
+-- Catálogo global: os 32 tipos documentais do IA Core.
+INSERT INTO document_types (codigo, nome, categoria, sensivel_saude, escopo, validade_padrao_dias, retencao_padrao_dias) VALUES
+ ('CONTRATO_TRABALHO','Contrato de trabalho','ADMISSAO',false,'FUNCIONARIO',NULL,7300),
+ ('FICHA_REGISTRO','Ficha de registro','ADMISSAO',false,'FUNCIONARIO',NULL,7300),
+ ('CTPS','CTPS','ADMISSAO',false,'FUNCIONARIO',NULL,7300),
+ ('RG','RG','ADMISSAO',false,'FUNCIONARIO',NULL,7300),
+ ('CNH','CNH','ADMISSAO',false,'FUNCIONARIO',1825,7300),
+ ('COMPROVANTE_RESIDENCIA','Comprovante de residência','ADMISSAO',false,'FUNCIONARIO',NULL,1825),
+ ('DECLARACAO_VT','Declaração de vale-transporte','ADMISSAO',false,'FUNCIONARIO',NULL,1825),
+ ('ORDEM_SERVICO','Ordem de serviço (NR-01)','ADMISSAO',false,'FUNCIONARIO',NULL,7300),
+ ('ASO','ASO','SAUDE_SEGURANCA',true,'FUNCIONARIO',365,7300),
+ ('FICHA_EPI','Ficha de entrega de EPI','SAUDE_SEGURANCA',false,'FUNCIONARIO',NULL,7300),
+ ('TREINAMENTO_NR','Certificado de treinamento NR','SAUDE_SEGURANCA',false,'FUNCIONARIO',730,7300),
+ ('ATESTADO_MEDICO','Atestado médico','SAUDE_SEGURANCA',true,'FUNCIONARIO',NULL,7300),
+ ('CAT_ACIDENTE','CAT / ocorrência de acidente','SAUDE_SEGURANCA',true,'FUNCIONARIO',NULL,7300),
+ ('HOLERITE','Holerite','MENSAL',false,'FUNCIONARIO',NULL,7300),
+ ('CARTAO_PONTO','Cartão de ponto','MENSAL',false,'FUNCIONARIO',NULL,7300),
+ ('RECIBO_BENEFICIOS','Recibo de benefícios','MENSAL',false,'FUNCIONARIO',NULL,1825),
+ ('RECIBO_FERIAS','Recibo de férias','MENSAL',false,'FUNCIONARIO',NULL,7300),
+ ('ADVERTENCIA','Advertência','DISCIPLINAR',false,'FUNCIONARIO',NULL,1825),
+ ('SUSPENSAO','Suspensão','DISCIPLINAR',false,'FUNCIONARIO',NULL,1825),
+ ('TRCT','TRCT','DESLIGAMENTO',false,'FUNCIONARIO',NULL,7300),
+ ('AVISO_PREVIO','Aviso prévio','DESLIGAMENTO',false,'FUNCIONARIO',NULL,7300),
+ ('PEDIDO_DEMISSAO','Pedido de demissão','DESLIGAMENTO',false,'FUNCIONARIO',NULL,7300),
+ ('AVISO_RECEBIMENTO','Aviso de recebimento (AR)','OUTROS',false,'FUNCIONARIO',NULL,1825),
+ ('DOCUMENTO_MANUSCRITO','Documento manuscrito','OUTROS',false,'FUNCIONARIO',NULL,1825),
+ ('CRF_FGTS','Certificado de regularidade do FGTS (CRF)','EMPRESA',false,'EMPRESA',30,1825),
+ ('CNDT','CNDT','EMPRESA',false,'EMPRESA',180,1825),
+ ('CND_FEDERAL','CND federal','EMPRESA',false,'EMPRESA',180,1825),
+ ('GUIA_FGTS','Guia de FGTS','EMPRESA',false,'EMPRESA',NULL,1825),
+ ('DARF','DARF','EMPRESA',false,'EMPRESA',NULL,1825),
+ ('LISTA_PRESENCA','Lista de presença em treinamento','EMPRESA',false,'EMPRESA',NULL,1825),
+ ('CONTRATO_PRESTACAO_SERVICO','Contrato de prestação de serviço','EMPRESA',false,'EMPRESA',NULL,1825),
+ ('OUTRO','Outro','OUTROS',false,'FUNCIONARIO',NULL,1825);

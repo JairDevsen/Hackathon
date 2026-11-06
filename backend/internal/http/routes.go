@@ -1,0 +1,108 @@
+package http
+
+import (
+	"github.com/agreser-innovations/citadel-ia/backend/internal/auth"
+	"github.com/gin-gonic/gin"
+)
+
+func (s *Server) tenantRoutes(t *gin.RouterGroup) {
+	admin := auth.RequireRole("ADMIN_EMPRESA")
+	step := s.Auth.RequireStepUp()
+	any := auth.RequireRole("ADMIN_EMPRESA", "RH", "MASTER")
+	t = t.Group("", any)
+
+	t.GET("/document-types", s.listDocTypes)
+	t.GET("/document-types/:codigo/schema", s.typeSchema)
+	t.GET("/units", s.listUnits)
+	t.GET("/positions", s.listPositions)
+	t.GET("/departments", s.listDepartments)
+	t.GET("/tenant/cadastro-config", s.getCadastroConfig)
+	t.GET("/employees/:id/requirements", s.employeeRequirements)
+	t.PUT("/employees/:id/requirements/:codigo", auth.RequirePerm("funcionarios:gerir"), s.setEmployeeRequirement)
+	t.GET("/requirements", s.listRequirements)
+	t.GET("/tenant", s.getTenant)
+
+	// funcionários e dossiê
+	t.GET("/employees", s.listEmployees)
+	t.POST("/employees", auth.RequirePerm("funcionarios:gerir"), s.createEmployee)
+	t.POST("/employees/import", auth.RequirePerm("funcionarios:gerir"), s.importEmployees)
+	t.GET("/employees/:id", s.getEmployee)
+	t.PATCH("/employees/:id", auth.RequirePerm("funcionarios:gerir"), s.patchEmployee)
+	t.GET("/employees/:id/documents", s.employeeDocuments)
+	t.GET("/employees/:id/compliance", s.employeeCompliance)
+	t.GET("/employees/:id/timeline", s.employeeTimeline)
+	t.GET("/employees/:id/reviews", s.employeeReviews)
+	t.POST("/exports/dossie/:employeeId", step, s.exportDossie)
+
+	// lotes
+	up := auth.RequirePerm("lotes:enviar")
+	t.POST("/batches/uploads", up, s.startUpload)
+	t.GET("/batches/uploads/:id", s.uploadStatus)
+	t.HEAD("/batches/uploads/:id", s.uploadStatus)
+	t.PATCH("/batches/uploads/:id", up, s.uploadChunk)
+	t.POST("/batches/uploads/:id/complete", up, s.uploadComplete)
+	t.POST("/batches", up, s.createBatch)
+	t.GET("/batches", s.listBatches)
+	t.GET("/batches/:id", s.getBatch)
+	t.GET("/batches/:id/events", s.batchEvents)
+	t.GET("/batches/:id/export-zip", s.exportBatchZip)
+	t.POST("/batches/:id/retry", up, s.retryBatch)
+
+	// documentos e revisão
+	t.GET("/documents", s.listDocuments)
+	t.GET("/documents/search", s.searchDocuments)
+	t.GET("/documents/:id", s.getDocument)
+	t.GET("/documents/:id/pages/:n/url", s.documentPageURL)
+	t.GET("/documents/:id/highlights", s.documentHighlights)
+	t.GET("/documents/:id/download", s.downloadDocument)
+	t.GET("/review/queue", s.reviewQueue)
+	t.POST("/review/:documentId", auth.RequirePerm("revisao:fazer"), s.applyReview)
+
+	// conformidade
+	t.GET("/compliance", s.listCompliance)
+	t.GET("/risks", s.listRisks)
+	t.POST("/risks/:id/ignore", admin, s.ignoreRisk)
+	t.POST("/risks/:id/reabrir", admin, s.reopenRisk)
+	t.POST("/compliance/cobrar", s.chargePending)
+	t.POST("/compliance/:id/dispensar", admin, s.dispenseItem)
+	t.GET("/calendar", s.calendar)
+	t.POST("/employees/:id/documents/manual", auth.RequirePerm("revisao:fazer"), s.createManualDocument)
+	t.GET("/notifications", s.listNotifications)
+	t.POST("/notifications/:id/read", s.readNotification)
+
+	// métricas, relatórios, auditoria
+	t.GET("/metrics/overview", s.metricsOverview)
+	t.GET("/metrics/compliance", s.metricsCompliance)
+	t.GET("/metrics/processing", s.metricsProcessing)
+	t.GET("/metrics/storage", s.metricsStorage)
+	t.GET("/metrics/finops", s.metricsFinops)
+	t.GET("/reports/:tipo", auth.RequirePerm("relatorios:ler"), s.report)
+	t.GET("/audit", s.listAudit)
+
+	// configuração da empresa (admin)
+	t.GET("/logs/:tipo", admin, s.logs)
+	t.POST("/units", admin, s.saveUnit)
+	t.PUT("/units/:id", admin, s.saveUnit)
+	t.POST("/positions", admin, s.savePosition)
+	t.PUT("/positions/:id", admin, s.savePosition)
+	t.PUT("/requirements", admin, s.putRequirement)
+	t.PUT("/requirements/bulk", admin, s.bulkRequirements)
+	t.POST("/departments", admin, s.saveDepartment)
+	t.PUT("/departments/:id", admin, s.saveDepartment)
+	t.DELETE("/departments/:id", admin, s.deleteDepartment)
+	t.PUT("/tenant/cadastro-config", admin, s.putCadastroConfig)
+	t.DELETE("/requirements/:id", admin, s.deleteRequirement)
+	t.POST("/requirements/apply-template", admin, s.applyTemplate)
+	t.GET("/requirements/impact", admin, s.requirementImpact)
+	t.GET("/users", admin, s.listUsers)
+	t.POST("/users", admin, s.inviteUser)
+	t.PATCH("/users/:id", admin, step, s.patchUser)
+	t.POST("/users/:id/revoke-sessions", admin, s.revokeUserSessions)
+	t.PATCH("/tenant", admin, s.patchTenant)
+	t.PUT("/tenant/domains", admin, step, s.putDomains)
+	t.GET("/retention", admin, s.listRetention)
+	t.PUT("/retention/:typeId", admin, s.putRetention)
+	t.GET("/billing", admin, s.billing)
+	t.GET("/support-access", admin, s.listSupportAccess)
+	t.POST("/support-access/:id/:acao", admin, step, s.decideSupportAccess)
+}

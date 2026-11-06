@@ -1,350 +1,181 @@
-"""
-API Principal FastAPI — Document AI Factory (Bernhoeft Edition)
-Responsáveis na Equipe: Luis Miguel (API/Ingestão) & Lennarth (Resiliência/HITL)
-"""
-import os
+"""IA Core — serviço FastAPI: fatia lotes, separa/classifica/extrai por página (multimodal) e devolve por callback assinado."""
+import hashlib
 import io
-import json
-import uuid
-import zipfile
-import fitz
-from pathlib import Path
-from typing import Optional
-from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Query
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse, HTMLResponse, StreamingResponse
+import logging
+import os
+import tempfile
+import threading
+import time
+from concurrent.futures import ThreadPoolExecutor
+from typing import Dict, List, Optional
 
-from .database import (
-    init_db,
-    create_job,
-    get_job_full,
-    list_all_jobs,
-    update_single_document,
-    save_job_documents,
-)
-from .ingestion import slice_batch_to_pages, STORAGE_ROOT
-from .gemini_engine import process_or_resume_job, _build_compliance_checklist
-from .sample_generator import ensure_sample_batches
-from .anonymizer import anonymize_ocr_text
-from .schemas import RevisaoHumanaInput
+import httpx
+from fastapi import BackgroundTasks, Depends, FastAPI, Header, HTTPException
+from fastapi.responses import FileResponse, JSONResponse, Response
+from pydantic import BaseModel
+from starlette.background import BackgroundTask
 
-app = FastAPI(
-    title="Document AI Factory API • Bernhoeft Edition — Hack Garanhuns Tech 2026",
-    description="Pipeline Multimodal para Ingestão de Lotes GRT/SST, Recorte Físico de Documentos em PDF/ZIP, Reconhecimento de AR/Manuscritos, Funil FinOps 950k, Fila HITL, Retomada após Falha e Anonimização LGPD.",
-    version="2.0.0",
-)
+from . import agrupar, callback, catalogo, fatiar, render, schemas
+from .providers import obter_provider
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-app.mount(
-    "/frontend",
-    StaticFiles(directory=Path(__file__).resolve().parent.parent / "frontend"),
-    name="frontend",
-)
-
-FRONTEND_HTML_PATH = Path(__file__).resolve().parent.parent / "frontend" / "index.html"
-SAMPLE_FILES: dict = {}
+log = logging.getLogger("ia_core")
+logging.basicConfig(level=logging.INFO)
+app = FastAPI(title="Citadel IA · IA Core", version="1.0.0")
+POOL = ThreadPoolExecutor(max_workers=int(os.environ.get("IA_WORKERS", "4")))
+PROVIDER = obter_provider()
+DELAY_MS = int(os.environ.get("IA_PAGE_DELAY_MS", "0"))
 
 
-@app.on_event("startup")
-def on_startup():
-    global SAMPLE_FILES
-    init_db()
-    SAMPLE_FILES = ensure_sample_batches()
-    existing_jobs = list_all_jobs()
-    if not existing_jobs:
-        _run_preset_batch("lote_completo", simulate_failure_at_page=None)
+def auth(x_iacore_key: Optional[str] = Header(None)):
+    if x_iacore_key != os.environ.get("IA_CORE_API_KEY", "dev-ia-core-key"):
+        raise HTTPException(401, "chave do IA Core inválida")
 
 
-def _run_preset_batch(preset: str, simulate_failure_at_page: Optional[int] = None, api_key: Optional[str] = None) -> dict:
-    sample_path = SAMPLE_FILES.get("lote_hitl" if preset == "lote_hitl" else "lote_completo")
-    if not sample_path or not sample_path.exists():
-        SAMPLE_FILES.update(ensure_sample_batches())
-        sample_path = SAMPLE_FILES["lote_completo"]
-
-    file_bytes = sample_path.read_bytes()
-    filename = sample_path.name
-    job_id = f"lote-{uuid.uuid4().hex[:6]}"
-
-    pages_info = slice_batch_to_pages(job_id, file_bytes, filename)
-    embedded_map = {p["page_number"]: p.get("embedded_text", "") for p in pages_info}
-    engine_mode = "GEMINI_3.8_FLASH_MULTIMODAL" if (api_key or os.environ.get("GEMINI_API_KEY")) else "FUNIL_HIBRIDO_BERNHOEFT_950K"
-
-    create_job(job_id, filename, len(pages_info), engine_mode, pages_info)
-    job = process_or_resume_job(
-        job_id,
-        embedded_texts_by_page=embedded_map,
-        simulate_failure_at_page=simulate_failure_at_page,
-        custom_api_key=api_key,
-    )
-    return _serialize_job(job)
+class SliceIn(BaseModel):
+    arquivo_url: str
+    filename: str
 
 
-def _serialize_job(job: dict) -> dict:
-    if not job:
-        return {}
-    job_id = job["job_id"]
-    pages_out = []
-    for p in job.get("pages", []):
-        pnum = p["page_number"]
-        pages_out.append({
-            "page_number": pnum,
-            "status": p["status"],
-            "processed_at": p.get("processed_at"),
-            "error_message": p.get("error_message"),
-            "image_url": f"/api/pages/{job_id}/{pnum}?anonymized=false",
-            "redacted_image_url": f"/api/pages/{job_id}/{pnum}?anonymized=true",
-        })
-    return {
-        "job_id": job_id,
-        "filename": job["filename"],
-        "status": job["status"],
-        "total_pages": job["total_pages"],
-        "completed_pages": job["completed_pages"],
-        "failed_page": job.get("failed_page"),
-        "failure_reason": job.get("failure_reason"),
-        "engine_mode": job.get("engine_mode", "FUNIL_HIBRIDO_BERNHOEFT_950K"),
-        "created_at": job["created_at"],
-        "pages": pages_out,
-        "documents": job.get("documents", []),
-    }
+class PaginaIn(BaseModel):
+    numero: int
+    image_url: str
+    texto_embutido: str = ""
 
 
-@app.get("/", response_class=HTMLResponse)
-def serve_frontend():
-    if FRONTEND_HTML_PATH.exists():
-        return HTMLResponse(content=FRONTEND_HTML_PATH.read_text(encoding="utf-8"))
-    return HTMLResponse("<h1>Document AI Factory Backend Online. Acesse /docs</h1>")
+class JobIn(BaseModel):
+    batch_id: str
+    versao: int
+    callback_url: str
+    tipo_lote: str = "MISTO"
+    paginas: List[PaginaIn]
+    analises_previas: Dict[str, dict] = {}
+    simular_falha_na_pagina: int = 0
+    limiar_confianca: float = 0.75
 
 
-@app.get("/api/jobs")
-def api_list_jobs():
-    jobs = list_all_jobs()
-    return [_serialize_job(j) for j in jobs if j]
+class RenderPagina(BaseModel):
+    image_url: str
+    texto: str = ""
+    palavras: Optional[list] = None
+    caixas: Optional[list] = None
 
 
-@app.get("/api/jobs/{job_id}")
-def api_get_job(job_id: str):
-    job = get_job_full(job_id)
-    if not job:
-        raise HTTPException(status_code=404, detail="Lote não encontrado")
-    return _serialize_job(job)
+class RenderIn(BaseModel):
+    modo: str
+    titulo: str = ""
+    paginas: List[RenderPagina]
 
 
-@app.post("/api/jobs/upload")
-async def api_upload_batch(
-    file: UploadFile = File(...),
-    simulate_failure_at_page: Optional[int] = Form(default=None),
-    api_key: Optional[str] = Form(default=None),
-):
-    file_bytes = await file.read()
-    if not file_bytes:
-        raise HTTPException(status_code=400, detail="Arquivo vazio")
-
-    job_id = f"lote-{uuid.uuid4().hex[:6]}"
-    filename = file.filename or "lote_digitalizado.pdf"
-    pages_info = slice_batch_to_pages(job_id, file_bytes, filename)
-    embedded_map = {p["page_number"]: p.get("embedded_text", "") for p in pages_info}
-    engine_mode = "GEMINI_3.8_FLASH_LIVE" if (api_key or os.environ.get("GEMINI_API_KEY")) else "FUNIL_HIBRIDO_BERNHOEFT_950K"
-
-    create_job(job_id, filename, len(pages_info), engine_mode, pages_info)
-    job = process_or_resume_job(
-        job_id,
-        embedded_texts_by_page=embedded_map,
-        simulate_failure_at_page=simulate_failure_at_page,
-        custom_api_key=api_key,
-    )
-    return _serialize_job(job)
+@app.get("/health")
+def health():
+    return {"status": "ok", "provider": PROVIDER.nome, "tipos": len(catalogo.CODIGOS)}
 
 
-@app.post("/api/jobs/demo/{preset}")
-def api_trigger_demo_preset(
-    preset: str,
-    api_key: Optional[str] = Query(default=None),
-):
-    if preset == "simular_falha":
-        return _run_preset_batch("lote_completo", simulate_failure_at_page=4, api_key=api_key)
-    elif preset == "lote_hitl":
-        return _run_preset_batch("lote_hitl", simulate_failure_at_page=None, api_key=api_key)
-    else:
-        return _run_preset_batch("lote_completo", simulate_failure_at_page=None, api_key=api_key)
+@app.get("/schemas/{tipo}", dependencies=[Depends(auth)])
+def schema(tipo: str):
+    if tipo not in catalogo.TIPOS:
+        raise HTTPException(404, "tipo desconhecido")
+    return schemas.schema_do_tipo(tipo)
 
 
-@app.post("/api/jobs/{job_id}/resume")
-def api_resume_failed_job(job_id: str, api_key: Optional[str] = Query(default=None)):
-    job = get_job_full(job_id)
-    if not job:
-        raise HTTPException(status_code=404, detail="Job não encontrado")
-
-    embedded_map = {}
-    sample_path = SAMPLE_FILES.get("lote_completo")
-    if sample_path and sample_path.exists() and job["total_pages"] == 6:
-        pdf_doc = fitz.open(str(sample_path))
-        for i in range(len(pdf_doc)):
-            embedded_map[i + 1] = pdf_doc.load_page(i).get_text("text") or ""
-        pdf_doc.close()
-
-    updated = process_or_resume_job(
-        job_id,
-        embedded_texts_by_page=embedded_map,
-        simulate_failure_at_page=None,
-        custom_api_key=api_key,
-    )
-    return _serialize_job(updated)
+@app.get("/tipos", dependencies=[Depends(auth)])
+def tipos():
+    return [{"codigo": k, "nome": v["nome"]} for k, v in catalogo.TIPOS.items()]
 
 
-@app.patch("/api/documents/{doc_id}/review")
-def api_human_review_document(doc_id: str, payload: RevisaoHumanaInput):
-    all_jobs = list_all_jobs()
-    target_job = None
-    target_doc = None
-    for j in all_jobs:
-        for d in j.get("documents", []):
-            if d["id"] == doc_id:
-                target_job = j
-                target_doc = d
-                break
-        if target_doc:
-            break
-
-    if not target_doc or not target_job:
-        raise HTTPException(status_code=404, detail="Documento não encontrado")
-
-    target_doc["tipo"] = payload.tipo.value
-    target_doc["texto_ocr"] = payload.texto_ocr
-    masked_text, pii_items = anonymize_ocr_text(payload.texto_ocr, page_num=target_doc["pagina_inicial"])
-    target_doc["texto_ocr_anonimizado"] = masked_text
-    target_doc["dados_sensiveis_lgpd"] = pii_items
-    target_doc["needs_review"] = False
-    target_doc["confianca"] = 1.0
-    target_doc["review_status"] = "HUMAN_APPROVED"
-    target_doc["status_mobilizacao"] = "LIBERADO PARA CATRACA / MOBILIZAÇÃO (APROVADO ANALISTA GRT)"
-    target_doc["revisado_por"] = payload.revisado_por
-    target_doc["notas_revisao"] = payload.notas_revisao
-    if payload.campos_ar is not None:
-        target_doc["campos_ar"] = payload.campos_ar
-    target_doc["compliance_checklist"] = _build_compliance_checklist(target_doc)
-
-    update_single_document(doc_id, target_doc)
-
-    refreshed = get_job_full(target_job["job_id"])
-    still_needs_review = any(d.get("needs_review") for d in refreshed.get("documents", []))
-    save_job_documents(
-        target_job["job_id"],
-        refreshed["documents"],
-        final_status="NEEDS_HUMAN_REVIEW" if still_needs_review else "COMPLETED",
-    )
-    return _serialize_job(get_job_full(target_job["job_id"]))
+@app.post("/slice", dependencies=[Depends(auth)])
+def slice_(body: SliceIn):
+    """Baixa o original (URL assinada, em streaming para disco), fatia página a página e devolve um ZIP."""
+    ext = os.path.splitext(body.filename.lower())[1] or ".bin"
+    src = tempfile.NamedTemporaryFile(delete=False, suffix=ext)
+    try:
+        with httpx.stream("GET", body.arquivo_url, timeout=600) as r:
+            r.raise_for_status()
+            for chunk in r.iter_bytes(1 << 20):
+                src.write(chunk)
+        src.close()
+        out = tempfile.NamedTemporaryFile(delete=False, suffix=".zip")
+        out.close()
+        try:
+            n = fatiar.fatiar(src.name, body.filename, out.name)
+        except Exception as e:
+            os.unlink(out.name)
+            raise HTTPException(422, f"não foi possível fatiar o arquivo: {e}")
+        log.info("fatiado %s: %d páginas", body.filename, n)
+        return FileResponse(out.name, media_type="application/zip", background=BackgroundTask(os.unlink, out.name))
+    finally:
+        try:
+            os.unlink(src.name)
+        except OSError:
+            pass
 
 
-@app.get("/api/documents/{doc_id}/pdf")
-def api_download_split_document_pdf(doc_id: str, anonymized: bool = Query(default=False)):
-    """
-    Baixa o arquivo PDF recortado fisicamente contendo apenas as páginas agrupadas deste documento
-    (em versão Original ou com Tarjas LGPD).
-    """
-    all_jobs = list_all_jobs()
-    for j in all_jobs:
-        for d in j.get("documents", []):
-            if d["id"] == doc_id:
-                job_id = j["job_id"]
-                fname = d.get("nome_arquivo_separado") or f"{doc_id}.pdf"
-                prefix = "LGPD_" if anonymized else ""
-                pdf_path = STORAGE_ROOT / "split_pdfs" / job_id / f"{prefix}{fname}"
-                if pdf_path.exists():
-                    return FileResponse(
-                        str(pdf_path),
-                        media_type="application/pdf",
-                        filename=f"{prefix}{fname}",
-                    )
-    raise HTTPException(status_code=404, detail="PDF separado do documento não encontrado")
+def _baixar(url: str) -> bytes:
+    r = httpx.get(url, timeout=120)
+    r.raise_for_status()
+    return r.content
 
 
-@app.get("/api/jobs/{job_id}/export-zip")
-def api_export_job_zip(job_id: str, anonymized: bool = Query(default=False)):
-    """
-    Exporta um pacote ZIP contendo todos os documentos separados e renomeados em PDF
-    + Manifesto JSON de Auditoria e Compliance GRT Bernhoeft.
-    """
-    job = get_job_full(job_id)
-    if not job:
-        raise HTTPException(status_code=404, detail="Lote não encontrado")
-
-    split_dir = STORAGE_ROOT / "split_pdfs" / job_id
-    prefix = "LGPD_" if anonymized else ""
-    mem_zip = io.BytesIO()
-
-    with zipfile.ZipFile(mem_zip, mode="w", compression=zipfile.ZIP_DEFLATED) as zf:
-        for doc in job.get("documents", []):
-            fname = doc.get("nome_arquivo_separado") or f"{doc['id']}.pdf"
-            pasta_rh = doc.get("pasta_destino_rh") or "DOSSIE_GERAL"
-            target_pdf = split_dir / f"{prefix}{fname}"
-            if target_pdf.exists():
-                zf.write(str(target_pdf), arcname=f"{pasta_rh}/{prefix}{fname}")
-
-        manifest = {
-            "empresa": "Bernhoeft - Gestão de Riscos com Terceiros & BPO",
-            "job_id": job_id,
-            "lote_origem": job["filename"],
-            "modo_lgpd_anonimizado": anonymized,
-            "total_paginas_lote": job["total_pages"],
-            "total_documentos_separados": len(job.get("documents", [])),
-            "documentos": [
-                {
-                    "id": d["id"],
-                    "caminho_completo_no_zip": f"{d.get('pasta_destino_rh', 'DOSSIE')}/{prefix}{d.get('nome_arquivo_separado', '')}",
-                    "empresa_nome": d.get("empresa_nome"),
-                    "empresa_cnpj": d.get("empresa_cnpj"),
-                    "funcionario_nome": d.get("funcionario_nome"),
-                    "funcionario_cpf": "***." + d.get("funcionario_cpf", "")[4:11] + "-**" if anonymized else d.get("funcionario_cpf"),
-                    "tipo": d["tipo"],
-                    "vertical_bernhoeft": d.get("vertical_bernhoeft"),
-                    "status_mobilizacao": d.get("status_mobilizacao"),
-                    "paginas_agrupadas": d["paginas"],
-                    "confianca": d["confianca"],
-                    "finops_telemetria": d.get("finops_telemetria"),
-                    "compliance_checklist": d.get("compliance_checklist"),
-                    "texto_ocr": d["texto_ocr_anonimizado"] if anonymized else d["texto_ocr"],
-                }
-                for d in job.get("documents", [])
-            ],
-        }
-        zf.writestr(
-            "00_MANIFESTO_AUDITORIA_BERNHOEFT.json",
-            json.dumps(manifest, indent=2, ensure_ascii=False),
-        )
-
-    mem_zip.seek(0)
-    zip_filename = f"Dossie_Separado_{job_id}_{'LGPD' if anonymized else 'Original'}.zip"
-    return StreamingResponse(
-        mem_zip,
-        media_type="application/zip",
-        headers={"Content-Disposition": f'attachment; filename="{zip_filename}"'},
-    )
+def _processar(job: JobIn):
+    """Analisa páginas pendentes em sequência (a página anterior é contexto), com checkpoint por callback."""
+    cb = job.callback_url
+    base = {"batch_id": job.batch_id, "versao": job.versao}
+    analises: Dict[int, dict] = {int(k): v for k, v in job.analises_previas.items()}
+    anterior = None
+    todas = sorted([(p.numero, p) for p in job.paginas] + [(n, None) for n in analises], key=lambda x: x[0])
+    for numero, p in todas:
+        if p is None:
+            anterior = analises[numero]
+            continue
+        if job.simular_falha_na_pagina and numero == job.simular_falha_na_pagina:
+            callback.enviar(cb, {**base, "evento": "falhou", "erro": f"queda simulada na página {numero} (demonstração de retomada)"}, f"{job.batch_id}:{job.versao}:falhou")
+            return
+        try:
+            if DELAY_MS:  # gancho de teste de caos: deixa o lote lento o bastante para derrubar processos no meio
+                time.sleep(DELAY_MS / 1000)
+            img = _baixar(p.image_url)
+            a = dict(PROVIDER.analisar(img, numero, anterior, p.texto_embutido, job.tipo_lote))
+            a["sha256"] = hashlib.sha256(img).hexdigest()
+            analises[numero] = a
+            anterior = a
+            callback.enviar(cb, {**base, "evento": "pagina", "numero": numero, "status": "OK", "analise": a}, f"{job.batch_id}:{job.versao}:pagina:{numero}")
+        except Exception as e:  # noqa: BLE001
+            log.exception("falha na página %d", numero)
+            callback.enviar(cb, {**base, "evento": "pagina", "numero": numero, "status": "FALHOU", "erro": str(e)[:500]}, f"{job.batch_id}:{job.versao}:pagina:{numero}:falha")
+            callback.enviar(cb, {**base, "evento": "falhou", "erro": f"página {numero}: {str(e)[:300]}", "paginas_falhas": [numero]}, f"{job.batch_id}:{job.versao}:falhou")
+            return
+    docs = agrupar.agrupar(analises)
+    callback.enviar(cb, {**base, "evento": "concluido", "documentos": docs}, f"{job.batch_id}:{job.versao}:concluido")
 
 
-@app.get("/api/pages/{job_id}/{page_number}")
-def api_get_page_image(job_id: str, page_number: int, anonymized: bool = Query(default=False)):
-    job = get_job_full(job_id)
-    if not job:
-        raise HTTPException(status_code=404, detail="Job não encontrado")
-    for p in job.get("pages", []):
-        if p["page_number"] == page_number:
-            target_path = Path(p["redacted_image_path"] if anonymized else p["image_path"])
-            if target_path.exists():
-                return FileResponse(str(target_path), media_type="image/png")
-    raise HTTPException(status_code=404, detail="Imagem da página não encontrada")
+@app.post("/jobs", status_code=202, dependencies=[Depends(auth)])
+def criar_job(job: JobIn):
+    POOL.submit(_processar, job)
+    return {"job_id": f"{job.batch_id}:{job.versao}", "paginas": len(job.paginas)}
 
 
-@app.get("/api/samples/{sample_key}")
-def api_download_sample_pdf(sample_key: str):
-    path = SAMPLE_FILES.get(sample_key)
-    if not path or not path.exists():
-        raise HTTPException(status_code=404, detail="Arquivo de amostra não encontrado")
-    return FileResponse(str(path), media_type="application/pdf", filename=path.name)
+@app.post("/retry", status_code=202, dependencies=[Depends(auth)])
+def retry(job: JobIn):
+    """Reprocessa só as páginas pendentes; as concluídas chegam em `analises_previas` (checkpoint) e não são refeitas."""
+    return criar_job(job)
+
+
+@app.post("/render", dependencies=[Depends(auth)])
+def render_pdf(body: RenderIn):
+    if body.modo not in ("original", "pesquisavel", "anonimizado"):
+        raise HTTPException(400, "modo inválido")
+    paginas = []
+    for p in body.paginas:
+        paginas.append({"imagem": _baixar(p.image_url), "texto": p.texto, "palavras": p.palavras, "caixas": p.caixas})
+    try:
+        pdf = render.gerar_pdf(body.modo, body.titulo, paginas)
+    except render.RenderErro as e:
+        raise HTTPException(422, str(e))
+    return Response(pdf, media_type="application/pdf")
+
+
+@app.post("/qualidade", dependencies=[Depends(auth)])
+def qualidade():
+    from .qualidade import executar
+
+    return executar(PROVIDER)

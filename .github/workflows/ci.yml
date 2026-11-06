@@ -1,0 +1,51 @@
+name: ci
+on: { push: { branches: [main, citadel_ai_v2] }, pull_request: {} }
+jobs:
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/check-secrets.py
+  backend:
+    needs: secrets
+    runs-on: ubuntu-latest
+    services:
+      postgres: { image: "postgres:16-alpine", env: { POSTGRES_USER: citadel, POSTGRES_PASSWORD: citadel, POSTGRES_DB: citadel }, ports: ["5432:5432"], options: "--health-cmd pg_isready --health-interval 5s --health-retries 10" }
+      redis: { image: "redis:7-alpine", ports: ["6379:6379"] }
+    env:
+      DATABASE_MIGRATE_URL: postgres://citadel:citadel@localhost:5432/citadel?sslmode=disable
+      DATABASE_URL: postgres://citadel_app:citadel_app@localhost:5432/citadel?sslmode=disable
+      REDIS_URL: redis://localhost:6379/0
+    defaults: { run: { working-directory: backend } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with: { go-version-file: backend/go.mod }
+      - run: go vet ./...
+      - uses: golangci/golangci-lint-action@v6
+        with: { working-directory: backend }
+      - run: go run ./cmd/migrate
+      - run: go test -race ./...   # inclui o teste de isolamento entre empresas (RLS) e de imutabilidade da auditoria
+  ia-core:
+    needs: secrets
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: ia-core } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt pytest
+      - run: python -m pytest tests -q
+  frontend:
+    needs: secrets
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: frontend } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: frontend/package-lock.json }
+      - run: npm ci
+      - run: npm run lint
+      - run: npx tsc --noEmit
+      - run: npm test
+      - run: npm run build

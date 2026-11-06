@@ -1,0 +1,3 @@
+# ADR 0002 — RLS por empresa com bypass explícito
+
+Toda tabela de negócio tem `tenant_id` e política `tenant_id = current_setting('app.tenant_id') OR current_setting('app.bypass') = 'on'` com `FORCE ROW LEVEL SECURITY`. A aplicação conecta como `citadel_app` (sem `BYPASSRLS`). `DB.Tenant()` define o tenant por transação a partir do JWT; `DB.System()` liga o bypass e só é usado em: login/refresh (usuário ainda sem tenant), callbacks assinados do IA Core, jobs agendados e telas Master que **não** tocam conteúdo de documentos (o Master só vê documentos via acesso de suporte aprovado, na rota de empresa, com `X-Tenant-ID`). `isolation_test.go` garante que A não lê nem grava em B e que, sem contexto, nada é visível.

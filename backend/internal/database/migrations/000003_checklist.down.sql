@@ -1,0 +1,2 @@
+DROP INDEX IF EXISTS pages_hash;
+ALTER TABLE documents DROP COLUMN IF EXISTS checklist;

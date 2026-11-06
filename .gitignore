@@ -1,13 +1,69 @@
-# Virtual environment
+# ===== Segredos e ambiente (nunca versionar) =====
+.env
+.env.*
+!.env.example
+!.env.*.example
+secrets/*
+!secrets/.gitkeep
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+gcp*.json
+*credentials*.json
+*service-account*.json
+*service_account*.json
+*secret*.json
+.npmrc
+.pypirc
+
+# ===== Python (ia-core) =====
 .venv/
+venv/
 __pycache__/
 *.py[cod]
-*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+# amostras geradas (reproduzíveis com `python -m tools.gerador_docs.gerador`)
+ia-core/tools/gerador_docs/samples/
 
-# Runtime storage (auto-generated on startup)
-backend/storage/pages/
-backend/storage/factory_state.db
+# ===== Go (backend) =====
+backend/bin/
+backend/var/
+backend/*.exe
+backend/*.test
+backend/*.out
+coverage.out
 
-# OS files
+# ===== Node / frontend =====
+node_modules/
+dist/
+*.tsbuildinfo
+coverage/
+.vite/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===== Dados de runtime e backups =====
+backups/
+*.dump
+var/
+*.log
+# resquícios do protótipo antigo
+backend/storage/
+
+# ===== Editor / SO =====
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
 .DS_Store
 Thumbs.db
+.claude/settings.local.json
