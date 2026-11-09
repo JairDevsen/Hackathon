@@ -93,7 +93,7 @@ func (s *Server) savePosition(c *gin.Context) {
 }
 
 func (s *Server) listDocTypes(c *gin.Context) {
-	s.sysJSON(c, `SELECT coalesce(json_agg(t ORDER BY t.categoria, t.nome),'[]') FROM (SELECT id, codigo, nome, categoria, sensivel_saude, escopo, validade_padrao_dias, retencao_padrao_dias FROM document_types) t`)
+	s.sysJSON(c, `SELECT coalesce(json_agg(t ORDER BY t.categoria, t.nome),'[]') FROM (SELECT id, codigo, nome, categoria, sensivel_saude, escopo, validade_padrao_dias, retencao_padrao_dias, origem, pistas, revisado_em, (SELECT count(*) FROM documents d WHERE d.document_type=document_types.codigo) AS documentos FROM document_types) t`)
 }
 
 // ---------- matriz de obrigatoriedade ----------
@@ -382,7 +382,7 @@ func (s *Server) revokeUserSessions(c *gin.Context) {
 
 func (s *Server) getTenant(c *gin.Context) {
 	s.queryJSON(c, `SELECT row_to_json(t) FROM (SELECT t.id, t.cnpj, t.razao_social, t.nome_fantasia, t.endereco, t.porte, t.status, t.dominios_email, t.responsavel_financeiro,
-	  t.quota_bytes, t.bytes_usados, t.quota_paginas_mes, t.max_usuarios_rh, t.max_funcionarios, t.limiar_confianca, t.pre_cadastro_automatico, t.politica_anonimizacao, p.nome AS plano,
+	  t.quota_bytes, t.bytes_usados, t.quota_paginas_mes, t.max_usuarios_rh, t.max_funcionarios, t.limiar_confianca, t.similaridade_duplicata, t.pre_cadastro_automatico, t.politica_anonimizacao, p.nome AS plano,
 	  coalesce((SELECT paginas FROM usage_monthly WHERE tenant_id=t.id AND mes=to_char(now(),'YYYY-MM')),0) AS paginas_mes
 	  FROM tenants t LEFT JOIN plans p ON p.id=t.plano_id WHERE t.id=$1) t`, tid(c))
 }
@@ -392,6 +392,7 @@ func (s *Server) patchTenant(c *gin.Context) {
 		NomeFantasia *string        `json:"nome_fantasia"`
 		Endereco     map[string]any `json:"endereco"`
 		Limiar       *float64       `json:"limiar_confianca"`
+		Similaridade *float64       `json:"similaridade_duplicata"`
 		Politica     map[string]any `json:"politica_anonimizacao"`
 		Responsavel  map[string]any `json:"responsavel_financeiro"`
 		PreCadastro  *bool          `json:"pre_cadastro_automatico"`
@@ -403,10 +404,15 @@ func (s *Server) patchTenant(c *gin.Context) {
 		problem.Write(c, problem.BadRequest("limiar de confiança deve ficar entre 0,30 e 0,99"))
 		return
 	}
+	if in.Similaridade != nil && (*in.Similaridade < 0.70 || *in.Similaridade > 1.00) {
+		problem.Write(c, problem.BadRequest("a similaridade para considerar documentos duplicados deve ficar entre 0,70 e 1,00"))
+		return
+	}
 	if s.tx(c, func(ctx context.Context, tx pgx.Tx) error {
 		_, err := tx.Exec(ctx, `UPDATE tenants SET nome_fantasia=coalesce($2,nome_fantasia), endereco=coalesce($3::jsonb,endereco), limiar_confianca=coalesce($4,limiar_confianca),
-		  politica_anonimizacao=coalesce($5::jsonb,politica_anonimizacao), responsavel_financeiro=coalesce($6::jsonb,responsavel_financeiro), pre_cadastro_automatico=coalesce($7,pre_cadastro_automatico) WHERE id=$1`,
-			tid(c), in.NomeFantasia, mustJSONOrNil(in.Endereco), in.Limiar, mustJSONOrNil(in.Politica), mustJSONOrNil(in.Responsavel), in.PreCadastro)
+		  politica_anonimizacao=coalesce($5::jsonb,politica_anonimizacao), responsavel_financeiro=coalesce($6::jsonb,responsavel_financeiro), pre_cadastro_automatico=coalesce($7,pre_cadastro_automatico),
+		  similaridade_duplicata=coalesce($8,similaridade_duplicata) WHERE id=$1`,
+			tid(c), in.NomeFantasia, mustJSONOrNil(in.Endereco), in.Limiar, mustJSONOrNil(in.Politica), mustJSONOrNil(in.Responsavel), in.PreCadastro, in.Similaridade)
 		if err != nil {
 			return err
 		}

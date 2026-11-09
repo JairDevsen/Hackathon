@@ -10,7 +10,8 @@ from typing import Dict, List
 import fitz  # PyMuPDF
 from PIL import Image, ImageSequence
 
-from .anonimizacao import PADROES, NOME
+from .orientacao import endireitar
+from .anonimizacao import PADROES, GRUPOS, caixas_de_palavras
 
 DPI = 150
 THUMB_W = 360
@@ -26,8 +27,9 @@ def _caixas_pii(page: "fitz.Page", texto: str) -> List[list]:
     for tipo, rx in PADROES:
         for m in rx.finditer(texto):
             achados.append((tipo, m.group(0)))
-    for m in NOME.finditer(texto):
-        achados.append(("NOME", m.group(1).strip()))
+    for tipo, rx in GRUPOS:
+        for m in rx.finditer(texto):
+            achados.append((tipo, m.group(1).strip()))
     caixas, vistos = [], set()
     for tipo, s in achados:
         if (tipo, s) in vistos:
@@ -44,24 +46,32 @@ def _pagina_pdf(page: "fitz.Page", numero: int, saida: zipfile.ZipFile) -> dict:
     texto = (page.get_text("text") or "").strip()
     w, h = page.rect.width, page.rect.height
     palavras = [_rel(fitz.Rect(x0, y0, x1, y1), w, h) + [t] for x0, y0, x1, y1, t, *_ in page.get_text("words")]
+    if not texto:  # página escaneada (só imagem): se veio de cabeça para baixo ou de lado, a imagem guardada é girada
+        png, graus = endireitar(png)
+        if graus:
+            im = Image.open(io.BytesIO(png))
+            return _gravar(saida, numero, png, im.width, im.height, "", [], [], "pdf", graus)
     return _gravar(saida, numero, png, pix.width, pix.height, texto, palavras, _caixas_pii(page, texto) if texto else [], "pdf")
 
 
-def _gravar(saida, numero, png: bytes, w: int, h: int, texto: str, palavras, caixas, captura: str) -> dict:
+def _gravar(saida, numero, png: bytes, w: int, h: int, texto: str, palavras, caixas, captura: str, rotacao_corrigida: int = 0) -> dict:
     saida.writestr(f"pages/{numero:04d}.png", png)
     im = Image.open(io.BytesIO(png)).convert("RGB")
     im.thumbnail((THUMB_W, THUMB_W * 2))
     b = io.BytesIO()
     im.save(b, "WEBP", quality=70)
     saida.writestr(f"thumbs/{numero:04d}.webp", b.getvalue())
-    return {"numero": numero, "largura": w, "altura": h, "texto_embutido": texto, "captura": captura, "palavras": palavras, "caixas": caixas}
+    return {"numero": numero, "largura": w, "altura": h, "texto_embutido": texto, "captura": captura, "palavras": palavras, "caixas": caixas,
+            "rotacao_corrigida": rotacao_corrigida}
 
 
 def _pagina_imagem(img: Image.Image, numero: int, saida: zipfile.ZipFile) -> dict:
     rgb = img.convert("RGB")
     b = io.BytesIO()
     rgb.save(b, "PNG")
-    png = b.getvalue()
+    png, graus = endireitar(b.getvalue())  # foto/scan de cabeça para baixo ou de lado: guarda a imagem na orientação correta
+    if graus:
+        rgb = Image.open(io.BytesIO(png)).convert("RGB")
     texto, palavras, caixas = "", [], []
     try:  # OCR posicionado se o Tesseract estiver disponível
         doc = fitz.open()
@@ -71,10 +81,10 @@ def _pagina_imagem(img: Image.Image, numero: int, saida: zipfile.ZipFile) -> dic
         texto = (pg.get_text("text", textpage=tp) or "").strip()
         w, h = pg.rect.width, pg.rect.height
         palavras = [_rel(fitz.Rect(x0, y0, x1, y1), w, h) + [t] for x0, y0, x1, y1, t, *_ in pg.get_text("words", textpage=tp)]
-        caixas = _caixas_pii(pg, texto) if texto else []
+        caixas = caixas_de_palavras(palavras)
     except Exception:
         pass
-    return _gravar(saida, numero, png, rgb.width, rgb.height, texto, palavras, caixas, "foto" if max(rgb.size) < 2500 else "scanner")
+    return _gravar(saida, numero, png, rgb.width, rgb.height, texto, palavras, caixas, "foto" if max(rgb.size) < 2500 else "scanner", graus)
 
 
 def fatiar(caminho: str, nome: str, destino_zip: str) -> int:

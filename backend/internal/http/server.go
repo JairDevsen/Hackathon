@@ -13,6 +13,7 @@ import (
 	"github.com/agreser-innovations/citadel-ia/backend/internal/audit"
 	"github.com/agreser-innovations/citadel-ia/backend/internal/auth"
 	"github.com/agreser-innovations/citadel-ia/backend/internal/database"
+	"github.com/agreser-innovations/citadel-ia/backend/internal/ocrseal"
 	"github.com/agreser-innovations/citadel-ia/backend/pkg/problem"
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
@@ -20,6 +21,11 @@ import (
 )
 
 type Server struct{ *app.App }
+
+// sealer abre o cifrador do texto lido (OCR) da empresa, dentro de uma transação dela.
+func (s *Server) sealer(ctx context.Context, tx pgx.Tx, tenantID string) (*ocrseal.Sealer, error) {
+	return ocrseal.ForTx(ctx, tx, s.KR, tenantID)
+}
 
 const ctxTenant, ctxSupport = "tenant_id", "support_mode"
 

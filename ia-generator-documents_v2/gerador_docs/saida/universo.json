@@ -1,0 +1,841 @@
+{
+  "seed": 42,
+  "data_referencia": "2026-11-06",
+  "empresas": [
+    {
+      "razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+      "cnpj": "43815092000170",
+      "endereco": "Rua Camargo Alves, 458 – Vila Pinho",
+      "cidade": "Caruaru/PE",
+      "segmento": "Limpeza e Conservação",
+      "end": {
+        "logradouro": "Rua Camargo Alves",
+        "numero": "458",
+        "bairro": "Vila Pinho",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55017754"
+      }
+    },
+    {
+      "razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+      "cnpj": "01465298000178",
+      "endereco": "Rua Moura da Cunha, 1799 – São Vicente",
+      "cidade": "Recife/PE",
+      "segmento": "Manutenção Predial",
+      "end": {
+        "logradouro": "Rua Moura da Cunha",
+        "numero": "1799",
+        "bairro": "São Vicente",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52323969"
+      }
+    },
+    {
+      "razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+      "cnpj": "32697150000192",
+      "endereco": "Rua Nogueira Albuquerque, 20 – Buraco Quente",
+      "cidade": "Garanhuns/PE",
+      "segmento": "Manutenção Predial",
+      "end": {
+        "logradouro": "Rua Nogueira Albuquerque",
+        "numero": "20",
+        "bairro": "Buraco Quente",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55297636"
+      }
+    }
+  ],
+  "empregados": [
+    {
+      "nome": "LAVÍNIA ANDRADE ALVES",
+      "cpf": "02657744206",
+      "pis": "19600133894",
+      "matricula": "000534",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "8597-35",
+      "salario": 2660.0,
+      "admissao": "2020-06-27",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "43815092000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Abreu Teixeira",
+        "numero": "920",
+        "bairro": "Vitoria",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55075284"
+      },
+      "nascimento": "1966-03-12"
+    },
+    {
+      "nome": "LIAM SAMPAIO LIMA",
+      "cpf": "31930086806",
+      "pis": "15423511619",
+      "matricula": "005981",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "6817-87",
+      "salario": 1720.0,
+      "admissao": "2024-10-24",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "43815092000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Siqueira Marques",
+        "numero": "1993",
+        "bairro": "São Jorge 1ª Seção",
+        "municipio": "Serra Talhada",
+        "uf": "PE",
+        "cep": "56912080"
+      },
+      "nascimento": "1982-01-24"
+    },
+    {
+      "nome": "JOSUÉ GARCIA BARROS",
+      "cpf": "58685702275",
+      "pis": "13103413164",
+      "matricula": "004654",
+      "cargo": "SERVENTE",
+      "cbo": "7714-91",
+      "salario": 1770.0,
+      "admissao": "2022-07-19",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "43815092000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Barros da Conceição",
+        "numero": "1373",
+        "bairro": "Santa Monica",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55034718"
+      },
+      "nascimento": "1973-11-24"
+    },
+    {
+      "nome": "GUILHERME GARCIA DA MOTA",
+      "cpf": "48136760659",
+      "pis": "12832764837",
+      "matricula": "005413",
+      "cargo": "ENCARREGADO DE LIMPEZA",
+      "cbo": "4458-39",
+      "salario": 2710.0,
+      "admissao": "2025-10-20",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "43815092000170",
+      "desligado_em": "2026-10-15",
+      "end": {
+        "logradouro": "Rua Nascimento Siqueira",
+        "numero": "433",
+        "bairro": "Glória",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55072897"
+      },
+      "nascimento": "1975-08-12"
+    },
+    {
+      "nome": "LUAN MARTINS GARCIA",
+      "cpf": "29623708882",
+      "pis": "16724238847",
+      "matricula": "009677",
+      "cargo": "SERVENTE",
+      "cbo": "7509-84",
+      "salario": 1680.0,
+      "admissao": "2024-03-21",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "43815092000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Guerra da Mata",
+        "numero": "1011",
+        "bairro": "Belmonte",
+        "municipio": "Jaboatão dos Guararapes",
+        "uf": "PE",
+        "cep": "54046773"
+      },
+      "nascimento": "2004-02-14"
+    },
+    {
+      "nome": "OTÁVIO NUNES SILVA",
+      "cpf": "36394225207",
+      "pis": "16916697840",
+      "matricula": "009164",
+      "cargo": "AUXILIAR DE LIMPEZA",
+      "cbo": "4094-97",
+      "salario": 1830.0,
+      "admissao": "2024-11-20",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "43815092000170",
+      "desligado_em": "2026-10-10",
+      "end": {
+        "logradouro": "Avenida Pacheco Lima",
+        "numero": "229",
+        "bairro": "São Lucas",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55037445"
+      },
+      "nascimento": "1999-10-22"
+    },
+    {
+      "nome": "ISABELLY FONSECA CÂMARA",
+      "cpf": "91478116501",
+      "pis": "18281489320",
+      "matricula": "006226",
+      "cargo": "SERVENTE",
+      "cbo": "5323-79",
+      "salario": 1790.0,
+      "admissao": "2026-07-26",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "43815092000170",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Gomes Garcia",
+        "numero": "1001",
+        "bairro": "Universitário",
+        "municipio": "Petrolina",
+        "uf": "PE",
+        "cep": "56301114"
+      },
+      "nascimento": "1992-04-18"
+    },
+    {
+      "nome": "LUARA CASTRO MARQUES",
+      "cpf": "07797516804",
+      "pis": "18227824892",
+      "matricula": "007032",
+      "cargo": "ELETRICISTA",
+      "cbo": "5735-79",
+      "salario": 3200.0,
+      "admissao": "2021-02-25",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "01465298000178",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Montenegro Pereira",
+        "numero": "818",
+        "bairro": "Distrito Industrial Do Jatoba",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52751665"
+      },
+      "nascimento": "1986-06-01"
+    },
+    {
+      "nome": "LEANDRO FREITAS TEIXEIRA",
+      "cpf": "19995413914",
+      "pis": "11331509836",
+      "matricula": "009741",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "5804-10",
+      "salario": 1830.0,
+      "admissao": "2020-10-19",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "01465298000178",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua das Neves da Costa",
+        "numero": "1855",
+        "bairro": "Barreiro",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "50128880"
+      },
+      "nascimento": "1987-12-29"
+    },
+    {
+      "nome": "RODRIGO NUNES BARROS",
+      "cpf": "04077145295",
+      "pis": "14738299731",
+      "matricula": "007849",
+      "cargo": "ELETRICISTA",
+      "cbo": "7334-34",
+      "salario": 2680.0,
+      "admissao": "2020-11-02",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "01465298000178",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Pereira Lima",
+        "numero": "842",
+        "bairro": "Engenho Nogueira",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "51912884"
+      },
+      "nascimento": "1970-02-23"
+    },
+    {
+      "nome": "VALENTINA SÁ SIQUEIRA",
+      "cpf": "67363842060",
+      "pis": "16513338728",
+      "matricula": "007012",
+      "cargo": "ELETRICISTA",
+      "cbo": "5503-45",
+      "salario": 2970.0,
+      "admissao": "2025-07-01",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "01465298000178",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Almeida Pastor",
+        "numero": "201",
+        "bairro": "São Vicente",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "50207667"
+      },
+      "nascimento": "1983-04-07"
+    },
+    {
+      "nome": "RAUL PASTOR CÂMARA",
+      "cpf": "07000352493",
+      "pis": "12677360260",
+      "matricula": "000135",
+      "cargo": "ELETRICISTA",
+      "cbo": "7198-43",
+      "salario": 3340.0,
+      "admissao": "2025-07-22",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "01465298000178",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Nogueira Cardoso",
+        "numero": "1356",
+        "bairro": "Vila Nova Paraíso",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52942498"
+      },
+      "nascimento": "2000-08-16"
+    },
+    {
+      "nome": "MARIA JÚLIA DA CRUZ VIANA",
+      "cpf": "44063480690",
+      "pis": "10980500971",
+      "matricula": "008338",
+      "cargo": "ELETRICISTA",
+      "cbo": "8350-30",
+      "salario": 2650.0,
+      "admissao": "2023-04-11",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "01465298000178",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Ramos Brito",
+        "numero": "141",
+        "bairro": "Beira Linha",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "52437069"
+      },
+      "nascimento": "1975-01-01"
+    },
+    {
+      "nome": "ISIS SIQUEIRA FERNANDES",
+      "cpf": "81151148040",
+      "pis": "19399091697",
+      "matricula": "009360",
+      "cargo": "ELETRICISTA",
+      "cbo": "8282-50",
+      "salario": 3350.0,
+      "admissao": "2022-01-28",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "01465298000178",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Novaes Brito",
+        "numero": "489",
+        "bairro": "Baleia",
+        "municipio": "Recife",
+        "uf": "PE",
+        "cep": "51087405"
+      },
+      "nascimento": "1998-03-21"
+    },
+    {
+      "nome": "LUCAS GARCIA ABREU",
+      "cpf": "92744995746",
+      "pis": "13842513541",
+      "matricula": "002684",
+      "cargo": "ELETRICISTA",
+      "cbo": "7589-79",
+      "salario": 3160.0,
+      "admissao": "2025-10-12",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "32697150000192",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Cassiano Correia",
+        "numero": "17",
+        "bairro": "Jardim Leblon",
+        "municipio": "Belo Jardim",
+        "uf": "PE",
+        "cep": "55158306"
+      },
+      "nascimento": "1978-01-14"
+    },
+    {
+      "nome": "PEDRO HENRIQUE ARAÚJO PACHECO",
+      "cpf": "70304950556",
+      "pis": "11182449357",
+      "matricula": "003435",
+      "cargo": "ELETRICISTA",
+      "cbo": "9631-91",
+      "salario": 3280.0,
+      "admissao": "2025-02-04",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "32697150000192",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Cirino Azevedo",
+        "numero": "190",
+        "bairro": "Unidas",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55296849"
+      },
+      "nascimento": "1994-09-12"
+    },
+    {
+      "nome": "DAVI LUIZ ROCHA DA COSTA",
+      "cpf": "49550065316",
+      "pis": "12427868010",
+      "matricula": "001332",
+      "cargo": "ELETRICISTA",
+      "cbo": "9660-29",
+      "salario": 3040.0,
+      "admissao": "2026-07-25",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "32697150000192",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua da Luz Costela",
+        "numero": "881",
+        "bairro": "Vila Fumec",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55292042"
+      },
+      "nascimento": "1994-10-01"
+    },
+    {
+      "nome": "ANA SOPHIA DA COSTA DA LUZ",
+      "cpf": "36237049975",
+      "pis": "13315869234",
+      "matricula": "002762",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "5450-62",
+      "salario": 1810.0,
+      "admissao": "2026-02-26",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "32697150000192",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Barbosa Nascimento",
+        "numero": "547",
+        "bairro": "Ermelinda",
+        "municipio": "Arcoverde",
+        "uf": "PE",
+        "cep": "56505806"
+      },
+      "nascimento": "1976-09-17"
+    },
+    {
+      "nome": "NATÁLIA DA LUZ CARDOSO",
+      "cpf": "98831876961",
+      "pis": "17337543300",
+      "matricula": "003264",
+      "cargo": "ELETRICISTA",
+      "cbo": "7264-52",
+      "salario": 2820.0,
+      "admissao": "2022-04-25",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "32697150000192",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Rezende Moura",
+        "numero": "1314",
+        "bairro": "Aeroporto",
+        "municipio": "Caruaru",
+        "uf": "PE",
+        "cep": "55065409"
+      },
+      "nascimento": "1973-11-05"
+    },
+    {
+      "nome": "ANA CLARA RIBEIRO CALDEIRA",
+      "cpf": "91115267264",
+      "pis": "11429401960",
+      "matricula": "005763",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "9968-50",
+      "salario": 2660.0,
+      "admissao": "2022-11-21",
+      "jornada": [
+        "06:00",
+        "10:00",
+        "11:00",
+        "15:00"
+      ],
+      "empresa_cnpj": "32697150000192",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Porto da Luz",
+        "numero": "390",
+        "bairro": "Santa Rita De Cássia",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55294045"
+      },
+      "nascimento": "1973-02-09"
+    },
+    {
+      "nome": "MARIANA DA CUNHA ARAGÃO",
+      "cpf": "04207627529",
+      "pis": "18356159518",
+      "matricula": "005020",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "8154-49",
+      "salario": 2070.0,
+      "admissao": "2026-08-02",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "32697150000192",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Lima Novais",
+        "numero": "1136",
+        "bairro": "Aeroporto",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55292196"
+      },
+      "nascimento": "1989-09-27"
+    },
+    {
+      "nome": "HENRY GABRIEL BARBOSA SALES",
+      "cpf": "95851138726",
+      "pis": "19946804436",
+      "matricula": "007143",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "8751-87",
+      "salario": 2790.0,
+      "admissao": "2022-05-09",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "32697150000192",
+      "desligado_em": "2026-10-27",
+      "end": {
+        "logradouro": "Rua Aparecida Fogaça",
+        "numero": "1047",
+        "bairro": "Embaúbas",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55297812"
+      },
+      "nascimento": "1968-08-28"
+    },
+    {
+      "nome": "THEO RIOS CALDEIRA",
+      "cpf": "35897921750",
+      "pis": "14895134330",
+      "matricula": "002514",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "4200-15",
+      "salario": 2550.0,
+      "admissao": "2024-09-12",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "32697150000192",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Cavalcanti Jesus",
+        "numero": "933",
+        "bairro": "Alto Dos Pinheiros",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55296907"
+      },
+      "nascimento": "1978-06-18"
+    },
+    {
+      "nome": "LUIZ HENRIQUE SOUSA FARIAS",
+      "cpf": "74672173070",
+      "pis": "17632016323",
+      "matricula": "008586",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "7805-16",
+      "salario": 2730.0,
+      "admissao": "2024-06-03",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "32697150000192",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Melo Câmara",
+        "numero": "1368",
+        "bairro": "Dom Bosco",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55298572"
+      },
+      "nascimento": "1979-09-23"
+    },
+    {
+      "nome": "MARIA CLARA FERREIRA DAS NEVES",
+      "cpf": "88263207304",
+      "pis": "18687277437",
+      "matricula": "004643",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "8270-72",
+      "salario": 2050.0,
+      "admissao": "2021-08-22",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "32697150000192",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Avenida Moraes Guerra",
+        "numero": "481",
+        "bairro": "Vila Inestan",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55294343"
+      },
+      "nascimento": "1989-04-24"
+    },
+    {
+      "nome": "STELLA FARIAS ALVES",
+      "cpf": "19192147399",
+      "pis": "12362316655",
+      "matricula": "008990",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "7816-63",
+      "salario": 2440.0,
+      "admissao": "2025-09-12",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "32697150000192",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Rua Pereira Moraes",
+        "numero": "1938",
+        "bairro": "Canadá",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55290877"
+      },
+      "nascimento": "1973-05-15"
+    },
+    {
+      "nome": "HELENA OLIVEIRA CORREIA",
+      "cpf": "27095776318",
+      "pis": "10546688931",
+      "matricula": "008099",
+      "cargo": "BOMBEIRO HIDRÁULICO",
+      "cbo": "5797-44",
+      "salario": 2660.0,
+      "admissao": "2022-05-03",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "32697150000192",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Azevedo Rios",
+        "numero": "1484",
+        "bairro": "Centro",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55292860"
+      },
+      "nascimento": "1983-05-21"
+    },
+    {
+      "nome": "BIANCA PINTO DIAS",
+      "cpf": "61956365176",
+      "pis": "16990162725",
+      "matricula": "000923",
+      "cargo": "ELETRICISTA",
+      "cbo": "6131-58",
+      "salario": 2860.0,
+      "admissao": "2020-08-12",
+      "jornada": [
+        "08:00",
+        "12:00",
+        "13:00",
+        "17:00"
+      ],
+      "empresa_cnpj": "32697150000192",
+      "desligado_em": null,
+      "end": {
+        "logradouro": "Travessa Rios Garcia",
+        "numero": "570",
+        "bairro": "Vila Independencia 3ª Seção",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55296258"
+      },
+      "nascimento": "1998-12-15"
+    },
+    {
+      "nome": "LUIZ FERNANDO PIMENTA NUNES",
+      "cpf": "35024564456",
+      "pis": "10531003300",
+      "matricula": "002596",
+      "cargo": "AUXILIAR DE MANUTENÇÃO",
+      "cbo": "5954-26",
+      "salario": 1990.0,
+      "admissao": "2026-05-21",
+      "jornada": [
+        "07:00",
+        "11:00",
+        "12:00",
+        "16:00"
+      ],
+      "empresa_cnpj": "32697150000192",
+      "desligado_em": "2026-10-21",
+      "end": {
+        "logradouro": "Rua Cunha Moraes",
+        "numero": "953",
+        "bairro": "Pousada Santo Antonio",
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "cep": "55294785"
+      },
+      "nascimento": "1991-11-08"
+    }
+  ],
+  "competencias": [
+    "2026-08",
+    "2026-09",
+    "2026-10"
+  ]
+}

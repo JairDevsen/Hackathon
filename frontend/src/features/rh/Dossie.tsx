@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { useQueryClient } from '@tanstack/react-query'
 import { useNavigate, useParams, Link } from 'react-router-dom'
-import { AlertTriangle, Archive, Calendar, ClipboardList, FilePlus2, FileText, FolderOpen, History, IdCard, Pencil, ShieldAlert, ShieldCheck, Stethoscope, Upload, UserCheck, Gavel, DoorOpen, Layers } from 'lucide-react'
+import { AlertTriangle, Archive, Calendar, ClipboardList, FilePlus2, FileText, FolderOpen, History, IdCard, Pencil, ShieldAlert, ShieldCheck, Stethoscope, Upload, UserCheck, Gavel, DoorOpen, Layers, Building, Truck } from 'lucide-react'
 import { SectionLayout, type SideGroup } from '@/components/shell/SectionLayout'
 import { Avatar, Button, Card, ComplianceRing, ConfidenceBar, DataTable, EmptyState, ErrorState, Field, Input, Modal, Select, SkeletonRows, StatusPill, Textarea } from '@/components/ui'
 import { ManualDocModal } from './ManualDoc'
+import { empresaPath } from './Fornecedores'
 import { useGet } from '@/lib/query'
 import { api, download } from '@/lib/api'
 import { competenciaLabel, fmtDate, fmtDateTime, MOTIVOS } from '@/lib/format'
@@ -34,7 +35,7 @@ export function DossieLayout() {
     { label: 'Exportar', items: [{ to: `${base}/exportar`, label: 'Dossiê completo', icon: Archive }] },
   ]
   return (
-    <SectionLayout back={{ to: '/app/buscar', label: 'Voltar para a busca' }} groups={groups}
+    <SectionLayout back={{ to: '/app/funcionarios', label: 'Voltar para funcionários' }} groups={groups}
       action={<div className="space-y-2">
         {can('lotes:enviar') && <Button variant="primary" className="w-full" onClick={() => nav(`/app/lotes/novo?funcionario=${id}`)}><Upload className="h-4 w-4" />Enviar documento deste funcionário</Button>}
         {can('revisao:fazer') && <Button className="w-full" onClick={() => setManual(true)}><FilePlus2 className="h-4 w-4" />Lançar documento manualmente</Button>}
@@ -45,8 +46,14 @@ export function DossieLayout() {
           <Avatar nome={e.nome} size="lg" />
           <div className="min-w-0 flex-1">
             <h1 className="truncate font-display text-3xl font-bold text-brand-darker">{e.nome}</h1>
-            <p className="text-sm text-muted-foreground">{e.cpf_mascarado} · {e.cargo ?? 'sem cargo'} · {e.unidade ?? 'sem unidade'} · matrícula {e.matricula ?? '—'}</p>
-            <p className="text-sm text-muted-foreground">{e.supplier_id ? <>{e.vinculo === 'TERCEIRIZADA' ? 'Terceirizado de' : 'Trabalha para o fornecedor'} <Link to={`/app/fornecedores/${e.supplier_id}`} className="font-medium text-brand underline">{e.fornecedor}</Link></> : 'Funcionário da própria empresa'}</p>
+            <p className="text-sm text-muted-foreground">{e.cpf_mascarado} · {e.cargo ?? 'sem cargo'} · matrícula {e.matricula ?? '—'}</p>
+            <p className="mt-1.5 flex flex-wrap items-center gap-1.5 text-xs" aria-label="Onde esta pessoa trabalha">
+              {e.supplier_id
+                ? <Link to={empresaPath(e.vinculo, e.supplier_id)} className="inline-flex items-center gap-1 rounded-full bg-brand-lighter px-2.5 py-1 font-semibold text-brand-darker hover:underline"><Truck className="h-3 w-3" aria-hidden />{e.vinculo === 'TERCEIRIZADA' ? 'Terceirizada' : 'Fornecedor'}: {e.fornecedor}</Link>
+                : <span className="inline-flex items-center rounded-full bg-brand-lighter px-2.5 py-1 font-semibold text-brand-darker">Própria empresa</span>}
+              {e.department_id && <Link to={`/app/setores/${e.department_id}`} className="inline-flex items-center gap-1 rounded-full border border-border px-2.5 py-1 font-medium hover:bg-brand-50"><Building className="h-3 w-3" aria-hidden />Setor {e.setor}</Link>}
+              {e.unidade && <span className="inline-flex items-center rounded-full border border-border px-2.5 py-1 text-muted-foreground">{e.unidade}</span>}
+            </p>
           </div>
           <StatusPill status={e.status} />
           {e.pre_cadastro && <span className="rounded-full bg-warning-bg px-2 py-1 text-xs font-semibold text-warning">Pré-cadastrado pelo lote</span>}

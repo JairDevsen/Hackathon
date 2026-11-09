@@ -39,6 +39,7 @@ type JobRequest struct {
 	TipoLote         string                     `json:"tipo_lote"`
 	Paginas          []PageRef                  `json:"paginas"`
 	AnalisesPrevias  map[string]json.RawMessage `json:"analises_previas,omitempty"`
+	TiposExtras      []TipoNovo                 `json:"tipos_extras,omitempty"` // tipos que a IA já descobriu (catálogo do backend): o IA Core reaprende as pistas
 	SimularFalhaNaPg int                        `json:"simular_falha_na_pagina,omitempty"`
 	LimiarConfianca  float64                    `json:"limiar_confianca"`
 }
@@ -67,8 +68,18 @@ type NaoConformidade struct {
 	Descricao string `json:"descricao"`
 }
 
+// TipoNovo é um tipo documental que a IA descobriu ao ler um documento que o catálogo curado não cobria.
+type TipoNovo struct {
+	Codigo    string   `json:"codigo"`
+	Nome      string   `json:"nome"`
+	Escopo    string   `json:"escopo"`
+	Categoria string   `json:"categoria"`
+	Pistas    []string `json:"pistas"`
+}
+
 type Documento struct {
 	Tipo             string            `json:"tipo"`
+	TipoNovo         *TipoNovo         `json:"tipo_novo,omitempty"`
 	Titulo           string            `json:"titulo"`
 	Paginas          []int             `json:"paginas"`
 	Confianca        float64           `json:"confianca"`
@@ -135,12 +146,46 @@ type RenderPage struct {
 	Texto    string          `json:"texto,omitempty"`
 	Palavras json.RawMessage `json:"palavras,omitempty"` // [x0,y0,x1,y1,texto] relativas (camada de texto posicionada)
 	Caixas   json.RawMessage `json:"caixas,omitempty"`   // [x0,y0,x1,y1,rótulo] relativas (dados pessoais a tarjar)
+	// TextoNativo: a página tem camada de texto no PDF (palavras exatas); sem ela, a cópia anonimizada depende de OCR.
+	TextoNativo bool `json:"texto_nativo,omitempty"`
 }
 
 // Render devolve o PDF: modo original | pesquisavel | anonimizado.
-func (c *Client) Render(ctx context.Context, modo, titulo string, pages []RenderPage, out io.Writer) error {
-	_, err := c.do(ctx, "POST", "/render", map[string]any{"modo": modo, "titulo": titulo, "paginas": pages}, out)
+// termos são nomes já conhecidos (ex.: do funcionário) que a cópia anonimizada tarja onde aparecerem.
+func (c *Client) Render(ctx context.Context, modo, titulo string, pages []RenderPage, termos []string, out io.Writer) error {
+	_, err := c.do(ctx, "POST", "/render", map[string]any{"modo": modo, "titulo": titulo, "paginas": pages, "termos": termos}, out)
 	return err
+}
+
+// Motor devolve a impressão digital do motor de análise (provedor, modelos, regras e código). A Camada 0 só reaproveita
+// análises feitas por esse mesmo motor.
+func (c *Client) Motor(ctx context.Context) (string, error) {
+	var b bytes.Buffer
+	if _, err := c.do(ctx, "GET", "/health", nil, &b); err != nil {
+		return "", err
+	}
+	var out struct {
+		Motor string `json:"motor"`
+	}
+	if err := json.Unmarshal(b.Bytes(), &out); err != nil || out.Motor == "" {
+		return "", fmt.Errorf("IA Core não informou o motor de análise")
+	}
+	return out.Motor, nil
+}
+
+// Anonymize devolve o texto sem dados pessoais (mesma regra usada na análise dos documentos).
+func (c *Client) Anonymize(ctx context.Context, texto string) (string, error) {
+	var b bytes.Buffer
+	if _, err := c.do(ctx, "POST", "/anonimizar", map[string]any{"texto": texto}, &b); err != nil {
+		return "", err
+	}
+	var out struct {
+		Texto string `json:"texto_anonimizado"`
+	}
+	if err := json.Unmarshal(b.Bytes(), &out); err != nil {
+		return "", err
+	}
+	return out.Texto, nil
 }
 
 // Schema devolve o JSON Schema (Pydantic) dos campos de um tipo documental.

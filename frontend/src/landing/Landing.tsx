@@ -61,7 +61,7 @@ function Hero() {
           <h1 className="mt-5 font-display text-4xl font-bold leading-[1.1] sm:text-5xl">Do lote de papel ao <span className="text-[#c8aef0]">dossiê de cada funcionário</span>, em minutos.</h1>
           <p className="mt-6 max-w-xl text-lg text-white/75">Envie centenas de páginas escaneadas ou fotografadas. A Citadel IA separa cada documento, identifica o tipo, extrai os dados, vincula ao CPF certo e mostra o que está faltando.</p>
           <div className="mt-8 flex flex-wrap gap-3"><a href="#contato" className="btn-primary-gradient" onClick={() => track('cta_demo')}>Agendar demonstração</a><a href="#produto" className="inline-flex items-center gap-2 rounded-full border border-white/25 px-5 py-2.5 font-medium text-white hover:bg-white/10">Ver o produto <ArrowRight className="h-4 w-4" /></a></div>
-          <ul className="mt-10 grid max-w-lg grid-cols-2 gap-x-6 gap-y-3 text-sm text-white/70">{['44 tipos de documentos trabalhistas e de terceirização', 'Arquivos de até 500 MB', 'Retoma de onde parou após falha', 'Anonimização com tarja irreversível'].map((t) => <li key={t} className="flex gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-[#c8aef0]" aria-hidden />{t}</li>)}</ul>
+          <ul className="mt-10 grid max-w-lg grid-cols-2 gap-x-6 gap-y-3 text-sm text-white/70">{['58 tipos de documentos trabalhistas e de terceirização, e a IA aprende os novos', 'Arquivos de até 500 MB', 'Retoma de onde parou após falha', 'Anonimização com tarja irreversível'].map((t) => <li key={t} className="flex gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-[#c8aef0]" aria-hidden />{t}</li>)}</ul>
         </div>
         <div className="relative">
           <Frame src="/landing/dashboard.webp" alt="Painel da Citadel IA com conformidade documental, documentos processados e gráficos (dados fictícios)" />
@@ -291,7 +291,7 @@ function Demo() {
 
 /* ---------- FAQ ---------- */
 const FAQ: [string, string][] = [
-  ['Que documentos a Citadel IA lê?', 'Os 44 tipos do catálogo: holerite, cartão de ponto, ASO, TRCT, AR dos Correios, atestado, CTPS, fichas de EPI, certificados NR, certidões (CRF, CNDT, CND), guias de FGTS e DARF, contrato, apólice de seguro, autuações e processos da terceirizada, entre outros.'],
+  ['Que documentos a Citadel IA lê?', 'Os 58 tipos do catálogo: holerite, cartão de ponto, ASO, TRCT, AR dos Correios, atestado, CTPS, fichas de EPI, certificados NR, certidões (CRF, CNDT, CND), guias de FGTS e DARF, contrato, nota fiscal, apólice de seguro, autuações e processos da terceirizada, entre outros. Um documento que o catálogo não conhece é nomeado pela IA, que passa a reconhecê-lo sozinha nos próximos lotes.'],
   ['E letra de mão?', 'Sim. O modelo lê a imagem, inclusive manuscrito, carimbos e assinaturas. Quando a leitura é duvidosa, o documento vai para a fila de revisão humana.'],
   ['Quanto tempo leva?', 'Depende do tamanho do lote e do plano. Mostramos o tempo real no seu piloto: [[métrica do piloto]].'],
   ['O que acontece quando a IA tem dúvida?', 'O documento entra na fila de revisão com o motivo (baixa confiança, página ilegível, sem vínculo…). Você vê a imagem ao lado dos campos e confirma, corrige, divide ou junta páginas.'],

@@ -1,9 +1,14 @@
 """PDF do documento: original | pesquisável (camada de texto invisível posicionada) | anonimizado (tarja queimada na imagem)."""
 import io
+import os
+import subprocess
+import tempfile
 from typing import Dict, List, Optional
 
 import fitz
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageOps
+
+from .anonimizacao import caixas_de_nomes, caixas_de_palavras
 
 
 class RenderErro(Exception):
@@ -23,18 +28,53 @@ def _tarjar(png: bytes, caixas: List[list]) -> bytes:
     return b.getvalue()
 
 
-def gerar_pdf(modo: str, titulo: str, paginas: List[Dict]) -> bytes:
-    """paginas: [{imagem: bytes, texto, palavras, caixas}]"""
+def _ocr_passada(img: Image.Image, psm: str) -> List[list]:
+    """Uma passada do Tesseract (TSV): palavras com posição em frações da página."""
+    with tempfile.TemporaryDirectory() as d:
+        arq = os.path.join(d, "p.png")
+        img.save(arq)
+        r = subprocess.run(["tesseract", arq, "stdout", "-l", "por", "--psm", psm, "tsv"], capture_output=True, text=True, timeout=120)
+    if r.returncode != 0:
+        raise RuntimeError((r.stderr or "falha no Tesseract").strip()[:200])
+    W, H = img.size
+    palavras = []
+    for linha in r.stdout.splitlines()[1:]:
+        c = linha.split("\t")
+        if len(c) >= 12 and c[0] == "5" and c[11].strip():
+            x, y, w, h = (int(v) for v in c[6:10])
+            palavras.append([x / W, y / H, (x + w) / W, (y + h) / H, c[11].strip()])
+    return palavras
+
+
+def _ocr(png: bytes) -> List[List[list]]:
+    """Lê a imagem por OCR local em várias passadas (tons de cinza e contraste, com leiaute de bloco e de texto solto).
+
+    O OCR de páginas escaneadas é instável (inclinação, ruído, carimbos): um dado que uma passada erra, outra costuma ler.
+    Por isso devolve as palavras de cada passada; as tarjas são a união das detecções. Falha se o Tesseract não existir."""
+    try:
+        im = Image.open(io.BytesIO(png)).convert("L")
+        if im.width < 1650:  # ~200 dpi em A4: tamanho em que o Tesseract lê melhor texto pequeno
+            im = im.resize((1650, round(im.height * 1650 / im.width)), Image.LANCZOS)
+        contraste = ImageOps.autocontrast(im, cutoff=2)
+        return [_ocr_passada(im, "6"), _ocr_passada(contraste, "6"), _ocr_passada(contraste, "11")]
+    except Exception as e:
+        raise RenderErro("não foi possível localizar os dados pessoais desta página (OCR local indisponível: instale o Tesseract com o idioma português); a cópia anonimizada não foi gerada para não expor dados") from e
+
+
+def gerar_pdf(modo: str, titulo: str, paginas: List[Dict], termos: Optional[List[str]] = None) -> bytes:
+    """paginas: [{imagem: bytes, texto, palavras, caixas}]; termos: nomes já conhecidos a tarjar (modo anonimizado)."""
     out = fitz.open()
     for p in paginas:
         png = p["imagem"]
         palavras = p.get("palavras") or []
         caixas = p.get("caixas") or []
         if modo == "anonimizado":
-            if not palavras and not p.get("texto"):
-                # sem OCR não há como saber onde estão os dados pessoais: recusar é mais seguro que fingir anonimizar
-                raise RenderErro("OCR com caixas indisponível para esta página: não é possível garantir a anonimização")
-            png = _tarjar(png, caixas)
+            # página escaneada (só imagem): lê a imagem para saber onde estão os dados pessoais. Sem OCR não há como
+            # anonimizar; recusar é mais seguro que entregar um documento "anonimizado" sem tarja.
+            passadas = [palavras] if palavras and p.get("texto_nativo") else ([palavras] if palavras else []) + _ocr(png)
+            extra = [c for pal in passadas for c in caixas_de_palavras(pal) + caixas_de_nomes(pal, termos or [])]
+            # as caixas guardadas no fatiamento podem estar incompletas; a detecção é refeita sobre as palavras com posição
+            png = _tarjar(png, list(caixas) + extra)
         im = Image.open(io.BytesIO(png))
         w, h = im.size
         pg = out.new_page(width=w * 72 / 150, height=h * 72 / 150)

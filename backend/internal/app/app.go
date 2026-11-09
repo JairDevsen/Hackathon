@@ -90,7 +90,7 @@ func New(ctx context.Context, cfg *config.Config) (*App, error) {
 	hk, _ := hex.DecodeString(cfg.HMACHex)
 	a.Signer = &storage.Signer{Secret: crypto.HMAC(hk, []byte("signed-urls")), BaseURL: cfg.PublicBaseURL}
 	a.IA = iacore.New(cfg.IACoreURL, cfg.IACoreAPIKey)
-	a.Ingest = &documents.Ingestor{KR: a.KR}
+	a.Ingest = &documents.Ingestor{KR: a.KR, Anonimizar: a.IA.Anonymize}
 	a.Auth = &auth.Service{DB: a.DB, Redis: a.Redis, Mail: a.Mail, JWT: a.JWT, Cfg: cfg}
 	a.Batches = &batches.Service{Cfg: cfg, DB: a.DB, Redis: a.Redis, Vault: a.Vault, Signer: a.Signer, IA: a.IA, Ingest: a.Ingest, Queue: a.Queue, Stall: time.Duration(cfg.BatchStallSeconds) * time.Second}
 	slog.Info("dependências prontas", "env", cfg.Env, "storage", cfg.StorageDriver, "mail", cfg.MailDriver)

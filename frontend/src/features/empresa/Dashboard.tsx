@@ -116,13 +116,13 @@ export function AdminDashboard() {
         <Metric label="Vencidos" value={fmtNum(o.vencidos, 0)} detail="exigências a regularizar" to="/app/pendencias" icon={FileClock} tone={o.vencidos ? 'text-danger' : 'text-success'} />
         <Metric label="Vencem em 30 dias" value={fmtNum(o.vencendo_30d, 0)} detail="planeje as renovações" to="/app/calendario" icon={FileClock} tone={o.vencendo_30d ? 'text-warning' : 'text-success'} />
         <Metric label="Riscos em aberto" value={fmtNum(o.riscos_abertos, 0)} detail="sinais para conferência" to="/app/riscos" icon={ShieldAlert} tone={o.riscos_abertos ? 'text-danger' : 'text-success'} />
-        <Metric label="Fornecedores em risco alto" value={fmtNum(o.fornecedores_risco_alto ?? 0, 0)} detail={`de ${fmtNum(o.fornecedores ?? 0, 0)} ativos`} to="/app/fornecedores" icon={Truck} tone={o.fornecedores_risco_alto ? 'text-danger' : 'text-success'} />
+        <Metric label="Fornecedores em risco alto" value={fmtNum(o.fornecedores_risco_alto ?? 0, 0)} detail={`de ${fmtNum(o.fornecedores ?? 0, 0)} ativos`} to="/app/empresas?exposicao=ALTA" icon={Truck} tone={o.fornecedores_risco_alto ? 'text-danger' : 'text-success'} />
         <Metric label="Pré-cadastrados" value={fmtNum(o.pre_cadastros, 0)} detail="gerados pelos lotes" to="/app/funcionarios?pre=1" icon={Users} tone="text-brand" />
       </div>}
     </section>
 
     {!!o?.por_vinculo?.length && (
-      <Card title="Quem trabalha para a empresa" action={<Link to="/app/fornecedores" className="text-sm font-semibold text-brand hover:underline">Ver fornecedores →</Link>}>
+      <Card title="Quem trabalha para a empresa" action={<Link to="/app/empresas" className="text-sm font-semibold text-brand hover:underline">Ver empresas →</Link>}>
         <div className="grid gap-3 sm:grid-cols-3">
           {([['PROPRIA', 'Própria empresa', '/app/funcionarios?vinculo=PROPRIA'], ['TERCEIRIZADA', 'Terceirizadas', '/app/funcionarios?vinculo=TERCEIRIZADA'], ['FORNECEDOR', 'Fornecedores', '/app/funcionarios?vinculo=FORNECEDOR']] as const).map(([k, label, to]) => {
             const g = o.por_vinculo!.find((x) => x.vinculo === k)

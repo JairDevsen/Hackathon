@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
+import { Link, Navigate, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { useQueryClient } from '@tanstack/react-query'
 import { AlertTriangle, ClipboardList, FileText, FolderOpen, Pencil, Plus, ShieldAlert, ShieldCheck, Truck, UserCheck, Users } from 'lucide-react'
 import { SectionLayout, type SideGroup } from '@/components/shell/SectionLayout'
-import { Avatar, Button, Card, ComplianceRing, DataTable, EmptyState, ErrorState, Field, Input, Modal, SectionHeading, Select, SkeletonRows, StatusPill, clsx } from '@/components/ui'
+import { Avatar, Button, Card, ComplianceRing, DataTable, EmptyState, ErrorState, Field, Input, Modal, SectionHeading, Segmented, Select, SkeletonRows, StatusPill, clsx } from '@/components/ui'
 import { useGet } from '@/lib/query'
 import { api } from '@/lib/api'
 import { useAuth } from '@/lib/auth'
@@ -17,36 +17,54 @@ export function ExposicaoBadge({ v }: { v?: string }) {
 const TIPOS: Record<string, string> = { TERCEIRIZADA: 'Terceirizada', FORNECEDOR: 'Fornecedor' }
 const nomeCurto = (e: any) => e.nome_fantasia || e.razao_social
 
+type TipoEmpresa = 'TERCEIRIZADA' | 'FORNECEDOR'
+/** Endereço de uma empresa: terceirizadas e fornecedores têm menu e lista próprios, mas a mesma ficha. */
+export const empresaPath = (tipo?: string, id?: string) => `/app/${tipo === 'TERCEIRIZADA' ? 'terceirizadas' : 'fornecedores'}${id ? `/${id}` : ''}`
+const TEXTOS: Record<TipoEmpresa | 'TODAS', { eyebrow: string; titulo: string; novo: string; vazio: string; texto: string }> = {
+  TERCEIRIZADA: { eyebrow: 'Quem trabalha', titulo: 'Terceirizadas', novo: 'Nova terceirizada',
+    vazio: 'Envie um lote com documentos de uma terceirizada: o CNPJ lido cria a empresa e agrupa seus funcionários e documentos. Também é possível cadastrar manualmente.',
+    texto: 'Empresas que alocam empregados na sua operação. A contratante responde subsidiariamente pelas obrigações trabalhistas que a terceirizada deixar de cumprir (TST Súmula 331, IV): por isso as certidões, guias e documentos dos empregados são cobrados aqui.' },
+  FORNECEDOR: { eyebrow: 'Quem trabalha', titulo: 'Fornecedores', novo: 'Novo fornecedor',
+    vazio: 'Nenhum fornecedor ainda. Envie um lote com os documentos da empresa (contrato, certidões, apólice) ou cadastre manualmente pelo CNPJ.',
+    texto: 'Empresas que fornecem bens ou serviços sem alocar empregados na operação. Os documentos da empresa (certidões, contrato, apólice, autuações) mostram se há risco em contratá-la.' },
+  TODAS: { eyebrow: 'Quem trabalha', titulo: 'Terceirizadas e fornecedores', novo: 'Nova empresa',
+    vazio: 'Envie um lote com documentos de uma empresa: o CNPJ lido cria o cadastro e agrupa tudo dela. Também é possível cadastrar manualmente.',
+    texto: 'O CNPJ lido nos documentos identifica a empresa e agrupa seus funcionários e documentos, com a exposição da contratante a processo trabalhista (TST Súmula 331, IV).' },
+}
+
 /** Lista de fornecedores e terceirizadas, agrupados pelo CNPJ lido nos documentos, com a exposição da contratante a processo trabalhista. */
-export function SuppliersPage() {
+export function SuppliersPage({ tipo }: { tipo?: TipoEmpresa }) {
   const nav = useNavigate()
   const qc = useQueryClient()
   const { can } = useAuth()
   const [sp, setSp] = useSearchParams()
   const [f, setF] = useState({ q: '', tipo: '', status: '' })
   const [newOpen, setNewOpen] = useState(false)
-  const r = useGet<any[]>('/suppliers', { ...f, pre: sp.get('pre') || '' }, { keep: true })
-  const list = r.data ?? []
-  const alta = list.filter((s) => s.exposicao === 'ALTA').length
+  const exposicao = sp.get('exposicao') || ''
+  const setExposicao = (v: string) => { const n = new URLSearchParams(sp); if (v) n.set('exposicao', v); else n.delete('exposicao'); setSp(n) }
+  const t = TEXTOS[tipo ?? 'TODAS']
+  const r = useGet<any[]>('/suppliers', { ...f, tipo: tipo ?? f.tipo, pre: sp.get('pre') || '' }, { keep: true })
+  const todas = r.data ?? []
+  const list = exposicao ? todas.filter((s) => s.exposicao === exposicao && s.status !== 'INATIVO') : todas
+  const alta = todas.filter((s) => s.exposicao === 'ALTA').length
   return (
     <div>
-      <SectionHeading eyebrow="Terceirização" title="Fornecedores e terceirizadas" action={can('funcionarios:gerir') && <Button variant="primary" onClick={() => setNewOpen(true)}><Plus className="h-4 w-4" />Novo fornecedor</Button>}>
-        O CNPJ lido nos documentos identifica a empresa e agrupa seus funcionários e documentos. A contratante responde subsidiariamente pelas obrigações trabalhistas que a terceirizada deixar de cumprir (TST Súmula 331, IV): os documentos exigidos servem para reduzir esse risco, e os indicadores mostram onde ele aparece.
-      </SectionHeading>
+      <SectionHeading eyebrow={t.eyebrow} title={t.titulo} action={can('funcionarios:gerir') && <Button variant="primary" onClick={() => setNewOpen(true)}><Plus className="h-4 w-4" />{t.novo}</Button>}>{t.texto}</SectionHeading>
       <div className="mb-4 grid gap-3 sm:grid-cols-3">
-        <Card><p className="text-xs text-muted-foreground">Fornecedores listados</p><p className="text-2xl font-bold text-brand-darker">{list.length}</p></Card>
+        <Card><p className="text-xs text-muted-foreground">{tipo === 'TERCEIRIZADA' ? 'Terceirizadas' : tipo === 'FORNECEDOR' ? 'Fornecedores' : 'Empresas'} listadas</p><p className="text-2xl font-bold text-brand-darker">{todas.length}</p></Card>
         <Card><p className="text-xs text-muted-foreground">Com exposição alta a processo trabalhista</p><p className={clsx('text-2xl font-bold', alta ? 'text-danger' : 'text-success')}>{alta}</p></Card>
-        <Card><p className="text-xs text-muted-foreground">Pré-cadastros a completar</p><p className="text-2xl font-bold text-warning">{list.filter((s) => s.pre_cadastro).length}</p></Card>
+        <Card><p className="text-xs text-muted-foreground">Pré-cadastros a completar</p><p className="text-2xl font-bold text-warning">{todas.filter((s) => s.pre_cadastro).length}</p></Card>
       </div>
       <div className="mb-4 flex flex-wrap gap-3">
         <Input aria-label="Buscar fornecedor" className="!w-64" placeholder="Nome ou CNPJ" value={f.q} onChange={(e) => setF({ ...f, q: e.target.value })} />
         <Select aria-label="Origem do cadastro" className="!w-52" value={sp.get('pre') || ''} onChange={(e) => setSp(e.target.value ? { pre: e.target.value } : {})}><option value="">Todos os cadastros</option><option value="1">Pré-cadastrados pelo lote</option></Select>
-        <Select aria-label="Tipo" className="!w-44" value={f.tipo} onChange={(e) => setF({ ...f, tipo: e.target.value })}><option value="">Todos os tipos</option><option value="TERCEIRIZADA">Terceirizada</option><option value="FORNECEDOR">Fornecedor</option></Select>
+        {!tipo && <Select aria-label="Tipo" className="!w-44" value={f.tipo} onChange={(e) => setF({ ...f, tipo: e.target.value })}><option value="">Todos os tipos</option><option value="TERCEIRIZADA">Terceirizada</option><option value="FORNECEDOR">Fornecedor</option></Select>}
         <Select aria-label="Status" className="!w-40" value={f.status} onChange={(e) => setF({ ...f, status: e.target.value })}><option value="">Todos os status</option><option value="ATIVO">Ativo</option><option value="INATIVO">Inativo</option></Select>
+        <Segmented value={exposicao} onChange={setExposicao} label="Exposição a processo trabalhista" options={[{ value: '', label: 'Toda exposição' }, { value: 'ALTA', label: 'Alta' }, { value: 'MEDIA', label: 'Média' }, { value: 'BAIXA', label: 'Baixa' }]} />
       </div>
       {r.error ? <ErrorState error={r.error} retry={r.refetch} /> : (
-        <DataTable rows={list} loading={r.isLoading} onRow={(s) => nav(`/app/fornecedores/${s.id}`)}
-          empty={<EmptyState icon={<Truck className="h-5 w-5" />} title="Nenhum fornecedor" text="Envie um lote com documentos de uma terceirizada: o CNPJ lido cria o fornecedor e agrupa tudo dele. Também é possível cadastrar manualmente." />}
+        <DataTable rows={list} loading={r.isLoading} onRow={(s) => nav(empresaPath(s.tipo, s.id))}
+          empty={<EmptyState icon={<Truck className="h-5 w-5" />} title={exposicao ? 'Nenhuma empresa com essa exposição' : `Nenhum${tipo === 'TERCEIRIZADA' ? 'a terceirizada' : tipo === 'FORNECEDOR' ? ' fornecedor' : 'a empresa'}`} text={exposicao ? undefined : t.vazio} />}
           cols={[
             { key: 'razao_social', header: 'Empresa', render: (s) => <span className="flex items-center gap-2"><Avatar nome={nomeCurto(s)} size="sm" /><span><b className="block text-brand-darker">{nomeCurto(s)}</b><span className="text-xs text-muted-foreground">{cnpjMask(s.cnpj)}</span></span>{s.pre_cadastro && <span className="rounded bg-warning-bg px-1.5 py-0.5 text-[10px] font-semibold text-warning">Pré-cadastro</span>}</span> },
             { key: 'tipo', header: 'Tipo', render: (s) => TIPOS[s.tipo] ?? s.tipo },
@@ -56,14 +74,14 @@ export function SuppliersPage() {
             { key: 'exposicao', header: 'Exposição', render: (s) => s.status === 'INATIVO' ? <StatusPill status="INATIVO" /> : <ExposicaoBadge v={s.exposicao} /> },
           ]} />
       )}
-      <SupplierForm open={newOpen} onClose={() => setNewOpen(false)} onDone={(id) => { setNewOpen(false); qc.invalidateQueries({ queryKey: ['/suppliers'] }); nav(`/app/fornecedores/${id}`) }} />
+      <SupplierForm open={newOpen} defaultTipo={tipo} onClose={() => setNewOpen(false)} onDone={(id, tp) => { setNewOpen(false); qc.invalidateQueries({ queryKey: ['/suppliers'] }); nav(empresaPath(tp, id)) }} />
     </div>
   )
 }
 
 /** Cadastro (novo) ou edição/complemento de um fornecedor. */
-function SupplierForm({ open, onClose, onDone, edit }: { open: boolean; onClose: () => void; onDone: (id: string) => void; edit?: any }) {
-  const ini = () => ({ cnpj: edit ? cnpjMask(edit.cnpj) : '', razao_social: edit?.razao_social ?? '', nome_fantasia: edit?.nome_fantasia ?? '', tipo: edit?.tipo ?? 'TERCEIRIZADA', criticidade: edit?.criticidade ?? 'MEDIA',
+function SupplierForm({ open, onClose, onDone, edit, defaultTipo }: { open: boolean; onClose: () => void; onDone: (id: string, tipo: string) => void; edit?: any; defaultTipo?: TipoEmpresa }) {
+  const ini = () => ({ cnpj: edit ? cnpjMask(edit.cnpj) : '', razao_social: edit?.razao_social ?? '', nome_fantasia: edit?.nome_fantasia ?? '', tipo: edit?.tipo ?? defaultTipo ?? 'TERCEIRIZADA', criticidade: edit?.criticidade ?? 'MEDIA',
     objeto: edit?.objeto ?? '', contrato_inicio: edit?.contrato_inicio?.slice(0, 10) ?? '', contrato_fim: edit?.contrato_fim?.slice(0, 10) ?? '', responsavel_nome: edit?.responsavel_nome ?? '', responsavel_email: edit?.responsavel_email ?? '' })
   const [v, setV] = useState<Record<string, string>>(ini)
   const [conferido, setConferido] = useState(true)
@@ -77,10 +95,10 @@ function SupplierForm({ open, onClose, onDone, edit }: { open: boolean; onClose:
       if (edit) {
         const body = Object.fromEntries(Object.entries(v).filter(([k]) => k !== 'cnpj')) // o CNPJ não muda: é a chave que liga os documentos
         await api(`/suppliers/${edit.id}`, { method: 'PATCH', body: { ...body, ...(edit.pre_cadastro && conferido ? { pre_cadastro: false } : {}) } })
-        onDone(edit.id)
+        onDone(edit.id, v.tipo)
       } else {
         const r = await api<{ id: string }>('/suppliers', { method: 'POST', body: v })
-        onDone(r.id)
+        onDone(r.id, v.tipo)
       }
     } catch (e) { setErr((e as Error).message) } finally { setBusy(false) }
   }
@@ -107,11 +125,15 @@ function SupplierForm({ open, onClose, onDone, edit }: { open: boolean; onClose:
 
 export function SupplierLayout() {
   const { id } = useParams()
+  const { pathname, search } = useLocation()
   const sup = useGet<any>(`/suppliers/${id}`)
   const s = sup.data
   if (sup.isLoading) return <SkeletonRows />
-  if (sup.error || !s) return <ErrorState error={sup.error ?? new Error('Fornecedor não encontrado')} />
-  const base = `/app/fornecedores/${id}`
+  if (sup.error || !s) return <ErrorState error={sup.error ?? new Error('Empresa não encontrada')} />
+  const base = empresaPath(s.tipo, id)
+  // um link antigo (/fornecedores/:id) para uma terceirizada abre no endereço dela, mantendo a seção
+  const baseAtual = pathname.split('/').slice(0, 4).join('/')
+  if (baseAtual !== base) return <Navigate to={base + pathname.slice(baseAtual.length) + search} replace />
   const groups: SideGroup[] = [
     { label: 'Cadastro', items: [{ to: base, label: 'Dados e contrato', icon: UserCheck }] },
     { label: 'Documentos', items: [{ to: `${base}/documentos`, label: 'Documentos da empresa', icon: FolderOpen }, { to: `${base}/funcionarios`, label: 'Funcionários alocados', icon: Users }] },
@@ -119,7 +141,7 @@ export function SupplierLayout() {
   ]
   const pct = s.total ? (100 * s.ok) / s.total : 0
   return (
-    <SectionLayout back={{ to: '/app/fornecedores', label: 'Voltar para fornecedores' }} groups={groups}
+    <SectionLayout back={{ to: empresaPath(s.tipo), label: s.tipo === 'TERCEIRIZADA' ? 'Voltar para terceirizadas' : 'Voltar para fornecedores' }} groups={groups}
       header={
         <div className="glass-panel flex flex-wrap items-center gap-4 p-4">
           <Avatar nome={nomeCurto(s)} size="lg" />

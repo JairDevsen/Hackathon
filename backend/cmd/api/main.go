@@ -30,6 +30,14 @@ func main() {
 		os.Exit(1)
 	}
 	defer a.Close()
+	// texto lido (OCR) de lotes anteriores à criptografia: cifra e apaga o que estiver em claro (idempotente)
+	if err := a.Ingest.BackfillOCR(ctx, a.DB); err != nil {
+		slog.Error("cifrar texto lido (OCR) existente", "erro", err)
+	}
+	// o mesmo empregador gravado com grafias diferentes passa a ter um nome só (idempotente)
+	if err := a.Ingest.NormalizeCompanyNames(ctx, a.DB); err != nil {
+		slog.Error("unificar nomes da empresa", "erro", err)
+	}
 	srv := &http.Server{Addr: cfg.HTTPAddr, Handler: (&apihttp.Server{App: a}).Router(), ReadHeaderTimeout: 10 * time.Second}
 	go func() {
 		slog.Info("API Citadel IA no ar", "addr", cfg.HTTPAddr)

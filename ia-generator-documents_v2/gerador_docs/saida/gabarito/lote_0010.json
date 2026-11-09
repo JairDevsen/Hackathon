@@ -1,0 +1,805 @@
+{
+  "arquivo": "lote_0010.pdf",
+  "perfil": "admissao",
+  "empresa_cnpj": "01465298000178",
+  "competencia": "2026-09",
+  "degradacao": "forte",
+  "total_paginas": 13,
+  "total_documentos": 11,
+  "paginas_pdf_nativo": 0,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "post_it:2ª via"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 3
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 180,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "post_it:pago"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        1,
+        2,
+        3
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "RAUL PASTOR CÂMARA",
+        "empregado_cpf": "07000352493",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "PRAZO_INDETERMINADO",
+        "prazo_dias": null,
+        "data_inicio": "2025-07-22",
+        "cargo": "ELETRICISTA",
+        "salario": 3340.0,
+        "jornada": "08:00 às 12:00 e 13:00 às 17:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": false,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Raul Pastor Câmara",
+        "empregado_cpf": "07000352493",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "12677360260",
+        "matricula": "000135",
+        "data_admissao": "2025-07-22",
+        "cargo": "Eletricista",
+        "salario": 3340.0,
+        "foto_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "000135"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregador_razao_social": "Martins Manutenção Serviços Ltda",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "CONTRATO",
+        "data_anotacao": "2025-07-22",
+        "cargo": "Eletricista",
+        "salario": 3340.0,
+        "ferias_inicio": null,
+        "ferias_fim": null,
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "ASO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Raul Pastor Câmara",
+        "empregado_cpf": "07000352493",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Eletricista",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2025-07-19",
+        "riscos_ocupacionais": [
+          "Físico (ruído)",
+          "Químico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Hadassa Sá",
+        "medico_crm": null
+      },
+      "nao_conformidades": [
+        {
+          "regra": "aso_sem_crm",
+          "descricao": "ASO sem CRM do médico",
+          "campo": "medico_crm"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "DECLARACAO_VALE_TRANSPORTE",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": "2025-07-23",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Raul Pastor Câmara",
+        "empregado_cpf": "07000352493",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "opcao": "OPTANTE",
+        "endereco_residencial": "Rua Nogueira Cardoso, 1356 – Vila Nova Paraíso, Recife/PE",
+        "linhas": [
+          {
+            "linha": "805 – Vila Nova Paraíso/Shopping",
+            "tarifa": 4.1,
+            "viagens_por_dia": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": "2025-07-23",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Raul Pastor Câmara",
+        "empregado_cpf": "07000352493",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "Isis Cavalcanti",
+            "parentesco": "Cônjuge",
+            "data_nascimento": "2002-03-28"
+          },
+          {
+            "nome": "Marcelo Câmara",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2016-12-06"
+          },
+          {
+            "nome": "Stella Câmara",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2022-05-06"
+          },
+          {
+            "nome": "Eduardo Câmara",
+            "parentesco": "Enteado(a)",
+            "data_nascimento": "2019-02-01"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Raul Pastor Câmara"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "06/12/2016"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": "2025-07-24",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "RAUL PASTOR CÂMARA",
+        "empregado_cpf": "07000352493",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "ELETRICISTA",
+        "riscos": [
+          "Cortes e perfurações",
+          "Queda de altura",
+          "Agentes biológicos",
+          "Ruído"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "TERMO_RESPONSABILIDADE",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": "2025-07-28",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "RAUL PASTOR CÂMARA",
+        "empregado_cpf": "07000352493",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Calça do uniforme",
+            "quantidade": 2
+          },
+          {
+            "descricao": "Jogo de chaves de fenda",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Bota de segurança",
+            "quantidade": 2
+          },
+          {
+            "descricao": "Alicate universal",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Lanterna",
+            "quantidade": 2
+          },
+          {
+            "descricao": "Crachá funcional",
+            "quantidade": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Crachá funcional"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "CHECKLIST_INTEGRACAO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": "2025-07-26",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Raul Pastor Câmara",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Entrega de uniforme",
+            "marcado": true
+          },
+          {
+            "descricao": "Apresentação ao supervisor do posto",
+            "marcado": true
+          },
+          {
+            "descricao": "Apresentação das normas internas",
+            "marcado": true
+          },
+          {
+            "descricao": "Orientação sobre rotas de fuga",
+            "marcado": true
+          },
+          {
+            "descricao": "Senha do sistema de ponto",
+            "marcado": true
+          },
+          {
+            "descricao": "Leitura do código de conduta",
+            "marcado": false
+          },
+          {
+            "descricao": "Crachá de identificação entregue",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de EPI",
+            "marcado": true
+          },
+          {
+            "descricao": "Treinamento de integração de SST",
+            "marcado": true
+          }
+        ],
+        "assinatura_responsavel_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "FICHA_EPI",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Raul Pastor Câmara",
+        "empregado_cpf": "07000352493",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Eletricista",
+        "entregas": [
+          {
+            "data": "2025-11-12",
+            "descricao": "Bota de segurança",
+            "quantidade": 2,
+            "numero_ca": "21714"
+          },
+          {
+            "data": "2025-12-27",
+            "descricao": "Cinto paraquedista",
+            "quantidade": 2,
+            "numero_ca": "26713"
+          },
+          {
+            "data": "2026-02-11",
+            "descricao": "Capacete classe B",
+            "quantidade": 3,
+            "numero_ca": "36818"
+          },
+          {
+            "data": "2026-04-17",
+            "descricao": "Bota de segurança",
+            "quantidade": 3,
+            "numero_ca": "15275"
+          },
+          {
+            "data": "2026-05-17",
+            "descricao": "Cinto paraquedista",
+            "quantidade": 1,
+            "numero_ca": "39837"
+          },
+          {
+            "data": "2026-06-04",
+            "descricao": "Óculos de proteção",
+            "quantidade": 2,
+            "numero_ca": "34915"
+          },
+          {
+            "data": "2026-09-06",
+            "descricao": "Óculos de proteção",
+            "quantidade": 2,
+            "numero_ca": "44483"
+          },
+          {
+            "data": "2026-09-29",
+            "descricao": "Luva isolante",
+            "quantidade": 3,
+            "numero_ca": "35049"
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "12/11/2025"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "11/02/2026"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "36818"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "04/06/2026"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "34915"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "06/09/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-17 – Ergonomia",
+        "data": "2026-04-30",
+        "carga_horaria_horas": 2.0,
+        "instrutor": "Anthony Gabriel Ribeiro",
+        "participantes": [
+          {
+            "nome": "Rodrigo Nunes Barros",
+            "cpf": "04077145295",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Isis Siqueira Fernandes",
+            "cpf": "81151148040",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Valentina Sá Siqueira",
+            "cpf": "67363842060",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Maria Júlia Da Cruz Viana",
+            "cpf": "44063480690",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Luara Castro Marques",
+            "cpf": "07797516804",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Raul Pastor Câmara",
+            "cpf": "07000352493",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Leandro Freitas Teixeira",
+            "cpf": "19995413914",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Raul Pastor Câmara"
+        }
+      ],
+      "observacao": null
+    }
+  ]
+}

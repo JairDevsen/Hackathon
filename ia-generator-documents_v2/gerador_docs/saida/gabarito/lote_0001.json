@@ -1,0 +1,2807 @@
+{
+  "arquivo": "lote_0001.pdf",
+  "perfil": "misto",
+  "empresa_cnpj": "43815092000170",
+  "competencia": "2026-08",
+  "degradacao": "forte",
+  "total_paginas": 27,
+  "total_documentos": 25,
+  "paginas_pdf_nativo": 6,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "post_it:falta assinar"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "post_it:devolver"
+      ]
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "post_it:pago",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 26,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 27,
+      "documentos": [
+        {
+          "indice": 25,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "OUTRO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "CRF_FGTS",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": "FICT-13999315/2026",
+        "data_emissao": "2026-10-19",
+        "data_validade": "2026-11-18",
+        "situacao": "REGULAR",
+        "codigo_controle": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "CNDT",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": "FICT-70291817/2026",
+        "data_emissao": "2026-03-21",
+        "data_validade": "2026-09-17",
+        "situacao": "NEGATIVA",
+        "codigo_controle": null
+      },
+      "nao_conformidades": [
+        {
+          "regra": "certidao_vencida",
+          "descricao": "certidão fora da validade",
+          "campo": "data_validade"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "GUIA_FGTS",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "anotacao_manuscrita": "aguardando pagto",
+        "identificador_guia": "FICT7834727514924831",
+        "competencia": "2026-08",
+        "data_vencimento": "2026-09-18",
+        "valor_total": 1164.35,
+        "data_pagamento": null,
+        "autenticacao_bancaria_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "DARF",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "periodo_apuracao": "2026-08",
+        "codigo_receita": "1082",
+        "data_vencimento": "2026-09-18",
+        "valor_total": 4061.43,
+        "anotacao_manuscrita": "lançado no sistema",
+        "autenticacao_bancaria_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        6,
+        7
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "91478116501",
+      "empregado": "ISABELLY FONSECA CÂMARA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "ISABELLY FONSECA CÂMARA",
+        "empregado_cpf": null,
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "006226",
+        "periodo_inicio": "2026-08-01",
+        "periodo_fim": "2026-08-31",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-08-01",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-02",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-03",
+            "marcacoes": [
+              "05:58",
+              "09:58",
+              "11:02",
+              "15:30"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-04",
+            "marcacoes": [
+              "05:58",
+              "09:58",
+              "11:08",
+              "15:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-05",
+            "marcacoes": [
+              "05:53",
+              "10:05",
+              "11:05",
+              "15:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-06",
+            "marcacoes": [
+              "05:55",
+              "10:03",
+              "11:08",
+              "15:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-07",
+            "marcacoes": [
+              "06:00",
+              "09:57",
+              "11:07",
+              "15:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-08",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-09",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-10",
+            "marcacoes": [
+              "05:48",
+              "10:00",
+              "11:01",
+              "15:45"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-11",
+            "marcacoes": [
+              "05:50",
+              "10:06",
+              "11:06",
+              "16:16"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-12",
+            "marcacoes": [
+              "05:58",
+              "10:00",
+              "11:05",
+              "15:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-13",
+            "marcacoes": [
+              "06:04",
+              "10:02",
+              "11:07",
+              "15:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-14",
+            "marcacoes": [
+              "05:59",
+              "10:02",
+              "11:05",
+              "15:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-15",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-16",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-17",
+            "marcacoes": [
+              "05:57",
+              "10:06",
+              "11:07",
+              "14:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-18",
+            "marcacoes": [
+              "05:55",
+              "10:01",
+              "11:01",
+              "15:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-19",
+            "marcacoes": [
+              "06:00",
+              "10:03",
+              "11:07",
+              "15:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-20",
+            "marcacoes": [
+              "06:03",
+              "10:05",
+              "11:08",
+              "14:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-21",
+            "marcacoes": [
+              "05:52",
+              "09:59",
+              "11:03",
+              "15:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-22",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-23",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-24",
+            "marcacoes": [
+              "05:59",
+              "09:57",
+              "11:05",
+              "15:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-25",
+            "marcacoes": [
+              "06:05",
+              "10:05",
+              "11:08",
+              "15:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-26",
+            "marcacoes": [
+              "06:02",
+              "10:04",
+              "11:04",
+              "14:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-27",
+            "marcacoes": [
+              "05:55",
+              "10:01",
+              "11:01",
+              "15:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-28",
+            "marcacoes": [
+              "06:02",
+              "10:06",
+              "11:06",
+              "14:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-29",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-30",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-31",
+            "marcacoes": [
+              "05:56",
+              "10:05",
+              "11:05",
+              "16:03"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Isabelly Fonseca Câmara"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "01/08/2026 a 31/08/2026"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "15:03"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "11:08"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "DSR"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "10:00"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "FOLGA"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "11:07"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "09:59"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "11:05"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "10:04"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "11:04"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "10:06"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "HOLERITE",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "91478116501",
+      "empregado": "ISABELLY FONSECA CÂMARA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "ISABELLY FONSECA CÂMARA",
+        "empregado_cpf": "91478116501",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "006226",
+        "cargo": "SERVENTE",
+        "competencia": "2026-08",
+        "salario_base": 1790.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 1790.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "05:03",
+            "provento": 61.63,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,77",
+            "provento": null,
+            "desconto": 143.88
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 107.4
+          }
+        ],
+        "total_proventos": 1851.63,
+        "total_descontos": 251.28,
+        "valor_liquido": 1600.35,
+        "base_calculo_inss": 1851.63,
+        "base_calculo_fgts": 1851.63,
+        "valor_fgts_mes": 148.13,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "05  09  2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "RECIBO_BENEFICIO",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "91478116501",
+      "empregado": "ISABELLY FONSECA CÂMARA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2026-07-29",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Isabelly Fonseca Câmara",
+        "empregado_cpf": null,
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "beneficio": "VALE_REFEICAO",
+        "competencia": "2026-08",
+        "quantidade": 20,
+        "valor_total": 500.0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "48136760659",
+      "empregado": "GUILHERME GARCIA DA MOTA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "GUILHERME GARCIA DA MOTA",
+        "empregado_cpf": "48136760659",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "005413",
+        "periodo_inicio": "2026-08-01",
+        "periodo_fim": "2026-08-31",
+        "forma_registro": "ELETRONICO",
+        "registros": [
+          {
+            "data": "2026-08-01",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-02",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-03",
+            "marcacoes": [
+              "08:02",
+              "12:02",
+              "13:03",
+              "17:46"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-04",
+            "marcacoes": [
+              "08:04",
+              "12:02",
+              "13:04",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-05",
+            "marcacoes": [
+              "07:51",
+              "11:57",
+              "13:00",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-06",
+            "marcacoes": [
+              "07:51",
+              "12:01",
+              "13:02",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-07",
+            "marcacoes": [
+              "07:57",
+              "12:04",
+              "13:04",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-08",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-09",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-10",
+            "marcacoes": [
+              "07:53",
+              "12:04",
+              "13:04",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-11",
+            "marcacoes": [
+              "07:59",
+              "11:58",
+              "13:06",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-12",
+            "marcacoes": [
+              "07:53",
+              "12:02",
+              "13:06",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-13",
+            "marcacoes": [
+              "07:55",
+              "12:04",
+              "13:04",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-14",
+            "marcacoes": [
+              "08:05",
+              "11:59",
+              "13:07",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-15",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-16",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-17",
+            "marcacoes": [
+              "08:03",
+              "12:05",
+              "13:05",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-18",
+            "marcacoes": [
+              "07:52",
+              "12:02",
+              "13:08",
+              "17:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-19",
+            "marcacoes": [
+              "07:59",
+              "11:59",
+              "13:06",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-20",
+            "marcacoes": [
+              "07:52",
+              "12:03",
+              "13:06",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-21",
+            "marcacoes": [
+              "07:52",
+              "12:01",
+              "13:01",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-22",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-23",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-24",
+            "marcacoes": [
+              "08:04",
+              "12:01",
+              "13:01",
+              "17:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-25",
+            "marcacoes": [
+              "07:56",
+              "11:59",
+              "13:08",
+              "17:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-26",
+            "marcacoes": [
+              "07:53",
+              "12:06",
+              "13:07",
+              "17:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-27",
+            "marcacoes": [
+              "07:58",
+              "12:06",
+              "13:06",
+              "18:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-28",
+            "marcacoes": [
+              "08:06",
+              "12:01",
+              "13:08",
+              "17:39"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-29",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-30",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-31",
+            "marcacoes": [
+              "07:48",
+              "12:04",
+              "13:08",
+              "17:07"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "HOLERITE",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "48136760659",
+      "empregado": "GUILHERME GARCIA DA MOTA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "GUILHERME GARCIA DA MOTA",
+        "empregado_cpf": "48136760659",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "005413",
+        "cargo": "ENCARREGADO DE LIMPEZA",
+        "competencia": "2026-08",
+        "salario_base": 2710.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2710.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "04:36",
+            "provento": 85.0,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "8,19",
+            "provento": null,
+            "desconto": 228.81
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 162.6
+          }
+        ],
+        "total_proventos": 2795.0,
+        "total_descontos": 391.41,
+        "valor_liquido": 2403.59,
+        "base_calculo_inss": 2795.0,
+        "base_calculo_fgts": 2795.0,
+        "valor_fgts_mes": 223.6,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "91478116501",
+      "empregado": "ISABELLY FONSECA CÂMARA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2026-09-05",
+        "valor": 1600.35,
+        "pagador_nome": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "pagador_documento": "43815092000170",
+        "favorecido_nome": "ISABELLY FONSECA CÂMARA",
+        "favorecido_documento": "91478116501",
+        "finalidade": "Pagamento de salário 08/2026",
+        "autenticacao": "FICT-E525947624175623908154"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "48136760659",
+      "empregado": "GUILHERME GARCIA DA MOTA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2026-09-05",
+        "valor": 2403.59,
+        "pagador_nome": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "pagador_documento": "43815092000170",
+        "favorecido_nome": "GUILHERME GARCIA DA MOTA",
+        "favorecido_documento": "48136760659",
+        "finalidade": "Pagamento de salário 08/2026",
+        "autenticacao": "FICT-E508327855336035385197"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "RECIBO_BENEFICIO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "48136760659",
+      "empregado": "GUILHERME GARCIA DA MOTA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2026-07-30",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Guilherme Garcia Da Mota",
+        "empregado_cpf": null,
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "beneficio": "VALE_TRANSPORTE",
+        "competencia": "2026-08",
+        "quantidade": 42,
+        "valor_total": 180.6
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "48136760659",
+      "empregado": "GUILHERME GARCIA DA MOTA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2026-09-14",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Guilherme Garcia Da Mota",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-09-12",
+        "motivo": "ônibus quebrou no caminho",
+        "visto_chefia_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "FERIAS",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "48136760659",
+      "empregado": "GUILHERME GARCIA DA MOTA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2026-11-06",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Guilherme Garcia Da Mota",
+        "empregado_cpf": null,
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "subtipo": "AVISO",
+        "aquisitivo_inicio": "2025-10-20",
+        "aquisitivo_fim": "2026-10-19",
+        "gozo_inicio": "2026-12-06",
+        "gozo_fim": "2027-01-04",
+        "dias": 30,
+        "valor_liquido": null
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        16,
+        17
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31930086806",
+      "empregado": "LIAM SAMPAIO LIMA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "LIAM SAMPAIO LIMA",
+        "empregado_cpf": null,
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "005981",
+        "periodo_inicio": "2026-08-01",
+        "periodo_fim": "2026-08-31",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-08-01",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-02",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-03",
+            "marcacoes": [
+              "06:59",
+              "11:06",
+              "12:06",
+              "16:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-04",
+            "marcacoes": [
+              "06:57",
+              "11:00",
+              "12:04",
+              "15:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-05",
+            "marcacoes": [
+              "07:06",
+              "11:02",
+              "12:07",
+              "16:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-06",
+            "marcacoes": [],
+            "ocorrencia": "ATESTADO"
+          },
+          {
+            "data": "2026-08-07",
+            "marcacoes": [
+              "07:00",
+              "11:01",
+              "12:01",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-08",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-09",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-10",
+            "marcacoes": [
+              "06:49",
+              "11:06",
+              "12:06",
+              "16:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-11",
+            "marcacoes": [
+              "06:59",
+              "11:00",
+              "12:08",
+              "16:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-12",
+            "marcacoes": [
+              "06:52",
+              "10:58",
+              "12:08",
+              "16:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-13",
+            "marcacoes": [
+              "06:49",
+              "11:06",
+              "12:06",
+              "15:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-14",
+            "marcacoes": [
+              "06:58",
+              "11:03",
+              "12:03",
+              "16:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-15",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-16",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-17",
+            "marcacoes": [
+              "06:59",
+              "11:05",
+              "12:06",
+              "16:36"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-18",
+            "marcacoes": [
+              "07:03",
+              "11:01",
+              "12:03",
+              "16:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-19",
+            "marcacoes": [
+              "06:52",
+              "11:00",
+              "12:08",
+              "16:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-20",
+            "marcacoes": [
+              "07:05",
+              "11:02",
+              "12:02",
+              "15:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-21",
+            "marcacoes": [
+              "06:51",
+              "11:04",
+              "12:04",
+              "16:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-22",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-23",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-24",
+            "marcacoes": [
+              "07:00",
+              "11:02",
+              "12:02",
+              "16:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-25",
+            "marcacoes": [],
+            "ocorrencia": "ATESTADO"
+          },
+          {
+            "data": "2026-08-26",
+            "marcacoes": [
+              "07:05",
+              "11:02",
+              "12:07",
+              "15:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-27",
+            "marcacoes": [
+              "07:02",
+              "11:01",
+              "12:08",
+              "15:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-28",
+            "marcacoes": [
+              "06:49",
+              "11:01",
+              "12:05",
+              "16:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-29",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-30",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-31",
+            "marcacoes": [
+              "06:52",
+              "11:03",
+              "12:05",
+              "16:08"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Auxiliar De Limpeza"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "11:01"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "11:00"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "DSR"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "06:59"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "15:59"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "11:03"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "HOLERITE",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31930086806",
+      "empregado": "LIAM SAMPAIO LIMA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "LIAM SAMPAIO LIMA",
+        "empregado_cpf": "31930086806",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "005981",
+        "cargo": "AUXILIAR DE LIMPEZA",
+        "competencia": "2026-08",
+        "salario_base": 1720.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 1720.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "03:12",
+            "provento": 37.53,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,70",
+            "provento": null,
+            "desconto": 135.41
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 103.2
+          }
+        ],
+        "total_proventos": 1757.53,
+        "total_descontos": 238.61,
+        "valor_liquido": 1518.92,
+        "base_calculo_inss": 1757.53,
+        "base_calculo_fgts": 1757.53,
+        "valor_fgts_mes": 140.6,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31930086806",
+      "empregado": "LIAM SAMPAIO LIMA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2026-09-05",
+        "valor": 1518.92,
+        "pagador_nome": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "pagador_documento": "43815092000170",
+        "favorecido_nome": "LIAM SAMPAIO LIMA",
+        "favorecido_documento": "31930086806",
+        "finalidade": "Pagamento de salário 08/2026",
+        "autenticacao": "FICT-E500663407032419151490"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31930086806",
+      "empregado": "LIAM SAMPAIO LIMA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Liam Sampaio Lima",
+        "data_atendimento": "2026-10-29",
+        "dias_afastamento": 5,
+        "cid_informado": true,
+        "medico_nome": "Dr(a). Maria Cecília Gomes",
+        "medico_crm": "CRM-PE 11753",
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        21
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02657744206",
+      "empregado": "LAVÍNIA ANDRADE ALVES",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "LAVÍNIA ANDRADE ALVES",
+        "empregado_cpf": "02657744206",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "000534",
+        "periodo_inicio": "2026-08-01",
+        "periodo_fim": "2026-08-31",
+        "forma_registro": "ELETRONICO",
+        "registros": [
+          {
+            "data": "2026-08-01",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-02",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-03",
+            "marcacoes": [
+              "06:02",
+              "09:59",
+              "11:04",
+              "15:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-04",
+            "marcacoes": [
+              "05:56",
+              "10:06",
+              "11:06",
+              "15:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-05",
+            "marcacoes": [
+              "06:06",
+              "10:01",
+              "11:03",
+              "15:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-06",
+            "marcacoes": [
+              "05:56",
+              "10:04",
+              "11:04",
+              "15:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-07",
+            "marcacoes": [
+              "06:00",
+              "10:02",
+              "11:02",
+              "15:53"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-08",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-09",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-10",
+            "marcacoes": [
+              "05:54",
+              "10:02",
+              "11:02",
+              "15:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-11",
+            "marcacoes": [
+              "05:56",
+              "10:05",
+              "11:05",
+              "14:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-12",
+            "marcacoes": [
+              "06:01",
+              "10:04",
+              "11:06",
+              "15:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-13",
+            "marcacoes": [
+              "06:03",
+              "10:04",
+              "11:04",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-14",
+            "marcacoes": [
+              "05:55",
+              "10:01",
+              "11:08",
+              "15:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-15",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-16",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-17",
+            "marcacoes": [
+              "05:59",
+              "10:03",
+              "11:06",
+              "15:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-18",
+            "marcacoes": [
+              "05:57",
+              "10:01",
+              "11:01",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-19",
+            "marcacoes": [
+              "06:05",
+              "09:59",
+              "11:01",
+              "15:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-20",
+            "marcacoes": [
+              "06:06",
+              "10:05",
+              "11:07",
+              "15:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-21",
+            "marcacoes": [
+              "05:55",
+              "10:02",
+              "11:02",
+              "15:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-22",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-23",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-24",
+            "marcacoes": [
+              "05:56",
+              "09:57",
+              "10:58",
+              "15:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-25",
+            "marcacoes": [
+              "06:03",
+              "09:58",
+              "10:58",
+              "15:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-26",
+            "marcacoes": [
+              "05:58",
+              "09:59",
+              "10:59",
+              "15:40"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-27",
+            "marcacoes": [
+              "05:50",
+              "10:03",
+              "11:05",
+              "15:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-28",
+            "marcacoes": [
+              "05:52",
+              "09:59",
+              "11:07",
+              "15:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-29",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-30",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-31",
+            "marcacoes": [
+              "06:01",
+              "10:06",
+              "11:07",
+              "15:00"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "HOLERITE",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02657744206",
+      "empregado": "LAVÍNIA ANDRADE ALVES",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "LAVÍNIA ANDRADE ALVES",
+        "empregado_cpf": "02657744206",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "000534",
+        "cargo": "ENCARREGADO DE LIMPEZA",
+        "competencia": "2026-08",
+        "salario_base": 2660.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2660.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "03:07",
+            "provento": 56.52,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "8,16",
+            "provento": null,
+            "desconto": 221.72
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 159.6
+          }
+        ],
+        "total_proventos": 2716.52,
+        "total_descontos": 381.32,
+        "valor_liquido": 2335.2,
+        "base_calculo_inss": 2716.52,
+        "base_calculo_fgts": 2716.52,
+        "valor_fgts_mes": 217.32,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "RECIBO_BENEFICIO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02657744206",
+      "empregado": "LAVÍNIA ANDRADE ALVES",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2026-07-28",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Lavínia Andrade Alves",
+        "empregado_cpf": null,
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "beneficio": "VALE_REFEICAO",
+        "competencia": "2026-08",
+        "quantidade": 21,
+        "valor_total": 525.0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 23,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        24,
+        25
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "29623708882",
+      "empregado": "LUAN MARTINS GARCIA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "LUAN MARTINS GARCIA",
+        "empregado_cpf": null,
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "009677",
+        "periodo_inicio": "2026-08-01",
+        "periodo_fim": "2026-08-31",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-08-01",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-02",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-03",
+            "marcacoes": [
+              "06:52",
+              "11:01",
+              "12:01",
+              "15:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-04",
+            "marcacoes": [
+              "07:02",
+              "11:01",
+              "12:05",
+              "16:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-05",
+            "marcacoes": [
+              "07:05",
+              "11:01",
+              "12:01",
+              "16:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-06",
+            "marcacoes": [
+              "06:55",
+              "10:57",
+              "12:08",
+              "16:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-07",
+            "marcacoes": [
+              "06:51",
+              "11:03",
+              "12:03",
+              "15:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-08",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-09",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-10",
+            "marcacoes": [
+              "06:52",
+              "10:57",
+              "12:06",
+              "16:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-11",
+            "marcacoes": [
+              "07:03",
+              "11:04",
+              "12:08",
+              "16:33"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-12",
+            "marcacoes": [
+              "06:49",
+              "10:58",
+              "12:08",
+              "16:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-13",
+            "marcacoes": [
+              "06:49",
+              "10:59",
+              "12:04",
+              "15:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-14",
+            "marcacoes": [
+              "07:00",
+              "11:04",
+              "12:04",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-15",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-16",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-17",
+            "marcacoes": [
+              "06:48",
+              "11:01",
+              "12:07",
+              "16:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-18",
+            "marcacoes": [
+              "07:05",
+              "11:05",
+              "12:05",
+              "16:33"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-19",
+            "marcacoes": [
+              "06:54",
+              "10:58",
+              "12:03",
+              "16:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-20",
+            "marcacoes": [
+              "06:53",
+              "10:57",
+              "12:03",
+              "16:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-21",
+            "marcacoes": [
+              "06:54",
+              "10:59",
+              "12:07",
+              "16:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-22",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-23",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-24",
+            "marcacoes": [
+              "07:04",
+              "11:02",
+              "12:02",
+              "15:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-25",
+            "marcacoes": [
+              "06:52",
+              "11:04",
+              "12:04",
+              "16:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-26",
+            "marcacoes": [
+              "07:02",
+              "11:01",
+              "12:03",
+              "16:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-27",
+            "marcacoes": [
+              "06:56",
+              "11:02",
+              "12:02",
+              "15:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-28",
+            "marcacoes": [
+              "06:53",
+              "11:03",
+              "12:08",
+              "16:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-08-29",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-08-30",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-08-31",
+            "marcacoes": [
+              "06:51",
+              "11:01",
+              "12:03",
+              "16:00"
+            ],
+            "ocorrencia": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "11:01"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "06:55"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "15:58"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "12:06"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "16:05"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "12:05"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "15:58"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "12:04"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "16:01"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 24,
+      "tipo": "HOLERITE",
+      "paginas": [
+        26
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "29623708882",
+      "empregado": "LUAN MARTINS GARCIA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "LUAN MARTINS GARCIA",
+        "empregado_cpf": "29623708882",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "009677",
+        "cargo": "SERVENTE",
+        "competencia": "2026-08",
+        "salario_base": 1680.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 1680.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "03:32",
+            "provento": 40.47,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "7,68",
+            "provento": null,
+            "desconto": 132.07
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 100.8
+          }
+        ],
+        "total_proventos": 1720.47,
+        "total_descontos": 232.87,
+        "valor_liquido": 1487.6,
+        "base_calculo_inss": 1720.47,
+        "base_calculo_fgts": 1720.47,
+        "valor_fgts_mes": 137.64,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "05  09  2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 25,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        27
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "29623708882",
+      "empregado": "LUAN MARTINS GARCIA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2026-09-05",
+        "valor": 1487.6,
+        "pagador_nome": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "pagador_documento": "43815092000170",
+        "favorecido_nome": "LUAN MARTINS GARCIA",
+        "favorecido_documento": "29623708882",
+        "finalidade": "Pagamento de salário 08/2026",
+        "autenticacao": "FICT-E245099157776341687899"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    }
+  ]
+}

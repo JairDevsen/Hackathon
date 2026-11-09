@@ -1,0 +1,2672 @@
+{
+  "arquivo": "lote_0002.pdf",
+  "perfil": "admissao",
+  "empresa_cnpj": "43815092000170",
+  "competencia": "2026-10",
+  "degradacao": "leve",
+  "total_paginas": 52,
+  "total_documentos": 44,
+  "paginas_pdf_nativo": 7,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 3
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 41,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 34,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:devolver",
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 3
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 180,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 42,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 43,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 26,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:ok - conferido"
+      ]
+    },
+    {
+      "pagina": 27,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 28,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 29,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 30,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 31,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 3
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 32,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "post_it:arquivar"
+      ]
+    },
+    {
+      "pagina": 33,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 34,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:conferir"
+      ]
+    },
+    {
+      "pagina": 35,
+      "documentos": [
+        {
+          "indice": 25,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:lançar"
+      ]
+    },
+    {
+      "pagina": 36,
+      "documentos": [
+        {
+          "indice": 26,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 37,
+      "documentos": [
+        {
+          "indice": 27,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:falta assinar"
+      ]
+    },
+    {
+      "pagina": 38,
+      "documentos": [
+        {
+          "indice": 28,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:ver c/ RH"
+      ]
+    },
+    {
+      "pagina": 39,
+      "documentos": [
+        {
+          "indice": 29,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 40,
+      "documentos": [
+        {
+          "indice": 30,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 41,
+      "documentos": [
+        {
+          "indice": 30,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 42,
+      "documentos": [
+        {
+          "indice": 30,
+          "pagina_do_documento": 3
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 43,
+      "documentos": [
+        {
+          "indice": 31,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 44,
+      "documentos": [
+        {
+          "indice": 32,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 45,
+      "documentos": [
+        {
+          "indice": 33,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 46,
+      "documentos": [
+        {
+          "indice": 44,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 47,
+      "documentos": [
+        {
+          "indice": 35,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 48,
+      "documentos": [
+        {
+          "indice": 36,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 49,
+      "documentos": [
+        {
+          "indice": 37,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 50,
+      "documentos": [
+        {
+          "indice": 38,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 51,
+      "documentos": [
+        {
+          "indice": 39,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 52,
+      "documentos": [
+        {
+          "indice": 40,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        1,
+        2,
+        3
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "36394225207",
+      "empregado": "OTÁVIO NUNES SILVA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "OTÁVIO NUNES SILVA",
+        "empregado_cpf": "36394225207",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "EXPERIENCIA",
+        "prazo_dias": 45,
+        "data_inicio": "2024-11-20",
+        "cargo": "AUXILIAR DE LIMPEZA",
+        "salario": 1830.0,
+        "jornada": "06:00 às 10:00 e 11:00 às 15:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "36394225207",
+      "empregado": "OTÁVIO NUNES SILVA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "Otávio Nunes Silva",
+        "empregado_cpf": "36394225207",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "16916697840",
+        "matricula": "009164",
+        "data_admissao": "2024-11-20",
+        "cargo": "Auxiliar De Limpeza",
+        "salario": 1830.0,
+        "foto_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "16916697840"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Auxiliar De Limpeza"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "36394225207",
+      "empregado": "OTÁVIO NUNES SILVA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "FERIAS",
+        "data_anotacao": "2026-01-22",
+        "cargo": null,
+        "salario": null,
+        "ferias_inicio": "2026-01-22",
+        "ferias_fim": "2026-02-20",
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "ASO",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "36394225207",
+      "empregado": "OTÁVIO NUNES SILVA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "Otávio Nunes Silva",
+        "empregado_cpf": "36394225207",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Auxiliar De Limpeza",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2024-11-13",
+        "riscos_ocupacionais": [
+          "Biológico",
+          "Acidentes"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Théo Cunha",
+        "medico_crm": "CRM-PE 25714"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "DECLARACAO_VALE_TRANSPORTE",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "36394225207",
+      "empregado": "OTÁVIO NUNES SILVA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2024-11-21",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Otávio Nunes Silva",
+        "empregado_cpf": "36394225207",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "opcao": "OPTANTE",
+        "endereco_residencial": "Avenida Pacheco Lima, 229 – São Lucas, Caruaru/PE",
+        "linhas": [
+          {
+            "linha": "949 – São Lucas/Centro",
+            "tarifa": 4.3,
+            "viagens_por_dia": 2
+          },
+          {
+            "linha": "908 – São Lucas/Terminal",
+            "tarifa": 4.1,
+            "viagens_por_dia": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "949 – São Lucas/Centro"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "36394225207",
+      "empregado": "OTÁVIO NUNES SILVA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2024-11-22",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Otávio Nunes Silva",
+        "empregado_cpf": "36394225207",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "Breno Silva",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2020-11-07"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "TERMO_RESPONSABILIDADE",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "36394225207",
+      "empregado": "OTÁVIO NUNES SILVA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2024-11-28",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "OTÁVIO NUNES SILVA",
+        "empregado_cpf": "36394225207",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Alicate universal",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Capa de chuva",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Lanterna",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Bota de segurança",
+            "quantidade": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "CHECKLIST_INTEGRACAO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "36394225207",
+      "empregado": "OTÁVIO NUNES SILVA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2024-11-23",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Otávio Nunes Silva",
+        "empregado_cpf": null,
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Cadastro biométrico de acesso",
+            "marcado": true
+          },
+          {
+            "descricao": "Treinamento de integração de SST",
+            "marcado": true
+          },
+          {
+            "descricao": "Senha do sistema de ponto",
+            "marcado": true
+          },
+          {
+            "descricao": "Apresentação das normas internas",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de uniforme",
+            "marcado": true
+          },
+          {
+            "descricao": "Apresentação ao supervisor do posto",
+            "marcado": true
+          },
+          {
+            "descricao": "Crachá de identificação entregue",
+            "marcado": false
+          },
+          {
+            "descricao": "Entrega de EPI",
+            "marcado": true
+          }
+        ],
+        "assinatura_responsavel_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "FICHA_EPI",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "36394225207",
+      "empregado": "OTÁVIO NUNES SILVA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "Otávio Nunes Silva",
+        "empregado_cpf": "36394225207",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Auxiliar De Limpeza",
+        "entregas": [
+          {
+            "data": "2024-12-10",
+            "descricao": "Máscara PFF2",
+            "quantidade": 1,
+            "numero_ca": "48511"
+          },
+          {
+            "data": "2024-12-17",
+            "descricao": "Luva de látex",
+            "quantidade": 2,
+            "numero_ca": "47471"
+          },
+          {
+            "data": "2025-03-20",
+            "descricao": "Luva de látex",
+            "quantidade": 1,
+            "numero_ca": "40628"
+          },
+          {
+            "data": "2025-07-03",
+            "descricao": "Luva de látex",
+            "quantidade": 1,
+            "numero_ca": "22865"
+          },
+          {
+            "data": "2026-02-09",
+            "descricao": "Bota de PVC",
+            "quantidade": 3,
+            "numero_ca": "36621"
+          },
+          {
+            "data": "2026-04-28",
+            "descricao": "Bota de PVC",
+            "quantidade": 1,
+            "numero_ca": "32591"
+          },
+          {
+            "data": "2026-08-02",
+            "descricao": "Óculos de proteção",
+            "quantidade": 3,
+            "numero_ca": null
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "epi_sem_ca",
+          "descricao": "EPI entregue sem número de CA",
+          "campo": "entregas"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "20/11/2024"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "20/03/2025"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "BOTA DE PVC"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        13,
+        15,
+        16
+      ],
+      "paginas_contiguas": false,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": true,
+      "cpf": "91478116501",
+      "empregado": "ISABELLY FONSECA CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "ISABELLY FONSECA CÂMARA",
+        "empregado_cpf": "91478116501",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "PRAZO_INDETERMINADO",
+        "prazo_dias": null,
+        "data_inicio": "2026-07-26",
+        "cargo": "SERVENTE",
+        "salario": 1790.0,
+        "jornada": "06:00 às 10:00 e 11:00 às 15:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "91478116501",
+      "empregado": "ISABELLY FONSECA CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "Isabelly Fonseca Câmara",
+        "empregado_cpf": "91478116501",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "18281489320",
+        "matricula": "006226",
+        "data_admissao": "2026-07-26",
+        "cargo": "Servente",
+        "salario": 1790.0,
+        "foto_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "006226"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "91478116501",
+      "empregado": "ISABELLY FONSECA CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "ALTERACAO_SALARIAL",
+        "data_anotacao": "2027-02-12",
+        "cargo": "Servente",
+        "salario": 1860.0,
+        "ferias_inicio": null,
+        "ferias_fim": null,
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "mérito."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "ASO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "91478116501",
+      "empregado": "ISABELLY FONSECA CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "Isabelly Fonseca Câmara",
+        "empregado_cpf": "91478116501",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Servente",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2026-07-20",
+        "riscos_ocupacionais": [
+          "Ausência de risco específico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Maria Isis Rios",
+        "medico_crm": "CRM-AL 8003"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "DECLARACAO_VALE_TRANSPORTE",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "91478116501",
+      "empregado": "ISABELLY FONSECA CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2026-07-28",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Isabelly Fonseca Câmara",
+        "empregado_cpf": "91478116501",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "opcao": "OPTANTE",
+        "endereco_residencial": "Avenida Gomes Garcia, 1001 – Universitário, Petrolina/PE",
+        "linhas": [
+          {
+            "linha": "438 – Universitário/Centro",
+            "tarifa": 4.3,
+            "viagens_por_dia": 2
+          },
+          {
+            "linha": "993 – Universitário/Shopping",
+            "tarifa": 4.1,
+            "viagens_por_dia": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "4,10"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        21
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "91478116501",
+      "empregado": "ISABELLY FONSECA CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2026-07-26",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Isabelly Fonseca Câmara",
+        "empregado_cpf": "91478116501",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "Murilo Câmara",
+            "parentesco": "Enteado(a)",
+            "data_nascimento": "2016-12-11"
+          },
+          {
+            "nome": "João Felipe Câmara",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2012-02-16"
+          },
+          {
+            "nome": "João Felipe Câmara",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2019-03-18"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Filho(a)"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "91478116501",
+      "empregado": "ISABELLY FONSECA CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2026-07-26",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "ISABELLY FONSECA CÂMARA",
+        "empregado_cpf": "91478116501",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "SERVENTE",
+        "riscos": [
+          "Postura inadequada",
+          "Produtos químicos de limpeza",
+          "Queda de mesmo nível"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "TERMO_RESPONSABILIDADE",
+      "paginas": [
+        24
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "91478116501",
+      "empregado": "ISABELLY FONSECA CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2026-08-02",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "ISABELLY FONSECA CÂMARA",
+        "empregado_cpf": "91478116501",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Rádio comunicador",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Calça do uniforme",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Camisa do uniforme",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Molho de chaves do posto",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Capa de chuva",
+            "quantidade": 3
+          }
+        ]
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "CHECKLIST_INTEGRACAO",
+      "paginas": [
+        26
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "91478116501",
+      "empregado": "ISABELLY FONSECA CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2026-07-26",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Isabelly Fonseca Câmara",
+        "empregado_cpf": null,
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Crachá de identificação entregue",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de EPI",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de uniforme",
+            "marcado": false
+          },
+          {
+            "descricao": "Apresentação ao supervisor do posto",
+            "marcado": true
+          },
+          {
+            "descricao": "Apresentação das normas internas",
+            "marcado": true
+          },
+          {
+            "descricao": "Treinamento de integração de SST",
+            "marcado": true
+          },
+          {
+            "descricao": "Orientação sobre rotas de fuga",
+            "marcado": true
+          }
+        ],
+        "assinatura_responsavel_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "DECLARACAO_MANUSCRITA",
+      "paginas": [
+        27
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "91478116501",
+      "empregado": "ISABELLY FONSECA CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2026-07-19",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Isabelly Fonseca Câmara",
+        "empregado_cpf": "91478116501",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "RESIDENCIA",
+        "endereco": "Avenida Gomes Garcia, 1001 – Universitário, Petrolina/PE"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        28
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-33 – Espaço Confinado",
+        "data": "2026-06-13",
+        "carga_horaria_horas": 16.0,
+        "instrutor": "João Duarte",
+        "participantes": [
+          {
+            "nome": "Otávio Nunes Silva",
+            "cpf": "36394225207",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Luan Martins Garcia",
+            "cpf": "29623708882",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Isabelly Fonseca Câmara",
+            "cpf": "91478116501",
+            "assinatura_presente": false
+          },
+          {
+            "nome": "Liam Sampaio Lima",
+            "cpf": "31930086806",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Guilherme Garcia Da Mota",
+            "cpf": "48136760659",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Lavínia Andrade Alves",
+            "cpf": "02657744206",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Josué Garcia Barros",
+            "cpf": "58685702275",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [
+        {
+          "regra": "presenca_sem_assinatura",
+          "descricao": "participante sem assinatura na lista",
+          "campo": "participantes"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "LAVÍNIA ANDRADE ALVES"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        29,
+        30,
+        31
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02657744206",
+      "empregado": "LAVÍNIA ANDRADE ALVES",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "LAVÍNIA ANDRADE ALVES",
+        "empregado_cpf": "02657744206",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "PRAZO_INDETERMINADO",
+        "prazo_dias": null,
+        "data_inicio": "2020-06-27",
+        "cargo": "ENCARREGADO DE LIMPEZA",
+        "salario": 2660.0,
+        "jornada": "06:00 às 10:00 e 11:00 às 15:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        32
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02657744206",
+      "empregado": "LAVÍNIA ANDRADE ALVES",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "Lavínia Andrade Alves",
+        "empregado_cpf": "02657744206",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "19600133894",
+        "matricula": "000534",
+        "data_admissao": "2020-06-27",
+        "cargo": "Encarregado De Limpeza",
+        "salario": 2660.0,
+        "foto_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "R$ 2.660,00"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 23,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        33
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02657744206",
+      "empregado": "LAVÍNIA ANDRADE ALVES",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "ALTERACAO_SALARIAL",
+        "data_anotacao": "2022-12-08",
+        "cargo": "Encarregado De Limpeza",
+        "salario": 2830.0,
+        "ferias_inicio": null,
+        "ferias_fim": null,
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 24,
+      "tipo": "ASO",
+      "paginas": [
+        34
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02657744206",
+      "empregado": "LAVÍNIA ANDRADE ALVES",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "Lavínia Andrade Alves",
+        "empregado_cpf": "02657744206",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Encarregado De Limpeza",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2020-06-21",
+        "riscos_ocupacionais": [
+          "Ergonômico",
+          "Acidentes"
+        ],
+        "conclusao": "INAPTO",
+        "medico_nome": "Dr(a). Yuri Santos",
+        "medico_crm": "CRM-PE 36964"
+      },
+      "nao_conformidades": [
+        {
+          "regra": "aso_inapto",
+          "descricao": "ASO com conclusão INAPTO",
+          "campo": "conclusao"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "21/06/2020"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 25,
+      "tipo": "DECLARACAO_VALE_TRANSPORTE",
+      "paginas": [
+        35
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02657744206",
+      "empregado": "LAVÍNIA ANDRADE ALVES",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2020-06-29",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Lavínia Andrade Alves",
+        "empregado_cpf": "02657744206",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "opcao": "NAO_OPTANTE",
+        "endereco_residencial": "Rua Abreu Teixeira, 920 – Vitoria, Caruaru/PE",
+        "linhas": []
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 26,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        36
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02657744206",
+      "empregado": "LAVÍNIA ANDRADE ALVES",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2020-06-28",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Lavínia Andrade Alves",
+        "empregado_cpf": "02657744206",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "Gael Henrique Alves",
+            "parentesco": "Enteado(a)",
+            "data_nascimento": "2011-12-19"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Lavínia Andrade Alves"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 27,
+      "tipo": "CHECKLIST_INTEGRACAO",
+      "paginas": [
+        37
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02657744206",
+      "empregado": "LAVÍNIA ANDRADE ALVES",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2020-06-29",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Lavínia Andrade Alves",
+        "empregado_cpf": null,
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Apresentação ao supervisor do posto",
+            "marcado": true
+          },
+          {
+            "descricao": "Treinamento de integração de SST",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de EPI",
+            "marcado": true
+          },
+          {
+            "descricao": "Crachá de identificação entregue",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de uniforme",
+            "marcado": true
+          },
+          {
+            "descricao": "Senha do sistema de ponto",
+            "marcado": true
+          },
+          {
+            "descricao": "Apresentação das normas internas",
+            "marcado": true
+          },
+          {
+            "descricao": "Cadastro biométrico de acesso",
+            "marcado": true
+          },
+          {
+            "descricao": "Leitura do código de conduta",
+            "marcado": true
+          },
+          {
+            "descricao": "Orientação sobre rotas de fuga",
+            "marcado": true
+          }
+        ],
+        "assinatura_responsavel_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 28,
+      "tipo": "FICHA_EPI",
+      "paginas": [
+        38
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02657744206",
+      "empregado": "LAVÍNIA ANDRADE ALVES",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "Lavínia Andrade Alves",
+        "empregado_cpf": "02657744206",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Encarregado De Limpeza",
+        "entregas": [
+          {
+            "data": "2021-06-27",
+            "descricao": "Luva de látex",
+            "quantidade": 1,
+            "numero_ca": "33339"
+          },
+          {
+            "data": "2021-08-07",
+            "descricao": "Óculos de proteção",
+            "quantidade": 1,
+            "numero_ca": null
+          },
+          {
+            "data": "2023-12-21",
+            "descricao": "Bota de PVC",
+            "quantidade": 1,
+            "numero_ca": "14530"
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "epi_sem_ca",
+          "descricao": "EPI entregue sem número de CA",
+          "campo": "entregas"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 29,
+      "tipo": "DECLARACAO_MANUSCRITA",
+      "paginas": [
+        39
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "02657744206",
+      "empregado": "LAVÍNIA ANDRADE ALVES",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2026-05-31",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Lavínia Andrade Alves",
+        "empregado_cpf": "02657744206",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "RESIDENCIA",
+        "endereco": "Rua Abreu Teixeira, 920 – Vitoria, Caruaru/PE"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Caruaru, 31/05/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 30,
+      "tipo": "CONTRATO_TRABALHO",
+      "paginas": [
+        40,
+        41,
+        42
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31930086806",
+      "empregado": "LIAM SAMPAIO LIMA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "LIAM SAMPAIO LIMA",
+        "empregado_cpf": "31930086806",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "modalidade": "EXPERIENCIA",
+        "prazo_dias": 45,
+        "data_inicio": "2024-10-24",
+        "cargo": "AUXILIAR DE LIMPEZA",
+        "salario": 1720.0,
+        "jornada": "07:00 às 11:00 e 12:00 às 16:00, de segunda a sexta-feira",
+        "rubricas_em_todas_paginas": true,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 31,
+      "tipo": "FICHA_REGISTRO",
+      "paginas": [
+        43
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31930086806",
+      "empregado": "LIAM SAMPAIO LIMA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "Liam Sampaio Lima",
+        "empregado_cpf": "31930086806",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "15423511619",
+        "matricula": "005981",
+        "data_admissao": "2024-10-24",
+        "cargo": "Auxiliar De Limpeza",
+        "salario": 1720.0,
+        "foto_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 32,
+      "tipo": "CTPS_ANOTACAO",
+      "paginas": [
+        44
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31930086806",
+      "empregado": "LIAM SAMPAIO LIMA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregador_razao_social": "Porto Limpeza Serviços Ltda",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_anotacao": "CONTRATO",
+        "data_anotacao": "2024-10-24",
+        "cargo": "Auxiliar De Limpeza",
+        "salario": 1720.0,
+        "ferias_inicio": null,
+        "ferias_fim": null,
+        "carimbo_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 33,
+      "tipo": "ASO",
+      "paginas": [
+        45
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31930086806",
+      "empregado": "LIAM SAMPAIO LIMA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregado_nome": "Liam Sampaio Lima",
+        "empregado_cpf": "31930086806",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Auxiliar De Limpeza",
+        "tipo_exame": "ADMISSIONAL",
+        "data_exame": "2024-10-17",
+        "riscos_ocupacionais": [
+          "Físico (ruído)"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Fernanda Oliveira",
+        "medico_crm": "CRM-PB 26253"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 34,
+      "tipo": "DECLARACAO_VALE_TRANSPORTE",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31930086806",
+      "empregado": "LIAM SAMPAIO LIMA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2024-10-25",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Liam Sampaio Lima",
+        "empregado_cpf": "31930086806",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "opcao": "OPTANTE",
+        "endereco_residencial": "Rua Siqueira Marques, 1993 – São Jorge 1ª Seção, Serra Talhada/PE",
+        "linhas": [
+          {
+            "linha": "608 – São Jorge 1ª Seção/Centro",
+            "tarifa": 4.8,
+            "viagens_por_dia": 2
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 35,
+      "tipo": "DECLARACAO_DEPENDENTES",
+      "paginas": [
+        47
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31930086806",
+      "empregado": "LIAM SAMPAIO LIMA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2024-10-24",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Liam Sampaio Lima",
+        "empregado_cpf": "31930086806",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "dependentes": [
+          {
+            "nome": "Isadora Lima",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2024-05-24"
+          },
+          {
+            "nome": "Leandro Lima",
+            "parentesco": "Filho(a)",
+            "data_nascimento": "2023-04-26"
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "26/04/2023"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 36,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        48
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31930086806",
+      "empregado": "LIAM SAMPAIO LIMA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2024-10-27",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "LIAM SAMPAIO LIMA",
+        "empregado_cpf": "31930086806",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "AUXILIAR DE LIMPEZA",
+        "riscos": [
+          "Agentes biológicos",
+          "Cortes e perfurações",
+          "Produtos químicos de limpeza"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 37,
+      "tipo": "TERMO_RESPONSABILIDADE",
+      "paginas": [
+        49
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31930086806",
+      "empregado": "LIAM SAMPAIO LIMA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2024-10-28",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "LIAM SAMPAIO LIMA",
+        "empregado_cpf": "31930086806",
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Lanterna",
+            "quantidade": 2
+          },
+          {
+            "descricao": "Calça do uniforme",
+            "quantidade": 3
+          },
+          {
+            "descricao": "Crachá funcional",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Camisa do uniforme",
+            "quantidade": 2
+          },
+          {
+            "descricao": "Capa de chuva",
+            "quantidade": 1
+          },
+          {
+            "descricao": "Molho de chaves do posto",
+            "quantidade": 3
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Lanterna"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Calça do uniforme"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "Capa de chuva"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 38,
+      "tipo": "CHECKLIST_INTEGRACAO",
+      "paginas": [
+        50
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31930086806",
+      "empregado": "LIAM SAMPAIO LIMA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2024-10-27",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Liam Sampaio Lima",
+        "empregado_cpf": null,
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "itens": [
+          {
+            "descricao": "Apresentação ao supervisor do posto",
+            "marcado": false
+          },
+          {
+            "descricao": "Leitura do código de conduta",
+            "marcado": true
+          },
+          {
+            "descricao": "Apresentação das normas internas",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de EPI",
+            "marcado": false
+          },
+          {
+            "descricao": "Senha do sistema de ponto",
+            "marcado": true
+          },
+          {
+            "descricao": "Entrega de uniforme",
+            "marcado": true
+          }
+        ],
+        "assinatura_responsavel_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 39,
+      "tipo": "DECLARACAO_MANUSCRITA",
+      "paginas": [
+        51
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "31930086806",
+      "empregado": "LIAM SAMPAIO LIMA",
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "data_documento": "2026-04-21",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Liam Sampaio Lima",
+        "empregado_cpf": "31930086806",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "NAO_ACUMULO_EMPREGO",
+        "endereco": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 40,
+      "tipo": "LISTA_PRESENCA",
+      "paginas": [
+        52
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "43815092000170",
+      "dados": {
+        "empregador_razao_social": "PORTO LIMPEZA SERVIÇOS LTDA",
+        "empregador_cnpj": "43815092000170",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "treinamento": "NR-6 – Uso correto de EPI",
+        "data": "2026-07-18",
+        "carga_horaria_horas": 2.0,
+        "instrutor": "Maria Fernanda Costela",
+        "participantes": [
+          {
+            "nome": "Guilherme Garcia Da Mota",
+            "cpf": "48136760659",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Lavínia Andrade Alves",
+            "cpf": "02657744206",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Luan Martins Garcia",
+            "cpf": "29623708882",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Liam Sampaio Lima",
+            "cpf": "31930086806",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Otávio Nunes Silva",
+            "cpf": "36394225207",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Isabelly Fonseca Câmara",
+            "cpf": "91478116501",
+            "assinatura_presente": true
+          },
+          {
+            "nome": "Josué Garcia Barros",
+            "cpf": "58685702275",
+            "assinatura_presente": true
+          }
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 41,
+      "tipo": "OUTRO",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 42,
+      "tipo": "OUTRO",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 43,
+      "tipo": "OUTRO",
+      "paginas": [
+        25
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 44,
+      "tipo": "OUTRO",
+      "paginas": [
+        46
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ]
+}

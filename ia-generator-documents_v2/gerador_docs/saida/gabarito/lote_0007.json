@@ -1,0 +1,2166 @@
+{
+  "arquivo": "lote_0007.pdf",
+  "perfil": "desligamento",
+  "empresa_cnpj": "01465298000178",
+  "competencia": "2026-08",
+  "degradacao": "forte",
+  "total_paginas": 48,
+  "total_documentos": 36,
+  "paginas_pdf_nativo": 6,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "post_it:lançar"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 7,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "post_it:ver c/ RH"
+      ]
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "post_it:pago"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "post_it:ver c/ RH",
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 36,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "post_it:ver c/ RH",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        },
+        {
+          "indice": 18,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 26,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 27,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 28,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 29,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 30,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 31,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "post_it:2ª via",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 32,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 180,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 33,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 34,
+      "documentos": [
+        {
+          "indice": 25,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 35,
+      "documentos": [
+        {
+          "indice": 26,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 36,
+      "documentos": [
+        {
+          "indice": 26,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 37,
+      "documentos": [
+        {
+          "indice": 27,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 38,
+      "documentos": [
+        {
+          "indice": 28,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "post_it:ok - conferido"
+      ]
+    },
+    {
+      "pagina": 39,
+      "documentos": [
+        {
+          "indice": 29,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 40,
+      "documentos": [
+        {
+          "indice": 29,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 41,
+      "documentos": [
+        {
+          "indice": 30,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 42,
+      "documentos": [
+        {
+          "indice": 31,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "post_it:arquivar"
+      ]
+    },
+    {
+      "pagina": 43,
+      "documentos": [
+        {
+          "indice": 32,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 44,
+      "documentos": [
+        {
+          "indice": 32,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 45,
+      "documentos": [
+        {
+          "indice": 33,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 46,
+      "documentos": [
+        {
+          "indice": 33,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "post_it:arquivar"
+      ]
+    },
+    {
+      "pagina": 47,
+      "documentos": [
+        {
+          "indice": 34,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_forte",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 48,
+      "documentos": [
+        {
+          "indice": 35,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "OUTRO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-08",
+      "empresa_cnpj": "01465298000178",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": "2026-07-11",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Raul Pastor Câmara",
+        "empregado_cpf": "07000352493",
+        "empregador_razao_social": "Martins Manutenção Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "TRCT",
+      "paginas": [
+        4,
+        3
+      ],
+      "paginas_contiguas": false,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": true,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "RAUL PASTOR CÂMARA",
+        "empregado_cpf": "07000352493",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "12677360260",
+        "data_admissao": "2025-07-22",
+        "data_aviso_previo": "2026-07-11",
+        "data_afastamento": "2026-08-10",
+        "causa_afastamento": "Despedida sem justa causa, pelo empregador",
+        "codigo_afastamento": "SJ2",
+        "remuneracao_fins_rescisorios": 3340.0,
+        "total_bruto": 6772.77,
+        "total_deducoes": 236.08,
+        "valor_liquido": 6536.69,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "ASO",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Raul Pastor Câmara",
+        "empregado_cpf": "07000352493",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Eletricista",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-08-10",
+        "riscos_ocupacionais": [
+          "Acidentes"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Luiz Henrique Ramos",
+        "medico_crm": "CRM-PB 24053"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "RECIBO_AVULSO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_pagamento": "ADIANTAMENTO",
+        "valor": 1336.0,
+        "valor_por_extenso": "mil e trezentos e trinta e seis reais",
+        "recebedor_nome": "Raul Pastor Câmara",
+        "recebedor_cpf": "07000352493",
+        "pagador_nome": "Martins Manutenção Serviços Ltda",
+        "referente_a": "adiantamento salarial de setembro/2026",
+        "data_documento": "2026-09-29",
+        "assinatura_recebedor_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "67363842060",
+      "empregado": "VALENTINA SÁ SIQUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "VALENTINA SÁ SIQUEIRA",
+        "empregado_cpf": "67363842060",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-08-01",
+        "prazo_dias": 3
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "67363842060",
+      "empregado": "VALENTINA SÁ SIQUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 921 311 217 AR",
+        "conteudo": "Notificação nº 222/2026",
+        "data_postagem": "2026-08-02",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Valentina Sá Siqueira",
+        "destinatario_endereco": "Rua Almeida Pastor, 201",
+        "destinatario_bairro": "São Vicente",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "50207667",
+        "remetente_nome": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Moura da Cunha, 1799 – São Vicente, Recife/PE",
+        "remetente_cep": "52323969",
+        "tentativas": [
+          {
+            "data": "2026-08-04",
+            "hora": "15:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-08-04",
+        "data_devolucao": null,
+        "recebedor_nome": "VALENTINA SÁ SIQUEIRA",
+        "recebedor_documento": "6030073",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "TRCT",
+      "paginas": [
+        9,
+        10
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "67363842060",
+      "empregado": "VALENTINA SÁ SIQUEIRA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "VALENTINA SÁ SIQUEIRA",
+        "empregado_cpf": "67363842060",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "16513338728",
+        "data_admissao": "2025-07-01",
+        "data_aviso_previo": "2026-07-17",
+        "data_afastamento": "2026-08-16",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 2970.0,
+        "total_bruto": 4224.0,
+        "total_deducoes": 275.22,
+        "valor_liquido": 3948.78,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "ELETRICISTA"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "01/07/2025"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "ASO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "67363842060",
+      "empregado": "VALENTINA SÁ SIQUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Valentina Sá Siqueira",
+        "empregado_cpf": "67363842060",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Eletricista",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-08-16",
+        "riscos_ocupacionais": [
+          "Químico",
+          "Biológico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Kaique Rios",
+        "medico_crm": "CRM-AL 35716"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "DR(A). KAIQUE RIOS"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "RECIBO_AVULSO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "67363842060",
+      "empregado": "VALENTINA SÁ SIQUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_pagamento": "DIARIA",
+        "valor": 100.0,
+        "valor_por_extenso": "cem reais",
+        "recebedor_nome": "Valentina Sá Siqueira",
+        "recebedor_cpf": "67363842060",
+        "pagador_nome": "Martins Manutenção Serviços Ltda",
+        "referente_a": "1 diária(s) de serviço",
+        "data_documento": "2026-08-14",
+        "assinatura_recebedor_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "cem reais"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19995413914",
+      "empregado": "LEANDRO FREITAS TEIXEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "LEANDRO FREITAS TEIXEIRA",
+        "empregado_cpf": "19995413914",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-08-08",
+        "prazo_dias": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        14,
+        15
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19995413914",
+      "empregado": "LEANDRO FREITAS TEIXEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 972 736 237 AR",
+        "conteudo": "Notificação nº 123/2026",
+        "data_postagem": "2026-08-09",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Leandro Freitas Teixeira",
+        "destinatario_endereco": "Rua das Neves da Costa, 1855",
+        "destinatario_bairro": "Barreiro",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "50128880",
+        "remetente_nome": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Moura da Cunha, 1799 – São Vicente, Recife/PE",
+        "remetente_cep": "52323969",
+        "tentativas": [
+          {
+            "data": "2026-08-12",
+            "hora": "09:30"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-08-12",
+        "data_devolucao": null,
+        "recebedor_nome": "ENZO GABRIEL RODRIGUES",
+        "recebedor_documento": "6931060",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Rua Moura da Cunha, 1799 – São Vicente, Recife/PE"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "TRCT",
+      "paginas": [
+        16,
+        17
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19995413914",
+      "empregado": "LEANDRO FREITAS TEIXEIRA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "LEANDRO FREITAS TEIXEIRA",
+        "empregado_cpf": "19995413914",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "11331509836",
+        "data_admissao": "2020-10-19",
+        "data_aviso_previo": "2026-07-22",
+        "data_afastamento": "2026-08-21",
+        "causa_afastamento": "Despedida sem justa causa, pelo empregador",
+        "codigo_afastamento": "SJ2",
+        "remuneracao_fins_rescisorios": 1830.0,
+        "total_bruto": 6567.67,
+        "total_deducoes": 187.58,
+        "valor_liquido": 6380.09,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "559,17"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "187,58"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "ASO",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19995413914",
+      "empregado": "LEANDRO FREITAS TEIXEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Leandro Freitas Teixeira",
+        "empregado_cpf": "19995413914",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Auxiliar De Manutenção",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-08-21",
+        "riscos_ocupacionais": [
+          "Ausência de risco específico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Vitor Hugo Cavalcante",
+        "medico_crm": "CRM-AL 16575"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "21/08/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "67363842060",
+      "empregado": "VALENTINA SÁ SIQUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": "2026-07-20",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Valentina Sá Siqueira",
+        "empregado_cpf": "67363842060",
+        "empregador_razao_social": "Martins Manutenção Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "TRCT",
+      "paginas": [
+        21,
+        22
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "67363842060",
+      "empregado": "VALENTINA SÁ SIQUEIRA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "VALENTINA SÁ SIQUEIRA",
+        "empregado_cpf": "67363842060",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "16513338728",
+        "data_admissao": "2025-07-01",
+        "data_aviso_previo": "2026-07-20",
+        "data_afastamento": "2026-08-19",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 2970.0,
+        "total_bruto": 4521.0,
+        "total_deducoes": 301.95,
+        "valor_liquido": 4219.05,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "PD0"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "1.980,00"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "04077145295",
+      "empregado": "RODRIGO NUNES BARROS",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "RODRIGO NUNES BARROS",
+        "empregado_cpf": "04077145295",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-07-21",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        24
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "04077145295",
+      "empregado": "RODRIGO NUNES BARROS",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 554 861 786 AR",
+        "conteudo": "Notificação nº 395/2026",
+        "data_postagem": "2026-07-22",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Rodrigo Nunes Barros",
+        "destinatario_endereco": "Travessa Pereira Lima, 842",
+        "destinatario_bairro": "Engenho Nogueira",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "51912884",
+        "remetente_nome": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Moura da Cunha, 1799 – São Vicente, Recife/PE",
+        "remetente_cep": "52323969",
+        "tentativas": [
+          {
+            "data": "2026-07-27",
+            "hora": "08:10"
+          },
+          {
+            "data": "2026-07-29",
+            "hora": "11:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-29",
+        "data_devolucao": null,
+        "recebedor_nome": "ANA LUIZA COSTELA",
+        "recebedor_documento": "1283529",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": false
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ar_sem_carimbo",
+          "descricao": "AR sem carimbo da unidade de entrega",
+          "campo": "carimbo_unidade_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "TRCT",
+      "paginas": [
+        25,
+        26
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "04077145295",
+      "empregado": "RODRIGO NUNES BARROS",
+      "competencia": "2026-08",
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "RODRIGO NUNES BARROS",
+        "empregado_cpf": "04077145295",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "14738299731",
+        "data_admissao": "2020-11-02",
+        "data_aviso_previo": "2026-07-07",
+        "data_afastamento": "2026-08-06",
+        "causa_afastamento": "Despedida sem justa causa, pelo empregador",
+        "codigo_afastamento": "SJ2",
+        "remuneracao_fins_rescisorios": 2680.0,
+        "total_bruto": 7459.33,
+        "total_deducoes": 158.13,
+        "valor_liquido": 7301.2,
+        "assinatura_empregado_presente": false,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "RODRIGO NUNES BARROS"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "16/05/1999"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "ELETRICISTA"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "06/08/2026"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Aviso prévio indenizado"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "INSS sobre 13º salário"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "ASO",
+      "paginas": [
+        27
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "04077145295",
+      "empregado": "RODRIGO NUNES BARROS",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Rodrigo Nunes Barros",
+        "empregado_cpf": "04077145295",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Eletricista",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-08-06",
+        "riscos_ocupacionais": [
+          "Químico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Luan Ramos",
+        "medico_crm": "CRM-BA 11161"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "06/08/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "RECIBO_AVULSO",
+      "paginas": [
+        28
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "04077145295",
+      "empregado": "RODRIGO NUNES BARROS",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_pagamento": "ADIANTAMENTO",
+        "valor": 1072.0,
+        "valor_por_extenso": "mil e setenta e dois reais",
+        "recebedor_nome": "Rodrigo Nunes Barros",
+        "recebedor_cpf": "04077145295",
+        "pagador_nome": "Martins Manutenção Serviços Ltda",
+        "referente_a": "adiantamento salarial de agosto/2026",
+        "data_documento": "2026-08-24",
+        "assinatura_recebedor_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        29
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "44063480690",
+      "empregado": "MARIA JÚLIA DA CRUZ VIANA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "MARIA JÚLIA DA CRUZ VIANA",
+        "empregado_cpf": "44063480690",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-07-19",
+        "prazo_dias": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 23,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        30,
+        31
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "44063480690",
+      "empregado": "MARIA JÚLIA DA CRUZ VIANA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 857 724 252 AR",
+        "conteudo": "Notificação nº 361/2026",
+        "data_postagem": "2026-07-20",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Maria Júlia Da Cruz Viana",
+        "destinatario_endereco": "Rua Ramos Brito, 141",
+        "destinatario_bairro": "Beira Linha",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "52437069",
+        "remetente_nome": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Moura da Cunha, 1799 – São Vicente, Recife/PE",
+        "remetente_cep": "52323969",
+        "tentativas": [
+          {
+            "data": "2026-07-23",
+            "hora": "11:45"
+          },
+          {
+            "data": "2026-07-24",
+            "hora": "15:40"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-24",
+        "data_devolucao": null,
+        "recebedor_nome": "MARIA JÚLIA DA CRUZ VIANA",
+        "recebedor_documento": "6160870",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 24,
+      "tipo": "TRCT",
+      "paginas": [
+        32,
+        33
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "44063480690",
+      "empregado": "MARIA JÚLIA DA CRUZ VIANA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "MARIA JÚLIA DA CRUZ VIANA",
+        "empregado_cpf": "44063480690",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "10980500971",
+        "data_admissao": "2023-04-11",
+        "data_aviso_previo": "2026-07-06",
+        "data_afastamento": "2026-08-05",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 2650.0,
+        "total_bruto": 3165.27,
+        "total_deducoes": 149.48,
+        "valor_liquido": 3015.79,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "22/11/1994"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "116,35"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 25,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        34
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "81151148040",
+      "empregado": "ISIS SIQUEIRA FERNANDES",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": "2026-07-08",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Isis Siqueira Fernandes",
+        "empregado_cpf": "81151148040",
+        "empregador_razao_social": "Martins Manutenção Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 26,
+      "tipo": "TRCT",
+      "paginas": [
+        35,
+        36
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "81151148040",
+      "empregado": "ISIS SIQUEIRA FERNANDES",
+      "competencia": "2026-08",
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "ISIS SIQUEIRA FERNANDES",
+        "empregado_cpf": "81151148040",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "19399091697",
+        "data_admissao": "2022-01-28",
+        "data_aviso_previo": "2026-07-08",
+        "data_afastamento": "2026-08-07",
+        "causa_afastamento": "Despedida sem justa causa, pelo empregador",
+        "codigo_afastamento": "SJ2",
+        "remuneracao_fins_rescisorios": 3350.0,
+        "total_bruto": 8691.4,
+        "total_deducoes": 211.74,
+        "valor_liquido": 8479.66,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 27,
+      "tipo": "ASO",
+      "paginas": [
+        37
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "81151148040",
+      "empregado": "ISIS SIQUEIRA FERNANDES",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Isis Siqueira Fernandes",
+        "empregado_cpf": "81151148040",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Eletricista",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-08-07",
+        "riscos_ocupacionais": [
+          "Acidentes",
+          "Biológico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Benjamim Aparecida",
+        "medico_crm": "CRM-PE 25507"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 28,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        38
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "67363842060",
+      "empregado": "VALENTINA SÁ SIQUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": "2026-07-16",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Valentina Sá Siqueira",
+        "empregado_cpf": "67363842060",
+        "empregador_razao_social": "Martins Manutenção Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 29,
+      "tipo": "TRCT",
+      "paginas": [
+        39,
+        40
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "67363842060",
+      "empregado": "VALENTINA SÁ SIQUEIRA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "VALENTINA SÁ SIQUEIRA",
+        "empregado_cpf": "67363842060",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "16513338728",
+        "data_admissao": "2025-07-01",
+        "data_aviso_previo": "2026-07-16",
+        "data_afastamento": "2026-08-15",
+        "causa_afastamento": "Despedida sem justa causa, pelo empregador",
+        "codigo_afastamento": "SJ2",
+        "remuneracao_fins_rescisorios": 2970.0,
+        "total_bruto": 7095.0,
+        "total_deducoes": 266.81,
+        "valor_liquido": 6828.19,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "VALENTINA SÁ SIQUEIRA"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "1.485,00"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "Aviso prévio indenizado"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "Recife, 19/08/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 30,
+      "tipo": "ASO",
+      "paginas": [
+        41
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "67363842060",
+      "empregado": "VALENTINA SÁ SIQUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Valentina Sá Siqueira",
+        "empregado_cpf": "67363842060",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Eletricista",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-08-15",
+        "riscos_ocupacionais": [
+          "Ergonômico",
+          "Químico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Ryan Pereira",
+        "medico_crm": "CRM-PE 6996"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Eletricista"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 31,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        42
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19995413914",
+      "empregado": "LEANDRO FREITAS TEIXEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "LEANDRO FREITAS TEIXEIRA",
+        "empregado_cpf": "19995413914",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-07-25",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 32,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        43,
+        44
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19995413914",
+      "empregado": "LEANDRO FREITAS TEIXEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 765 753 136 AR",
+        "conteudo": "Notificação nº 49/2026",
+        "data_postagem": "2026-07-26",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA RECIFE",
+        "destinatario_nome": "Leandro Freitas Teixeira",
+        "destinatario_endereco": "Rua das Neves da Costa, 1855",
+        "destinatario_bairro": "Barreiro",
+        "destinatario_municipio": "Recife",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "50128880",
+        "remetente_nome": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "remetente_endereco": "Rua Moura da Cunha, 1799 – São Vicente, Recife/PE",
+        "remetente_cep": "52323969",
+        "tentativas": [
+          {
+            "data": "2026-07-28",
+            "hora": "10:10"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-07-28",
+        "data_devolucao": null,
+        "recebedor_nome": "HENRY GABRIEL RIBEIRO",
+        "recebedor_documento": "1476972",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "MARTINS MANUTENÇÃO SERVIÇOS LTDA"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 33,
+      "tipo": "TRCT",
+      "paginas": [
+        45,
+        46
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19995413914",
+      "empregado": "LEANDRO FREITAS TEIXEIRA",
+      "competencia": "2026-08",
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "LEANDRO FREITAS TEIXEIRA",
+        "empregado_cpf": "19995413914",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "11331509836",
+        "data_admissao": "2020-10-19",
+        "data_aviso_previo": "2026-07-15",
+        "data_afastamento": "2026-08-14",
+        "causa_afastamento": "Despedida sem justa causa, pelo empregador",
+        "codigo_afastamento": "SJ2",
+        "remuneracao_fins_rescisorios": 1830.0,
+        "total_bruto": 5784.83,
+        "total_deducoes": 144.11,
+        "valor_liquido": 5640.72,
+        "assinatura_empregado_presente": false,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 34,
+      "tipo": "ASO",
+      "paginas": [
+        47
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19995413914",
+      "empregado": "LEANDRO FREITAS TEIXEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Leandro Freitas Teixeira",
+        "empregado_cpf": "19995413914",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Auxiliar De Manutenção",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-08-14",
+        "riscos_ocupacionais": [
+          "Ausência de risco específico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Luna Rezende",
+        "medico_crm": "CRM-PB 22714"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 35,
+      "tipo": "RECIBO_AVULSO",
+      "paginas": [
+        48
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19995413914",
+      "empregado": "LEANDRO FREITAS TEIXEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_pagamento": "VALE",
+        "valor": 100.0,
+        "valor_por_extenso": "cem reais",
+        "recebedor_nome": "Leandro Freitas Teixeira",
+        "recebedor_cpf": "19995413914",
+        "pagador_nome": "Martins Manutenção Serviços Ltda",
+        "referente_a": "vale (desconto em folha)",
+        "data_documento": "2026-09-02",
+        "assinatura_recebedor_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 36,
+      "tipo": "OUTRO",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ]
+}

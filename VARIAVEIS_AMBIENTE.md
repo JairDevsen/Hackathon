@@ -42,7 +42,12 @@ Para produção, copie `.env.example` para `.env` e execute `make keys`: ele pre
 | `GEMINI_MODEL_LITE` | modelo barato da Camada 2 (texto extraído, sem imagem) | `gemini-3.5-flash-lite` | |
 | `IA_IMAGE_MAX_PX` (ou `GEMINI_IMAGE_MAX_PX`) | lado máximo da imagem enviada ao modelo de visão (redução proporcional, WebP q=80) | `1024` | só a cópia enviada à IA é reduzida; o original fica guardado. Menos pixels = menos tokens, mas pior para manuscrito |
 | `IA_NITIDEZ_MIN` | limite de nitidez abaixo do qual uma imagem sem texto é tratada como **borrada** (variância do filtro de bordas) | `600` | heurística calibrada só com amostras sintéticas (texto nítido ≈ 2000, desfoque forte ≈ 400): **calibre com digitalizações reais** |
-| `IA_WORKERS` | threads de análise no IA Core | `4` | |
+| `IA_TINTA_MIN` | folha **em branco**: fração mínima de tinta agrupada no miolo da página (poeira, ruído, sombra de borda e furos não contam) | `0.0003` | medido: menor página real 0,0014; poeira ≤ 0,00004. Subir descarta mais folhas; calibre com digitalizações reais |
+| `IA_TINTA_MARCA` | folha com **só marca d'água/carimbo** ("AMOSTRA", "CÓPIA"): tinta abaixo disto e OCR só com a marca = em branco | `0.002` | menor página real medida: 0,0029 |
+| `IA_CONF_TIPO_NOVO` | confiança mínima da leitura para a IA criar um tipo documental novo | `0.70` | abaixo disso o documento fica como `OUTRO` para classificação humana |
+| `IA_MAX_TIPOS_AUTOMATICOS` | teto de tipos documentais que a IA pode criar no catálogo (por processo do IA Core) | `150` | o backend tem teto próprio de 150 no catálogo global |
+| `IA_WORKERS` | lotes analisados ao mesmo tempo no IA Core | `4` | |
+| `IA_LLM_CONCURRENCY` | chamadas simultâneas aos modelos (OpenAI/Gemini), somando todos os lotes em andamento | `4` | sobe a velocidade de lotes grandes; se o provedor responder 429 (cota), reduza. Os callbacks continuam em ordem de página |
 | `IA_PAGE_DELAY_MS` | atraso por página (**só teste de caos**) | `0` | |
 | `MAIL_DRIVER` | `log` (stdout) ou `smtp` | `log` | |
 | `SMTP_HOST/PORT/USER/PASS`, `MAIL_FROM` | e-mails (2FA, convites, alertas) | Mailpit `localhost:1025` | |

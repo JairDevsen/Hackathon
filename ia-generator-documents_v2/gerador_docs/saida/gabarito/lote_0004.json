@@ -1,0 +1,2566 @@
+{
+  "arquivo": "lote_0004.pdf",
+  "perfil": "mensal",
+  "empresa_cnpj": "32697150000192",
+  "competencia": "2026-10",
+  "degradacao": "leve",
+  "total_paginas": 23,
+  "total_documentos": 21,
+  "paginas_pdf_nativo": 7,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "post_it:lançar",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:pago",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe",
+        "post_it:pago"
+      ]
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "CRF_FGTS",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": "FICT-72238987/2026",
+        "data_emissao": "2026-10-27",
+        "data_validade": "2026-11-26",
+        "situacao": "IRREGULAR",
+        "codigo_controle": null
+      },
+      "nao_conformidades": [
+        {
+          "regra": "certidao_positiva",
+          "descricao": "certidão positiva / situação irregular",
+          "campo": "situacao"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "CNDT",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": "FICT-39716353/2026",
+        "data_emissao": "2026-10-31",
+        "data_validade": "2027-04-29",
+        "situacao": "NEGATIVA",
+        "codigo_controle": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "CND_FEDERAL",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "numero_certidao": null,
+        "data_emissao": "2026-10-26",
+        "data_validade": "2027-04-24",
+        "situacao": "NEGATIVA",
+        "codigo_controle": "FICT-2149.4850.4873"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "GUIA_FGTS",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "anotacao_manuscrita": null,
+        "identificador_guia": "FICT9854092086529715",
+        "competencia": "2026-10",
+        "data_vencimento": "2026-11-20",
+        "valor_total": 2784.18,
+        "data_pagamento": "2026-11-16",
+        "autenticacao_bancaria_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "DARF",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "periodo_apuracao": "2026-10",
+        "codigo_receita": "1082",
+        "data_vencimento": "2026-11-20",
+        "valor_total": 9847.09,
+        "anotacao_manuscrita": "lançado no sistema",
+        "autenticacao_bancaria_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        6,
+        7
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74672173070",
+      "empregado": "LUIZ HENRIQUE SOUSA FARIAS",
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "LUIZ HENRIQUE SOUSA FARIAS",
+        "empregado_cpf": null,
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "008586",
+        "periodo_inicio": "2026-10-01",
+        "periodo_fim": "2026-10-31",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-10-01",
+            "marcacoes": [
+              "06:53",
+              "11:04",
+              "12:04",
+              "16:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-02",
+            "marcacoes": [
+              "07:04",
+              "11:03",
+              "12:08",
+              "16:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-03",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-04",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-05",
+            "marcacoes": [
+              "06:59",
+              "10:59",
+              "12:00",
+              "15:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-06",
+            "marcacoes": [
+              "06:51",
+              "11:04",
+              "12:07",
+              "15:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-07",
+            "marcacoes": [
+              "06:53",
+              "11:00",
+              "12:02",
+              "16:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-08",
+            "marcacoes": [
+              "06:51",
+              "10:59",
+              "11:59",
+              "16:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-09",
+            "marcacoes": [
+              "06:50",
+              "11:02",
+              "12:02",
+              "16:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-10",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-11",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-12",
+            "marcacoes": [
+              "06:51",
+              "10:57",
+              "11:58",
+              "16:34"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-13",
+            "marcacoes": [
+              "06:49",
+              "10:58",
+              "12:01",
+              "16:50"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-14",
+            "marcacoes": [
+              "07:04",
+              "11:01",
+              "12:05",
+              "16:52"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-15",
+            "marcacoes": [
+              "06:58",
+              "11:02",
+              "12:08",
+              "16:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-16",
+            "marcacoes": [
+              "06:59",
+              "11:03",
+              "12:04",
+              "16:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-17",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-18",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-19",
+            "marcacoes": [
+              "06:51",
+              "10:57",
+              "12:05",
+              "16:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-20",
+            "marcacoes": [
+              "06:52",
+              "10:57",
+              "12:07",
+              "16:32"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-21",
+            "marcacoes": [
+              "06:55",
+              "11:02",
+              "12:05",
+              "16:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-22",
+            "marcacoes": [
+              "07:04",
+              "11:03",
+              "12:08",
+              "16:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-23",
+            "marcacoes": [
+              "06:58",
+              "10:57",
+              "12:08",
+              "16:40"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-24",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-25",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-26",
+            "marcacoes": [
+              "06:58",
+              "11:04",
+              "12:04",
+              "16:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-27",
+            "marcacoes": [
+              "06:50",
+              "11:02",
+              "12:04",
+              "16:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-28",
+            "marcacoes": [
+              "06:51",
+              "11:03",
+              "12:03",
+              "16:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-29",
+            "marcacoes": [
+              "07:04",
+              "11:06",
+              "12:06",
+              "16:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-30",
+            "marcacoes": [
+              "06:57",
+              "11:05",
+              "12:05",
+              "15:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-31",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "008586"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "07:04"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "12:00"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "16:02"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "06:51"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "16:03"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "12:08"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "06:57"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "HOLERITE",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74672173070",
+      "empregado": "LUIZ HENRIQUE SOUSA FARIAS",
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "LUIZ HENRIQUE SOUSA FARIAS",
+        "empregado_cpf": "74672173070",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "008586",
+        "cargo": "BOMBEIRO HIDRÁULICO",
+        "competencia": "2026-10",
+        "salario_base": 2730.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2730.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "05:23",
+            "provento": 100.2,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "8,23",
+            "provento": null,
+            "desconto": 233.04
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 163.8
+          }
+        ],
+        "total_proventos": 2830.2,
+        "total_descontos": 396.84,
+        "valor_liquido": 2433.36,
+        "base_calculo_inss": 2830.2,
+        "base_calculo_fgts": 2830.2,
+        "valor_fgts_mes": 226.42,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "61956365176",
+      "empregado": "BIANCA PINTO DIAS",
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "BIANCA PINTO DIAS",
+        "empregado_cpf": "61956365176",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "000923",
+        "periodo_inicio": "2026-10-01",
+        "periodo_fim": "2026-10-31",
+        "forma_registro": "ELETRONICO",
+        "registros": [
+          {
+            "data": "2026-10-01",
+            "marcacoes": [
+              "07:52",
+              "12:05",
+              "13:05",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-02",
+            "marcacoes": [
+              "07:56",
+              "12:05",
+              "13:05",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-03",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-04",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-05",
+            "marcacoes": [
+              "08:01",
+              "11:57",
+              "13:08",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-06",
+            "marcacoes": [],
+            "ocorrencia": "ATESTADO"
+          },
+          {
+            "data": "2026-10-07",
+            "marcacoes": [
+              "07:50",
+              "12:06",
+              "13:06",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-08",
+            "marcacoes": [
+              "08:02",
+              "12:02",
+              "13:02",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-09",
+            "marcacoes": [
+              "08:05",
+              "12:00",
+              "13:04",
+              "17:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-10",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-11",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-12",
+            "marcacoes": [
+              "07:50",
+              "11:59",
+              "13:08",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-13",
+            "marcacoes": [
+              "07:51",
+              "12:04",
+              "13:07",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-14",
+            "marcacoes": [
+              "07:53",
+              "11:58",
+              "12:59",
+              "17:53"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-15",
+            "marcacoes": [
+              "07:54",
+              "12:03",
+              "13:03",
+              "17:48"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-16",
+            "marcacoes": [
+              "08:03",
+              "11:58",
+              "13:01",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-17",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-18",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-19",
+            "marcacoes": [
+              "08:02",
+              "11:59",
+              "13:00",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-20",
+            "marcacoes": [
+              "07:49",
+              "11:58",
+              "13:03",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-21",
+            "marcacoes": [
+              "07:48",
+              "11:59",
+              "13:06",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-22",
+            "marcacoes": [
+              "07:48",
+              "12:05",
+              "13:05",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-23",
+            "marcacoes": [
+              "07:59",
+              "11:58",
+              "13:01",
+              "16:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-24",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-25",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-26",
+            "marcacoes": [
+              "07:52",
+              "12:01",
+              "13:02",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-27",
+            "marcacoes": [
+              "08:05",
+              "12:01",
+              "13:05",
+              "18:11"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-28",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:02",
+              "17:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-29",
+            "marcacoes": [
+              "07:56",
+              "12:03",
+              "13:03",
+              "18:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-30",
+            "marcacoes": [
+              "07:53",
+              "12:00",
+              "13:05",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-31",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "HOLERITE",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "61956365176",
+      "empregado": "BIANCA PINTO DIAS",
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "BIANCA PINTO DIAS",
+        "empregado_cpf": "61956365176",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "000923",
+        "cargo": "ELETRICISTA",
+        "competencia": "2026-10",
+        "salario_base": 2860.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2860.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "05:45",
+            "provento": 112.12,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "8,41",
+            "provento": null,
+            "desconto": 250.07
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 171.6
+          }
+        ],
+        "total_proventos": 2972.12,
+        "total_descontos": 421.67,
+        "valor_liquido": 2672.6,
+        "base_calculo_inss": 2972.12,
+        "base_calculo_fgts": 2972.12,
+        "valor_fgts_mes": 237.77,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "liquido_divergente",
+          "descricao": "valor líquido não fecha com a soma",
+          "campo": "valor_liquido"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "49550065316",
+      "empregado": "DAVI LUIZ ROCHA DA COSTA",
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "DAVI LUIZ ROCHA DA COSTA",
+        "empregado_cpf": "49550065316",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "001332",
+        "periodo_inicio": "2026-10-01",
+        "periodo_fim": "2026-10-31",
+        "forma_registro": "ELETRONICO",
+        "registros": [
+          {
+            "data": "2026-10-01",
+            "marcacoes": [
+              "07:50",
+              "12:03",
+              "13:03",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-02",
+            "marcacoes": [
+              "07:56",
+              "12:06",
+              "13:06",
+              "17:56"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-03",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-04",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-05",
+            "marcacoes": [
+              "07:50",
+              "12:06",
+              "13:06",
+              "17:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-06",
+            "marcacoes": [
+              "07:59",
+              "11:57",
+              "12:59",
+              "17:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-07",
+            "marcacoes": [
+              "07:59",
+              "12:02",
+              "13:02",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-08",
+            "marcacoes": [
+              "07:54",
+              "11:59",
+              "13:03",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-09",
+            "marcacoes": [
+              "08:06",
+              "12:00",
+              "13:01",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-10",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-11",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-12",
+            "marcacoes": [
+              "08:01",
+              "12:01",
+              "13:01",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-13",
+            "marcacoes": [
+              "08:04",
+              "12:05",
+              "13:05",
+              "17:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-14",
+            "marcacoes": [
+              "08:05",
+              "12:01",
+              "13:05",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-15",
+            "marcacoes": [
+              "07:50",
+              "12:00",
+              "13:05",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-16",
+            "marcacoes": [
+              "07:57",
+              "11:58",
+              "12:59",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-17",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-18",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-19",
+            "marcacoes": [
+              "08:03",
+              "11:59",
+              "13:01",
+              "16:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-20",
+            "marcacoes": [
+              "08:05",
+              "11:59",
+              "13:05",
+              "17:04"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-21",
+            "marcacoes": [
+              "07:48",
+              "12:01",
+              "13:01",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-22",
+            "marcacoes": [
+              "08:04",
+              "12:02",
+              "13:04",
+              "17:07"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-23",
+            "marcacoes": [
+              "07:58",
+              "12:04",
+              "13:07",
+              "17:05"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-24",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-25",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-26",
+            "marcacoes": [
+              "08:02",
+              "12:04",
+              "13:04",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-27",
+            "marcacoes": [
+              "07:56",
+              "12:00",
+              "13:05",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-28",
+            "marcacoes": [
+              "07:52",
+              "12:02",
+              "13:02",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-29",
+            "marcacoes": [
+              "08:05",
+              "12:01",
+              "13:01",
+              "17:39"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-30",
+            "marcacoes": [
+              "07:52",
+              "11:59",
+              "13:01",
+              "17:02"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-31",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "HOLERITE",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "49550065316",
+      "empregado": "DAVI LUIZ ROCHA DA COSTA",
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "DAVI LUIZ ROCHA DA COSTA",
+        "empregado_cpf": "49550065316",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "001332",
+        "cargo": "ELETRICISTA",
+        "competencia": "2026-10",
+        "salario_base": 3040.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 3040.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "03:26",
+            "provento": 71.16,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "8,57",
+            "provento": null,
+            "desconto": 266.75
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 182.4
+          }
+        ],
+        "total_proventos": 3111.16,
+        "total_descontos": 449.15,
+        "valor_liquido": 2662.01,
+        "base_calculo_inss": 3111.16,
+        "base_calculo_fgts": 3111.16,
+        "valor_fgts_mes": 248.89,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74672173070",
+      "empregado": "LUIZ HENRIQUE SOUSA FARIAS",
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2026-11-06",
+        "valor": 2433.36,
+        "pagador_nome": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "pagador_documento": "32697150000192",
+        "favorecido_nome": "LUIZ HENRIQUE SOUSA FARIAS",
+        "favorecido_documento": "74672173070",
+        "finalidade": "Pagamento de salário 10/2026",
+        "autenticacao": "FICT-E439204120154840979211"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "49550065316",
+      "empregado": "DAVI LUIZ ROCHA DA COSTA",
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2026-11-06",
+        "valor": 2662.01,
+        "pagador_nome": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "pagador_documento": "32697150000192",
+        "favorecido_nome": "DAVI LUIZ ROCHA DA COSTA",
+        "favorecido_documento": "49550065316",
+        "finalidade": "Pagamento de salário 10/2026",
+        "autenticacao": "FICT-E376584507013541697790"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "35897921750",
+      "empregado": "THEO RIOS CALDEIRA",
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "THEO RIOS CALDEIRA",
+        "empregado_cpf": "35897921750",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "002514",
+        "periodo_inicio": "2026-10-01",
+        "periodo_fim": "2026-10-31",
+        "forma_registro": "ELETRONICO",
+        "registros": [
+          {
+            "data": "2026-10-01",
+            "marcacoes": [
+              "08:02",
+              "12:04",
+              "13:07",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-02",
+            "marcacoes": [
+              "08:02",
+              "12:02",
+              "13:02",
+              "17:10"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-03",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-04",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-05",
+            "marcacoes": [
+              "07:53",
+              "12:03",
+              "13:03",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-06",
+            "marcacoes": [
+              "08:00",
+              "11:59",
+              "13:07",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-07",
+            "marcacoes": [
+              "07:55",
+              "11:59",
+              "13:02",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-08",
+            "marcacoes": [
+              "07:50",
+              "12:00",
+              "13:05",
+              "17:51"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-09",
+            "marcacoes": [
+              "07:59",
+              "11:58",
+              "12:59",
+              "18:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-10",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-11",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-12",
+            "marcacoes": [
+              "08:02",
+              "11:59",
+              "13:02",
+              "16:57"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-13",
+            "marcacoes": [
+              "07:50",
+              "12:04",
+              "13:04",
+              "17:03"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-14",
+            "marcacoes": [
+              "08:00",
+              "11:57",
+              "12:58",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-15",
+            "marcacoes": [
+              "07:58",
+              "12:04",
+              "13:05",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-16",
+            "marcacoes": [
+              "07:55",
+              "12:04",
+              "13:04",
+              "17:51"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-17",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-18",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-19",
+            "marcacoes": [
+              "07:53",
+              "11:57",
+              "13:07",
+              "17:01"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-20",
+            "marcacoes": [
+              "08:00",
+              "11:59",
+              "12:59",
+              "17:59"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-21",
+            "marcacoes": [
+              "07:52",
+              "12:04",
+              "13:04",
+              "17:08"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-22",
+            "marcacoes": [],
+            "ocorrencia": "ATESTADO"
+          },
+          {
+            "data": "2026-10-23",
+            "marcacoes": [
+              "07:54",
+              "12:04",
+              "13:04",
+              "17:09"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-24",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-25",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-26",
+            "marcacoes": [
+              "07:51",
+              "12:03",
+              "13:03",
+              "17:06"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-27",
+            "marcacoes": [],
+            "ocorrencia": "FALTA"
+          },
+          {
+            "data": "2026-10-28",
+            "marcacoes": [
+              "07:54",
+              "12:00",
+              "13:03",
+              "16:58"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-29",
+            "marcacoes": [],
+            "ocorrencia": "FALTA"
+          },
+          {
+            "data": "2026-10-30",
+            "marcacoes": [],
+            "ocorrencia": "ATESTADO"
+          },
+          {
+            "data": "2026-10-31",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "HOLERITE",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "35897921750",
+      "empregado": "THEO RIOS CALDEIRA",
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "THEO RIOS CALDEIRA",
+        "empregado_cpf": "35897921750",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "002514",
+        "cargo": "BOMBEIRO HIDRÁULICO",
+        "competencia": "2026-10",
+        "salario_base": 2550.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2550.0,
+            "desconto": null
+          },
+          {
+            "codigo": "050",
+            "descricao": "HORAS EXTRAS 50%",
+            "referencia": "05:25",
+            "provento": 94.18,
+            "desconto": null
+          },
+          {
+            "codigo": "210",
+            "descricao": "FALTAS",
+            "referencia": "2,00",
+            "provento": null,
+            "desconto": 170.0
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "8,08",
+            "provento": null,
+            "desconto": 199.91
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 153.0
+          }
+        ],
+        "total_proventos": 2644.18,
+        "total_descontos": 522.91,
+        "valor_liquido": 2121.27,
+        "base_calculo_inss": 2474.18,
+        "base_calculo_fgts": 2474.18,
+        "valor_fgts_mes": 197.93,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "35897921750",
+      "empregado": "THEO RIOS CALDEIRA",
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2026-11-06",
+        "valor": 2121.27,
+        "pagador_nome": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "pagador_documento": "32697150000192",
+        "favorecido_nome": "THEO RIOS CALDEIRA",
+        "favorecido_documento": "35897921750",
+        "finalidade": "Pagamento de salário 10/2026",
+        "autenticacao": "FICT-E109494648059952345272"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "RECIBO_AVULSO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "35897921750",
+      "empregado": "THEO RIOS CALDEIRA",
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_pagamento": "DIARIA",
+        "valor": 450.0,
+        "valor_por_extenso": "quatrocentos e cinquenta reais",
+        "recebedor_nome": "Theo Rios Caldeira",
+        "recebedor_cpf": "35897921750",
+        "pagador_nome": "Rezende Manutenção Terceirização Ltda",
+        "referente_a": "5 diária(s) de serviço",
+        "data_documento": "2026-08-13",
+        "assinatura_recebedor_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "CARTAO_PONTO",
+      "paginas": [
+        20,
+        21
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19192147399",
+      "empregado": "STELLA FARIAS ALVES",
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "STELLA FARIAS ALVES",
+        "empregado_cpf": null,
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "008990",
+        "periodo_inicio": "2026-10-01",
+        "periodo_fim": "2026-10-31",
+        "forma_registro": "MANUAL",
+        "registros": [
+          {
+            "data": "2026-10-01",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-02",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-03",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-04",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-05",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-06",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-07",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-08",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-09",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-10",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-11",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-12",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-13",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-14",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-15",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-16",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-17",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-18",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-19",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-20",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-21",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-22",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-23",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-24",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          },
+          {
+            "data": "2026-10-25",
+            "marcacoes": [],
+            "ocorrencia": "DSR"
+          },
+          {
+            "data": "2026-10-26",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-27",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-28",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-29",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-30",
+            "marcacoes": [
+              "08:00",
+              "12:00",
+              "13:00",
+              "17:00"
+            ],
+            "ocorrencia": null
+          },
+          {
+            "data": "2026-10-31",
+            "marcacoes": [],
+            "ocorrencia": "FOLGA"
+          }
+        ],
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "ponto_britanico",
+          "descricao": "horários idênticos todos os dias",
+          "campo": "registros"
+        }
+      ],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "12:00"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "08:00"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "DSR"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "17:00"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "17:00"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "12:00"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "17:00"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "HOLERITE",
+      "paginas": [
+        22
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19192147399",
+      "empregado": "STELLA FARIAS ALVES",
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "STELLA FARIAS ALVES",
+        "empregado_cpf": "19192147399",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "matricula": "008990",
+        "cargo": "BOMBEIRO HIDRÁULICO",
+        "competencia": "2026-10",
+        "salario_base": 2440.0,
+        "itens": [
+          {
+            "codigo": "001",
+            "descricao": "SALÁRIO BASE",
+            "referencia": "30,00",
+            "provento": 2440.0,
+            "desconto": null
+          },
+          {
+            "codigo": "901",
+            "descricao": "INSS",
+            "referencia": "8,07",
+            "provento": null,
+            "desconto": 196.83
+          },
+          {
+            "codigo": "920",
+            "descricao": "VALE TRANSPORTE",
+            "referencia": "6,00",
+            "provento": null,
+            "desconto": 146.4
+          }
+        ],
+        "total_proventos": 2440.0,
+        "total_descontos": 343.23,
+        "valor_liquido": 2096.77,
+        "base_calculo_inss": 2440.0,
+        "base_calculo_fgts": 2440.0,
+        "valor_fgts_mes": 195.2,
+        "assinatura_empregado_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "COMPROVANTE_PAGAMENTO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19192147399",
+      "empregado": "STELLA FARIAS ALVES",
+      "competencia": "2026-10",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "banco": "BANCO FICTÍCIO S.A.",
+        "data_pagamento": "2026-11-06",
+        "valor": 2096.77,
+        "pagador_nome": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "pagador_documento": "32697150000192",
+        "favorecido_nome": "STELLA FARIAS ALVES",
+        "favorecido_documento": "19192147399",
+        "finalidade": "Pagamento de salário 10/2026",
+        "autenticacao": "FICT-E357450548222406624290"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "OUTRO",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ]
+}

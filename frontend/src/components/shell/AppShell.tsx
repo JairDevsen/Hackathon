@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink as RLink, Outlet, useLocation, useNavigate } from 'react-router-dom'
-import { Bell, ChevronDown, LogOut, Menu, Moon, ShieldCheck, Sun, UserCircle, X } from 'lucide-react'
+import { Bell, ChevronDown, LogOut, Menu, Moon, Search, ShieldCheck, Sun, UserCircle, X } from 'lucide-react'
 import { useQueryClient } from '@tanstack/react-query'
 import { Avatar, Logo, clsx } from '@/components/ui'
 import { useAuth } from '@/lib/auth'
@@ -9,6 +9,7 @@ import { useTheme } from '@/lib/theme'
 import { api } from '@/lib/api'
 import { fmtDateTime } from '@/lib/format'
 import type { NavEntry, NavLink } from './nav'
+import { EntityFinder } from './EntityFinder'
 
 function useOutside(ref: React.RefObject<HTMLElement | null>, onOut: () => void, active: boolean) {
   useEffect(() => {
@@ -46,7 +47,7 @@ function Sidebar({ nav, onNavigate }: { nav: NavEntry[]; onNavigate?: () => void
           return (
             <div key={e.label}>
               <button className={clsx('nav-item', active && 'text-brand-darker')} aria-expanded={open} onClick={() => setOpenGroup(open ? '' : e.label)}>
-                <e.icon className="h-[18px] w-[18px] shrink-0" aria-hidden /><span className="truncate">{e.label}</span><ChevronDown className={clsx('ml-auto h-4 w-4 transition', open && 'rotate-180')} aria-hidden />
+                <e.icon className="h-[18px] w-[18px] shrink-0" aria-hidden /><span className="truncate">{e.label}</span>{!open && <Badge n={e.children.reduce((n, c) => n + (c.badge ?? 0), 0)} />}<ChevronDown className={clsx('ml-auto h-4 w-4 transition', open && 'rotate-180', !open && e.children.some((c) => c.badge) && '!ml-2')} aria-hidden />
               </button>
               {open && <div className="mt-1 space-y-0.5">{e.children.map((c) => <Item key={c.to} l={c} sub />)}</div>}
             </div>
@@ -92,6 +93,8 @@ export function AppShell({ nav }: { nav: NavEntry[] }) {
       <div className="flex min-w-0 flex-1 flex-col">
         <header ref={topRef} className="relative z-30 flex items-center justify-end gap-3 px-4 py-3 sm:px-8">
           <button className="icon-circle mr-auto min-[900px]:hidden" aria-label="Abrir menu" onClick={() => setDrawer(true)}><Menu className="h-4 w-4" /></button>
+          {tenantUser && <EntityFinder />}
+          {tenantUser && <RLink to="/app/buscar" className="icon-circle min-[900px]:hidden" aria-label="Buscar"><Search className="h-4 w-4" /></RLink>}
           <div className="flex items-center gap-2">
             <button className="icon-circle hover:bg-brand-lighter" aria-label={theme === 'dark' ? 'Mudar para o tema claro' : 'Mudar para o tema escuro'} onClick={toggle}>{theme === 'dark' ? <Sun className="h-[18px] w-[18px]" /> : <Moon className="h-[18px] w-[18px]" />}</button>
             {tenantUser && (

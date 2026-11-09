@@ -1,0 +1,148 @@
+{
+  "versao_gerador": "2.0.0",
+  "seed": 42,
+  "config": {
+    "qtd_lotes": 10,
+    "paginas": [
+      8,
+      40
+    ],
+    "degradacao": "misto",
+    "taxa_nc": 0.2,
+    "perfil": "sortear",
+    "embaralhar": 0.3,
+    "paginas_em_branco": 0.05,
+    "fora_de_ordem": 0.15,
+    "intercalar": 0.15,
+    "taxa_defeito": 0.08,
+    "taxa_branco": 0.03,
+    "extras": 0.25,
+    "p_celular": 0.12,
+    "p_cabeca_para_baixo": 0.03,
+    "p_pdf_nativo": 0.3,
+    "salvar_png": false,
+    "seed": 42
+  },
+  "lotes": [
+    {
+      "arquivo": "lote_0001.pdf",
+      "perfil": "misto",
+      "paginas": 27,
+      "documentos": 25
+    },
+    {
+      "arquivo": "lote_0002.pdf",
+      "perfil": "admissao",
+      "paginas": 52,
+      "documentos": 44
+    },
+    {
+      "arquivo": "lote_0003.pdf",
+      "perfil": "desligamento",
+      "paginas": 33,
+      "documentos": 25
+    },
+    {
+      "arquivo": "lote_0004.pdf",
+      "perfil": "mensal",
+      "paginas": 23,
+      "documentos": 21
+    },
+    {
+      "arquivo": "lote_0005.pdf",
+      "perfil": "ocorrencias",
+      "paginas": 27,
+      "documentos": 27
+    },
+    {
+      "arquivo": "lote_0006.pdf",
+      "perfil": "desligamento",
+      "paginas": 32,
+      "documentos": 25
+    },
+    {
+      "arquivo": "lote_0007.pdf",
+      "perfil": "desligamento",
+      "paginas": 48,
+      "documentos": 36
+    },
+    {
+      "arquivo": "lote_0008.pdf",
+      "perfil": "ocorrencias",
+      "paginas": 20,
+      "documentos": 20
+    },
+    {
+      "arquivo": "lote_0009.pdf",
+      "perfil": "mensal",
+      "paginas": 61,
+      "documentos": 51
+    },
+    {
+      "arquivo": "lote_0010.pdf",
+      "perfil": "admissao",
+      "paginas": 13,
+      "documentos": 11
+    }
+  ],
+  "perfis": {
+    "misto": 1,
+    "admissao": 2,
+    "desligamento": 3,
+    "mensal": 2,
+    "ocorrencias": 2
+  },
+  "paginas_pdf_nativo": 48,
+  "documentos_por_tipo": {
+    "OUTRO": 17,
+    "CRF_FGTS": 4,
+    "CNDT": 3,
+    "GUIA_FGTS": 4,
+    "DARF": 4,
+    "CARTAO_PONTO": 24,
+    "HOLERITE": 24,
+    "RECIBO_BENEFICIO": 8,
+    "COMPROVANTE_PAGAMENTO": 12,
+    "JUSTIFICATIVA_FALTA": 8,
+    "FERIAS": 2,
+    "ATESTADO_MEDICO": 7,
+    "CONTRATO_TRABALHO": 5,
+    "FICHA_REGISTRO": 5,
+    "CTPS_ANOTACAO": 5,
+    "ASO": 24,
+    "DECLARACAO_VALE_TRANSPORTE": 5,
+    "DECLARACAO_DEPENDENTES": 5,
+    "TERMO_RESPONSABILIDADE": 4,
+    "CHECKLIST_INTEGRACAO": 5,
+    "FICHA_EPI": 3,
+    "ORDEM_SERVICO_SST": 9,
+    "DECLARACAO_MANUSCRITA": 3,
+    "LISTA_PRESENCA": 7,
+    "PEDIDO_DEMISSAO": 15,
+    "TRCT": 23,
+    "RECIBO_AVULSO": 7,
+    "NOTIFICACAO_EMPREGADO": 8,
+    "AVISO_RECEBIMENTO": 8,
+    "CND_FEDERAL": 3,
+    "OCORRENCIA_ACIDENTE": 12,
+    "ADVERTENCIA_SUSPENSAO": 12
+  },
+  "nao_conformidades": {
+    "certidao_vencida": 2,
+    "sem_assinatura": 18,
+    "epi_sem_ca": 2,
+    "presenca_sem_assinatura": 1,
+    "aso_inapto": 1,
+    "certidao_positiva": 1,
+    "liquido_divergente": 3,
+    "ponto_britanico": 3,
+    "recusa_sem_testemunhas": 2,
+    "ar_sem_carimbo": 1,
+    "sem_ciencia": 2,
+    "atestado_sem_crm": 1,
+    "intervalo_curto": 2,
+    "fgts_divergente": 1,
+    "aso_sem_crm": 1
+  },
+  "aviso": "Todos os dados são fictícios; todas as páginas levam a marca 'AMOSTRA – DOCUMENTO FICTÍCIO'."
+}

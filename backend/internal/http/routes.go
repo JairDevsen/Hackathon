@@ -16,6 +16,8 @@ func (s *Server) tenantRoutes(t *gin.RouterGroup) {
 	t.GET("/units", s.listUnits)
 	t.GET("/positions", s.listPositions)
 	t.GET("/departments", s.listDepartments)
+	t.GET("/departments/:id", s.getDepartment)
+	t.GET("/directory/search", s.searchDirectory)
 	t.GET("/tenant/cadastro-config", s.getCadastroConfig)
 	t.GET("/employees/:id/requirements", s.scopeEmployee("id"), s.employeeRequirements)
 	t.PUT("/employees/:id/requirements/:codigo", auth.RequirePerm("funcionarios:gerir"), s.scopeEmployee("id"), s.setEmployeeRequirement)

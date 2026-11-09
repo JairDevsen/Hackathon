@@ -6,7 +6,7 @@ import { Button, ConfidenceBar, DataTable, EmptyState, Field, Input, Modal, Stat
 import { api } from '@/lib/api'
 import { nivelDoc, problemas, resumo, type Nivel } from '@/lib/analise'
 import { useAuth } from '@/lib/auth'
-import { fmtDate } from '@/lib/format'
+import { chaveEmpresa, fmtDate } from '@/lib/format'
 import { MotivoChips } from './Dossie'
 
 const TONE: Record<Exclude<Nivel, 'aprovado'>, { box: string; icon: any; cls: string }> = {
@@ -25,10 +25,13 @@ function Kpi({ icon: I, label, n, pct, tone }: { icon: any; label: string; n: nu
 
 function PastasRH({ docs, onOpen }: { docs: any[]; onOpen: (id: string) => void }) {
   const tree: Record<string, Record<string, any[]>> = {}
+  const rotulo: Record<string, string> = {} // a mesma empresa escrita de jeitos diferentes fica numa pasta só, com a 1ª grafia vista
   for (const d of docs) {
     // separação: própria empresa × terceirizada × fornecedor, e dentro de cada um a empresa (pelo CNPJ) e o funcionário
     const grupo = d.vinculo === 'TERCEIRIZADA' ? '1|Terceirizada' : d.vinculo === 'FORNECEDOR' ? '2|Fornecedor' : '0|Própria empresa'
-    const emp = `${grupo}|${d.fornecedor || d.empresa_nome || 'Empresa não identificada'}`
+    const nomeEmp = d.fornecedor || d.empresa_nome || 'Empresa não identificada'
+    const chave = `${grupo}|${chaveEmpresa(nomeEmp) || nomeEmp}`
+    const emp = (rotulo[chave] ??= `${grupo}|${nomeEmp}`)
     const fn = d.funcionario_nome ? `${d.funcionario_nome} (${d.funcionario_cpf ?? 's/ CPF'})` : 'Documentos da empresa / sem vínculo'
     ;((tree[emp] ??= {})[fn] ??= []).push(d)
   }

@@ -4,9 +4,11 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"log/slog"
 	"strings"
 	"time"
 
+	"github.com/agreser-innovations/citadel-ia/backend/internal/ocrseal"
 	"github.com/agreser-innovations/citadel-ia/backend/pkg/cpf"
 	"github.com/agreser-innovations/citadel-ia/backend/pkg/problem"
 	"github.com/jackc/pgx/v5"
@@ -72,8 +74,31 @@ func (i *Ingestor) snapshot(ctx context.Context, tx pgx.Tx, id string) (*snap, s
 	return &s, b, err
 }
 
-func (i *Ingestor) rebuildText(ctx context.Context, tx pgx.Tx, batchID string, pages []int32) (string, error) {
-	rows, err := tx.Query(ctx, `SELECT numero, coalesce(analise->>'texto_ocr','') FROM pages WHERE batch_id=$1 AND numero = ANY($2) ORDER BY numero`, batchID, pages)
+// textoDoc cifra o texto do documento; em falha devolve nil (o documento fica sem texto lido, nunca com texto em claro).
+func (i *Ingestor) textoDoc(ctx context.Context, sl *ocrseal.Sealer, texto string) []byte {
+	b, err := sl.Text(ocrseal.Texto, texto)
+	if err != nil {
+		slog.Error("cifrar texto do documento", "erro", err)
+		return nil
+	}
+	return b
+}
+
+// anonimizar usa o IA Core; sem ele (ou com erro) devolve vazio em vez de gravar texto com dados pessoais.
+func (i *Ingestor) anonimizar(ctx context.Context, texto string) string {
+	if i.Anonimizar == nil || texto == "" {
+		return ""
+	}
+	a, err := i.Anonimizar(ctx, texto)
+	if err != nil {
+		slog.Warn("anonimizar texto", "erro", err)
+		return ""
+	}
+	return a
+}
+
+func (i *Ingestor) rebuildText(ctx context.Context, tx pgx.Tx, sl *ocrseal.Sealer, batchID string, pages []int32) (string, error) {
+	rows, err := tx.Query(ctx, `SELECT numero, analise FROM pages WHERE batch_id=$1 AND numero = ANY($2) ORDER BY numero`, batchID, pages)
 	if err != nil {
 		return "", err
 	}
@@ -81,8 +106,12 @@ func (i *Ingestor) rebuildText(ctx context.Context, tx pgx.Tx, batchID string, p
 	var parts []string
 	for rows.Next() {
 		var n int
-		var t string
-		rows.Scan(&n, &t)
+		var an []byte
+		rows.Scan(&n, &an)
+		t, err := sl.AnaliseTexto(an) // a análise guarda o texto lido cifrado
+		if err != nil {
+			return "", err
+		}
 		parts = append(parts, t)
 	}
 	return strings.Join(parts, "\n\n"), nil
@@ -313,6 +342,15 @@ func (i *Ingestor) Apply(ctx context.Context, tx pgx.Tx, tenantID, userID, docID
 				}
 			}
 		}
+	case "RESTAURAR_DUPLICATA":
+		// o documento foi descartado por ter o mesmo conteúdo de outro, mas é um documento diferente: volta para a fila de revisão
+		var motivos []byte
+		if err := tx.QueryRow(ctx, `SELECT motivos_revisao FROM documents WHERE id=$1 AND status='REJEITADO'`, docID).Scan(&motivos); err != nil || !strings.Contains(string(motivos), "DUPLICATA_CONTEUDO") {
+			return nil, problem.BadRequest("este documento não foi descartado por duplicidade de conteúdo")
+		}
+		if _, err := tx.Exec(ctx, `UPDATE documents SET status='AGUARDANDO_REVISAO', motivos_revisao='["DUPLICATA_RESTAURADA"]', duplicata_de=NULL, atualizado_em=now() WHERE id=$1`, docID); err != nil {
+			return nil, err
+		}
 	case "MUDAR_TIPO", "VINCULAR":
 		// continua na fila até ser confirmado
 	case "SUBSTITUIR_ANTERIOR":
@@ -357,11 +395,24 @@ func (i *Ingestor) Apply(ctx context.Context, tx pgx.Tx, tenantID, userID, docID
 		if len(keep) == 0 || len(move) == 0 {
 			return nil, problem.BadRequest("a página de divisão deve estar no meio do documento")
 		}
-		t1, _ := i.rebuildText(ctx, tx, batchID, keep)
-		t2, _ := i.rebuildText(ctx, tx, batchID, move)
-		tx.Exec(ctx, `UPDATE documents SET paginas=$2, texto_ocr=$3, status='AGUARDANDO_REVISAO', atualizado_em=now() WHERE id=$1`, docID, keep, t1)
-		_, err := tx.Exec(ctx, `INSERT INTO documents (tenant_id,batch_id,employee_id,unit_id,document_type,titulo,paginas,confianca,status,campos,alertas,motivos_revisao,texto_ocr,sensivel_saude,nome_arquivo,pasta_destino)
-		  SELECT tenant_id,batch_id,employee_id,unit_id,document_type,titulo,$2,confianca,'AGUARDANDO_REVISAO','{}','[]','["DIVISAO_MANUAL"]',$3,sensivel_saude,nome_arquivo,pasta_destino FROM documents WHERE id=$1`, docID, move, t2)
+		sl, err := ocrseal.ForTx(ctx, tx, i.KR, tenantID)
+		if err != nil {
+			return nil, err
+		}
+		t1, err := i.rebuildText(ctx, tx, sl, batchID, keep)
+		if err != nil {
+			return nil, err
+		}
+		t2, err := i.rebuildText(ctx, tx, sl, batchID, move)
+		if err != nil {
+			return nil, err
+		}
+		c1, c2, a1, a2 := i.textoDoc(ctx, sl, t1), i.textoDoc(ctx, sl, t2), i.anonimizar(ctx, t1), i.anonimizar(ctx, t2)
+		if _, err := tx.Exec(ctx, `UPDATE documents SET paginas=$2, texto_ocr='', texto_ocr_cifrado=$3, texto_anonimizado=$4, status='AGUARDANDO_REVISAO', atualizado_em=now() WHERE id=$1`, docID, keep, c1, a1); err != nil {
+			return nil, err
+		}
+		_, err = tx.Exec(ctx, `INSERT INTO documents (tenant_id,batch_id,employee_id,unit_id,document_type,titulo,paginas,confianca,status,campos,alertas,motivos_revisao,texto_ocr_cifrado,texto_anonimizado,sensivel_saude,nome_arquivo,pasta_destino)
+		  SELECT tenant_id,batch_id,employee_id,unit_id,document_type,titulo,$2,confianca,'AGUARDANDO_REVISAO','{}','[]','["DIVISAO_MANUAL"]',$3,$4,sensivel_saude,nome_arquivo,pasta_destino FROM documents WHERE id=$1`, docID, move, c2, a2)
 		if err != nil {
 			return nil, err
 		}
@@ -374,8 +425,18 @@ func (i *Ingestor) Apply(ctx context.Context, tx pgx.Tx, tenantID, userID, docID
 			return nil, problem.BadRequest("não há documento seguinte para juntar")
 		}
 		all := append(append([]int32{}, before.Paginas...), nextPages...)
-		txt, _ := i.rebuildText(ctx, tx, batchID, all)
-		tx.Exec(ctx, `UPDATE documents SET paginas=$2, texto_ocr=$3, status='AGUARDANDO_REVISAO', atualizado_em=now() WHERE id=$1`, docID, all, txt)
+		sl, err := ocrseal.ForTx(ctx, tx, i.KR, tenantID)
+		if err != nil {
+			return nil, err
+		}
+		txt, err := i.rebuildText(ctx, tx, sl, batchID, all)
+		if err != nil {
+			return nil, err
+		}
+		if _, err := tx.Exec(ctx, `UPDATE documents SET paginas=$2, texto_ocr='', texto_ocr_cifrado=$3, texto_anonimizado=$4, status='AGUARDANDO_REVISAO', atualizado_em=now() WHERE id=$1`,
+			docID, all, i.textoDoc(ctx, sl, txt), i.anonimizar(ctx, txt)); err != nil {
+			return nil, err
+		}
 		tx.Exec(ctx, `UPDATE documents SET status='REJEITADO', motivos_revisao='["JUNTADO"]', atualizado_em=now() WHERE id=$1`, nextID)
 	default:
 		return nil, problem.BadRequest("ação de revisão desconhecida")

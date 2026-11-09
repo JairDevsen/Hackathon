@@ -1,4 +1,4 @@
-import { cnpjMask, cnpjValido, cpfMask, cpfValido, emailDomain, fmtBytes, FREE_DOMAINS } from './format'
+import { chaveEmpresa, cnpjMask, cnpjValido, cpfMask, cpfValido, emailDomain, fmtBytes, FREE_DOMAINS } from './format'
 
 describe('format', () => {
   it('valida CPF pelos dígitos verificadores', () => {
@@ -20,5 +20,14 @@ describe('format', () => {
     expect(cnpjMask('11222333000181')).toBe('11.222.333/0001-81')
     expect(cnpjMask('112223')).toBe('11.222.3')
     expect(cnpjMask('')).toBe('')
+  })
+})
+
+describe('chaveEmpresa', () => {
+  it('junta a mesma empresa escrita de jeitos diferentes', () => {
+    const a = chaveEmpresa('Aparecida Limpeza Soluções Ltda')
+    for (const v of ['APARECIDA LIMPEZA SOLUCOES LTDA', 'APARECIDA LIMPEZA SOLUÇÕES LTDA', 'aparecida limpeza soluções', 'Aparecida Limpeza Soluções S/A']) expect(chaveEmpresa(v)).toBe(a)
+    expect(chaveEmpresa('APARECIDA LIMPEZA DOMÉSTICA')).not.toBe(a)
+    expect(chaveEmpresa(undefined)).toBe('')
   })
 })

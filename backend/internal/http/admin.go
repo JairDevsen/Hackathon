@@ -61,6 +61,7 @@ func (s *Server) adminRoutes(m *gin.RouterGroup, v1 *gin.RouterGroup) {
 	m.GET("/users", s.adminMasterUsers)
 	m.POST("/users", s.adminInviteMaster)
 	m.POST("/support-access/:tenantId", s.adminRequestSupport)
+	m.POST("/reset", s.Auth.RequireStepUp(), s.adminReset) // apaga os dados das empresas: só Master, com código por e-mail e frase de confirmação
 	m.GET("/leads", s.adminLeads)
 }
 
@@ -352,13 +353,14 @@ func (s *Server) adminPatchDocType(c *gin.Context) {
 		Validade  *int    `json:"validade_padrao_dias"`
 		Retencao  *int    `json:"retencao_padrao_dias"`
 		Categoria *string `json:"categoria"`
+		Revisado  *bool   `json:"revisado"` // true confirma um tipo que a IA descobriu (as pistas aprendidas continuam valendo)
 	}
 	if !bindJSON(c, &in) {
 		return
 	}
 	if s.sys(c, func(ctx context.Context, tx pgx.Tx) error {
-		_, err := tx.Exec(ctx, `UPDATE document_types SET nome=coalesce($2,nome), validade_padrao_dias=coalesce($3,validade_padrao_dias), retencao_padrao_dias=coalesce($4,retencao_padrao_dias), categoria=coalesce($5,categoria) WHERE id=$1`,
-			c.Param("id"), in.Nome, in.Validade, in.Retencao, in.Categoria)
+		_, err := tx.Exec(ctx, `UPDATE document_types SET nome=coalesce($2,nome), validade_padrao_dias=coalesce($3,validade_padrao_dias), retencao_padrao_dias=coalesce($4,retencao_padrao_dias), categoria=coalesce($5,categoria), revisado_em=CASE WHEN $6::boolean IS TRUE AND origem='IA' THEN coalesce(revisado_em, now()) ELSE revisado_em END WHERE id=$1`,
+			c.Param("id"), in.Nome, in.Validade, in.Retencao, in.Categoria, in.Revisado)
 		if err != nil {
 			return err
 		}

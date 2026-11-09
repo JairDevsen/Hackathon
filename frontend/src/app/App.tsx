@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react'
 import { Navigate, Outlet, Route, Routes, useParams } from 'react-router-dom'
-import { Activity, BarChart3, Briefcase, Building2, CalendarDays, ClipboardCheck, Database, FileCog, FileText, FolderCog, Gauge, HardDrive, Home, LifeBuoy, ListChecks, Receipt, ScrollText, Search, Settings, ShieldCheck, Upload, UserCog, Users, Wallet, Bot, Layers, History, Coins, FolderOpen, Truck } from 'lucide-react'
+import { Activity, BarChart3, Briefcase, Building2, CalendarDays, ClipboardCheck, Database, FileCog, FileText, FolderCog, Gauge, HardDrive, Home, LifeBuoy, ListChecks, Receipt, ScrollText, Search, Settings, ShieldCheck, Upload, UserCog, Users, Wallet, Bot, Layers, History, Coins, FolderOpen, Truck, Handshake, Building, Trash2 } from 'lucide-react'
 import { AppShell } from '@/components/shell/AppShell'
 import { filterNav, type NavEntry } from '@/components/shell/nav'
 import { SkeletonRows } from '@/components/ui'
@@ -16,6 +16,7 @@ import { BatchDetail, BatchList, BatchUpload } from '@/features/rh/Batches'
 import { ReviewPage } from '@/features/rh/Review'
 import { RiscosPage } from '@/features/rh/Riscos'
 import { SupplierDados, SupplierDocs, SupplierFuncionarios, SupplierLayout, SupplierPendencias, SupplierRiscos, SuppliersPage } from '@/features/rh/Fornecedores'
+import { SectorDetail, SectorsPage } from '@/features/rh/Setores'
 import { CalendarPage, EmployeesPage, PendenciasPage, ProfilePage, ReportsPage } from '@/features/rh/Lists'
 const AdminDashboard = lazy(() => import('@/features/empresa/Dashboard').then((m) => ({ default: m.AdminDashboard })))
 const FinopsPage = lazy(() => import('@/features/finops/Finops').then((m) => ({ default: m.FinopsPage })))
@@ -28,6 +29,7 @@ const MasterHome = lazy(() => import('@/features/master/Master').then((m) => ({ 
 const MasterUsersPage = lazy(() => import('@/features/master/Master').then((m) => ({ default: m.MasterUsersPage })))
 const PlansPage = lazy(() => import('@/features/master/Master').then((m) => ({ default: m.PlansPage })))
 const QualityPage = lazy(() => import('@/features/master/Master').then((m) => ({ default: m.QualityPage })))
+const ResetPage = lazy(() => import('@/features/master/Master').then((m) => ({ default: m.ResetPage })))
 const QueuesPage = lazy(() => import('@/features/master/Master').then((m) => ({ default: m.QueuesPage })))
 const StoragePage = lazy(() => import('@/features/master/Master').then((m) => ({ default: m.StoragePage })))
 const TenantDados = lazy(() => import('@/features/master/Master').then((m) => ({ default: m.TenantDados })))
@@ -55,14 +57,18 @@ function useNav(): NavEntry[] {
     { kind: 'group', label: 'Plataforma', icon: Layers, children: [
       { kind: 'link', to: '/app/plataforma/catalogo', label: 'Catálogo de documentos', icon: FolderCog, roles: ['MASTER'] },
       { kind: 'link', to: '/app/plataforma/qualidade', label: 'Qualidade da IA', icon: Bot, roles: ['MASTER'] },
-      { kind: 'link', to: '/app/plataforma/filas', label: 'Filas e jobs', icon: Activity, roles: ['MASTER'] }] },
+      { kind: 'link', to: '/app/plataforma/filas', label: 'Filas e jobs', icon: Activity, roles: ['MASTER'] },
+      { kind: 'link', to: '/app/plataforma/redefinir', label: 'Redefinir dados', icon: Trash2, roles: ['MASTER'] }] },
     { kind: 'link', to: '/app/auditoria-global', label: 'Auditoria', icon: ScrollText, roles: ['MASTER'] },
     { kind: 'link', to: '/app/usuarios-master', label: 'Usuários Master', icon: UserCog, roles: ['MASTER'] },
     // Administrador da empresa e RH: a mesma visão operacional (configuração e conta ficam só com o admin)
     { kind: 'link', to: '/app', label: 'Início', icon: Home, roles: T },
     { kind: 'link', to: '/app/buscar', label: 'Buscar', icon: Search, roles: T },
-    { kind: 'link', to: '/app/funcionarios', label: 'Funcionários', icon: Users, roles: T },
-    { kind: 'link', to: '/app/fornecedores', label: 'Fornecedores', icon: Truck, badge: ov.data?.fornecedores_risco_alto || undefined, roles: T },
+    { kind: 'group', label: 'Quem trabalha', icon: Users, children: [
+      { kind: 'link', to: '/app/funcionarios', label: 'Funcionários', icon: Users, roles: T },
+      { kind: 'link', to: '/app/setores', label: 'Setores', icon: Building, roles: T },
+      { kind: 'link', to: '/app/terceirizadas', label: 'Terceirizadas', icon: Handshake, badge: ov.data?.fornecedores_risco_alto || undefined, roles: T },
+      { kind: 'link', to: '/app/fornecedores', label: 'Fornecedores', icon: Truck, roles: T }] },
     { kind: 'link', to: '/app/documentos', label: 'Documentos', icon: FolderOpen, roles: T },
     { kind: 'link', to: '/app/lotes', label: 'Lotes', icon: FileText, roles: T },
     { kind: 'link', to: '/app/lotes/novo', label: 'Enviar lote', icon: Upload, roles: T },
@@ -129,14 +135,21 @@ export function App() {
           <Route path="revisoes" element={<DossieRevisoes />} />
           <Route path="exportar" element={<DossieExport />} />
         </Route>
-        <Route path="fornecedores" element={<SuppliersPage />} />
-        <Route path="fornecedores/:id" element={<SupplierLayout />}>
-          <Route index element={<SupplierDados />} />
-          <Route path="documentos" element={<SupplierDocs />} />
-          <Route path="funcionarios" element={<SupplierFuncionarios />} />
-          <Route path="pendencias" element={<SupplierPendencias />} />
-          <Route path="riscos" element={<SupplierRiscos />} />
-        </Route>
+        <Route path="setores" element={<SectorsPage />} />
+        <Route path="setores/:id" element={<SectorDetail />} />
+        <Route path="terceirizadas" element={<SuppliersPage tipo="TERCEIRIZADA" />} />
+        <Route path="fornecedores" element={<SuppliersPage tipo="FORNECEDOR" />} />
+        <Route path="empresas" element={<SuppliersPage />} />
+        {['terceirizadas', 'fornecedores'].map((p) => (
+          // a ficha é a mesma; SupplierLayout leva ao endereço certo conforme o tipo da empresa
+          <Route key={p} path={`${p}/:id`} element={<SupplierLayout />}>
+            <Route index element={<SupplierDados />} />
+            <Route path="documentos" element={<SupplierDocs />} />
+            <Route path="funcionarios" element={<SupplierFuncionarios />} />
+            <Route path="pendencias" element={<SupplierPendencias />} />
+            <Route path="riscos" element={<SupplierRiscos />} />
+          </Route>
+        ))}
         <Route path="documentos" element={<DocumentosPage />} />
         <Route path="documentos/:id" element={<DocumentPage />} />
         <Route path="lotes" element={<BatchList />} />
@@ -173,6 +186,7 @@ export function App() {
         <Route path="plataforma/catalogo" element={<CatalogPage />} />
         <Route path="plataforma/qualidade" element={<QualityPage />} />
         <Route path="plataforma/filas" element={<QueuesPage />} />
+        <Route element={<OnlyRoles roles={['MASTER']} />}><Route path="plataforma/redefinir" element={<ResetPage />} /></Route>
         <Route path="auditoria-global" element={<MasterAuditPage />} />
         <Route path="usuarios-master" element={<MasterUsersPage />} />
         </Route>

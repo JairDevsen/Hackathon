@@ -109,6 +109,8 @@ func (s *Server) complianceWhere(c *gin.Context) (string, []any) {
 	add("dt.codigo = ?", c.Query("type"))
 	add("e.unit_id = ?::uuid", c.Query("unit"))
 	add("e.cargo_id = ?::uuid", c.Query("cargo"))
+	add("e.department_id = ?::uuid", c.Query("setor"))                                // pendências de um setor
+	add("(ci.supplier_id = ?::uuid OR e.supplier_id = ?::uuid)", c.Query("supplier")) // da empresa ou dos funcionários dela
 	return strings.Join(w, " AND "), args
 }
 

@@ -49,7 +49,7 @@ paths:
   /batches/{id}/export-zip: { get: { summary: "ZIP hierárquico Empresa/Funcionário + manifesto; anonimizado=true gera cópias com tarja (saúde omitida sem permissão)", parameters: [{ name: anonimizado, in: query, schema: { type: boolean } }] } }
   /batches/{id}/retry: { post: { summary: Retoma só o que falhou } }
   /documents: { get: { summary: "Lista de documentos da empresa (q, tipo, categoria, status, employee, lote, competencia) com cursor e totais por status; saúde mascarada sem saude:ler" } }
-  /documents/search: { get: { summary: Busca em texto completo (tsvector pt), parameters: [{ name: q, in: query, schema: { type: string } }] } }
+  /documents/search: { get: { summary: Busca em texto completo (tsvector pt) sobre o texto anonimizado; o OCR original fica cifrado, parameters: [{ name: q, in: query, schema: { type: string } }] } }
   /documents/{id}: { get: { summary: "Detalhe + páginas com URL assinada (120 s); saúde exige saude:ler" } }
   /documents/{id}/pages/{n}/url: { get: { summary: URL assinada de 90 s } }
   /documents/{id}/highlights: { get: { summary: Caixas do OCR para o termo q } }
@@ -81,7 +81,9 @@ paths:
   /positions: { get: { summary: Lista }, post: { summary: Cria (admin) } }
   /requirements: { get: { summary: Matriz }, put: { summary: Altera uma célula (admin) } }
   /requirements/bulk: { put: { summary: "Define de uma vez os documentos exigidos de um escopo (todos | setor | cargo); dry_run=true simula e devolve pendências antes/depois sem salvar" } }
-  /departments: { get: { summary: Setores }, post: { summary: Cria setor (admin) } }
+  /departments: { get: { summary: "Setores com conformidade, pendências, riscos e pessoas (próprias e de terceirizadas); respeita o escopo de unidades do usuário" }, post: { summary: Cria setor (admin) } }
+  /departments/{id}: { get: { summary: "Um setor, com os mesmos indicadores da lista" } }
+  /directory/search: { get: { summary: "Localizador único: q (mín. 2 caracteres) acha funcionários (nome, matrícula ou CPF completo), setores e empresas (terceirizadas e fornecedores, por nome ou CNPJ)" } }
   /employees/{id}/requirements: { get: { summary: "O que é exigido deste funcionário e a origem da regra (todos/setor/cargo/exceção)" } }
   /employees/{id}/requirements/{codigo}: { put: { summary: "Exige ou dispensa um documento só para este funcionário (obrigatorio=null volta ao padrão; dispensa exige justificativa)" } }
   /tenant/cadastro-config: { get: { summary: "Campos do cadastro de funcionário (ativos/obrigatórios) e campos personalizados" }, put: { summary: Configura (admin) } }
@@ -89,7 +91,7 @@ paths:
   /requirements/impact: { get: { summary: Estimativa de pendências criadas } }
   /users: { get: { summary: Lista (admin) }, post: { summary: "Convite por e-mail de domínio permitido (admin)" } }
   /users/{id}: { patch: { summary: Permissões/escopo/status (admin, step-up), parameters: [{ $ref: "#/components/parameters/StepUp" }] } }
-  /tenant: { get: { summary: Dados e limites }, patch: { summary: Limiar de confiança, política (admin) } }
+  /tenant: { get: { summary: Dados e limites }, patch: { summary: "Limiar de confiança, similaridade para documentos duplicados (0,70 a 1,00; padrão 0,85), política (admin)" } }
   /tenant/domains: { put: { summary: Domínios de e-mail permitidos (admin, step-up) } }
   /retention: { get: { summary: Política }, }
   /billing: { get: { summary: Plano, uso e faturas } }
@@ -102,11 +104,13 @@ paths:
   /admin/tenants/{id}: { get: { summary: Ficha }, patch: { summary: Limites/plano } }
   /admin/tenants/{id}/status: { post: { summary: Ativar/suspender/encerrar (derruba sessões) } }
   /admin/tenants/{id}/users/{uid}/reset-2fa: { post: { summary: Reset com justificativa registrada } }
+  /admin/reset: { post: { summary: "Master + step-up: apaga os DADOS de todas as empresas (ou de uma, com tenant_id): funcionários, terceirizadas, fornecedores, lotes, documentos, riscos, pendências, notificações e arquivos. Exige confirmar=\"RESETAR TUDO\" e motivo; recusa com lote em processamento. Mantém empresas, usuários, configuração, planos e auditoria" } }
   /admin/audit: { get: { summary: "Auditoria global; `motivo` obrigatório e registrado na trilha da empresa" } }
   /admin/audit/verify: { get: { summary: Verifica a cadeia de hash } }
   /admin/plans: { get: { summary: Planos }, }
   /admin/storage: { get: { summary: Uso por cliente } }
-  /admin/document-types: { get: { summary: "Catálogo global (32 tipos)" } }
+  /admin/document-types/{id}: { patch: { summary: "Nome, validade, retenção, categoria; revisado=true confirma um tipo descoberto pela IA (as pistas aprendidas continuam)" } }
+  /admin/document-types: { get: { summary: "Catálogo global: tipos curados e os descobertos pela IA (origem IA, pistas, revisado_em, nº de documentos)" } }
   /admin/ia/overview: { get: { summary: Fila, reprocessamentos, custo } }
   /admin/ia/dead-letters: { get: { summary: Fila de mensagens mortas } }
   /admin/ia/quality: { get: { summary: Benchmark com lotes fictícios } }

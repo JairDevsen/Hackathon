@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useQueryClient } from '@tanstack/react-query'
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, XAxis, YAxis, Cell } from 'recharts'
-import { Activity, Building2, Database, FileText, Plus, RefreshCw, TrendingUp, Users, AlertTriangle, HardDrive, Receipt, LifeBuoy, ScrollText, Bot } from 'lucide-react'
+import { Activity, Building2, Database, FileText, Plus, RefreshCw, TrendingUp, Users, AlertTriangle, HardDrive, Receipt, LifeBuoy, ScrollText, Bot, Trash2 } from 'lucide-react'
 import { SectionLayout } from '@/components/shell/SectionLayout'
 import { Button, Card, DataTable, EmptyState, ErrorState, Field, Input, KpiCard, Modal, SectionHeading, Select, SkeletonRows, StatusPill } from '@/components/ui'
 import { C, ChartTip, SEQ, axis } from '@/components/charts'
@@ -193,8 +193,9 @@ export function CatalogPage() {
   const qc = useQueryClient()
   const r = useGet<any[]>('/admin/document-types')
   return (
-    <div><SectionHeading eyebrow="Plataforma" title="Catálogo global de tipos de documento">Os {r.data?.length ?? 32} tipos do IA Core, com validade padrão e categoria. A alteração vale para todas as empresas.</SectionHeading>
-      <DataTable rows={r.data} loading={r.isLoading} cols={[{ key: 'codigo', header: 'Código' }, { key: 'nome', header: 'Nome' }, { key: 'categoria', header: 'Categoria' }, { key: 'escopo', header: 'Escopo' }, { key: 'sensivel_saude', header: 'Saúde', render: (t) => (t.sensivel_saude ? 'Sim' : '—') },
+    <div><SectionHeading eyebrow="Plataforma" title="Catálogo global de tipos de documento">Os {r.data?.length ?? 0} tipos, com validade padrão e categoria. A alteração vale para todas as empresas. Tipos marcados "IA" foram reconhecidos pela IA durante a leitura de documentos que o catálogo curado não cobria: confira o nome (clique para renomear) e confirme.</SectionHeading>
+      <DataTable rows={r.data} loading={r.isLoading} cols={[{ key: 'codigo', header: 'Código' }, { key: 'nome', header: 'Nome', render: (t) => t.origem === 'IA' ? <Input className="!w-64" aria-label={`Nome do tipo ${t.codigo}`} defaultValue={t.nome} onBlur={async (e) => { const v = e.target.value.trim(); if (v.length >= 4 && v !== t.nome) { await api(`/admin/document-types/${t.id}`, { method: 'PATCH', body: { nome: v } }); qc.invalidateQueries({ queryKey: ['/admin/document-types'] }) } }} /> : t.nome }, { key: 'categoria', header: 'Categoria' }, { key: 'escopo', header: 'Escopo' }, { key: 'sensivel_saude', header: 'Saúde', render: (t) => (t.sensivel_saude ? 'Sim' : '—') },
+        { key: 'origem', header: 'Origem', render: (t) => (t.origem === 'IA' ? (t.revisado_em ? <span className="rounded-full bg-success/15 px-2 py-0.5 text-xs font-semibold text-success">IA · confirmado</span> : <span className="inline-flex items-center gap-2"><span className="rounded-full bg-warning/15 px-2 py-0.5 text-xs font-semibold text-warning">IA · não revisado</span><Button variant="ghost" aria-label={`Confirmar o tipo ${t.nome}`} onClick={async () => { await api(`/admin/document-types/${t.id}`, { method: 'PATCH', body: { revisado: true } }); qc.invalidateQueries({ queryKey: ['/admin/document-types'] }) }}>Confirmar</Button></span>) : 'Curado') }, { key: 'documentos', header: 'Documentos' },
         { key: 'validade_padrao_dias', header: 'Validade padrão (dias)', render: (t) => <Input className="!w-24" type="number" aria-label={`Validade de ${t.nome}`} defaultValue={t.validade_padrao_dias ?? ''} onBlur={async (e) => { if (e.target.value) { await api(`/admin/document-types/${t.id}`, { method: 'PATCH', body: { validade_padrao_dias: Number(e.target.value) } }); qc.invalidateQueries({ queryKey: ['/admin/document-types'] }) } }} /> }]} /></div>
   )
 }
@@ -256,5 +257,54 @@ export function MasterUsersPage() {
       <DataTable rows={r.data} loading={r.isLoading} cols={[{ key: 'nome', header: 'Nome' }, { key: 'email', header: 'E-mail' }, { key: 'status', header: 'Status', render: (x) => <StatusPill status={x.status} /> }, { key: 'ultimo_login', header: 'Último acesso', render: (x) => fmtDateTime(x.ultimo_login) }]} />
       <Modal open={open} onClose={() => setOpen(false)} eyebrow="Usuários Master" title="Convidar" footer={<><Button onClick={() => setOpen(false)}>Cancelar</Button><Button variant="primary" onClick={async () => { await api('/admin/users', { method: 'POST', body: f }); setOpen(false); qc.invalidateQueries({ queryKey: ['/admin/users'] }) }}>Enviar convite</Button></>}>
         <Field label="Nome">{(i) => <Input id={i} value={f.nome} onChange={(e) => setF({ ...f, nome: e.target.value })} />}</Field><Field label="E-mail">{(i) => <Input id={i} type="email" value={f.email} onChange={(e) => setF({ ...f, email: e.target.value })} />}</Field></Modal></div>
+  )
+}
+
+const FRASE_RESET = 'RESETAR TUDO'
+
+/** Zona de perigo: apaga os dados (não a configuração) de todas as empresas ou de uma. Só o Master chega aqui; a API ainda pede o código por e-mail. */
+export function ResetPage() {
+  const tenants = useGet<any[]>('/admin/tenants')
+  const [alvo, setAlvo] = useState('')
+  const [motivo, setMotivo] = useState('')
+  const [frase, setFrase] = useState('')
+  const [busy, setBusy] = useState(false)
+  const [err, setErr] = useState('')
+  const [res, setRes] = useState<any>(null)
+  const nome = alvo ? (tenants.data?.find((t) => t.id === alvo)?.nome_fantasia || tenants.data?.find((t) => t.id === alvo)?.razao_social) : 'TODAS as empresas'
+  const pronto = frase === FRASE_RESET && motivo.trim().length >= 5
+  const executar = async () => {
+    setBusy(true); setErr(''); setRes(null)
+    try { setRes(await api('/admin/reset', { method: 'POST', body: { confirmar: frase, motivo, tenant_id: alvo || undefined } })); setFrase(''); setMotivo('') } catch (e) { setErr((e as Error).message) } finally { setBusy(false) }
+  }
+  return (
+    <div className="mx-auto max-w-3xl space-y-4">
+      <SectionHeading eyebrow="Plataforma" title="Redefinir dados" showTitle>Apaga os dados de teste ou de uma carga errada para recomeçar do zero. A ação é definitiva.</SectionHeading>
+      <div role="alert" className="rounded-xl border border-danger/40 bg-danger-bg/40 p-4 text-sm">
+        <p className="mb-2 flex items-center gap-2 font-semibold text-danger"><AlertTriangle className="h-4 w-4" aria-hidden />O que será apagado</p>
+        <ul className="list-disc space-y-0.5 pl-5">
+          <li>funcionários, terceirizadas e fornecedores;</li><li>lotes, páginas, documentos e revisões;</li><li>indicadores de risco e pendências;</li><li>notificações e <b>todos os arquivos guardados</b> (originais, páginas e PDFs gerados).</li>
+        </ul>
+        <p className="mb-1 mt-3 font-semibold">O que continua</p>
+        <ul className="list-disc space-y-0.5 pl-5"><li>as empresas e seus usuários (administradores e RH);</li><li>unidades, cargos, setores, documentos obrigatórios, retenção e configurações;</li><li>planos, faturas, o consumo mensal já contabilizado e a trilha de auditoria (que registra este reset).</li></ul>
+      </div>
+      <Card title="Confirmar">
+        <div className="space-y-3">
+          <Field label="Empresa">{(id) => <Select id={id} value={alvo} onChange={(e) => setAlvo(e.target.value)}><option value="">Todas as empresas</option>{tenants.data?.map((t) => <option key={t.id} value={t.id}>{t.nome_fantasia || t.razao_social}</option>)}</Select>}</Field>
+          <Field label="Motivo (fica na auditoria)">{(id) => <Input id={id} value={motivo} onChange={(e) => setMotivo(e.target.value)} placeholder="Ex.: reiniciar a base de demonstração" />}</Field>
+          <Field label={`Digite ${FRASE_RESET} para confirmar`}>{(id) => <Input id={id} value={frase} autoComplete="off" onChange={(e) => setFrase(e.target.value)} />}</Field>
+          {err && <p role="alert" className="rounded-lg bg-danger-bg p-2 text-sm text-danger">{err}</p>}
+          <Button variant="danger" loading={busy} disabled={!pronto} onClick={executar}><Trash2 className="h-4 w-4" />Apagar dados de {nome}</Button>
+          <p className="text-xs text-muted-foreground">Será pedido um código enviado ao seu e-mail. Se houver lote em processamento, o reset é recusado.</p>
+        </div>
+      </Card>
+      {res && (
+        <div role="status" className="rounded-xl border border-success/40 bg-success-bg/40 p-4 text-sm">
+          <p className="font-semibold text-success">Dados apagados em {res.empresas} empresa(s).</p>
+          <p>{res.total.funcionarios} funcionário(s), {res.total.fornecedores} empresa(s) terceirizada(s)/fornecedora(s), {res.total.lotes} lote(s), {res.total.documentos} documento(s), {res.total.riscos} risco(s), {res.total.pendencias} pendência(s); {fmtBytes(res.total.bytes_liberados)} liberados, {res.arquivos_removidos} arquivo(s) removido(s).</p>
+          {res.empresas_com_falha_nos_arquivos > 0 && <p className="mt-1 text-warning">A remoção de arquivos falhou em {res.empresas_com_falha_nos_arquivos} empresa(s): sobram objetos cifrados sem referência no banco (ver o log do servidor).</p>}
+        </div>
+      )}
+    </div>
   )
 }

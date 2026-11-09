@@ -17,8 +17,31 @@ import (
 
 // ---------- setores ----------
 
+// departmentSelect: o setor com a conformidade e os riscos das pessoas que trabalham nele (próprios e de terceirizadas).
+// Os indicadores respeitam o escopo de unidades do usuário ($1; vazio = todas) e ignoram desligados.
+const departmentSelect = `SELECT dp.id, dp.nome, dp.descricao, dp.ativo,
+  (SELECT count(*) FROM employees e WHERE e.department_id=dp.id) AS funcionarios,
+  coalesce(f.ativos,0) AS ativos, coalesce(f.terceirizados,0) AS terceirizados,
+  coalesce(c.ok,0) AS ok, coalesce(c.total,0) AS total, coalesce(c.pend,0) AS pendencias, coalesce(c.venc,0) AS vencidos,
+  coalesce(rk.alto,0) AS riscos_altos, coalesce(rk.total,0) AS riscos
+  FROM departments dp
+  LEFT JOIN LATERAL (SELECT count(*) AS ativos, count(*) FILTER (WHERE e.supplier_id IS NOT NULL) AS terceirizados FROM employees e
+      WHERE e.department_id=dp.id AND e.status<>'DESLIGADO' AND ($1::uuid[] = '{}' OR e.unit_id = ANY($1))) f ON true
+  LEFT JOIN LATERAL (SELECT count(*) FILTER (WHERE ci.status='OK') ok, count(*) FILTER (WHERE ci.status<>'DISPENSADO') total,
+      count(*) FILTER (WHERE ci.status IN ('PENDENTE','VENCIDO')) pend, count(*) FILTER (WHERE ci.status='VENCIDO') venc
+      FROM compliance_items ci JOIN employees e ON e.id=ci.employee_id
+      WHERE e.department_id=dp.id AND e.status<>'DESLIGADO' AND ($1::uuid[] = '{}' OR e.unit_id = ANY($1))) c ON true
+  LEFT JOIN LATERAL (SELECT count(*) FILTER (WHERE r.severidade='ALTO') alto, count(*) total FROM risk_indicators r JOIN employees e ON e.id=r.employee_id
+      WHERE e.department_id=dp.id AND r.status='ABERTO' AND e.status<>'DESLIGADO' AND ($1::uuid[] = '{}' OR e.unit_id = ANY($1))) rk ON true`
+
 func (s *Server) listDepartments(c *gin.Context) {
-	s.queryJSON(c, `SELECT coalesce(json_agg(d ORDER BY d.nome),'[]') FROM (SELECT id, nome, descricao, ativo, (SELECT count(*) FROM employees e WHERE e.department_id=departments.id) AS funcionarios FROM departments) d`)
+	units, _ := s.userScope(c)
+	s.queryJSON(c, `SELECT coalesce(json_agg(d ORDER BY d.nome),'[]') FROM (`+departmentSelect+`) d`, units)
+}
+
+func (s *Server) getDepartment(c *gin.Context) {
+	units, _ := s.userScope(c)
+	s.queryJSON(c, `SELECT coalesce((SELECT row_to_json(d) FROM (`+departmentSelect+` WHERE dp.id=$2) d),'null'::json)`, units, c.Param("id"))
 }
 
 func (s *Server) saveDepartment(c *gin.Context) {

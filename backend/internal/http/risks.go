@@ -9,6 +9,7 @@ import (
 
 	"github.com/agreser-innovations/citadel-ia/backend/internal/auth"
 	"github.com/agreser-innovations/citadel-ia/backend/internal/compliance"
+	"github.com/agreser-innovations/citadel-ia/backend/internal/ocrseal"
 	"github.com/agreser-innovations/citadel-ia/backend/pkg/cpf"
 	"github.com/agreser-innovations/citadel-ia/backend/pkg/problem"
 	"github.com/gin-gonic/gin"
@@ -88,10 +89,18 @@ func (s *Server) createManualDocument(c *gin.Context) {
 		}
 		cj, _ := json.Marshal(campos)
 		aj, _ := json.Marshal(alertas)
+		sl, err := s.sealer(ctx, tx, tid(c))
+		if err != nil {
+			return err
+		}
+		textoCifrado, err := sl.Text(ocrseal.Texto, strings.Join(linhas, "\n")) // o que foi digitado também fica cifrado
+		if err != nil {
+			return err
+		}
 		if err := tx.QueryRow(ctx, `INSERT INTO documents (tenant_id, employee_id, unit_id, document_type, titulo, competencia, data_documento, validade_ate, paginas, confianca, status, campos, alertas,
-		    texto_ocr, nome_extraido, sensivel_saude, origem)
+		    texto_ocr_cifrado, nome_extraido, sensivel_saude, origem)
 		  VALUES ($1,$2,$3,$4,$5,nullif($6,''),nullif($7,'')::date,nullif($8,'')::date,'{}',1,'REVISADO',$9,$10,$11,$12,$13,'MANUAL') RETURNING id::text`,
-			tid(c), emp, unit, in.Tipo, nome+" (lançamento manual)", in.Competencia, in.DataDocumento, in.ValidadeAte, cj, aj, strings.Join(linhas, "\n"), empNome, saudeTipo).Scan(&id); err != nil {
+			tid(c), emp, unit, in.Tipo, nome+" (lançamento manual)", in.Competencia, in.DataDocumento, in.ValidadeAte, cj, aj, textoCifrado, empNome, saudeTipo).Scan(&id); err != nil {
 			return err
 		}
 		if err := compliance.Recompute(ctx, tx, tid(c), emp); err != nil {

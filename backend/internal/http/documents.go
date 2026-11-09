@@ -15,6 +15,7 @@ import (
 	"github.com/agreser-innovations/citadel-ia/backend/internal/compliance"
 	"github.com/agreser-innovations/citadel-ia/backend/internal/documents"
 	"github.com/agreser-innovations/citadel-ia/backend/internal/iacore"
+	"github.com/agreser-innovations/citadel-ia/backend/internal/ocrseal"
 	"github.com/agreser-innovations/citadel-ia/backend/internal/storage"
 	"github.com/agreser-innovations/citadel-ia/backend/pkg/problem"
 	"github.com/gin-gonic/gin"
@@ -91,6 +92,7 @@ func (s *Server) pageURLs(ctx context.Context, tx pgx.Tx, tenantID string, d *do
 func (s *Server) getDocument(c *gin.Context) {
 	_, saude := s.userScope(c)
 	var raw []byte
+	var texto string
 	var pages []gin.H
 	if !s.tx(c, func(ctx context.Context, tx pgx.Tx) error {
 		d, err := s.loadDocMeta(ctx, tx, c.Param("id"))
@@ -105,7 +107,9 @@ func (s *Server) getDocument(c *gin.Context) {
 				return err
 			}
 		}
-		textCol := "d.texto_ocr"
+		// o texto lido (OCR) está cifrado: é aberto aqui, só para quem pode ver o documento original. O acesso de suporte
+		// recebe sempre o texto anonimizado.
+		textCol := "''"
 		if support(c) {
 			textCol = "d.texto_anonimizado"
 		}
@@ -118,6 +122,20 @@ func (s *Server) getDocument(c *gin.Context) {
 		if err != nil {
 			return err
 		}
+		if !support(c) {
+			sl, e := s.sealer(ctx, tx, tid(c))
+			if e != nil {
+				return e
+			}
+			var sealed []byte
+			var legado string
+			if e := tx.QueryRow(ctx, `SELECT texto_ocr_cifrado, texto_ocr FROM documents WHERE id=$1`, d.ID).Scan(&sealed, &legado); e != nil {
+				return e
+			}
+			if texto, e = sl.PlainOrOpen(ocrseal.Texto, sealed, legado); e != nil {
+				return e
+			}
+		}
 		if d.Saude {
 			return s.audit(ctx, tx, c, "VISUALIZACAO_DADO_SAUDE", "document", d.ID, nil)
 		}
@@ -128,6 +146,9 @@ func (s *Server) getDocument(c *gin.Context) {
 	}
 	var out map[string]any
 	json.Unmarshal(raw, &out)
+	if !support(c) {
+		out["texto_ocr"] = texto
+	}
 	var ck []map[string]any
 	if b, e := json.Marshal(out["checklist"]); e == nil {
 		json.Unmarshal(b, &ck)
@@ -191,15 +212,27 @@ func (s *Server) documentHighlights(c *gin.Context) {
 		if d.Batch == "" {
 			return nil
 		}
-		rows, err := tx.Query(ctx, `SELECT numero, palavras FROM pages WHERE batch_id=$1 AND numero=ANY($2) ORDER BY numero`, d.Batch, d.Paginas)
+		sl, err := s.sealer(ctx, tx, tid(c))
+		if err != nil {
+			return err
+		}
+		rows, err := tx.Query(ctx, `SELECT numero, palavras_cifradas, palavras FROM pages WHERE batch_id=$1 AND numero=ANY($2) ORDER BY numero`, d.Batch, d.Paginas)
 		if err != nil {
 			return err
 		}
 		defer rows.Close()
 		for rows.Next() {
 			var n int
-			var raw []byte
-			rows.Scan(&n, &raw)
+			var sealed, legado []byte
+			rows.Scan(&n, &sealed, &legado)
+			raw := legado
+			if len(sealed) > 0 {
+				p, e := sl.OpenText(ocrseal.Palavra, sealed)
+				if e != nil {
+					return e
+				}
+				raw = []byte(p)
+			}
 			var words [][]any
 			json.Unmarshal(raw, &words)
 			boxes := [][]float64{}
@@ -237,6 +270,7 @@ func (s *Server) documentHighlights(c *gin.Context) {
 func (s *Server) renderDoc(ctx context.Context, tenantID, docID, modo string) ([]byte, *docMeta, error) {
 	var meta *docMeta
 	var pages []iacore.RenderPage
+	termos := []string{}
 	err := s.DB.Tenant(ctx, tenantID, func(tx pgx.Tx) error {
 		d, err := s.loadDocMeta(ctx, tx, docID)
 		if err != nil {
@@ -246,16 +280,32 @@ func (s *Server) renderDoc(ctx context.Context, tenantID, docID, modo string) ([
 		if d.Batch == "" {
 			return problem.BadRequest("documento lançado manualmente não tem imagem para gerar PDF")
 		}
-		rows, err := tx.Query(ctx, `SELECT storage_key, coalesce(analise->>'texto_ocr',''), palavras, caixas FROM pages WHERE batch_id=$1 AND numero=ANY($2) ORDER BY numero`, d.Batch, d.Paginas)
+		sl, err := s.sealer(ctx, tx, tenantID)
+		if err != nil {
+			return err
+		}
+		rows, err := tx.Query(ctx, `SELECT storage_key, analise, palavras_cifradas, palavras, caixas, texto_len + coalesce(length(texto_embutido),0) FROM pages WHERE batch_id=$1 AND numero=ANY($2) ORDER BY numero`, d.Batch, d.Paginas)
 		if err != nil {
 			return err
 		}
 		defer rows.Close()
 		for rows.Next() {
-			var k, t string
-			var pw, cx []byte
-			rows.Scan(&k, &t, &pw, &cx)
-			rp := iacore.RenderPage{ImageURL: s.Signer.URLFor(s.Cfg.InternalBaseURL, storage.Grant{Tenant: tenantID, Key: k}, 10*time.Minute), Texto: t}
+			var k string
+			var an, pwCifrado, pw, cx []byte
+			var nativo int
+			rows.Scan(&k, &an, &pwCifrado, &pw, &cx, &nativo)
+			t, e := sl.AnaliseTexto(an)
+			if e != nil {
+				return e
+			}
+			if len(pwCifrado) > 0 {
+				p, e := sl.OpenText(ocrseal.Palavra, pwCifrado)
+				if e != nil {
+					return e
+				}
+				pw = []byte(p)
+			}
+			rp := iacore.RenderPage{ImageURL: s.Signer.URLFor(s.Cfg.InternalBaseURL, storage.Grant{Tenant: tenantID, Key: k}, 10*time.Minute), Texto: t, TextoNativo: nativo >= 20}
 			if modo != "original" {
 				rp.Palavras = pw
 			}
@@ -265,17 +315,28 @@ func (s *Server) renderDoc(ctx context.Context, tenantID, docID, modo string) ([
 			}
 			pages = append(pages, rp)
 		}
+		rows.Close()
+		if modo == "anonimizado" {
+			// nomes já conhecidos do documento: a cópia tarja onde aparecerem, mesmo sem o rótulo "Nome:" ao lado
+			var nomeDoc, nomeFunc *string
+			tx.QueryRow(ctx, `SELECT d.nome_extraido, e.nome FROM documents d LEFT JOIN employees e ON e.id=d.employee_id WHERE d.id=$1`, docID).Scan(&nomeDoc, &nomeFunc)
+			for _, n := range []*string{nomeDoc, nomeFunc} {
+				if n != nil && strings.TrimSpace(*n) != "" {
+					termos = append(termos, *n)
+				}
+			}
+		}
 		return nil
 	})
 	if err != nil {
 		return nil, nil, err
 	}
-	cacheKey := fmt.Sprintf("%s/%s/derived/%s-%s-%d.pdf", tenantID, meta.Batch, meta.ID, modo, meta.Atualizado.Unix())
+	cacheKey := fmt.Sprintf("%s/%s/derived/%s-%s-v2-%d.pdf", tenantID, meta.Batch, meta.ID, modo, meta.Atualizado.Unix())
 	if b, err := s.Vault.ReadAll(ctx, tenantID, cacheKey); err == nil {
 		return b, meta, nil
 	}
 	var buf bytes.Buffer
-	if err := s.IA.Render(ctx, modo, meta.Titulo, pages, &buf); err != nil {
+	if err := s.IA.Render(ctx, modo, meta.Titulo, pages, termos, &buf); err != nil {
 		return nil, nil, err
 	}
 	if _, err := s.Vault.PutBytes(ctx, tenantID, cacheKey, buf.Bytes()); err == nil {
@@ -347,7 +408,7 @@ func (s *Server) searchDocuments(c *gin.Context) {
 	s.queryJSON(c, `SELECT coalesce(json_agg(t),'[]') FROM (
 	  SELECT d.id, d.document_type, dt.nome AS tipo_nome, d.competencia, d.paginas, d.status, d.employee_id, e.nome AS funcionario_nome, e.cpf_mascarado AS funcionario_cpf,
 	    ts_rank(d.tsv, query) AS rank,
-	    ts_headline('portuguese', f_unaccent(d.texto_ocr), query, 'MaxWords=24, MinWords=8, StartSel=<<, StopSel=>>, MaxFragments=1') AS trecho
+	    ts_headline('portuguese', f_unaccent(d.texto_anonimizado), query, 'MaxWords=24, MinWords=8, StartSel=<<, StopSel=>>, MaxFragments=1') AS trecho
 	  FROM documents d JOIN document_types dt ON dt.codigo=d.document_type LEFT JOIN employees e ON e.id=d.employee_id, websearch_to_tsquery('portuguese', f_unaccent($1)) query
 	  WHERE d.tsv @@ query AND d.status NOT IN ('REJEITADO','SUBSTITUIDO') AND (NOT d.sensivel_saude OR $3)
 	    AND ($2::uuid[]='{}' OR d.unit_id=ANY($2) OR e.unit_id=ANY($2)) ORDER BY rank DESC LIMIT 30) t`, q, units, saude)

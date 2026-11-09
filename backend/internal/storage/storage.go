@@ -232,6 +232,14 @@ func (v *Vault) DeleteBatch(ctx context.Context, tenantID, batchID string) (int,
 	return v.Store.DeletePrefix(ctx, prefix)
 }
 
+// DeleteTenantFiles remove TODOS os objetos da empresa (lotes, páginas, miniaturas, PDFs gerados e cache de cópias). Só o reset de dados usa.
+func (v *Vault) DeleteTenantFiles(ctx context.Context, tenantID string) (int, error) {
+	if len(tenantID) < 16 { // nunca um prefixo curto/vazio que alcance outras empresas
+		return 0, errors.New("empresa inválida")
+	}
+	return v.Store.DeletePrefix(ctx, tenantID+"/")
+}
+
 func (v *Vault) ReadAll(ctx context.Context, tenantID, key string) ([]byte, error) {
 	r, err := v.Get(ctx, tenantID, key)
 	if err != nil {

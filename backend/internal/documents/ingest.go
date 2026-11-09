@@ -6,42 +6,54 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"regexp"
 	"strings"
 	"time"
 
 	"github.com/agreser-innovations/citadel-ia/backend/internal/iacore"
+	"github.com/agreser-innovations/citadel-ia/backend/internal/ocrseal"
 	"github.com/agreser-innovations/citadel-ia/backend/pkg/cnpj"
 	"github.com/agreser-innovations/citadel-ia/backend/pkg/cpf"
 	"github.com/agreser-innovations/citadel-ia/backend/pkg/crypto"
 	"github.com/jackc/pgx/v5"
 )
 
-type Ingestor struct{ KR *crypto.Keyring }
+type Ingestor struct {
+	KR *crypto.Keyring
+	// Anonimizar devolve o texto sem dados pessoais (IA Core). Usado ao dividir/juntar documentos, quando o texto é refeito.
+	// Se for nil ou falhar, o documento fica sem texto anonimizado (e portanto fora da busca) até ser reprocessado.
+	Anonimizar func(ctx context.Context, texto string) (string, error)
+}
 
 // Hints vêm do lote de "lançar documento legível": ligam o documento ao funcionário/tipo e substituem um documento ilegível.
 type Hints struct{ EmployeeID, Tipo, Substitui *string }
 
 type Summary struct {
-	Fornecedores int   `json:"fornecedores_pre_cadastrados"` // fornecedores/terceirizadas criados a partir do CNPJ lido nos documentos
-	PreCadastros int   `json:"pre_cadastros"`                // funcionários criados automaticamente a partir dos documentos
-	Ilegiveis    int   `json:"classificacao_manual"`         // documentos ilegíveis/sem tipo que exigem classificação manual
-	Documentos   int   `json:"documentos"`
-	AutoAprovado int   `json:"auto_aprovados"`
-	Revisao      int   `json:"para_revisao"`
-	SemVinculo   int   `json:"sem_vinculo"`
-	Paginas      int   `json:"paginas"`
-	Tokens       int64 `json:"tokens"`
-	CustoCent    int64 `json:"custo_centavos"`
+	Fornecedores int      `json:"fornecedores_pre_cadastrados"` // fornecedores/terceirizadas criados a partir do CNPJ lido nos documentos
+	PreCadastros int      `json:"pre_cadastros"`                // funcionários criados automaticamente a partir dos documentos
+	Ilegiveis    int      `json:"classificacao_manual"`         // documentos ilegíveis/sem tipo que exigem classificação manual
+	Documentos   int      `json:"documentos"`
+	AutoAprovado int      `json:"auto_aprovados"`
+	Revisao      int      `json:"para_revisao"`
+	Duplicados   int      `json:"duplicados"` // documentos iguais escaneados de outra forma, descartados (restauráveis)
+	SemVinculo   int      `json:"sem_vinculo"`
+	Paginas      int      `json:"paginas"`
+	EmBranco     int      `json:"paginas_em_branco"`     // folhas vazias (sombra, furos, ruído, só o número da página) ou separadoras: ignoradas, não viram documento
+	TiposNovos   []string `json:"tipos_novos,omitempty"` // nomes dos tipos documentais que a IA reconheceu pela primeira vez neste lote
+	Tokens       int64    `json:"tokens"`
+	CustoCent    int64    `json:"custo_centavos"`
 }
 
 type typeInfo struct {
-	Escopo   string
-	Saude    bool
-	Validade *int
+	Escopo      string
+	Saude       bool
+	Validade    *int
+	Nome        string
+	NaoRevisado bool // criado pela IA e ainda não confirmado pelo Master
 }
 
 func loadTypes(ctx context.Context, tx pgx.Tx) (map[string]typeInfo, error) {
-	rows, err := tx.Query(ctx, `SELECT codigo, escopo, sensivel_saude, validade_padrao_dias FROM document_types`)
+	rows, err := tx.Query(ctx, `SELECT codigo, escopo, sensivel_saude, validade_padrao_dias, nome, (origem='IA' AND revisado_em IS NULL) FROM document_types`)
 	if err != nil {
 		return nil, err
 	}
@@ -50,7 +62,7 @@ func loadTypes(ctx context.Context, tx pgx.Tx) (map[string]typeInfo, error) {
 	for rows.Next() {
 		var c string
 		var t typeInfo
-		if err := rows.Scan(&c, &t.Escopo, &t.Saude, &t.Validade); err != nil {
+		if err := rows.Scan(&c, &t.Escopo, &t.Saude, &t.Validade, &t.Nome, &t.NaoRevisado); err != nil {
 			return nil, err
 		}
 		out[c] = t
@@ -141,10 +153,20 @@ func (i *Ingestor) Ingest(ctx context.Context, tx pgx.Tx, tenantID, batchID stri
 	affected := map[string]bool{}
 	var autoPre bool
 	tx.QueryRow(ctx, `SELECT pre_cadastro_automatico FROM tenants WHERE id=$1`, tenantID).Scan(&autoPre)
+	var limiarDup float64 = 0.85 // similaridade do texto (OCR) acima da qual é o mesmo documento; ajustável pela empresa (0,70 a 1,00)
+	_ = tx.QueryRow(ctx, `SELECT similaridade_duplicata::float8 FROM tenants WHERE id=$1`, tenantID).Scan(&limiarDup)
 	novosFornecedores := map[string]bool{}
 	var firstDoc string
 	for n, d := range docs {
 		tipo := d.Tipo
+		if _, known := types[tipo]; !known && d.TipoNovo != nil && d.TipoNovo.Codigo == tipo {
+			if created, nome := registrarTipoDescoberto(ctx, tx, d.TipoNovo); created {
+				if t, err := loadTypes(ctx, tx); err == nil {
+					types = t
+				}
+				sum.TiposNovos = append(sum.TiposNovos, nome)
+			}
+		}
 		ti, ok := types[tipo]
 		if !ok {
 			tipo, ti = "OUTRO", types["OUTRO"]
@@ -166,6 +188,26 @@ func (i *Ingestor) Ingest(ctx context.Context, tx pgx.Tx, tenantID, batchID stri
 		supID, supNovo, err := i.ResolveSupplier(ctx, tx, tenantID, campos, autoPre, "PRE_CADASTRO")
 		if err != nil {
 			return nil, nil, err
+		}
+		// o mesmo empregador aparece com grafias diferentes ("Soluções Ltda", "SOLUCOES LTDA", nome de fantasia): sem CNPJ legível,
+		// junta pelo nome a um fornecedor já cadastrado ou à própria empresa, para ficarem na mesma pasta e no mesmo grupo
+		if lido := str(campos, "empresa_nome"); supID == nil && lido != "" {
+			if supplierCNPJ(campos) == "" {
+				if sid, razao, e := supplierByName(ctx, tx, tenantID, lido); e != nil {
+					return nil, nil, e
+				} else if sid != nil {
+					supID, campos["empresa_nome_lida"], campos["empresa_nome"] = sid, lido, razao
+				}
+			}
+			if supID == nil {
+				canonico, e := ownCompanyName(ctx, tx, tenantID, lido)
+				if e != nil {
+					return nil, nil, e
+				}
+				if canonico != lido {
+					campos["empresa_nome_lida"], campos["empresa_nome"] = lido, canonico
+				}
+			}
 		}
 		if supNovo && supID != nil && !novosFornecedores[*supID] {
 			novosFornecedores[*supID] = true
@@ -262,6 +304,8 @@ func (i *Ingestor) Ingest(ctx context.Context, tx pgx.Tx, tenantID, batchID stri
 		}
 		if tipo == "OUTRO" {
 			motivos = append(motivos, "TIPO_OUTRO")
+		} else if ti.NaoRevisado {
+			alertas = append(alertas, iacore.Alerta{Severidade: "info", Codigo: "TIPO_IA", Mensagem: fmt.Sprintf("Tipo «%s» reconhecido pela IA a partir da leitura (fora do catálogo curado). O Master pode confirmar ou renomear.", ti.Nome)})
 		}
 		if ti.Escopo == "FUNCIONARIO" && empID == nil {
 			motivos = append(motivos, "SEM_VINCULO")
@@ -329,6 +373,30 @@ func (i *Ingestor) Ingest(ctx context.Context, tx pgx.Tx, tenantID, batchID stri
 			pasta = fmt.Sprintf("%s/%s%s", empFolder, slug(nome), suf)
 			fname = fmt.Sprintf("%02d_%s_%s%s_%s%s.pdf", n+1, tipo, slug(nome), suf, refName, sufVal)
 		}
+		// duplicata de CONTEÚDO: o mesmo documento escaneado de outra forma (o hash da imagem não percebe). Só no fluxo normal: um
+		// documento lançado como substituto/dica do usuário nunca é descartado por similaridade.
+		var original *dupAchada
+		if h.Substitui == nil && h.EmployeeID == nil && h.Tipo == nil {
+			original, err = acharDuplicataDeConteudo(ctx, tx, tenantID, novoDoc{Tipo: tipo, Emp: empID, Sup: supID, CPFHash: cpfHash, Comp: comp,
+				Data: deref(dataDoc), Validade: deref(validade), Texto: d.TextoAnonimizado, Confianca: d.Confianca}, limiarDup)
+			if err != nil {
+				return nil, nil, err
+			}
+		}
+		// qual das cópias fica: a já revisada por uma pessoa; senão a de leitura mais confiável (empate: a que já estava)
+		mantemNovo := original != nil && original.Status != "REVISADO" && d.Confianca > original.Confianca+0.02
+		if original != nil && !mantemNovo {
+			if status == "AGUARDANDO_REVISAO" {
+				sum.Revisao--
+			} else {
+				sum.AutoAprovado--
+			}
+			if ti.Escopo == "FUNCIONARIO" && empID == nil {
+				sum.SemVinculo--
+			}
+			status, motivos, dupOf = "REJEITADO", []string{"DUPLICATA_CONTEUDO"}, &original.ID
+			alertas = append(alertas, iacore.Alerta{Severidade: "info", Codigo: "DUPLICATA_CONTEUDO", Mensagem: fmt.Sprintf("Mesmo conteúdo de outro documento já guardado (similaridade %.0f%%): descartado. Restaure se for um documento diferente.", original.Similaridade*100)})
+		}
 		cj, _ := json.Marshal(campos)
 		aj, _ := json.Marshal(nz(alertas))
 		mj, _ := json.Marshal(motivos)
@@ -337,17 +405,56 @@ func (i *Ingestor) Ingest(ctx context.Context, tx pgx.Tx, tenantID, batchID stri
 		fj, _ := json.Marshal(d.Finops)
 		ckj, _ := json.Marshal(nz(d.Checklist))
 		var id string
+		// o texto lido (OCR) entra cifrado com a chave da empresa; texto_ocr em claro fica vazio
+		sl, err := ocrseal.ForTx(ctx, tx, i.KR, tenantID)
+		if err != nil {
+			return nil, nil, fmt.Errorf("chave da empresa: %w", err)
+		}
+		textoCifrado, err := sl.Text(ocrseal.Texto, d.TextoOCR)
+		if err != nil {
+			return nil, nil, err
+		}
 		err = tx.QueryRow(ctx, `INSERT INTO documents (tenant_id, batch_id, employee_id, unit_id, document_type, titulo, competencia, data_documento, validade_ate,
-		  paginas, confianca, status, campos, alertas, motivos_revisao, nao_conformidades, dados_sensiveis, finops, texto_ocr, texto_anonimizado,
+		  paginas, confianca, status, campos, alertas, motivos_revisao, nao_conformidades, dados_sensiveis, finops, texto_ocr_cifrado, texto_anonimizado,
 		  cpf_extraido_hash, nome_extraido, nome_arquivo, pasta_destino, possui_manuscrito, sensivel_saude, duplicata_de, checklist, supplier_id)
 		  VALUES ($1,$2,$3,$4,$5,$6,nullif($7,''),$8::date,$9::date,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21,$22,$23,$24,$25,$26,$27,$28,$29) RETURNING id::text`,
 			tenantID, batchID, empID, unitID, tipo, d.Titulo, comp, dataDoc, validade, intsToArr(d.Paginas), d.Confianca, status, cj, aj, mj, nj, sj, nullJSON(fj),
-			d.TextoOCR, d.TextoAnonimizado, cpfHash, nome, fname, pasta, d.PossuiManuscrito, ti.Saude, dupOf, ckj, supID).Scan(&id)
+			textoCifrado, d.TextoAnonimizado, cpfHash, nome, fname, pasta, d.PossuiManuscrito, ti.Saude, dupOf, ckj, supID).Scan(&id)
 		if err != nil {
 			return nil, nil, fmt.Errorf("inserir documento: %w", err)
 		}
 		if firstDoc == "" {
 			firstDoc = id
+		}
+		if status == "REJEITADO" { // cópia descartada: não conta como documento do lote, mas o custo de leitura foi real
+			sum.Duplicados++
+			if f := d.Finops; f != nil {
+				if t, ok := f["tokens_consumidos"].(float64); ok {
+					sum.Tokens += int64(t)
+				}
+				if c, ok := f["custo_estimado_brl"].(float64); ok {
+					sum.CustoCent += int64(c * 100)
+				}
+			}
+			continue
+		}
+		if mantemNovo { // a cópia nova é mais confiável: a que já estava guardada é que vira duplicata
+			if _, err := tx.Exec(ctx, `UPDATE documents SET status='REJEITADO', motivos_revisao='["DUPLICATA_CONTEUDO"]', duplicata_de=$2, atualizado_em=now() WHERE id=$1`, original.ID, id); err != nil {
+				return nil, nil, err
+			}
+			sum.Duplicados++
+			if original.Batch == batchID { // estava neste mesmo lote: tira dos totais
+				sum.Documentos--
+				sum.Paginas -= original.Paginas
+				if original.Status == "AGUARDANDO_REVISAO" {
+					sum.Revisao--
+				} else {
+					sum.AutoAprovado--
+				}
+				if original.SemFuncionario && ti.Escopo == "FUNCIONARIO" {
+					sum.SemVinculo--
+				}
+			}
 		}
 		for _, m := range motivos {
 			if m == "PAGINA_ILEGIVEL" || m == "IMAGEM_BORRADA" || m == "TIPO_OUTRO" {
@@ -491,3 +598,68 @@ func (i *Ingestor) limitReached(ctx context.Context, tx pgx.Tx, tenantID string)
 	}
 	return n >= *max, nil
 }
+
+// maxTiposIA é o teto de tipos que a IA pode criar no catálogo global (evita inflar o catálogo com nomes soltos).
+const maxTiposIA = 150
+
+var reCodigoTipo = regexp.MustCompile(`^[A-Z][A-Z0-9_]{2,39}$`)
+
+// TiposDescobertos devolve os tipos criados pela IA, para o IA Core reaprender as pistas locais (Camada 1) em cada lote.
+func TiposDescobertos(ctx context.Context, tx pgx.Tx) []iacore.TipoNovo {
+	rows, err := tx.Query(ctx, `SELECT codigo, nome, escopo, categoria, pistas FROM document_types WHERE origem='IA' ORDER BY criado_em LIMIT $1`, maxTiposIA)
+	if err != nil {
+		return nil
+	}
+	defer rows.Close()
+	var out []iacore.TipoNovo
+	for rows.Next() {
+		var t iacore.TipoNovo
+		if rows.Scan(&t.Codigo, &t.Nome, &t.Escopo, &t.Categoria, &t.Pistas) == nil {
+			out = append(out, t)
+		}
+	}
+	return out
+}
+
+// validarTipoNovo saneia o tipo que a IA propôs, porque o catálogo é compartilhado entre as empresas: o nome vale só como NOME DE TIPO (sem
+// número longo, e-mail, CPF/CNPJ), o código segue o padrão, e escopo/categoria ficam dentro dos valores conhecidos.
+func validarTipoNovo(t *iacore.TipoNovo) (iacore.TipoNovo, bool) {
+	nome := strings.TrimSpace(t.Nome)
+	if !reCodigoTipo.MatchString(t.Codigo) || t.Codigo == "OUTRO" || len([]rune(nome)) < 4 || len([]rune(nome)) > 60 || reInstancia.MatchString(nome) {
+		return iacore.TipoNovo{}, false
+	}
+	out := iacore.TipoNovo{Codigo: t.Codigo, Nome: nome, Escopo: "FUNCIONARIO", Categoria: "OUTROS", Pistas: []string{}}
+	if t.Escopo == "EMPRESA" {
+		out.Escopo, out.Categoria = "EMPRESA", "EMPRESA"
+	}
+	if out.Escopo == "FUNCIONARIO" {
+		switch t.Categoria {
+		case "ADMISSAO", "MENSAL", "SAUDE_SEGURANCA", "DISCIPLINAR", "DESLIGAMENTO":
+			out.Categoria = t.Categoria
+		}
+	}
+	for _, p := range t.Pistas {
+		if p = strings.TrimSpace(p); len([]rune(p)) >= 8 && len([]rune(p)) <= 60 && len(out.Pistas) < 6 {
+			out.Pistas = append(out.Pistas, p)
+		}
+	}
+	return out, true
+}
+
+// registrarTipoDescoberto cria no catálogo global um tipo que a IA reconheceu (há um teto de tipos criados).
+func registrarTipoDescoberto(ctx context.Context, tx pgx.Tx, in *iacore.TipoNovo) (criado bool, nome string) {
+	t, ok := validarTipoNovo(in)
+	if !ok {
+		return false, ""
+	}
+	var n int
+	if tx.QueryRow(ctx, `SELECT count(*) FROM document_types WHERE origem='IA'`).Scan(&n) != nil || n >= maxTiposIA {
+		return false, ""
+	}
+	ct, err := tx.Exec(ctx, `INSERT INTO document_types (codigo, nome, categoria, sensivel_saude, escopo, validade_padrao_dias, retencao_padrao_dias, origem, pistas)
+	  VALUES ($1,$2,$3,false,$4,NULL,1825,'IA',$5) ON CONFLICT (codigo) DO NOTHING`, t.Codigo, t.Nome, t.Categoria, t.Escopo, t.Pistas)
+	return err == nil && ct.RowsAffected() > 0, t.Nome
+}
+
+// reInstancia reconhece o que NÃO é nome de tipo: número longo, e-mail, CPF ou CNPJ (a IA descreveu um documento em vez de um tipo).
+var reInstancia = regexp.MustCompile(`\d{5,}|@|\d{3}\.\d{3}\.\d{3}|\d{2}\.\d{3}\.\d{3}/`)

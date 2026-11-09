@@ -91,6 +91,16 @@ txt = fitz.open(stream=an.content, filetype="pdf")[0].get_text(); assert "458.71
 hol = [d for d in docs if d["document_type"] == "HOLERITE"][0]
 hl = get(rh, f"/documents/{hol['id']}/highlights", params={"q": "salario"}); assert sum(len(h["caixas"]) for h in hl) >= 1; ok(f"destaque do termo no visualizador: {sum(len(h['caixas']) for h in hl)} caixas")
 
+# o texto lido (OCR) não pode ficar em claro no banco (só roda se E2E_DB_URL apontar para um usuário que enxerga todas as empresas)
+if os.environ.get("E2E_DB_URL"):
+    import subprocess
+    def _sql(q): return subprocess.run(["psql", os.environ["E2E_DB_URL"], "-At", "-c", "select set_config('app.bypass','on',false)", "-c", q], capture_output=True, text=True, check=True).stdout.split("\n", 1)[1].strip()
+    claro = _sql("select (select count(*) from documents where texto_ocr<>'') + (select count(*) from pages where coalesce(texto_embutido,'')<>'' or palavras<>'[]'::jsonb or analise ? 'texto_ocr' or analise ? 'campos')")
+    assert claro == "0", f"{claro} linha(s) com texto lido em claro"
+    cif = _sql("select (select count(*) from documents where texto_ocr_cifrado is not null) > 0 and (select count(*) from pages where analise ? 'enc') > 0")
+    assert cif == "t", "nenhum texto cifrado gravado"
+    ok("texto lido (OCR) cifrado no banco: nenhuma coluna em claro")
+
 print("6. Conformidade e métricas")
 comp = get(rh, f"/employees/{carlos['id']}/compliance"); st = {x["status"] for x in comp}; assert "OK" in st and "PENDENTE" in st; ok(f"conformidade do funcionário: {sorted(st)}")
 ov = get(adm, "/metrics/overview"); assert ov["conformidade_pct"] is not None and ov["funcionarios_ativos"] >= 5; ok(f"dashboard: conformidade {ov['conformidade_pct']}%, NCs: {[n['codigo'] for n in ov['nao_conformidades']]}")
@@ -141,8 +151,11 @@ for _ in range(90):
     time.sleep(1)
 assert bb["status"].startswith("PROCESSADO"), bb["status"]
 assert any(e["tipo"] == "CACHE_SHA256" for e in bb["linha_tempo"]), [e["tipo"] for e in bb["linha_tempo"]]; ok([e["mensagem"] for e in bb["linha_tempo"] if e["tipo"] == "CACHE_SHA256"][0])
-cached = [d for d in bb["documentos"] if not d["mascarado"] and get(rh, f"/documents/{d['id']}")["finops"]["camada_roteamento"].startswith("Camada 0")]
+# o lote reenviado repete os documentos do primeiro: pelo conteúdo (OCR), as cópias já guardadas são reconhecidas e descartadas (mantidas como "rejeitadas")
+todos_b2 = get(rh, "/documents", params={"lote": b2, "status": "AUTO_APROVADO,AGUARDANDO_REVISAO,REVISADO,REJEITADO", "limit": 100})["items"]
+cached = [d for d in todos_b2 if not d["mascarado"] and get(rh, f"/documents/{d['id']}")["finops"]["camada_roteamento"].startswith("Camada 0")]
 assert len(cached) >= 6; ok(f"{len(cached)} documentos resolvidos pela Camada 0 (cache SHA-256, 0 tokens)")
+assert bb["resumo"]["duplicados"] >= 6, bb["resumo"]; ok(f"o lote reenviado repete documentos já guardados: {bb['resumo']['duplicados']} descartados por conteúdo idêntico")
 fo = get(rh, "/metrics/finops"); assert any(x["camada"] == "Camada 0" for x in fo) and any(x["camada"] == "Camada 1" for x in fo); ok("consumo real por camada em /metrics/finops")
 
 print("9. Setores, seleção de documentos, exceção por funcionário, cadastro configurável e análise de erros")
@@ -212,7 +225,8 @@ assert any(a["acao"] == "REVISAO_CONFIRMAR" and a["dados"].get("forcado") for a 
 print("10. RH com a visão do admin: documentos, painel e permissões")
 pg = get(rh, "/documents", params={"limit": 5}); assert len(pg["items"]) == 5 and pg["next_cursor"] and {"todos", "aprovados", "revisao", "rejeitados"} <= set(pg["resumo"]); ok(f"lista de documentos paginada; totais por status: {pg['resumo']}")
 pg2 = get(rh, "/documents", params={"limit": 5, "cursor": pg["next_cursor"]}); assert not ({d["id"] for d in pg["items"]} & {d["id"] for d in pg2["items"]}); ok("cursor devolve a página seguinte sem repetir")
-rev = get(rh, "/documents", params={"status": "AGUARDANDO_REVISAO", "limit": 100}); assert rev["items"] and all(d["status"] == "AGUARDANDO_REVISAO" for d in rev["items"]) and rev["resumo"]["todos"] >= len(rev["items"]); ok("filtro por status (abas) mantém os totais")
+rev = get(rh, "/documents", params={"status": "AUTO_APROVADO,REVISADO", "limit": 100}); assert rev["items"] and all(d["status"] in ("AUTO_APROVADO", "REVISADO") for d in rev["items"]) and rev["resumo"]["todos"] >= len(rev["items"]); ok("filtro por status (abas) mantém os totais")
+assert rev["resumo"]["rejeitados"] >= 9 and rev["resumo"]["revisao"] == 0; ok("a fila de revisão está vazia: as cópias repetidas do lote reenviado foram descartadas, não viraram pendência")
 hol = get(rh, "/documents", params={"q": "holerite", "limit": 100}); assert hol["items"] and all(d["document_type"] == "HOLERITE" for d in hol["items"]); ok("busca por texto (tipo)")
 por = get(rh, "/documents", params={"q": "roberto", "limit": 100}); assert por["items"] and all("ROBERTO" in (d["funcionario_nome"] or "").upper() for d in por["items"] if not d["mascarado"]); ok("busca por nome do funcionário")
 att = get(rh2, "/documents", params={"tipo": "ATESTADO_MEDICO", "limit": 20}); assert att["items"] and all(d["mascarado"] and d["funcionario_nome"] is None and d["nome_arquivo"] is None for d in att["items"]); ok("RH sem saude:ler: atestados mascarados na lista (sem nome, arquivo ou pasta)")
@@ -266,9 +280,9 @@ def invite_token(email):
     txt = open(os.environ["MAIL_LOG"]).read().replace("\\n", " ")
     m = _re.findall(r'"to":"%s".*?convite\?token=([A-Za-z0-9_\-]+)' % _re.escape(email), txt)
     assert m, "convite não encontrado no log"; return m[-1]
-def step_up(tok):
-    """Obtém o token de step-up (código por e-mail) para ações sensíveis do admin."""
-    me_email = "admin@agrotech.demo"; before = codes_count(me_email)
+def step_up(tok, me_email="admin@agrotech.demo"):
+    """Obtém o token de step-up (código por e-mail) para ações sensíveis do admin (ou do Master, com o e-mail dele)."""
+    before = codes_count(me_email)
     r = c.post(f"{API}/auth/step-up", headers=H(tok), json={}); assert r.status_code == 202, r.text
     code = code_from_mail(me_email, before)
     r = c.post(f"{API}/auth/step-up", headers=H(tok), json={"ticket": r.json()["ticket"], "code": code}); assert r.status_code == 200, r.text
@@ -278,7 +292,7 @@ outra = [u for u in units if u["id"] != carlos_full["unit_id"]]; assert outra, "
 r = c.post(f"{API}/users", headers=H(adm), json={"nome": "Rui Restrito", "email": "rh3@agrotech.demo", "role": "RH", "unit_scope": [outra[0]["id"]]}); assert r.status_code == 201, r.text
 r = c.post(f"{API}/auth/invite/accept", json={"token": invite_token("rh3@agrotech.demo"), "senha": "Restrito!Senha#2026"}); assert r.status_code == 204, r.text
 rh3 = login("rh3@agrotech.demo", "Restrito!Senha#2026"); ok("RH restrito a uma unidade convidado e autenticado")
-doc_carlos = get(rh, f"/employees/{carlos['id']}/documents")[0]["id"]
+doc_carlos = next(d["id"] for d in get(rh, f"/employees/{carlos['id']}/documents") if 1 in (d.get("paginas") or []))  # um documento com a página 1 do lote
 for path in (f"/employees/{carlos['id']}", f"/employees/{carlos['id']}/documents", f"/employees/{carlos['id']}/compliance", f"/employees/{carlos['id']}/timeline",
              f"/employees/{carlos['id']}/requirements", f"/documents/{doc_carlos}", f"/documents/{doc_carlos}/pages/1/url", f"/documents/{doc_carlos}/download", f"/batches/{batch}", f"/batches/{batch}/export-zip"):
     st = c.get(f"{API}{path}", headers=H(rh3)).status_code; assert st == 404, (path, st)
@@ -397,7 +411,7 @@ assert not [i for i in get(rh, "/risks", params={"supplier": f2})["items"] if i[
 
 print("14. Cobertura dos tipos do gerador de documentos: tipos novos classificados e vinculados")
 tipos_novos = {t["codigo"] for t in get(adm, "/document-types")}
-assert len(tipos_novos) == 44 and {"COMPROVANTE_PAGAMENTO", "NOTIFICACAO_EMPREGADO", "DECLARACAO_MANUSCRITA", "RECIBO_AVULSO", "JUSTIFICATIVA_FALTA", "DECLARACAO_DEPENDENTES", "CHECKLIST_INTEGRACAO", "TERMO_RESPONSABILIDADE"} <= tipos_novos; ok("catálogo do banco com 44 tipos (inclui os 8 que o gerador produz)")
+assert len(tipos_novos) == 58 and {"COMPROVANTE_PAGAMENTO", "NOTIFICACAO_EMPREGADO", "DECLARACAO_MANUSCRITA", "RECIBO_AVULSO", "JUSTIFICATIVA_FALTA", "DECLARACAO_DEPENDENTES", "CHECKLIST_INTEGRACAO", "TERMO_RESPONSABILIDADE"} <= tipos_novos; ok("catálogo do banco com 44 tipos (inclui os 8 que o gerador produz)")
 for t in ("RECIBO_AVULSO", "JUSTIFICATIVA_FALTA", "TERMO_RESPONSABILIDADE", "CAT_ACIDENTE"):
     sch = get(rh, f"/document-types/{t}/schema"); assert "empresa_cnpj" in sch["properties"] and len(sch["properties"]) > 8, t
 ok("formulário manual disponível para os tipos novos")
@@ -444,5 +458,138 @@ ev = [a for a in get(adm, "/audit", params={"acao": "LOTE_EXCLUIDO", "limit": 50
 assert D(rh, {"confirmar": True, "motivo": "de novo"}).status_code == 404; ok("apagar de novo: 404")
 r = c.post(f"{API}/batches", headers=H(rh), files={"file": ("lote_para_apagar.pdf", pdf_apagar)}); assert r.status_code == 202, r.text; ok("o mesmo arquivo pode ser reenviado (não cai mais na duplicidade por SHA-256)")
 enviar_e_esperar  # (o lote reenviado termina de processar em segundo plano)
+
+print("16. Camada 0 (cache SHA-256): só reaproveita página idêntica; qualquer diferença mínima refaz a análise")
+import io as _io
+import fitz as _f16
+from PIL import Image as _Img16
+def _png_pagina(linhas):
+    d = _f16.open(); p = d.new_page(width=595, height=842)
+    for i, l in enumerate(linhas): p.insert_text((60, 120 + 34 * i), l, fontsize=17)
+    return p.get_pixmap(dpi=110).tobytes("png")
+def _pdf_imagem(png, texto_oculto=None, titulo=""):
+    d = _f16.open(); p = d.new_page(width=595, height=842); p.insert_image(p.rect, stream=png)
+    if texto_oculto: p.insert_text((50, 50), texto_oculto, fontsize=10, render_mode=3)  # camada de texto invisível (como o OCR de um scanner)
+    d.set_metadata({"title": titulo}); b = d.tobytes(); d.close(); return b
+def _todos(bb): return get(rh, "/documents", params={"lote": bb["id"], "status": "AUTO_APROVADO,AGUARDANDO_REVISAO,REVISADO,REJEITADO", "limit": 100})["items"]  # inclui as cópias descartadas por duplicidade de conteúdo
+def _camadas(bb): return [get(rh, f"/documents/{x['id']}")["finops"]["camada_roteamento"] for x in _todos(bb)]
+cache = lambda cs: all(cc.startswith("Camada 0") for cc in cs)
+base = _png_pagina(["CARTAO DE PONTO", "FOLHA DE PONTO INDIVIDUAL", "COLABORADOR: CARLOS EDUARDO SILVA", "CPF: 458.712.903-88", "JORNADA DIARIA: 08:00", "INTERVALO: 01:00", "COMPETENCIA: 05/2026", "ASSINATURA DO EMPREGADO"])
+b1 = enviar_e_esperar("cache_a.pdf", _pdf_imagem(base, titulo="a")); assert _todos(b1) and not cache(_camadas(b1)); ok("1ª vez: a página é analisada (não vem do cache)")
+b2 = enviar_e_esperar("cache_a_regravado.pdf", _pdf_imagem(base, titulo="outro arquivo, mesma página")); assert cache(_camadas(b2)), _camadas(b2); ok("mesma página em outro arquivo: reaproveitada (Camada 0, 0 tokens)")
+im = _Img16.open(_io.BytesIO(base)).convert("RGB"); px = im.load(); r_, g_, b_ = px[500, 700]; px[500, 700] = (r_, g_, 254 if b_ == 255 else 255)  # UM pixel, UM canal, UM nível
+bufm = _io.BytesIO(); im.save(bufm, "PNG")
+b3 = enviar_e_esperar("cache_um_pixel.pdf", _pdf_imagem(bufm.getvalue())); assert _todos(b3) and not cache(_camadas(b3)); ok("UM pixel diferente (1 nível em 1 canal): a análise é refeita")
+b4 = enviar_e_esperar("cache_texto_x.pdf", _pdf_imagem(base, "COMPETENCIA: 05/2026 HORAS EXTRAS: 02:00")); assert _todos(b4) and not cache(_camadas(b4)); ok("mesma imagem, mas texto embutido diferente da página já vista: a análise é refeita")
+b5 = enviar_e_esperar("cache_texto_y.pdf", _pdf_imagem(base, "COMPETENCIA: 05/2026 HORAS EXTRAS: 09:00")); assert _todos(b5) and not cache(_camadas(b5)); ok("outro texto embutido na mesma imagem: refeita de novo")
+b6 = enviar_e_esperar("cache_texto_x_de_novo.pdf", _pdf_imagem(base, "COMPETENCIA: 05/2026 HORAS EXTRAS: 02:00", titulo="reenviado")); assert cache(_camadas(b6)), _camadas(b6); ok("imagem e texto embutido idênticos: reaproveitada")
+if os.environ.get("E2E_DB_URL"):  # outra "versão do motor" não reaproveita análises antigas
+    import subprocess as _sp16
+    _sp16.run(["psql", os.environ["E2E_DB_URL"], "-At", "-c", "select set_config('app.bypass','on',false)", "-c", "update pages set analise = jsonb_set(analise, '{motor}', '\"motor-antigo|0000\"') where analise ? 'motor'"], check=True, capture_output=True)
+    b7 = enviar_e_esperar("cache_a_apos_troca_de_motor.pdf", _pdf_imagem(base, titulo="depois que o motor mudou")); assert not cache(_camadas(b7)), _camadas(b7); ok("análise feita por outro motor/regras (versão diferente) não é reaproveitada")
+
+print("17. A mesma empresa escrita de jeitos diferentes fica agrupada")
+var = pdf_paginas([
+    ["CERTIFICADO DE REGULARIDADE DO FGTS - CRF", "CAIXA - SETOR DE CONTRATOS", "EMPRESA: Agrotech Garanhuns Ltda", "VALIDADE: 31/12/2030"],
+    ["CERTIDAO NEGATIVA DE DEBITOS TRABALHISTAS - CNDT", "JUSTICA DO TRABALHO", "EMPREGADOR: AGROTECH GARANHUNS LTDA.", "VALIDADE: 31/12/2030"],
+    ["CERTIDAO NEGATIVA DE DEBITOS RELATIVOS AOS TRIBUTOS FEDERAIS - CND", "RECEITA FEDERAL", "RAZAO SOCIAL: AGROTECH GARANHUNS SOLUCOES", "VALIDADE: 31/12/2030"],
+])
+bv = enviar_e_esperar("empresa_variacoes.pdf", var); assert len(bv["documentos"]) == 3, [(d["document_type"], d["paginas"]) for d in bv["documentos"]]
+nomes = {get(rh, f"/documents/{d['id']}")["campos"].get("empresa_nome") for d in bv["documentos"]}
+assert nomes == {"AGROTECH GARANHUNS LTDA"}, nomes; ok("3 grafias do nome da própria empresa viram um nome só (o do cadastro)")
+d0 = get(rh, f"/documents/{bv['documentos'][2]['id']}"); assert d0["campos"].get("empresa_nome_lida") == "AGROTECH GARANHUNS SOLUCOES"; ok("a grafia lida no documento fica registrada (empresa_nome_lida)")
+pastas = {get(rh, f"/documents/{d['id']}")["pasta_destino"].split("/")[0] for d in bv["documentos"]}; assert len(pastas) == 1, pastas; ok("os documentos vão para uma pasta só: " + next(iter(pastas)))
+
+print("18. Documentos iguais escaneados de formas diferentes: só uma cópia é guardada (similaridade do OCR)")
+def _holerite(comp="05/2026", base="2.000,00", extras="150,00", liquido="1.950,75", cpf="529.982.247-25"):
+    return ["RECIBO DE PAGAMENTO DE SALARIO - HOLERITE", "EMPRESA: AGROTECH GARANHUNS LTDA CNPJ: 14.589.201/0001-80", "NOME: TEREZA CRISTINA DUARTE", f"CPF: {cpf}",
+            f"COMPETENCIA: {comp}", "MATRICULA: 004455 FUNCAO: AUXILIAR ADMISSAO: 15/03/2022", f"SALARIO BASE: R$ {base}", f"HORAS EXTRAS 50%: R$ {extras}",
+            "VALE TRANSPORTE DESCONTO: R$ 120,00 INSS: R$ 187,45 IRRF: R$ 12,30", "FGTS DEPOSITADO: R$ 180,00 TOTAL DE DESCONTOS: R$ 319,75", f"LIQUIDO A RECEBER: R$ {liquido}",
+            "ASSINATURA DO EMPREGADO RECEBI A QUANTIA ACIMA DISCRIMINADA CONFORME LEGISLACAO TRABALHISTA VIGENTE"]
+def _ruido(linhas, trocas):  # simula outro escaneamento: letras erradas, palavras perdidas e lixo
+    t = "\n".join(linhas)
+    for a_, b_ in trocas: t = t.replace(a_, b_)
+    return t.split("\n")
+orig = _holerite()
+copia2 = _ruido(orig, [("SALARIO", "SALAR1O"), ("DISCRIMINADA", "DISCRIM1NADA"), ("AUXILIAR ", ""), ("VIGENTE", "V1GENTE |"), ("LEGISLACAO", "LEG1SLACAO")])
+copia3 = _ruido(orig, [("PAGAMENTO", "PAGAMENT0"), ("ASSINATURA", "ASS1NATURA"), ("TRABALHISTA", "TRABALH1STA e"), ("QUANTIA ", ""), ("LIQUIDO A", "L1QUIDO A")])
+outra_comp = _holerite(comp="06/2026", base="2.150,00", extras="310,00", liquido="2.226,80")      # mesmo modelo, outro mês e outros valores
+retificada = _holerite(base="2.150,00", extras="310,00", liquido="2.226,80")                        # mesma competência, valores diferentes
+lote_dup = pdf_paginas([orig, copia2, copia3, outra_comp, retificada])
+bd = enviar_e_esperar("holerite_tres_escaneamentos.pdf", lote_dup)
+assert bd["resumo"]["duplicados"] == 2, bd["resumo"]; ok("as 2 cópias do mesmo documento foram reconhecidas como duplicadas (resumo do lote)")
+visiveis = bd["documentos"]; assert len(visiveis) == 3, [(d["document_type"], d["paginas"]) for d in visiveis]; ok("ficam 3 documentos: o original e os 2 que são diferentes (outro mês; mesmo mês com valores diferentes)")
+assert sorted(p for d in visiveis for p in d["paginas"]) == [1, 4, 5], [d["paginas"] for d in visiveis]; ok("ficou a página 1 (original) e as páginas 4 e 5")
+rej = [d for d in get(rh, "/documents", params={"lote": bd["id"], "status": "REJEITADO", "limit": 100})["items"] if "DUPLICATA_CONTEUDO" in (d.get("motivos_revisao") or [])]
+original_id = next(d["id"] for d in visiveis if d["paginas"] == [1])
+assert len(rej) == 2 and all(d["duplicata_de"] == original_id for d in rej), rej; ok("os descartados apontam para o documento que ficou (duplicata_de) e levam o motivo DUPLICATA_CONTEUDO")
+assert not any(d["id"] in {x["id"] for x in rej} for d in get(rh, f"/employees/{get(rh, '/employees', params={'q': '529.982.247-25'})['items'][0]['id']}/documents")); ok("os descartados não aparecem no dossiê do funcionário")
+r = c.patch(f"{API}/tenant", headers=H(adm), json={"similaridade_duplicata": 0.5}); assert r.status_code == 400; ok("similaridade abaixo de 70% é recusada")
+r = c.patch(f"{API}/tenant", headers=H(adm), json={"similaridade_duplicata": 1.2}); assert r.status_code == 400; ok("similaridade acima de 100% é recusada")
+assert get(adm, "/tenant")["similaridade_duplicata"] == 0.85; ok("padrão de 85%")
+r = c.post(f"{API}/review/{rej[0]['id']}", headers=H(rh), json={"acao": "RESTAURAR_DUPLICATA"}); assert r.status_code in (200, 204), r.text
+assert get(rh, f"/documents/{rej[0]['id']}")["status"] == "AGUARDANDO_REVISAO"; ok("um descartado pode ser restaurado: volta para a fila de revisão")
+assert c.post(f"{API}/review/{rej[0]['id']}", headers=H(rh), json={"acao": "RESTAURAR_DUPLICATA"}).status_code == 400; ok("restaurar de novo é recusado")
+# limite de 100%: só texto IDÊNTICO é duplicata. Cópias novas com erros de leitura diferentes deixam de ser consideradas iguais
+assert c.patch(f"{API}/tenant", headers=H(adm), json={"similaridade_duplicata": 1.0}).status_code == 204
+copia4 = _ruido(orig, [("FUNCAO", "FUNC4O"), ("HORAS EXTRAS", "H0RAS EXTRAS"), ("ADMISSAO", "ADM1SSAO")])
+copia5 = _ruido(orig, [("RECIBO", "REC1BO"), ("EMPRESA", "EMPRES4"), ("DESCONTOS", "DESC0NTOS")])
+bd2 = enviar_e_esperar("holerite_limite100.pdf", pdf_paginas([orig, copia4, copia5, _holerite(comp="07/2026", base="2.250,00", extras="410,00", liquido="2.326,80")]))
+assert bd2["resumo"]["duplicados"] == 1, bd2["resumo"]; ok("com o limite em 100%, só a cópia de texto idêntico é descartada; as com erros de leitura diferentes ficam (o cliente controla o rigor)")
+assert c.patch(f"{API}/tenant", headers=H(adm), json={"similaridade_duplicata": 0.85}).status_code == 204
+
+print("19. Acesso por funcionário, setor, terceirizada e fornecedor (localizador, setores com conformidade, filtros)")
+deps = get(rh, "/departments")
+assert deps and all(k in deps[0] for k in ("ativos", "terceirizados", "ok", "total", "pendencias", "vencidos", "riscos", "riscos_altos", "funcionarios")), deps[:1]; ok("setores trazem conformidade, pendências, riscos e quantas pessoas (próprias e de terceirizadas)")
+com_gente = next(d for d in deps if d["ativos"] > 0)
+um = get(rh, f"/departments/{com_gente['id']}"); assert um["nome"] == com_gente["nome"] and um["ativos"] == com_gente["ativos"] and um["pendencias"] == com_gente["pendencias"]; ok("a ficha do setor bate com a lista")
+gente = get(rh, "/employees", params={"setor": com_gente["id"], "limit": 100})["items"]
+assert len([e for e in gente if e["status"] != "DESLIGADO"]) == com_gente["ativos"] and all(e["setor"] == com_gente["nome"] for e in gente); ok("as pessoas do setor (filtro setor) são as contadas no setor")
+pend = get(rh, "/compliance", params={"setor": com_gente["id"], "limit": 500})["items"]
+assert all(i["employee_id"] in {e["id"] for e in gente} for i in pend); ok("pendências filtradas por setor só trazem pessoas do setor")
+assert c.get(f"{API}/departments/00000000-0000-0000-0000-000000000000", headers=H(rh)).json() is None; ok("setor inexistente não vaza nada")
+fornecs = get(rh, "/suppliers")
+com_func = next((f for f in fornecs if f["funcionarios"] > 0), None)
+if com_func:
+    ids_emp = {e["id"] for e in get(rh, "/employees", params={"supplier": com_func["id"], "limit": 100})["items"]}
+    pe = get(rh, "/compliance", params={"supplier": com_func["id"], "limit": 500})["items"]
+    assert all(i["employee_id"] in ids_emp or i["supplier_id"] == com_func["id"] for i in pe); ok("pendências filtradas por empresa trazem os documentos dela e dos funcionários dela")
+alvo = gente[0]
+r = get(rh, "/directory/search", params={"q": alvo["nome"].split()[0]})
+assert alvo["id"] in {e["id"] for e in r["funcionarios"]} and set(r) == {"funcionarios", "setores", "empresas"}; ok("localizador: acha a pessoa pelo nome")
+assert any(d["id"] == com_gente["id"] for d in get(rh, "/directory/search", params={"q": com_gente["nome"][:4]})["setores"]); ok("localizador: acha o setor")
+por_cpf = get(rh, "/directory/search", params={"q": "529.982.247-25"})["funcionarios"]
+assert len(por_cpf) == 1 and por_cpf[0]["cpf_mascarado"] == "***.982.247-**", por_cpf; ok("localizador: acha a pessoa pelo CPF completo (índice cego) e só mostra o CPF mascarado")
+if com_func:
+    r = get(rh, "/directory/search", params={"q": (com_func.get("nome_fantasia") or com_func["razao_social"])[:5]})
+    assert any(e["id"] == com_func["id"] and e["tipo"] in ("TERCEIRIZADA", "FORNECEDOR") for e in r["empresas"]); ok("localizador: acha a empresa e informa se é terceirizada ou fornecedor")
+    r = get(rh, "/directory/search", params={"q": com_func["cnpj"][:8]}); assert any(e["id"] == com_func["id"] for e in r["empresas"]); ok("localizador: acha a empresa pelo CNPJ")
+r = get(rh, "/directory/search", params={"q": "a"}); assert r == {"funcionarios": [], "setores": [], "empresas": []}; ok("localizador: busca com 1 letra não consulta nada")
+r = get(rh, "/directory/search", params={"q": "123.456.789-00"}); assert r["funcionarios"] == []; ok("localizador: CPF inválido não devolve ninguém")
+assert c.get(f"{API}/directory/search", params={"q": "ana"}).status_code in (401, 403); ok("localizador exige login")
+
+print("20. Redefinir dados (só Master): apaga dados, riscos, pendências, pessoas e empresas; mantém usuários e configuração")
+corpo = {"confirmar": "RESETAR TUDO", "motivo": "reiniciar a base de testes"}
+for quem, tok in (("admin", adm), ("RH", rh)):
+    assert c.post(f"{API}/admin/reset", headers=H(tok), json=corpo).status_code == 403; ok(f"{quem} da empresa não acessa o reset (403)")
+assert c.post(f"{API}/admin/reset", headers=H(master), json=corpo).status_code == 401; ok("o Master precisa do código por e-mail (step-up) até para chamar o reset")
+hm = lambda: H(master, {"X-Step-Up-Token": step_up(master, "master@citadel.local")})
+for ruim, esperado in (({**corpo, "confirmar": "resetar tudo"}, 400), ({**corpo, "confirmar": ""}, 400), ({**corpo, "motivo": "x"}, 400), ({**corpo, "tenant_id": "00000000-0000-0000-0000-000000000000"}, 404)):
+    r = c.post(f"{API}/admin/reset", headers=hm(), json=ruim); assert r.status_code == esperado, (ruim, r.status_code, r.text)
+ok("frase de confirmação errada, sem motivo ou empresa inexistente são recusados e nada é apagado")
+antes = get(adm, "/metrics/overview"); assert antes["documentos_total"] > 0 and antes["funcionarios_ativos"] > 0
+assert get(adm, "/employees", params={"limit": 1})["items"] and get(adm, "/suppliers") and get(adm, "/risks")["items"]; ok("antes do reset há funcionários, empresas terceirizadas/fornecedoras, riscos e documentos")
+cfg_antes = (len(get(adm, "/departments")), len(get(adm, "/positions")), len(get(adm, "/units")))
+r = c.post(f"{API}/admin/reset", headers=hm(), json=corpo); assert r.status_code == 200, r.text; res = r.json()
+assert res["total"]["funcionarios"] >= 5 and res["total"]["documentos"] > 0 and res["total"]["lotes"] > 0 and res["arquivos_removidos"] > 0 and res["empresas_com_falha_nos_arquivos"] == 0, res; ok(f"reset executado: {res['total']['funcionarios']} funcionários, {res['total']['fornecedores']} fornecedores, {res['total']['documentos']} documentos, {res['arquivos_removidos']} arquivos")
+assert get(adm, "/employees")["items"] == [] and get(adm, "/suppliers") == [] and get(adm, "/risks")["items"] == [] and get(adm, "/documents")["items"] == []; ok("funcionários, terceirizadas/fornecedores, riscos e documentos zerados")
+lb = get(adm, "/batches"); assert (lb["items"] if isinstance(lb, dict) else lb) == []; ok("lotes zerados")
+pend = get(adm, "/compliance", params={"limit": 500})["items"]; assert all(i["employee_id"] is None and i["supplier_id"] is None for i in pend), pend[:2]; ok(f"pendências de pessoas e empresas zeradas (restam só {len(pend)} exigência(s) da própria empresa, como numa empresa nova)")
+ov = get(adm, "/metrics/overview"); assert ov["documentos_total"] == 0 and ov["funcionarios_ativos"] == 0 and ov["lotes_total"] == 0 and get(adm, "/tenant")["bytes_usados"] == 0; ok("painel e espaço usado zerados")
+assert (len(get(adm, "/departments")), len(get(adm, "/positions")), len(get(adm, "/units"))) == cfg_antes; ok("setores, cargos e unidades continuam")
+assert get(adm, "/users"); ok("usuários continuam e a sessão do admin segue válida")
+assert any(a["acao"] == "DADOS_RESETADOS" for a in get(adm, "/audit", params={"acao": "DADOS_RESETADOS"})["items"]); ok("o reset fica na auditoria da empresa")
+assert get(master, "/admin/audit/verify")["integra"]; ok("a cadeia de auditoria global continua íntegra")
+bn = enviar_e_esperar("depois_do_reset.pdf", pdf_paginas([_holerite()])); assert bn["status"].startswith("PROCESSADO") and bn["documentos"]; ok("o sistema volta a processar lotes normalmente depois do reset")
 
 print("\nOK — todos os checks passaram")

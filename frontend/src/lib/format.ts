@@ -40,6 +40,12 @@ export const CATEGORIAS_RISCO: Record<string, string> = {
 }
 
 /** CNPJ com máscara (00.000.000/0000-00); aceita só dígitos ou já formatado. */
+/** Chave para comparar nomes de empresa: ignora caixa, acento, pontuação e tipo societário (Ltda, ME, S/A...). Mesma regra do backend. */
+const SUFIXOS = new Set(['LTDA', 'ME', 'EPP', 'EIRELI', 'SA', 'CIA', 'MEI', 'SS', 'LIMITADA'])
+export const chaveEmpresa = (nome?: string | null) =>
+  (nome ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().replace(/\bS\s*[/.]\s*A\b\.?/g, 'SA')
+    .split(/[^A-Z0-9]+/).filter((t) => t && !SUFIXOS.has(t)).join(' ')
+
 export const cnpjMask = (v: string) => {
   const d = (v ?? '').replace(/\D/g, '').slice(0, 14)
   return d.replace(/^(\d{2})(\d)/, '$1.$2').replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3').replace(/\.(\d{3})(\d)/, '.$1/$2').replace(/(\d{4})(\d)/, '$1-$2')

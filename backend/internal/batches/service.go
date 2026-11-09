@@ -14,6 +14,7 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/agreser-innovations/citadel-ia/backend/internal/audit"
@@ -22,6 +23,7 @@ import (
 	"github.com/agreser-innovations/citadel-ia/backend/internal/database"
 	"github.com/agreser-innovations/citadel-ia/backend/internal/documents"
 	"github.com/agreser-innovations/citadel-ia/backend/internal/iacore"
+	"github.com/agreser-innovations/citadel-ia/backend/internal/ocrseal"
 	"github.com/agreser-innovations/citadel-ia/backend/internal/storage"
 	"github.com/hibiken/asynq"
 	"github.com/jackc/pgx/v5"
@@ -45,6 +47,25 @@ type Service struct {
 	Ingest *documents.Ingestor
 	Queue  *asynq.Client
 	Stall  time.Duration
+
+	sealers sync.Map // empresa -> *ocrseal.Sealer (a DEK aberta é reaproveitada entre páginas)
+}
+
+// sealer devolve o cifrador do texto lido (OCR) da empresa.
+func (s *Service) sealer(ctx context.Context, tenantID string) (*ocrseal.Sealer, error) {
+	if v, ok := s.sealers.Load(tenantID); ok {
+		return v.(*ocrseal.Sealer), nil
+	}
+	var sl *ocrseal.Sealer
+	err := s.DB.Tenant(ctx, tenantID, func(tx pgx.Tx) (e error) {
+		sl, e = ocrseal.ForTx(ctx, tx, s.Ingest.KR, tenantID)
+		return e
+	})
+	if err != nil {
+		return nil, err
+	}
+	s.sealers.Store(tenantID, sl)
+	return sl, nil
 }
 
 type TaskPayload struct {
@@ -200,6 +221,10 @@ func (s *Service) slicePagesIfNeeded(ctx context.Context, b *batchRow) error {
 	}
 	var derived int64
 	newPages := 0
+	sl, err := s.sealer(ctx, b.TenantID)
+	if err != nil {
+		return fmt.Errorf("chave da empresa: %w", err)
+	}
 	for _, pg := range m.Paginas {
 		key := fmt.Sprintf("%s/%s/pages/%04d.png", b.TenantID, b.ID, pg.Numero)
 		tkey := fmt.Sprintf("%s/%s/thumbs/%04d.webp", b.TenantID, b.ID, pg.Numero)
@@ -225,14 +250,25 @@ func (s *Service) slicePagesIfNeeded(ctx context.Context, b *batchRow) error {
 				return err
 			}
 			if strings.HasPrefix(name, "pages/") {
-				hash = hex.EncodeToString(h.Sum(nil))
+				hash = PageHash(h.Sum(nil), pg.TextoEmbutido)
 			}
 			derived += nb
 		}
-		err := s.DB.Tenant(ctx, b.TenantID, func(tx pgx.Tx) error {
-			ct, err := tx.Exec(ctx, `INSERT INTO pages (tenant_id, batch_id, numero, storage_key, thumb_key, texto_embutido, captura, largura, altura, caixas, palavras, hash_sha256)
-			  VALUES ($1,$2,$3,$4,nullif($5,''),$6,nullif($7,''),$8,$9,coalesce($10::jsonb,'[]'),coalesce($11::jsonb,'[]'),$12) ON CONFLICT (batch_id, numero) DO NOTHING`,
-				b.TenantID, b.ID, pg.Numero, key, tkey, pg.TextoEmbutido, pg.Captura, pg.Largura, pg.Altura, nilIfEmpty(pg.Caixas), nilIfEmpty(pg.Palavras), hash)
+		textoCifrado, err := sl.Text(ocrseal.Nativo, pg.TextoEmbutido)
+		if err != nil {
+			return err
+		}
+		var palavrasCifradas []byte
+		if len(pg.Palavras) > 2 && string(pg.Palavras) != "null" { // "[]" não tem o que proteger
+			if palavrasCifradas, err = sl.Bytes(ocrseal.Palavra, pg.Palavras); err != nil {
+				return err
+			}
+		}
+		err = s.DB.Tenant(ctx, b.TenantID, func(tx pgx.Tx) error {
+			// o texto lido e as palavras com posição entram cifrados; as colunas em claro ficam vazias
+			ct, err := tx.Exec(ctx, `INSERT INTO pages (tenant_id, batch_id, numero, storage_key, thumb_key, texto_cifrado, texto_len, captura, largura, altura, caixas, palavras_cifradas, hash_sha256)
+			  VALUES ($1,$2,$3,$4,nullif($5,''),$6,$7,nullif($8,''),$9,$10,coalesce($11::jsonb,'[]'),$12,$13) ON CONFLICT (batch_id, numero) DO NOTHING`,
+				b.TenantID, b.ID, pg.Numero, key, tkey, textoCifrado, len(pg.TextoEmbutido), pg.Captura, pg.Largura, pg.Altura, nilIfEmpty(pg.Caixas), palavrasCifradas, hash)
 			newPages += int(ct.RowsAffected())
 			return err
 		})
@@ -253,26 +289,39 @@ func (s *Service) slicePagesIfNeeded(ctx context.Context, b *batchRow) error {
 
 func (s *Service) dispatch(ctx context.Context, b *batchRow, failAt int) error {
 	req := iacore.JobRequest{BatchID: b.ID, Versao: b.Versao, CallbackURL: s.Cfg.InternalBaseURL + "/internal/ia/callback", TipoLote: b.TipoLote,
-		AnalisesPrevias: map[string]json.RawMessage{}, SimularFalhaNaPg: failAt, LimiarConfianca: 0.75}
+		Paginas: []iacore.PageRef{}, AnalisesPrevias: map[string]json.RawMessage{}, SimularFalhaNaPg: failAt, LimiarConfianca: 0.75}
 	pending := 0
-	// Camada 0: páginas idênticas (mesmo SHA-256) já processadas nesta empresa reaproveitam o resultado, sem chamar a IA
+	// Camada 0: páginas idênticas (mesmo SHA-256 da imagem E do texto embutido) já processadas nesta empresa pelo MESMO motor
+	// (provedor, modelos, regras e código iguais) reaproveitam o resultado, sem chamar a IA
+	motor, merr := s.IA.Motor(ctx)
+	if merr != nil {
+		slog.Warn("motor de análise desconhecido; cache SHA-256 desligado neste lote", "erro", merr)
+	}
 	s.DB.Tenant(ctx, b.TenantID, func(tx pgx.Tx) error {
+		req.TiposExtras = documents.TiposDescobertos(ctx, tx)
+		if motor == "" {
+			return nil // sem saber qual motor está ativo, não dá para garantir que a análise antiga ainda vale: analisa tudo
+		}
 		var n int
 		err := tx.QueryRow(ctx, `WITH src AS (
 		    SELECT DISTINCT ON (hash_sha256) hash_sha256, analise, batch_id FROM pages
-		    WHERE proc_status='OK' AND analise IS NOT NULL AND hash_sha256 IS NOT NULL AND batch_id<>$1 ORDER BY hash_sha256, processado_em DESC),
+		    WHERE proc_status='OK' AND analise IS NOT NULL AND analise->>'motor' = $3 AND hash_sha256 IS NOT NULL AND batch_id<>$1 ORDER BY hash_sha256, processado_em DESC),
 		  upd AS (UPDATE pages p SET proc_status='OK', erro=NULL, processado_em=now(),
 		    analise = jsonb_set(jsonb_set(jsonb_set(src.analise,'{camada}', to_jsonb($2::text)),'{tokens}','0'),'{reutilizada_de}', to_jsonb(src.batch_id::text))
 		    FROM src WHERE p.batch_id=$1 AND p.proc_status<>'OK' AND p.hash_sha256=src.hash_sha256 RETURNING 1)
-		  SELECT count(*) FROM upd`, b.ID, CamadaCache).Scan(&n)
+		  SELECT count(*) FROM upd`, b.ID, CamadaCache, motor).Scan(&n)
 		if err == nil && n > 0 {
 			timeline(ctx, tx, b.ID, "CACHE_SHA256", fmt.Sprintf("%d página(s) reaproveitada(s) do cache SHA-256 (0 tokens)", n))
 		}
 		return nil
 	})
-	err := s.DB.Tenant(ctx, b.TenantID, func(tx pgx.Tx) error {
+	sl, err := s.sealer(ctx, b.TenantID)
+	if err != nil {
+		return fmt.Errorf("chave da empresa: %w", err)
+	}
+	err = s.DB.Tenant(ctx, b.TenantID, func(tx pgx.Tx) error {
 		tx.QueryRow(ctx, `SELECT limiar_confianca FROM tenants WHERE id=$1`, b.TenantID).Scan(&req.LimiarConfianca)
-		rows, err := tx.Query(ctx, `SELECT numero, storage_key, proc_status, analise, coalesce(texto_embutido,'') FROM pages WHERE batch_id=$1 ORDER BY numero`, b.ID)
+		rows, err := tx.Query(ctx, `SELECT numero, storage_key, proc_status, analise, texto_cifrado, coalesce(texto_embutido,'') FROM pages WHERE batch_id=$1 ORDER BY numero`, b.ID)
 		if err != nil {
 			return err
 		}
@@ -280,11 +329,18 @@ func (s *Service) dispatch(ctx context.Context, b *batchRow, failAt int) error {
 		for rows.Next() {
 			var n int
 			var key, st, emb string
-			var an []byte
-			rows.Scan(&n, &key, &st, &an, &emb)
+			var an, embCifrado []byte
+			rows.Scan(&n, &key, &st, &an, &embCifrado, &emb)
 			if st == "OK" && an != nil {
-				req.AnalisesPrevias[fmt.Sprint(n)] = an
+				full, e := sl.RevealAnalise(an) // o checkpoint volta ao IA Core completo (texto e campos)
+				if e != nil {
+					return e
+				}
+				req.AnalisesPrevias[fmt.Sprint(n)] = full
 				continue
+			}
+			if emb, err = sl.PlainOrOpen(ocrseal.Nativo, embCifrado, emb); err != nil {
+				return err
 			}
 			pending++
 			req.Paginas = append(req.Paginas, iacore.PageRef{Numero: n, TextoEmbutido: emb,
@@ -416,6 +472,10 @@ func (s *Service) HandleCallback(ctx context.Context, idem string, cb iacore.Cal
 	}); err != nil {
 		return fmt.Errorf("lote desconhecido")
 	}
+	sl, err := s.sealer(ctx, tenantID) // antes de marcar o callback como tratado: se a chave falhar, ele pode ser reenviado
+	if err != nil {
+		return fmt.Errorf("chave da empresa: %w", err)
+	}
 	key := idem
 	if key == "" {
 		key = fmt.Sprintf("%s:%d:%s:%d", cb.BatchID, cb.Versao, cb.Evento, cb.Numero)
@@ -433,7 +493,11 @@ func (s *Service) HandleCallback(ctx context.Context, idem string, cb iacore.Cal
 	case "pagina":
 		err := s.DB.Tenant(ctx, tenantID, func(tx pgx.Tx) error {
 			if cb.Status == "OK" {
-				_, e := tx.Exec(ctx, `UPDATE pages SET proc_status='OK', analise=$3, erro=NULL, processado_em=now() WHERE batch_id=$1 AND numero=$2`, cb.BatchID, cb.Numero, []byte(cb.Analise))
+				analise, e := sl.ProtectAnalise([]byte(cb.Analise)) // texto lido e campos extraídos vão cifrados
+				if e != nil {
+					return e
+				}
+				_, e = tx.Exec(ctx, `UPDATE pages SET proc_status='OK', analise=$3, erro=NULL, processado_em=now() WHERE batch_id=$1 AND numero=$2`, cb.BatchID, cb.Numero, analise)
 				tx.Exec(ctx, `UPDATE batches SET heartbeat_em=now() WHERE id=$1`, cb.BatchID)
 				return e
 			}
@@ -473,13 +537,25 @@ func (s *Service) complete(ctx context.Context, tenantID string, unitID *string,
 		if err != nil {
 			return err
 		}
+		tx.QueryRow(ctx, `SELECT count(*) FROM pages WHERE batch_id=$1 AND analise->>'pagina_em_branco'='true'`, cb.BatchID).Scan(&sum.EmBranco)
+		if len(sum.TiposNovos) > 0 {
+			tx.Exec(ctx, `INSERT INTO notifications (tenant_id, tipo, titulo, link) VALUES ($1,'TIPO_NOVO',$2,'/lotes/'||$3)`, tenantID,
+				fmt.Sprintf("A IA reconheceu %d tipo(s) de documento novo(s): %s", len(sum.TiposNovos), strings.Join(sum.TiposNovos, ", ")), cb.BatchID)
+		}
 		st := "PROCESSADO"
 		if sum.Revisao > 0 {
 			st = "PROCESSADO_COM_PENDENCIAS"
 		}
 		rj, _ := json.Marshal(sum)
 		tx.Exec(ctx, `UPDATE batches SET status=$2, resumo=$3, concluido_em=now(), heartbeat_em=now(), erro=NULL WHERE id=$1`, cb.BatchID, st, rj)
-		timeline(ctx, tx, cb.BatchID, "CONCLUIDO", fmt.Sprintf("%d documentos: %d auto-aprovados, %d para revisão, %d sem vínculo", sum.Documentos, sum.AutoAprovado, sum.Revisao, sum.SemVinculo))
+		resumoTL := fmt.Sprintf("%d documentos: %d auto-aprovados, %d para revisão, %d sem vínculo", sum.Documentos, sum.AutoAprovado, sum.Revisao, sum.SemVinculo)
+		if sum.EmBranco > 0 {
+			resumoTL += fmt.Sprintf("; %d folha(s) em branco ou separadora(s) ignorada(s)", sum.EmBranco)
+		}
+		if len(sum.TiposNovos) > 0 {
+			resumoTL += "; tipos novos reconhecidos pela IA: " + strings.Join(sum.TiposNovos, ", ")
+		}
+		timeline(ctx, tx, cb.BatchID, "CONCLUIDO", resumoTL)
 		tx.Exec(ctx, `INSERT INTO usage_monthly (tenant_id, mes, docs, tokens, custo_ia_centavos) VALUES ($1,to_char(now(),'YYYY-MM'),$2,$3,$4)
 		  ON CONFLICT (tenant_id, mes) DO UPDATE SET docs=usage_monthly.docs+$2, tokens=usage_monthly.tokens+$3, custo_ia_centavos=usage_monthly.custo_ia_centavos+$4`, tenantID, sum.Documentos, sum.Tokens, sum.CustoCent)
 		if err := compliance.Recompute(ctx, tx, tenantID, ""); err != nil {
@@ -520,4 +596,18 @@ func nilIfEmpty(b json.RawMessage) any {
 		return nil
 	}
 	return []byte(b)
+}
+
+// PageHash é a chave da Camada 0: SHA-256 dos bytes da imagem da página (já endireitada) e, quando a página tem texto
+// embutido, também desse texto. A imagem sozinha não basta: um PDF com a mesma aparência e outra camada de texto (ex.: OCR
+// do scanner) levaria a outra análise. Sem texto embutido, é o SHA-256 puro da imagem.
+func PageHash(imagemSum []byte, textoEmbutido string) string {
+	if textoEmbutido == "" {
+		return hex.EncodeToString(imagemSum)
+	}
+	h := sha256.New()
+	h.Write(imagemSum)
+	h.Write([]byte{0})
+	h.Write([]byte(textoEmbutido))
+	return hex.EncodeToString(h.Sum(nil))
 }

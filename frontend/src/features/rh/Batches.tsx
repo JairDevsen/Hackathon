@@ -9,6 +9,7 @@ import { fmtBytes, fmtDateTime, TIPOS_LOTE } from '@/lib/format'
 import { useAuth } from '@/lib/auth'
 import { ApagarLoteModal, type LoteParaApagar } from './ApagarLote'
 import { ResultadoLote } from './ResultadoLote'
+import { DuplicadosDescartados } from './DuplicadosDescartados'
 
 export function BatchList() {
   const nav = useNavigate()
@@ -119,12 +120,13 @@ export function BatchDetail() {
         {b.erro && <p role="alert" className="mt-3 rounded-lg bg-danger-bg p-2 text-sm text-danger">{b.erro}</p>}
         {sum.documentos !== undefined && (
           <p className="mt-4 flex flex-wrap gap-3 text-sm"><span className="inline-flex items-center gap-1 font-semibold text-brand-darker"><CheckCircle2 className="h-4 w-4 text-success" />{sum.documentos} documentos</span>
-            <span className="text-success">{sum.auto_aprovados} auto-aprovados</span><span className="text-brand">{sum.pre_cadastros ?? 0} funcionários pré-cadastrados</span><span className="text-warning">{sum.para_revisao} para revisão</span><span className="text-danger">{sum.classificacao_manual ?? 0} ilegíveis ou sem tipo</span><span className="text-muted-foreground">{sum.sem_vinculo} sem vínculo</span></p>
+            <span className="text-success">{sum.auto_aprovados} auto-aprovados</span><span className="text-brand">{sum.pre_cadastros ?? 0} funcionários pré-cadastrados</span><span className="text-warning">{sum.para_revisao} para revisão</span><span className="text-danger">{sum.classificacao_manual ?? 0} ilegíveis ou sem tipo</span><span className="text-muted-foreground">{sum.sem_vinculo} sem vínculo</span>{Number(sum.duplicados) > 0 && <span className="text-muted-foreground">{sum.duplicados} duplicado(s) descartado(s)</span>}{Number(sum.paginas_em_branco) > 0 && <span className="text-muted-foreground" title="Folhas vazias (sombra, furos, ruído ou só o número da página) e folhas separadoras não viram documento">{sum.paginas_em_branco} folha(s) em branco ou separadora(s) ignorada(s)</span>}{Array.isArray(sum.tipos_novos) && sum.tipos_novos.length > 0 && <span className="text-brand" title="Tipos que o catálogo não tinha: a IA os nomeou ao ler os documentos e passa a reconhecê-los sozinha">{sum.tipos_novos.length} tipo(s) novo(s) reconhecido(s): {sum.tipos_novos.join(', ')}</span>}</p>
         )}
       </Card>
       {Number(sum.pre_cadastros) > 0 && <div role="status" className="mb-3 flex flex-wrap items-center justify-between gap-2 rounded-xl border border-brand-light bg-brand-lighter/50 p-3 text-sm"><span><b className="text-brand-darker">{sum.pre_cadastros} funcionário(s) pré-cadastrado(s) automaticamente</b> a partir dos documentos (nome e CPF lidos). Você não precisa cadastrar: só complete admissão, cargo e setor quando puder.</span><Link to="/app/funcionarios?pre=1" className="font-semibold text-brand underline">Ver pré-cadastros →</Link></div>}
       {Number(sum.fornecedores_pre_cadastrados) > 0 && <div role="status" className="mb-3 flex flex-wrap items-center justify-between gap-2 rounded-xl border border-brand-light bg-brand-lighter/50 p-3 text-sm"><span><b className="text-brand-darker">{sum.fornecedores_pre_cadastrados} fornecedor(es) ou terceirizada(s) identificado(s) pelo CNPJ</b> nos documentos. Os funcionários e os documentos de cada empresa ficam agrupados nela; informe o tipo e o contrato para o sistema cobrar os documentos certos.</span><Link to="/app/fornecedores?pre=1" className="font-semibold text-brand underline">Ver fornecedores →</Link></div>}
       {Number(sum.classificacao_manual) > 0 && <div role="status" className="mb-3 flex flex-wrap items-center justify-between gap-2 rounded-xl border border-danger/50 bg-danger-bg/40 p-3 text-sm"><span><b className="text-danger">{sum.classificacao_manual} documento(s) ilegível(is) ou sem tipo identificado.</b> Classifique o tipo e preencha o formulário manualmente, ou envie uma cópia legível.</span><Link to="/app/revisao?motivo=PAGINA_ILEGIVEL" className="font-semibold text-brand underline">Classificar agora →</Link></div>}
+      <DuplicadosDescartados loteId={id!} total={Number(sum.duplicados) || 0} />
       <div className="space-y-5">
         <div className="min-w-0"><ResultadoLote docs={b.documentos ?? []} running={running} onChanged={() => qc.invalidateQueries({ queryKey: [`/batches/${id}`] })} />
           {!!sum.para_revisao && <div className="mt-3 text-right"><Link to="/app/revisao" className="text-sm font-semibold text-brand underline">Ir para a fila de revisão →</Link></div>}</div>

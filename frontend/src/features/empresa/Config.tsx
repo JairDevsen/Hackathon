@@ -12,6 +12,7 @@ export function CompanyPage() {
   const units = useGet<any[]>('/units')
   const [unit, setUnit] = useState({ nome: '', cnpj: '' })
   const [lim, setLim] = useState<number | null>(null)
+  const [sim, setSim] = useState<number | null>(null)
   const [dom, setDom] = useState('')
   const [msg, setMsg] = useState('')
   if (!t.data) return <SkeletonRows />
@@ -30,6 +31,11 @@ export function CompanyPage() {
         <div className="flex items-center gap-3"><input type="range" min={30} max={99} aria-label="Limiar de confiança" value={lim ?? Math.round(c.limiar_confianca * 100)} onChange={(e) => setLim(Number(e.target.value))} /><b>{lim ?? Math.round(c.limiar_confianca * 100)}%</b>
           <Button disabled={lim === null} onClick={async () => { await api('/tenant', { method: 'PATCH', body: { limiar_confianca: lim! / 100 } }); setMsg('Limiar atualizado.'); qc.invalidateQueries({ queryKey: ['/tenant'] }) }}>Salvar</Button></div>
         {msg && <p role="status" className="mt-2 text-sm text-success">{msg}</p>}
+      </Card>
+      <Card title="Documentos duplicados (mesmo conteúdo, escaneados de formas diferentes)">
+        <p className="mb-2 text-sm text-muted-foreground">Se o texto lido por OCR de dois documentos do mesmo tipo e da mesma pessoa ou empresa for parecido a partir deste valor, só uma cópia é guardada (a outra pode ser restaurada). Padrão: 85%. Mínimo: 70%. Valores diferentes entre as cópias (números e datas) impedem o descarte.</p>
+        <div className="flex items-center gap-3"><input type="range" min={70} max={100} aria-label="Similaridade para considerar documentos duplicados" value={sim ?? Math.round((c.similaridade_duplicata ?? 0.85) * 100)} onChange={(e) => setSim(Number(e.target.value))} /><b>{sim ?? Math.round((c.similaridade_duplicata ?? 0.85) * 100)}%</b>
+          <Button disabled={sim === null} onClick={async () => { await api('/tenant', { method: 'PATCH', body: { similaridade_duplicata: sim! / 100 } }); setMsg('Similaridade para duplicados atualizada.'); setSim(null); qc.invalidateQueries({ queryKey: ['/tenant'] }) }}>Salvar</Button></div>
       </Card>
       <Card title="Unidades">
         <DataTable rows={units.data} loading={units.isLoading} empty={<EmptyState title="Sem unidades" />} cols={[{ key: 'nome', header: 'Nome' }, { key: 'cnpj', header: 'CNPJ' }, { key: 'funcionarios', header: 'Funcionários' }]} />

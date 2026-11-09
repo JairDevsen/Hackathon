@@ -1,36 +1,42 @@
 import { useState } from 'react'
-import { useNavigate, useSearchParams } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { useQueryClient } from '@tanstack/react-query'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
-import { Download, FileSpreadsheet, LogOut, Mail, Plus, Users } from 'lucide-react'
+import { Download, FileSpreadsheet, LogOut, Mail, Plus, Search, Users } from 'lucide-react'
 import { Avatar, Button, Card, ComplianceRing, DataTable, EmptyState, ErrorState, Field, Input, Modal, SectionHeading, Segmented, Select, StatusPill } from '@/components/ui'
-import { useGet } from '@/lib/query'
+import { useDebounced, useGet } from '@/lib/query'
 import { api, download } from '@/lib/api'
 import { competenciaLabel, cpfMask, cpfValido, fmtDate, fmtDateTime } from '@/lib/format'
+import { empresaPath } from './Fornecedores'
 
 /** Quem é o empregador: a própria empresa, uma terceirizada ou um fornecedor (com o nome da empresa). */
-export function VinculoChip({ e }: { e: { vinculo?: string; fornecedor?: string } }) {
+export function VinculoChip({ e }: { e: { vinculo?: string; fornecedor?: string; supplier_id?: string } }) {
   if (!e.vinculo || e.vinculo === 'PROPRIA') return <span className="rounded bg-brand-lighter px-1.5 py-0.5 text-[11px] font-semibold text-brand-darker">Própria empresa</span>
-  return <span className="inline-flex flex-col leading-tight"><span className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">{e.vinculo === 'TERCEIRIZADA' ? 'Terceirizada' : 'Fornecedor'}</span><span className="max-w-[12rem] truncate text-xs">{e.fornecedor}</span></span>
+  return (
+    <span className="inline-flex flex-col leading-tight"><span className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">{e.vinculo === 'TERCEIRIZADA' ? 'Terceirizada' : 'Fornecedor'}</span>
+      {e.supplier_id ? <Link to={empresaPath(e.vinculo, e.supplier_id)} onClick={(ev) => ev.stopPropagation()} className="max-w-[12rem] truncate text-xs font-medium text-brand hover:underline">{e.fornecedor}</Link> : <span className="max-w-[12rem] truncate text-xs">{e.fornecedor}</span>}</span>
+  )
 }
 
 export function EmployeesPage() {
   const nav = useNavigate()
   const [sp, setSp] = useSearchParams()
   const qc = useQueryClient()
-  const [f, setF] = useState({ unit: '', cargo: '', setor: '', status: '', conformidade: '', vinculo: sp.get('vinculo') ?? '', supplier: '' })
+  const [f, setF] = useState({ q: '', unit: '', cargo: '', setor: sp.get('setor') ?? '', status: '', conformidade: '', vinculo: sp.get('vinculo') ?? '', supplier: sp.get('supplier') ?? '' })
   const [newOpen, setNewOpen] = useState(false)
   const [impOpen, setImpOpen] = useState(false)
   const sups = useGet<any[]>('/suppliers'); const units = useGet<any[]>('/units'); const cargos = useGet<any[]>('/positions'); const deps = useGet<any[]>('/departments'); const cfg = useGet<any>('/tenant/cadastro-config')
-  const r = useGet<{ items: any[] }>('/employees', { ...f, pre: sp.get('pre') || '', limit: 100 }, { keep: true })
+  const dq = useDebounced(f.q.trim())
+  const r = useGet<{ items: any[] }>('/employees', { ...f, q: dq, pre: sp.get('pre') || '', limit: 100 }, { keep: true })
   return (
     <div>
       <SectionHeading eyebrow="Funcionários" title="Funcionários" action={<div className="flex gap-2"><Button onClick={() => setImpOpen(true)}><FileSpreadsheet className="h-4 w-4" />Importar planilha</Button><Button variant="primary" onClick={() => setNewOpen(true)}><Plus className="h-4 w-4" />Novo funcionário</Button></div>}>Consulte os pré-cadastros gerados pelos lotes e confira os documentos de cada pessoa.</SectionHeading>
       <div className="mb-4 flex flex-wrap gap-3">
         <Select aria-label="Origem do cadastro" className="!w-48" value={sp.get('pre') || ''} onChange={(e) => setSp(e.target.value ? { pre: e.target.value } : {})}><option value="">Todos os cadastros</option><option value="1">Pré-cadastrados pelo lote</option></Select>
-        <Select aria-label="Vínculo" className="!w-52" value={f.vinculo} onChange={(e) => setF({ ...f, vinculo: e.target.value, supplier: '' })}><option value="">Todos os vínculos</option><option value="PROPRIA">Própria empresa</option><option value="TERCEIRIZADA">Terceirizadas</option><option value="FORNECEDOR">Fornecedores</option></Select>
+        <div className="relative"><Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" aria-hidden /><Input aria-label="Buscar por nome, matrícula ou CPF" className="!w-64 !pl-9" placeholder="Nome, matrícula ou CPF" value={f.q} onChange={(e) => setF({ ...f, q: e.target.value })} /></div>
+        <Segmented value={f.vinculo} onChange={(v) => setF({ ...f, vinculo: v, supplier: '' })} label="Vínculo" options={[{ value: '', label: 'Todos' }, { value: 'PROPRIA', label: 'Própria empresa' }, { value: 'TERCEIRIZADA', label: 'Terceirizadas' }, { value: 'FORNECEDOR', label: 'Fornecedores' }]} />
         {!!sups.data?.length && <Select aria-label="Empresa" className="!w-56" value={f.supplier} onChange={(e) => setF({ ...f, supplier: e.target.value, vinculo: '' })}><option value="">Todas as empresas</option>{sups.data.map((s) => <option key={s.id} value={s.id}>{s.nome_fantasia || s.razao_social}</option>)}</Select>}
         <Select aria-label="Unidade" className="!w-48" value={f.unit} onChange={(e) => setF({ ...f, unit: e.target.value })}><option value="">Todas as unidades</option>{units.data?.map((u) => <option key={u.id} value={u.id}>{u.nome}</option>)}</Select>
         <Select aria-label="Cargo" className="!w-52" value={f.cargo} onChange={(e) => setF({ ...f, cargo: e.target.value })}><option value="">Todos os cargos</option>{cargos.data?.map((u) => <option key={u.id} value={u.id}>{u.nome}</option>)}</Select>
@@ -39,7 +45,8 @@ export function EmployeesPage() {
         <Select aria-label="Conformidade" className="!w-44" value={f.conformidade} onChange={(e) => setF({ ...f, conformidade: e.target.value })}><option value="">Toda conformidade</option><option value="pendente">Com pendência</option><option value="ok">Em dia</option></Select>
       </div>
       {r.error ? <ErrorState error={r.error} retry={r.refetch} /> : <DataTable rows={r.data?.items} loading={r.isLoading} onRow={(e) => nav(`/app/funcionarios/${e.id}`)} empty={<EmptyState icon={<Users className="h-5 w-5" />} title="Nenhum funcionário" text="Envie um lote com documentos que tragam nome e CPF válido para gerar pré-cadastros." />}
-        cols={[{ key: 'nome', header: 'Nome', render: (e) => <span className="flex items-center gap-2"><Avatar nome={e.nome} size="sm" /><b className="text-brand-darker">{e.nome}</b>{e.pre_cadastro && <span className="rounded bg-warning-bg px-1.5 py-0.5 text-[10px] font-semibold text-warning">Pré-cadastro</span>}</span> }, { key: 'cpf_mascarado', header: 'CPF' }, { key: 'vinculo', header: 'Vínculo', render: (e) => <VinculoChip e={e} /> }, { key: 'cargo', header: 'Cargo' }, { key: 'setor', header: 'Setor' }, { key: 'unidade', header: 'Unidade' },
+        cols={[{ key: 'nome', header: 'Nome', render: (e) => <span className="flex items-center gap-2"><Avatar nome={e.nome} size="sm" /><b className="text-brand-darker">{e.nome}</b>{e.pre_cadastro && <span className="rounded bg-warning-bg px-1.5 py-0.5 text-[10px] font-semibold text-warning">Pré-cadastro</span>}</span> }, { key: 'cpf_mascarado', header: 'CPF', render: (e) => <span className="whitespace-nowrap">{e.cpf_mascarado}</span> }, { key: 'vinculo', header: 'Vínculo', render: (e) => <VinculoChip e={e} /> },
+          { key: 'cargo', header: 'Cargo e setor', render: (e) => <span className="leading-tight"><span className="block">{e.cargo ?? <span className="text-muted-foreground">sem cargo</span>}</span>{e.department_id && <Link to={`/app/setores/${e.department_id}`} onClick={(ev) => ev.stopPropagation()} className="text-xs font-medium text-brand hover:underline">{e.setor}</Link>}</span> }, { key: 'unidade', header: 'Unidade' },
           { key: 'status', header: 'Status', render: (e) => <StatusPill status={e.status} /> }, { key: 'conf', header: 'Conformidade', render: (e) => <span className="flex items-center gap-2"><ComplianceRing pct={e.total ? (100 * e.ok) / e.total : 0} size={34} label={false} />{e.pendencias ? `${e.pendencias} pend.` : 'Em dia'}</span> }]} />}
       <NewEmployee open={newOpen} onClose={() => setNewOpen(false)} cargos={cargos.data ?? []} units={units.data ?? []} deps={deps.data ?? []} cfg={cfg.data} onDone={() => { setNewOpen(false); qc.invalidateQueries({ queryKey: ['/employees'] }) }} />
       <ImportModal open={impOpen} onClose={() => setImpOpen(false)} onDone={() => qc.invalidateQueries({ queryKey: ['/employees'] })} />

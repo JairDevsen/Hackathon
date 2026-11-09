@@ -1,0 +1,1038 @@
+{
+  "arquivo": "lote_0008.pdf",
+  "perfil": "ocorrencias",
+  "empresa_cnpj": "01465298000178",
+  "competencia": "2026-08",
+  "degradacao": "leve",
+  "total_paginas": 20,
+  "total_documentos": 20,
+  "paginas_pdf_nativo": 3,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:ver c/ RH",
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "post_it:2ª via"
+      ]
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "OUTRO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-08",
+      "empresa_cnpj": "01465298000178",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07797516804",
+      "empregado": "LUARA CASTRO MARQUES",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Luara Castro Marques",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-08-17",
+        "motivo": "abandono do posto de trabalho durante o expediente",
+        "dias_suspensao": null,
+        "ciencia": "SEM_CIENCIA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_ciencia",
+          "descricao": "medida disciplinar sem ciência",
+          "campo": "ciencia"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        3
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": "2025-07-22",
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "RAUL PASTOR CÂMARA",
+        "empregado_cpf": "07000352493",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "ELETRICISTA",
+        "riscos": [
+          "Ruído",
+          "Agentes biológicos"
+        ]
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        4
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "44063480690",
+      "empregado": "MARIA JÚLIA DA CRUZ VIANA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Maria Júlia Da Cruz Viana",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "QUASE_ACIDENTE",
+        "data_ocorrencia": "2026-11-05",
+        "hora": "15:40",
+        "local": "Área técnica",
+        "descricao": "Fio desencapado encontrado próximo ao quadro de energia, isolado antes de contato.",
+        "houve_afastamento": false,
+        "testemunha_nome": "Matheus Cassiano"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "05/11/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "67363842060",
+      "empregado": "VALENTINA SÁ SIQUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Valentina Sá Siqueira",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "ACIDENTE",
+        "data_ocorrencia": "2026-10-07",
+        "hora": "15:20",
+        "local": "Área técnica",
+        "descricao": "Torceu o tornozelo ao descer a escada de acesso ao estacionamento.",
+        "houve_afastamento": true,
+        "testemunha_nome": "Luiz Fernando Mendonça"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "ATESTADO_MEDICO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "04077145295",
+      "empregado": "RODRIGO NUNES BARROS",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "paciente_nome": "Rodrigo Nunes Barros",
+        "data_atendimento": "2026-09-28",
+        "dias_afastamento": 3,
+        "cid_informado": false,
+        "medico_nome": "Dr(a). Ana Sophia Oliveira",
+        "medico_crm": null,
+        "carimbo_presente": true,
+        "assinatura_medico_presente": true
+      },
+      "nao_conformidades": [
+        {
+          "regra": "atestado_sem_crm",
+          "descricao": "atestado sem CRM do médico",
+          "campo": "medico_crm"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        7
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "81151148040",
+      "empregado": "ISIS SIQUEIRA FERNANDES",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Isis Siqueira Fernandes",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "ACIDENTE",
+        "data_ocorrencia": "2026-09-30",
+        "hora": "07:20",
+        "local": "Estacionamento",
+        "descricao": "Escorregou no piso molhado próximo à copa e bateu o joelho no chão.",
+        "houve_afastamento": true,
+        "testemunha_nome": "Lucas Gabriel Ramos"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "fora_da_linha",
+          "texto": "07:20"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        8
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19995413914",
+      "empregado": "LEANDRO FREITAS TEIXEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Leandro Freitas Teixeira",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "SUSPENSAO",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-08-29",
+        "motivo": "uso de celular em área proibida",
+        "dias_suspensao": 2,
+        "ciencia": "RECUSA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 1
+      },
+      "nao_conformidades": [
+        {
+          "regra": "recusa_sem_testemunhas",
+          "descricao": "recusa de ciência com menos de 2 testemunhas",
+          "campo": "quantidade_testemunhas"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        9
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "81151148040",
+      "empregado": "ISIS SIQUEIRA FERNANDES",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Isis Siqueira Fernandes",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Martins Manutenção Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "MANUSCRITA",
+        "data_documento": "2026-10-22",
+        "motivo": "ausência injustificada ao serviço",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Raul Pastor Câmara",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-07-12",
+        "motivo": "abandono do posto de trabalho durante o expediente",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        11
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "04077145295",
+      "empregado": "RODRIGO NUNES BARROS",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Rodrigo Nunes Barros",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-09-22",
+        "motivo": "abandono do posto de trabalho durante o expediente",
+        "dias_suspensao": null,
+        "ciencia": "RECUSA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07797516804",
+      "empregado": "LUARA CASTRO MARQUES",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Luara Castro Marques",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "ACIDENTE",
+        "data_ocorrencia": "2026-09-30",
+        "hora": "09:20",
+        "local": "Área técnica",
+        "descricao": "Cortou o dedo ao manusear caixa com grampo solto no almoxarifado.",
+        "houve_afastamento": false,
+        "testemunha_nome": "Luigi Costela"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "09:20"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19995413914",
+      "empregado": "LEANDRO FREITAS TEIXEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Leandro Freitas Teixeira",
+        "empregado_cpf": null,
+        "empregador_razao_social": "Martins Manutenção Serviços Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "ADVERTENCIA",
+        "forma": "MANUSCRITA",
+        "data_documento": "2026-09-20",
+        "motivo": "abandono do posto de trabalho durante o expediente",
+        "dias_suspensao": null,
+        "ciencia": "CIENTE",
+        "assinatura_empregado_presente": true,
+        "quantidade_testemunhas": 0
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "JUSTIFICATIVA_FALTA",
+      "paginas": [
+        14
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "67363842060",
+      "empregado": "VALENTINA SÁ SIQUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": "2026-10-07",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Valentina Sá Siqueira",
+        "empregado_cpf": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_ocorrencia": "ATRASO",
+        "data_ocorrencia": "2026-10-05",
+        "motivo": "consulta médica do filho",
+        "visto_chefia_presente": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "05/10/2026, pois consulta médica do filho. Peço a compreensão da"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        15
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "44063480690",
+      "empregado": "MARIA JÚLIA DA CRUZ VIANA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Maria Júlia Da Cruz Viana",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "ACIDENTE",
+        "data_ocorrencia": "2026-10-23",
+        "hora": "11:00",
+        "local": "Almoxarifado",
+        "descricao": "Escorregou no piso molhado próximo à copa e bateu o joelho no chão.",
+        "houve_afastamento": true,
+        "testemunha_nome": "Kevin Pastor"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Escorregou no piso molhado próximo à copa e bateu o joelho no chão."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "OCORRENCIA_ACIDENTE",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07000352493",
+      "empregado": "RAUL PASTOR CÂMARA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": null,
+        "assinatura_empregado_presente": false,
+        "empregado_nome": "Raul Pastor Câmara",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo": "ACIDENTE",
+        "data_ocorrencia": "2026-09-29",
+        "hora": "17:00",
+        "local": "Área técnica",
+        "descricao": "Escorregou no piso molhado próximo à copa e bateu o joelho no chão.",
+        "houve_afastamento": true,
+        "testemunha_nome": "Anna Liz Silveira"
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_assinatura",
+          "descricao": "falta a assinatura do empregado",
+          "campo": "assinatura_empregado_presente"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        17
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "07797516804",
+      "empregado": "LUARA CASTRO MARQUES",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": "2021-02-27",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "LUARA CASTRO MARQUES",
+        "empregado_cpf": "07797516804",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "ELETRICISTA",
+        "riscos": [
+          "Queda de altura",
+          "Postura inadequada",
+          "Queda de mesmo nível"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "ADVERTENCIA_SUSPENSAO",
+      "paginas": [
+        18
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "67363842060",
+      "empregado": "VALENTINA SÁ SIQUEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "empregado_nome": "Valentina Sá Siqueira",
+        "empregado_cpf": null,
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "medida": "SUSPENSAO",
+        "forma": "IMPRESSA",
+        "data_documento": "2026-09-03",
+        "motivo": "uso de celular em área proibida",
+        "dias_suspensao": 2,
+        "ciencia": "SEM_CIENCIA",
+        "assinatura_empregado_presente": false,
+        "quantidade_testemunhas": 2
+      },
+      "nao_conformidades": [
+        {
+          "regra": "sem_ciencia",
+          "descricao": "medida disciplinar sem ciência",
+          "campo": "ciencia"
+        }
+      ],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "19995413914",
+      "empregado": "LEANDRO FREITAS TEIXEIRA",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": "2020-10-19",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "LEANDRO FREITAS TEIXEIRA",
+        "empregado_cpf": "19995413914",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "AUXILIAR DE MANUTENÇÃO",
+        "riscos": [
+          "Produtos químicos de limpeza",
+          "Ruído"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "ORDEM_SERVICO_SST",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "81151148040",
+      "empregado": "ISIS SIQUEIRA FERNANDES",
+      "competencia": null,
+      "empresa_cnpj": "01465298000178",
+      "dados": {
+        "data_documento": "2022-01-31",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "ISIS SIQUEIRA FERNANDES",
+        "empregado_cpf": "81151148040",
+        "empregador_razao_social": "MARTINS MANUTENÇÃO SERVIÇOS LTDA",
+        "empregador_cnpj": "01465298000178",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "ELETRICISTA",
+        "riscos": [
+          "Agentes biológicos",
+          "Queda de altura"
+        ]
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    }
+  ]
+}

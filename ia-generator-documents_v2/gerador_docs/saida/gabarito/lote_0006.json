@@ -1,0 +1,1415 @@
+{
+  "arquivo": "lote_0006.pdf",
+  "perfil": "desligamento",
+  "empresa_cnpj": "32697150000192",
+  "competencia": "2026-09",
+  "degradacao": "leve",
+  "total_paginas": 32,
+  "total_documentos": 25,
+  "paginas_pdf_nativo": 1,
+  "paginas": [
+    {
+      "pagina": 1,
+      "documentos": [
+        {
+          "indice": 1,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 2,
+      "documentos": [
+        {
+          "indice": 3,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 3,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 4,
+      "documentos": [
+        {
+          "indice": 4,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 180,
+      "extras": [
+        "grampo",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 5,
+      "documentos": [
+        {
+          "indice": 22,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 6,
+      "documentos": [
+        {
+          "indice": 5,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 7,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:ok - conferido"
+      ]
+    },
+    {
+      "pagina": 8,
+      "documentos": [
+        {
+          "indice": 6,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 9,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 10,
+      "documentos": [
+        {
+          "indice": 23,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "post_it:ver c/ RH"
+      ]
+    },
+    {
+      "pagina": 11,
+      "documentos": [
+        {
+          "indice": 7,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 12,
+      "documentos": [
+        {
+          "indice": 8,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 13,
+      "documentos": [
+        {
+          "indice": 9,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "post_it:ver c/ RH"
+      ]
+    },
+    {
+      "pagina": 14,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 15,
+      "documentos": [
+        {
+          "indice": 10,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 16,
+      "documentos": [
+        {
+          "indice": 11,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 17,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 18,
+      "documentos": [
+        {
+          "indice": 12,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "foto_celular",
+      "rotacao": 180,
+      "extras": []
+    },
+    {
+      "pagina": 19,
+      "documentos": [
+        {
+          "indice": 13,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo",
+        "clipe"
+      ]
+    },
+    {
+      "pagina": 20,
+      "documentos": [
+        {
+          "indice": 24,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 21,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 22,
+      "documentos": [
+        {
+          "indice": 14,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "carimbo_recebido"
+      ]
+    },
+    {
+      "pagina": 23,
+      "documentos": [
+        {
+          "indice": 15,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:falta assinar"
+      ]
+    },
+    {
+      "pagina": 24,
+      "documentos": [
+        {
+          "indice": 16,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "clipe",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 25,
+      "documentos": [
+        {
+          "indice": 17,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 26,
+      "documentos": [
+        {
+          "indice": 18,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "post_it:pago",
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 27,
+      "documentos": [
+        {
+          "indice": 19,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "pdf_nativo",
+      "texto_selecionavel": true,
+      "captura": "pdf_nativo",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 28,
+      "documentos": [
+        {
+          "indice": 20,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 29,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": []
+    },
+    {
+      "pagina": 30,
+      "documentos": [
+        {
+          "indice": 2,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "grampo"
+      ]
+    },
+    {
+      "pagina": 31,
+      "documentos": [
+        {
+          "indice": 25,
+          "pagina_do_documento": 1
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 0,
+      "extras": [
+        "dobra"
+      ]
+    },
+    {
+      "pagina": 32,
+      "documentos": [
+        {
+          "indice": 21,
+          "pagina_do_documento": 2
+        }
+      ],
+      "formato": "imagem",
+      "texto_selecionavel": false,
+      "captura": "scanner_leve",
+      "rotacao": 180,
+      "extras": [
+        "grampo"
+      ]
+    }
+  ],
+  "documentos": [
+    {
+      "indice": 1,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        1
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "88263207304",
+      "empregado": "MARIA CLARA FERREIRA DAS NEVES",
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 648 567 260 AR",
+        "conteudo": "Notificação nº 348/2026",
+        "data_postagem": "2026-09-13",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA GARANHUNS",
+        "destinatario_nome": "Maria Clara Ferreira Das Neves",
+        "destinatario_endereco": "Avenida Moraes Guerra, 481",
+        "destinatario_bairro": "Vila Inestan",
+        "destinatario_municipio": "Garanhuns",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55294343",
+        "remetente_nome": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Nogueira Albuquerque, 20 – Buraco Quente, Garanhuns/PE",
+        "remetente_cep": "55297636",
+        "tentativas": [
+          {
+            "data": "2026-09-14",
+            "hora": "16:10"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-09-14",
+        "data_devolucao": null,
+        "recebedor_nome": "NATHAN ANDRADE",
+        "recebedor_documento": "7774202",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 2,
+      "tipo": "ASO",
+      "paginas": [
+        30
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "70304950556",
+      "empregado": "PEDRO HENRIQUE ARAÚJO PACHECO",
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "Pedro Henrique Araújo Pacheco",
+        "empregado_cpf": "70304950556",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Eletricista",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-09-28",
+        "riscos_ocupacionais": [
+          "Químico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Luana Fogaça",
+        "medico_crm": "CRM-PE 33981"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Dr(a). Luana Fogaça"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 3,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        2
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "61956365176",
+      "empregado": "BIANCA PINTO DIAS",
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "data_documento": "2026-08-29",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Bianca Pinto Dias",
+        "empregado_cpf": "61956365176",
+        "empregador_razao_social": "Rezende Manutenção Terceirização Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Garanhuns, 29 de agosto de 2026"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Pedido de Demissão"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 4,
+      "tipo": "TRCT",
+      "paginas": [
+        3,
+        4
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "61956365176",
+      "empregado": "BIANCA PINTO DIAS",
+      "competencia": "2026-09",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "BIANCA PINTO DIAS",
+        "empregado_cpf": "61956365176",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "16990162725",
+        "data_admissao": "2020-08-12",
+        "data_aviso_previo": null,
+        "data_afastamento": "2026-09-28",
+        "causa_afastamento": "Término do contrato de experiência",
+        "codigo_afastamento": "RA2",
+        "remuneracao_fins_rescisorios": 2860.0,
+        "total_bruto": 5449.89,
+        "total_deducoes": 387.75,
+        "valor_liquido": 5062.14,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "619.563.651-76"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "ELETRICISTA"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "387,75"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 5,
+      "tipo": "ASO",
+      "paginas": [
+        6
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "88263207304",
+      "empregado": "MARIA CLARA FERREIRA DAS NEVES",
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "Maria Clara Ferreira Das Neves",
+        "empregado_cpf": "88263207304",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Auxiliar De Manutenção",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-09-26",
+        "riscos_ocupacionais": [
+          "Ausência de risco específico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Ryan Almeida",
+        "medico_crm": "CRM-PB 39525"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 6,
+      "tipo": "TRCT",
+      "paginas": [
+        7,
+        8
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "98831876961",
+      "empregado": "NATÁLIA DA LUZ CARDOSO",
+      "competencia": "2026-09",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "NATÁLIA DA LUZ CARDOSO",
+        "empregado_cpf": "98831876961",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "17337543300",
+        "data_admissao": "2022-04-25",
+        "data_aviso_previo": "2026-08-18",
+        "data_afastamento": "2026-09-17",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 2820.0,
+        "total_bruto": 5593.0,
+        "total_deducoes": 288.63,
+        "valor_liquido": 5304.37,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 7,
+      "tipo": "TRCT",
+      "paginas": [
+        9,
+        11
+      ],
+      "paginas_contiguas": false,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "35024564456",
+      "empregado": "LUIZ FERNANDO PIMENTA NUNES",
+      "competencia": "2026-09",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "LUIZ FERNANDO PIMENTA NUNES",
+        "empregado_cpf": "35024564456",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "10531003300",
+        "data_admissao": "2026-05-21",
+        "data_aviso_previo": "2026-08-17",
+        "data_afastamento": "2026-09-16",
+        "causa_afastamento": "Despedida sem justa causa, pelo empregador",
+        "codigo_afastamento": "SJ2",
+        "remuneracao_fins_rescisorios": 1990.0,
+        "total_bruto": 5649.39,
+        "total_deducoes": 191.54,
+        "valor_liquido": 5457.85,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "AUXILIAR DE MANUTENÇÃO"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "13º salário proporcional"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 8,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        12
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "35024564456",
+      "empregado": "LUIZ FERNANDO PIMENTA NUNES",
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "data_documento": "2026-08-17",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Luiz Fernando Pimenta Nunes",
+        "empregado_cpf": "35024564456",
+        "empregador_razao_social": "Rezende Manutenção Terceirização Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Eu, Luiz Fernando Pimenta Nunes, portador(a) do CPF 350.245.644-56, ocupante do"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 9,
+      "tipo": "ASO",
+      "paginas": [
+        13
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74672173070",
+      "empregado": "LUIZ HENRIQUE SOUSA FARIAS",
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "Luiz Henrique Sousa Farias",
+        "empregado_cpf": "74672173070",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Bombeiro Hidráulico",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-09-06",
+        "riscos_ocupacionais": [
+          "Físico (ruído)",
+          "Biológico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Luiz Miguel Silva",
+        "medico_crm": "CRM-PE 30078"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 10,
+      "tipo": "TRCT",
+      "paginas": [
+        14,
+        15
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "70304950556",
+      "empregado": "PEDRO HENRIQUE ARAÚJO PACHECO",
+      "competencia": "2026-09",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "PEDRO HENRIQUE ARAÚJO PACHECO",
+        "empregado_cpf": "70304950556",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "11182449357",
+        "data_admissao": "2025-02-04",
+        "data_aviso_previo": "2026-08-29",
+        "data_afastamento": "2026-09-28",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 3280.0,
+        "total_bruto": 8436.89,
+        "total_deducoes": 459.4,
+        "valor_liquido": 7977.49,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "11182449357"
+        },
+        {
+          "defeito": "riscado",
+          "texto": "260,77"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 11,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        16
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "70304950556",
+      "empregado": "PEDRO HENRIQUE ARAÚJO PACHECO",
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "data_documento": "2026-08-29",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Pedro Henrique Araújo Pacheco",
+        "empregado_cpf": "70304950556",
+        "empregador_razao_social": "Rezende Manutenção Terceirização Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": null
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "corretivo",
+          "texto": "Pedido de Demissão"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Eu, Pedro Henrique Araújo Pacheco, portador(a) do CPF 703.049.505-56,"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 12,
+      "tipo": "TRCT",
+      "paginas": [
+        17,
+        18
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "88263207304",
+      "empregado": "MARIA CLARA FERREIRA DAS NEVES",
+      "competencia": "2026-09",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "MARIA CLARA FERREIRA DAS NEVES",
+        "empregado_cpf": "88263207304",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "18687277437",
+        "data_admissao": "2021-08-22",
+        "data_aviso_previo": "2026-08-27",
+        "data_afastamento": "2026-09-26",
+        "causa_afastamento": "Rescisão a pedido do empregado",
+        "codigo_afastamento": "PD0",
+        "remuneracao_fins_rescisorios": 2050.0,
+        "total_bruto": 3769.73,
+        "total_deducoes": 252.73,
+        "valor_liquido": 3517.0,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "26/09/2026"
+        },
+        {
+          "defeito": "corretivo",
+          "texto": "341,67"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 13,
+      "tipo": "OUTRO",
+      "paginas": [
+        19
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": "2026-09",
+      "empresa_cnpj": "32697150000192",
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 14,
+      "tipo": "TRCT",
+      "paginas": [
+        21,
+        22
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74672173070",
+      "empregado": "LUIZ HENRIQUE SOUSA FARIAS",
+      "competencia": "2026-09",
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "LUIZ HENRIQUE SOUSA FARIAS",
+        "empregado_cpf": "74672173070",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "empregado_pis": "17632016323",
+        "data_admissao": "2024-06-03",
+        "data_aviso_previo": "2026-08-07",
+        "data_afastamento": "2026-09-06",
+        "causa_afastamento": "Despedida sem justa causa, pelo empregador",
+        "codigo_afastamento": "SJ2",
+        "remuneracao_fins_rescisorios": 2730.0,
+        "total_bruto": 6006.0,
+        "total_deducoes": 181.98,
+        "valor_liquido": 5824.02,
+        "assinatura_empregado_presente": true,
+        "assinatura_empregador_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "BOMBEIRO HIDRÁULICO"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "07/08/2026"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 15,
+      "tipo": "RECIBO_AVULSO",
+      "paginas": [
+        23
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "88263207304",
+      "empregado": "MARIA CLARA FERREIRA DAS NEVES",
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "tipo_pagamento": "VALE",
+        "valor": 50.0,
+        "valor_por_extenso": "cinquenta reais",
+        "recebedor_nome": "Maria Clara Ferreira Das Neves",
+        "recebedor_cpf": "88263207304",
+        "pagador_nome": "Rezende Manutenção Terceirização Ltda",
+        "referente_a": "vale (desconto em folha)",
+        "data_documento": "2026-08-26",
+        "assinatura_recebedor_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 16,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        24
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "74672173070",
+      "empregado": "LUIZ HENRIQUE SOUSA FARIAS",
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "LUIZ HENRIQUE SOUSA FARIAS",
+        "empregado_cpf": "74672173070",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-08-17",
+        "prazo_dias": 5
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 17,
+      "tipo": "PEDIDO_DEMISSAO",
+      "paginas": [
+        25
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "98831876961",
+      "empregado": "NATÁLIA DA LUZ CARDOSO",
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "data_documento": "2026-08-18",
+        "assinatura_empregado_presente": true,
+        "empregado_nome": "Natália Da Luz Cardoso",
+        "empregado_cpf": "98831876961",
+        "empregador_razao_social": "Rezende Manutenção Terceirização Ltda",
+        "empregador_cnpj": null,
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "cumprira_aviso_previo": false
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "riscado",
+          "texto": "Caruaru, 18 de agosto de 2026"
+        },
+        {
+          "defeito": "fora_da_linha",
+          "texto": "Eu, Natália Da Luz Cardoso, portador(a) do CPF 988.318.769-61,"
+        },
+        {
+          "defeito": "rasura",
+          "texto": "prévio."
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 18,
+      "tipo": "ASO",
+      "paginas": [
+        26
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "61956365176",
+      "empregado": "BIANCA PINTO DIAS",
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "Bianca Pinto Dias",
+        "empregado_cpf": "61956365176",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Eletricista",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-09-28",
+        "riscos_ocupacionais": [
+          "Ausência de risco específico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Dante Abreu",
+        "medico_crm": "CRM-BA 17279"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [
+        {
+          "defeito": "rasura",
+          "texto": "Eletricista"
+        }
+      ],
+      "observacao": null
+    },
+    {
+      "indice": 19,
+      "tipo": "NOTIFICACAO_EMPREGADO",
+      "paginas": [
+        27
+      ],
+      "paginas_contiguas": true,
+      "formato": "pdf_nativo",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "88263207304",
+      "empregado": "MARIA CLARA FERREIRA DAS NEVES",
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "MARIA CLARA FERREIRA DAS NEVES",
+        "empregado_cpf": "88263207304",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "assunto": "CONVOCACAO_RETORNO",
+        "data_documento": "2026-09-12",
+        "prazo_dias": 2
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 20,
+      "tipo": "ASO",
+      "paginas": [
+        28
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": "98831876961",
+      "empregado": "NATÁLIA DA LUZ CARDOSO",
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "empregado_nome": "Natália Da Luz Cardoso",
+        "empregado_cpf": "98831876961",
+        "empregador_razao_social": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "empregador_cnpj": "32697150000192",
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "funcao": "Eletricista",
+        "tipo_exame": "DEMISSIONAL",
+        "data_exame": "2026-09-17",
+        "riscos_ocupacionais": [
+          "Ausência de risco específico"
+        ],
+        "conclusao": "APTO",
+        "medico_nome": "Dr(a). Cauã Dias",
+        "medico_crm": "CRM-AL 28294"
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 21,
+      "tipo": "AVISO_RECEBIMENTO",
+      "paginas": [
+        29,
+        32
+      ],
+      "paginas_contiguas": false,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": true,
+      "cpf": "74672173070",
+      "empregado": "LUIZ HENRIQUE SOUSA FARIAS",
+      "competencia": null,
+      "empresa_cnpj": "32697150000192",
+      "dados": {
+        "campos_ilegiveis": [],
+        "observacoes": null,
+        "codigo_objeto": "FICT 941 791 811 AR",
+        "conteudo": "Notificação nº 149/2026",
+        "data_postagem": "2026-08-18",
+        "unidade_postagem": "AGÊNCIA FICTÍCIA GARANHUNS",
+        "destinatario_nome": "Luiz Henrique Sousa Farias",
+        "destinatario_endereco": "Travessa Melo Câmara, 1368",
+        "destinatario_bairro": "Dom Bosco",
+        "destinatario_municipio": "Garanhuns",
+        "destinatario_uf": "PE",
+        "destinatario_cep": "55298572",
+        "remetente_nome": "REZENDE MANUTENÇÃO TERCEIRIZAÇÃO LTDA",
+        "remetente_endereco": "Rua Nogueira Albuquerque, 20 – Buraco Quente, Garanhuns/PE",
+        "remetente_cep": "55297636",
+        "tentativas": [
+          {
+            "data": "2026-08-19",
+            "hora": "09:30"
+          }
+        ],
+        "entregue": true,
+        "motivo_devolucao": null,
+        "data_entrega": "2026-08-19",
+        "data_devolucao": null,
+        "recebedor_nome": "LUIZ HENRIQUE SOUSA FARIAS",
+        "recebedor_documento": "8232491",
+        "assinatura_recebedor_presente": true,
+        "carimbo_unidade_presente": true
+      },
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": null
+    },
+    {
+      "indice": 22,
+      "tipo": "OUTRO",
+      "paginas": [
+        5
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 23,
+      "tipo": "OUTRO",
+      "paginas": [
+        10
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 24,
+      "tipo": "OUTRO",
+      "paginas": [
+        20
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    },
+    {
+      "indice": 25,
+      "tipo": "OUTRO",
+      "paginas": [
+        31
+      ],
+      "paginas_contiguas": true,
+      "formato": "digitalizado",
+      "fora_de_ordem": false,
+      "intercalado": false,
+      "cpf": null,
+      "empregado": null,
+      "competencia": null,
+      "empresa_cnpj": null,
+      "dados": null,
+      "nao_conformidades": [],
+      "defeitos_escrita": [],
+      "observacao": "página em branco"
+    }
+  ]
+}
